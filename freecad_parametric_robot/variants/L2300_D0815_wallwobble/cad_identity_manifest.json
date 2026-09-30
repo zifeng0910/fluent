@@ -1,0 +1,11 @@
+{
+  "classification": "L2300_D0815_FREECAD_CAD_FROZEN",
+  "files": {
+    "Robot_L2300_D0815_WallWobble.FCStd": "d2431dede1a8eeca959b182d58971b627a99df05b9cd1f33a2be173caaa731fe",
+    "Robot_L2300_D0815_WallWobble.brep": "9c17e1d5a86d9fb2d3f9d7b776848c65789c27eec0e22ecf2f601f7fb631b75c",
+    "Robot_L2300_D0815_WallWobble.step": "461a36dabd0cc1f94390b3e3dc24b2e059b8a74a98d3080ca67694c3a5c0d0e2",
+    "Robot_L2300_D0815_WallWobble_geometry.json": "efcbd1ae7c843298fc23ded995d98aaf44458485b007cdd377934cf12555bff5"
+  },
+  "future_Abaqus_STEP": "cad/freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble.step",
+  "hash_algorithm": "SHA256"
+}

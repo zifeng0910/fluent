@@ -16,6 +16,10 @@ frames/
 animations/
 *.msh.h5
 fluent-*-error.log
+FM_Zifeng_*/
+cortexerror.log
+fluenterror.log
+live_cases/**/*.cgns
 pyfluent-mcp/
 live_cases/**/*.msh
 live_cases/**/*.jou
