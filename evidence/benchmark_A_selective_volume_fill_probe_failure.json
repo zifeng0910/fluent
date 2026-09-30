@@ -1,0 +1,10 @@
+{
+  "campaign":"BENCHMARK_A_FLUID_VOID_SEMANTICS_FIX",
+  "generated_volume_command":"GenerateTheVolumeMeshWTM",
+  "parameters":{"Solver":"Fluent","VolumeFill":"tetrahedral","MeshFluidRegions":true,"MeshSolidRegions":false,"MeshDeadRegions":false,"PrismLayers":false,"MeshObject":"open-cascade-step-translator-7.8-1-solid"},
+  "cell_zones":[{"id":60,"type":"fluid","cells":22264,"minimum_orthogonal_quality":0.24463167}],
+  "probes":{"water_-4_0_0":[],"robot_1.2_0_0":[60]},
+  "gate":"FAIL: one zone is cavity, water region is unmeshed",
+  "solver_switch":"NOT RUN",
+  "native_mesh":"NOT SAVED"
+}
