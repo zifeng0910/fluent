@@ -16,7 +16,16 @@
     "triangle_faces": 7966,
     "triangle_faces_not_owned_by_tetra": 0,
     "closed_fluid_boundary": true,
-    "physical_groups": {},
+    "physical_groups": {
+      "triangle": {
+        "2": 7382,
+        "3": 292,
+        "4": 292
+      },
+      "tetra": {
+        "1": 32997
+      }
+    },
     "mesh_field_data": {
       "robot_wall": [
         2,
@@ -57,7 +66,14 @@
     "triangle_faces": 540,
     "triangle_faces_not_owned_by_tetra": 0,
     "closed_fluid_boundary": true,
-    "physical_groups": {},
+    "physical_groups": {
+      "triangle": {
+        "2": 540
+      },
+      "tetra": {
+        "1": 1123
+      }
+    },
     "mesh_field_data": {}
   }
 ]
