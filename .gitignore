@@ -34,3 +34,5 @@ freecad_parametric_robot/variants/L2300_D0815_wallwobble/*
 pyfluent-mcp/
 live_cases/**/*.msh
 live_cases/**/*.jou
+
+live_cases/benchmark_A_stationary/animations/frames_*/

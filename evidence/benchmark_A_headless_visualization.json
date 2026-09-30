@@ -1,0 +1,40 @@
+{
+  "campaign": "BENCHMARK_A_HEADLESS_VISUALIZATION",
+  "routeD": "PASS",
+  "mesh_modified": "NO",
+  "solver_physics_modified": "NO",
+  "ui_mode": "no_gui",
+  "graphics_driver": "dx11",
+  "case_data": "benchmark_A_stationary.cas.h5 + benchmark_A_stationary.dat.h5",
+  "center_plane": "XY @ z=0",
+  "single_png": {
+    "height": 1080,
+    "path": "H:/fluent/live_cases/benchmark_A_stationary/animations/test_velocity_final.png",
+    "result": "PASS",
+    "width": 1920,
+    "size_bytes": 288886
+  },
+  "velocity_range": {
+    "min": 0.0,
+    "max": 0.012,
+    "units": "m/s"
+  },
+  "pressure_range": {
+    "min": -100.0,
+    "max": 100.0,
+    "units": "Pa"
+  },
+  "visualization_replay": "RUN",
+  "dt_s": 5E-05,
+  "final_time_ms": 4.5,
+  "frame_stride_timesteps": 4,
+  "velocity_frame_count": 15,
+  "pressure_frame_count": 15,
+  "velocity_gif": "H:/fluent/live_cases/benchmark_A_stationary/animations/velocity_magnitude.gif",
+  "pressure_gif": "H:/fluent/live_cases/benchmark_A_stationary/animations/static_pressure.gif",
+  "gif_dimensions": "1920x1080",
+  "velocity_gif_size": 2138465,
+  "pressure_gif_size": 2119171,
+  "fallback_renderer": "NO",
+  "annotation": "Pillow timestamp annotation applied; Fluent graphics contour frames were exported in no_gui DX11 session"
+}
