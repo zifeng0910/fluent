@@ -1,0 +1,19 @@
+{
+  "robot_source": "freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble_geometry.json",
+  "robot_authoritative": true,
+  "robot_axis": "+X",
+  "robot_nose_x_mm": 0.0,
+  "robot_tail_x_mm": 2.3,
+  "robot_com_source": "Robot_L2300_D0815_WallWobble_mass_properties.json (authoritative CAD mass properties)",
+  "tube_config": "geometry/tube_fixture.yaml",
+  "tube_axis": "+X",
+  "tube_inner_diameter_mm": 1.8,
+  "tube_length_mm": 10.0,
+  "tube_inlet_x_mm": -5.0,
+  "tube_outlet_x_mm": 5.0,
+  "robot_inside_axial_range": true,
+  "robot_radial_offset_mm": [0.0, 0.0],
+  "nominal_minimum_clearance_mm": 0.4925,
+  "pose_classification": "Benchmark A numerical validation pose; stationary and non-contact",
+  "status": "PASS_COORDINATE_AND_CLEARANCE_GATE"
+}

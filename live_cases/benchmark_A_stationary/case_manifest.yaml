@@ -43,3 +43,5 @@ current_stl_campaign:
   corrected_stl_generator: scripts/freecad_fluent_stl.py
   next_step: document a supported tube fixture API in a future campaign
   report: evidence/stl_campaign_20260930.md
+tube_fixture: geometry/tube_fixture.yaml
+robot_tube_coordinate_manifest: evidence/robot_tube_coordinate_manifest.json

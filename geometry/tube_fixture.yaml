@@ -1,0 +1,28 @@
+fixture: benchmark_A_stationary
+source: scripts/create_coarse_pipe_mesh.py
+source_note: Existing project coarse fixture; retained as the current Benchmark A tube provenance.
+tube:
+  inner_diameter_mm: 1.8
+  radius_mm: 0.9
+  length_mm: 10.0
+  axis: x
+  center_y_mm: 0.0
+  center_z_mm: 0.0
+  inlet_x_mm: -5.0
+  outlet_x_mm: 5.0
+  wall_zone_name: pipe_wall
+  inlet_zone_name: inlet
+  outlet_zone_name: outlet
+robot_pose:
+  convention: FreeCAD geometry global +X; nose x=0, flat tail x=2.3 mm
+  validation_pose: stationary centered benchmark pose; no wall contact
+  x_range_mm: [0.0, 2.3]
+  radial_offset_mm: [0.0, 0.0]
+clearance:
+  robot_max_radius_mm: 0.4075
+  nominal_radial_clearance_mm: 0.4925
+  estimated_minimum_gap_mm: 0.4925
+  basis: tube radius minus audited robot maximum radius at centered pose
+provenance_conflicts:
+  historical_values: none found in current H:/fluent manifest/evidence search
+  note: Older Gmsh script used an approximate robot proxy, but its tube fixture values are retained here.
