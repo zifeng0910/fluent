@@ -1,0 +1,1 @@
+{"TaskType":"Simple","Arguments":{"RegionTypeList":["fluid","dead"],"OldRegionTypeList":["solid","fluid"],"RegionNameList":["fluid","robot_void"],"OldRegionNameList":["open-cascade-step-translator-7.8-1-solid","fluid:1"]},"CommandName":"UpdateRegions","State":"Up-to-date"}

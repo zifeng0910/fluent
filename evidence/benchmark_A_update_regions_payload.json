@@ -1,0 +1,15 @@
+{
+  "campaign":"BENCHMARK_A_FLUID_VOID_SEMANTICS_FIX",
+  "mcp_tui_used":"NO",
+  "generated_update_regions_api":"PASS",
+  "runtime_old_names":["open-cascade-step-translator-7.8-1-solid","fluid:1"],
+  "runtime_old_types":["solid","fluid"],
+  "payload_new_names":["fluid","robot_void"],
+  "payload_new_types":["fluid","dead"],
+  "update_regions_readback":"accepted and Up-to-date",
+  "volume_mesh_result":"FAIL: create_volume_mesh_wtm recomputed cached region identities",
+  "cell_zones":[{"id":133,"type":"fluid","probe":"robot cavity (1.2,0,0)"},{"id":130,"type":"solid","probe":"water (-4,0,0)"}],
+  "water_probe":[130],
+  "robot_probe":[133],
+  "remaining_blocker":"Need a generated settings API for selective water-only volume fill that does not recompute/update region table"
+}
