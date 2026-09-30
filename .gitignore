@@ -16,3 +16,6 @@ frames/
 animations/
 *.msh.h5
 fluent-*-error.log
+pyfluent-mcp/
+live_cases/**/*.msh
+live_cases/**/*.jou
