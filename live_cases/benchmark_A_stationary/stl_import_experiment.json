@@ -1,9 +1,9 @@
 {
-  "purpose": "Benchmark A first gate: import FreeCAD-derived robot STL only",
+  "purpose": "STL_MESH_IMPORT_CORRECT_API launch 1: schema-gated robot STL import",
   "input": "geometry/Robot_L2300_D0815_WallWobble_fluent.stl",
   "step_timeout": 90,
   "codes": [
-    "wf=solver.watertight(legacy=True); t=wf.import_geometry; print('IMPORT_ARGS_BEFORE', t.arguments()); t.arguments.update_dict({'file_format':'Mesh','file_name':r'H:/fluent/geometry/Robot_L2300_D0815_WallWobble_fluent.stl','length_unit':'m'}); print('IMPORT_ARGS_AFTER', t.arguments()); print('IMPORT_RESULT', t.execute()); print('TASK_STATE_AFTER', t())"
+    "wf=solver.watertight(legacy=True); t=wf.import_geometry; before=t.arguments(); print('API_FAMILY', type(wf)); print('IMPORT_ARGS_BEFORE', before); t.arguments.update_dict({'file_format':'Mesh'}); mesh_state=t.arguments(); print('IMPORT_ARGS_AFTER_FILE_FORMAT', mesh_state); keys=set(mesh_state.keys()); print('MESH_KEYS', keys); mesh_name='mesh_file_name' if 'mesh_file_name' in keys else ('MeshFileName' if 'MeshFileName' in keys else None); mesh_unit='mesh_unit' if 'mesh_unit' in keys else ('MeshUnit' if 'MeshUnit' in keys else None); print('MESH_FILE_FIELD', mesh_name); print('MESH_UNIT_FIELD', mesh_unit); assert mesh_name and mesh_unit, 'SCHEMA_GATE_FAIL: mesh-specific fields not active after file_format=Mesh'; cfg={mesh_name:r'H:/fluent/geometry/Robot_L2300_D0815_WallWobble_fluent.stl',mesh_unit:'mm'}; t.arguments.update_dict(cfg); after=t.arguments(); print('IMPORT_ARGS_BEFORE_EXECUTE', after); assert after.get('file_format')=='Mesh', 'SCHEMA_GATE_FAIL: FileFormat is not Mesh'; assert after.get(mesh_name)==r'H:/fluent/geometry/Robot_L2300_D0815_WallWobble_fluent.stl', 'SCHEMA_GATE_FAIL: mesh filename mismatch'; assert after.get(mesh_unit)=='mm', 'SCHEMA_GATE_FAIL: mesh unit mismatch'; print('SCHEMA_GATE_PASS'); result=t.execute(); print('IMPORT_RESULT', result); print('TASK_STATE_AFTER', t())"
   ],
-  "status": "CORRECTED_OFFLINE_NOT_RUN_LAUNCH_BUDGET_EXHAUSTED"
+  "status": "READY_SCHEMA_GATED"
 }
