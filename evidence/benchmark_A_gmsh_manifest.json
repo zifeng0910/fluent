@@ -1,0 +1,16 @@
+{
+  "step": "H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
+  "mesh": "H:/fluent/live_cases/benchmark_A_stationary/benchmark_A_water_gmsh_novolphys.msh",
+  "exact_occ_volume_mm3": 24.30663247167915,
+  "mesh_size_mm": [
+    0.04,
+    0.08
+  ],
+  "physical_surface_counts": {
+    "inlet": 1,
+    "outlet": 1,
+    "pipe_wall": 1,
+    "robot_wall": 3
+  },
+  "units": "mm"
+}
