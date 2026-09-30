@@ -1,0 +1,1269 @@
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     1  1.0000e+00  2.6524e-06  1.6812e-06  1.6826e-06  1.1180e-15  0:00:12    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     2  6.0254e-01  1.5430e-06  8.6641e-07  8.5649e-07  9.0785e-16  0:00:09    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     3  4.2070e-01  8.8285e-07  4.1498e-07  4.1056e-07  8.9355e-16  0:00:05    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     4  3.2467e-01  5.5941e-07  2.5400e-07  2.5071e-07  8.9283e-16  0:00:02    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     5  2.7386e-01  4.1256e-07  2.1917e-07  2.1583e-07  8.8761e-16  0:00:00    0
+Flow time = 5e-05s, time step = 1
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+     5  2.7386e-01  4.1256e-07  2.1917e-07  2.1583e-07  8.8761e-16  0:00:11    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     6  3.2830e-01  1.3030e-06  5.1202e-07  5.0635e-07  8.4757e-16  0:00:08    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     7  3.2052e-01  8.2362e-07  3.0696e-07  3.0237e-07  8.3359e-16  0:00:05    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     8  2.9508e-01  5.6400e-07  2.1895e-07  2.1709e-07  8.3872e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     9  2.6355e-01  4.1607e-07  1.8174e-07  1.8112e-07  8.3540e-16  0:00:02    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    10  2.1032e-01  2.8526e-07  1.3026e-07  1.3056e-07  8.3419e-16  0:00:00    0
+Flow time = 0.0001s, time step = 2
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    10  2.1032e-01  2.8526e-07  1.3026e-07  1.3056e-07  8.3419e-16  0:00:08    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    11  2.2473e-01  1.0816e-06  2.8755e-07  2.8661e-07  8.2477e-16  0:00:06    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    12  2.1845e-01  7.0224e-07  1.8799e-07  1.8763e-07  8.2566e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    13  2.0409e-01  4.7630e-07  1.4263e-07  1.4330e-07  8.2128e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    14  1.7996e-01  3.2933e-07  1.1341e-07  1.1376e-07  8.2047e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    15  1.5277e-01  2.3204e-07  9.1746e-08  9.2095e-08  8.2296e-16  0:00:00    0
+Flow time = 0.00015s, time step = 3
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    15  1.5277e-01  2.3204e-07  9.1746e-08  9.2095e-08  8.2296e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    16  1.7344e-01  1.0181e-06  2.3570e-07  2.3582e-07  8.1790e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    17  1.6702e-01  6.4267e-07  1.5737e-07  1.5684e-07  8.3549e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    18  1.5840e-01  4.2040e-07  1.1502e-07  1.1421e-07  8.4252e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    19  1.4152e-01  2.8193e-07  9.1624e-08  9.0971e-08  8.3860e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    20  1.1835e-01  1.9126e-07  7.0488e-08  7.0286e-08  8.3669e-16  0:00:00    0
+Flow time = 0.0002s, time step = 4
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    20  1.1835e-01  1.9126e-07  7.0488e-08  7.0286e-08  8.3669e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    21  1.4677e-01  9.8263e-07  2.0736e-07  2.0497e-07  8.1993e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    22  1.3529e-01  6.0359e-07  1.3790e-07  1.3572e-07  8.2978e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    23  1.2520e-01  3.8038e-07  9.7546e-08  9.5833e-08  8.4473e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    24  1.1041e-01  2.4673e-07  7.3839e-08  7.2624e-08  8.3181e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    25  9.3742e-02  1.6372e-07  5.7721e-08  5.6863e-08  8.3641e-16  0:00:00    0
+Flow time = 0.00025s, time step = 5
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    25  9.3742e-02  1.6372e-07  5.7721e-08  5.6863e-08  8.3641e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    26  1.3162e-01  9.5740e-07  1.8551e-07  1.8223e-07  8.3824e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    27  1.1815e-01  5.7738e-07  1.2377e-07  1.2122e-07  8.5754e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    28  1.0711e-01  3.5550e-07  8.5780e-08  8.3850e-08  8.5640e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    29  9.3119e-02  2.2505e-07  6.3181e-08  6.1661e-08  8.5879e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    30  7.8421e-02  1.4579e-07  4.8642e-08  4.7518e-08  8.6468e-16  0:00:00    0
+Flow time = 0.0003s, time step = 6
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    30  7.8421e-02  1.4579e-07  4.8642e-08  4.7518e-08  8.6468e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    31  1.2078e-01  9.2453e-07  1.6640e-07  1.6316e-07  8.2589e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    32  1.0827e-01  5.4853e-07  1.1180e-07  1.0973e-07  8.3827e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    33  9.8296e-02  3.3340e-07  7.8059e-08  7.6830e-08  8.4192e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    34  8.8312e-02  2.0926e-07  6.1114e-08  6.0233e-08  8.4418e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    35  7.3451e-02  1.3404e-07  4.5914e-08  4.5402e-08  8.5127e-16  0:00:00    0
+Flow time = 0.0003500000000000001s, time step = 7
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    35  7.3451e-02  1.3404e-07  4.5914e-08  4.5402e-08  8.5127e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    36  1.0859e-01  9.0226e-07  1.5115e-07  1.4879e-07  8.6468e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    37  1.0061e-01  5.2738e-07  1.0156e-07  1.0022e-07  8.7689e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    38  9.1596e-02  3.1688e-07  7.1379e-08  7.0551e-08  8.7179e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    39  7.9337e-02  1.9586e-07  5.2797e-08  5.2160e-08  8.7922e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    40  6.6525e-02  1.2419e-07  4.0510e-08  3.9948e-08  8.7628e-16  0:00:00    0
+Flow time = 0.0004000000000000001s, time step = 8
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    40  6.6525e-02  1.2419e-07  4.0510e-08  3.9948e-08  8.7628e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    41  1.0110e-01  8.7446e-07  1.4054e-07  1.3839e-07  8.4443e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    42  9.3703e-02  5.0840e-07  9.4560e-08  9.2911e-08  8.5712e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    43  8.6038e-02  3.0260e-07  6.7738e-08  6.6923e-08  8.5532e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    44  7.4349e-02  1.8556e-07  4.9639e-08  4.9341e-08  8.5505e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    45  6.2396e-02  1.1674e-07  3.8123e-08  3.8020e-08  8.6238e-16  0:00:00    0
+Flow time = 0.0004500000000000001s, time step = 9
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    45  6.2396e-02  1.1674e-07  3.8123e-08  3.8020e-08  8.6238e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    46  9.3544e-02  8.4789e-07  1.3457e-07  1.3128e-07  8.5121e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    47  8.6782e-02  4.9157e-07  8.8396e-08  8.6758e-08  8.7441e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    48  8.0296e-02  2.9066e-07  6.3002e-08  6.2568e-08  8.6773e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    49  7.0045e-02  1.7688e-07  4.7037e-08  4.6809e-08  8.6597e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    50  5.8110e-02  1.1075e-07  3.4960e-08  3.4806e-08  8.6186e-16  0:00:00    0
+Flow time = 0.0005000000000000001s, time step = 10
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    50  5.8110e-02  1.1075e-07  3.4960e-08  3.4806e-08  8.6186e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    51  8.4374e-02  8.2880e-07  1.2622e-07  1.2376e-07  8.3592e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    52  8.1105e-02  4.7946e-07  8.3435e-08  8.2478e-08  8.5327e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    53  7.5018e-02  2.8201e-07  5.8433e-08  5.8073e-08  8.4933e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    54  6.5066e-02  1.7040e-07  4.2937e-08  4.2759e-08  8.5620e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    55  5.4425e-02  1.0590e-07  3.3084e-08  3.2843e-08  8.4923e-16  0:00:00    0
+Flow time = 0.0005500000000000001s, time step = 11
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    55  5.4425e-02  1.0590e-07  3.3084e-08  3.2843e-08  8.4923e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    56  8.2096e-02  8.0767e-07  1.2146e-07  1.1889e-07  8.3551e-16  0:00:06    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    57  7.7056e-02  4.6623e-07  7.9351e-08  7.8189e-08  8.5157e-16  0:00:05    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    58  7.0710e-02  2.7361e-07  5.5844e-08  5.5351e-08  8.5124e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    59  6.1344e-02  1.6508e-07  4.0943e-08  4.0645e-08  8.5433e-16  0:00:02    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    60  5.1397e-02  1.0263e-07  3.0932e-08  3.0778e-08  8.4266e-16  0:00:00    0
+Flow time = 0.0006000000000000002s, time step = 12
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    60  5.1397e-02  1.0263e-07  3.0932e-08  3.0778e-08  8.4266e-16  0:00:08    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    61  7.4801e-02  7.9466e-07  1.1589e-07  1.1468e-07  8.3986e-16  0:00:07    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    62  7.0614e-02  4.5689e-07  7.3849e-08  7.3141e-08  8.4719e-16  0:00:05    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    63  6.4553e-02  2.6704e-07  5.0369e-08  5.0121e-08  8.5049e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    64  5.6067e-02  1.5981e-07  3.6849e-08  3.6649e-08  8.5461e-16  0:00:02    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    65  4.6998e-02  9.8172e-08  2.7923e-08  2.7899e-08  8.5683e-16  0:00:00    0
+Flow time = 0.0006500000000000002s, time step = 13
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    65  4.6998e-02  9.8172e-08  2.7923e-08  2.7899e-08  8.5683e-16  0:00:09    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    66  7.0436e-02  7.8043e-07  1.0682e-07  1.0506e-07  8.5664e-16  0:00:08    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    67  6.7530e-02  4.5009e-07  7.1994e-08  7.1196e-08  8.7566e-16  0:00:06    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    68  6.1305e-02  2.6199e-07  4.8522e-08  4.8304e-08  8.7644e-16  0:00:04    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    69  5.3320e-02  1.5613e-07  3.5243e-08  3.5165e-08  8.8391e-16  0:00:02    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    70  4.4838e-02  9.5382e-08  2.6697e-08  2.6718e-08  8.8234e-16  0:00:00    0
+Flow time = 0.0007000000000000002s, time step = 14
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    70  4.4838e-02  9.5382e-08  2.6697e-08  2.6718e-08  8.8234e-16  0:00:09    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    71  6.6896e-02  7.6281e-07  1.0200e-07  1.0091e-07  8.5197e-16  0:00:07    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    72  6.4574e-02  4.3871e-07  6.7621e-08  6.7273e-08  8.6020e-16  0:00:05    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    73  5.8856e-02  2.5577e-07  4.6573e-08  4.6255e-08  8.6799e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    74  5.1282e-02  1.5195e-07  3.3707e-08  3.3602e-08  8.5790e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    75  4.7183e-02  9.6142e-08  3.2247e-08  3.2180e-08  8.7838e-16  0:00:00    0
+Flow time = 0.0007500000000000002s, time step = 15
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    75  4.7183e-02  9.6142e-08  3.2247e-08  3.2180e-08  8.7838e-16  0:00:07    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    76  6.5514e-02  7.6041e-07  9.7698e-08  9.6540e-08  8.6449e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    77  6.2761e-02  4.3595e-07  6.5191e-08  6.4927e-08  8.8111e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    78  5.7752e-02  2.5226e-07  4.6085e-08  4.5911e-08  8.7563e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    79  5.0211e-02  1.4867e-07  3.4042e-08  3.3939e-08  8.8149e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    80  4.2108e-02  8.9448e-08  2.5743e-08  2.5616e-08  8.7611e-16  0:00:00    0
+Flow time = 0.0008000000000000003s, time step = 16
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    80  4.2108e-02  8.9448e-08  2.5743e-08  2.5616e-08  8.7611e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    81  6.1682e-02  7.3746e-07  9.3199e-08  9.2141e-08  8.7583e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    82  5.8417e-02  4.2223e-07  6.1450e-08  6.0633e-08  8.8184e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    83  5.3512e-02  2.4415e-07  4.1746e-08  4.1189e-08  8.7285e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    84  4.6607e-02  1.4387e-07  3.0428e-08  3.0060e-08  8.7934e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    85  3.9065e-02  8.6551e-08  2.3011e-08  2.2770e-08  8.8264e-16  0:00:00    0
+Flow time = 0.0008500000000000003s, time step = 17
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    85  3.9065e-02  8.6551e-08  2.3011e-08  2.2770e-08  8.8264e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    86  6.0385e-02  7.2721e-07  9.0895e-08  8.8599e-08  8.5992e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    87  5.7225e-02  4.1574e-07  5.9624e-08  5.8347e-08  8.7947e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    88  5.2362e-02  2.4008e-07  4.0866e-08  4.0195e-08  8.6731e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    89  4.5500e-02  1.4128e-07  2.9895e-08  2.9580e-08  8.6847e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    90  3.8023e-02  8.4848e-08  2.2479e-08  2.2368e-08  8.7169e-16  0:00:00    0
+Flow time = 0.0009000000000000003s, time step = 18
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    90  3.8023e-02  8.4848e-08  2.2479e-08  2.2368e-08  8.7169e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    91  5.6407e-02  7.1360e-07  8.7117e-08  8.5258e-08  8.7294e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    92  5.4232e-02  4.0869e-07  5.8116e-08  5.6920e-08  8.8653e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    93  4.9166e-02  2.3583e-07  3.9006e-08  3.8264e-08  8.8795e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    94  4.2613e-02  1.3831e-07  2.8282e-08  2.7914e-08  8.8471e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    95  3.5618e-02  8.2691e-08  2.1280e-08  2.1079e-08  8.9493e-16  0:00:00    0
+Flow time = 0.0009500000000000003s, time step = 19
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+    95  3.5618e-02  8.2691e-08  2.1280e-08  2.1079e-08  8.9493e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    96  5.7481e-02  7.0641e-07  8.5233e-08  8.3266e-08  8.6348e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    97  5.4050e-02  4.0294e-07  5.6486e-08  5.5643e-08  8.8094e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    98  4.8651e-02  2.3190e-07  3.8152e-08  3.7914e-08  8.7899e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+    99  4.2021e-02  1.3581e-07  2.7677e-08  2.7638e-08  8.8889e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   100  3.5058e-02  8.0977e-08  2.0774e-08  2.0807e-08  8.7851e-16  0:00:00    0
+Flow time = 0.001s, time step = 20
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   100  3.5058e-02  8.0977e-08  2.0774e-08  2.0807e-08  8.7851e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   101  5.3672e-02  6.9236e-07  8.2033e-08  8.1152e-08  8.7867e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   102  5.1045e-02  3.9478e-07  5.4043e-08  5.3611e-08  9.0028e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   103  4.6646e-02  2.2685e-07  3.6800e-08  3.6259e-08  8.8869e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   104  4.0816e-02  1.3237e-07  2.7410e-08  2.6924e-08  8.9067e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   105  3.4131e-02  7.8637e-08  2.0750e-08  2.0428e-08  9.0132e-16  0:00:00    0
+Flow time = 0.00105s, time step = 21
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   105  3.4131e-02  7.8637e-08  2.0750e-08  2.0428e-08  9.0132e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   106  5.2004e-02  6.8022e-07  8.0508e-08  7.8893e-08  8.8058e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   107  4.8567e-02  3.8662e-07  5.1676e-08  5.1150e-08  9.0234e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   108  4.4420e-02  2.2149e-07  3.4857e-08  3.4595e-08  8.8688e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   109  3.8395e-02  1.2909e-07  2.5228e-08  2.5074e-08  8.9188e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   110  3.1973e-02  7.6471e-08  1.8878e-08  1.8819e-08  8.9392e-16  0:00:00    0
+Flow time = 0.0011s, time step = 22
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   110  3.1973e-02  7.6471e-08  1.8878e-08  1.8819e-08  8.9392e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   111  5.0050e-02  6.6912e-07  7.7781e-08  7.5587e-08  8.7501e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   112  4.6856e-02  3.7966e-07  5.0635e-08  4.9657e-08  8.9643e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   113  4.3458e-02  2.1711e-07  3.4539e-08  3.4267e-08  8.8239e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   114  3.7784e-02  1.2610e-07  2.5253e-08  2.5236e-08  8.9480e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   115  3.1256e-02  7.4535e-08  1.8692e-08  1.8727e-08  8.9115e-16  0:00:00    0
+Flow time = 0.00115s, time step = 23
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   115  3.1256e-02  7.4535e-08  1.8692e-08  1.8727e-08  8.9115e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   116  4.9965e-02  6.5927e-07  7.5360e-08  7.4949e-08  8.6604e-16  0:00:04    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   117  4.6480e-02  3.7350e-07  4.9789e-08  4.9944e-08  8.8036e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   118  4.2030e-02  2.1358e-07  3.3435e-08  3.3784e-08  8.8003e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   119  3.6266e-02  1.2427e-07  2.4158e-08  2.4435e-08  8.8698e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   120  3.0152e-02  7.3516e-08  1.8024e-08  1.8195e-08  8.9865e-16  0:00:00    0
+Flow time = 0.0012s, time step = 24
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   120  3.0152e-02  7.3516e-08  1.8024e-08  1.8195e-08  8.9865e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   121  4.6955e-02  6.4886e-07  7.3179e-08  7.3133e-08  8.9889e-16  0:00:04    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   122  4.4790e-02  3.6800e-07  4.8229e-08  4.8471e-08  9.2088e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   123  4.0462e-02  2.1050e-07  3.1925e-08  3.2132e-08  9.1330e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   124  3.4637e-02  1.2247e-07  2.2755e-08  2.2834e-08  9.1596e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   125  2.8814e-02  7.2389e-08  1.7114e-08  1.7164e-08  9.1285e-16  0:00:00    0
+Flow time = 0.00125s, time step = 25
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   125  2.8814e-02  7.2389e-08  1.7114e-08  1.7164e-08  9.1285e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   126  4.7303e-02  6.4661e-07  7.1024e-08  7.1164e-08  8.9386e-16  0:00:04    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   127  4.3606e-02  3.6538e-07  4.6952e-08  4.6354e-08  9.0302e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   128  3.9226e-02  2.0834e-07  3.1175e-08  3.0947e-08  9.0364e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   129  3.3741e-02  1.2100e-07  2.2275e-08  2.2189e-08  9.0552e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   130  2.8080e-02  7.1427e-08  1.6621e-08  1.6598e-08  9.1010e-16  0:00:00    0
+Flow time = 0.0013s, time step = 26
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   130  2.8080e-02  7.1427e-08  1.6621e-08  1.6598e-08  9.1010e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   131  4.4710e-02  6.4025e-07  6.9592e-08  6.9712e-08  9.1463e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   132  4.1995e-02  3.6261e-07  4.6174e-08  4.6114e-08  9.2046e-16  0:00:03    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   133  3.7898e-02  2.0673e-07  3.0708e-08  3.0734e-08  9.2698e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   134  3.2816e-02  1.1951e-07  2.2433e-08  2.2443e-08  9.1395e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   135  2.7240e-02  7.0135e-08  1.6683e-08  1.6676e-08  9.2063e-16  0:00:00    0
+Flow time = 0.00135s, time step = 27
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   135  2.7240e-02  7.0135e-08  1.6683e-08  1.6676e-08  9.2063e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   136  4.5780e-02  6.3311e-07  6.9496e-08  6.7673e-08  9.0447e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   137  4.1505e-02  3.5652e-07  4.5493e-08  4.4653e-08  9.2773e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   138  3.7318e-02  2.0307e-07  3.0012e-08  2.9739e-08  9.2028e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   139  3.2198e-02  1.1733e-07  2.1649e-08  2.1536e-08  9.1610e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   140  2.6790e-02  6.8876e-08  1.6260e-08  1.6218e-08  9.3877e-16  0:00:00    0
+Flow time = 0.0014s, time step = 28
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   140  2.6790e-02  6.8876e-08  1.6260e-08  1.6218e-08  9.3877e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   141  4.6096e-02  6.2819e-07  6.7298e-08  6.6183e-08  9.0842e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   142  4.2078e-02  3.5334e-07  4.4995e-08  4.4390e-08  9.2287e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   143  3.7825e-02  2.0086e-07  3.0615e-08  3.0070e-08  9.2955e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   144  3.2507e-02  1.1606e-07  2.2190e-08  2.1787e-08  9.2751e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   145  2.6871e-02  6.8345e-08  1.6477e-08  1.6268e-08  9.3306e-16  0:00:00    0
+Flow time = 0.001449999999999999s, time step = 29
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   145  2.6871e-02  6.8345e-08  1.6477e-08  1.6268e-08  9.3306e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   146  4.4820e-02  6.2035e-07  6.8425e-08  6.7211e-08  9.0642e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   147  4.0389e-02  3.4844e-07  4.4174e-08  4.3450e-08  9.1168e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   148  3.6228e-02  1.9811e-07  2.9436e-08  2.9044e-08  9.1344e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   149  3.0994e-02  1.1461e-07  2.0935e-08  2.0762e-08  9.2279e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   150  2.5736e-02  6.7285e-08  1.5647e-08  1.5515e-08  9.2120e-16  0:00:00    0
+Flow time = 0.001499999999999999s, time step = 30
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   150  2.5736e-02  6.7285e-08  1.5647e-08  1.5515e-08  9.2120e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   151  4.2116e-02  6.1135e-07  6.5863e-08  6.4825e-08  8.9687e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   152  3.7969e-02  3.4336e-07  4.2188e-08  4.1802e-08  9.0588e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   153  3.4164e-02  1.9486e-07  2.7712e-08  2.7543e-08  9.1058e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   154  2.9233e-02  1.1237e-07  1.9791e-08  1.9646e-08  9.1533e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   155  2.4209e-02  6.5762e-08  1.4748e-08  1.4644e-08  9.0490e-16  0:00:00    0
+Flow time = 0.001549999999999999s, time step = 31
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   155  2.4209e-02  6.5762e-08  1.4748e-08  1.4644e-08  9.0490e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   156  4.1518e-02  6.0706e-07  6.3613e-08  6.3350e-08  8.9147e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   157  3.9202e-02  3.4171e-07  4.3810e-08  4.3490e-08  8.9855e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   158  3.4877e-02  1.9439e-07  2.8805e-08  2.8590e-08  9.1791e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   159  2.9724e-02  1.1207e-07  2.0700e-08  2.0510e-08  9.0569e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   160  2.4449e-02  6.5615e-08  1.5258e-08  1.5132e-08  9.1140e-16  0:00:00    0
+Flow time = 0.001599999999999999s, time step = 32
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   160  2.4449e-02  6.5615e-08  1.5258e-08  1.5132e-08  9.1140e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   161  4.1495e-02  6.0864e-07  6.4007e-08  6.3283e-08  9.2250e-16  0:00:06    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   162  3.6722e-02  3.4025e-07  4.1366e-08  4.0836e-08  9.3078e-16  0:00:05    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   163  3.3918e-02  1.9173e-07  2.8683e-08  2.8400e-08  9.3541e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   164  2.9326e-02  1.0963e-07  2.0903e-08  2.0801e-08  9.3967e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   165  2.3969e-02  6.3859e-08  1.5269e-08  1.5242e-08  9.3428e-16  0:00:00    0
+Flow time = 0.001649999999999999s, time step = 33
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   165  2.3969e-02  6.3859e-08  1.5269e-08  1.5242e-08  9.3428e-16  0:00:07    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   166  4.3029e-02  5.9699e-07  6.3333e-08  6.2858e-08  9.2224e-16  0:00:06    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   167  3.7493e-02  3.3362e-07  4.1571e-08  4.1155e-08  9.3881e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   168  3.3709e-02  1.8841e-07  2.8113e-08  2.7923e-08  9.5038e-16  0:00:03    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   169  2.9059e-02  1.0809e-07  2.0326e-08  2.0217e-08  9.3522e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   170  2.3927e-02  6.3037e-08  1.4993e-08  1.4844e-08  9.3352e-16  0:00:00    0
+Flow time = 0.001699999999999999s, time step = 34
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   170  2.3927e-02  6.3037e-08  1.4993e-08  1.4844e-08  9.3352e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   171  4.1167e-02  5.9098e-07  6.3208e-08  6.2069e-08  9.3286e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   172  3.6888e-02  3.2954e-07  4.1630e-08  4.0992e-08  9.5794e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   173  3.3394e-02  1.8558e-07  2.8386e-08  2.7950e-08  9.4857e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   174  2.8504e-02  1.0608e-07  2.0215e-08  1.9970e-08  9.6181e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   175  2.3390e-02  6.1778e-08  1.4781e-08  1.4643e-08  9.5179e-16  0:00:00    0
+Flow time = 0.001749999999999999s, time step = 35
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   175  2.3390e-02  6.1778e-08  1.4781e-08  1.4643e-08  9.5179e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   176  3.9967e-02  5.8171e-07  6.2191e-08  6.1367e-08  9.2186e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   177  3.5503e-02  3.2486e-07  4.1172e-08  4.0817e-08  9.2635e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   178  3.1471e-02  1.8335e-07  2.6928e-08  2.6798e-08  9.3774e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   179  2.6612e-02  1.0497e-07  1.8805e-08  1.8790e-08  9.3300e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   180  2.1947e-02  6.1001e-08  1.3924e-08  1.3973e-08  9.4250e-16  0:00:00    0
+Flow time = 0.001799999999999999s, time step = 36
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   180  2.1947e-02  6.1001e-08  1.3924e-08  1.3973e-08  9.4250e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   181  3.9843e-02  5.8196e-07  6.0365e-08  5.9273e-08  9.3786e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   182  3.6380e-02  3.2460e-07  4.0842e-08  4.0336e-08  9.5369e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   183  3.2634e-02  1.8324e-07  2.7427e-08  2.7341e-08  9.6372e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   184  2.7768e-02  1.0503e-07  1.9693e-08  1.9653e-08  9.5795e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   185  2.2774e-02  6.1168e-08  1.4492e-08  1.4493e-08  9.5721e-16  0:00:00    0
+Flow time = 0.001849999999999999s, time step = 37
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   185  2.2774e-02  6.1168e-08  1.4492e-08  1.4493e-08  9.5721e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   186  3.8661e-02  5.7981e-07  5.9900e-08  5.9638e-08  9.3479e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   187  3.3515e-02  3.2216e-07  3.7981e-08  3.7896e-08  9.5031e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   188  2.9953e-02  1.8095e-07  2.5157e-08  2.5087e-08  9.4767e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   189  2.5867e-02  1.0289e-07  1.8423e-08  1.8422e-08  9.5126e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   190  2.1268e-02  5.9443e-08  1.3645e-08  1.3639e-08  9.4846e-16  0:00:00    0
+Flow time = 0.001899999999999999s, time step = 38
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   190  2.1268e-02  5.9443e-08  1.3645e-08  1.3639e-08  9.4846e-16  0:00:05    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   191  4.0838e-02  5.7221e-07  5.9408e-08  5.9169e-08  9.3111e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   192  3.6957e-02  3.2014e-07  4.1653e-08  4.1790e-08  9.4541e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   193  3.1923e-02  1.8040e-07  2.7138e-08  2.7177e-08  9.5924e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   194  2.6554e-02  1.0255e-07  1.9766e-08  1.9684e-08  9.4258e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   195  2.1796e-02  5.9315e-08  1.4165e-08  1.4025e-08  9.3640e-16  0:00:00    0
+Flow time = 0.001949999999999999s, time step = 39
+Benchmark B overset cell statistics exported.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+   195  2.1796e-02  5.9315e-08  1.4165e-08  1.4025e-08  9.3640e-16  0:00:06    5
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   196  3.7806e-02  5.6809e-07  5.8066e-08  5.9849e-08  9.2438e-16  0:00:05    4
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   197  3.2714e-02  3.1617e-07  3.7736e-08  3.8394e-08  9.4108e-16  0:00:04    3
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   198  2.8852e-02  1.7761e-07  2.4580e-08  2.4809e-08  9.4796e-16  0:00:02    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   199  2.4725e-02  1.0087e-07  1.7546e-08  1.7493e-08  9.4616e-16  0:00:01    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+   200  2.0455e-02  5.8108e-08  1.3139e-08  1.2994e-08  9.4909e-16  0:00:00    0
+Flow time = 0.001999999999999999s, time step = 40
+Benchmark B overset cell statistics exported.
+
+ Domain Extents:
+   x-coordinate: min (m) = -5.000000e-03, max (m) = 5.000000e-03
+   y-coordinate: min (m) = -8.994257e-04, max (m) = 8.994337e-04
+   z-coordinate: min (m) = -8.978076e-04, max (m) = 9.000000e-04
+ Volume statistics:
+   minimum volume (m3): 9.389339e-15
+   maximum volume (m3): 4.294661e-13
+     total volume (m3): 2.854098e-08
+ Face area statistics:
+   minimum face area (m2): 7.098653e-10
+   maximum face area (m2): 1.251475e-08
+ Checking mesh....................................
+ Done.
+
+Writing to Zifeng:"H:\fluent\live_cases\benchmark_B_overset\benchmark_B_prescribed_motion_final.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+      148670 cells,     2 zones ...
+      305034 faces,     7 zones ...
+       41959 nodes,     1 zone  ...
+  Done.
+
+  Writing overset connectivity ...
+  Done.
+Done.
+
+Writing to Zifeng:"H:\fluent\live_cases\benchmark_B_overset\benchmark_B_prescribed_motion_final.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.

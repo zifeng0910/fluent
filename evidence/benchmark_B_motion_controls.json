@@ -1,0 +1,44 @@
+{
+  "children": [
+    "parameters",
+    "pseudo_time_settings",
+    "adaptive_time_stepping",
+    "cfl_based_adaptive_time_stepping",
+    "solution_steering",
+    "time_step_count",
+    "transient_controls",
+    "options",
+    "pollutants",
+    "data_sampling",
+    "data_sampling_options",
+    "residual_verbosity",
+    "compute_resources",
+    "remote_compute"
+  ],
+  "state": {
+    "parameters": {
+      "time_step_count": 0,
+      "time_step_size": 1.0,
+      "max_iter_per_time_step": 20,
+      "reporting_interval": 1,
+      "profile_update_interval": 1
+    },
+    "transient_controls": {
+      "type": "Fixed",
+      "method": "User-Specified",
+      "flow_time": 0,
+      "predict_next": false,
+      "rotating_mesh_flow_predictor": true,
+      "fixed_periodic": {
+        "enabled": false
+      }
+    },
+    "options": {
+      "extrapolate_variables": false
+    },
+    "data_sampling": {
+      "enabled": false
+    },
+    "compute_resources": {}
+  }
+}
