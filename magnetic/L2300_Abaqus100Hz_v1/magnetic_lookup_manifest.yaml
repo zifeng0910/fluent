@@ -1,0 +1,44 @@
+status: ANALYTIC_BASELINE_ONLY
+physical_source_status: PHYSICAL_MAGPYLIB_SOURCE_NOT_UNIQUELY_RECOVERABLE
+magnetic_sphere_example_used: false
+authoritative_frequency_hz: 100
+legacy_frequency_hz: 120
+resolution: source-code precedence
+input_dimensions:
+- COM x
+- COM y
+- COM z
+- orientation SO(3)
+- absolute time
+representation: B(phase) and G(axial) factors; exact quaternion rotation and exact
+  startup/time drift
+position_bounds_m:
+- - -0.004
+  - 0.006
+- - -0.0009
+  - 0.0009
+- - -0.0009
+  - 0.0009
+orientation_bounds: full SO(3), no locked pose
+time_bounds_s:
+- 0
+- 0.05
+phase_bounds_rad:
+- 0
+- 6.283185307179586
+grid_resolution:
+  phase_deg: 0.25
+  source_axial_mm: 0.1
+interpolation: linear position/periodic phase; orientation applied analytically and
+  continuously
+outside_domain: HARD STOP
+coordinate_reference: COM
+torque_reference: COM
+force_units: N
+torque_units: N*m
+coordinate_transform: 'proper rigid coordinate re-expression: original [c,n1,n2] becomes
+  current global [X,Y,Z]; COM0 replaces old RP origin, external relative axial offset
+  preserved'
+transverse_dependence: none in recovered analytic source; not claimed as a physical
+  magnetic field
+benchmark_C_ready: false
