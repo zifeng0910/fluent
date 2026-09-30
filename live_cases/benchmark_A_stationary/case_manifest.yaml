@@ -45,3 +45,14 @@ current_stl_campaign:
   report: evidence/stl_campaign_20260930.md
 tube_fixture: geometry/tube_fixture.yaml
 robot_tube_coordinate_manifest: evidence/robot_tube_coordinate_manifest.json
+
+rough_cfd_campaign:
+  sessions: 4
+  robot_import: PASS
+  tube_surface_import: PASS
+  surface_mesh: FAIL
+  failure: Fluent Watertight surface remesh reports 2 free nodes; disabling remesh then requires undocumented Labels argument
+  fluid_region: NOT_REACHED
+  volume_mesh: NOT_REACHED
+  solver: NOT_REACHED
+  animations: NOT_GENERATED

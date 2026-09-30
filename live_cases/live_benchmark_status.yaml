@@ -3,7 +3,7 @@ fluent_version: Ansys Fluent 2026 R1
 fluent_build: 261
 pyfluent_version: 0.42.1
 python_version: 3.13.5
-benchmark_A: BLOCKED
+benchmark_A: BLOCKED_AT_WATERTIGHT_SURFACE_MESH
 benchmark_B: NOT_ATTEMPTED
 benchmark_C: NOT_ATTEMPTED
 benchmark_D: NOT_ATTEMPTED
@@ -17,7 +17,7 @@ peak_Ffluid: NOT_AVAILABLE
 peak_Tfluid: NOT_AVAILABLE
 mass_imbalance: NOT_AVAILABLE
 lookup_extrapolation: NONE (no transient run)
-main_failure_or_bottleneck: no confirmed Fluent 2026 R1 native cylinder fixture schema; campaign launch budget exhausted
+main_failure_or_bottleneck: Fluent Watertight surface workflow free-node repair and undocumented Labels argument
 animations: NOT_GENERATED
 key_output_files:
   - H:/fluent/live_cases/benchmark_A_stationary/open_pipe_robot_coarse.msh

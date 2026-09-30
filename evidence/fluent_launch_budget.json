@@ -1,5 +1,5 @@
 {
-  "campaign": "STL_MESH_IMPORT_CORRECT_API",
-  "launches": 2,
-  "maximum": 2
+  "campaign": "STATIONARY_CFD_ROUGH_RUN_20260930",
+  "launches": 4,
+  "maximum": 5
 }
