@@ -1,0 +1,155 @@
+{
+  "campaign": "BENCHMARK_BC_OVERSET_MAGPYLIB_6DOF",
+  "status": "FAIL",
+  "lookup_disposition": "REGENERATE_REQUIRED; existing table must not be hooked to current 6DOF",
+  "operating_frequency_hz": 100.0,
+  "legacy_metadata_frequency_hz": 120.0,
+  "frequency_audit": "SI port phase=36000*time_s proves 100 Hz; 120 Hz metadata is stale",
+  "authoritative": {
+    "robot": "Robot_L2300_D0815_WallWobble",
+    "axis_global": "+X from nose tip to flat tail",
+    "mass_kg": 8.904428864007322e-06,
+    "com_m": [
+      0.0012060186937156343,
+      -1.3691966254517852e-19,
+      5.543367561281285e-21
+    ],
+    "inertia_kg_m2_global_xyz": [
+      7.257810693523446e-13,
+      3.929384741151496e-12,
+      3.92938474115149e-12
+    ],
+    "magnetic_moment_Am2": 0.0010400401426980412
+  },
+  "existing_lookup": {
+    "backend": "audited_magnetic_table_si",
+    "magpylib_runtime": false,
+    "geometry_source": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\F100_G2P20_NOFLUID_REALWALL50\\magnetic_field_gradient_table_B0P11_A14P5.dat",
+    "robot_mass_source": "evidence/F100_G2P20_NOFLUID_REALWALL50/geometry_audit.json",
+    "pose_reference": "Abaqus RP / lookup pose origin",
+    "torque_reference": "T_COM = T_RP + cross(r_COM_from_RP, F)",
+    "force_unit": "N",
+    "torque_unit": "N*m",
+    "position_unit": "m",
+    "angle_unit": "rad",
+    "position_range_m": {
+      "x": [
+        -0.002,
+        0.002
+      ],
+      "y": [
+        -0.002,
+        0.002
+      ],
+      "z": [
+        -0.004,
+        0.004
+      ]
+    },
+    "orientation_range_rad": {
+      "roll": [
+        -0.2,
+        0.2
+      ],
+      "pitch": [
+        -0.2,
+        0.2
+      ],
+      "yaw": [
+        -0.2,
+        0.2
+      ]
+    },
+    "phase_range_deg": [
+      0.0,
+      360.0
+    ],
+    "records_manifest": 103275,
+    "csv_columns": [
+      "x",
+      "y",
+      "z",
+      "roll",
+      "pitch",
+      "yaw",
+      "phase",
+      "Fx",
+      "Fy",
+      "Fz",
+      "Tx",
+      "Ty",
+      "Tz"
+    ],
+    "csv_first_record": [
+      -0.002,
+      -0.002,
+      -0.004,
+      -0.2,
+      -0.2,
+      -0.2,
+      0.0,
+      0.0,
+      -0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "npz_data_shape": [
+      103275,
+      13
+    ],
+    "npz_columns": [
+      "x",
+      "y",
+      "z",
+      "roll",
+      "pitch",
+      "yaw",
+      "phase",
+      "Fx",
+      "Fy",
+      "Fz",
+      "Tx",
+      "Ty",
+      "Tz"
+    ],
+    "legacy_moment_vector_Am2": [
+      -0.001061824299255672,
+      6.72499168508204e-05,
+      -0.000225676452654195
+    ],
+    "legacy_moment_magnitude_Am2": 0.001087622754032308,
+    "sha256": {
+      "manifest": "930e9e7e1f7cf612df72863702395b00574f0595c9de311da9a4041badc7f7e8",
+      "csv": "174277c6bbba223f79a9f6d88d839a3ee90b1748257107d1046b8520de0bb84e",
+      "npz": "3fb3e39c3a2c6796f3cef25cb16d843bfa04ea292f6a471adefbd8e21963ad97"
+    }
+  },
+  "identity_findings": [
+    "Existing lookup references an Abaqus RP/old load model, not the current +X CAD robot pose.",
+    "Legacy moment vector magnitude differs from current volume-derived authoritative moment.",
+    "External field source provenance and pose transform for the current robot are not established.",
+    "Manifest torque reference formula has the opposite sign to the requested T_COM = T_RP + (r_RP-r_COM) x F when r_COM_from_RP means COM minus RP.",
+    "Mass mismatch alone would not require magnetic table regeneration; magnetic model identity mismatch does."
+  ],
+  "udf_findings": {
+    "nearest_neighbor_only": true,
+    "orientation_and_phase_interpolation": false,
+    "hard_coverage_gate": false,
+    "current_com_torque_transform": false,
+    "safe_to_compile_and_hook": false
+  },
+  "source_confirms_100hz": true,
+  "conversion_gate": {
+    "mg_to_kg": 1e-06,
+    "mg_mm2_to_kg_m2": 1e-12,
+    "mm_to_m": 0.001,
+    "force": "N",
+    "torque": "N m",
+    "angles": "rad",
+    "angular_velocity": "rad/s"
+  },
+  "coverage_policy": "HARD STOP on any out-of-domain pose, without clamp/extrapolation/nearest substitution",
+  "required_next_step": "Build a versioned Magpylib table for the current +X robot and verify field-source identity and RP/COM transform before UDF coupling."
+}
