@@ -1,0 +1,44 @@
+{
+  "route": "BENCHMARK_A_ROUTE_D_PYPRIME_NATIVE",
+  "prime_version": "0.10.0",
+  "step_import": "PASS",
+  "parts": 1,
+  "topo_volumes": 1,
+  "topo_faces": 6,
+  "bbox_mm": "(-5,-0.899452,-0.897808)..(5,0.899452,0.9)",
+  "boundary_labels": {
+    "robot_wall": "faces 5,6,7",
+    "inlet": "face 4",
+    "pipe_wall": "face 2",
+    "outlet": "face 3"
+  },
+  "surface_mesh": {
+    "tri_faces": 16842,
+    "nodes": 8425,
+    "unmeshed_topofaces": 0
+  },
+  "volume_mesh": {
+    "expected_mm3": 24.3066324717,
+    "cell_zone_type": "FLUID",
+    "cell_zonelets": 1,
+    "relative_error_percent": 0.452,
+    "cells": 212768,
+    "volume_mm3": 24.19672
+  },
+  "cas_h5": "PASS",
+  "msh_h5": "PASS",
+  "fluent_import_artifact": "CAS.H5",
+  "fluent_cell_zones": 1,
+  "fluent_boundaries": {
+    "robot_wall": "wall",
+    "inlet": "velocity-inlet",
+    "pipe_wall": "wall",
+    "outlet": "pressure-outlet"
+  },
+  "mesh_check": "PASS; errors=0; warnings=0",
+  "benchmark_A": "PASS; 30 steps x 50 us, 10 iterations/step, zero inlet velocity",
+  "rough_flow": "PASS; 60 steps x 50 us to 4.5 ms, inlet velocity 0.01 m/s",
+  "velocity_gif": "NOT_GENERATED",
+  "pressure_gif": "NOT_GENERATED",
+  "remaining_blocker": "Headless graphics frame export/GIF automation not completed"
+}
