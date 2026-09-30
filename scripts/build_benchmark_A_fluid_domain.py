@@ -13,7 +13,7 @@ robot = gmsh.model.occ.importShapes(str(src), highestDimOnly=True)
 gmsh.model.occ.synchronize()
 cyl = gmsh.model.occ.addCylinder(x0, 0, 0, L, 0, 0, R)
 gmsh.model.occ.synchronize()
-fluid, _ = gmsh.model.occ.cut([(3, cyl)], robot, removeObject=True, removeTool=False)
+fluid, _ = gmsh.model.occ.cut([(3, cyl)], robot, removeObject=True, removeTool=True)
 gmsh.model.occ.synchronize()
 vols = [tag for dim, tag in fluid if dim == 3]
 if len(vols) != 1: raise RuntimeError(f"expected one fluid solid, got {fluid}")

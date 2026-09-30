@@ -57,7 +57,7 @@ async def main():
         return data
     try:
         budget=json.loads(BUDGET.read_text()) if BUDGET.exists() else {'campaign':'single_session_STL_20260930','launches':0,'maximum':3}
-        if budget['launches']>=budget['maximum']:raise RuntimeError('LAUNCH_BUDGET_EXHAUSTED')
+        if budget.get('maximum') is not None and budget['launches']>=budget['maximum']:raise RuntimeError('LAUNCH_BUDGET_EXHAUSTED')
         os.environ['PROCESSOR_ARCHITECTURE']='AMD64'
         child=json.loads(subprocess.check_output([sys.executable,'-c','import os,json;print(json.dumps({k:os.environ.get(k) for k in ["PROCESSOR_ARCHITECTURE","PROCESSOR_IDENTIFIER","ProgramFiles"]}))'],text=True))
         (E/'fluent_launch_environment.json').write_text(json.dumps({'parent':{k:os.environ.get(k) for k in child},'child':child,'python_architecture':platform.architecture(),'ansys_path':'H:/Program Files/ANSYS Inc/v261','ui_mode':'no_gui'},indent=2))

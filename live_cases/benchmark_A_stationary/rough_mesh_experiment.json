@@ -1,8 +1,8 @@
 {
-  "purpose": "REGION_IDENTITY_COMBINED_STL_TO_BENCHMARK_A",
-  "input": "geometry/robot_plus_tube_combined.stl",
+  "purpose": "BENCHMARK_A_FLUID_CAD_IMPORT_GATE schema and readback",
+  "input": "geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
   "step_timeout": 180,
   "codes": [
-    "wf=solver.watertight(legacy=True); t=wf.import_geometry; t.arguments.update_dict({'file_format':'Mesh'}); t.arguments.update_dict({'mesh_file_name':r'H:/fluent/geometry/robot_plus_tube_combined.stl','mesh_unit':'mm'}); t.execute(); sm=wf.create_surface_mesh; sm.arguments.update_dict({'cfd_surface_mesh_controls':{'remesh_imported_mesh':'None'}}); sm.execute(); wf.create_regions.execute(); u=solver.meshing_utilities; print('REGIONS_RAW',u.get_regions()); print('ZONE_NAMES',u.get_zones()); print('FACE_ZONES',u.get_face_zones()); print('ZONE_STATE',u.get_state())"
+    "wf=solver.watertight(legacy=True); t=wf.import_geometry; t.arguments.update_dict({'file_format':'CAD'}); t.arguments.update_dict({'file_name':r'H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step'}); t.arguments.update_dict({'length_unit':'mm'}); print('READBACK',t.arguments._task.get_state()); t.execute(); print('AFTER',t.get_state())"
   ]
 }

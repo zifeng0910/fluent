@@ -1,0 +1,16 @@
+{
+  "campaign": "BENCHMARK_A_FLUID_CAD_IMPORT_GATE",
+  "task": "Import Geometry",
+  "command": "ImportGeometry",
+  "confirmed_arguments": {
+    "FileFormat": "CAD",
+    "FileName": "H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
+    "LengthUnit": "mm"
+  },
+  "observed_readback_keys": [
+    "FileFormat",
+    "FileName",
+    "LengthUnit",
+    "NumParts"
+  ]
+}

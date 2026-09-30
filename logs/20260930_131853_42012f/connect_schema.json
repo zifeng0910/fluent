@@ -1,0 +1,138 @@
+[
+  {
+    "name": "connect",
+    "title": "Connect",
+    "description": "Connect the solve leaf to a backend. Available backend kinds: ['pyfluent']. Pass `backend_kind` to choose, or omit it to auto-select. Backend-specific options (url/token/ip/port/...) go in `connect_kwargs` as a dict and are forwarded to the backend.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "backend_kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Backend kind to select from the configured backends."
+        },
+        "connect_kwargs": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Backend-specific connection options."
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "description": "Result of a ``connect`` call.",
+      "properties": {
+        "status": {
+          "enum": [
+            "ok",
+            "needs_selection",
+            "error"
+          ],
+          "type": "string"
+        },
+        "backend_kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "endpoint": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "candidates": {
+          "items": {
+            "description": "Minimal connection descriptor surfaced to clients/UI for selection.",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "backend_kind": {
+                "type": "string"
+              },
+              "endpoint": {
+                "type": "string"
+              },
+              "extra": {
+                "additionalProperties": true,
+                "type": "object"
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "backend_kind",
+              "endpoint"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "message": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  }
+]

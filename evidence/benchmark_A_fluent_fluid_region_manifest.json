@@ -1,0 +1,31 @@
+{
+  "campaign": "BENCHMARK_A_FLUID_CAD_IMPORT_GATE",
+  "fluent_version": "Ansys Fluent 2026 R1",
+  "headless": true,
+  "processor_architecture": "AMD64",
+  "cad_source": "geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
+  "cad_sha256": "33aabfa334ff75601fd1e1b064f90a4414ca64b9e01f85573cb878f54df9fab7",
+  "file_format": "CAD",
+  "length_unit": "mm",
+  "cad_import": "PASS",
+  "imported_object_count": 1,
+  "imported_body_count": 1,
+  "bbox_mm": [
+    -5.0,
+    -0.9,
+    -0.9,
+    5.0,
+    0.9,
+    0.9
+  ],
+  "expected_bbox_mm": [
+    10.0,
+    1.8,
+    1.8
+  ],
+  "surface_mesh": "NOT RUN",
+  "regions": "NOT RUN",
+  "volume_mesh": "NOT RUN",
+  "solver": "NOT RUN",
+  "remaining_blocker": "CAD import gate passed; surface/region verification is next campaign step"
+}
