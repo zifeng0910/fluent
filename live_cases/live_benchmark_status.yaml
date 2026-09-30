@@ -17,8 +17,9 @@ peak_Ffluid: NOT_AVAILABLE
 peak_Tfluid: NOT_AVAILABLE
 mass_imbalance: NOT_AVAILABLE
 lookup_extrapolation: NONE (no transient run)
-main_failure_or_bottleneck: mesh_import
+main_failure_or_bottleneck: fluent_meshing_headless_import
 animations: NOT_GENERATED
 key_output_files:
   - H:/fluent/live_cases/benchmark_A_stationary/open_pipe_robot_coarse.msh
   - H:/fluent/live_cases/benchmark_A_stationary/case_manifest.yaml
+  - H:/fluent/evidence/freecad_fluent_import.md

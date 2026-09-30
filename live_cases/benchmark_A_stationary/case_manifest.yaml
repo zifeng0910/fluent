@@ -1,5 +1,5 @@
 name: benchmark_A_stationary
-status: BLOCKED_AT_MESH_IMPORT
+status: BLOCKED_AT_FLUENT_MESHING_IMPORT
 solver:
   fluent_version: Ansys Fluent 2026 R1
   fluent_build: 261
@@ -8,6 +8,10 @@ solver:
   pyfluent: 0.42.1
   mcp: ansys/pyfluent-mcp local checkout c966560cdbcff631bb5c5684ae040898199781d1
 connection: PASS
+geometry:
+  source: freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble.step
+  cad_gate: PASS
+  dimensions_mm: [2.3, 0.815, 0.815]
 mesh:
   source: open_pipe_robot_coarse.msh
   generator: scripts/create_coarse_pipe_mesh.py
@@ -16,7 +20,10 @@ mesh:
   physical_groups: [fluid, robot_wall, inlet, outlet, pipe_wall]
   mcp_import: FAIL
   fluent_error: Null Domain Pointer
+  cgns_route: FAIL_same_Null_Domain_Pointer
+  watertight_new_workflow: FAIL_Cortex_segmentation_violation
+  watertight_legacy_step_import: BLOCKED_execute_hang
 boundary_audit: NOT_REACHED
 benchmark_A: NOT_RUN
 failure_layer: mesh_import
-next_change: convert the Gmsh mesh to a Fluent-native case/mesh format, then retry only mesh import
+next_change: repair Fluent 2026 R1 headless Meshing ImportGeometry/workflow execution, then generate native volume mesh
