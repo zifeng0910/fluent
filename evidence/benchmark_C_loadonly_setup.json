@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "gravity_g_m_s2": [
+    0,
+    0,
+    0
+  ],
+  "motion_mode": "all six DOFs frozen",
+  "dt_s": 2.5e-05,
+  "duration_s": 0.0011,
+  "orientation_test_only_deg": 17.0,
+  "orientation_test_axis": [
+    0.36,
+    0.48,
+    0.8
+  ],
+  "component_state": {
+    "name": "dynamic-zone-1",
+    "zone": "robot_component_fluid",
+    "type": "rigid-body",
+    "motion": {
+      "motion_def": "l2300_magnetic_load_validation::libbenchmark_C",
+      "six_dof": {
+        "enabled": true,
+        "passive": true
+      },
+      "relative_motion": {
+        "enabled": false
+      },
+      "rigid_body_properties": {
+        "cg_position": [
+          0.0012060186937156343,
+          0.0,
+          0.0
+        ],
+        "orientation": {
+          "angle": 17.0,
+          "axis": [
+            0.36,
+            0.48,
+            0.8
+          ]
+        },
+        "cg_velocity": [
+          0,
+          0,
+          0
+        ],
+        "angular_velocity": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "wall_state": {
+    "name": "dynamic-zone-2",
+    "zone": "robot_wall",
+    "type": "rigid-body",
+    "motion": {
+      "motion_def": "l2300_magnetic_load_validation::libbenchmark_C",
+      "six_dof": {
+        "enabled": true,
+        "passive": false
+      },
+      "exclude_motion_bc": false,
+      "relative_motion": {
+        "enabled": false
+      },
+      "rigid_body_properties": {
+        "cg_position": [
+          0.0012060186937156343,
+          0.0,
+          0.0
+        ],
+        "orientation": {
+          "angle": 17.0,
+          "axis": [
+            0.36,
+            0.48,
+            0.8
+          ]
+        },
+        "cg_velocity": [
+          0,
+          0,
+          0
+        ],
+        "angular_velocity": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "meshing": {
+      "adjacent_zones": {
+        "t0": {
+          "type": "constant",
+          "height": 0
+        }
+      }
+    },
+    "solver": {
+      "stabilization": {
+        "enabled": false
+      }
+    }
+  },
+  "time_parameters": {
+    "time_step_count": 0,
+    "time_step_size": 2.5e-05,
+    "max_iter_per_time_step": 5,
+    "reporting_interval": 1,
+    "profile_update_interval": 1
+  },
+  "gravity_sixdof": {
+    "enabled": true,
+    "gravity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "write_motion_history": false,
+    "basename": "H:\\fluent\\live_cases\\benchmark_B_overset\\benchmark_B_overset_workflow",
+    "second_order": true,
+    "sdof_properties": {}
+  },
+  "gravity_flow": {
+    "enable": false
+  },
+  "boundary_conditions": {
+    "inlet": {
+      "name": "inlet",
+      "momentum": {
+        "reference_frame": "Absolute",
+        "gauge_total_pressure": {
+          "option": "value",
+          "value": 0
+        },
+        "supersonic_or_initial_gauge_pressure": {
+          "option": "value",
+          "value": 0
+        },
+        "direction_specification_method": "Normal to Boundary",
+        "prevent_reverse_flow": false
+      },
+      "thermal": {
+        "total_temperature": {
+          "option": "value",
+          "value": 300
+        }
+      }
+    },
+    "outlet": {
+      "name": "outlet",
+      "momentum": {
+        "backflow_reference_frame": "Absolute",
+        "gauge_pressure": {
+          "option": "value",
+          "value": 0
+        },
+        "pressure_profile_multiplier": 1.0,
+        "backflow_dir_spec_method": "Normal to Boundary",
+        "backflow_pressure_spec": "Total Pressure",
+        "prevent_reverse_flow": false,
+        "radial_equ_pressure_distribution": false,
+        "avg_pressure_spec": false,
+        "target_mass_flow_rate": false
+      },
+      "thermal": {
+        "backflow_total_temperature": {
+          "option": "value",
+          "value": 300
+        }
+      }
+    },
+    "pipe_wall": {
+      "name": "pipe_wall",
+      "momentum": {
+        "wall_motion": "Stationary Wall",
+        "shear_condition": "No Slip"
+      },
+      "thermal": {
+        "thermal_condition": "Heat Flux",
+        "material": "aluminum",
+        "heat_flux": {
+          "option": "value",
+          "value": 0
+        },
+        "wall_thickness": {
+          "option": "value",
+          "value": 0
+        },
+        "heat_generation_rate": {
+          "option": "value",
+          "value": 0
+        },
+        "enable_shell_conduction": false,
+        "caf": {
+          "option": "value",
+          "value": 1
+        }
+      }
+    },
+    "robot_wall": {
+      "name": "robot_wall",
+      "momentum": {
+        "wall_motion": "Stationary Wall",
+        "shear_condition": "No Slip"
+      },
+      "thermal": {
+        "thermal_condition": "Heat Flux",
+        "material": "aluminum",
+        "heat_flux": {
+          "option": "value",
+          "value": 0
+        },
+        "wall_thickness": {
+          "option": "value",
+          "value": 0
+        },
+        "heat_generation_rate": {
+          "option": "value",
+          "value": 0
+        },
+        "enable_shell_conduction": false,
+        "caf": {
+          "option": "value",
+          "value": 1
+        }
+      }
+    }
+  },
+  "wall_hook_allowed": [
+    "l2300_magnetic_6dof::libbenchmark_C",
+    "l2300_magnetic_load_validation::libbenchmark_C"
+  ]
+}

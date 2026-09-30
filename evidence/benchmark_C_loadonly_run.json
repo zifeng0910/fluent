@@ -1,0 +1,1588 @@
+{
+  "status": "LOAD_ONLY_SOLVED",
+  "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
+  "load_only": true,
+  "requested_steps": 44,
+  "dt_s": 2.5e-05,
+  "duration_s": 0.0011,
+  "orientation_test_deg": 17.0,
+  "gravity_g_m_s2": [
+    0,
+    0,
+    0
+  ],
+  "six_dof_all_frozen": true,
+  "compile": "PASS",
+  "library": "libbenchmark_C_v4",
+  "parameters_before": {
+    "time_step_count": 0,
+    "time_step_size": 2.5e-05,
+    "max_iter_per_time_step": 1,
+    "reporting_interval": 1,
+    "profile_update_interval": 1
+  },
+  "zone_states_before": {
+    "robot_component_fluid": {
+      "name": "dynamic-zone-1",
+      "zone": "robot_component_fluid",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_load_validation::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": true
+        },
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0,
+            0
+          ],
+          "orientation": {
+            "angle": 0.29670597283903605,
+            "axis": [
+              0.36,
+              0.4799999999999999,
+              0.8
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "robot_wall": {
+      "name": "dynamic-zone-2",
+      "zone": "robot_wall",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_load_validation::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": false
+        },
+        "exclude_motion_bc": false,
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0,
+            0
+          ],
+          "orientation": {
+            "angle": 0.29670597283903605,
+            "axis": [
+              0.36,
+              0.4799999999999999,
+              0.8
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "meshing": {
+        "adjacent_zones": {
+          "t0": {
+            "type": "constant",
+            "height": 0
+          }
+        }
+      },
+      "solver": {
+        "stabilization": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "gravity_flow": {
+    "enable": false
+  },
+  "gravity_sixdof": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "overset_initial": {
+    "time_s": 0,
+    "zones": [
+      {
+        "id": 1,
+        "name": "background_water",
+        "total": 127360,
+        "solve": 117260,
+        "donor": 8348,
+        "receptor": 1609,
+        "orphan": 0,
+        "receptors_without_donors": 0,
+        "min_volume_m3": 1.627492100914742e-14
+      },
+      {
+        "id": 2,
+        "name": "robot_component_fluid",
+        "total": 21310,
+        "solve": 18114,
+        "donor": 5358,
+        "receptor": 3050,
+        "orphan": 0,
+        "receptors_without_donors": 0,
+        "min_volume_m3": 9.389339107306568e-15
+      }
+    ]
+  },
+  "initial_robot_wall_bbox_centroid": [
+    [
+      0.0,
+      -0.00040740217082202435,
+      -0.00040731317130848765
+    ],
+    [
+      0.002300000051036477,
+      0.00040749998879618943,
+      0.0004072554293088615
+    ],
+    [
+      0.0012048345138483154,
+      3.6308741536367617e-06,
+      -2.6880766522834945e-06
+    ]
+  ],
+  "initial_robot_component_bbox_centroid": [
+    [
+      -0.0005000000237487257,
+      -0.000649857975076884,
+      -0.000649459077976644
+    ],
+    [
+      0.00279999990016222,
+      0.0006498052971437573,
+      0.0006500000017695129
+    ],
+    [
+      0.0011573145900368772,
+      -3.944240203642268e-08,
+      1.6711435384173297e-05
+    ]
+  ],
+  "overset_samples": [
+    {
+      "step": 1,
+      "time_s": 2.5e-05,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "time_s": 5e-05,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "time_s": 7.500000000000001e-05,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "time_s": 0.0001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "time_s": 0.000125,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "time_s": 0.00015000000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "time_s": 0.00017500000000000003,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "time_s": 0.00020000000000000004,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 9,
+      "time_s": 0.00022500000000000005,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 10,
+      "time_s": 0.00025000000000000006,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 11,
+      "time_s": 0.00027500000000000007,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "time_s": 0.0003000000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 13,
+      "time_s": 0.0003250000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 14,
+      "time_s": 0.0003500000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 15,
+      "time_s": 0.0003750000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "time_s": 0.00040000000000000013,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 17,
+      "time_s": 0.00042500000000000014,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 18,
+      "time_s": 0.00045000000000000015,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 19,
+      "time_s": 0.00047500000000000016,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 20,
+      "time_s": 0.0005000000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 21,
+      "time_s": 0.0005250000000000001,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 22,
+      "time_s": 0.00055,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 23,
+      "time_s": 0.000575,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 24,
+      "time_s": 0.0006,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 25,
+      "time_s": 0.0006249999999999999,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 26,
+      "time_s": 0.0006499999999999999,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 27,
+      "time_s": 0.0006749999999999998,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 28,
+      "time_s": 0.0006999999999999998,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 29,
+      "time_s": 0.0007249999999999997,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 30,
+      "time_s": 0.0007499999999999997,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 31,
+      "time_s": 0.0007749999999999996,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 32,
+      "time_s": 0.0007999999999999996,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 33,
+      "time_s": 0.0008249999999999996,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 34,
+      "time_s": 0.0008499999999999995,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 35,
+      "time_s": 0.0008749999999999995,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 36,
+      "time_s": 0.0008999999999999994,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 37,
+      "time_s": 0.0009249999999999994,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 38,
+      "time_s": 0.0009499999999999993,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 39,
+      "time_s": 0.0009749999999999993,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 40,
+      "time_s": 0.0009999999999999994,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 41,
+      "time_s": 0.0010249999999999994,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 42,
+      "time_s": 0.0010499999999999995,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 43,
+      "time_s": 0.0010749999999999996,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    },
+    {
+      "step": 44,
+      "time_s": 0.0010999999999999996,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "zones": [
+        {
+          "id": 1,
+          "name": "background_water",
+          "total": 127360,
+          "solve": 117260,
+          "donor": 8348,
+          "receptor": 1609,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 1.627492100914742e-14
+        },
+        {
+          "id": 2,
+          "name": "robot_component_fluid",
+          "total": 21310,
+          "solve": 18114,
+          "donor": 5358,
+          "receptor": 3050,
+          "orphan": 0,
+          "receptors_without_donors": 0,
+          "min_volume_m3": 9.389339107306568e-15
+        }
+      ]
+    }
+  ],
+  "overset_peak_orphans": 0,
+  "overset_end": {
+    "step": 44,
+    "time_s": 0.0010999999999999996,
+    "orphan_count": 0,
+    "receptors_without_donors": 0,
+    "zones": [
+      {
+        "id": 1,
+        "name": "background_water",
+        "total": 127360,
+        "solve": 117260,
+        "donor": 8348,
+        "receptor": 1609,
+        "orphan": 0,
+        "receptors_without_donors": 0,
+        "min_volume_m3": 1.627492100914742e-14
+      },
+      {
+        "id": 2,
+        "name": "robot_component_fluid",
+        "total": 21310,
+        "solve": 18114,
+        "donor": 5358,
+        "receptor": 3050,
+        "orphan": 0,
+        "receptors_without_donors": 0,
+        "min_volume_m3": 9.389339107306568e-15
+      }
+    ]
+  },
+  "final_robot_wall_bbox_centroid": [
+    [
+      0.0,
+      -0.00040740217082202435,
+      -0.00040731317130848765
+    ],
+    [
+      0.002300000051036477,
+      0.00040749998879618943,
+      0.0004072554293088615
+    ],
+    [
+      0.0012048345138483154,
+      3.6308741536367617e-06,
+      -2.6880766522834945e-06
+    ]
+  ],
+  "final_robot_component_bbox_centroid": [
+    [
+      -0.0005000000237487257,
+      -0.000649857975076884,
+      -0.000649459077976644
+    ],
+    [
+      0.00279999990016222,
+      0.0006498052971437573,
+      0.0006500000017695129
+    ],
+    [
+      0.0011573145900368772,
+      -3.944240203642268e-08,
+      1.6711435384173297e-05
+    ]
+  ],
+  "time_state_after": {
+    "type": "Fixed",
+    "method": "User-Specified",
+    "flow_time": 0.0011,
+    "predict_next": false,
+    "rotating_mesh_flow_predictor": true,
+    "fixed_periodic": {
+      "enabled": false
+    }
+  },
+  "load_history_csv": "H:\\fluent\\evidence\\benchmark_C_udf_load_validation.csv",
+  "solver_transcript": "\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     1  1.0000e+00  2.6700e-06  1.7005e-06  1.6971e-06  8.7451e-16  0:00:00    0\nFlow time = 2.5e-05s, time step = 1\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     1  1.0000e+00  2.6700e-06  1.7005e-06  1.6971e-06  8.7451e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     2  6.5610e-01  2.1864e-06  1.1511e-06  1.1445e-06  6.9724e-16  0:00:00    0\nFlow time = 5e-05s, time step = 2\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     2  6.5610e-01  2.1864e-06  1.1511e-06  1.1445e-06  6.9724e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     3  5.2694e-01  1.8291e-06  7.8356e-07  7.7665e-07  6.7000e-16  0:00:00    0\nFlow time = 7.500000000000001e-05s, time step = 3\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     3  5.2694e-01  1.8291e-06  7.8356e-07  7.7665e-07  6.7000e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     4  4.7639e-01  1.5436e-06  6.1103e-07  6.0571e-07  6.6819e-16  0:00:00    0\nFlow time = 0.0001s, time step = 4\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     4  4.7639e-01  1.5436e-06  6.1103e-07  6.0571e-07  6.6819e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     5  3.8477e-01  1.3786e-06  4.8086e-07  4.7684e-07  6.4815e-16  0:00:00    0\nFlow time = 0.000125s, time step = 5\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     5  3.8477e-01  1.3786e-06  4.8086e-07  4.7684e-07  6.4815e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     6  3.8355e-01  1.2992e-06  4.3480e-07  4.3271e-07  6.4947e-16  0:00:00    0\nFlow time = 0.00015s, time step = 6\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     6  3.8355e-01  1.2992e-06  4.3480e-07  4.3271e-07  6.4947e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     7  3.2942e-01  1.2309e-06  3.7274e-07  3.7007e-07  6.5814e-16  0:00:00    0\nFlow time = 0.000175s, time step = 7\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     7  3.2942e-01  1.2309e-06  3.7274e-07  3.7007e-07  6.5814e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     8  2.8935e-01  1.1774e-06  3.3048e-07  3.2831e-07  6.5076e-16  0:00:00    0\nFlow time = 0.0002s, time step = 8\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     8  2.8935e-01  1.1774e-06  3.3048e-07  3.2831e-07  6.5076e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n     9  2.6212e-01  1.1268e-06  3.0451e-07  3.0291e-07  6.4811e-16  0:00:00    0\nFlow time = 0.000225s, time step = 9\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n     9  2.6212e-01  1.1268e-06  3.0451e-07  3.0291e-07  6.4811e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    10  2.4440e-01  1.0860e-06  2.9001e-07  2.8846e-07  6.5353e-16  0:00:00    0\nFlow time = 0.0002500000000000001s, time step = 10\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    10  2.4440e-01  1.0860e-06  2.9001e-07  2.8846e-07  6.5353e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    11  2.3295e-01  1.0651e-06  2.8110e-07  2.7876e-07  6.5781e-16  0:00:00    0\nFlow time = 0.0002750000000000001s, time step = 11\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    11  2.3295e-01  1.0651e-06  2.8110e-07  2.7876e-07  6.5781e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    12  2.2011e-01  1.0498e-06  2.7160e-07  2.6851e-07  6.5212e-16  0:00:00    0\nFlow time = 0.0003000000000000001s, time step = 12\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    12  2.2011e-01  1.0498e-06  2.7160e-07  2.6851e-07  6.5212e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    13  2.0986e-01  1.0375e-06  2.6391e-07  2.6065e-07  6.5045e-16  0:00:00    0\nFlow time = 0.0003250000000000001s, time step = 13\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    13  2.0986e-01  1.0375e-06  2.6391e-07  2.6065e-07  6.5045e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    14  1.9839e-01  1.0281e-06  2.5594e-07  2.5263e-07  6.5038e-16  0:00:00    0\nFlow time = 0.0003500000000000001s, time step = 14\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    14  1.9839e-01  1.0281e-06  2.5594e-07  2.5263e-07  6.5038e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    15  1.8612e-01  1.0161e-06  2.4650e-07  2.4303e-07  6.5324e-16  0:00:00    0\nFlow time = 0.0003750000000000001s, time step = 15\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    15  1.8612e-01  1.0161e-06  2.4650e-07  2.4303e-07  6.5324e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    16  1.7594e-01  1.0034e-06  2.3809e-07  2.3449e-07  6.5512e-16  0:00:00    0\nFlow time = 0.0004000000000000001s, time step = 16\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    16  1.7594e-01  1.0034e-06  2.3809e-07  2.3449e-07  6.5512e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    17  1.6749e-01  9.9179e-07  2.3044e-07  2.2709e-07  6.5676e-16  0:00:00    0\nFlow time = 0.0004250000000000001s, time step = 17\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    17  1.6749e-01  9.9179e-07  2.3044e-07  2.2709e-07  6.5676e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    18  1.6022e-01  9.8143e-07  2.2353e-07  2.2018e-07  6.5321e-16  0:00:00    0\nFlow time = 0.0004500000000000002s, time step = 18\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    18  1.6022e-01  9.8143e-07  2.2353e-07  2.2018e-07  6.5321e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    19  1.5383e-01  9.7204e-07  2.1705e-07  2.1345e-07  6.5516e-16  0:00:00    0\nFlow time = 0.0004750000000000002s, time step = 19\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    19  1.5383e-01  9.7204e-07  2.1705e-07  2.1345e-07  6.5516e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    20  1.4810e-01  9.6163e-07  2.1063e-07  2.0692e-07  6.5885e-16  0:00:00    0\nFlow time = 0.0005000000000000001s, time step = 20\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    20  1.4810e-01  9.6163e-07  2.1063e-07  2.0692e-07  6.5885e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    21  1.4299e-01  9.5118e-07  2.0419e-07  2.0054e-07  6.5574e-16  0:00:00    0\nFlow time = 0.0005250000000000001s, time step = 21\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    21  1.4299e-01  9.5118e-07  2.0419e-07  2.0054e-07  6.5574e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    22  1.3856e-01  9.4127e-07  1.9797e-07  1.9408e-07  6.5262e-16  0:00:00    0\nFlow time = 0.00055s, time step = 22\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    22  1.3856e-01  9.4127e-07  1.9797e-07  1.9408e-07  6.5262e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    23  1.3452e-01  9.3149e-07  1.9207e-07  1.8800e-07  6.5001e-16  0:00:00    0\nFlow time = 0.000575s, time step = 23\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    23  1.3452e-01  9.3149e-07  1.9207e-07  1.8800e-07  6.5001e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    24  1.3055e-01  9.2174e-07  1.8654e-07  1.8235e-07  6.5914e-16  0:00:00    0\nFlow time = 0.0005999999999999999s, time step = 24\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    24  1.3055e-01  9.2174e-07  1.8654e-07  1.8235e-07  6.5914e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    25  1.2691e-01  9.1267e-07  1.8136e-07  1.7706e-07  6.5206e-16  0:00:00    0\nFlow time = 0.0006249999999999999s, time step = 25\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    25  1.2691e-01  9.1267e-07  1.8136e-07  1.7706e-07  6.5206e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    26  1.2353e-01  9.0388e-07  1.7659e-07  1.7213e-07  6.5494e-16  0:00:00    0\nFlow time = 0.0006499999999999999s, time step = 26\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    26  1.2353e-01  9.0388e-07  1.7659e-07  1.7213e-07  6.5494e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    27  1.2019e-01  8.9466e-07  1.7171e-07  1.6739e-07  6.5871e-16  0:00:00    0\nFlow time = 0.0006749999999999998s, time step = 27\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    27  1.2019e-01  8.9466e-07  1.7171e-07  1.6739e-07  6.5871e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    28  1.1685e-01  8.8570e-07  1.6702e-07  1.6299e-07  6.5718e-16  0:00:00    0\nFlow time = 0.0006999999999999998s, time step = 28\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    28  1.1685e-01  8.8570e-07  1.6702e-07  1.6299e-07  6.5718e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    29  1.1369e-01  8.7705e-07  1.6284e-07  1.5897e-07  6.5367e-16  0:00:00    0\nFlow time = 0.0007249999999999997s, time step = 29\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    29  1.1369e-01  8.7705e-07  1.6284e-07  1.5897e-07  6.5367e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    30  1.1057e-01  8.6830e-07  1.5899e-07  1.5518e-07  6.6054e-16  0:00:00    0\nFlow time = 0.0007499999999999997s, time step = 30\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    30  1.1057e-01  8.6830e-07  1.5899e-07  1.5518e-07  6.6054e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    31  1.0784e-01  8.6012e-07  1.5555e-07  1.5168e-07  6.6305e-16  0:00:00    0\nFlow time = 0.0007749999999999996s, time step = 31\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    31  1.0784e-01  8.6012e-07  1.5555e-07  1.5168e-07  6.6305e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    32  1.0582e-01  8.5295e-07  1.5246e-07  1.4847e-07  6.6530e-16  0:00:00    0\nFlow time = 0.0007999999999999996s, time step = 32\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    32  1.0582e-01  8.5295e-07  1.5246e-07  1.4847e-07  6.6530e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    33  1.0149e-01  8.4688e-07  1.4824e-07  1.4440e-07  6.6759e-16  0:00:00    0\nFlow time = 0.0008249999999999996s, time step = 33\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    33  1.0149e-01  8.4688e-07  1.4824e-07  1.4440e-07  6.6759e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    34  9.8362e-02  8.4042e-07  1.4426e-07  1.4064e-07  6.5611e-16  0:00:00    0\nFlow time = 0.0008499999999999995s, time step = 34\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    34  9.8362e-02  8.4042e-07  1.4426e-07  1.4064e-07  6.5611e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    35  9.5479e-02  8.3377e-07  1.4077e-07  1.3729e-07  6.5848e-16  0:00:00    0\nFlow time = 0.0008749999999999995s, time step = 35\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    35  9.5479e-02  8.3377e-07  1.4077e-07  1.3729e-07  6.5848e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    36  9.2656e-02  8.2726e-07  1.3741e-07  1.3414e-07  6.5778e-16  0:00:00    0\nFlow time = 0.0008999999999999994s, time step = 36\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    36  9.2656e-02  8.2726e-07  1.3741e-07  1.3414e-07  6.5778e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    37  9.1776e-02  8.2149e-07  1.3514e-07  1.3181e-07  6.6167e-16  0:00:00    0\nFlow time = 0.0009249999999999994s, time step = 37\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    37  9.1776e-02  8.2149e-07  1.3514e-07  1.3181e-07  6.6167e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    38  9.5985e-02  8.2326e-07  1.3752e-07  1.3415e-07  6.6381e-16  0:00:00    0\nFlow time = 0.0009499999999999993s, time step = 38\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    38  9.5985e-02  8.2326e-07  1.3752e-07  1.3415e-07  6.6381e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    39  8.6556e-02  8.1628e-07  1.2966e-07  1.2641e-07  6.6616e-16  0:00:00    0\nFlow time = 0.0009749999999999993s, time step = 39\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    39  8.6556e-02  8.1628e-07  1.2966e-07  1.2641e-07  6.6616e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    40  8.4404e-02  8.0917e-07  1.2615e-07  1.2291e-07  6.6492e-16  0:00:00    0\nFlow time = 0.0009999999999999994s, time step = 40\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    40  8.4404e-02  8.0917e-07  1.2615e-07  1.2291e-07  6.6492e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    41  8.3134e-02  8.0192e-07  1.2358e-07  1.2037e-07  6.6296e-16  0:00:00    0\nFlow time = 0.001024999999999999s, time step = 41\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    41  8.3134e-02  8.0192e-07  1.2358e-07  1.2037e-07  6.6296e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    42  8.0979e-02  7.9472e-07  1.2053e-07  1.1745e-07  6.5556e-16  0:00:00    0\nFlow time = 0.00105s, time step = 42\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    42  8.0979e-02  7.9472e-07  1.2053e-07  1.1745e-07  6.5556e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    43  7.8589e-02  7.8802e-07  1.1753e-07  1.1457e-07  6.6175e-16  0:00:00    0\nFlow time = 0.001075s, time step = 43\nBenchmark C overset audit exported.\n\nUpdating solution at time level N...\n done.\n\nUpdating mesh at time level N... done.\n\n  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter\n    43  7.8589e-02  7.8802e-07  1.1753e-07  1.1457e-07  6.6175e-16  0:00:01    1\n        Stabilizing x-momentum to enhance linear solver robustness.\n        Stabilizing y-momentum to enhance linear solver robustness.\n        Stabilizing z-momentum to enhance linear solver robustness.\n    44  7.6393e-02  7.8125e-07  1.1472e-07  1.1193e-07  6.6284e-16  0:00:00    0\nFlow time = 0.0011s, time step = 44\nBenchmark C overset audit exported.\n"
+}

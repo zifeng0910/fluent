@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "direct_production_field_samples": 1001,
+  "field_max_error_T": 5.333569469867188e-18,
+  "field_pass": true,
+  "direct_analytic_gradient_samples": 1001,
+  "gradient_max_error_T_per_m": 0.0,
+  "body_to_global_rotation_samples": 1000,
+  "rotation_max_error_Am2": 0.0,
+  "source_axes_global_XYZ": [
+    [
+      -1.0,
+      -9.48026379621325e-15,
+      5.10702591327572e-15
+    ],
+    [
+      -9.419548474554063e-15,
+      1.0,
+      0.0
+    ],
+    [
+      -5.079270337660091e-15,
+      -1.249000902703301e-16,
+      -0.9999999999999999
+    ]
+  ],
+  "analytic_law": "B=.011 normalize(tangent-tan(14.5deg sin(2pi100t))*e1-tan(2.5deg cos(2pi100t))*e2), transformed vectors tangent=(-1,0,0), e1=(0,1,0), e2=(0,0,-1); gradient Gxx=-.0022*(s/45^2)*exp(-.5*(s/45)^2)*1000 T/m",
+  "torque_reference": "current COM",
+  "old_RP_torque_shift_unit_test": "PASS",
+  "orientation_test_basis": "SciPy xyzw body->global; Fluent native conversion checked in UDF runtime hook"
+}
