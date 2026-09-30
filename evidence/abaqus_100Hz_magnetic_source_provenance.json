@@ -1,0 +1,194 @@
+{
+  "status": "RECOVERED_ANALYTIC_SOURCE",
+  "physical_source_status": "PHYSICAL_MAGPYLIB_SOURCE_NOT_UNIQUELY_RECOVERABLE",
+  "case_name": "TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL",
+  "successful_dynamics_evidence": [
+    "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL.sta",
+    "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL_DATACHECK.sta",
+    "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL_DATACHECK_DIRECT.sta"
+  ],
+  "source_files": [
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\vuamp_precomputed_truecel.f90",
+      "sha256": "92ad2088b803b0bf2757b356561a684d6507de7007fef535c8887ca5a70a1030",
+      "modified_ns": 1790251775764404500
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\magnetic_field_gradient_table_B0P11_A14P5.dat",
+      "sha256": "3999f3a3826dd091c1adb3b8ea26830739132f738e213a6d92e825eb12c0717c",
+      "modified_ns": 1789777256354038300
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\case_identity.json",
+      "sha256": "0c79cb1370d98689edcde1e3a24be786f49fec08c4d746c4c0e92f47890c518d",
+      "modified_ns": 1790252749592515000
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL.sta",
+      "sha256": "5b5b3b0f476def3237c6bbb4dbd9635e53a96285926ea537e3a68769e5980e8c",
+      "modified_ns": 1790251897814454000
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL_DATACHECK.sta",
+      "sha256": "c1aecb843b12f69e77ab9b5baffa2ee69f8326cc77d930be8c0cf836ddd511e0",
+      "modified_ns": 1790251677332624000
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL_DATACHECK_DIRECT.sta",
+      "sha256": "98b61453732d5801024f5ffc49ec0b31815e80cb973750018b6a8f63282bc946",
+      "modified_ns": 1790251802119802000
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\scripts\\prepare_f100_nofluid_control.py",
+      "sha256": "88cad6b3dd3994aaa699064e6652465c73869f7195f121dc9240b2797cb9e2e6",
+      "modified_ns": 1790251760089616300
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\PrecomputedStraightMagneticBackend\\scripts\\table_model.py",
+      "sha256": "18357f11e6e8b7177fd86ccd4f06bb95e842ee45febdeba82fa36c55f8ae9391",
+      "modified_ns": 1789644679889400700
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\ReducedHydro_L2300_frozenCAD_validation\\same_pose_magnetic_regression.py",
+      "sha256": "8799f5708433009ae029e8c0d39e09c91f5e32537cbdfccdf8a4f7104ddea5e4",
+      "modified_ns": 1789389433347005300
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\ReducedHydro_L2300_frozenCAD_validation\\build_l2300_deck.py",
+      "sha256": "579a0b5cedb6ed8bd323ec8f137c9fbf97564a70fc618d5f2445e6d6e57b6f89",
+      "modified_ns": 1789389433346007000
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\ReducedHydro_L2300_frozenCAD_validation\\audit_frozen_cad_static.py",
+      "sha256": "50f0d0c6289a64840f30452922091b366ed7b3e8ff09e033aa28f9cbc19aade6",
+      "modified_ns": 1789385076523512700
+    },
+    {
+      "path": "J:\\magpy\\magpylib_socket_server.py",
+      "sha256": "4ed54bc470d6f04bc0ff4233a138683bf05b35b43deeffe6a742db2298650f0b",
+      "modified_ns": 1789517677523826300
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_magpylib_frame_transform.json",
+      "sha256": "ac646f94c603f3d7b01ff1314444eb9de0bf98afe32a73bd36a1208ce23305b4",
+      "modified_ns": 1787137669345167200
+    },
+    {
+      "path": "J:\\magpy\\curvenew_CEL_xyrot56_exact.dxf",
+      "sha256": "9669b5422038f3a1200682bb90626442ea2ce3c273e8784f81efe8ea32a82325",
+      "modified_ns": 1786171299554862100
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\MagneticTrapAudit\\PHYSICAL_MAGNET_SOURCE_MANIFEST.json",
+      "sha256": "498a1262ed8a8869f8b5963872cfc16400c3f60256121ae46565f796346064be",
+      "modified_ns": 1789981715083804100
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\PrecomputedStraightMagneticBackend\\scripts\\precompute_straight_magnetic_table.py",
+      "sha256": "41c9558ccf59d6a18247b8e02343b0db941f3c7b43e269e60e4433ee79504309",
+      "modified_ns": 1789644726997564900
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\FastStraightDynamicScreen\\production\\magpylib_socket_server_fast.py",
+      "sha256": "6d920cfe1889a38e1529610f1ab7a799aee4a73babadbbb6d646ed47bd2085c7",
+      "modified_ns": 1789528416262405400
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL\\magnetic_field_gradient_table_B0P11_A14P5.dat.json",
+      "sha256": "2a10554c4ca407230c1b97be780b9a3e1c16742a6918e442c288b8359ebe0166",
+      "modified_ns": 1790134066195002700
+    },
+    {
+      "path": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\ReducedHydro_L2300_frozenCAD_validation\\run_l2300.ps1",
+      "sha256": "89f0d4038a1172ce90855863e7f18f03a066a759c1e3e09b3816de748065a6e7",
+      "modified_ns": 1789389433348046800
+    }
+  ],
+  "search_inventory": {
+    "J:\\abaqusfangzhen": 7623,
+    "H:\\fluent\\magnetic": 3,
+    "H:\\fluent\\scripts": 41,
+    "H:\\fluent\\fluent_udf": 1
+  },
+  "external_source_type": "prescribed analytic B and independently prescribed gradient",
+  "physical_geometry": null,
+  "physical_magnetization": null,
+  "physical_source_center": null,
+  "physical_rotation_axis": null,
+  "authoritative_frequency_hz": 100,
+  "legacy_frequency_hz": 120,
+  "resolution": "source-code precedence",
+  "B0_T": 0.011,
+  "gradient_amplitude_T": 0.0022,
+  "gradient_length_m": 0.045,
+  "phase_zero_rad": 0,
+  "drive_sense": 1,
+  "rocking_main_deg": 14.5,
+  "rocking_cross_deg": 2.5,
+  "ramp_duration_s": 0.001,
+  "ramp_law": "q*q*(3-2*q), q=t/0.001 during startup; 1 thereafter",
+  "driver_speed_m_s": 0.006,
+  "initial_relative_axial_offset_m": 0.031699921242759284,
+  "source_trajectory_law": "s_eff=0.031699921242759284 + (COM-COM0).dot(source_axis) - 0.006*t",
+  "source_frame_aba": [
+    [
+      0.9762799602464296,
+      0.07770950949965555,
+      -0.20208580196182235
+    ],
+    [
+      -0.0618320247446977,
+      0.9945677258930866,
+      0.08373672627840886
+    ],
+    [
+      0.2074951564186524,
+      -0.06925511349479567,
+      0.9757814762115655
+    ]
+  ],
+  "magnetic_sphere_example_used": false,
+  "robot": "Robot_L2300_D0815_WallWobble",
+  "magnetic_moment_body_Am2": [
+    0.0010399958044715794,
+    9.084781997334923e-06,
+    3.1131721660494084e-06
+  ],
+  "moment_direction_evidence": "Actual run_l2300.ps1 --robot-polarity -1 --robot-axis-tangent; production source and exact DXF first tangent, inverse rigid frame and CAD placement. same_pose_magnetic_regression.py independently uses the same convention.",
+  "moment_axis_aba": [
+    0.9650325561928363,
+    -0.11015443376691728,
+    0.23786165350768546
+  ],
+  "lookup_reference": "CURRENT COM",
+  "torque_reference": "CURRENT COM",
+  "old_load_model": "point-dipole force and intrinsic torque at old RP; old robot identity retained only for cross-check",
+  "missing_physical_parameters": [
+    "shape/count/dimensions",
+    "magnetization/polarization",
+    "source centers and initial orientations",
+    "physical rotation centers/axes and mechanical trajectory"
+  ],
+  "benchmark_C_ready": false,
+  "field_sign_resolution": "Hand-written table_model.field_unit is rejected: its phase sign/frame does not reproduce the executed table. Use precompute_straight_magnetic_table.py -> production live analytic implementation; matches executed B_unit to 5.96e-16.",
+  "robot_mass_kg": 8.904428864007322e-06,
+  "robot_COM_m": [
+    0.0012060186937156343,
+    0,
+    0
+  ],
+  "robot_inertia_diagonal_kg_m2": [
+    7.257810693523445e-13,
+    3.929384741151496e-12,
+    3.92938474115149e-12
+  ],
+  "old_robot_moment_body_Am2": [
+    -0.0010876227522174417,
+    0,
+    0
+  ],
+  "robot_identity_replacement_effect": "Recovered L2300 magnetization approximately +X, old robot -X; inherited gradient force reverses polarity. No source optimization or geometry substitution.",
+  "source_frame_mapping": "Proper rigid re-expression of old tube basis [c,n1,n2] into Fluent global [X,Y,Z], determinant +1; preserves external field law and relative source offset.",
+  "point_dipole_application": "New point dipole at current COM. Old RP intrinsic torque is not imported; T_COM computed directly m cross B. General RP-to-COM transport separately tested.",
+  "physical_Magpylib_source_created": false
+}

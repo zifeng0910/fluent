@@ -1,0 +1,82 @@
+{
+  "B0_mT": 11.0,
+  "gradient_mT": 2.2,
+  "frequency_Hz": 100.0,
+  "rocking_main_amplitude_deg": 14.5,
+  "rocking_cross_amplitude_deg": 2.5,
+  "duration_s": 0.05,
+  "initial_center_aba_mm": [
+    -10.591104434430079,
+    -3.464137020895571,
+    -10.215768586540108
+  ],
+  "canonical_plus_s_axis_aba": [
+    0.9762799602464296,
+    -0.0618320247446977,
+    0.2074951564186524
+  ],
+  "n_routeA_aba": [
+    0.07770950949965555,
+    0.9945677258930866,
+    -0.06925511349479567
+  ],
+  "b_routeA_aba": [
+    -0.20208580196182235,
+    0.08373672627840886,
+    0.9757814762115655
+  ],
+  "head_tail_axis_aba": [
+    0.9762799602464296,
+    -0.0618320247446977,
+    0.2074951564186524
+  ],
+  "initial_magnetic_moment_axis_aba": [
+    -0.9762799602464296,
+    0.0618320247446978,
+    -0.2074951564186524
+  ],
+  "robot_moment_Am2": 0.0010876227522174417,
+  "robot_mass_mg": 9.207793514166587,
+  "robot_length_mm": 2.6,
+  "robot_diameter_mm": 0.815,
+  "radial_offset_n_mm": 0.015,
+  "s_start_mm": -3.2,
+  "lumen_radius_mm": 0.667345,
+  "axial_CEL_extent_s_mm": [
+    -6.0,
+    6.0
+  ],
+  "magnetic_table_sha256": "3999F3A3826DD091C1ADB3B8EA26830739132F738E213A6D92E825EB12C0717C",
+  "case_id": "TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL",
+  "source_case": "TRUECEL_B0P11_G2P20_A14P5_F100_CLEAN50",
+  "status": "SOLVED",
+  "classification": "MAGNETIC_ONLY_STABLE_FORWARD",
+  "dynamics_run_count": 1,
+  "fluid_mode": "NONE",
+  "wall_geometry": "PRESENT_PASSIVE",
+  "contact_mode": "NONE",
+  "artificial_damping_added": false,
+  "magnetic_backend": "SAME_PRECOMPUTED_MAGPYLIB_TABLE_AND_VUAMP",
+  "time_step_control": "DIRECT 1.0e-7 s; required because all remaining bodies are rigid",
+  "direct_dt_s": 1e-07,
+  "restart_read": false,
+  "restart_write_times_ms": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50
+  ],
+  "input_sha256": "DF7A1A4D19BE7C869440BD1E0DB31094B71A903A010668F568727A82885DBAD1",
+  "fortran_sha256": "92AD2088B803B0BF2757B356561A684D6507DE7007FEF535C8887CA5A70A1030",
+  "wall_reference_extent_s_mm": [
+    -6.0,
+    6.0
+  ],
+  "last_RP_time_ms": 50.00000074505806
+}
