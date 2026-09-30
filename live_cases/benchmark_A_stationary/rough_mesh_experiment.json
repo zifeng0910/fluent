@@ -1,8 +1,8 @@
 {
-  "purpose": "BENCHMARK_A_FINAL_VOLUME_GATE volume mesh schema",
+  "purpose": "BENCHMARK_A_REGION_TYPE_CORRECTION identity diagnosis",
   "input": "geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
   "step_timeout": 180,
   "codes": [
-    "wf=solver.watertight(legacy=True); t=wf.import_geometry; t.arguments.update_dict({'file_format':'CAD'}); t.arguments.update_dict({'file_name':r'H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step'}); t.arguments.update_dict({'length_unit':'mm'}); t.execute(); wf.create_surface_mesh.execute(); dg=wf.describe_geometry; dg.arguments.update_dict({'setup_type':'The geometry consists of only fluid regions with no voids'}); dg.execute(); wf.update_regions.execute(); wf.create_volume_mesh_wtm.execute(); u=solver.meshing_utilities; ids=u.get_cell_zones(filter='*'); print('IDS',ids); print('VOLS',u.get_cell_zone_volume(cell_zone_id_list=ids)); print('TYPES',[u.get_zone_type(i) for i in ids]); print('NAMES',[u.get_zone_name(i) for i in ids])"
+    "wf=solver.watertight(legacy=True); t=wf.import_geometry; t.arguments.update_dict({'file_format':'CAD'}); t.arguments.update_dict({'file_name':r'H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step'}); t.arguments.update_dict({'length_unit':'mm'}); t.execute(); wf.create_surface_mesh.execute(); dg=wf.describe_geometry; dg.arguments.update_dict({'setup_type':'The geometry consists of only fluid regions with no voids'}); dg.execute(); wf.update_regions.execute(); wf.create_volume_mesh_wtm.execute(); u=solver.meshing_utilities; ids=u.get_cell_zones(filter='*'); print('IDS',ids); print('V133',u.get_cell_zone_volume(cell_zone_id_list=[ids[0]])); print('V130',u.get_cell_zone_volume(cell_zone_id_list=[ids[1]])); print('P1',u.get_cell_zones(xyz_coordinates=[-4,0,0])); print('P2',u.get_cell_zones(xyz_coordinates=[4,0,0])); print('P3',u.get_cell_zones(xyz_coordinates=[0,0.7,0])); print('PR',u.get_cell_zones(xyz_coordinates=[1.2,0,0])); print('TYPES',[(i,u.get_zone_type(i)) for i in ids])"
   ]
 }

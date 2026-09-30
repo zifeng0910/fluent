@@ -1,0 +1,30 @@
+{
+  "campaign": "BENCHMARK_A_REGION_TYPE_CORRECTION",
+  "zones": [
+    {
+      "id": 133,
+      "name": "fluid",
+      "raw_volume": 1.115966840466604,
+      "volume_unit": "mm^3",
+      "probes": {
+        "-4,0,0": 133,
+        "4,0,0": 130,
+        "0,0.7,0": 130,
+        "1.2,0,0": 133
+      }
+    },
+    {
+      "id": 130,
+      "name": "open-cascade-step-translator-7.8-1-solid",
+      "raw_volume": 23.88645344865032,
+      "volume_unit": "mm^3"
+    }
+  ],
+  "water_zone": 130,
+  "robot_cavity_zone": 133,
+  "root_cause": "water region was typed solid; robot cavity was typed fluid",
+  "volume_api": "get_cell_zone_volume(cell_zone_id_list=[single_id])",
+  "probe_api": "get_cell_zones(xyz_coordinates=[x,y,z])",
+  "region_type_fix": "NOT YET EXECUTED",
+  "final_gate": "PENDING"
+}
