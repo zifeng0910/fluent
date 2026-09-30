@@ -1,0 +1,23 @@
+{
+  "campaign": "REGION_IDENTITY_TO_BENCHMARK_A",
+  "experiment": "REGION_IDENTITY_COMBINED_STL_TO_BENCHMARK_A",
+  "input": "geometry/robot_plus_tube_combined.stl",
+  "fluent": "2026 R1",
+  "pyfluent": "0.42.1",
+  "surface_mesh": "PASS",
+  "candidate_region_count": 2,
+  "candidate_regions": [
+    "origin-robot_plus_tube",
+    "robot_plus_tube"
+  ],
+  "candidate_face_counts": {
+    "origin-robot_plus_tube": 174134,
+    "robot_plus_tube": 21054
+  },
+  "region_identification": "FAIL",
+  "meshing_utilities_get_regions": null,
+  "meshing_utilities_get_zones": null,
+  "reason": "Region identification of origin-robot_plus_tube was not successful; MeshingUtilities returned Invalid inputs.",
+  "solver_entered": false,
+  "native_mesh_written": false
+}
