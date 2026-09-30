@@ -20,8 +20,10 @@ for dim,tag in faces:
     if abs(cx+L/2)<1e-7: inlet.append(tag)
     elif abs(cx-L/2)<1e-7: outlet.append(tag)
     else:
-        cy,cz=gmsh.model.occ.getCenterOfMass(dim,tag)[1:]
-        (robot_faces if abs(cy)<2e-5 and abs(cz)<2e-5 else wall).append(tag)
+        # The pipe and robot cylinders share the same axis, so center-of-mass
+        # alone cannot distinguish them.  Their face areas do.
+        area=gmsh.model.occ.getMass(dim,tag)
+        (robot_faces if area < 2.0e-5 else wall).append(tag)
 for tag,ents,name in [(2,robot_faces,"robot_wall"),(3,inlet,"inlet"),(4,outlet,"outlet"),(5,wall,"pipe_wall")]:
     gmsh.model.addPhysicalGroup(2,ents,tag=tag); gmsh.model.setPhysicalName(2,tag,name)
 gmsh.option.setNumber("Mesh.CharacteristicLengthMin", 2.5e-5)

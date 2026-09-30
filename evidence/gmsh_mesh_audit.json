@@ -1,7 +1,7 @@
 [
   {
     "path": "live_cases\\benchmark_A_stationary\\open_pipe_robot_coarse.msh",
-    "sha256": "f9a4e4ae0f764b1b1c6e1bceed91110543ebf69fc63a690a81ec6a081b1017bd",
+    "sha256": "e50c2d49a9a40d837e455e75debd8a71d583c244084c4c12286d06a09f9ab757",
     "format": "Gmsh via meshio",
     "points": 7381,
     "cell_types": {
@@ -18,9 +18,10 @@
     "closed_fluid_boundary": true,
     "physical_groups": {
       "triangle": {
-        "2": 7382,
+        "2": 1450,
         "3": 292,
-        "4": 292
+        "4": 292,
+        "5": 5932
       },
       "tetra": {
         "1": 32997
