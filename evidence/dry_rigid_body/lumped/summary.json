@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "scope": "Independent Python magnetic-only rigid body; no fluid and no contact; NOT Fluent CFD",
+  "source_case": "TRUECEL_B0P11_G2P20_F100_NOFLUID_CONTROL",
+  "duration_s": 0.05,
+  "cycles": 5,
+  "nfev": 40442,
+  "max_position_error_m": 9.615275275543721e-08,
+  "max_orientation_error_deg": 1.0614678735078455,
+  "position_gate_m": 5e-06,
+  "orientation_gate_deg": 0.1,
+  "python_final_displacement_mm": 3.4846831817623265,
+  "abaqus_final_displacement_mm": 3.4845903067555253,
+  "torque_conversion": "tau_COM = tau_RP + (RP-COM) cross force",
+  "mass_kg": 1.0018808990074149e-05,
+  "inertia_model": "lumped",
+  "cycle_displacement_mm": [
+    0.12760672733917108,
+    0.40938845562521,
+    0.6940891651346153,
+    0.9818092505086193,
+    1.2717895831547108
+  ]
+}

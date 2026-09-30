@@ -1,0 +1,25 @@
+{
+  "status": "NOT_READY_FOR_FULL_COUPLED_SOLVE",
+  "source_case": "F100_G2P20_NOFLUID_REALWALL50",
+  "source_role": "audited candidate; not selected successful baseline",
+  "checks": [
+    {"name":"source_input_load_table_hashes","status":"PASS","evidence":"evidence/F100_G2P20_NOFLUID_REALWALL50/geometry_audit.json"},
+    {"name":"robot_mass_com_inertia","status":"PASS","evidence":"evidence/F100_G2P20_NOFLUID_REALWALL50/geometry_audit.json"},
+    {"name":"robot_exterior_surface_watertight","status":"PASS","evidence":"evidence/F100_G2P20_NOFLUID_REALWALL50/geometry_audit.json"},
+    {"name":"magnetic_python_SI_archived_replay","status":"PASS","evidence":"evidence/F100_G2P20_NOFLUID_REALWALL50/magnetic_replay_check.json"},
+    {"name":"user_intended_successful_baseline_identity","status":"UNKNOWN"},
+    {"name":"fluent_MCP_solver_connection","status":"UNKNOWN"},
+    {"name":"fluid_volume_mesh_gap_resolution_quality","status":"UNKNOWN"},
+    {"name":"pressure_boundary_zone_ids_normals","status":"UNKNOWN"},
+    {"name":"contact_law_and_penetration_threshold","status":"UNKNOWN"},
+    {"name":"reference_point_to_COM_load_transfer","status":"UNKNOWN"},
+    {"name":"magnetic_lookup_provenance_and_coverage","status":"PASS","evidence":"magnetic/magnetic_lookup_manifest.yaml"},
+    {"name":"benchmark_C_requires_Magpylib_FT","status":"PASS","evidence":"benchmarks/benchmark_C_6dof_no_contact.yaml"},
+    {"name":"benchmark_D_requires_Magpylib_CFD_contact","status":"PASS","evidence":"benchmarks/benchmark_D_6dof_contact_wobbling.yaml"},
+    {"name":"lookup_extrapolation_policy","status":"PASS","evidence":"scripts/magnetic_lookup_runtime.py; fluent_udf/magnetic_lookup_6dof.c"},
+    {"name":"independent_dry_orientation_equivalence","status":"FAIL","maximum_error_deg_continuous_inertia":2.4364699700623573,"maximum_error_deg_lumped_inertia":1.0614678735078455,"gate_deg":0.1,"cause":"unresolved; do not promote historical continuum inertia to solver inertia"},
+    {"name":"levels_0_to_5_and_restart_equivalence","status":"UNKNOWN"}
+  ],
+  "full_coupled_solve_performed": false,
+  "git_commit": null
+}

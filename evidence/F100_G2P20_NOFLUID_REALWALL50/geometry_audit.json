@@ -1,0 +1,81 @@
+{
+  "case_id": "F100_G2P20_NOFLUID_REALWALL50",
+  "source": "J:\\abaqusfangzhen\\abaqus_robot\\calibration_analysis\\TrueCELLongForwardTransit\\case\\F100_G2P20_NOFLUID_REALWALL50",
+  "selected_baseline": false,
+  "classification": "NOFLUID_REALWALL_CHATTER_FAIL",
+  "status": "CANDIDATE_AUDITED_NOT_QUALIFIED",
+  "source_sha256": {
+    "F100_G2P20_NOFLUID_REALWALL50.inp": "f4bdef15244dc37879f3b5661f4fa64e9790ed728f23ae58006c7d0d603ce34f",
+    "case_identity.json": "fde32676adbd5a2ecf7f3a822faadb38584e5851d0e319e4263e2699a15d7728",
+    "setup_audit.json": "3ffea30cb8a0f5b261e2223ca2dd62a68e3a3a7a4545a0959228d5662aaaef37",
+    "vuamp_precomputed_truecel.f90": "7499dcb2fb2f20445aeec82f3af4582abc9b99fc5ce7471386baa374f3813a85",
+    "magnetic_field_gradient_table_B0P11_A14P5.dat": "3999f3a3826dd091c1adb3b8ea26830739132f738e213a6d92e825eb12c0717c",
+    "magnetic_field_gradient_table_B0P11_A14P5.dat.json": "2a10554c4ca407230c1b97be780b9a3e1c16742a6918e442c288b8359ebe0166"
+  },
+  "checks": {
+    "input_hash_matches_saved_audit": true,
+    "fortran_hash_matches_saved_audit": true,
+    "table_hash_matches_saved_audit": true,
+    "mass_matches_saved_audit": true,
+    "inertia_matches_saved_audit": true
+  },
+  "robot_nodes": 1588,
+  "robot_tetrahedra": 7302,
+  "exterior_triangles": 1406,
+  "watertight_surface": true,
+  "volume_mm3": 1.2829713941656093,
+  "mass_kg": 1.0018808990074149e-05,
+  "com_global_m": [
+    -0.010588298265136705,
+    -0.003465704840956484,
+    -0.010215063664776156
+  ],
+  "inertia_global_kg_m2": [
+    [
+      1.0371433504025472e-12,
+      3.015797572542677e-13,
+      -9.648033321134043e-13
+    ],
+    [
+      3.015797572542677e-13,
+      5.548191836818931e-12,
+      6.441710512361345e-14
+    ],
+    [
+      -9.648033321134043e-13,
+      6.441710512361345e-14,
+      5.365952827027363e-12
+    ]
+  ],
+  "principal_inertia_kg_m2": [
+    8.117664680139337e-13,
+    5.568251244373563e-12,
+    5.571270301861347e-12
+  ],
+  "lumped_vertex_inertia_global_kg_m2": [
+    [
+      1.0693639041740764e-12,
+      3.0182740802588423e-13,
+      -9.655900097403077e-13
+    ],
+    [
+      3.0182740802588423e-13,
+      5.58260736650882e-12,
+      6.451190730486878e-14
+    ],
+    [
+      -9.655900097403077e-13,
+      6.451190730486878e-14,
+      5.400650244168159e-12
+    ]
+  ],
+  "frequency_Hz_from_fortran": 100,
+  "B0_T_from_fortran": 0.011,
+  "gradient_scale_T_from_fortran": 0.0022,
+  "notes": [
+    "Do not use inherited INP comments as settings",
+    "Table sidecar 120 Hz is stale; Fortran phase=36000*t is authoritative",
+    "Candidate has contact chatter; not a validated successful baseline",
+    "Rigid-body source; no claim of elastic FSI validation"
+  ]
+}

@@ -1,0 +1,57 @@
+schema_version: 1
+generated_utc: '2026-09-29T14:23:09.002827+00:00'
+source_model: audited SI MagneticTable (Magpylib-verified geometry/load model)
+magpylib_version: required for production backend; current replay backend is audited
+  SI port
+backend: audited_magnetic_table_si
+drive_frequency:
+  value: 100.0
+  unit: Hz
+  legacy_metadata_hz: 120.0
+  legacy_metadata_status: stale
+geometry_source: J:\abaqusfangzhen\abaqus_robot\calibration_analysis\TrueCELLongForwardTransit\case\F100_G2P20_NOFLUID_REALWALL50\magnetic_field_gradient_table_B0P11_A14P5.dat
+geometry_source_sha256: 3999f3a3826dd091c1adb3b8ea26830739132f738e213a6d92e825eb12c0717c
+robot_mass_source: evidence/F100_G2P20_NOFLUID_REALWALL50/geometry_audit.json
+reference_point: Abaqus RP / lookup pose origin
+center_of_mass: Fluent rigid-body COM; r_COM_from_RP audited in case setup
+coordinate_system: global right-handed SI; roll/pitch/yaw are radians; phase is degrees
+position_range:
+  x:
+  - -0.002
+  - 0.002
+  y:
+  - -0.002
+  - 0.002
+  z:
+  - -0.004
+  - 0.004
+orientation_range:
+  roll:
+  - -0.2
+  - 0.2
+  pitch:
+  - -0.2
+  - 0.2
+  yaw:
+  - -0.2
+  - 0.2
+phase_range_deg:
+- 0.0
+- 360.0
+grid_resolution:
+  x: 5
+  y: 5
+  z: 9
+  roll: 3
+  pitch: 3
+  yaw: 3
+  phase: 17
+force_unit: N
+torque_unit: N*m
+position_unit: m
+angle_unit: rad
+generation_script: H:\fluent\scripts\generate_magnetic_lookup.py
+source_hash: 39cbc1dba9e7daa7a5ada109a0b8c9e9a5d586068cb0ca07f2451f48335782ff
+lookup_policy: hard-stop on out-of-coverage; no silent extrapolation
+rp_to_com_torque: T_COM = T_RP + cross(r_COM_from_RP, F)
+records: 103275

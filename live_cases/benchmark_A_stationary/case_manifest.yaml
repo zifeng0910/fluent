@@ -1,0 +1,22 @@
+name: benchmark_A_stationary
+status: BLOCKED_AT_MESH_IMPORT
+solver:
+  fluent_version: Ansys Fluent 2026 R1
+  fluent_build: 261
+  executable: H:/Program Files/ANSYS Inc/v261/fluent/ntbin/win64/fluent.exe
+  python: 3.13.5
+  pyfluent: 0.42.1
+  mcp: ansys/pyfluent-mcp local checkout c966560cdbcff631bb5c5684ae040898199781d1
+connection: PASS
+mesh:
+  source: open_pipe_robot_coarse.msh
+  generator: scripts/create_coarse_pipe_mesh.py
+  nodes: 7381
+  gmsh_elements: 41181
+  physical_groups: [fluid, robot_wall, inlet, outlet, pipe_wall]
+  mcp_import: FAIL
+  fluent_error: Null Domain Pointer
+boundary_audit: NOT_REACHED
+benchmark_A: NOT_RUN
+failure_layer: mesh_import
+next_change: convert the Gmsh mesh to a Fluent-native case/mesh format, then retry only mesh import

@@ -1,0 +1,9 @@
+session_status before connect: connected=false, backend_kind=pyfluent
+connect: status=ok, message=PyFluent connected (launch)
+Fluent version readback: Ansys Fluent 2026 R1
+Fluent internal build: 261
+Python: 3.13.5
+PyFluent: 0.42.1
+mesh read attempt: solver.settings.file.read_mesh(open_pipe_robot_coarse.msh)
+mesh read result: Fluent error "Null Domain Pointer"
+No CFD timestep was started.

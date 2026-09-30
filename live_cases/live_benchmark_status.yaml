@@ -1,0 +1,24 @@
+mcp_connection: PASS
+fluent_version: Ansys Fluent 2026 R1
+fluent_build: 261
+pyfluent_version: 0.42.1
+python_version: 3.13.5
+benchmark_A: BLOCKED
+benchmark_B: NOT_ATTEMPTED
+benchmark_C: NOT_ATTEMPTED
+benchmark_D: NOT_ATTEMPTED
+mesh: Gmsh mesh generated; PyFluent read_mesh returned Null Domain Pointer
+dt: NOT_STARTED
+simulated_physical_time: 0 s
+magnetic_udf: NOT_ATTEMPTED
+peak_Fmag: NOT_AVAILABLE
+peak_Tmag: NOT_AVAILABLE
+peak_Ffluid: NOT_AVAILABLE
+peak_Tfluid: NOT_AVAILABLE
+mass_imbalance: NOT_AVAILABLE
+lookup_extrapolation: NONE (no transient run)
+main_failure_or_bottleneck: mesh_import
+animations: NOT_GENERATED
+key_output_files:
+  - H:/fluent/live_cases/benchmark_A_stationary/open_pipe_robot_coarse.msh
+  - H:/fluent/live_cases/benchmark_A_stationary/case_manifest.yaml

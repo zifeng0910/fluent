@@ -1,0 +1,63 @@
+[
+  {
+    "path": "live_cases\\benchmark_A_stationary\\open_pipe_robot_coarse.msh",
+    "sha256": "f9a4e4ae0f764b1b1c6e1bceed91110543ebf69fc63a690a81ec6a081b1017bd",
+    "format": "Gmsh via meshio",
+    "points": 7381,
+    "cell_types": {
+      "triangle": 7966,
+      "tetra": 32997
+    },
+    "tetra_positive_volume": true,
+    "tetra_min_volume": 1.7665847276042543e-13,
+    "tetra_max_volume": 1.696431457196932e-12,
+    "duplicate_points": 0,
+    "boundary_faces_from_tetra": 7966,
+    "triangle_faces": 7966,
+    "triangle_faces_not_owned_by_tetra": 0,
+    "closed_fluid_boundary": true,
+    "physical_groups": {},
+    "mesh_field_data": {
+      "robot_wall": [
+        2,
+        2
+      ],
+      "inlet": [
+        3,
+        2
+      ],
+      "outlet": [
+        4,
+        2
+      ],
+      "pipe_wall": [
+        5,
+        2
+      ],
+      "fluid": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "path": "live_cases\\benchmark_A_stationary\\box.msh",
+    "sha256": "9040cf1f85f106763eef221828e374d6dd2828ae2a128be9206c4b80d2345829",
+    "format": "Gmsh via meshio",
+    "points": 339,
+    "cell_types": {
+      "triangle": 540,
+      "tetra": 1123
+    },
+    "tetra_positive_volume": true,
+    "tetra_min_volume": 3.0260769308671234e-10,
+    "tetra_max_volume": 2.4241123347265506e-09,
+    "duplicate_points": 0,
+    "boundary_faces_from_tetra": 540,
+    "triangle_faces": 540,
+    "triangle_faces_not_owned_by_tetra": 0,
+    "closed_fluid_boundary": true,
+    "physical_groups": {},
+    "mesh_field_data": {}
+  }
+]

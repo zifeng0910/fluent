@@ -1,0 +1,14 @@
+{
+  "connect_kwargs": {
+    "fluent_path": "H:/Program Files/ANSYS Inc/v261/fluent/ntbin/win64/fluent.exe",
+    "product_version": "26.1.0",
+    "dimension": 3,
+    "precision": "double",
+    "processor_count": 2,
+    "ui_mode": "no_gui",
+    "mode": "solver",
+    "cwd": "H:/fluent",
+    "start_timeout": 120,
+    "cleanup_on_exit": true
+  }
+}

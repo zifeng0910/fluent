@@ -1,0 +1,10 @@
+name: benchmark_D_6dof_contact_wobbling
+mode: six_dof
+contact: simplified_wall_penalty_and_friction
+magnetic_load:
+  required: true
+  source: ../magnetic/magnetic_lookup.npz
+  on_out_of_coverage: stop_and_report
+fluid_load: fluent_pressure_and_viscous_surface_integrals
+contact_load: simplified_nonpenetration_only
+trajectory_source: free_dynamics_result

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "Archived pose/load replay only; not a coupled dynamics validation",
+  "samples": 500,
+  "start_s": 1e-07,
+  "end_s": 0.0499001,
+  "max_force_vector_error_N": 1.0962068161199784e-12,
+  "max_torque_vector_error_Nm": 4.434870229023918e-12,
+  "force_error_over_peak": 3.638811876288167e-08,
+  "torque_error_over_peak": 2.979967762510504e-06,
+  "acceptance_relative_to_peak": 0.001,
+  "sensor_lag_s": 1e-07,
+  "table_sha256": "3999f3a3826dd091c1adb3b8ea26830739132f738e213a6d92e825eb12c0717c"
+}

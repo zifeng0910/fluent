@@ -1,0 +1,12 @@
+name: benchmark_C_6dof_no_contact
+mode: six_dof
+contact: false
+magnetic_load:
+  required: true
+  source: ../magnetic/magnetic_lookup.npz
+  interpolation: multilinear
+  on_out_of_coverage: stop_and_report
+fluid_load:
+  source: fluent_pressure_and_viscous_surface_integrals
+  required: true
+outputs: [time, x, y, z, vx, vy, vz, quaternion, wx, wy, wz, Fmag_x, Fmag_y, Fmag_z, Tmag_x, Tmag_y, Tmag_z, Ffluid_x, Ffluid_y, Ffluid_z, Tfluid_x, Tfluid_y, Tfluid_z, Ftotal_x, Ftotal_y, Ftotal_z, Ttotal_x, Ttotal_y, Ttotal_z]
