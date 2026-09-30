@@ -1,0 +1,49 @@
+{
+  "route": "BENCHMARK_A_ROUTE_D_PYPRIME_NATIVE",
+  "prime_version": "0.10.0",
+  "step": "H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
+  "import_result": "error_code :  ErrorCode.NOERROR\ncad_parameters :  {}",
+  "parts": 1,
+  "topology": {
+    "part_count": 1,
+    "topo_volume_count": 1,
+    "topo_face_count": 6,
+    "bbox": "message :  \nPart Name: benchmarka_fluiddomain\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    0 Face Zones\n        Face Zone Name(s) : []\n    1 Volume Zones\n        Volume Zone Name(s) : [open_cascade_step_translator_7.8_1_solid]\n\n    1 Label(s)\n        Names: [__attrib_abr_topotype:volume]\n\n    Bounding box (-5 -0.899452 -0.897808)\n                 (5 0.899452 0.9)\n\n    ",
+    "summary": "message :  \nPart Name: benchmarka_fluiddomain\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    0 Face Zones\n        Face Zone Name(s) : []\n    1 Volume Zones\n        Volume Zone Name(s) : [open_cascade_step_translator_7.8_1_solid]\n\n    1 Label(s)\n        Names: [__attrib_abr_topotype:volume]\n\n    Bounding box (-5 -0.899452 -0.897808)\n                 (5 0.899452 0.9)\n\n    Mesh Summary: \n        0 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        0 Tri Faces \n        0 Faces \n        0 Cells \n    6 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  0\nn_volume_zones :  1\nn_labels :  1\nn_nodes :  0\nn_faces :  0\nn_cells :  0\nn_tri_faces :  0\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  0\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  6"
+  },
+  "surface": {
+    "topo_faces": 6,
+    "face_zonelets": 0,
+    "labels": {
+      "inlet": [
+        4
+      ],
+      "outlet": [
+        3
+      ],
+      "pipe_wall": [
+        2
+      ],
+      "robot_wall": [
+        5,
+        6,
+        7
+      ]
+    },
+    "boxes": {
+      "2": "xmin :  -5\nymin :  -0.899442\nzmin :  -0.897808\nxmax :  5\nymax :  0.899375\nzmax :  0.9",
+      "3": "xmin :  5\nymin :  -0.897346\nzmin :  -0.897808\nxmax :  5\nymax :  0.898496\nzmax :  0.9",
+      "4": "xmin :  -5\nymin :  -0.897346\nzmin :  -0.897808\nxmax :  -5\nymax :  0.898496\nzmax :  0.9",
+      "5": "xmin :  0\nymin :  -0.406507\nzmin :  -0.406137\nxmax :  0.261495\nymax :  0.4075\nzmax :  0.406154",
+      "6": "xmin :  0.261495\nymin :  -0.406507\nzmin :  -0.406999\nxmax :  2.3\nymax :  0.4075\nzmax :  0.407213",
+      "7": "xmin :  2.3\nymin :  -0.406507\nzmin :  -0.405624\nxmax :  2.3\nymax :  0.4075\nzmax :  0.406801"
+    },
+    "summary": "message :  \nPart Name: benchmarka_fluiddomain\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    4 Face Zones\n        Face Zone Name(s) : [inlet, outlet, pipe_wall, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [open_cascade_step_translator_7.8_1_solid]\n\n    5 Label(s)\n        Names: [__attrib_abr_topotype:volume, inlet, outlet, pipe_wall, robot_wall]\n\n    Bounding box (-5 -0.899452 -0.897808)\n                 (5 0.899452 0.9)\n\n    Mesh Summary: \n        8425 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        16842 Tri Faces \n        16842 Faces \n        0 Cells \n    0 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  4\nn_volume_zones :  1\nn_labels :  5\nn_nodes :  8425\nn_faces :  16842\nn_cells :  0\nn_tri_faces :  16842\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  0\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0"
+  },
+  "volume_zone_names": [
+    "open_cascade_step_translator_7.8_1_solid"
+  ],
+  "volume_mesh_summary": "message :  \nPart Name: benchmarka_fluiddomain\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    4 Face Zones\n        Face Zone Name(s) : [inlet, outlet, pipe_wall, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [open_cascade_step_translator_7.8_1_solid]\n\n    5 Label(s)\n        Names: [__attrib_abr_topotype:volume, inlet, outlet, pipe_wall, robot_wall]\n\n    Bounding box (-5 -0.899452 -0.897808)\n                 (5 0.899452 0.9)\n\n    Mesh Summary: \n        39952 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        16842 Tri Faces \n        16842 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        212768 Tet Cells \n        212768 Cells \n    0 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  4\nn_volume_zones :  1\nn_labels :  5\nn_nodes :  39952\nn_faces :  16842\nn_cells :  212768\nn_tri_faces :  16842\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  212768\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+  "cas_export": "error_code :  ErrorCode.NOERROR\nwarning_codes :  []",
+  "msh_export": "error_code :  ErrorCode.NOERROR\nwarning_codes :  []"
+}
