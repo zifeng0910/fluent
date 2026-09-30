@@ -29,11 +29,17 @@ failure_layer: mesh_import
 next_change: verify corrected millimetre-valued STL with the one remaining campaign launch
 current_stl_campaign:
   campaign: STL_MESH_IMPORT_CORRECT_API
-  launches: 1
+  launches: 2
   maximum: 2
   schema_gate: PASS
   import_command: PASS
-  unit_gate: FAIL
-  failure: Fluent ignores STL unit conversion; previous derived STL carried metre-valued coordinates
+  unit_gate: PASS
+  import_pass: ROBOT_STL_IMPORT_PASS
+  imported_facets: 10420
+  imported_objects: 1
+  imported_zones: 1
+  imported_bbox_mm: [2.299999952, 0.814965367, 0.814982712]
+  primitive_discovery: bounded; no confirmed cylinder schema
   corrected_stl_generator: scripts/freecad_fluent_stl.py
+  next_step: document a supported tube fixture API in a future campaign
   report: evidence/stl_campaign_20260930.md

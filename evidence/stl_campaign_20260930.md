@@ -25,8 +25,14 @@ gate and import command passed. Fluent then reported that STL unit conversion do
 not apply; because the derived file carried metre-valued coordinates, the imported
 bounding box was approximately 0.0023 x 0.000815 x 0.000815 mm. This fails the
 required unit gate. The derived STL generator now retains millimetre-valued
-coordinates. A later authorized campaign may use the remaining launch to verify object/zone/triangle counts and
-bounding box before declaring ROBOT_STL_IMPORT_PASS. Do not reset the budget automatically.
+coordinates. The final campaign launch re-imported this corrected file and passed
+the unit gate: bbox 2.299999952 x 0.814965367 x 0.814982712 mm, 10,420 facets,
+one object and one zone. This is `ROBOT_STL_IMPORT_PASS`.
+
+The same live session was used for bounded primitive discovery. The exposed
+meshing candidates did not provide a confirmed cylinder argument schema, so no
+tube, fluid region or volume mesh was guessed or executed. The campaign is
+exhausted at 2/2 launches.
 
 The manager closed each session and cleaned owned descendants. Its
 `closed_cleanly=False` includes residual helper processes, not only Fluent;

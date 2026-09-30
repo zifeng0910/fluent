@@ -17,7 +17,7 @@ peak_Ffluid: NOT_AVAILABLE
 peak_Tfluid: NOT_AVAILABLE
 mass_imbalance: NOT_AVAILABLE
 lookup_extrapolation: NONE (no transient run)
-main_failure_or_bottleneck: STL import option error; corrected offline; 3/3 launch budget exhausted
+main_failure_or_bottleneck: no confirmed Fluent 2026 R1 native cylinder fixture schema; campaign launch budget exhausted
 animations: NOT_GENERATED
 key_output_files:
   - H:/fluent/live_cases/benchmark_A_stationary/open_pipe_robot_coarse.msh

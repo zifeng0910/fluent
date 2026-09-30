@@ -1,0 +1,21 @@
+campaign: STL_MESH_IMPORT_CORRECT_API
+session_id: 20260930_121230_4a1fef
+fluent_version: Ansys Fluent 2026 R1
+mode: meshing
+headless: true
+api_family: legacy WatertightMeshingWorkflow.import_geometry
+file_format: Mesh
+mesh_file_name: H:/fluent/geometry/Robot_L2300_D0815_WallWobble_fluent.stl
+mesh_unit: mm
+schema_gate: PASS
+import_command: PASS
+robot_stl_import: PASS
+facets: 10420
+objects: 1
+zones: 1
+bbox_mm: [2.299999952, 0.814965367, 0.814982712]
+connectivity_crosscheck: offline_audit_pass
+tube_creation: NOT_ATTEMPTED
+fluid_region: NOT_ATTEMPTED
+volume_mesh: NOT_ATTEMPTED
+reason_stopped: no confirmed native cylinder schema and launch budget exhausted
