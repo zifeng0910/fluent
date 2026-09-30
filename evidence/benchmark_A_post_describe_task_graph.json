@@ -1,0 +1,13 @@
+{
+  "campaign": "BENCHMARK_A_FLUID_BODY_REGION_GATE",
+  "post_describe_task_graph": "H:/fluent/logs/20260930_133404_596124/solver.trn",
+  "active_after_update": [
+    "Update Regions",
+    "Generate the Volume Mesh",
+    "Apply Share Topology",
+    "Add Local Sizing"
+  ],
+  "create_regions": "present but not executed",
+  "capping": "present but not executed",
+  "interpretation": "explicit fluid setup selected; Update Boundaries and Update Regions completed"
+}

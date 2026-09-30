@@ -1,0 +1,26 @@
+{
+  "campaign": "BENCHMARK_A_FLUID_BODY_REGION_GATE",
+  "setup_type_allowed_values": [
+    "The geometry consists of only solid regions",
+    "The geometry consists of only fluid regions with no voids",
+    "The geometry consists of both fluid and solid regions and/or voids"
+  ],
+  "selected_setup_type": "The geometry consists of only fluid regions with no voids",
+  "capping": "not executed",
+  "surface_mesh": {
+    "status": "PASS",
+    "faces": 6192,
+    "max_skewness": 0.38932271,
+    "regions_reported": 1,
+    "voids_reported": 1
+  },
+  "describe_geometry": "PASS",
+  "update_boundaries": "PASS",
+  "update_regions": "PASS",
+  "fluid_regions_argument": [
+    "fluid",
+    "open-cascade-step-translator-7.8-1-solid"
+  ],
+  "volume_query": "NOT RUN; requires volume mesh",
+  "solver": "NOT RUN"
+}

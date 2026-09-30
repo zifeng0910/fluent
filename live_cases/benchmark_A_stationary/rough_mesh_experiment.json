@@ -1,8 +1,8 @@
 {
-  "purpose": "BENCHMARK_A_FLUID_CAD_IMPORT_GATE schema and readback",
+  "purpose": "BENCHMARK_A_FLUID_BODY_REGION_GATE update regions",
   "input": "geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step",
   "step_timeout": 180,
   "codes": [
-    "wf=solver.watertight(legacy=True); t=wf.import_geometry; t.arguments.update_dict({'file_format':'CAD'}); t.arguments.update_dict({'file_name':r'H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step'}); t.arguments.update_dict({'length_unit':'mm'}); print('READBACK',t.arguments._task.get_state()); t.execute(); print('AFTER',t.get_state())"
+    "wf=solver.watertight(legacy=True); t=wf.import_geometry; t.arguments.update_dict({'file_format':'CAD'}); t.arguments.update_dict({'file_name':r'H:/fluent/geometry/benchmark_A_fluid_domain/BenchmarkA_FluidDomain.step'}); t.arguments.update_dict({'length_unit':'mm'}); t.execute(); wf.create_surface_mesh.execute(); dg=wf.describe_geometry; dg.arguments.update_dict({'setup_type':'The geometry consists of only fluid regions with no voids'}); dg.execute(); ur=wf.update_regions; print('UR_BEFORE',ur.get_state()); ur.execute(); print('UR_AFTER',ur.get_state()); print('UTIL_STATE',solver.meshing_utilities.get_state()); print('WF',solver.workflow.get_state())"
   ]
 }
