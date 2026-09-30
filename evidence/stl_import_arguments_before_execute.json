@@ -1,0 +1,16 @@
+{
+  "campaign": "STL_MESH_IMPORT_CORRECT_API",
+  "session_id": "20260930_113838_5cb9a0",
+  "fluent_version": "Ansys Fluent 2026 R1",
+  "pyfluent": "0.42.1",
+  "workflow_api": "legacy WatertightMeshingWorkflow.import_geometry",
+  "file_format": "Mesh",
+  "mesh_file_name": "H:/fluent/geometry/Robot_L2300_D0815_WallWobble_fluent.stl",
+  "mesh_unit": "mm",
+  "schema_gate": "PASS",
+  "import_command": "PASS",
+  "unit_gate": "FAIL: Fluent reports STL unit conversion does not apply; source coordinates were metre-valued",
+  "bbox_reported_mm": [0.002300000051, 0.000814999978, 0.000814982689],
+  "expected_bbox_mm": [2.3, 0.815, 0.815],
+  "action": "Regenerate derived STL with millimetre-valued coordinates before next launch"
+}

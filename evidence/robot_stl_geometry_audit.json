@@ -28,7 +28,7 @@
   "consistent_outward_normals": true,
   "sampled_max_surface_deviation_mm": 0.00031288111047829284,
   "deviation_note": "facet centroid and edge midpoint samples; not a certified Hausdorff bound",
-  "stl_unit": "m",
+  "stl_unit": "mm",
   "freecad_version": [
     "1",
     "1",
@@ -40,5 +40,5 @@
     "145529fe741292ff0b3977a01195bf0247425794"
   ],
   "status": "PASS",
-  "stl_sha256": "1de84b6e2d893ef467ad11980e2ab80bd917496d504f75a6005ea19e3870d1b6"
+  "stl_sha256": "19b9d926b97cb56ed042fdb505370e634b78d879c267f390b4a2f2722e0fbbf3"
 }

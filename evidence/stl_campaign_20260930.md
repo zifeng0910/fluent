@@ -20,8 +20,12 @@ Parent and child PROCESSOR_ARCHITECTURE were AMD64.
    import while the default was CAD. This is an import configuration error,
    not evidence of an invalid STL or a runtime segmentation fault.
 
-The experiment JSON now explicitly sets Mesh and metres, but this correction is
-UNTESTED. A later authorized campaign must verify object/zone/triangle counts and
+The corrected experiment explicitly set Mesh, mesh filename, and mm. The schema
+gate and import command passed. Fluent then reported that STL unit conversion does
+not apply; because the derived file carried metre-valued coordinates, the imported
+bounding box was approximately 0.0023 x 0.000815 x 0.000815 mm. This fails the
+required unit gate. The derived STL generator is being corrected to retain
+millimetre-valued coordinates. A later authorized campaign must verify object/zone/triangle counts and
 bounding box before declaring ROBOT_STL_IMPORT_PASS. Do not reset the budget automatically.
 
 The manager closed each session and cleaned owned descendants. Its

@@ -1,4 +1,8 @@
-"""Run using the FreeCAD bundled Python. BREP remains authoritative; STL is SI."""
+"""Run using the FreeCAD bundled Python. BREP remains authoritative; STL coordinates are mm.
+
+Fluent's STL importer ignores mesh-unit conversion, so the derived STL must carry
+millimetre-valued coordinates even when the CFD model later uses SI settings.
+"""
 from pathlib import Path
 import json, hashlib, math
 import FreeCAD as App
@@ -32,10 +36,9 @@ audit={'authoritative_sha256':manifest['files'],'source':'BREP','triangle_count'
  'manifold':all(len(v)==2 for v in edges.values()),
  'consistent_outward_normals':volume>0 and all(sum(v)==0 for v in edges.values()),
  'sampled_max_surface_deviation_mm':maxdev,'deviation_note':'facet centroid and edge midpoint samples; not a certified Hausdorff bound',
- 'stl_unit':'m','freecad_version':App.Version()}
+ 'stl_unit':'mm','freecad_version':App.Version()}
 audit['status']='PASS' if (audit['watertight'] and audit['consistent_outward_normals'] and abs(volume/s.Volume-1)<0.01 and maxdev<=0.005 and max(abs(v) for v in audit['bbox_difference_mm'])<0.005) else 'FAIL'
 assert audit['status']=='PASS',audit
-transform=App.Matrix(); transform.scale(0.001,0.001,0.001); m.transform(transform)
 out=ROOT/'geometry/Robot_L2300_D0815_WallWobble_fluent.stl';out.parent.mkdir(exist_ok=True);m.write(str(out))
 audit['stl_sha256']=hashlib.sha256(out.read_bytes()).hexdigest()
 (ROOT/'evidence/robot_stl_geometry_audit.json').write_text(json.dumps(audit,indent=2),encoding='utf-8')
