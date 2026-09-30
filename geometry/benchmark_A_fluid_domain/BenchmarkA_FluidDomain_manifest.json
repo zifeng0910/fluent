@@ -1,0 +1,42 @@
+{
+  "source_model": "Gmsh OCC boolean using authoritative FreeCAD STEP",
+  "authoritative_robot_source": "freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble.step",
+  "robot_sha256": "461a36dabd0cc1f94390b3e3dc24b2e059b8a74a98d3080ca67694c3a5c0d0e2",
+  "tube_fixture_source": "geometry/tube_fixture.yaml",
+  "robot_pose": {
+    "convention": "FreeCAD geometry global +X; nose x=0, flat tail x=2.3 mm",
+    "validation_pose": "stationary centered benchmark pose; no wall contact",
+    "x_range_mm": [
+      0.0,
+      2.3
+    ],
+    "radial_offset_mm": [
+      0.0,
+      0.0
+    ]
+  },
+  "cylinder": {
+    "radius_mm": 0.9,
+    "length_mm": 10.0,
+    "xmin_mm": -5.0,
+    "xmax_mm": 5.0,
+    "axis": "X"
+  },
+  "V_cylinder_mm3": 25.446900494077326,
+  "V_robot_mm3": 1.140268022399,
+  "V_fluid_mm3": 24.30663247167845,
+  "expected_V_fluid_mm3": 24.306632471678327,
+  "bbox_mm": [
+    -5.0000001,
+    -0.9000001,
+    -0.9000001,
+    5.0000001,
+    0.9000001,
+    0.9000001
+  ],
+  "solid_count": 1,
+  "boolean_operation": "water cylinder MINUS fixed robot",
+  "valid_brep": true,
+  "freecad_version": "unavailable; OCC backend gmsh 4.15.2",
+  "note": "Cylinder represents WATER, not physical tube material. Fixed Benchmark A only."
+}

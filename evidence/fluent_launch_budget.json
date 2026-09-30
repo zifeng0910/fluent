@@ -1,5 +1,6 @@
 {
-  "campaign": "REGION_IDENTITY_TO_BENCHMARK_A",
+  "campaign": "EXPLICIT_FLUID_CAD_TO_BENCHMARK_A",
   "launches": 5,
-  "maximum": 6
+  "maximum": null,
+  "policy": "unlimited sequential launches; one live session at a time"
 }
