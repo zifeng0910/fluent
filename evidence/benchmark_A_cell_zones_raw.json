@@ -1,0 +1,28 @@
+{
+  "campaign": "BENCHMARK_A_FINAL_VOLUME_GATE",
+  "volume_mesh": "PASS",
+  "cells_total": 16775,
+  "zones": [
+    {
+      "id": 133,
+      "name": "fluid",
+      "type": "fluid",
+      "cells": 4618,
+      "min_orthogonal_quality": 0.56098792
+    },
+    {
+      "id": 130,
+      "name": "open-cascade-step-translator-7.8-1-solid",
+      "type": "solid_or_unresolved",
+      "cells": 12157,
+      "min_orthogonal_quality": 0.61653041
+    }
+  ],
+  "quality_lt_0.05": 0,
+  "negative_cells": 0,
+  "invalid_cells": 0,
+  "cell_zone_volume_query": "FAILED_INVALID_INPUT",
+  "api_attempt": "get_cell_zone_volume(cell_zone_id_list=[133,130])",
+  "solver": "NOT RUN",
+  "gate": "FAIL_PENDING_VOLUME_AND_SECOND_ZONE_CLASSIFICATION"
+}
