@@ -1,0 +1,1 @@
+{"campaign":"WT_NONE_TO_ROUGH_CFD","fluent_version":"Ansys Fluent 2026 R1","workflow":"legacy WatertightMeshingWorkflow","path":"create_surface_mesh.arguments.cfd_surface_mesh_controls.remesh_imported_mesh","before":"All","set":"None","readback":"None","labels_active_under_none":false,"auto_surface_remesh":"auto","schema_gate":"PASS"}

@@ -1,5 +1,5 @@
 {
-  "campaign": "STATIONARY_CFD_ROUGH_RUN_20260930",
-  "launches": 4,
-  "maximum": 5
+  "campaign": "WT_NONE_TO_ROUGH_CFD",
+  "launches": 1,
+  "maximum": 4
 }

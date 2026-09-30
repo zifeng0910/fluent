@@ -56,3 +56,18 @@ rough_cfd_campaign:
   volume_mesh: NOT_REACHED
   solver: NOT_REACHED
   animations: NOT_GENERATED
+
+wt_none_campaign:
+  campaign: WT_NONE_TO_ROUGH_CFD
+  exact_none_readback: PASS
+  labels_active_under_none: NO
+  auto_surface_remesh: auto
+  surface_task: PASS
+  volume_mesh: PASS
+  cells: 42257
+  minimum_orthogonal_quality: 0.26290704
+  cells_below_quality_0_05: 0
+  region_identification: WARNING_robot_object_region_not_successful
+  native_mesh: NOT_WRITTEN_FLUENT_OUTPUT_PATH_NOT_RETAINED
+  solver: NOT_ATTEMPTED
+  animations: NOT_GENERATED
