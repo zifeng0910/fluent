@@ -1,0 +1,14 @@
+{
+  "status": "CLOSED",
+  "pid": 26548,
+  "python": "H:\\fluent\\.venv\\Scripts\\python.exe",
+  "ui_mode": "no_gui_or_graphics",
+  "session_count": 1,
+  "fluent_version": "Ansys Fluent 2026 R1",
+  "transcript": "H:\\fluent\\live_cases\\benchmark_B_overset\\benchmark_B_default_overset_full.trn",
+  "job": "H:\\fluent\\scripts\\benchmark_B_prescribed_motion_run.py",
+  "last_job": "COMPLETE",
+  "historical_recovered_traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_B_single_session.py\", line 62, in main\n    runpy.run_path(str(job))[\"run\"](solver, context)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\scripts\\benchmark_B_prescribed_motion_run.py\", line 52, in run\n    planes[plane_name].method = \"xy-plane\"\n    ~~~~~~^^^^^^^^^^^^\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\solver\\flobject.py\", line 1710, in __getitem__\n    raise KeyError(\n    ...<5 lines>...\n    )\nKeyError: \"'plane_surface' has no attribute 'benchmark_B_midplane'.\\nThe most similar names are: benchmark_b_midplane\"\n",
+  "final_result": "PASS",
+  "historical_errors_resolved": true
+}

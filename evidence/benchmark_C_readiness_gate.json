@@ -1,0 +1,17 @@
+{
+  "Benchmark_A": "FROZEN_PASS",
+  "Prime_native_mesh": "FROZEN_PASS",
+  "Benchmark_B_static_default_overset": "PASS",
+  "Benchmark_B_prescribed_motion": "PASS",
+  "new_magnetic_lookup": "ANALYTIC_BASELINE_VALIDATED_PHYSICAL_SOURCE_BLOCKED",
+  "Benchmark_C_ready": false,
+  "Benchmark_C_run": false,
+  "remaining_blocker": "PHYSICAL_MAGPYLIB_SOURCE_NOT_UNIQUELY_RECOVERABLE",
+  "physical_parameters_missing": [
+    "shape/count/dimensions",
+    "magnetization/polarization",
+    "source centers and initial orientations",
+    "physical rotation centers/axes and mechanical trajectory"
+  ],
+  "magnetic_sphere_example_used": false
+}

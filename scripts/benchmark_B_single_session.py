@@ -61,6 +61,7 @@ def main():
             try:
                 runpy.run_path(str(job))["run"](solver, context)
                 report.update(status="READY", last_job="COMPLETE")
+                report.pop("traceback", None)
             except Exception as exc:
                 report.update(status="READY", last_job="ERROR", error=repr(exc),
                               traceback=traceback.format_exc())

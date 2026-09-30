@@ -1,0 +1,31 @@
+{
+  "status": "ANALYTIC_BASELINE_VALIDATED",
+  "sample_count": 1000,
+  "direct_source_calculation": "PASS",
+  "max_force_absolute_error_N": 4.174160855220546e-11,
+  "max_torque_absolute_error_Nm": 6.825347028330011e-12,
+  "executed_table_source_reproduction": "PASS",
+  "old_table_B_unit_max_error": 5.959374814064025e-16,
+  "old_table_gradient_unit_max_error": 0.0,
+  "RP_to_COM_torque_shift_test": "PASS",
+  "coverage_hard_stop_tests": "PASS",
+  "physical_Magpylib_validation": "NOT_RUN_NO_UNIQUE_PHYSICAL_SOURCE",
+  "new_production_lookup": "FAIL",
+  "benchmark_C_ready": false,
+  "remaining_blocker": "PHYSICAL_MAGPYLIB_SOURCE_NOT_UNIQUELY_RECOVERABLE",
+  "orientation_continuity": "exact quaternion rotation; q and -q equivalent",
+  "periodicity": "field factors periodic; full loads intentionally nonperiodic during ramp and translating source",
+  "executed_Abaqus_log_crosscheck": {
+    "samples": 64,
+    "same_identity_status": "PASS",
+    "max_force_error_N": 5.179882978132626e-10,
+    "max_torque_error_Nm": 4.891668401961935e-10,
+    "new_identity_status": "COMPARED_NOT_REQUIRED_EQUAL",
+    "direction_change": "Old moment body=-X; current authoritative L2300 moment is approximately +X with documented transverse components. Force polarity reverses under the unchanged analytic gradient; this is a recovered robot magnetization difference.",
+    "trajectory_status": "PASS",
+    "source_offset_and_phase": "Actual increment log values matched with absolute time, 100 Hz, 6 mm/s drift and startup ramp"
+  },
+  "phase_endpoint_test": "PASS",
+  "multi_cycle_no_reset_test": "PASS",
+  "quaternion_sign_equivalence_test": "PASS"
+}
