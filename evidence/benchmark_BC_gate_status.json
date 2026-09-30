@@ -1,0 +1,23 @@
+{
+  "campaign": "BENCHMARK_BC_OVERSET_MAGPYLIB_6DOF",
+  "benchmark_B": "FAIL",
+  "background_and_component_mesh": "PASS",
+  "prime_cell_zones": {
+    "background_water": 127360,
+    "robot_component_fluid": 21310
+  },
+  "overset_boundary": "PASS",
+  "overset_interface": "FAIL",
+  "solver_readback": "WARNING: overset zone 5 does not belong to any overset interface; mesh check failed",
+  "generated_create_overset_mesh_command": "accepted, but solver readback did not contain a usable interface",
+  "prescribed_motion": "NOT_RUN",
+  "motion_history_csv": null,
+  "robot_motion_gif": null,
+  "benchmark_C": "NOT_RUN_BECAUSE_B_FAILED",
+  "magnetic_identity": "FAIL_REGENERATE_REQUIRED",
+  "magnetic_audit": "evidence/benchmark_C_magnetic_identity_audit.json",
+  "udf_compiled": false,
+  "six_dof_enabled": false,
+  "magnetic_ft_hooked": false,
+  "constraint": "Fluent generated settings/workflow API only; no TUI or Fluent graphics"
+}

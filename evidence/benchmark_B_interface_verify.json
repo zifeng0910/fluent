@@ -1,0 +1,13 @@
+{
+  "overset_boundaries": [
+    "overset_component"
+  ],
+  "mesh_interfaces": [],
+  "mesh_interface_state": {},
+  "cell_zones": [
+    "background_water",
+    "robot_component_fluid"
+  ],
+  "mesh_check": "None",
+  "status": "FAIL"
+}

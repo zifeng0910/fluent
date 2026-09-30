@@ -1,0 +1,55 @@
+{
+  "status": "COMMAND_ACCEPTED_UNVERIFIED",
+  "stage": "complete",
+  "task_names": [
+    "Create Overset Interface",
+    "benchmark_B_overset"
+  ],
+  "task_before": {
+    "Create Overset Interface": {
+      "task_type": "Compound",
+      "errors": null,
+      "command_name": "CreateOversetInterfaces",
+      "_name_": "Create Overset Interface",
+      "check_point": "default-off",
+      "warnings": null,
+      "arguments": {
+        "overset_interfaces_name": "overset-interface-1",
+        "object_selection_list": null
+      },
+      "object_path": "",
+      "state": "Up-to-date",
+      "task_list": "['TaskObject2']"
+    },
+    "benchmark_B_overset": {
+      "task_type": "Compound Child",
+      "object_path": "",
+      "_name_": "benchmark_B_overset",
+      "check_point": "default-off",
+      "arguments": {
+        "overset_interfaces_name": "overset-interface-1",
+        "object_selection_list": null
+      },
+      "warnings": null,
+      "command_name": "CreateOversetInterfaces",
+      "state": "Up-to-date",
+      "errors": null
+    }
+  },
+  "result": true,
+  "task_after": {
+    "task_type": "Compound Child",
+    "command_name": "CreateOversetInterfaces",
+    "_name_": "benchmark_B_overset",
+    "check_point": "default-off",
+    "warnings": null,
+    "arguments": {
+      "overset_interfaces_name": "benchmark_B_overset",
+      "object_selection_list": "['background_water', 'robot_component_fluid']"
+    },
+    "errors": null,
+    "state": "Up-to-date",
+    "object_path": ""
+  },
+  "output": "H:\\fluent\\live_cases\\benchmark_B_overset\\benchmark_B_overset_interface_SI.cas.h5"
+}

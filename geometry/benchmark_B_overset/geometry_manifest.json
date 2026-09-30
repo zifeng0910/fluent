@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "unit": "mm",
+  "axis": "+X",
+  "background": {
+    "name": "background_water",
+    "fluid_volume_mm3": 25.446900494077322,
+    "radius_mm": 0.9,
+    "x_bounds_mm": [
+      -5,
+      5
+    ],
+    "step": "H:\\fluent\\geometry\\benchmark_B_overset\\background_water.step"
+  },
+  "component": {
+    "name": "robot_component",
+    "fluid_volume_mm3": 3.2398975348686907,
+    "outer_radius_mm": 0.65,
+    "x_bounds_mm": [
+      -0.5,
+      2.8
+    ],
+    "robot_solid_volume_included": false,
+    "step": "H:\\fluent\\geometry\\benchmark_B_overset\\robot_component_fluid.step"
+  },
+  "robot_source": "H:\\fluent\\freecad_parametric_robot\\variants\\L2300_D0815_wallwobble\\Robot_L2300_D0815_WallWobble.step",
+  "nominal_outer_overlap_margin_mm": 0.25,
+  "requested_translation_mm": 0.1,
+  "radial_clearance_to_pipe_mm": 0.49250000000000005
+}

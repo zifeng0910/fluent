@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "stage": "complete",
+  "mesh_check": "None",
+  "cell_zone_names": [
+    "robot_component_fluid",
+    "background_water"
+  ],
+  "boundary_names": {
+    "wall": [
+      "inlet",
+      "outlet",
+      "overset_component",
+      "pipe_wall",
+      "robot_wall"
+    ],
+    "velocity_inlet": [],
+    "pressure_outlet": [],
+    "overset": []
+  },
+  "overset_surface_name": "overset_component",
+  "cell_zone_states": {
+    "robot_component_fluid": {
+      "name": "robot_component_fluid",
+      "general": {
+        "material": "air"
+      },
+      "reference_frame": {
+        "frame_motion": false,
+        "reference_frame_axis_origin": [
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 0
+          }
+        ],
+        "reference_frame_axis_direction": [
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 1
+          }
+        ]
+      },
+      "mesh_motion": {
+        "enable": false
+      },
+      "zonal_models": {},
+      "porous_zone": {
+        "porous": false
+      },
+      "fan_zone": {
+        "fan_zone": false
+      },
+      "sources": {
+        "enable": false
+      },
+      "fixed_values": {
+        "enable": false
+      }
+    },
+    "background_water": {
+      "name": "background_water",
+      "general": {
+        "material": "air"
+      },
+      "reference_frame": {
+        "frame_motion": false,
+        "reference_frame_axis_origin": [
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 0
+          }
+        ],
+        "reference_frame_axis_direction": [
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 0
+          },
+          {
+            "option": "value",
+            "value": 1
+          }
+        ]
+      },
+      "mesh_motion": {
+        "enable": false
+      },
+      "zonal_models": {},
+      "porous_zone": {
+        "porous": false
+      },
+      "fan_zone": {
+        "fan_zone": false
+      },
+      "sources": {
+        "enable": false
+      },
+      "fixed_values": {
+        "enable": false
+      }
+    }
+  },
+  "dynamic_mesh_children": [
+    "enabled",
+    "methods",
+    "options",
+    "dynamic_zones"
+  ],
+  "setup_overset_attributes": [],
+  "root_overset_attributes": [],
+  "setup_interfaces_attributes": [
+    "mesh_interfaces",
+    "turbo_interfaces"
+  ],
+  "root_interfaces_attributes": [],
+  "scaled_case": "H:\\fluent\\live_cases\\benchmark_B_overset\\benchmark_B_overset_workflow_SI.cas.h5"
+}

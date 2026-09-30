@@ -1,0 +1,9 @@
+{
+  "status": "COMMAND_ACCEPTED_UNVERIFIED",
+  "stage": "complete",
+  "objects_before": "['background_water', 'robot_component_fluid']",
+  "mesh_object_result": true,
+  "objects_after": "['background_water', 'robot_component_fluid']",
+  "object_selection_allowed": null,
+  "interface_result": true
+}

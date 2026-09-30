@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "before": {
+    "overset_boundaries": [],
+    "mesh_interfaces": []
+  },
+  "after": {
+    "overset_boundaries": [
+      "overset_component"
+    ],
+    "mesh_interfaces": [],
+    "overset_boundary_state": {
+      "name": "overset_component"
+    }
+  }
+}

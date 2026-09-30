@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "prime_version": "0.10.4",
+  "imports": [
+    {
+      "file": "background_water.step",
+      "result": "error_code :  0\ncad_parameters :  {}",
+      "parts": [
+        "background_water"
+      ]
+    },
+    {
+      "file": "robot_component_fluid.step",
+      "result": "error_code :  0\ncad_parameters :  {}",
+      "parts": [
+        "background_water",
+        "robot_component_fluid"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "name": "background_water",
+      "volume_count": 1,
+      "face_count": 3,
+      "faces": [
+        "2",
+        "3",
+        "4"
+      ],
+      "summary": "message :  \nPart Name: background_water\nPart ID: 2\n    3 Topo Edges\n    3 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    0 Face Zones\n        Face Zone Name(s) : []\n    1 Volume Zones\n        Volume Zone Name(s) : [open_cascade_step_translator_7.8_1_solid]\n\n    1 Label(s)\n        Names: [__attrib_abr_topotype:volume]\n\n    Bounding box (-5 -0.899452 -0.897808)\n                 (5 0.899452 0.9)\n\n    Mesh Summary: \n        0 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        0 Tri Faces \n        0 Faces \n        0 Cells \n    3 out of 3 TopoFaces are unmeshed\n\nn_topo_edges :  3\nn_topo_faces :  3\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  0\nn_volume_zones :  1\nn_labels :  1\nn_nodes :  0\nn_faces :  0\nn_cells :  0\nn_tri_faces :  0\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  0\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  3"
+    },
+    {
+      "name": "robot_component_fluid",
+      "volume_count": 1,
+      "face_count": 6,
+      "faces": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "summary": "message :  \nPart Name: robot_component_fluid\nPart ID: 3\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    0 Face Zones\n        Face Zone Name(s) : []\n    1 Volume Zones\n        Volume Zone Name(s) : [open_cascade_step_translator_7.8_1_solid]\n\n    1 Label(s)\n        Names: [__attrib_abr_topotype:volume]\n\n    Bounding box (-0.5 -0.649865 -0.649459)\n                 (2.8 0.649865 0.65)\n\n    Mesh Summary: \n        0 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        0 Tri Faces \n        0 Faces \n        0 Cells \n    6 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  0\nn_volume_zones :  1\nn_labels :  1\nn_nodes :  0\nn_faces :  0\nn_cells :  0\nn_tri_faces :  0\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  0\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  6"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "FAIL",
+  "stage": "inspect_overset_task",
+  "update_boundaries_state": {
+    "boundary_zone_type_list": null,
+    "old_boundary_zone_list": null,
+    "selection_type": "zone",
+    "boundary_zone_list": null,
+    "old_boundary_zone_type_list": null
+  },
+  "update_region_state": {
+    "all_region_name_list": null,
+    "all_region_type_list": null,
+    "all_region_overset_componen_list": null,
+    "filter_category": "All Regions",
+    "all_region_filter_categories": null,
+    "main_fluid_region": "",
+    "all_region_leakage_size_list": null,
+    "all_region_source_list": null,
+    "all_region_mesh_method_list": null,
+    "all_region_volume_fill_list": null,
+    "all_region_linked_construction_surface_list": null
+  },
+  "error": "RuntimeError('Exception encountered in S_UpdateRegionSettings: CDR: invalid argument [1]: wrong type [not a pair]')",
+  "traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_B_overset_workflow_probe.py\", line 40, in main\n    result[\"update_region_result\"] = meshing.meshing_workflow.application.update_region_settings(\n                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        main_fluid_region=\"background_water\",\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n        old_region_overset_componen_list=[\"no\", \"no\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\services\\object_model.py\", line 1338, in __call__\n    return super().__call__(*args, **kwds)\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\services\\object_model.py\", line 1209, in __call__\n    return execute_method(\n        self.rules,\n    ...<2 lines>...\n        kwds,\n    )\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\services\\object_model.py\", line 226, in execute_command\n    result, state, deleted_paths = self._service.execute_command(\n                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        rules, path, command, args\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\_grpc_services\\object_model_service_v0.py\", line 322, in execute_command\n    response = self._stub.executeCommand(request, metadata=self._metadata)\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\grpc\\_interceptor.py\", line 276, in __call__\n    response, ignored_call = self._with_call(\n                             ~~~~~~~~~~~~~~~^\n        request,\n        ^^^^^^^^\n    ...<4 lines>...\n        compression=compression,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\grpc\\_interceptor.py\", line 328, in _with_call\n    call = self._interceptor.intercept_unary_unary(\n        continuation, client_call_details, request\n    )\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\services\\interceptors.py\", line 175, in intercept_unary_unary\n    return self._intercept_call(continuation, client_call_details, request)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\.venv\\Lib\\site-packages\\ansys\\fluent\\core\\services\\interceptors.py\", line 165, in _intercept_call\n    raise new_ex from None\nRuntimeError: Exception encountered in S_UpdateRegionSettings: CDR: invalid argument [1]: wrong type [not a pair]\n"
+}
