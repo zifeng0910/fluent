@@ -1,0 +1,9 @@
+{
+  "campaign": "BENCHMARK_A_FLUID_VOID_SEMANTICS_FIX",
+  "session": "20260930_145000_void_fix",
+  "workflow_task": "create_volume_mesh_wtm",
+  "arguments": {},
+  "observed_defaults": "default generated both fluid:1 and open-cascade-step-translator-7.8-1-solid",
+  "required": {"mesh_fluid_regions":true,"mesh_solid_regions":false,"mesh_dead_regions":false,"prism_layers":false},
+  "status": "NOT YET SET"
+}

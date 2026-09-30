@@ -1,0 +1,14 @@
+{
+  "campaign": "BENCHMARK_A_FLUID_VOID_SEMANTICS_FIX",
+  "session": "20260930_145000_void_fix",
+  "describe_geometry": {"state":"Up-to-date","setup_type":"The geometry consists of both fluid and solid regions and/or voids"},
+  "update_regions": {"state":"Up-to-date","warning":"For some Fluid regions identification were based on existing voids. Verification in Update Region is recommended"},
+  "region_names": ["open-cascade-step-translator-7.8-1-solid", "fluid:1"],
+  "cell_zones_after_default_volume_mesh": [
+    {"id":133,"name":"fluid:1","type":"fluid","role":"robot cavity (probe 1.2,0,0)"},
+    {"id":130,"name":"open-cascade-step-translator-7.8-1-solid","type":"solid","role":"water region (probes -4,0,0; 4,0,0; 0,0.7,0)"}
+  ],
+  "volume_gate": "FAIL: default volume mesh has two cell zones and reversed fluid/solid semantics",
+  "surface_mesh": {"faces":6192,"max_skewness":0.38932271},
+  "next_action": "discover explicit region-type controls before regenerating volume mesh"
+}
