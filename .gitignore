@@ -36,3 +36,8 @@ live_cases/**/*.msh
 live_cases/**/*.jou
 
 live_cases/benchmark_A_stationary/animations/frames_*/
+
+fluent_udf/libbenchmark_B/
+fluent_udf/benchmark_B_connectivity_live.json
+live_cases/benchmark_B_overset/prescribed_motion_fielddata/
+

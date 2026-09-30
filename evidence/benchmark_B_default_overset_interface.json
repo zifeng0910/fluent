@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "stage": "B1_static_connectivity_verified",
+  "source_case": "H:\\fluent\\live_cases\\benchmark_B_overset\\benchmark_B_overset_boundary_SI.cas.h5",
+  "official_default_interface_reference": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_ug/flu_ug_sec_overset.html#flu_ug_sec_overset_setup",
+  "cell_zones": [
+    "robot_component_fluid",
+    "background_water"
+  ],
+  "face_zones": {
+    "inlet": {
+      "type": "wall",
+      "adjacent_cell_zone": "background_water"
+    },
+    "outlet": {
+      "type": "wall",
+      "adjacent_cell_zone": "background_water"
+    },
+    "pipe_wall": {
+      "type": "wall",
+      "adjacent_cell_zone": "background_water"
+    },
+    "robot_wall": {
+      "type": "wall",
+      "adjacent_cell_zone": "robot_component_fluid"
+    },
+    "overset_component": {
+      "type": "overset",
+      "adjacent_cell_zone": "robot_component_fluid"
+    }
+  },
+  "topology_gate": "PASS",
+  "physics_readback": {
+    "viscous_model": "laminar",
+    "water": {
+      "name": "water",
+      "chemical_formula": "",
+      "density": {
+        "option": "value",
+        "value": 998.2
+      },
+      "viscosity": {
+        "option": "value",
+        "value": 0.001003
+      },
+      "specific_heat": {
+        "option": "value",
+        "value": 1006.43
+      },
+      "thermal_conductivity": {
+        "option": "value",
+        "value": 0.0242
+      }
+    },
+    "inlet": {
+      "name": "inlet",
+      "momentum": {
+        "reference_frame": "Absolute",
+        "gauge_total_pressure": {
+          "option": "value",
+          "value": 0
+        },
+        "supersonic_or_initial_gauge_pressure": {
+          "option": "value",
+          "value": 0
+        },
+        "direction_specification_method": "Normal to Boundary",
+        "prevent_reverse_flow": false
+      },
+      "thermal": {
+        "total_temperature": {
+          "option": "value",
+          "value": 300
+        }
+      }
+    },
+    "outlet": {
+      "name": "outlet",
+      "momentum": {
+        "backflow_reference_frame": "Absolute",
+        "gauge_pressure": {
+          "option": "value",
+          "value": 0
+        },
+        "pressure_profile_multiplier": 1.0,
+        "backflow_dir_spec_method": "Normal to Boundary",
+        "backflow_pressure_spec": "Total Pressure",
+        "prevent_reverse_flow": false,
+        "radial_equ_pressure_distribution": false,
+        "avg_pressure_spec": false,
+        "target_mass_flow_rate": false
+      },
+      "thermal": {
+        "backflow_total_temperature": {
+          "option": "value",
+          "value": 300
+        }
+      }
+    },
+    "robot_wall": {
+      "name": "robot_wall",
+      "momentum": {
+        "wall_motion": "Stationary Wall",
+        "shear_condition": "No Slip"
+      },
+      "thermal": {
+        "thermal_condition": "Heat Flux",
+        "material": "aluminum",
+        "heat_flux": {
+          "option": "value",
+          "value": 0
+        },
+        "wall_thickness": {
+          "option": "value",
+          "value": 0
+        },
+        "heat_generation_rate": {
+          "option": "value",
+          "value": 0
+        },
+        "enable_shell_conduction": false,
+        "caf": {
+          "option": "value",
+          "value": 1
+        }
+      }
+    },
+    "pipe_wall": {
+      "name": "pipe_wall",
+      "momentum": {
+        "wall_motion": "Stationary Wall",
+        "shear_condition": "No Slip"
+      },
+      "thermal": {
+        "thermal_condition": "Heat Flux",
+        "material": "aluminum",
+        "heat_flux": {
+          "option": "value",
+          "value": 0
+        },
+        "wall_thickness": {
+          "option": "value",
+          "value": 0
+        },
+        "heat_generation_rate": {
+          "option": "value",
+          "value": 0
+        },
+        "enable_shell_conduction": false,
+        "caf": {
+          "option": "value",
+          "value": 1
+        }
+      }
+    },
+    "dynamic_mesh": false
+  },
+  "initialization_transcript": "H:\\fluent\\evidence\\benchmark_B_initialization_transcript.txt",
+  "mesh_interfaces_settings_state": {
+    "interface": {},
+    "auto_options": {
+      "set_default_name_prefix": "intf",
+      "order_interface_lists_by_area": false,
+      "set_minimum_area": 0.0,
+      "set_minimum_area_percentage": 0.0,
+      "pairing_between_different_cell_zones_only": false,
+      "pairing_between_interface_zones_only": false
+    },
+    "verbosity": 0,
+    "enforce_continuity_after_bc": false,
+    "coupled_interfaces_inherit_bcs": false,
+    "enforce_coupled_wall_between_solids": false,
+    "enable_visualization_of_interfaces": true,
+    "non_conformal_interface_numerics": {}
+  },
+  "default_interface_created": true,
+  "interface_name": "default-overset-interface",
+  "background_cell_zone": "background_water",
+  "component_cell_zone": "robot_component_fluid",
+  "overset_face_zones": [
+    "overset_component"
+  ],
+  "post_init_mesh_check": "PASS",
+  "initialization_connectivity_lines": [
+    "Auto create default overset interface...Initialize using the hybrid initialization method.Checking case topology... -This case has both inlets & outlets -Pressure information is available at the boundaries\titer\t\tscalar-0\t\tscalar-1\t1\t\t1.000000e+00\t1.000000e+00\t2\t\t1.477823e-02\t1.529403e-02\t3\t\t1.581273e-02\t2.423948e-02\t4\t\t1.582629e-02\t2.180279e-02\t5\t\t1.584075e-02\t2.415169e-02\t6\t\t1.585338e-02\t2.372269e-02\t7\t\t1.585894e-02\t2.398355e-02\t8\t\t1.586149e-02\t2.410404e-02\t9\t\t1.586244e-02\t2.417320e-02\t10\t\t1.586290e-02\t2.426244e-02Hybrid initialization is done.during Hybrid Initialization."
+  ],
+  "available_overset_fields": [
+    "overset-cell-type",
+    "overset-donor-size-ratio"
+  ],
+  "case_file_interface_record": "(overset/interfaces ((default-overset-interface (bg-grids (1 -1 0)) (comp-grids (2 -1 0)))))",
+  "statistics": {
+    "time_s": 0,
+    "zones": [
+      {
+        "id": 1,
+        "name": "background_water",
+        "total": 127360,
+        "solve": 117260,
+        "donor": 8348,
+        "receptor": 1609,
+        "orphan": 0,
+        "dead": 8491,
+        "donor_links": 7963,
+        "receptors_without_donors": 0,
+        "min_volume_m3": 1.627492100914742e-14,
+        "orphan_bounds_m": null
+      },
+      {
+        "id": 2,
+        "name": "robot_component_fluid",
+        "total": 21310,
+        "solve": 18114,
+        "donor": 5358,
+        "receptor": 3050,
+        "orphan": 0,
+        "dead": 146,
+        "donor_links": 15250,
+        "receptors_without_donors": 0,
+        "min_volume_m3": 9.389339107306568e-15,
+        "orphan_bounds_m": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "transcript": " Domain Extents:   x-coordinate: min (m) = -5.000000e-03, max (m) = 5.000000e-03   y-coordinate: min (m) = -8.994257e-04, max (m) = 8.994337e-04   z-coordinate: min (m) = -8.978076e-04, max (m) = 9.000000e-04 Volume statistics:   minimum volume (m3): 9.389339e-15   maximum volume (m3): 4.294661e-13     total volume (m3): 2.854098e-08 Face area statistics:   minimum face area (m2): 7.098653e-10   maximum face area (m2): 1.251475e-08 Checking mesh.................................... Done.",
+  "performed_after_initialization": true
+}
