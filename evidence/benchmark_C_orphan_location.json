@@ -1,0 +1,40 @@
+{
+  "time_s": 0.001650000000000001,
+  "zones": [
+    {
+      "id": 1,
+      "name": "background_water",
+      "total": 127360,
+      "solve": 117370,
+      "donor": 7875,
+      "receptor": 1557,
+      "orphan": 0,
+      "receptors_without_donors": 0,
+      "min_volume_m3": 1.627492100914742e-14,
+      "first_orphan_cell": -1,
+      "first_orphan_centroid_m": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "robot_component_fluid",
+      "total": 21310,
+      "solve": 16817,
+      "donor": 5183,
+      "receptor": 2807,
+      "orphan": 1,
+      "receptors_without_donors": 0,
+      "min_volume_m3": 9.389339107306317e-15,
+      "first_orphan_cell": 10261,
+      "first_orphan_centroid_m": [
+        0.0022596993809832298,
+        -0.0007701991745967802,
+        -2.2103308777287218e-07
+      ]
+    }
+  ],
+  "pose_time_s": 0.001650000000000001
+}

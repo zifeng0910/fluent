@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "setting": "dynamesh/sdof/minimum-cutoff-moments",
+  "before": "1e-50",
+  "set_result": "dynamesh/sdof/minimum-cutoff-moments",
+  "after": "1e-50",
+  "body_inertia_kg_m2": [
+    7.257810693523445e-13,
+    3.929384741151496e-12,
+    3.92938474115149e-12
+  ],
+  "inertia_determinant_kg3_m6": 1.1206106483031212e-35,
+  "physical_inertia_modified": false
+}

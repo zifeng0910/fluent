@@ -1,0 +1,150 @@
+{
+  "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
+  "benchmark_B": "PASS_FROZEN",
+  "magnetic_source": "PASS_FROZEN",
+  "udf_load_validation": "PASS_FROZEN",
+  "real_inertia": "UNCHANGED",
+  "cutoff": {
+    "status": "PASS_DOCUMENTATION",
+    "fresh_recovered_session_cutoff_before_restore": 1e-20,
+    "modified_cutoff": 1e-50,
+    "original_failed_session_prechange_value": "NOT_CAPTURED",
+    "actual_inertia_determinant": 1.1206106483031212e-35,
+    "real_inertia_modified": false,
+    "sensitivity": "NOT_RUN_STATIC_GATE_FAILED",
+    "active_solver_sessions": 1,
+    "session_recovered_after_blocking_zone_replacement_prompt": true,
+    "free_6dof_rerun": "NOT_RUN_STATIC_GATE_FAILED",
+    "dynamic_mesh_disabled_on_failed_static_candidate": true,
+    "diagnostic_case": "H:\\fluent\\live_cases\\benchmark_C_candidates\\benchmark_C_candidate_D_diagnostic.cas.h5"
+  },
+  "old_run": {
+    "status": "FAIL_OLD_OVERSET_ENVELOPE",
+    "failure_time_s": 0.001650000000000001,
+    "orphan_count": 1,
+    "missing_donors": 0,
+    "reconstruction": "Saved initial Fluent FieldData vertices transformed by saved native quaternion and COM; radial clearance to authoritative cylindrical CAD pipe R=0.9mm.",
+    "quaternion_norm_at_failure": 1.0,
+    "peak_quaternion_norm_error": 1.1102230246251565e-16,
+    "failure_rotation_rad": 0.2797885736990376,
+    "failure_axis": [
+      0.04129325489475344,
+      -0.36847525658345137,
+      -0.9287200075296951
+    ],
+    "initial_COM_m": [
+      0.0012060186937156343,
+      0.0,
+      0.0
+    ],
+    "failure_COM_m": [
+      0.0013005514774898487,
+      1.7424475579863842e-05,
+      -1.0376210407426745e-05
+    ],
+    "net_COM_displacement_m": [
+      9.45327837742144e-05,
+      1.7424475579863842e-05,
+      -1.0376210407426745e-05
+    ],
+    "failure_omega_rad_s": [
+      33.05786181299422,
+      -211.1894806975456,
+      -634.1735896945065
+    ],
+    "peak_angular_speed_rad_s": 669.2308726074749,
+    "peak_magnetic_force_N": 2.7947223324714328e-05,
+    "peak_magnetic_torque_Nm": 5.345463349074049e-06,
+    "determinant_cutoff": {
+      "modified": 1e-50,
+      "actual_inertia_determinant": 1.1206106483031212e-35,
+      "original_observed_value": null,
+      "original_capture_status": "NOT_CAPTURED_BEFORE_CHANGE",
+      "default_run_angular_acceleration_warning": true,
+      "real_inertia_modified": false
+    },
+    "robot_clearance_to_CAD_pipe_mm": 0.22715124853682445,
+    "component_clearance_to_CAD_pipe_mm": -0.2154691727070016
+  },
+  "static_gate": "FAIL_NO_ROBUST_CANDIDATE",
+  "static_summary": {
+    "candidate_count": 4,
+    "pose_count": 64,
+    "static_orphan_peak": 24808,
+    "static_missing_donor_peak": 0,
+    "minimum_robot_clearance_mm": 0.13965680153948165,
+    "minimum_overset_clearance_mm": -0.02769676465929926,
+    "minimum_estimated_overlap_layers": 0.2667719787208491,
+    "maximum_estimated_overlap_layers": 0.5335439574416982,
+    "maximum_pose_transform_error_m": 2.3156227778171614e-10,
+    "maximum_tested_angle_rad": 0.35000000000000003,
+    "maximum_robust_safe_angle_rad": null
+  },
+  "candidate_summary": {
+    "A": {
+      "orphan_min": 21483,
+      "orphan_peak": 24808,
+      "overlap_layers_max": 0.2667719787208491,
+      "theta_orphan_onset_rad": 0.0,
+      "theta_connectivity_limit_rad": 0.0,
+      "theta_physical_wall_limit_rad": null,
+      "physical_wall_limit_status": "Not reached: all sampled poses retain >=0.10 mm clearance",
+      "theta_allowed_rad": null,
+      "allowed_range_status": "EMPTY: connectivity fails at reference pose; min(limit)-margin supplies no positive operating range"
+    },
+    "B": {
+      "orphan_min": 16233,
+      "orphan_peak": 18688,
+      "overlap_layers_max": 0.3334649734010614,
+      "theta_orphan_onset_rad": 0.0,
+      "theta_connectivity_limit_rad": 0.0,
+      "theta_physical_wall_limit_rad": null,
+      "physical_wall_limit_status": "Not reached: all sampled poses retain >=0.10 mm clearance",
+      "theta_allowed_rad": null,
+      "allowed_range_status": "EMPTY: connectivity fails at reference pose; min(limit)-margin supplies no positive operating range"
+    },
+    "C": {
+      "orphan_min": 10195,
+      "orphan_peak": 12351,
+      "overlap_layers_max": 0.40015796808127363,
+      "theta_orphan_onset_rad": 0.0,
+      "theta_connectivity_limit_rad": 0.0,
+      "theta_physical_wall_limit_rad": null,
+      "physical_wall_limit_status": "Not reached: all sampled poses retain >=0.10 mm clearance",
+      "theta_allowed_rad": null,
+      "allowed_range_status": "EMPTY: connectivity fails at reference pose; min(limit)-margin supplies no positive operating range"
+    },
+    "D": {
+      "orphan_min": 2025,
+      "orphan_peak": 3179,
+      "overlap_layers_max": 0.5335439574416982,
+      "theta_orphan_onset_rad": 0.0,
+      "theta_connectivity_limit_rad": 0.0,
+      "theta_physical_wall_limit_rad": null,
+      "physical_wall_limit_status": "Not reached: all sampled poses retain >=0.10 mm clearance",
+      "theta_allowed_rad": null,
+      "allowed_range_status": "EMPTY: connectivity fails at reference pose; min(limit)-margin supplies no positive operating range"
+    }
+  },
+  "background_identity": {
+    "cell_count_unchanged": true,
+    "cell_order_unchanged": false,
+    "cell_matching_bijective": true,
+    "maximum_matched_cell_center_error_m": 1.7389534834176374e-18,
+    "maximum_matched_tetra_edge_error_m": 0.0,
+    "background_geometry_preserved": true,
+    "note": "Cell order changes during Fluent import/replacement; comparison uses bijective matching of the actual background cells, not row indices."
+  },
+  "selected_envelope": null,
+  "theta_allowed_rad": null,
+  "final_static_recheck": "NOT_RUN_NO_SELECTED_CANDIDATE",
+  "final_2ms_free_6dof": "NOT_RUN_STATIC_GATE_FAILED",
+  "benchmark_C": "FAIL",
+  "partial_motion_gif": "H:\\fluent\\evidence\\benchmark_C_pyvista\\benchmark_C_actual_magnetic_motion.gif",
+  "successful_motion_gif": null,
+  "successful_velocity_gif": null,
+  "successful_final_frame": null,
+  "remaining_blocker": "No candidate meets connectivity and >=4 conservative effective layers with frozen B background.",
+  "static_csv": "H:\\fluent\\evidence\\benchmark_C_overset_pose_sweep.csv",
+  "static_json": "H:\\fluent\\evidence\\benchmark_C_overset_pose_sweep.json"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_DOCUMENTATION",
+  "fresh_recovered_session_cutoff_before_restore": 1e-20,
+  "modified_cutoff": 1e-50,
+  "original_failed_session_prechange_value": "NOT_CAPTURED",
+  "actual_inertia_determinant": 1.1206106483031212e-35,
+  "real_inertia_modified": false,
+  "sensitivity": "NOT_RUN_STATIC_GATE_FAILED",
+  "active_solver_sessions": 1,
+  "session_recovered_after_blocking_zone_replacement_prompt": true,
+  "free_6dof_rerun": "NOT_RUN_STATIC_GATE_FAILED",
+  "dynamic_mesh_disabled_on_failed_static_candidate": true,
+  "diagnostic_case": "H:\\fluent\\live_cases\\benchmark_C_candidates\\benchmark_C_candidate_D_diagnostic.cas.h5"
+}

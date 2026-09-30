@@ -1,0 +1,48 @@
+{
+  "status": "FAIL_OLD_OVERSET_ENVELOPE",
+  "failure_time_s": 0.001650000000000001,
+  "orphan_count": 1,
+  "missing_donors": 0,
+  "reconstruction": "Saved initial Fluent FieldData vertices transformed by saved native quaternion and COM; radial clearance to authoritative cylindrical CAD pipe R=0.9mm.",
+  "quaternion_norm_at_failure": 1.0,
+  "peak_quaternion_norm_error": 1.1102230246251565e-16,
+  "failure_rotation_rad": 0.2797885736990376,
+  "failure_axis": [
+    0.04129325489475344,
+    -0.36847525658345137,
+    -0.9287200075296951
+  ],
+  "initial_COM_m": [
+    0.0012060186937156343,
+    0.0,
+    0.0
+  ],
+  "failure_COM_m": [
+    0.0013005514774898487,
+    1.7424475579863842e-05,
+    -1.0376210407426745e-05
+  ],
+  "net_COM_displacement_m": [
+    9.45327837742144e-05,
+    1.7424475579863842e-05,
+    -1.0376210407426745e-05
+  ],
+  "failure_omega_rad_s": [
+    33.05786181299422,
+    -211.1894806975456,
+    -634.1735896945065
+  ],
+  "peak_angular_speed_rad_s": 669.2308726074749,
+  "peak_magnetic_force_N": 2.7947223324714328e-05,
+  "peak_magnetic_torque_Nm": 5.345463349074049e-06,
+  "determinant_cutoff": {
+    "modified": 1e-50,
+    "actual_inertia_determinant": 1.1206106483031212e-35,
+    "original_observed_value": null,
+    "original_capture_status": "NOT_CAPTURED_BEFORE_CHANGE",
+    "default_run_angular_acceleration_warning": true,
+    "real_inertia_modified": false
+  },
+  "robot_clearance_to_CAD_pipe_mm": 0.22715124853682445,
+  "component_clearance_to_CAD_pipe_mm": -0.2154691727070016
+}

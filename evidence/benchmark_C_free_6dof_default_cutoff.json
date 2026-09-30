@@ -1,0 +1,627 @@
+{
+  "status": "FAIL_INERTIA_CUTOFF",
+  "stage": "diagnostic_run_preserved",
+  "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
+  "dt_s": 2.5e-05,
+  "duration_s": 0.002,
+  "requested_steps": 80,
+  "maximum_iterations_per_step": 2,
+  "gravity_enabled": false,
+  "six_dof_gravity_m_s2": [
+    0,
+    0,
+    0
+  ],
+  "contact": false,
+  "safety_limit_radial_center_displacement_m": 0.0003925,
+  "fielddata_directory": "H:\\fluent\\evidence\\benchmark_C_fielddata",
+  "zone_states_initial": {
+    "robot_component_fluid": {
+      "name": "dynamic-zone-1",
+      "zone": "robot_component_fluid",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_6dof::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": true
+        },
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0.0,
+            0.0
+          ],
+          "orientation": {
+            "angle": 0.0,
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "robot_wall": {
+      "name": "dynamic-zone-2",
+      "zone": "robot_wall",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_6dof::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": false
+        },
+        "exclude_motion_bc": false,
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0.0,
+            0.0
+          ],
+          "orientation": {
+            "angle": 0.0,
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "meshing": {
+        "adjacent_zones": {
+          "t0": {
+            "type": "constant",
+            "height": 0
+          }
+        }
+      },
+      "solver": {
+        "stabilization": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "gravity_flow": {
+    "enable": false
+  },
+  "gravity_sixdof": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "udf_library": "libbenchmark_C_v4",
+  "load_validation": {
+    "status": "PASS",
+    "source": "scripts/benchmark_C_analytic_reference.py",
+    "history_rows": 88,
+    "unique_time_samples": 44,
+    "duplicate_callback_multiplicity": [
+      2
+    ],
+    "history_validation": {
+      "samples": 44,
+      "max_abs_force_error_N": 6.776263578034403e-21,
+      "max_abs_torque_error_Nm": 4.235164736271502e-22,
+      "max_abs_moment_error_Am2": 2.168404344971009e-19
+    },
+    "probe_validation": {
+      "samples": 6,
+      "max_abs_force_error_N": 6.776263578034403e-21,
+      "max_abs_torque_error_Nm": 4.235164736271502e-22,
+      "max_abs_moment_error_Am2": 2.168404344971009e-19
+    },
+    "probe_times_s": [
+      0.0,
+      0.00025,
+      0.0005,
+      0.00075,
+      0.001,
+      0.00125
+    ],
+    "required_times_present": {
+      "0": false,
+      "0.00025": true,
+      "0.0005": true,
+      "0.001": true,
+      "0.001025": true,
+      "0.0011": true
+    },
+    "orientation_angle_deg": 17.0,
+    "quaternion_convention": "Fluent DT_Q scalar-first mapped to SciPy xyzw; independently consistent with Fluent Q_From_Theta probe"
+  },
+  "fielddata_export_interval_steps": 4,
+  "motion_history_csv": "H:\\fluent\\evidence\\benchmark_C_free_6dof_history.csv",
+  "completed_time_steps": 80,
+  "latest_time_s": 0.0020000000000000018,
+  "latest_com_m": [
+    0.001332954674785251,
+    1.096184813572274e-06,
+    -2.426774256208995e-06
+  ],
+  "latest_radial_displacement_m": 2.6628658314126907e-06,
+  "latest_orphan_count": 0,
+  "fielddata_frames": 20,
+  "final_mesh_check_transcript": "\n Domain Extents:\n   x-coordinate: min (m) = -5.000000e-03, max (m) = 5.000000e-03\n   y-coordinate: min (m) = -8.994257e-04, max (m) = 8.994337e-04\n   z-coordinate: min (m) = -8.978076e-04, max (m) = 9.000000e-04\n Volume statistics:\n   minimum volume (m3): 9.389339e-15\n   maximum volume (m3): 4.294661e-13\n     total volume (m3): 2.854098e-08\n Face area statistics:\n   minimum face area (m2): 7.098653e-10\n   maximum face area (m2): 1.251475e-08\n Checking mesh....................................\n Done.\n",
+  "frames": [
+    {
+      "step": 4,
+      "time_s": 0.0001,
+      "robot_bounds_m": [
+        2.0485505558553996e-07,
+        0.0023002049420028925,
+        -0.00040740150143392384,
+        0.00040750065818428993,
+        -0.0004073367454111576,
+        0.00040723185520619154
+      ],
+      "robot_wall_dx_m": 2.0485505558553996e-07,
+      "component_bounds_delta_m": 2.0489096641540527e-07,
+      "com_m": [
+        0.001206223548766541,
+        6.545258419134845e-10,
+        -2.356728700295091e-08
+      ],
+      "radial_displacement_m": 2.3576374207184433e-08,
+      "orphan_count": 0,
+      "velocity_max_m_s": 2.1083528995513916
+    },
+    {
+      "step": 8,
+      "time_s": 0.00020000000000000004,
+      "robot_bounds_m": [
+        1.3132912499713711e-06,
+        0.002301313215866685,
+        -0.00040741762495599687,
+        0.0004074845346622169,
+        -0.00040744090802036226,
+        0.0004071276925969869
+      ],
+      "robot_wall_dx_m": 1.3132912499713711e-06,
+      "component_bounds_delta_m": 1.3133976608514786e-06,
+      "com_m": [
+        0.001207331985022333,
+        -1.546336076707131e-08,
+        -1.277381038452881e-07
+      ],
+      "radial_displacement_m": 1.2867065982655956e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9796175956726074
+    },
+    {
+      "step": 12,
+      "time_s": 0.0003000000000000001,
+      "robot_bounds_m": [
+        3.324065346532734e-06,
+        0.0023033241741359234,
+        -0.00040744096622802317,
+        0.0004074611933901906,
+        -0.0004075529577676207,
+        0.00040701564284972847
+      ],
+      "robot_wall_dx_m": 3.324065346532734e-06,
+      "component_bounds_delta_m": 3.3241230994462967e-06,
+      "com_m": [
+        0.001209342759093668,
+        -3.879449294470305e-08,
+        -2.397628756800542e-07
+      ],
+      "radial_displacement_m": 2.4288114220170684e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9438495635986328
+    },
+    {
+      "step": 16,
+      "time_s": 0.00040000000000000013,
+      "robot_bounds_m": [
+        6.1905302572995424e-06,
+        0.002306190552189946,
+        -0.0004074500175192952,
+        0.000407452171202749,
+        -0.00040767231257632375,
+        0.0004068962880410254
+      ],
+      "robot_wall_dx_m": 6.1905302572995424e-06,
+      "component_bounds_delta_m": 6.1907339841127396e-06,
+      "com_m": [
+        0.00121220922375366,
+        -4.783946401376154e-08,
+        -3.591157582333421e-07
+      ],
+      "radial_displacement_m": 3.622882031320261e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.908672571182251
+    },
+    {
+      "step": 20,
+      "time_s": 0.0005000000000000001,
+      "robot_bounds_m": [
+        9.835724995355122e-06,
+        0.002309835748746991,
+        -0.0004074422176927328,
+        0.00040745994192548096,
+        -0.0004077937046531588,
+        0.00040677489596419036
+      ],
+      "robot_wall_dx_m": 9.835724995355122e-06,
+      "component_bounds_delta_m": 9.835930541157722e-06,
+      "com_m": [
+        0.001215854419046521,
+        -4.006037624989343e-08,
+        -4.805260865991494e-07
+      ],
+      "radial_displacement_m": 4.821930667767592e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8811182975769043
+    },
+    {
+      "step": 24,
+      "time_s": 0.0006,
+      "robot_bounds_m": [
+        1.4190345609677024e-05,
+        0.0023141903802752495,
+        -0.0004074336029589176,
+        0.00040746855665929615,
+        -0.00040791867650114,
+        0.00040664992411620915
+      ],
+      "robot_wall_dx_m": 1.4190345609677024e-05,
+      "component_bounds_delta_m": 1.4190562069416046e-05,
+      "com_m": [
+        0.001220209039699091,
+        -3.144254273005416e-08,
+        -6.054916253694998e-07
+      ],
+      "radial_displacement_m": 6.063074648113199e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.859177827835083
+    },
+    {
+      "step": 28,
+      "time_s": 0.0006999999999999998,
+      "robot_bounds_m": [
+        1.919272654049564e-05,
+        0.002319192746654153,
+        -0.0004074233875144273,
+        0.00040747877210378647,
+        -0.0004080433282069862,
+        0.00040652527241036296
+      ],
+      "robot_wall_dx_m": 1.919272654049564e-05,
+      "component_bounds_delta_m": 1.9192928448319435e-05,
+      "com_m": [
+        0.00122521142038789,
+        -2.123056147030156e-08,
+        -7.30135961961205e-07
+      ],
+      "radial_displacement_m": 7.304445630500363e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8389098644256592
+    },
+    {
+      "step": 32,
+      "time_s": 0.0007999999999999996,
+      "robot_bounds_m": [
+        2.4790097086224705e-05,
+        0.002324789995327592,
+        -0.0004074117459822446,
+        0.00040749041363596916,
+        -0.00040816949331201613,
+        0.000406399107305333
+      ],
+      "robot_wall_dx_m": 2.4790097086224705e-05,
+      "component_bounds_delta_m": 2.479017712175846e-05,
+      "com_m": [
+        0.001230808790080873,
+        -9.589070698822714e-09,
+        -8.563229290936801e-07
+      ],
+      "radial_displacement_m": 8.563766164302051e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8214253187179565
+    },
+    {
+      "step": 36,
+      "time_s": 0.0008999999999999994,
+      "robot_bounds_m": [
+        3.092870974796824e-05,
+        0.00233092880807817,
+        -0.0004073873278684914,
+        0.00040751483174972236,
+        -0.0004082989471498877,
+        0.00040626965346746147
+      ],
+      "robot_wall_dx_m": 3.092870974796824e-05,
+      "component_bounds_delta_m": 3.0928757041692734e-05,
+      "com_m": [
+        0.001236947403096353,
+        1.484094451015869e-08,
+        -9.857560509388297e-07
+      ],
+      "radial_displacement_m": 9.858677627331518e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8048222064971924
+    },
+    {
+      "step": 40,
+      "time_s": 0.0009999999999999994,
+      "robot_bounds_m": [
+        3.756643855012953e-05,
+        0.0023375663440674543,
+        -0.0004073419258929789,
+        0.0004075602628290653,
+        -0.00040844042086973786,
+        0.0004061281797476113
+      ],
+      "robot_wall_dx_m": 3.756643855012953e-05,
+      "component_bounds_delta_m": 3.75665258616209e-05,
+      "com_m": [
+        0.001243585130461496,
+        6.025376927619365e-08,
+        -1.12724088404353e-06
+      ],
+      "radial_displacement_m": 1.1288500907433315e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7878423929214478
+    },
+    {
+      "step": 44,
+      "time_s": 0.0010999999999999996,
+      "robot_bounds_m": [
+        4.467972757993266e-05,
+        0.0023446797858923674,
+        -0.00040728296153247356,
+        0.00040761922718957067,
+        -0.0004085824475623667,
+        0.0004059861530549824
+      ],
+      "robot_wall_dx_m": 4.467972757993266e-05,
+      "component_bounds_delta_m": 4.467976395972073e-05,
+      "com_m": [
+        0.001250698420303177,
+        1.192189782734711e-07,
+        -1.269262232118664e-06
+      ],
+      "radial_displacement_m": 1.2748489238585972e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7697349786758423
+    },
+    {
+      "step": 48,
+      "time_s": 0.0012,
+      "robot_bounds_m": [
+        5.2255199989303946e-05,
+        0.0023522551637142897,
+        -0.0004072119772899896,
+        0.0004076901823282242,
+        -0.00040871271630749106,
+        0.0004058558843098581
+      ],
+      "robot_wall_dx_m": 5.2255199989303946e-05,
+      "component_bounds_delta_m": 5.225534550845623e-05,
+      "com_m": [
+        0.001258273894486719,
+        1.90194347252836e-07,
+        -1.399543509461941e-06
+      ],
+      "radial_displacement_m": 1.4124078464112191e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7547416687011719
+    },
+    {
+      "step": 52,
+      "time_s": 0.0013000000000000002,
+      "robot_bounds_m": [
+        6.027174458722584e-05,
+        0.002360271755605936,
+        -0.00040713889757171273,
+        0.00040776326204650104,
+        -0.0004088364657945931,
+        0.00040573213482275605
+      ],
+      "robot_wall_dx_m": 6.027174458722584e-05,
+      "component_bounds_delta_m": 6.0271937400102615e-05,
+      "com_m": [
+        0.001266290437444817,
+        2.632695283171678e-07,
+        -1.523274535982562e-06
+      ],
+      "radial_displacement_m": 1.5458577413569573e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7501697540283203
+    },
+    {
+      "step": 56,
+      "time_s": 0.0014000000000000004,
+      "robot_bounds_m": [
+        6.869368371553719e-05,
+        0.002368693705648184,
+        -0.0004070612776558846,
+        0.0004078409110661596,
+        -0.00040895596612244844,
+        0.0004056126344949007
+      ],
+      "robot_wall_dx_m": 6.869368371553719e-05,
+      "component_bounds_delta_m": 6.869388744235039e-05,
+      "com_m": [
+        0.001274712377019143,
+        3.409055172301739e-07,
+        -1.642792178378667e-06
+      ],
+      "radial_displacement_m": 1.6777910218558501e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7442957162857056
+    },
+    {
+      "step": 60,
+      "time_s": 0.0015000000000000007,
+      "robot_bounds_m": [
+        7.750605436740443e-05,
+        0.002377506112679839,
+        -0.0004069688729941845,
+        0.0004079332866240293,
+        -0.0004090747097507119,
+        0.00040549389086663723
+      ],
+      "robot_wall_dx_m": 7.750605436740443e-05,
+      "component_bounds_delta_m": 7.75060907471925e-05,
+      "com_m": [
+        0.001283524749882068,
+        4.332898749297864e-07,
+        -1.761519083895465e-06
+      ],
+      "radial_displacement_m": 1.8140257987814253e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.737993836402893
+    },
+    {
+      "step": 64,
+      "time_s": 0.001600000000000001,
+      "robot_bounds_m": [
+        8.669259113958105e-05,
+        0.002386692678555846,
+        -0.00040687251021154225,
+        0.0004080296494066715,
+        -0.0004091985756531358,
+        0.00040537002496421337
+      ],
+      "robot_wall_dx_m": 8.669259113958105e-05,
+      "component_bounds_delta_m": 8.669262751936913e-05,
+      "com_m": [
+        0.001292711286406339,
+        5.296515897732185e-07,
+        -1.885378695088154e-06
+      ],
+      "radial_displacement_m": 1.9583624869879448e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7338266372680664
+    },
+    {
+      "step": 68,
+      "time_s": 0.0017000000000000012,
+      "robot_bounds_m": [
+        9.62338235694915e-05,
+        0.002396233845502138,
+        -0.00040675984928384423,
+        0.00040814231033436954,
+        -0.0004093223251402378,
+        0.00040524627547711134
+      ],
+      "robot_wall_dx_m": 9.62338235694915e-05,
+      "component_bounds_delta_m": 9.62340272963047e-05,
+      "com_m": [
+        0.001302252516212411,
+        6.423152010905435e-07,
+        -2.009137645323606e-06
+      ],
+      "radial_displacement_m": 2.10931337060392e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.730496883392334
+    },
+    {
+      "step": 72,
+      "time_s": 0.0018000000000000015,
+      "robot_bounds_m": [
+        0.00010611832840368152,
+        0.0024061184376478195,
+        -0.0004066265537403524,
+        0.0004082756058778614,
+        -0.0004094518371857703,
+        0.0004051167634315789
+      ],
+      "robot_wall_dx_m": 0.00010611832840368152,
+      "component_bounds_delta_m": 0.00010611838661134243,
+      "com_m": [
+        0.001312137025157269,
+        7.756108665773186e-07,
+        -2.138647278232347e-06
+      ],
+      "radial_displacement_m": 2.2749471196147494e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7271363735198975
+    },
+    {
+      "step": 76,
+      "time_s": 0.0019000000000000017,
+      "robot_bounds_m": [
+        0.00011635409464361146,
+        0.002416354138404131,
+        -0.00040647760033607483,
+        0.0004084245883859694,
+        -0.00040958719910122454,
+        0.0004049814015161246
+      ],
+      "robot_wall_dx_m": 0.00011635409464361146,
+      "component_bounds_delta_m": 0.0001163541164714843,
+      "com_m": [
+        0.00132237278655521,
+        9.245793617617754e-07,
+        -2.27401246603177e-06
+      ],
+      "radial_displacement_m": 2.4547870970541833e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7264463901519775
+    },
+    {
+      "step": 80,
+      "time_s": 0.0020000000000000018,
+      "robot_bounds_m": [
+        0.0001269359781872481,
+        0.0024269360583275557,
+        -0.00040630597504787147,
+        0.0004085961845703423,
+        -0.00040973996510729194,
+        0.0004048286355100572
+      ],
+      "robot_wall_dx_m": 0.0001269359781872481,
+      "component_bounds_delta_m": 0.00012693600729107857,
+      "com_m": [
+        0.001332954674785251,
+        1.096184813572274e-06,
+        -2.426774256208995e-06
+      ],
+      "radial_displacement_m": 2.6628658314126907e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.7221468687057495
+    }
+  ],
+  "solver_case": "H:\\fluent\\live_cases\\benchmark_C_analytic_6dof\\benchmark_C_analytic_6dof_final.cas.h5",
+  "total_orphan_count": 0,
+  "nonzero_motion": true,
+  "angular_acceleration_warning_count": 239,
+  "angular_velocity_after_run_rad_s": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rotation_gate": "FAIL"
+}

@@ -1,0 +1,27 @@
+{
+  "time_s": 0,
+  "zones": [
+    {
+      "name": "background_water",
+      "total": 127360,
+      "solve": 118531,
+      "donor": 3378,
+      "receptor": 1329,
+      "orphan": 932,
+      "missing": 0,
+      "dead": 7500,
+      "min_volume_m3": 1.627492100914742e-14
+    },
+    {
+      "name": "robot_component_fluid",
+      "total": 555222,
+      "solve": 505840,
+      "donor": 25492,
+      "receptor": 49009,
+      "orphan": 21183,
+      "missing": 0,
+      "dead": 373,
+      "min_volume_m3": 8.805415261121505e-17
+    }
+  ]
+}

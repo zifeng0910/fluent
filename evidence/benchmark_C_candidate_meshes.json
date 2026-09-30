@@ -1,0 +1,70 @@
+[
+  {
+    "candidate_id": "A",
+    "shell_radial_mm": 0.05,
+    "axial_extension_mm": 0.1,
+    "radius_mm": 0.45749999999999996,
+    "x_bounds_mm": [
+      -0.1,
+      2.4
+    ],
+    "status": "PASS",
+    "summary": "message :  \nPart Name: component_a\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    2 Face Zones\n        Face Zone Name(s) : [overset_component, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [robot_component_fluid]\n\n    3 Label(s)\n        Names: [__attrib_abr_topotype:volume, overset_component, robot_wall]\n\n    Bounding box (-0.1 -0.4575 -0.4575)\n                 (2.4 0.4575 0.4575)\n\n    Mesh Summary: \n        115057 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        89098 Tri Faces \n        89098 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        555222 Tet Cells \n        555222 Cells \n    0 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  2\nn_volume_zones :  1\nn_labels :  3\nn_nodes :  115057\nn_faces :  89098\nn_cells :  555222\nn_tri_faces :  89098\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  555222\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+    "case_file": "H:\\fluent\\live_cases\\benchmark_C_candidates\\component_A.cas.h5",
+    "surface_size_mm": [
+      0.01,
+      0.02
+    ]
+  },
+  {
+    "candidate_id": "B",
+    "shell_radial_mm": 0.0625,
+    "axial_extension_mm": 0.1,
+    "radius_mm": 0.47,
+    "x_bounds_mm": [
+      -0.1,
+      2.4
+    ],
+    "status": "PASS",
+    "summary": "message :  \nPart Name: component_b\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    2 Face Zones\n        Face Zone Name(s) : [overset_component, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [robot_component_fluid]\n\n    3 Label(s)\n        Names: [__attrib_abr_topotype:volume, overset_component, robot_wall]\n\n    Bounding box (-0.1 -0.469577 -0.47)\n                 (2.4 0.469577 0.47)\n\n    Mesh Summary: \n        133472 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        90636 Tri Faces \n        90636 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        663376 Tet Cells \n        663376 Cells \n    0 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  2\nn_volume_zones :  1\nn_labels :  3\nn_nodes :  133472\nn_faces :  90636\nn_cells :  663376\nn_tri_faces :  90636\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  663376\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+    "case_file": "H:\\fluent\\live_cases\\benchmark_C_candidates\\component_B.cas.h5",
+    "surface_size_mm": [
+      0.01,
+      0.02
+    ]
+  },
+  {
+    "candidate_id": "C",
+    "shell_radial_mm": 0.075,
+    "axial_extension_mm": 0.1,
+    "radius_mm": 0.4825,
+    "x_bounds_mm": [
+      -0.1,
+      2.4
+    ],
+    "status": "PASS",
+    "summary": "message :  \nPart Name: component_c\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    2 Face Zones\n        Face Zone Name(s) : [overset_component, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [robot_component_fluid]\n\n    3 Label(s)\n        Names: [__attrib_abr_topotype:volume, overset_component, robot_wall]\n\n    Bounding box (-0.1 -0.4825 -0.4825)\n                 (2.4 0.4825 0.4825)\n\n    Mesh Summary: \n        151086 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        92122 Tri Faces \n        92122 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        765933 Tet Cells \n        765933 Cells \n    0 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  2\nn_volume_zones :  1\nn_labels :  3\nn_nodes :  151086\nn_faces :  92122\nn_cells :  765933\nn_tri_faces :  92122\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  765933\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+    "case_file": "H:\\fluent\\live_cases\\benchmark_C_candidates\\component_C.cas.h5",
+    "surface_size_mm": [
+      0.01,
+      0.02
+    ]
+  },
+  {
+    "candidate_id": "D",
+    "shell_radial_mm": 0.1,
+    "axial_extension_mm": 0.1,
+    "radius_mm": 0.5075,
+    "x_bounds_mm": [
+      -0.1,
+      2.4
+    ],
+    "status": "PASS",
+    "summary": "message :  \nPart Name: component_d\nPart ID: 2\n    7 Topo Edges\n    6 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    2 Face Zones\n        Face Zone Name(s) : [overset_component, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [robot_component_fluid]\n\n    3 Label(s)\n        Names: [__attrib_abr_topotype:volume, overset_component, robot_wall]\n\n    Bounding box (-0.1 -0.5074 -0.507099)\n                 (2.4 0.5074 0.5075)\n\n    Mesh Summary: \n        184941 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        95476 Tri Faces \n        95476 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        962334 Tet Cells \n        962334 Cells \n    0 out of 6 TopoFaces are unmeshed\n\nn_topo_edges :  7\nn_topo_faces :  6\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  2\nn_volume_zones :  1\nn_labels :  3\nn_nodes :  184941\nn_faces :  95476\nn_cells :  962334\nn_tri_faces :  95476\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  962334\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+    "case_file": "H:\\fluent\\live_cases\\benchmark_C_candidates\\component_D.cas.h5",
+    "surface_size_mm": [
+      0.01,
+      0.02
+    ]
+  }
+]
