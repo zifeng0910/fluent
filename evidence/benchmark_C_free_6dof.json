@@ -1,0 +1,544 @@
+{
+  "status": "FAIL",
+  "stage": "PARTIAL_OFFSCREEN_RENDER_VERIFIED",
+  "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
+  "dt_s": 2.5e-05,
+  "duration_s": 0.002,
+  "requested_steps": 80,
+  "maximum_iterations_per_step": 2,
+  "gravity_enabled": false,
+  "six_dof_gravity_m_s2": [
+    0,
+    0,
+    0
+  ],
+  "contact": false,
+  "safety_limit_radial_center_displacement_m": 0.0003925,
+  "fielddata_directory": "H:\\fluent\\evidence\\benchmark_C_fielddata",
+  "zone_states_initial": {
+    "robot_component_fluid": {
+      "name": "dynamic-zone-1",
+      "zone": "robot_component_fluid",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_6dof::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": true
+        },
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0.0,
+            0.0
+          ],
+          "orientation": {
+            "angle": 0.0,
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "robot_wall": {
+      "name": "dynamic-zone-2",
+      "zone": "robot_wall",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_6dof::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": false
+        },
+        "exclude_motion_bc": false,
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0.0,
+            0.0
+          ],
+          "orientation": {
+            "angle": 0.0,
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "meshing": {
+        "adjacent_zones": {
+          "t0": {
+            "type": "constant",
+            "height": 0
+          }
+        }
+      },
+      "solver": {
+        "stabilization": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "gravity_flow": {
+    "enable": false
+  },
+  "gravity_sixdof": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "udf_library": "libbenchmark_C_v4",
+  "inertia_determinant_cutoff": "1e-50",
+  "body_inertia_tensor_kg_m2": {
+    "Ixx": 7.257810693523445e-13,
+    "Iyy": 3.929384741151496e-12,
+    "Izz": 3.92938474115149e-12,
+    "Ixy": -2.782693607479792e-28,
+    "Ixz": 1.9327591150313556e-29,
+    "Iyz": 2.4813784672159598e-29
+  },
+  "load_validation": {
+    "status": "PASS",
+    "source": "scripts/benchmark_C_analytic_reference.py",
+    "history_rows": 88,
+    "unique_time_samples": 44,
+    "duplicate_callback_multiplicity": [
+      2
+    ],
+    "history_validation": {
+      "samples": 44,
+      "max_abs_force_error_N": 6.776263578034403e-21,
+      "max_abs_torque_error_Nm": 4.235164736271502e-22,
+      "max_abs_moment_error_Am2": 2.168404344971009e-19
+    },
+    "probe_validation": {
+      "samples": 6,
+      "max_abs_force_error_N": 6.776263578034403e-21,
+      "max_abs_torque_error_Nm": 4.235164736271502e-22,
+      "max_abs_moment_error_Am2": 2.168404344971009e-19
+    },
+    "probe_times_s": [
+      0.0,
+      0.00025,
+      0.0005,
+      0.00075,
+      0.001,
+      0.00125
+    ],
+    "required_times_present": {
+      "0": false,
+      "0.00025": true,
+      "0.0005": true,
+      "0.001": true,
+      "0.001025": true,
+      "0.0011": true
+    },
+    "orientation_angle_deg": 17.0,
+    "quaternion_convention": "Fluent DT_Q scalar-first mapped to SciPy xyzw; independently consistent with Fluent Q_From_Theta probe"
+  },
+  "fielddata_export_interval_steps": 4,
+  "motion_history_csv": "H:\\fluent\\evidence\\benchmark_C_free_6dof_history.csv",
+  "completed_time_steps": 66,
+  "latest_time_s": 0.001650000000000001,
+  "latest_com_m": [
+    0.001300551477489849,
+    1.742447557986384e-05,
+    -1.037621040742675e-05
+  ],
+  "latest_radial_displacement_m": 2.0279992397741732e-05,
+  "latest_orphan_count": 1,
+  "fielddata_frames": 16,
+  "error": "RuntimeError(\"Overset connectivity/volume gate failed at step 66: {'time_s': 0.001650000000000001, 'zones': [{'id': 1, 'name': 'background_water', 'total': 127360, 'solve': 117370, 'donor': 7875, 'receptor': 1557, 'orphan': 0, 'receptors_without_donors': 0, 'min_volume_m3': 1.627492100914742e-14}, {'id': 2, 'name': 'robot_component_fluid', 'total': 21310, 'solve': 16817, 'donor': 5183, 'receptor': 2807, 'orphan': 1, 'receptors_without_donors': 0, 'min_volume_m3': 9.389339107306317e-15}]}\")",
+  "frames": [
+    {
+      "step": 4,
+      "time_s": 0.0001,
+      "robot_bounds_m": [
+        2.0384997867495258e-07,
+        0.002300212625414133,
+        -0.000407401385018602,
+        0.0004075012693647295,
+        -0.00040733470814302564,
+        0.00040724771679379046
+      ],
+      "robot_wall_dx_m": 2.0384997867495258e-07,
+      "component_bounds_delta_m": 2.1816231310367584e-07,
+      "com_m": [
+        0.001206222543410243,
+        8.995839307242803e-10,
+        -2.320937766144447e-08
+      ],
+      "radial_displacement_m": 2.322680483148672e-08,
+      "orphan_count": 0,
+      "velocity_max_m_s": 2.105888605117798
+    },
+    {
+      "step": 8,
+      "time_s": 0.00020000000000000004,
+      "robot_bounds_m": [
+        1.3053009979557828e-06,
+        0.0023013600148260593,
+        -0.00040741782868281007,
+        0.000407485495088622,
+        -0.00040753919165581465,
+        0.00040722356061451137
+      ],
+      "robot_wall_dx_m": 1.3053009979557828e-06,
+      "component_bounds_delta_m": 1.3927929103374481e-06,
+      "com_m": [
+        0.001207323983827188,
+        -1.540450266593555e-08,
+        -1.274401326888039e-07
+      ],
+      "radial_displacement_m": 1.2836777680603789e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9798352718353271
+    },
+    {
+      "step": 12,
+      "time_s": 0.0003000000000000001,
+      "robot_bounds_m": [
+        3.3126639209513087e-06,
+        0.0023034699261188507,
+        -0.00040742350392974913,
+        0.00040751477354206145,
+        -0.00040787726175040007,
+        0.0004072833980899304
+      ],
+      "robot_wall_dx_m": 3.3126639209513087e-06,
+      "component_bounds_delta_m": 3.56440432369709e-06,
+      "com_m": [
+        0.001209331266873797,
+        -4.042153136545407e-08,
+        -2.442473438834901e-07
+      ],
+      "radial_displacement_m": 2.47569515878002e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9438949823379517
+    },
+    {
+      "step": 16,
+      "time_s": 0.00040000000000000013,
+      "robot_bounds_m": [
+        6.175433099997463e-06,
+        0.0023065644782036543,
+        -0.00040734055801294744,
+        0.00040777030517347157,
+        -0.0004084639949724078,
+        0.00040759131661616266
+      ],
+      "robot_wall_dx_m": 6.175433099997463e-06,
+      "component_bounds_delta_m": 6.796559318900108e-06,
+      "com_m": [
+        0.001212193573250764,
+        -4.857977519484936e-08,
+        -3.75005830023072e-07
+      ],
+      "radial_displacement_m": 3.781393487978675e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9082237482070923
+    },
+    {
+      "step": 20,
+      "time_s": 0.0005000000000000001,
+      "robot_bounds_m": [
+        9.822200809139758e-06,
+        0.0023106986191123724,
+        -0.0004078692873008549,
+        0.00040854053804650903,
+        -0.0004094482574146241,
+        0.0004084797983523458
+      ],
+      "robot_wall_dx_m": 9.822200809139758e-06,
+      "component_bounds_delta_m": 1.1220341548323631e-05,
+      "com_m": [
+        0.001215838067281445,
+        -3.518604550819735e-08,
+        -5.200829810610655e-07
+      ],
+      "radial_displacement_m": 5.212718724311427e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.880549669265747
+    },
+    {
+      "step": 24,
+      "time_s": 0.0006,
+      "robot_bounds_m": [
+        1.419085128873121e-05,
+        0.0023159803822636604,
+        -0.0004095936892554164,
+        0.00041022794903256,
+        -0.0004109988803975284,
+        0.0004099999787285924
+      ],
+      "robot_wall_dx_m": 1.419085128873121e-05,
+      "component_bounds_delta_m": 1.7055775970220566e-05,
+      "com_m": [
+        0.001220197582502588,
+        2.644874146451968e-09,
+        -6.947454215402729e-07
+      ],
+      "radial_displacement_m": 6.947504559987147e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.857086181640625
+    },
+    {
+      "step": 28,
+      "time_s": 0.0006999999999999998,
+      "robot_bounds_m": [
+        1.9227816665079445e-05,
+        0.0023225639015436172,
+        -0.0004130623710807413,
+        0.0004133854527026415,
+        -0.00041328868246637285,
+        0.00041234580567106605
+      ],
+      "robot_wall_dx_m": 1.9227816665079445e-05,
+      "component_bounds_delta_m": 2.4585751816630363e-05,
+      "com_m": [
+        0.001225203942882582,
+        9.176649810733834e-08,
+        -9.076444661973498e-07
+      ],
+      "radial_displacement_m": 9.122716520826218e-07,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8429068326950073
+    },
+    {
+      "step": 32,
+      "time_s": 0.0007999999999999996,
+      "robot_bounds_m": [
+        2.491001032467466e-05,
+        0.002330625895410776,
+        -0.0004188216116745025,
+        0.00041868528933264315,
+        -0.00041651015635579824,
+        0.0004157091898377985
+      ],
+      "robot_wall_dx_m": 2.491001032467466e-05,
+      "component_bounds_delta_m": 3.4161610528826714e-05,
+      "com_m": [
+        0.001230798247296486,
+        2.708666103910233e-07,
+        -1.179388744056682e-06
+      ],
+      "radial_displacement_m": 1.2100936039134825e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8165701627731323
+    },
+    {
+      "step": 36,
+      "time_s": 0.0008999999999999994,
+      "robot_bounds_m": [
+        3.126078809145838e-05,
+        0.002340407110750675,
+        -0.000427627848694101,
+        0.00042687676614150405,
+        -0.00042085416498593986,
+        0.0004202483396511525
+      ],
+      "robot_wall_dx_m": 3.126078809145838e-05,
+      "component_bounds_delta_m": 4.611373879015446e-05,
+      "com_m": [
+        0.001236927971639505,
+        5.931133779287618e-07,
+        -1.544979305897683e-06
+      ],
+      "radial_displacement_m": 1.6549152651208922e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8188567161560059
+    },
+    {
+      "step": 40,
+      "time_s": 0.0009999999999999994,
+      "robot_bounds_m": [
+        3.841466241283342e-05,
+        0.0023520314134657383,
+        -0.00044024139060638845,
+        0.0004387347144074738,
+        -0.00042648613452911377,
+        0.00042611450771801174
+      ],
+      "robot_wall_dx_m": 3.841466241283342e-05,
+      "component_bounds_delta_m": 6.0793012380599976e-05,
+      "com_m": [
+        0.001243584790653766,
+        1.124919420636885e-06,
+        -2.028858638708268e-06
+      ],
+      "radial_displacement_m": 2.3198515208493825e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8220818042755127
+    },
+    {
+      "step": 44,
+      "time_s": 0.0010999999999999996,
+      "robot_bounds_m": [
+        4.6592675062129274e-05,
+        0.0023655977565795183,
+        -0.00045731052523478866,
+        0.0004549883306026459,
+        -0.0004335514677222818,
+        0.00043341994751244783
+      ],
+      "robot_wall_dx_m": 4.6592675062129274e-05,
+      "component_bounds_delta_m": 8.271238766610622e-05,
+      "com_m": [
+        0.001250748819508402,
+        1.962173497009268e-06,
+        -2.662319012253821e-06
+      ],
+      "radial_displacement_m": 3.3072749137883505e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8393211364746094
+    },
+    {
+      "step": 48,
+      "time_s": 0.0012,
+      "robot_bounds_m": [
+        5.616466296487488e-05,
+        0.0023811031132936478,
+        -0.0004794461710844189,
+        0.0004763155011460185,
+        -0.0004426820669323206,
+        0.00044228314072825015
+      ],
+      "robot_wall_dx_m": 5.616466296487488e-05,
+      "component_bounds_delta_m": 0.00012037181295454502,
+      "com_m": [
+        0.001258409863749069,
+        3.19342124267857e-06,
+        -3.466862379551073e-06
+      ],
+      "radial_displacement_m": 4.713499123998781e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.8703054189682007
+    },
+    {
+      "step": 52,
+      "time_s": 0.0013000000000000002,
+      "robot_bounds_m": [
+        6.773981294827536e-05,
+        0.0023983302526175976,
+        -0.0005072460044175386,
+        0.0005034483037889004,
+        -0.00045369405415840447,
+        0.0004528173594735563
+      ],
+      "robot_wall_dx_m": 6.773981294827536e-05,
+      "component_bounds_delta_m": 0.00016818154836073518,
+      "com_m": [
+        0.001266597833824923,
+        4.946734757666815e-06,
+        -4.483714699378858e-06
+      ],
+      "radial_displacement_m": 6.676367445560123e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9010100364685059
+    },
+    {
+      "step": 56,
+      "time_s": 0.0014000000000000004,
+      "robot_bounds_m": [
+        8.11114368843846e-05,
+        0.0024169140961021185,
+        -0.0005412832833826542,
+        0.000537118932697922,
+        -0.00046670951996929944,
+        0.00046513223787769675
+      ],
+      "robot_wall_dx_m": 8.11114368843846e-05,
+      "component_bounds_delta_m": 0.0002273949794471264,
+      "com_m": [
+        0.001275365090306028,
+        7.367509735271778e-06,
+        -5.747256935093444e-06
+      ],
+      "radial_displacement_m": 9.344044198167306e-06,
+      "orphan_count": 0,
+      "velocity_max_m_s": 1.9636921882629395
+    },
+    {
+      "step": 60,
+      "time_s": 0.0015000000000000007,
+      "robot_bounds_m": [
+        9.53513736021705e-05,
+        0.002436211798340082,
+        -0.0005820672959089279,
+        0.0005780156352557242,
+        -0.0004819441819563508,
+        0.0004793320840690285
+      ],
+      "robot_wall_dx_m": 9.53513736021705e-05,
+      "component_bounds_delta_m": 0.0002991962246596813,
+      "com_m": [
+        0.001284803565061919,
+        1.061533580128886e-05,
+        -7.323867911643364e-06
+      ],
+      "radial_displacement_m": 1.2896681563926604e-05,
+      "orphan_count": 0,
+      "velocity_max_m_s": 2.0294108390808105
+    },
+    {
+      "step": 64,
+      "time_s": 0.001600000000000001,
+      "robot_bounds_m": [
+        0.00011477321095298976,
+        0.002455165609717369,
+        -0.0006299382075667381,
+        0.0006266937125474215,
+        -0.0004995536874048412,
+        0.0004954952164553106
+      ],
+      "robot_wall_dx_m": 0.00011477321095298976,
+      "component_bounds_delta_m": 0.00038454425521194935,
+      "com_m": [
+        0.0012950569138451,
+        1.486806075376534e-05,
+        -9.259428692910498e-06
+      ],
+      "radial_displacement_m": 1.7515600198016376e-05,
+      "orphan_count": 0,
+      "velocity_max_m_s": 2.1229453086853027
+    }
+  ],
+  "simulation_status": "FAIL",
+  "rendering_status": "PASS",
+  "rendering": "PyVista off-screen; actual Fluent robot_wall, overset_component, and midplane velocity FieldData",
+  "gif": "H:\\fluent\\evidence\\benchmark_C_pyvista\\benchmark_C_actual_magnetic_motion.gif",
+  "preview": "H:\\fluent\\evidence\\benchmark_C_pyvista\\benchmark_C_final.png",
+  "rendered_frame_count": 16
+}
