@@ -20,6 +20,17 @@ FM_Zifeng_*/
 cortexerror.log
 fluenterror.log
 live_cases/**/*.cgns
+freecad_parametric_robot/*
+!freecad_parametric_robot/variants/
+freecad_parametric_robot/variants/*
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/
+freecad_parametric_robot/variants/L2300_D0815_wallwobble/*
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble.FCStd
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble.brep
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble.step
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble_geometry.json
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/Robot_L2300_D0815_WallWobble_mass_properties.json
+!freecad_parametric_robot/variants/L2300_D0815_wallwobble/cad_identity_manifest.json
 pyfluent-mcp/
 live_cases/**/*.msh
 live_cases/**/*.jou
