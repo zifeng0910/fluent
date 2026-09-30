@@ -1,0 +1,9 @@
+{
+  "purpose": "Benchmark A first gate: import FreeCAD-derived robot STL only",
+  "input": "geometry/Robot_L2300_D0815_WallWobble_fluent.stl",
+  "step_timeout": 90,
+  "codes": [
+    "wf=solver.watertight(legacy=True); t=wf.import_geometry; print('IMPORT_ARGS_BEFORE', t.arguments()); t.arguments.update_dict({'file_format':'Mesh','file_name':r'H:/fluent/geometry/Robot_L2300_D0815_WallWobble_fluent.stl','length_unit':'m'}); print('IMPORT_ARGS_AFTER', t.arguments()); print('IMPORT_RESULT', t.execute()); print('TASK_STATE_AFTER', t())"
+  ],
+  "status": "CORRECTED_OFFLINE_NOT_RUN_LAUNCH_BUDGET_EXHAUSTED"
+}

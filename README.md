@@ -6,7 +6,11 @@
 - Magpylib/verified magnetic load replay: PASS
 - Magnetic lookup interface and provenance: PASS
 - Gmsh topology audit: PASS
-- Benchmark A Fluent mesh import: BLOCKED (`Null Domain Pointer`)
+- Benchmark A: NOT RUN; STL import option error; launch budget exhausted (3/3).
+
+Authoritative geometry: STEP/BREP/FCStd. Derived Fluent meshing representation:
+`geometry/Robot_L2300_D0815_WallWobble_fluent.stl` (metres).
+See `evidence/robot_stl_geometry_audit.json` and `evidence/stl_campaign_20260930.md`.
 - Benchmark B: NOT ATTEMPTED
 - Benchmark C: NOT ATTEMPTED
 - Benchmark D: NOT ATTEMPTED

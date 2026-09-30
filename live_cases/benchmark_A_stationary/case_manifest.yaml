@@ -26,4 +26,9 @@ mesh:
 boundary_audit: NOT_REACHED
 benchmark_A: NOT_RUN
 failure_layer: mesh_import
-next_change: repair Fluent 2026 R1 headless Meshing ImportGeometry/workflow execution, then generate native volume mesh
+next_change: corrected STL Mesh format experiment is untested; current launch budget exhausted (3/3)
+current_stl_campaign:
+  geometry_gate: PASS
+  import: FAIL
+  failure: agent omitted file_format Mesh (default CAD)
+  report: evidence/stl_campaign_20260930.md

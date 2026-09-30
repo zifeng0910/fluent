@@ -1,0 +1,47 @@
+Auto-Transcript Start Time:  11:23:15, 30 Sep 2026 ÖÐ‡ø˜ËœÊ•rég 
+Current Directory: "H:\fluent\logs\20260930_112306_506f04"
+
+              Welcome to ANSYS Fluent 2026 R1
+
+              Copyright 2026 Synopsys, Inc. and ANSYS, Inc. All rights reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Feb  2 2026 16:32:00 EST  Build Id: 10262  
+ 
+Connected License Server List:	1055@localhost
+Host spawning Node 0 on machine "Zifeng" (win64).
+Host waiting for connection from Node 0 at 127.0.0.1:51458 
+
+Node 0 connecting to the Host ... connection established.
+
+------------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    CPU Model Name                           
+------------------------------------------------------------------------------------
+n0    Zifeng    1/16  Windows-x64  15908  12th Gen Intel(R) Core(TM) i5-12600KF    
+host  Zifeng          Windows-x64  6696   12th Gen Intel(R) Core(TM) i5-12600KF    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------
+
+Cleanup script file is H:\\fluent\\logs\\20260930_112306_506f04\\cleanup-fluent-Zifeng-6696.bat
+Note: Rank = 0: Process affinity not being set (6).
+
+Graphics driver currently in use: null
+
+
+Loading "C:\Users\zfzha/.fluent"
+Fast-loading "h:/Program Files/ANSYS Inc/v261/fluent/fluent26.1.0/addons/rbfmorph/radial_basis.bin"
+Done.
+Done.
+Information: The server has started and is running.
+(set-session-idle-timeout 3)#f
+
+Meshing> Shutting down Server...
+Services Shutdown...Done.
+Server Shutdown...Done.
+Queue Cleared...Done.
+Shutdown Complete.
+Auto-Transcript Stop Time:  11:23:31, 30 Sep 2026 ÖÐ‡ø˜ËœÊ•rég 
+Total Transcript Time: 0 Minute 15 Second.

@@ -1,0 +1,18 @@
+{
+  "parent": {
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "ProgramFiles": "C:\\Program Files"
+  },
+  "child": {
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "ProgramFiles": "C:\\Program Files"
+  },
+  "python_architecture": [
+    "64bit",
+    "WindowsPE"
+  ],
+  "ansys_path": "H:/Program Files/ANSYS Inc/v261",
+  "ui_mode": "no_gui"
+}

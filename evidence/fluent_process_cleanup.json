@@ -1,0 +1,142 @@
+{
+  "initial_fluent_solver_processes": [],
+  "cleanup": [
+    {
+      "session_id": "20260930_112306_506f04",
+      "PID": 24808,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112306_506f04",
+      "PID": 36284,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112306_506f04",
+      "PID": 23304,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112306_506f04",
+      "PID": 10428,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112306_506f04",
+      "PID": 3152,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112716_04097a",
+      "PID": 6372,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112716_04097a",
+      "PID": 35792,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112716_04097a",
+      "PID": 11596,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112716_04097a",
+      "PID": 15936,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112716_04097a",
+      "PID": 26976,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112914_712a42",
+      "PID": 36080,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112914_712a42",
+      "PID": 32836,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112914_712a42",
+      "PID": 24932,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112914_712a42",
+      "PID": 37824,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    },
+    {
+      "session_id": "20260930_112914_712a42",
+      "PID": 39344,
+      "process_name": null,
+      "start_time": null,
+      "classification": "manager-owned descendant (original identity not persisted)",
+      "action": "killed after official exit/disconnect",
+      "limitation": "name and start time were not saved by original manager"
+    }
+  ],
+  "final_fluent_solver_processes": [],
+  "note": "MCP server process is not a solver; no unrelated ANSYS processes were targeted"
+}
