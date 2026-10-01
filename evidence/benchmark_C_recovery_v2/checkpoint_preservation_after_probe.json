@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-01T16:44:37.488034+00:00",
+  "step": 32,
+  "time_s": 0.0008,
+  "hashes_match": {
+    "case": true,
+    "data": true
+  },
+  "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0032.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0032.dat.h5",
+  "native_restoration_validation": "NOT RUN",
+  "zero_new_timesteps": true
+}

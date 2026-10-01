@@ -94,6 +94,17 @@ class Recovery:
             if abs(p.create_time()-self.s['worker_launcher_created'])<.01:
                 for x in [p]+p.children(recursive=True):ids[x.pid]={'pid':x.pid,'created':x.create_time()}
         except (psutil.Error,KeyError):pass
+        hosts=[];nodes=[]
+        for p in native():
+            try:
+                if p.name().lower()=='fl2610.exe' and p.pid in ids:hosts.append(p)
+                elif p.name().lower()=='fl_mpi2610.exe':nodes.append(p)
+            except psutil.Error:pass
+        associated=mpi_node_associations(hosts,nodes)
+        for identity in associated:ids[identity['pid']]=identity
+        self.s['mpi_node_ownership']=associated
+        self.s['memory_monitor_complete']=all(node.pid in ids for node in nodes)
+        if not self.s['memory_monitor_complete']:self.s['memory_monitor_was_incomplete']=True
         return ids
     def samples(self,wr):
         processes=[]
@@ -105,7 +116,7 @@ class Recovery:
             except psutil.Error:pass
         mem=memory();rates=self.paging.sample();rss=sum(p['working_set_gib'] for p in processes)
         self.peak=max(self.peak,rss);self.s.update(resources=mem,observed_owned_peak_working_set_gib=self.peak,owned_processes=processes,paging=rates)
-        rec={'timestamp':stamp(),'state':self.s['state'],'worker_stage':wr.get('stage'),'memory':mem,'paging':rates,'owned_processes':processes,'combined_working_set_gib':rss}
+        rec={'timestamp':stamp(),'state':self.s['state'],'worker_stage':wr.get('stage'),'memory':mem,'paging':rates,'owned_processes':processes,'combined_working_set_gib':rss,'memory_monitor_complete':self.s.get('memory_monitor_complete'),'mpi_node_ownership':self.s.get('mpi_node_ownership')}
         with (OUT/'memory_samples.jsonl').open('a') as f:f.write(json.dumps(rec)+'\n')
         return mem,rates,rss
     def abort_owned(self,wr,reason):
@@ -123,8 +134,12 @@ class Recovery:
     def finish_probe(self,status,reason,wr):
         historical=read(ROOT/'evidence/benchmark_C_longrun/benchmark_C_memory_requirement_audit.json')
         policy=resource_policy(self.peak,historical['maximum_observed_combined_working_set_gib'])
+        complete=wr.get('status')=='LOADED_WAIT_MEMORY' and not self.s.get('memory_monitor_was_incomplete',False)
+        if not complete:
+            policy.update(checkpoint_load_peak_gib=None,expected_solve_overhead_gib=None,calibration_status='INCOMPLETE; historical planning bound only')
         rec={'status':status,'timestamp':stamp(),'reason':reason,'before':self.s.get('memory_probe_before'),
-             'peak_combined_owned_working_set_gib':self.peak,'resource_policy':policy,'timesteps_advanced':0,
+             'peak_combined_owned_working_set_gib':self.peak if complete else None,'partial_observed_working_set_gib':self.peak,
+             'peak_measurement_complete':complete,'resource_policy':policy,'timesteps_advanced':0,
              'case_data_load_complete':wr.get('status')=='LOADED_WAIT_MEMORY','stage':wr.get('stage'),'paging':self.s.get('paging'),
              'samples':'evidence/benchmark_C_recovery_v2/memory_samples.jsonl','pagefile_capacity_counted_as_ram':False}
         atomic(OUT/'benchmark_C_memory_probe.json',rec)
@@ -201,16 +216,15 @@ class Recovery:
             if state=='MEMORY_PROBE':self.finish_probe('FAIL',reason,wr)
             self.transition('RESOURCE_BLOCKER',reason);return
         if self.s.get('deadline_reached'):
-            if not alive and not native():self.transition('RESOURCE_BLOCKER','Recovery V2 fixed deadline exhausted');return
-            # Current atomic solve/checkpoint may finish; no subsequent step starts.
-            self.s['next_action']='Finish current safe atomic operation and close owned worker';return
+            if alive:self.abort_owned(wr,'Recovery V2 fixed 10-hour hard deadline; previous complete checkpoint preserved')
+            self.transition('RESOURCE_BLOCKER','Recovery V2 fixed deadline exhausted; no automatic extension');return
         if wr.get('status')=='LOADED_WAIT_MEMORY':
             self.loaded_since=self.loaded_since or time.monotonic()
             if time.monotonic()-self.loaded_since<30:return
             self.finish_probe('PASS','Native step32 CASE/DATA/UDF loaded; zero timesteps',wr)
             policy=self.s['memory_policy']
             # Already-loaded processes consume RAM: admission uses available + their current resident footprint.
-            capacity=mem['available_gib']+rss;admitted=capacity>=policy['required_guard_gib'] and mem['available_gib']>=policy['safety_reserve_gib']
+            capacity=mem['available_gib']+rss;admitted=capacity>=policy['required_guard_gib'] and mem['available_gib']>=policy['safety_reserve_gib'] and self.s.get('memory_monitor_complete',False) and not self.s.get('memory_monitor_was_incomplete',False)
             atomic(OUT/'production_admission.json',{'timestamp':stamp(),'status':'PASS' if admitted else 'RESOURCE_BLOCKER',
                'available_gib':mem['available_gib'],'loaded_owned_working_set_gib':rss,'capacity_gib':capacity,'policy':policy})
             self.process_tree(wr)

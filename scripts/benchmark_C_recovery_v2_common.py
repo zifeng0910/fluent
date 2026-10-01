@@ -1,6 +1,6 @@
 """Local recovery evidence and Windows resource measurements; no Fluent launch."""
 from __future__ import annotations
-import csv, ctypes, hashlib, json, os, time
+import csv, ctypes, hashlib, json, os, re, time
 from ctypes import wintypes
 from datetime import datetime, timezone
 from pathlib import Path
@@ -56,6 +56,27 @@ class Paging:
         return out
 def native():
     return [p for p in psutil.process_iter(['pid','name']) if (p.info['name'] or '').lower() in ('fl2610.exe','fl_mpi2610.exe')]
+def mpi_node_associations(hosts,nodes):
+    """Intel MPI may spawn through a Windows service, outside the worker tree.
+
+    Associate only an mport connected to a registered Fluent host's TCP port.
+    Temporal proximity alone is not process ownership evidence.
+    """
+    host_ports={}
+    for host in hosts:
+        try:
+            host_ports[host.pid]={c.laddr.port for c in host.net_connections(kind='tcp') if c.laddr}
+        except psutil.Error:pass
+    matches=[]
+    for node in nodes:
+        try:
+            cmd=node.cmdline()
+            if '-mport' not in cmd:continue
+            endpoint=cmd[cmd.index('-mport')+1];port=int(endpoint.split(':')[-2])
+            owners=[pid for pid,ports in host_ports.items() if port in ports]
+            if len(owners)==1:matches.append({'pid':node.pid,'created':node.create_time(),'registered_host_pid':owners[0],'mport':endpoint,'ownership_evidence':'Node -mport matches registered Fluent host local TCP port'})
+        except (psutil.Error,ValueError,IndexError):pass
+    return matches
 def audit():
     before=memory();records=[]
     required=set();old=read(ROOT/'evidence/benchmark_C_longrun_state.json')

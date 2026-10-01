@@ -1,0 +1,80 @@
+{
+  "status": "FAIL",
+  "timestamp": "2026-10-01T16:38:50.613657+00:00",
+  "reason": "Available physical RAM below 3 GiB / commit >=95%",
+  "before": {
+    "timestamp": "2026-10-01T16:35:43.220494+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 16.610820770263672,
+    "used_gib": 15.22897720336914,
+    "commit_gib": 27.243656158447266,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5694768229051211,
+    "pagefile_used_gib": 1.3486976623535156,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.0999031066894531
+  },
+  "peak_combined_owned_working_set_gib": null,
+  "resource_policy": {
+    "checkpoint_load_peak_gib": null,
+    "historical_observed_solve_resident_gib": 19.48876190185547,
+    "expected_solve_overhead_gib": null,
+    "safety_reserve_gib": 3.897752380371094,
+    "required_guard_gib": 23.386514282226564,
+    "historical_full_run_peak_verified": false,
+    "policy": "max(measured checkpoint load, historical observed solve footprint) + max(20%, 3 GiB); monitor resources during solving. Not a guarantee of the unobserved full-run peak.",
+    "calibration_status": "INCOMPLETE; historical planning lower bound only",
+    "production_calibrated": false
+  },
+  "timesteps_advanced": 0,
+  "case_data_load_complete": false,
+  "stage": "DATA_LOAD",
+  "paging": {
+    "page_reads_per_s": 164.13061859647226,
+    "pages_input_per_s": 868.4629128137661,
+    "pages_output_per_s": 17610.771779134997
+  },
+  "samples": "evidence/benchmark_C_recovery_v2/memory_samples.jsonl",
+  "pagefile_capacity_counted_as_ram": false,
+  "partial_excluding_service_MPI_observed_gib": 1.51483154296875,
+  "peak_measurement_complete": false,
+  "measurement_limitation": "Original process-tree sampler omitted service-spawned Intel MPI node. Full checkpoint-load peak is unknown. Fixed host-mport association is now installed; no second probe run.",
+  "independent_native_sample": {
+    "observation_window_utc": [
+      "2026-10-01T16:38:16Z",
+      "2026-10-01T16:38:50Z"
+    ],
+    "node_pid": 3844,
+    "node_created": 1790872565.2230074,
+    "node_working_set_bytes": 8468090880,
+    "node_peak_working_set_bytes": 9360158720,
+    "host_pid": 13768,
+    "host_working_set_bytes": 660791296,
+    "is_complete_peak": false
+  },
+  "abort_measurements": {
+    "timestamp": "2026-10-01T16:38:50.541654+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 1.8600502014160156,
+    "used_gib": 29.979747772216797,
+    "commit_gib": 46.28076934814453,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.9674114713789647,
+    "pagefile_used_gib": 1.5106620788574219,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.0968704223632812
+  },
+  "resources_after_abort": {
+    "timestamp": "2026-10-01T16:44:36.253705+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 18.170490264892578,
+    "used_gib": 13.669307708740234,
+    "commit_gib": 26.075790405273438,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5450648102578791,
+    "pagefile_used_gib": 2.246013641357422,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.0875587463378906
+  },
+  "native_processes_remaining": []
+}

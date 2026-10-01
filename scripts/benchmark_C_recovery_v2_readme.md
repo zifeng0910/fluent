@@ -15,6 +15,9 @@ It samples owned working sets, physical RAM, system commit, and English PDH
 paging counters. It aborts only captured PID/creation-time identities if RAM
 falls below 3 GiB, commit reaches 95%, or low-memory heavy paging persists.
 Reads during CASE load alone are not treated as pagefile thrashing.
+Intel MPI nodes launched by Windows services are associated through their
+`-mport` and a registered Fluent host's TCP port. Incomplete ownership telemetry
+cannot admit production or establish a full checkpoint-load peak.
 
 Production admission uses max(load footprint, recovered historical solve
 resident sample) plus max(20%, 3 GiB). Historical samples are not a complete
@@ -52,3 +55,15 @@ human/LLM task, independent of solver lifetime. No Benchmark D or contact.
 `checkpoints/*.json`: complete native pairs and full state.
 `detached_process_test.json`: Scheduler ancestry and launcher shell survival.
 `state.json`, `events.jsonl`, `worker.json`, `final.json`: durable FSM evidence.
+
+## First real probe outcome
+
+The first V2 probe aborted in DATA_LOAD without solving: available RAM reached
+1.860 GiB and commit reached 96.74% of the limit. All native Fluent processes
+closed; original step32 CASE/DATA hashes still match. The initial tree-only
+sampler omitted the service-spawned MPI node, so the total load peak is unknown.
+The sampler now uses host-port association, tested offline; no second probe was
+run. Native restart and continuation execution remain unverified. The preserved
+RESOURCE_BLOCKER is a resource result, not a CFD physics failure. The historical
+19.489 GiB resident sample plus 20% gives a 23.387 GiB planning lower bound;
+this is not a completed production memory calibration.

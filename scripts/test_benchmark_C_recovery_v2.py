@@ -7,6 +7,7 @@ from scipy.spatial.transform import Rotation
 import benchmark_C_recovery_v2_supervisor as sup
 import benchmark_C_recovery_v2_restart as restart
 from benchmark_C_recovery_v2_common import archive_history
+from benchmark_C_recovery_v2_common import mpi_node_associations
 
 class RecoverySafety(unittest.TestCase):
     def test_calibrated_guard_never_undercuts_observed_solve(self):
@@ -35,4 +36,16 @@ class RecoverySafety(unittest.TestCase):
                 a.lock.close();b=sup.Recovery();self.assertEqual(b.s['recovery_v2_deadline'],deadline);b.lock.close()
     def test_solve_load_peak_higher_than_history_is_respected(self):
         self.assertAlmostEqual(sup.resource_policy(25.,19.5)['required_guard_gib'],30.)
+    def test_service_spawned_MPI_node_requires_host_port_match(self):
+        from types import SimpleNamespace
+        class Host:
+            pid=100
+            def net_connections(self,kind):return [SimpleNamespace(laddr=SimpleNamespace(port=56236))]
+        class Node:
+            pid=200
+            def __init__(self,port):self.port=port
+            def cmdline(self):return ['fl_mpi2610.exe','-mport',f'127.0.0.1:127.0.0.1:{self.port}:0','node']
+            def create_time(self):return 123.
+        self.assertEqual(mpi_node_associations([Host()],[Node(56236)])[0]['registered_host_pid'],100)
+        self.assertEqual(mpi_node_associations([Host()],[Node(12345)]),[])
 if __name__=='__main__':unittest.main(verbosity=2)
