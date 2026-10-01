@@ -7,10 +7,14 @@ def run(solver,context):
     root=context['root'];sys.path.insert(0,str(root/'scripts'))
     from benchmark_C_fineA_free_6dof_run import surface_mesh
     report_path=root/'evidence/benchmark_C_fineA_free_6dof.json';rec=json.loads(report_path.read_text());source=Path(rec['fielddata_directory'])
-    if rec['status'] not in ['FREE_6DOF_SOLVED','FAIL']:raise RuntimeError('Solver run must be finished before scalar FieldData export')
+    if rec.get('simulation_status',rec['status']) not in ['FREE_6DOF_SOLVED','FAIL']:raise RuntimeError('Solver run must be finished before scalar FieldData export')
     if not rec.get('frames'):raise RuntimeError('No actual saved frames are available')
     s=solver.settings
     for frame in rec.get('frames',[]):
+        if (root/'evidence/benchmark_C_longrun/stop_request.json').exists():
+            raise InterruptedError('Campaign stop requested between FieldData frames')
+        if frame.get('fielddata_export_complete') and (source/f"midplane_{frame['step']:04d}.vtp").exists():
+            continue
         s.file.read_case(file_name=frame['checkpoint_case']);s.file.read_data(file_name=frame['checkpoint_data'])
         time=float(solver.scheme.eval("(rpgetvar 'flow-time)"))
         if abs(time-frame['time_s'])>1e-10:raise RuntimeError('Saved snapshot time mismatch')

@@ -1,0 +1,21 @@
+{
+  "setup_status": "PASS",
+  "solver_restore_execution_status": "DEFERRED_RESOURCE_WAIT",
+  "safety_tests": "6/6 PASS",
+  "scheduler_task": "Fluent-Benchmark-C-Longrun",
+  "supervisor_pid": 42580,
+  "supervisor_process_alive": true,
+  "duplicate_start_test": "REFUSED",
+  "native_fluent_count": 0,
+  "first_start": "2026-10-01T06:37:29.052917+00:00",
+  "hard_deadline": "2026-10-01T18:37:29.052917+00:00",
+  "last_verified_dynamic_step": 33,
+  "last_complete_checkpoint_step": 32,
+  "resource_check": {
+    "available_ram_gib": 17.74300765991211,
+    "disk_free_gib": 218.55948638916016
+  },
+  "frozen_physics_changed": false,
+  "old_evidence_preserved": true,
+  "campaign_status": "RESOURCE_WAIT"
+}

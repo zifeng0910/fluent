@@ -1,0 +1,13 @@
+{"timestamp": "2026-10-01T06:45:11.749305+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.758770+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.762158+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.765877+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.769599+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.781902+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.786999+00:00", "event": "SUPERVISOR_STARTED", "pid": 37400}
+{"timestamp": "2026-10-01T06:45:11.789768+00:00", "event": "STOP_REQUESTED", "reason": "12-hour deadline"}
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.048s
+
+OK

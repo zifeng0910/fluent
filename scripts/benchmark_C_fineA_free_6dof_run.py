@@ -29,6 +29,7 @@ def run(solver, context):
     run_config=context.get('fineA_run_config',{})
     step_count=int(run_config.get('steps',80));cutoff=float(run_config.get('cutoff',1e-50))
     run_tag=run_config.get('tag','')
+    resume_step=int(run_config.get('resume_step',0))
     defer_velocity=True
     gate_path = root / 'evidence/benchmark_C_fineA_final_static_gate.json'
     if not gate_path.exists():
@@ -51,15 +52,26 @@ def run(solver, context):
         "physical_wall_clearance_limit_m": 0.0001,
         "fielddata_directory": str(field_dir),
     }
+    if resume_step:
+        report.update(run_config['prior_report'])
+        report.update(status='RUNNING',stage='restore_verified_checkpoint',
+                      completed_time_steps=resume_step,latest_time_s=resume_step*25e-6,
+                      resumed_from_step=resume_step,resume_case=run_config['resume_case'])
+        report.pop('error',None)
 
     def save():
-        out_json.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
+        temporary=out_json.with_suffix('.json.tmp')
+        temporary.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
+        temporary.replace(out_json)
 
     save()
     try:
         settings = solver.settings
-        settings.file.read_case(file_name=gate['start_case'])
-        settings.file.read_data(file_name=gate['start_data'])
+        settings.file.read_case(file_name=run_config.get('resume_case',gate['start_case']))
+        settings.file.read_data(file_name=run_config.get('resume_data',gate['start_data']))
+        restored_time=float(solver.scheme.eval("(rpgetvar 'flow-time)"))
+        if abs(restored_time-resume_step*25e-6)>1e-10:
+            raise RuntimeError(f'Checkpoint time mismatch: {restored_time} versus step {resume_step}')
         solver.tui.define.overset_interfaces.adapt.set.automatic('no')
         solver.scheme.eval(f"(rpsetvar 'dynamesh/sdof/minimum-cutoff-moments {cutoff:.17g})")
         inertia_cutoff = solver.scheme.eval("(rpgetvar 'dynamesh/sdof/minimum-cutoff-moments)")
@@ -68,25 +80,28 @@ def run(solver, context):
         user = settings.setup.user_defined
         user.load(udf_library_name=str(root/'fluent_udf/libbenchmark_C_v4'))
         dyn = settings.setup.dynamic_mesh
-        dyn.enabled = True
-        dyn.methods.smoothing.enabled = False
-        dyn.options.six_dof.enabled = True
-        dyn.options.six_dof.gravity.set_state({"x": 0.0, "y": 0.0, "z": 0.0})
-        settings.setup.general.operating_conditions.gravity.enable = False
-        settings.setup.general.solver.time = "transient"
+        if not resume_step:
+            dyn.enabled = True
+            dyn.methods.smoothing.enabled = False
+            dyn.options.six_dof.enabled = True
+            dyn.options.six_dof.gravity.set_state({"x": 0.0, "y": 0.0, "z": 0.0})
+            settings.setup.general.operating_conditions.gravity.enable = False
+            settings.setup.general.solver.time = "transient"
         zones = {}
         for zone in ["robot_component_fluid", "robot_wall"]:
-            dyn.dynamic_zones.create(zone=zone)
+            if not any(dyn.dynamic_zones[n].zone.get_state()==zone for n in dyn.dynamic_zones.keys()):
+                dyn.dynamic_zones.create(zone=zone)
             name = next(n for n in dyn.dynamic_zones.keys()
                         if dyn.dynamic_zones[n].zone.get_state() == zone)
             zones[zone] = name
             node = dyn.dynamic_zones[name]
-            node.type = "rigid-body"
-            node.motion.six_dof.enabled = True
-            node.motion.six_dof.passive = (zone == "robot_component_fluid")
-            node.motion.rigid_body_properties.cg_position = [0.0012060186937156343, 0.0, 0.0]
-            node.motion.rigid_body_properties.orientation.set_state({"angle": 0.0, "axis": [1.0, 0.0, 0.0]})
-            node.motion.motion_def = "l2300_magnetic_6dof::libbenchmark_C_v4"
+            if not resume_step:
+                node.type = "rigid-body"
+                node.motion.six_dof.enabled = True
+                node.motion.six_dof.passive = (zone == "robot_component_fluid")
+                node.motion.rigid_body_properties.cg_position = [0.0012060186937156343, 0.0, 0.0]
+                node.motion.rigid_body_properties.orientation.set_state({"angle": 0.0, "axis": [1.0, 0.0, 0.0]})
+                node.motion.motion_def = "l2300_magnetic_6dof::libbenchmark_C_v4"
         context["c_component_dynamic_zone"] = zones["robot_component_fluid"]
         context["c_wall_dynamic_zone"] = zones["robot_wall"]
         calc = settings.solution.run_calculation
@@ -114,21 +129,36 @@ def run(solver, context):
         planes[plane_name].z = 0.0
         robot0 = surface_mesh(field, "robot_wall")
         component0 = surface_mesh(field, "overset_component")
+        if resume_step:
+            from scipy.spatial import cKDTree
+            expected=pv.read(field_dir/f'robot_{resume_step:04d}.vtp')
+            pose_error=float(cKDTree(expected.points).query(robot0.points)[0].max())
+            cg=np.asarray(dyn.dynamic_zones[zones['robot_wall']].motion.rigid_body_properties.cg_position.get_state())
+            cg_error=float(np.max(np.abs(cg-np.asarray(run_config['expected_com_m']))))
+            report['resume_verification']={'time_s':restored_time,'surface_error_m':pose_error,'com_error_m':cg_error,
+                                           'orientation_velocity_restored_from_native_case_data':True,
+                                           'pose_reset_performed':False}
+            if pose_error>1e-10 or cg_error>1e-10:
+                raise RuntimeError(f'Restored pose mismatch: surface {pose_error}, COM {cg_error}')
         pipe_wall = surface_mesh(field, 'pipe_wall')
         pipe_inside_sign = float(np.sign(pv.PolyData(np.array([[.0012060186937156343,0,0]])).compute_implicit_distance(pipe_wall)['implicit_distance'][0]))
-        robot0.save(field_dir / "robot_0000.vtp")
-        component0.save(field_dir / "component_0000.vtp")
+        if not resume_step:
+            robot0.save(field_dir / "robot_0000.vtp")
+            component0.save(field_dir / "component_0000.vtp")
+        else:
+            robot0=pv.read(field_dir/'robot_0000.vtp')
+            component0=pv.read(field_dir/'component_0000.vtp')
         robot_x0 = float(robot0.bounds[0])
         component_bounds0 = np.asarray(component0.bounds, dtype=float)
         output_steps = set(range(4, step_count+1, 4)) | {step_count}
-        frames = []
+        frames = list(run_config.get('prior_frames',[]))
         transcript_start = len(context["messages"])
         stats_path = root / "evidence/benchmark_C_overset_live.json"
         report["stage"] = "free_6dof_time_step_loop"
         report["fielddata_export_interval_steps"] = 4
         report["motion_history_csv"] = str(history_path)
         save()
-        with history_path.open("w", newline="", encoding="utf-8") as stream:
+        with history_path.open("a" if resume_step else "w", newline="", encoding="utf-8") as stream:
             cols = ["step", "time_s", "com_x_m", "com_y_m", "com_z_m", "radial_displacement_m",
                     "robot_wall_dx_m", "component_bounds_delta_m", "orphan_count",
                     "receptors_without_donors", "minimum_cell_volume_m3", "mesh_motion_status",
@@ -141,8 +171,23 @@ def run(solver, context):
             cols += native_columns
             cols += ['donor_length_ratio_min','donor_length_ratio_median','donor_length_ratio_p95','donor_length_ratio_max','official_donor_count','official_receptor_count']
             writer = csv.DictWriter(stream, fieldnames=cols)
-            writer.writeheader()
-            for step in range(1, step_count+1):
+            if not resume_step:writer.writeheader()
+            for step in range(resume_step+1, step_count+1):
+                stop_path=root/'evidence/benchmark_C_longrun/stop_request.json'
+                if stop_path.exists():
+                    import time
+                    stop_id=f'{run_tag}_{step-1:04d}_{time.time_ns()}'
+                    stop_case=case/f'longrun_safe_stop{stop_id}.cas.h5'
+                    stop_data=case/f'longrun_safe_stop{stop_id}.dat.h5'
+                    settings.file.write_case(file_name=str(stop_case))
+                    settings.file.write_data(file_name=str(stop_data))
+                    stop_step=step-1
+                    surface_mesh(field,'robot_wall').save(field_dir/f'robot_{stop_step:04d}.vtp')
+                    surface_mesh(field,'overset_component').save(field_dir/f'component_{stop_step:04d}.vtp')
+                    report.update(status='PAUSED_SAFE_CHECKPOINT',stage='DEADLINE_OR_RESOURCE_STOP',
+                                  frames=frames,completed_time_steps=step-1,latest_time_s=(step-1)*25e-6,
+                                  stop_checkpoint_case=str(stop_case),stop_checkpoint_data=str(stop_data))
+                    save();return
                 calc.dual_time_iterate(time_step_count=1, max_iter_per_step=2)
                 current_fields=case/'free_current_official_cells.csv'
                 settings.file.export.ascii(file_name=str(current_fields),surface_name_list=[],delimiter='comma',quantities=['overset-cell-type','overset-donor-size-ratio','cell-volume'],location='cell-center')
@@ -166,7 +211,7 @@ def run(solver, context):
                 radial = float(np.hypot(com[1], com[2]))
                 actual_time = float(stats["time_s"])
                 native_rows = list(csv.DictReader((root/'evidence/benchmark_C_analytic_6dof_history.csv').open()))
-                native = next(r for r in reversed(native_rows) if r['mode']=='FREE_6DOF' and abs(float(r['time_s'])-actual_time)<1e-10)
+                native = next(r for r in reversed(native_rows) if r['mode']=='FREE_6DOF' and r['zone_name']=='robot_component_fluid' and abs(float(r['time_s'])-actual_time)<1e-10)
                 quaternion = np.array([float(native[f'q{i}']) for i in range(4)])
                 q_norm = float(np.linalg.norm(quaternion))
                 mesh_status = "PASS" if orphan == 0 and missing == 0 and min_volume > 0 else "FAIL"
@@ -206,11 +251,14 @@ def run(solver, context):
                 stream.flush()
                 report.update(completed_time_steps=step, latest_time_s=actual_time,
                               latest_com_m=list(com), latest_radial_displacement_m=radial,
-                              latest_orphan_count=orphan, fielddata_frames=len(frames))
+                              latest_orphan_count=orphan, fielddata_frames=len(frames),frames=frames)
                 save()
                 if orphan or missing or stats['cell_type_counts']['-3'] or min_volume <= 0:
                     raise RuntimeError(f"Overset connectivity/volume gate failed at step {step}: {stats}")
-                if not np.isfinite(np.r_[quaternion,com,[float(native[k]) for k in native_columns],robot.points.ravel(),component.points.ravel()]).all():
+                if not np.isfinite(np.r_[quaternion,com,[float(native[k]) for k in native_columns],
+                    min_volume,robot_clearance,envelope_clearance,
+                    [stats['donor_characteristic_length_ratio'][k] for k in ['min','median','p95','max']],
+                    robot.points.ravel(),component.points.ravel()]).all():
                     raise RuntimeError(f'Nonfinite state at step {step}')
                 if abs(q_norm-1)>1e-6:
                     raise RuntimeError(f'Native quaternion norm drift at step {step}: {q_norm}')

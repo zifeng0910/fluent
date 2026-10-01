@@ -1,0 +1,101 @@
+[
+  {
+    "step": 0,
+    "time_s": 0.0,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fineA_static_start.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fineA_static_start.dat.h5",
+    "case_sha256": "65787af3ab1a2928af81d357dd23a8f0a0d6db9fafee373a32a0c55ccb3c731f",
+    "data_sha256": "9b95c57b1968d53587c8e0ad3e79ee83e029d9f91c53abe79c277055c22e43a9",
+    "verified_at": "2026-10-01T06:37:29.449795+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 4,
+    "time_s": 0.0001,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0004.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0004.dat.h5",
+    "case_sha256": "bedf7f453d1c436cd02972eeaddef2023b82ec1f8f474306e428caa5562f752c",
+    "data_sha256": "cbf12c9f62b88155dcc734f41b7772d622135ec3f86681c7e48e889cc5b6d3b8",
+    "verified_at": "2026-10-01T06:37:31.126079+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 8,
+    "time_s": 0.0002,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0008.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0008.dat.h5",
+    "case_sha256": "bde5f44ccd339345335b38d8f851ed57d1f35ce81f8f94dfd8118d6bb92e053b",
+    "data_sha256": "2dd280a97c6a7581d2fdd09be2a083af7b1573623d24057a7e6f8c0a6a6e6d1a",
+    "verified_at": "2026-10-01T06:37:32.941265+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 12,
+    "time_s": 0.00030000000000000003,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0012.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0012.dat.h5",
+    "case_sha256": "1f2b777d497a33f18af119578792d39448bd56e7a5d97805ec076e803ed23efc",
+    "data_sha256": "a48b9547ed8151ff42a3988ba8fbe754dca0542964a49f599061a71fd39d1ef7",
+    "verified_at": "2026-10-01T06:37:34.823334+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 16,
+    "time_s": 0.0004,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0016.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0016.dat.h5",
+    "case_sha256": "16084fb197a41e44fea72652c7313b3b9c6e7d5a3460fec5cef6898735b7c122",
+    "data_sha256": "b4f7ba5b7257fbb3c858799dc4ebe30a854de45728b8ba202d0475719f8be0fe",
+    "verified_at": "2026-10-01T06:37:36.672931+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 20,
+    "time_s": 0.0005,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0020.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0020.dat.h5",
+    "case_sha256": "2e471fdfdd739a076c2893a572cc3233ab7470be0d3ece2984cb6c1531cc7d26",
+    "data_sha256": "e2ae398a8d7d854d8e3dc7c1c8603fe9548c2334acae17bc6233a3d9693ce2b5",
+    "verified_at": "2026-10-01T06:37:38.700458+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 24,
+    "time_s": 0.0006000000000000001,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0024.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0024.dat.h5",
+    "case_sha256": "ba76253847b6444e46c493ca5b971c4ae0787cb38600c81be6002bec9ab57054",
+    "data_sha256": "21499dda8e1aa12996d472f158304ccdd495ffd1fd566b9bf35ec7544acfd6b6",
+    "verified_at": "2026-10-01T06:37:40.813618+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 28,
+    "time_s": 0.0007,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0028.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0028.dat.h5",
+    "case_sha256": "91ea7f724cc539971126765f65c59b203c48453bfe2f1878a8f44f4c2c3a0a90",
+    "data_sha256": "f986a3c4c121c4752bad7dbc80956b27852c25101f4d54ecf550b45a870b1bac",
+    "verified_at": "2026-10-01T06:37:43.095777+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  },
+  {
+    "step": 32,
+    "time_s": 0.0008,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0032.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fielddata_checkpoint_0032.dat.h5",
+    "case_sha256": "b6352cd4fe33f88f29033e5a191c1c8d4fae9deb6e4b07755a07258fbd2ed685",
+    "data_sha256": "72a01116c54fcaf6ecd8815da314bad23fd5cbdff193bbcec54596892a64c9b4",
+    "verified_at": "2026-10-01T06:37:45.071637+00:00",
+    "verification": "Closed HDF5 headers + SHA256 + complete per-step gate",
+    "native_restore_verification": "PENDING_NATIVE_TIME_AND_POSE_CHECK"
+  }
+]

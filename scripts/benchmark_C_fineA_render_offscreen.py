@@ -9,7 +9,7 @@ import pyvista as pv
 ROOT = Path(__file__).resolve().parents[1]
 report_path = ROOT / "evidence/benchmark_C_fineA_free_6dof.json"
 report = json.loads(report_path.read_text(encoding="utf-8"))
-simulation_status = report.get("status")
+simulation_status = report.get('simulation_status',report.get("status"))
 if simulation_status not in {"FREE_6DOF_SOLVED", "FAIL"}:
     raise RuntimeError(f"Benchmark C free motion is not complete: {simulation_status}")
 source = Path(report["fielddata_directory"])

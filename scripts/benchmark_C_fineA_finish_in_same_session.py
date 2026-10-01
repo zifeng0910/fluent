@@ -10,6 +10,9 @@ def run(solver, context):
     root = context['root']
     report_path = root / 'evidence/benchmark_C_fineA_free_6dof.json'
     baseline = json.loads(report_path.read_text(encoding='utf-8'))
+    baseline['status']=baseline.get('simulation_status',baseline['status'])
+    if (root/'evidence/benchmark_C_longrun/stop_request.json').exists():
+        return
     if baseline['status'] not in ['FREE_6DOF_SOLVED', 'FAIL']:
         raise RuntimeError('Free motion must finish before this workflow')
     workflow_path = root / 'evidence/benchmark_C_fineA_finish_workflow.json'
@@ -17,6 +20,8 @@ def run(solver, context):
                 'python': sys.executable, 'ui_mode': 'no_gui_or_graphics'}
 
     def stage(name):
+        if (root/'evidence/benchmark_C_longrun/stop_request.json').exists():
+            raise InterruptedError('Campaign stop requested between safe workflow operations')
         workflow['stage'] = name
         workflow_path.write_text(json.dumps(workflow, indent=2), encoding='utf-8')
         print(f'C_FINE_A finish: {name}', flush=True)
@@ -28,7 +33,9 @@ def run(solver, context):
         if baseline['status'] == 'FREE_6DOF_SOLVED' and baseline.get('completed_time_steps') == 80:
             stage('CUTOFF_SENSITIVITY')
             try:
-                job('benchmark_C_fineA_cutoff_sensitivity.py')
+                cutoff_path=root/'evidence/benchmark_C_fineA_cutoff_sensitivity.json'
+                if not cutoff_path.exists() or json.loads(cutoff_path.read_text()).get('status')!='PASS':
+                    job('benchmark_C_fineA_cutoff_sensitivity.py')
             except Exception as exc:
                 (root / 'evidence/benchmark_C_fineA_cutoff_sensitivity.json').write_text(
                     json.dumps({'status': 'FAIL', 'error': repr(exc),
@@ -61,6 +68,9 @@ def run(solver, context):
         subprocess.run([sys.executable, str(root / 'scripts/benchmark_C_fineA_final_report.py')], cwd=root, check=True)
         workflow['status'] = 'FILES_VERIFIED_VISUAL_INSPECTION_PENDING'
         stage('AWAIT_VISUAL_INSPECTION')
+    except InterruptedError as exc:
+        workflow.update(status='PAUSED_SAFE_OPERATION',error=str(exc))
+        workflow_path.write_text(json.dumps(workflow,indent=2),encoding='utf-8')
     except Exception as exc:
         workflow.update(status='FAIL', error=repr(exc))
         workflow_path.write_text(json.dumps(workflow, indent=2), encoding='utf-8')

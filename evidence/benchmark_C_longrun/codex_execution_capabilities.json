@@ -1,0 +1,13 @@
+{
+  "cli_executable": "C:\\Users\\zfzha\\AppData\\Local\\OpenAI\\Codex\\bin\\de8a38d2100ae498\\codex.exe",
+  "version": "codex-cli 0.159.2",
+  "help_verified": true,
+  "installed_resume_syntax": "codex exec resume [OPTIONS] [SESSION_ID] [PROMPT]",
+  "agent_execution_verified": false,
+  "chosen_solver_owner": "Windows Task Scheduler / one persistent Python supervisor",
+  "chosen_decision_layer": "same-thread Codex heartbeat",
+  "heartbeat_id": "benchmark-c-12-hour-continuation",
+  "heartbeat_interval_minutes": 15,
+  "thread_id": "01a0f184-f8d7-71e1-b4a1-9cb56638f9a1",
+  "invented_continue_flag_used": false
+}
