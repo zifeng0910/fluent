@@ -1,0 +1,45 @@
+{
+  "status": "MESH_GENERATED_NOT_CONNECTIVITY_VALIDATED",
+  "background_local_size_mm": 0.02,
+  "component_size_mm": [
+    0.01,
+    0.0125
+  ],
+  "growth_rate": 1.2,
+  "stage": "complete",
+  "size_field_result": "error_code :  0\nsize_field_id :  2",
+  "face_classes": {
+    "background_water": {
+      "pipe_wall": [
+        2
+      ],
+      "outlet": [
+        3
+      ],
+      "inlet": [
+        4
+      ]
+    },
+    "robot_component_fluid": {
+      "overset_component": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "robot_wall": [
+        51,
+        52,
+        53
+      ]
+    }
+  },
+  "background_water_mesh_result": "error_code :  0\nwarning_codes :  []\nerror_locations :  []",
+  "background_water_summary": "message :  \nPart Name: background_water\nPart ID: 2\n    3 Topo Edges\n    3 Topo Faces\n    1 Topo Volumes\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    3 Face Zones\n        Face Zone Name(s) : [inlet, outlet, pipe_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [background_water]\n\n    4 Label(s)\n        Names: [__attrib_abr_topotype:volume, inlet, outlet, pipe_wall]\n\n    Bounding box (-5 -0.899452 -0.897808)\n                 (5 0.899452 0.9)\n\n    Mesh Summary: \n        1709976 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        110126 Tri Faces \n        110126 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        10011216 Tet Cells \n        10011216 Cells \n    0 out of 3 TopoFaces are unmeshed\n\nn_topo_edges :  3\nn_topo_faces :  3\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  0\nn_face_zones :  3\nn_volume_zones :  1\nn_labels :  4\nn_nodes :  1709976\nn_faces :  110126\nn_cells :  10011216\nn_tri_faces :  110126\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  10011216\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+  "background_water_cells": 10011216,
+  "robot_component_fluid_mesh_result": "error_code :  0\nwarning_codes :  []\nerror_locations :  []",
+  "robot_component_fluid_summary": "message :  \nPart Name: robot_component_fluid\nPart ID: 3\n    12 Topo Edges\n    7 Topo Faces\n    1 Topo Volumes\n\n    2 Edge Zones\n        Edge Zone Name(s) : [open_cascade_step_translator_7.8_1.2_group_wire, open_cascade_step_translator_7.8_1.3_group_wire]\n    2 Face Zones\n        Face Zone Name(s) : [overset_component, robot_wall]\n    1 Volume Zones\n        Volume Zone Name(s) : [robot_component_fluid]\n\n    4 Label(s)\n        Names: [__attrib_abr_topotype:volume, __attrib_abr_topotype:wire, overset_component, robot_wall]\n\n    Bounding box (-0.05 -0.4575 -0.4575)\n                 (2.35 0.4575 0.4575)\n\n    Mesh Summary: \n        277379 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        206690 Tri Faces \n        206690 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        1353606 Tet Cells \n        1353606 Cells \n    0 out of 7 TopoFaces are unmeshed\n\nn_topo_edges :  12\nn_topo_faces :  7\nn_topo_volumes :  1\nn_edge_zonelets :  0\nn_face_zonelets :  0\nn_cell_zonelets :  0\nn_edge_zones :  2\nn_face_zones :  2\nn_volume_zones :  1\nn_labels :  4\nn_nodes :  277379\nn_faces :  206690\nn_cells :  1353606\nn_tri_faces :  206690\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  1353606\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0",
+  "robot_component_fluid_cells": 1353606,
+  "case_file": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\benchmark_C_fineA.cas.h5",
+  "elapsed_seconds": 173.97880482673645
+}

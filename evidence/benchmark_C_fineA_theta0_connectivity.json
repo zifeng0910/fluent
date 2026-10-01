@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "stage": "save_SI_checkpoint",
+  "theta_rad": 0,
+  "magnetic_physics_frozen": true,
+  "main_udf_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
+  "primary_orphan_metric": "overset-cell-type == -1",
+  "component_nominal_size_mm": [
+    0.01,
+    0.0125
+  ],
+  "background_local_nominal_size_mm": 0.02,
+  "overlap_layers": "ACTUAL_TETRAHEDRON_RAY_CROSSINGS",
+  "mesh_check_transcript": "\n Domain Extents:\n   x-coordinate: min (m) = -5.000000e-03, max (m) = 5.000000e-03\n   y-coordinate: min (m) = -8.994512e-04, max (m) = 8.994504e-04\n   z-coordinate: min (m) = -8.978076e-04, max (m) = 9.000000e-04\n Volume statistics:\n   minimum volume (m3): 6.100597e-17\n   maximum volume (m3): 4.403151e-13\n     total volume (m3): 2.567842e-08\n Face area statistics:\n   minimum face area (m2): 2.338661e-11\n   maximum face area (m2): 1.195007e-08\n Checking mesh....................................\n Done.\n",
+  "cell_type_counts": {
+    "-3": 0,
+    "-2": 1814000,
+    "-1": 0,
+    "0": 202918,
+    "1": 8714660,
+    "2": 633244
+  },
+  "orphans": 0,
+  "donors": 633244,
+  "receptors": 202918,
+  "total_cells": 11364822,
+  "minimum_volume_m3": 6.100596812e-17,
+  "donor_volume_ratio": {
+    "min": 0.2094170101,
+    "median": 1.100109407,
+    "p95": 1.68063322185,
+    "max": 4.993728181
+  },
+  "donor_characteristic_length_ratio": {
+    "min": 0.5938416463727891,
+    "median": 1.0323143381607744,
+    "p95": 1.1889337297775053,
+    "max": 1.7092606702121838
+  },
+  "donor_length_ratio_gt3_count": 0,
+  "donor_ratio_samples": 633244,
+  "field_export": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\theta0_official_cells.csv",
+  "auxiliary_count_available": [
+    "SV_BFP_V",
+    "SV_BF_MARANGONI",
+    "SV_BF_V",
+    "SV_CENTROID",
+    "SV_C_INDEX",
+    "SV_DENSITY",
+    "SV_H",
+    "SV_MASS_IMBALANCE",
+    "SV_MU_LAM",
+    "SV_OVERSET_NDONOR",
+    "SV_OVERSET_NRECEPTOR",
+    "SV_P",
+    "SV_PARTITION",
+    "SV_POST_VAR",
+    "SV_P_G",
+    "SV_T",
+    "SV_U",
+    "SV_U_G",
+    "SV_U_RG",
+    "SV_V",
+    "SV_VOLUME",
+    "SV_V_G",
+    "SV_V_RG",
+    "SV_W",
+    "SV_W_G",
+    "SV_W_RG"
+  ],
+  "SV_OVERSET_NDONOR": {
+    "background_water": {
+      "positive_cells": 93877,
+      "max": 5
+    },
+    "robot_component_fluid": {
+      "positive_cells": 109041,
+      "max": 5
+    }
+  },
+  "SV_OVERSET_NRECEPTOR": {
+    "background_water": {
+      "positive_cells": 334222,
+      "max": 6
+    },
+    "robot_component_fluid": {
+      "positive_cells": 299022,
+      "max": 6
+    }
+  },
+  "elapsed_seconds": 293.28823828697205,
+  "axis": "failure_trajectory",
+  "axis_xyz": [
+    0.04129325489475344,
+    -0.3684752565834513,
+    -0.928720007529695
+  ],
+  "physical_clearance_mm": 0.49030836680335427,
+  "envelope_clearance_mm": 0.4403097156785696,
+  "pose_transform_error_m": 0.0,
+  "background_actual_minimum_layers": 12,
+  "background_layer_interior_gaps": 0,
+  "failure_reasons": [],
+  "component_actual_minimum_layers": 12,
+  "overlap_layers_source": "H:\\fluent\\evidence\\benchmark_C_fineA_actual_layers.json",
+  "valid_donor_check": "All official receptor cells matched positive SV_OVERSET_NDONOR count"
+}
