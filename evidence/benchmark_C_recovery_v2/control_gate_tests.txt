@@ -1,0 +1,11 @@
+test_calibrated_guard_never_undercuts_observed_solve (__main__.RecoverySafety.test_calibrated_guard_never_undercuts_observed_solve) ... ok
+test_quaternion_mapping_against_native_DT_Q_history (__main__.RecoverySafety.test_quaternion_mapping_against_native_DT_Q_history) ... ok
+test_restart_deadline_persists_and_duplicate_lock_rejected (__main__.RecoverySafety.test_restart_deadline_persists_and_duplicate_lock_rejected) ... ok
+test_solve_load_peak_higher_than_history_is_respected (__main__.RecoverySafety.test_solve_load_peak_higher_than_history_is_respected) ... ok
+test_step33_wrong_trajectory_rejected (__main__.RecoverySafety.test_step33_wrong_trajectory_rejected) ... ok
+test_velocity_mismatch_blocks_continuation (__main__.RecoverySafety.test_velocity_mismatch_blocks_continuation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.410s
+
+OK

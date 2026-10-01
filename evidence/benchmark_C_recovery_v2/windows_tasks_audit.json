@@ -1,0 +1,14 @@
+{
+  "Name": "Fluent-Benchmark-C-Longrun",
+  "Path": "\\",
+  "State": "Running",
+  "Command": {
+    "Execute": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "Arguments": "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File H:\\fluent\\scripts\\run_benchmark_C_longrun.ps1 -RunSupervisor",
+    "WorkingDirectory": "H:\\fluent"
+  },
+  "Triggers": null,
+  "LastRun": "10/01/2026 14:44:23",
+  "LastResult": 267009,
+  "NextRun": ""
+}

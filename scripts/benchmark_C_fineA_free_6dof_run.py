@@ -67,11 +67,17 @@ def run(solver, context):
     save()
     try:
         settings = solver.settings
-        settings.file.read_case(file_name=run_config.get('resume_case',gate['start_case']))
-        settings.file.read_data(file_name=run_config.get('resume_data',gate['start_data']))
+        if not run_config.get('already_loaded'):
+            settings.file.read_case(file_name=run_config.get('resume_case',gate['start_case']))
+            settings.file.read_data(file_name=run_config.get('resume_data',gate['start_data']))
         restored_time=float(solver.scheme.eval("(rpgetvar 'flow-time)"))
         if abs(restored_time-resume_step*25e-6)>1e-10:
             raise RuntimeError(f'Checkpoint time mismatch: {restored_time} versus step {resume_step}')
+        if resume_step and run_config.get('recovery_v2'):
+            from benchmark_C_recovery_v2_restart import validate
+            verified=context.get('native_restart_validation',{})
+            if verified.get('step')!=resume_step or verified.get('status') not in ('BENCHMARK_C_STEP32_NATIVE_RESTART_PASS','NATIVE_RESTART_PASS'):
+                validate(solver,context,resume_step)
         solver.tui.define.overset_interfaces.adapt.set.automatic('no')
         solver.scheme.eval(f"(rpsetvar 'dynamesh/sdof/minimum-cutoff-moments {cutoff:.17g})")
         inertia_cutoff = solver.scheme.eval("(rpgetvar 'dynamesh/sdof/minimum-cutoff-moments)")
@@ -151,6 +157,7 @@ def run(solver, context):
         robot_x0 = float(robot0.bounds[0])
         component_bounds0 = np.asarray(component0.bounds, dtype=float)
         output_steps = set(range(4, step_count+1, 4)) | {step_count}
+        if run_config.get('recovery_v2'):output_steps |= {40,50,60,70,80}
         frames = list(run_config.get('prior_frames',[]))
         transcript_start = len(context["messages"])
         stats_path = root / "evidence/benchmark_C_overset_live.json"
@@ -173,7 +180,7 @@ def run(solver, context):
             writer = csv.DictWriter(stream, fieldnames=cols)
             if not resume_step:writer.writeheader()
             for step in range(resume_step+1, step_count+1):
-                stop_path=root/'evidence/benchmark_C_longrun/stop_request.json'
+                stop_path=context.get('campaign_stop_path',root/'evidence/benchmark_C_longrun/stop_request.json')
                 if stop_path.exists():
                     import time
                     stop_id=f'{run_tag}_{step-1:04d}_{time.time_ns()}'
@@ -227,17 +234,15 @@ def run(solver, context):
                     component_delta = float(np.max(np.abs(np.asarray(component.bounds) - component_bounds0)))
                     robot.save(field_dir / f"robot_{step:04d}.vtp")
                     component.save(field_dir / f"component_{step:04d}.vtp")
-                    checkpoint_case=case/f'fielddata_checkpoint{run_tag}_{step:04d}.cas.h5'
-                    checkpoint_data=case/f'fielddata_checkpoint{run_tag}_{step:04d}.dat.h5'
-                    if not run_tag:
-                        settings.file.write_case(file_name=str(checkpoint_case))
-                        settings.file.write_data(file_name=str(checkpoint_data))
+                    checkpoint_prefix=run_config.get('checkpoint_prefix',f'fielddata_checkpoint{run_tag}')
+                    checkpoint_case=case/f'{checkpoint_prefix}_{step:04d}.cas.h5'
+                    checkpoint_data=case/f'{checkpoint_prefix}_{step:04d}.dat.h5'
                     frames.append({"step": step, "time_s": actual_time, "robot_bounds_m": list(robot.bounds),
                                    "robot_wall_dx_m": robot_dx, "component_bounds_delta_m": component_delta,
                                    "com_m": list(com), "radial_displacement_m": radial,
                                    "orphan_count": orphan, "velocity_max_m_s": None,
                                    'checkpoint_case':str(checkpoint_case),'checkpoint_data':str(checkpoint_data)})
-                writer.writerow({"step": step, "time_s": actual_time, "com_x_m": com[0], "com_y_m": com[1],
+                row={"step": step, "time_s": actual_time, "com_x_m": com[0], "com_y_m": com[1],
                                  "com_z_m": com[2], "radial_displacement_m": radial,
                                  "robot_wall_dx_m": robot_dx if robot_dx is not None else "",
                                  "component_bounds_delta_m": component_delta if component_delta is not None else "",
@@ -247,7 +252,8 @@ def run(solver, context):
                                  **{key:float(native[key]) for key in native_columns},
                                  **{f'donor_length_ratio_{key}':stats['donor_characteristic_length_ratio'][key] for key in ['min','median','p95','max']},
                                  'official_donor_count':stats['donors'],'official_receptor_count':stats['receptors'],
-                                 'robot_wall_clearance_m':robot_clearance,'overset_wall_clearance_m':envelope_clearance})
+                                 'robot_wall_clearance_m':robot_clearance,'overset_wall_clearance_m':envelope_clearance}
+                writer.writerow(row)
                 stream.flush()
                 report.update(completed_time_steps=step, latest_time_s=actual_time,
                               latest_com_m=list(com), latest_radial_displacement_m=radial,
@@ -264,6 +270,24 @@ def run(solver, context):
                     raise RuntimeError(f'Native quaternion norm drift at step {step}: {q_norm}')
                 if robot_clearance < .0001 or envelope_clearance <= 0:
                     raise RuntimeError(f'Actual surface clearance gate at step {step}: robot={robot_clearance}, envelope={envelope_clearance}')
+                if run_config.get('recovery_v2') and step==33:
+                    from benchmark_C_recovery_v2_restart import compare_step33
+                    compare_step33(row)
+                if step in output_steps and not run_tag:
+                    if run_config.get('recovery_v2') and (checkpoint_case.exists() or checkpoint_data.exists()):
+                        raise RuntimeError('Refusing to overwrite a Recovery V2 native checkpoint')
+                    settings.file.write_case(file_name=str(checkpoint_case))
+                    settings.file.write_data(file_name=str(checkpoint_data))
+                    if run_config.get('recovery_v2'):
+                        from benchmark_C_recovery_v2_common import OUT,atomic,sha,stamp
+                        from benchmark_C_recovery_v2_restart import state_vector
+                        atomic(OUT/'checkpoints'/f'{checkpoint_prefix}_{step:04d}.json',{
+                            'timestamp':stamp(),'step':step,'CURRENT_TIME':actual_time,
+                            'case':str(checkpoint_case),'data':str(checkpoint_data),
+                            'case_size':checkpoint_case.stat().st_size,'data_size':checkpoint_data.stat().st_size,
+                            'case_sha256':sha(checkpoint_case),'data_sha256':sha(checkpoint_data),
+                            'state':state_vector(row),'row':row,'numerical_gate':'PASS'})
+                save()
                 print(f"C free 6DOF step {step}/{step_count} t={actual_time:.6g}s COM={com} radial={radial:.4g} orphan={orphan}", flush=True)
 
         check_start = len(context["messages"])
@@ -272,9 +296,10 @@ def run(solver, context):
         if re.search(r"mesh check failed|does not belong|negative volume|invalid cell", check_text, re.I):
             raise RuntimeError("Final mesh check failed")
         report["final_mesh_check_transcript"] = check_text
-        final_case = case / f"benchmark_C_analytic_6dof_final{run_tag}.cas.h5"
+        final_stem=run_config.get('checkpoint_prefix',f'benchmark_C_analytic_6dof_final{run_tag}')+'_final' if run_config.get('recovery_v2') else f'benchmark_C_analytic_6dof_final{run_tag}'
+        final_case = case / f"{final_stem}.cas.h5"
         settings.file.write_case(file_name=str(final_case))
-        settings.file.write_data(file_name=str(case / f"benchmark_C_analytic_6dof_final{run_tag}.dat.h5"))
+        settings.file.write_data(file_name=str(case / f"{final_stem}.dat.h5"))
         (root / f"evidence/benchmark_C_fineA_free_6dof_solver_transcript{run_tag}.txt").write_text(
             "".join(context["messages"][transcript_start:]), encoding="utf-8")
         report.update(status="FREE_6DOF_SOLVED", stage="VELOCITY_FIELDDATA_EXPORT_PENDING", frames=frames,

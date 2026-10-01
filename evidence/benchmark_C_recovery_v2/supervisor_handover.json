@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-01T16:35:35.971999+00:00",
+  "reason": "Explicit Recovery V2 replacement: old FSM has indefinite 22-GiB waiting, no bounded load probe, incomplete native restart gates, and model-dependent repair review",
+  "old_pid": 42580,
+  "old_created": 1790837064.219149,
+  "old_command": [
+    "H:\\fluent\\.venv\\Scripts\\python.exe",
+    "-u",
+    "H:\\fluent\\scripts\\benchmark_C_longrun_supervisor.py",
+    "--interval",
+    "180",
+    "--minimum-ram-gib",
+    "22"
+  ],
+  "native_before": [],
+  "worker_before": null,
+  "physics_state_modified": false,
+  "deadline_reset_scope": "New user-authorized Recovery V2 supervision only"
+}

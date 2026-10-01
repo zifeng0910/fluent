@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-10-01T16:37:17.756867+00:00",
+  "status": "PASS",
+  "supervisor_alive": true,
+  "supervisor_ancestry": [
+    {
+      "pid": 12228,
+      "name": "python.exe",
+      "command": [
+        "H:\\fluent\\.venv\\Scripts\\python.exe",
+        "-u",
+        "H:\\fluent\\scripts\\benchmark_C_recovery_v2_supervisor.py"
+      ],
+      "created": 1790872539.3291717
+    },
+    {
+      "pid": 28320,
+      "name": "python.exe",
+      "command": [
+        "H:\\fluent\\.venv\\Scripts\\python.exe",
+        "-u",
+        "H:\\fluent\\scripts\\benchmark_C_recovery_v2_supervisor.py"
+      ],
+      "created": 1790872539.3127396
+    },
+    {
+      "pid": 4920,
+      "name": "powershell.exe",
+      "command": [
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "-NoProfile",
+        "-WindowStyle",
+        "Hidden",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "H:\\fluent\\scripts\\run_benchmark_C_recovery_v2.ps1",
+        "-RunSupervisor"
+      ],
+      "created": 1790872538.6485832
+    },
+    {
+      "pid": 2056,
+      "name": "svchost.exe",
+      "command": null,
+      "created": 1790734387.7160888
+    },
+    {
+      "pid": 1500,
+      "name": "services.exe",
+      "command": null,
+      "created": 1790734387.2304084
+    },
+    {
+      "pid": 1412,
+      "name": "wininit.exe",
+      "command": null,
+      "created": 1790734386.9243743
+    }
+  ],
+  "worker_alive": true,
+  "worker_pid": 34084,
+  "Fluent_native": [
+    {
+      "pid": 3844,
+      "name": "fl_mpi2610.exe"
+    },
+    {
+      "pid": 13768,
+      "name": "fl2610.exe"
+    }
+  ],
+  "launching_shell_return_verified": true,
+  "independent_of_codex": true
+}

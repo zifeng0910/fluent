@@ -11,16 +11,19 @@ def run(solver, context):
     report_path = root / 'evidence/benchmark_C_fineA_free_6dof.json'
     baseline = json.loads(report_path.read_text(encoding='utf-8'))
     baseline['status']=baseline.get('simulation_status',baseline['status'])
-    if (root/'evidence/benchmark_C_longrun/stop_request.json').exists():
+    stop_path=context.get('campaign_stop_path',root/'evidence/benchmark_C_longrun/stop_request.json')
+    if stop_path.exists():
         return
     if baseline['status'] not in ['FREE_6DOF_SOLVED', 'FAIL']:
         raise RuntimeError('Free motion must finish before this workflow')
+    if context.get('recovery_v2') and (baseline['status']!='FREE_6DOF_SOLVED' or baseline.get('completed_time_steps')!=80):
+        raise RuntimeError('Recovery V2 postprocessing requires verified 80 steps / 2 ms')
     workflow_path = root / 'evidence/benchmark_C_fineA_finish_workflow.json'
     workflow = {'status': 'RUNNING', 'same_existing_solver_session': True,
                 'python': sys.executable, 'ui_mode': 'no_gui_or_graphics'}
 
     def stage(name):
-        if (root/'evidence/benchmark_C_longrun/stop_request.json').exists():
+        if stop_path.exists():
             raise InterruptedError('Campaign stop requested between safe workflow operations')
         workflow['stage'] = name
         workflow_path.write_text(json.dumps(workflow, indent=2), encoding='utf-8')
@@ -41,6 +44,7 @@ def run(solver, context):
                     json.dumps({'status': 'FAIL', 'error': repr(exc),
                                 'physical_inertia_modified': False}, indent=2), encoding='utf-8')
                 workflow['sensitivity_error'] = repr(exc)
+                if context.get('recovery_v2'):raise
         else:
             stage('PRESERVE_ACTUAL_STOPPED_STATE')
             job('benchmark_C_fineA_capture_terminal_state.py')

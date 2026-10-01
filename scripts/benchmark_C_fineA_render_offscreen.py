@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 import pyvista as pv
@@ -15,7 +16,8 @@ if simulation_status not in {"FREE_6DOF_SOLVED", "FAIL"}:
 source = Path(report["fielddata_directory"])
 out = ROOT / "evidence/benchmark_C_fineA_pyvista"
 out.mkdir(exist_ok=True)
-gif = out / "benchmark_C_actual_magnetic_motion.gif"
+v2=os.environ.get('BENCHMARK_C_RECOVERY_V2')=='1'
+gif = out / ("benchmark_C_final_actual_magnetic_motion.gif" if v2 else "benchmark_C_actual_magnetic_motion.gif")
 preview = out / "benchmark_C_final_frame.png"
 vmax=max(float(f['velocity_max_m_s']) for f in report['frames'])
 plot = pv.Plotter(off_screen=True, window_size=(1200, 760))
@@ -44,7 +46,7 @@ for frame in report["frames"]:
     if step == int(report["frames"][-1]["step"]):
         plot.screenshot(str(preview))
 plot.close()
-velocity_gif=out/'benchmark_C_velocity.gif'
+velocity_gif=out/('benchmark_C_final_velocity.gif' if v2 else 'benchmark_C_velocity.gif')
 plot=pv.Plotter(off_screen=True,window_size=(1200,760));plot.set_background('#f4f7fa');plot.open_gif(str(velocity_gif),fps=10)
 vmax=max(float(f['velocity_max_m_s']) for f in report['frames'])
 for frame in report['frames']:

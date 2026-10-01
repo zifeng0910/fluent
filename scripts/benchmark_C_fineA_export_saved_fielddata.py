@@ -11,7 +11,7 @@ def run(solver,context):
     if not rec.get('frames'):raise RuntimeError('No actual saved frames are available')
     s=solver.settings
     for frame in rec.get('frames',[]):
-        if (root/'evidence/benchmark_C_longrun/stop_request.json').exists():
+        if context.get('campaign_stop_path',root/'evidence/benchmark_C_longrun/stop_request.json').exists():
             raise InterruptedError('Campaign stop requested between FieldData frames')
         if frame.get('fielddata_export_complete') and (source/f"midplane_{frame['step']:04d}.vtp").exists():
             continue

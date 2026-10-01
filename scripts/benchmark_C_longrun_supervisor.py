@@ -446,6 +446,12 @@ class Supervisor:
             self.lock.close()
 
 if __name__=='__main__':
+    if '--recovery-v2' in sys.argv:
+        # Explicit user-authorized replacement window. V2 owns its own persisted
+        # deadline and uses this same exclusive launch lock. No LLM repair loop.
+        from benchmark_C_recovery_v2_supervisor import Recovery
+        Recovery().run()
+        raise SystemExit(0)
     parser=argparse.ArgumentParser();parser.add_argument('--interval',type=int,default=180)
     parser.add_argument('--minimum-ram-gib',type=float,default=22);parser.add_argument('--once',action='store_true')
     args=parser.parse_args()
