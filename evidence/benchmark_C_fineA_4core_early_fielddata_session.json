@@ -1,0 +1,12 @@
+{
+  "status": "RUNNING",
+  "pid": 42772,
+  "processor_count": 4,
+  "python": "H:\\fluent\\.venv\\Scripts\\python.exe",
+  "ui_mode": "no_gui_or_graphics",
+  "session_count": 1,
+  "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
+  "fluent_version": "Ansys Fluent 2026 R1",
+  "transcript": "H:\\fluent\\live_cases\\benchmark_C_analytic_6dof\\benchmark_C_session_42772_1790816043.trn",
+  "job": "H:\\fluent\\scripts\\benchmark_C_fineA_free_6dof_run.py"
+}

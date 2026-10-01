@@ -1,0 +1,46 @@
+{
+  "cell_type_counts": {
+    "-3": 0,
+    "-2": 1814000,
+    "-1": 0,
+    "0": 202918,
+    "1": 8714653,
+    "2": 633251
+  },
+  "orphans": 0,
+  "orphan_cellnumber_xyz_first20": [],
+  "donors": 633251,
+  "receptors": 202918,
+  "total_cells": 11364822,
+  "minimum_volume_m3": 6.100596812e-17,
+  "donor_volume_ratio": {
+    "min": 0.2094170101,
+    "median": 1.100106086,
+    "p95": 1.680627244,
+    "max": 4.993728181
+  },
+  "donor_characteristic_length_ratio": {
+    "min": 0.5938416463727891,
+    "median": 1.03231329938002,
+    "p95": 1.1889323201350075,
+    "max": 1.7092606702121838
+  },
+  "donor_length_ratio_gt3_count": 0,
+  "donor_ratio_samples": 633251,
+  "time_s": 5e-05,
+  "receptors_with_valid_donors": 202918,
+  "native_donor_count_statistics": {
+    "background_water": {
+      "positive_cells": 93877,
+      "min_positive": 4,
+      "median_positive": 5.0,
+      "max": 5
+    },
+    "robot_component_fluid": {
+      "positive_cells": 109041,
+      "min_positive": 5,
+      "median_positive": 5.0,
+      "max": 5
+    }
+  }
+}

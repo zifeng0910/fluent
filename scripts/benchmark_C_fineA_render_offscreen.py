@@ -17,6 +17,7 @@ out = ROOT / "evidence/benchmark_C_fineA_pyvista"
 out.mkdir(exist_ok=True)
 gif = out / "benchmark_C_actual_magnetic_motion.gif"
 preview = out / "benchmark_C_final_frame.png"
+vmax=max(float(f['velocity_max_m_s']) for f in report['frames'])
 plot = pv.Plotter(off_screen=True, window_size=(1200, 760))
 plot.set_background("#f4f7fa")
 plot.open_gif(str(gif), fps=10)
@@ -26,7 +27,7 @@ for frame in report["frames"]:
     fluid = pv.read(source / f"midplane_{step:04d}.vtp")
     component = pv.read(source / f"component_{step:04d}.vtp")
     plot.clear()
-    plot.add_mesh(fluid, scalars="velocity_m_s", cmap="viridis", clim=[0.0, 2.5],
+    plot.add_mesh(fluid, scalars="velocity_m_s", cmap="viridis", clim=[0.0, max(vmax,1e-12)],
                   show_scalar_bar=True, scalar_bar_args={"title": "Velocity (m/s)"}, opacity=0.5)
     plot.add_mesh(component, style="wireframe", color="#586b80", opacity=0.32, line_width=1)
     plot.add_mesh(robot, color="#ef812b", smooth_shading=True, opacity=1.0)

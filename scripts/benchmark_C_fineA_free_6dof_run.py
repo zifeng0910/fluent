@@ -29,6 +29,7 @@ def run(solver, context):
     run_config=context.get('fineA_run_config',{})
     step_count=int(run_config.get('steps',80));cutoff=float(run_config.get('cutoff',1e-50))
     run_tag=run_config.get('tag','')
+    defer_velocity=True
     gate_path = root / 'evidence/benchmark_C_fineA_final_static_gate.json'
     if not gate_path.exists():
         raise RuntimeError('Free 6DOF requires BENCHMARK_C_OVERSET_RESOLUTION_PASS final static audit')
@@ -36,7 +37,7 @@ def run(solver, context):
     if gate.get('status') != 'BENCHMARK_C_OVERSET_RESOLUTION_PASS':
         raise RuntimeError('Final C component static gate has not passed')
     out_json = root / f"evidence/benchmark_C_fineA_free_6dof{run_tag}.json"
-    field_dir = root / f"evidence/benchmark_C_fineA_fielddata{run_tag}"
+    field_dir = root / f"evidence/benchmark_C_fineA_deferred_fielddata{run_tag}"
     field_dir.mkdir(exist_ok=True)
     history_path = root / f"evidence/benchmark_C_fineA_free_6dof_history{run_tag}.csv"
     report = {
@@ -44,6 +45,7 @@ def run(solver, context):
         "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
         "dt_s": 25e-6, "duration_s": step_count*25e-6, "requested_steps": step_count,
         'run_purpose':'CUTOFF_SENSITIVITY' if run_tag else 'FULL_2MS_FREE_6DOF',
+        'velocity_fielddata_export':'DEFERRED_UNTIL_SOLVING_FINISHES',
         "maximum_iterations_per_step": 2, "gravity_enabled": False,
         "six_dof_gravity_m_s2": [0, 0, 0], "contact": False,
         "physical_wall_clearance_limit_m": 0.0001,
@@ -180,18 +182,16 @@ def run(solver, context):
                     component_delta = float(np.max(np.abs(np.asarray(component.bounds) - component_bounds0)))
                     robot.save(field_dir / f"robot_{step:04d}.vtp")
                     component.save(field_dir / f"component_{step:04d}.vtp")
-                    fluid = surface_mesh(field, plane_name)
-                    velocity = np.asarray(field.get_field_data(ScalarFieldDataRequest(
-                        field_name="velocity-magnitude", surfaces=[plane_name], node_value=True,
-                        boundary_value=False))[plane_name], dtype=float)
-                    if len(velocity) != fluid.n_points or not np.isfinite(velocity).all():
-                        raise RuntimeError("Nonfinite or inconsistent Fluent velocity FieldData")
-                    fluid.point_data["velocity_m_s"] = velocity
-                    fluid.save(field_dir / f"midplane_{step:04d}.vtp")
+                    checkpoint_case=case/f'fielddata_checkpoint{run_tag}_{step:04d}.cas.h5'
+                    checkpoint_data=case/f'fielddata_checkpoint{run_tag}_{step:04d}.dat.h5'
+                    if not run_tag:
+                        settings.file.write_case(file_name=str(checkpoint_case))
+                        settings.file.write_data(file_name=str(checkpoint_data))
                     frames.append({"step": step, "time_s": actual_time, "robot_bounds_m": list(robot.bounds),
                                    "robot_wall_dx_m": robot_dx, "component_bounds_delta_m": component_delta,
                                    "com_m": list(com), "radial_displacement_m": radial,
-                                   "orphan_count": orphan, "velocity_max_m_s": float(velocity.max())})
+                                   "orphan_count": orphan, "velocity_max_m_s": None,
+                                   'checkpoint_case':str(checkpoint_case),'checkpoint_data':str(checkpoint_data)})
                 writer.writerow({"step": step, "time_s": actual_time, "com_x_m": com[0], "com_y_m": com[1],
                                  "com_z_m": com[2], "radial_displacement_m": radial,
                                  "robot_wall_dx_m": robot_dx if robot_dx is not None else "",
@@ -229,7 +229,7 @@ def run(solver, context):
         settings.file.write_data(file_name=str(case / f"benchmark_C_analytic_6dof_final{run_tag}.dat.h5"))
         (root / f"evidence/benchmark_C_fineA_free_6dof_solver_transcript{run_tag}.txt").write_text(
             "".join(context["messages"][transcript_start:]), encoding="utf-8")
-        report.update(status="FREE_6DOF_SOLVED", stage="FieldData_export_complete", frames=frames,
+        report.update(status="FREE_6DOF_SOLVED", stage="VELOCITY_FIELDDATA_EXPORT_PENDING", frames=frames,
                       solver_case=str(final_case), total_orphan_count=sum(
                           int(r["orphan_count"]) for r in csv.DictReader(history_path.open())),
                       nonzero_motion=(any(abs(f["robot_wall_dx_m"]) > 1e-12 or

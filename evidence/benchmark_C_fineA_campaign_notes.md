@@ -77,3 +77,12 @@ are archived as `SERIAL_PRELIMINARY_INTERRUPTED_FOR_4CORE_RESTART`.
 The owned solver was closed and replaced with one four-core solver in the
 same venv and no_gui_or_graphics mode. The final run restarts at t=0 from
 the accepted static checkpoint; mesh and physics are unchanged.
+
+The first four-core attempt completed four steps and one velocity FieldData
+frame, then produced no new solver log for more than 18 minutes after that
+export. CPU counters still advanced. The cause is not confirmed; it is
+archived as `NO_PROGRESS_AFTER_FIRST_VELOCITY_FIELDDATA_EXPORT`.
+The retry defers velocity-plane FieldData until solving ends. Surface
+clearance checks and official cell statistics remain per-step. Native
+case/data checkpoints are saved every four steps for one serial headless
+postprocessing session, followed by PyVista offscreen rendering.
