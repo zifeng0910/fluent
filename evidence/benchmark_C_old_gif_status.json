@@ -2,5 +2,6 @@
   "status": "FAILED_PARTIAL_OLD_OVERSET",
   "gif": "H:/fluent/evidence/benchmark_C_pyvista/benchmark_C_actual_magnetic_motion.gif",
   "preserve_original_bytes": true,
-  "new_render_directory": "H:/fluent/evidence/benchmark_C_fineA_pyvista"
+  "new_render_directory": "H:/fluent/evidence/benchmark_C_fineA_pyvista",
+  "sha256": "0a03a83dad94ce848d70f480df7e6c3c3914edf0a4edc75ae0c4b879941896cb"
 }

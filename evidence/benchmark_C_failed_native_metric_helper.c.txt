@@ -1,0 +1,25 @@
+#include "udf.h"
+#include "overset.h"
+#include <stdio.h>
+/* Diagnostic only: no motion or force callbacks, no frozen UDF changes. */
+DEFINE_ON_DEMAND(benchmark_C_official_metrics)
+{
+#if !RP_HOST
+  Domain *d=Get_Domain(1);Thread *t;cell_t c;FILE *fp;
+  Write_Overset_Cell_Types(d,"H:/fluent/evidence/benchmark_C_native_cell_types.txt");
+  Write_Overset_Cell_Counts(d,"H:/fluent/evidence/benchmark_C_native_cell_counts.txt");
+  Fill_Overset_Donor_Size_Ratio(d);
+  fp=fopen("H:/fluent/evidence/benchmark_C_official_donor_cells.csv","w");
+  if(!fp)Error("Cannot export official overset diagnostic\n");
+  fprintf(fp,"zone,cell,x,y,z,ndonor,nreceptor,donor_volume_ratio,volume\n");
+  thread_loop_overset_c(t,d){
+    begin_c_loop_int(c,t){
+      if(OVERSET_DONOR_CELL_P(c,t)||OVERSET_ORPHAN_CELL_P(c,t)||OVERSET_RECEPTOR_CELL_P(c,t)){
+        real x[ND_ND];C_CENTROID(x,c,t);
+        fprintf(fp,"%s,%ld,%.17g,%.17g,%.17g,%d,%d,%.17g,%.17g\n",THREAD_NAME(t),(long)c,x[0],x[1],x[2],C_OVERSET_NDONOR(c,t),C_OVERSET_NRECEPTOR(c,t),C_OVERSET_SIZE_RATIO(c,t),C_VOLUME(c,t));
+      }
+    }end_c_loop_int(c,t)
+  }
+  fclose(fp);
+#endif
+}

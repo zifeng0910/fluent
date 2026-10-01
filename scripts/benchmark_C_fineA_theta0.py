@@ -13,6 +13,7 @@ def summarize_csv(path):
             lines=[fp.readline() for _ in range(100000)];lines=[s for s in lines if s]
             if not lines:break
             a=np.loadtxt(lines,delimiter=',',ndmin=2);types=a[:,it].astype(int)
+            if not np.isfinite(a).all():raise RuntimeError('Nonfinite official cell field export')
             for k in counts:counts[k]+=int(np.count_nonzero(types==int(k)))
             if len(orphans)<20:orphans.extend(a[types==-1,:4][:20-len(orphans)].tolist())
             r=a[:,ir];ratios.append(r[(types==2)&(r>0)])

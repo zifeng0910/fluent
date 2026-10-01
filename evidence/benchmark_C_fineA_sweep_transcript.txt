@@ -1,0 +1,107 @@
+
+       Clearing partially read grid.
+
+Reading from Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\theta0_SI.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+    11364822 cells,     2 cell zones ...
+       10011216 tetrahedral cells,  zone id: 1
+        1353606 tetrahedral cells,  zone id: 2
+    22888052 faces,     7 face zones ...
+            474 triangular pressure-inlet faces,  zone id: 3
+            480 triangular pressure-outlet faces,  zone id: 4
+         111340 triangular overset faces,  zone id: 5
+         109172 triangular wall faces,  zone id: 6
+          95350 triangular wall faces,  zone id: 7
+       19967369 triangular interior faces,  zone id: 8
+        2603867 triangular interior faces,  zone id: 9
+     2000720 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+  Reading overset connectivity ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	robot_component_fluid_interior
+	background_water_interior
+	robot_wall
+	pipe_wall
+	overset_component
+	inlet
+	outlet
+	robot_component_fluid
+	background_water
+     overset interfaces,
+
+     parallel,
+Done.
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\sweep_official_current.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+

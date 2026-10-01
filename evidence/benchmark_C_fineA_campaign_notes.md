@@ -60,3 +60,10 @@ not a nominal thickness/spacing division or proof for every surface location.
 Short static pose sweep is in progress. No dynamic PASS or new GIF is claimed.
 The new free-run and rendering scripts use independent C_FINE_A output paths.
 The old GIF is labeled `FAILED_PARTIAL_OLD_OVERSET` and its bytes are preserved.
+
+## Static sweep completed
+
+All 10 prescribed poses PASS. Peak official orphan count is 0; minimum sampled
+background crossings are 7; minimum physical clearance is 0.1403270937 mm.
+Maximum donor characteristic length ratio is 2.7681409544.
+The accepted tested angular bound is 0.35 rad on each specified axis.

@@ -1,0 +1,79 @@
+
+       Clearing partially read grid.
+
+Reading from Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\benchmark_C_fineA.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+    11364822 cells,     2 cell zones ...
+       10011216 mixed cells,  zone id: 1
+        1353606 mixed cells,  zone id: 2
+    22888052 faces,     7 face zones ...
+            474 triangular wall faces,  zone id: 3
+            480 triangular wall faces,  zone id: 4
+         111340 triangular wall faces,  zone id: 5
+         109172 triangular wall faces,  zone id: 6
+          95350 triangular wall faces,  zone id: 7
+       19967369 triangular interior faces,  zone id: 8
+        2603867 triangular interior faces,  zone id: 9
+     2000720 nodes,     3 node zones ...
+  Done.
+
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+     zones,
+	robot_component_fluid_interior
+	background_water_interior
+	robot_wall
+	pipe_wall
+	overset_component
+	outlet
+	inlet
+	robot_component_fluid
+	background_water
+     parallel,
+
+Note: 2d, pressure-based, inviscid case read into
+      3d, double precision, pressure-based, inviscid solver.
+
+
+
+The automatic selection for flux type has changed to Rhie-Chow: momentum based.
+
+Done.
+
+Auto create default overset interface...
+
+ Domain Extents:
+   x-coordinate: min (m) = -5.000000e-03, max (m) = 5.000000e-03
+   y-coordinate: min (m) = -8.994512e-04, max (m) = 8.994504e-04
+   z-coordinate: min (m) = -8.978076e-04, max (m) = 9.000000e-04
+ Volume statistics:
+   minimum volume (m3): 6.100597e-17
+   maximum volume (m3): 4.403151e-13
+     total volume (m3): 2.567842e-08
+ Face area statistics:
+   minimum face area (m2): 2.338661e-11
+   maximum face area (m2): 1.195007e-08
+ Checking mesh....................................
+ Done.
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\theta0_official_cells.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+Writing to Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\theta0_SI.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+    11364822 cells,     2 zones ...
+    22888052 faces,     7 zones ...
+     2000720 nodes,     1 zone  ...
+  Done.
+
+  Writing overset connectivity ...
+  Done.
+Done.

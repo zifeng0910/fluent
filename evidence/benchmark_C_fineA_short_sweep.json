@@ -1,0 +1,520 @@
+{
+  "status": "BENCHMARK_C_OVERSET_RESOLUTION_PASS",
+  "stage": "static_sweep",
+  "physics_frozen": true,
+  "automatic_adaption": false,
+  "rows": [
+    {
+      "axis": "failure_trajectory",
+      "axis_xyz": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0,
+      "physical_clearance_mm": 0.49030836680335427,
+      "envelope_clearance_mm": 0.4403097156785696,
+      "pose_transform_error_m": 0.0,
+      "orphans": 0,
+      "donors": 633244,
+      "receptors": 202918,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 1814000,
+        "-1": 0,
+        "0": 202918,
+        "1": 8714660,
+        "2": 633244
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.5938416463727891,
+        "median": 1.0323143381607744,
+        "p95": 1.1889337297775053,
+        "max": 1.7092606702121838
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "minimum_volume_m3": 6.100596812e-17,
+      "background_actual_minimum_layers": 12,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.022032369802554963,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "failure_trajectory",
+      "axis_xyz": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.1,
+      "physical_clearance_mm": 0.38343784984617757,
+      "envelope_clearance_mm": 0.33358739428369805,
+      "pose_transform_error_m": 2.3200890685666661e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 1944856,
+        "-1": 0,
+        "0": 199806,
+        "1": 8625590,
+        "2": 594570
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 594570,
+      "receptors": 199806,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.09373246813,
+        "median": 1.1004908915,
+        "p95": 3.349205094149996,
+        "max": 15.99607466
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.454251828645306,
+        "median": 1.0324336494482573,
+        "p95": 1.4961687551610252,
+        "max": 2.519636015498434
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 594570,
+      "background_actual_minimum_layers": 9,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.028444300898519573,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "failure_trajectory",
+      "axis_xyz": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.2,
+      "physical_clearance_mm": 0.28150816897034875,
+      "envelope_clearance_mm": 0.23154269068725125,
+      "pose_transform_error_m": 2.2799778820114107e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2024166,
+        "-1": 0,
+        "0": 186814,
+        "1": 8624241,
+        "2": 529601
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 529601,
+      "receptors": 186814,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.05548868671,
+        "median": 1.085660167,
+        "p95": 4.943807204,
+        "max": 17.16098457
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.38141826128127043,
+        "median": 1.0277748069034054,
+        "p95": 1.703545909423304,
+        "max": 2.5793725097985334
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 529601,
+      "background_actual_minimum_layers": 8,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.029966061045141816,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "failure_trajectory",
+      "axis_xyz": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.25,
+      "physical_clearance_mm": 0.23279228143404104,
+      "envelope_clearance_mm": 0.1828129183945052,
+      "pose_transform_error_m": 2.2893386148902104e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2031269,
+        "-1": 0,
+        "0": 182830,
+        "1": 8641184,
+        "2": 509539
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 509539,
+      "receptors": 182830,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.06843812681,
+        "median": 1.078006254,
+        "p95": 5.240885312199999,
+        "max": 17.11615403
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.409040243308722,
+        "median": 1.0253538350879863,
+        "p95": 1.7370069335352751,
+        "max": 2.5771244744128863
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 509539,
+      "background_actual_minimum_layers": 8,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.030593349595424313,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "failure_trajectory",
+      "axis_xyz": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.3,
+      "physical_clearance_mm": 0.18573928176628515,
+      "envelope_clearance_mm": 0.135870809597796,
+      "pose_transform_error_m": 2.2600187625178493e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2029750,
+        "-1": 0,
+        "0": 179492,
+        "1": 8662140,
+        "2": 493440
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 493440,
+      "receptors": 179492,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.06432279372,
+        "median": 1.0713625709999999,
+        "p95": 5.42053633765,
+        "max": 16.74180004
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.40067135947738547,
+        "median": 1.023243096502657,
+        "p95": 1.756631852329577,
+        "max": 2.5581973821118917
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 493440,
+      "background_actual_minimum_layers": 8,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.030736810369856232,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "failure_trajectory",
+      "axis_xyz": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.35,
+      "physical_clearance_mm": 0.1404667730101432,
+      "envelope_clearance_mm": 0.09066457961391788,
+      "pose_transform_error_m": 2.2725382305933096e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2020837,
+        "-1": 0,
+        "0": 177369,
+        "1": 8683898,
+        "2": 482718
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 482718,
+      "receptors": 177369,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.08079578343,
+        "median": 1.0653380865000002,
+        "p95": 5.565184787049992,
+        "max": 15.49261814
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.4323109462392347,
+        "median": 1.0213215238148072,
+        "p95": 1.7721202831787661,
+        "max": 2.4929196002399636
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 482718,
+      "background_actual_minimum_layers": 8,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.030945254547974956,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "orthogonal_pitch_yaw",
+      "axis_xyz": [
+        0.0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0,
+      "physical_clearance_mm": 0.49030836680335427,
+      "envelope_clearance_mm": 0.4403097156785696,
+      "pose_transform_error_m": 4.339793784609173e-19,
+      "orphans": 0,
+      "donors": 633244,
+      "receptors": 202918,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 1814000,
+        "-1": 0,
+        "0": 202918,
+        "1": 8714660,
+        "2": 633244
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.5938416463727891,
+        "median": 1.0323143381607744,
+        "p95": 1.1889337297775053,
+        "max": 1.7092606702121838
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "minimum_volume_m3": 6.100596812e-17,
+      "background_actual_minimum_layers": 12,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.022032369802554963,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "orthogonal_pitch_yaw",
+      "axis_xyz": [
+        0.0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.2,
+      "physical_clearance_mm": 0.28143105218834064,
+      "envelope_clearance_mm": 0.2315888576755523,
+      "pose_transform_error_m": 2.29162925025485e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2024980,
+        "-1": 0,
+        "0": 186944,
+        "1": 8623336,
+        "2": 529562
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 529562,
+      "receptors": 186944,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.08207725423,
+        "median": 1.0861585395,
+        "p95": 4.942020898949999,
+        "max": 19.13221437
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.43458454053841494,
+        "median": 1.027932049582982,
+        "p95": 1.7033407086460979,
+        "max": 2.6745768391103986
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 529562,
+      "background_actual_minimum_layers": 8,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.03077028070157832,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "orthogonal_pitch_yaw",
+      "axis_xyz": [
+        0.0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.3,
+      "physical_clearance_mm": 0.18562274942399948,
+      "envelope_clearance_mm": 0.1359150064237113,
+      "pose_transform_error_m": 2.2596000325526354e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2028417,
+        "-1": 0,
+        "0": 179937,
+        "1": 8661642,
+        "2": 494826
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 494826,
+      "receptors": 179937,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.08441366887,
+        "median": 1.0703191854999998,
+        "p95": 5.44332071,
+        "max": 21.2111689
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.43866965403159636,
+        "median": 1.0229108144126178,
+        "p95": 1.7590896538240677,
+        "max": 2.7681409543824977
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 494826,
+      "background_actual_minimum_layers": 7,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.030472476822821937,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    },
+    {
+      "axis": "orthogonal_pitch_yaw",
+      "axis_xyz": [
+        0.0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.35,
+      "physical_clearance_mm": 0.14032709369627266,
+      "envelope_clearance_mm": 0.09087440563223463,
+      "pose_transform_error_m": 2.2921477885875656e-10,
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 2020761,
+        "-1": 0,
+        "0": 177541,
+        "1": 8683800,
+        "2": 482720
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 482720,
+      "receptors": 177541,
+      "total_cells": 11364822,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.08684809251,
+        "median": 1.0620057605,
+        "p95": 5.5700499705499995,
+        "max": 20.19169351
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.4428467156304617,
+        "median": 1.0202555301417169,
+        "p95": 1.7726365391611325,
+        "max": 2.72306232690213
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 482720,
+      "background_actual_minimum_layers": 8,
+      "background_layer_interior_gaps": 0,
+      "status": "PASS",
+      "failure_reasons": [],
+      "background_actual_max_crossed_cell_edge_mm": 0.030475588513491136,
+      "component_actual_max_crossed_cell_edge_mm": 0.02113025383558012,
+      "component_actual_minimum_layers": 12,
+      "background_nominal_boi_mm": 0.02,
+      "component_nominal_size_mm": [
+        0.01,
+        0.0125
+      ]
+    }
+  ],
+  "component_actual_layers": 12,
+  "current_pose": {
+    "axis": "orthogonal_pitch_yaw",
+    "theta_rad": 0.35
+  },
+  "theta_max_validated_rad": 0.35,
+  "start_case": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fineA_static_start.cas.h5",
+  "start_data": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\fineA_static_start.dat.h5",
+  "theta_allowed_rad": 0.35,
+  "determinant_cutoff": 1e-50
+}
