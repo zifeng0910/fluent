@@ -67,3 +67,13 @@ All 10 prescribed poses PASS. Peak official orphan count is 0; minimum sampled
 background crossings are 7; minimum physical clearance is 0.1403270937 mm.
 Maximum donor characteristic length ratio is 2.7681409544.
 The accepted tested angular bound is 0.35 rad on each specified axis.
+
+## Dynamic runtime
+
+The one-core preliminary run completed step 1 with zero official orphans,
+valid donors, positive volumes, and quaternion norm error 1.1e-16.
+Its solver estimate was several minutes per step. That attempt and history
+are archived as `SERIAL_PRELIMINARY_INTERRUPTED_FOR_4CORE_RESTART`.
+The owned solver was closed and replaced with one four-core solver in the
+same venv and no_gui_or_graphics mode. The final run restarts at t=0 from
+the accepted static checkpoint; mesh and physics are unchanged.

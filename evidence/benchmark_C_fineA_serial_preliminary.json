@@ -1,0 +1,187 @@
+{
+  "status": "SERIAL_PRELIMINARY_INTERRUPTED_FOR_4CORE_RESTART",
+  "stage": "free_6dof_time_step_loop",
+  "campaign": "BENCHMARK_C_ANALYTIC_MAGNETIC_6DOF",
+  "dt_s": 2.5e-05,
+  "duration_s": 0.002,
+  "requested_steps": 80,
+  "run_purpose": "FULL_2MS_FREE_6DOF",
+  "maximum_iterations_per_step": 2,
+  "gravity_enabled": false,
+  "six_dof_gravity_m_s2": [
+    0,
+    0,
+    0
+  ],
+  "contact": false,
+  "physical_wall_clearance_limit_m": 0.0001,
+  "fielddata_directory": "H:\\fluent\\evidence\\benchmark_C_fineA_fielddata",
+  "zone_states_initial": {
+    "robot_component_fluid": {
+      "name": "dynamic-zone-1",
+      "zone": "robot_component_fluid",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_6dof::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": true
+        },
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0.0,
+            0.0
+          ],
+          "orientation": {
+            "angle": 0.0,
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "robot_wall": {
+      "name": "dynamic-zone-2",
+      "zone": "robot_wall",
+      "type": "rigid-body",
+      "motion": {
+        "motion_def": "l2300_magnetic_6dof::libbenchmark_C_v4",
+        "six_dof": {
+          "enabled": true,
+          "passive": false
+        },
+        "exclude_motion_bc": false,
+        "relative_motion": {
+          "enabled": false
+        },
+        "rigid_body_properties": {
+          "cg_position": [
+            0.0012060186937156343,
+            0.0,
+            0.0
+          ],
+          "orientation": {
+            "angle": 0.0,
+            "axis": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "cg_velocity": [
+            0,
+            0,
+            0
+          ],
+          "angular_velocity": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "meshing": {
+        "adjacent_zones": {
+          "t0": {
+            "type": "constant",
+            "height": 0
+          }
+        }
+      },
+      "solver": {
+        "stabilization": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "gravity_flow": {
+    "enable": false
+  },
+  "gravity_sixdof": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "udf_library": "libbenchmark_C_v4",
+  "automatic_overset_adaption": false,
+  "inertia_determinant_cutoff": "1e-50",
+  "body_inertia_tensor_kg_m2": {
+    "Ixx": 7.257810693523445e-13,
+    "Iyy": 3.929384741151496e-12,
+    "Izz": 3.92938474115149e-12,
+    "Ixy": -2.782693607479792e-28,
+    "Ixz": 1.9327591150313556e-29,
+    "Iyz": 2.4813784672159598e-29
+  },
+  "load_validation": {
+    "status": "PASS",
+    "source": "scripts/benchmark_C_analytic_reference.py",
+    "history_rows": 88,
+    "unique_time_samples": 44,
+    "duplicate_callback_multiplicity": [
+      2
+    ],
+    "history_validation": {
+      "samples": 44,
+      "max_abs_force_error_N": 6.776263578034403e-21,
+      "max_abs_torque_error_Nm": 4.235164736271502e-22,
+      "max_abs_moment_error_Am2": 2.168404344971009e-19
+    },
+    "probe_validation": {
+      "samples": 6,
+      "max_abs_force_error_N": 6.776263578034403e-21,
+      "max_abs_torque_error_Nm": 4.235164736271502e-22,
+      "max_abs_moment_error_Am2": 2.168404344971009e-19
+    },
+    "probe_times_s": [
+      0.0,
+      0.00025,
+      0.0005,
+      0.00075,
+      0.001,
+      0.00125
+    ],
+    "required_times_present": {
+      "0": false,
+      "0.00025": true,
+      "0.0005": true,
+      "0.001": true,
+      "0.001025": true,
+      "0.0011": true
+    },
+    "orientation_angle_deg": 17.0,
+    "quaternion_convention": "Fluent DT_Q scalar-first mapped to SciPy xyzw; independently consistent with Fluent Q_From_Theta probe"
+  },
+  "fielddata_export_interval_steps": 4,
+  "motion_history_csv": "H:\\fluent\\evidence\\benchmark_C_fineA_free_6dof_history.csv",
+  "completed_time_steps": 2,
+  "latest_time_s": 5e-05,
+  "latest_com_m": [
+    0.001206018686556082,
+    -1.926463547624446e-15,
+    -2.281162538936214e-14
+  ],
+  "latest_radial_displacement_m": 2.2892826708489213e-14,
+  "latest_orphan_count": 0,
+  "fielddata_frames": 0,
+  "physics_modified": false,
+  "restart_from": "t=0 static checkpoint"
+}
