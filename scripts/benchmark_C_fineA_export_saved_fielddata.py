@@ -8,6 +8,7 @@ def run(solver,context):
     from benchmark_C_fineA_free_6dof_run import surface_mesh
     report_path=root/'evidence/benchmark_C_fineA_free_6dof.json';rec=json.loads(report_path.read_text());source=Path(rec['fielddata_directory'])
     if rec['status'] not in ['FREE_6DOF_SOLVED','FAIL']:raise RuntimeError('Solver run must be finished before scalar FieldData export')
+    if not rec.get('frames'):raise RuntimeError('No actual saved frames are available')
     s=solver.settings
     for frame in rec.get('frames',[]):
         s.file.read_case(file_name=frame['checkpoint_case']);s.file.read_data(file_name=frame['checkpoint_data'])
@@ -23,5 +24,6 @@ def run(solver,context):
         frame['velocity_max_m_s']=float(vel.max());frame['fielddata_export_complete']=True
         rec['postprocessing_completed_frames']=sum(f.get('fielddata_export_complete',False) for f in rec['frames'])
         report_path.write_text(json.dumps(rec,indent=2))
+        print(f"Saved-state FieldData exported: step {frame['step']} t={time:g} s",flush=True)
     rec['stage']='FieldData_export_complete';rec['time_steps_advanced_during_postprocessing']=0
     report_path.write_text(json.dumps(rec,indent=2))

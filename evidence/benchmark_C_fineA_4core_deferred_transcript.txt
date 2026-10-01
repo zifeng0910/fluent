@@ -1,0 +1,200 @@
+Fast-loading "H:\Program Files\ANSYS Inc\v261\fluent\fluent26.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\fineA_static_start.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+    11364822 cells,     2 cell zones ...
+       10011216 tetrahedral cells,  zone id: 1
+        1353606 tetrahedral cells,  zone id: 2
+    22888052 faces,     7 face zones ...
+            474 triangular pressure-inlet faces,  zone id: 3
+            480 triangular pressure-outlet faces,  zone id: 4
+         111340 triangular overset faces,  zone id: 5
+         109172 triangular wall faces,  zone id: 6
+          95350 triangular wall faces,  zone id: 7
+       19967369 triangular interior faces,  zone id: 8
+        2603867 triangular interior faces,  zone id: 9
+     2000720 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts....,
+		faces....,
+		nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 2842232/18435 = 154.176
+  Reading overset connectivity ...
+  Done.
+
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	robot_component_fluid_interior
+	background_water_interior
+	robot_wall
+	pipe_wall
+	overset_component
+	inlet
+	outlet
+	robot_component_fluid
+	background_water
+     overset interfaces,
+
+     parallel,
+Done.
+
+Reading from Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\fineA_static_start.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+Zifeng: Opening library "H:\\fluent\\fluent_udf\\libbenchmark_C_v4"...
+Done.
+
+Zifeng: Opening library "H:\\fluent\\live_cases\\benchmark_C_analytic_6dof\\libbenchmark_C_v4"...
+	benchmark_C_overset_statistics
+	l2300_magnetic_6dof
+	l2300_magnetic_load_validation
+	benchmark_C_analytic_load_probe
+Done.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     1  1.0000e+00  2.4660e-09  7.7951e-08  2.5682e-07  7.7739e-14  0:00:47    1
+
+ Reversed flow on 474 faces (100.0% area) of pressure-inlet 3.
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     2  1.0000e+00  1.2972e-07  1.1173e-07  1.1213e-07  5.8899e-14  0:00:00    0
+Flow time = 2.5e-05s, time step = 1
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\free_current_official_cells.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+     2  1.0000e+00  1.2972e-07  1.1173e-07  1.1213e-07  5.8899e-14  0:01:26    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+
+ Reversed flow on 480 faces (100.0% area) of pressure-outlet 4.
+     3  1.0000e+00  1.6087e-07  8.7864e-08  1.3466e-07  5.8845e-14  0:00:43    1
+
+ Reversed flow on 474 faces (100.0% area) of pressure-inlet 3.
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     4  1.0000e+00  1.0577e-07  9.1213e-08  9.1896e-08  5.1780e-14  0:00:00    0
+Flow time = 5e-05s, time step = 2
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\free_current_official_cells.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+     4  1.0000e+00  1.0577e-07  9.1213e-08  9.1896e-08  5.1780e-14  0:01:20    2
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+
+ Reversed flow on 480 faces (100.0% area) of pressure-outlet 4.
+     5  8.6064e-01  1.2879e-07  7.7703e-08  1.0566e-07  5.1241e-14  0:00:41    1
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+
+ Reversed flow on 480 faces (100.0% area) of pressure-outlet 4.
+     6  2.8604e+00  8.6206e-08  7.3802e-08  7.5644e-08  4.7250e-14  0:00:00    0
+Flow time = 7.500000000000001e-05s, time step = 3
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\free_current_official_cells.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
+
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+     6  2.8604e+00  8.6206e-08  7.3802e-08  7.5644e-08  4.7250e-14  0:01:17    2
+
+ Reversed flow on 474 faces (100.0% area) of pressure-inlet 3.
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     7  2.1405e+00  1.1053e-07  6.8407e-08  9.0330e-08  4.7224e-14  0:00:40    1
+
+ Reversed flow on 474 faces (100.0% area) of pressure-inlet 3.
+        Stabilizing x-momentum to enhance linear solver robustness.
+        Stabilizing y-momentum to enhance linear solver robustness.
+        Stabilizing z-momentum to enhance linear solver robustness.
+     8  5.5510e+00  6.8768e-08  5.9383e-08  6.1878e-08  4.4594e-14  0:00:00    0
+Flow time = 0.0001s, time step = 4
+
+Writing "H:\fluent\live_cases\benchmark_C_fineA\bg020\free_current_official_cells.csv"...
+
+Writing information to ascii file ...
+wrote ascii data on cells
+Done.
+
+
+Writing to Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\fielddata_checkpoint_0004.cas.h5" in NODE0 mode and compression level 1 ...
+Grouping cells for Laplace smoothing ...
+    11364822 cells,     2 zones ...
+    22888052 faces,     7 zones ...
+     2000720 nodes,     1 zone  ...
+  Done.
+
+  Writing overset connectivity ...
+  Done.
+Done.
+
+Writing to Zifeng:"H:\fluent\live_cases\benchmark_C_fineA\bg020\fielddata_checkpoint_0004.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Updating solution at time level N...
+ done.
+
+Updating mesh at time level N... done.
