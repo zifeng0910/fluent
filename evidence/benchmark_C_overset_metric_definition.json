@@ -1,0 +1,27 @@
+{
+  "primary_orphan_metric": {
+    "field": "overset-cell-type",
+    "comparison": "== -1",
+    "export": "settings.file.export.ascii: no surfaces, all cells, cell-center, overset-cell-type"
+  },
+  "cell_type_values": {
+    "donor": 2,
+    "solve": 1,
+    "receptor": 0,
+    "orphan": -1,
+    "dead": -2
+  },
+  "donor_count": "SV_OVERSET_NDONOR: number of interpolation donors of a receptor",
+  "receptor_count": "SV_OVERSET_NRECEPTOR: receptors referencing a donor",
+  "size_ratio": {
+    "field": "overset-donor-size-ratio",
+    "storage": "SV_OVERSET_SIZE_RATIO",
+    "definition": "donor volume / smallest receptor volume",
+    "length_ratio_3D": "volume_ratio ** (1/3)",
+    "diagnostic_large_length_ratio": 3,
+    "equivalent_volume_ratio": 27
+  },
+  "legacy_missing_donor_count": "auxiliary only; cannot replace orphan count",
+  "official_documentation": "https://ansyshelp.ansys.com/public/views/secured/corp/v261/en/flu_ug/flu_ug_fvdefs.html",
+  "unsafe_native_helper": "DISABLED following solver connection loss; not used as gate"
+}
