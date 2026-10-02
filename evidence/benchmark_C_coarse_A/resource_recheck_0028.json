@@ -1,0 +1,162 @@
+{
+  "timestamp": "2026-10-02T07:01:45.588873+00:00",
+  "samples": [
+    {
+      "timestamp": "2026-10-02T07:00:45.537649+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 11.903766632080078,
+      "used_gib": 19.936031341552734,
+      "commit_gib": 41.757266998291016,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8728562570708551,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1484107971191406
+    },
+    {
+      "timestamp": "2026-10-02T07:00:50.541087+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.780994415283203,
+      "used_gib": 19.05880355834961,
+      "commit_gib": 40.882938385009766,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.85458008011536,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1486778259277344
+    },
+    {
+      "timestamp": "2026-10-02T07:00:55.544495+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.727821350097656,
+      "used_gib": 19.111976623535156,
+      "commit_gib": 40.91855239868164,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8553245233442278,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1483116149902344
+    },
+    {
+      "timestamp": "2026-10-02T07:01:00.548646+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.645984649658203,
+      "used_gib": 19.19381332397461,
+      "commit_gib": 41.09070587158203,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8589230643120487,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1487159729003906
+    },
+    {
+      "timestamp": "2026-10-02T07:01:05.552242+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.50295639038086,
+      "used_gib": 19.336841583251953,
+      "commit_gib": 41.21190643310547,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.861456531564361,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1554794311523438
+    },
+    {
+      "timestamp": "2026-10-02T07:01:10.562858+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.424308776855469,
+      "used_gib": 19.415489196777344,
+      "commit_gib": 41.240013122558594,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8620440484570665,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1487236022949219
+    },
+    {
+      "timestamp": "2026-10-02T07:01:15.566663+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.309764862060547,
+      "used_gib": 19.530033111572266,
+      "commit_gib": 41.43702697753906,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8661622484354412,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1488571166992188
+    },
+    {
+      "timestamp": "2026-10-02T07:01:20.570517+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.277961730957031,
+      "used_gib": 19.56183624267578,
+      "commit_gib": 41.434226989746094,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8661037200153482,
+      "pagefile_used_gib": 4.394481658935547,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1492462158203125
+    },
+    {
+      "timestamp": "2026-10-02T07:01:25.574074+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.320381164550781,
+      "used_gib": 19.51941680908203,
+      "commit_gib": 41.495689392089844,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8673884746536856,
+      "pagefile_used_gib": 4.4256439208984375,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1505317687988281
+    },
+    {
+      "timestamp": "2026-10-02T07:01:30.577250+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.036979675292969,
+      "used_gib": 19.802818298339844,
+      "commit_gib": 41.805809020996094,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8738709357434497,
+      "pagefile_used_gib": 4.4256439208984375,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1507797241210938
+    },
+    {
+      "timestamp": "2026-10-02T07:01:35.579630+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.163761138916016,
+      "used_gib": 19.676036834716797,
+      "commit_gib": 41.650054931640625,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8706151927020322,
+      "pagefile_used_gib": 4.4256439208984375,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1500625610351562
+    },
+    {
+      "timestamp": "2026-10-02T07:01:40.583205+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.124271392822266,
+      "used_gib": 19.715526580810547,
+      "commit_gib": 41.68783950805664,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8714050074173211,
+      "pagefile_used_gib": 4.4256439208984375,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1497993469238281
+    },
+    {
+      "timestamp": "2026-10-02T07:01:45.588815+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.0377197265625,
+      "used_gib": 19.802078247070312,
+      "commit_gib": 41.77546310424805,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.8732366120624682,
+      "pagefile_used_gib": 4.4256439208984375,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1497611999511719
+    }
+  ],
+  "admission": "All 13 samples over >=60s: available >=4GiB and commit <=90%; original runtime guards 3GiB/95%/15GiB unchanged"
+}

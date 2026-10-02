@@ -7,7 +7,13 @@ def write_report():
     first=read(EVID/'first_worker_memory_profile.json')
     if first and mem and not mem.get('combined_same_native_session'):
         current_rows=[{**r,'stage':'before_same_session_reconnect' if r['stage']=='before_Fluent_launch' else r['stage']} for r in mem['rows']]
-        combined={'timestamp':stamp(),'combined_same_native_session':True,'first_worker_host_pid':12684,'rows':first['rows']+current_rows,'peak_project_working_set_gib':max(first['peak_project_working_set_gib'],mem['peak_project_working_set_gib']),'note':'One Fluent session, controller reconnected after Windows wrapper stderr defect; original and reconnected-worker samples preserved separately.','abort':mem.get('abort')}
+        previous=read(EVID/'resource_stop_0028/benchmark_C_coarse_memory_profile.json')
+        all_rows=first['rows']+previous.get('rows',[])+current_rows
+        seen=set();unique=[]
+        for r in all_rows:
+            key=(r['timestamp'],r['total_project_working_set_gib'])
+            if key not in seen:seen.add(key);unique.append(r)
+        combined={'timestamp':stamp(),'combined_same_native_session':True,'first_worker_host_pid':12684,'rows':unique,'peak_project_working_set_gib':max(r['total_project_working_set_gib'] for r in unique),'note':'One native Fluent session. All controller memory samples retained; resource-stop archive is immutable.','abort':mem.get('abort'),'historical_resource_stop':previous.get('abort')}
         atomic(EVID/'benchmark_C_coarse_memory_profile_combined.json',combined)
         if mem['rows'] and mem['rows'][-1]['stage']=='after_Fluent_exit':
             atomic(EVID/'second_worker_memory_profile.json',mem);atomic(EVID/'benchmark_C_coarse_memory_profile.json',combined)

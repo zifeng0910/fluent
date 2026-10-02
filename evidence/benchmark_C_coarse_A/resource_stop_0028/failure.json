@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-02T06:40:25.430082+00:00",
+  "error": "RuntimeError('COARSE_RESOURCE_LIMIT')",
+  "traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_C_coarse_pipeline.py\", line 64, in main\n    dynamic(solver,profile)\n    ~~~~~~~^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\scripts\\benchmark_C_coarse_dynamic.py\", line 54, in run\n    profile.check('during_timestep_solve');state('DYNAMIC_SOLVE',current_step=step-1,target_step=10 if step<=10 else 20 if step<=20 else 40)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\scripts\\benchmark_C_coarse_common.py\", line 67, in check\n    if self.abort:raise RuntimeError(str(self.abort['reason']))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: COARSE_RESOURCE_LIMIT\n",
+  "state": {
+    "campaign": "BENCHMARK_C_COARSE_SCREENING",
+    "status": "DYNAMIC_SOLVE",
+    "timestamp": "2026-10-02T06:35:06.927789+00:00",
+    "review": "worker_loss_review.json",
+    "scope": "Finite four static poses then 10/20/40 steps; no 2ms, no medium/fine recovery",
+    "pid": 33412,
+    "execution_owner": "Windows Task Scheduler",
+    "original_fine_deadline_extended": false,
+    "job": "scripts/benchmark_C_coarse_layer_probe.py",
+    "job_pid": 28636,
+    "job_created": 1790913231.3172412,
+    "memory": {
+      "timestamp": "2026-10-02T03:54:01.505457+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 14.302696228027344,
+      "used_gib": 17.53710174560547,
+      "commit_gib": 36.089054107666016,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.7543730457966548,
+      "pagefile_used_gib": 2.9867324829101562,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1062126159667969
+    },
+    "pose": "orthogonal_035",
+    "current_step": 27,
+    "target_step": 40
+  }
+}

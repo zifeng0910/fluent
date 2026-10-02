@@ -22,7 +22,7 @@ def preserve():
 
 class MemoryProfile:
     def __init__(self):
-        self.stage='before_Fluent_launch';self.solver=None;self.rows=[];self.stop=threading.Event();self.abort=None
+        self.stage='before_Fluent_launch';self.solver=None;self.connection=None;self.rows=[];self.stop=threading.Event();self.abort=None
         self.lock=threading.RLock()
         self.thread=threading.Thread(target=self.monitor,daemon=True)
     def sample(self,stage=None):
@@ -32,7 +32,10 @@ class MemoryProfile:
         worker=psutil.Process();owned={p.pid:p for p in [worker]+worker.children(recursive=True)}
         hosts=[]
         if self.solver is not None:
-            cp=self.solver.connection_properties
+            try:self.connection=self.solver.connection_properties
+            except AttributeError:
+                if self.connection is None:raise
+            cp=self.connection
             for pid in [cp.fluent_host_pid,cp.cortex_pid]:
                 try:
                     p=psutil.Process(pid);owned[p.pid]=p

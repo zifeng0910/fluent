@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-10-02T07:01:48.016899+00:00",
+  "decision": "PASS",
+  "native_host_pid": 12684,
+  "native_node_pid": 40656,
+  "new_solver_launched": false,
+  "case_or_data_reloaded": false,
+  "native_time_s": 0.0007,
+  "native_errors": {
+    "robot_wall": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 2.2567885060720272e-14,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 1.22514845490862e-17,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 3.6096707844990306e-09,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "robot_component_fluid": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 2.2567885060720272e-14,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 1.22514845490862e-17,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 3.6096707844990306e-09,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    }
+  },
+  "runtime_guards_unchanged": true,
+  "stable_resources_verified": true,
+  "frozen_file_hashes_verified": true
+}

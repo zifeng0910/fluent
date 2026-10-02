@@ -24,33 +24,44 @@ def compare(row):
     rec['qualitative_trend_pass']=all(rec['groups'][name]['direction_cosine'] is not None and rec['groups'][name]['direction_cosine']>0 and rec['groups'][name]['relative_difference']<=1 for name in ['linear_velocity','angular_velocity']) and rec['orientation']['relative_geodesic_difference']<=1
     atomic(EVID/'coarse_vs_fine_025ms.json',rec);return rec
 
-def run(solver,profile):
+def run(solver,profile,resume_step=0):
     if read(EVID/'static.json').get('status')!='BENCHMARK_C_COARSE_STATIC_PASS':raise RuntimeError('Four static poses must pass before dynamics')
     s=solver.settings;solver.tui.define.overset_interfaces.adapt.set.automatic('no')
     solver.scheme.eval("(rpsetvar 'dynamesh/sdof/minimum-cutoff-moments 1e-50)")
     if float(solver.scheme.eval("(rpgetvar 'dynamesh/sdof/minimum-cutoff-moments)"))>1e-50:raise RuntimeError('Inertia cutoff not preserved')
-    if abs(float(solver.scheme.eval("(rpgetvar 'flow-time)")))>1e-12:raise RuntimeError('Coarse independent start must have zero native time')
-    s.setup.user_defined.load(udf_library_name=str(ROOT/'fluent_udf/libbenchmark_C_v4'))
-    dyn=s.setup.dynamic_mesh;dyn.enabled=True;dyn.methods.smoothing.enabled=False;dyn.options.six_dof.enabled=True
-    dyn.options.six_dof.gravity.set_state({'x':0.,'y':0.,'z':0.});s.setup.general.operating_conditions.gravity.enable=False;s.setup.general.solver.time='transient'
+    if abs(float(solver.scheme.eval("(rpgetvar 'flow-time)"))-resume_step*25e-6)>1e-12:raise RuntimeError('Native start time mismatch; reset forbidden')
+    dyn=s.setup.dynamic_mesh
+    if not resume_step:
+        s.setup.user_defined.load(udf_library_name=str(ROOT/'fluent_udf/libbenchmark_C_v4'))
+        dyn.enabled=True;dyn.methods.smoothing.enabled=False;dyn.options.six_dof.enabled=True
+        dyn.options.six_dof.gravity.set_state({'x':0.,'y':0.,'z':0.});s.setup.general.operating_conditions.gravity.enable=False;s.setup.general.solver.time='transient'
+    else:
+        validation=read(EVID/f'checkpoint_{resume_step:04d}.json')
+        if validation.get('status')!='NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS' or validation.get('timesteps_advanced')!=0:raise RuntimeError('Verified zero-step resource checkpoint required')
     zones={}
     for zone in ['robot_component_fluid','robot_wall']:
-        dyn.dynamic_zones.create(zone=zone);name=next(n for n in dyn.dynamic_zones.keys() if dyn.dynamic_zones[n].zone.get_state()==zone);zones[zone]=name;node=dyn.dynamic_zones[name]
-        node.type='rigid-body';node.motion.six_dof.enabled=True;node.motion.six_dof.passive=(zone=='robot_component_fluid')
-        node.motion.rigid_body_properties.cg_position=COM;node.motion.rigid_body_properties.orientation.set_state({'angle':0.,'axis':[1.,0.,0.]});node.motion.motion_def='l2300_magnetic_6dof::libbenchmark_C_v4'
+        if not resume_step:dyn.dynamic_zones.create(zone=zone)
+        name=next(n for n in dyn.dynamic_zones.keys() if dyn.dynamic_zones[n].zone.get_state()==zone);zones[zone]=name;node=dyn.dynamic_zones[name]
+        if not resume_step:
+            node.type='rigid-body';node.motion.six_dof.enabled=True;node.motion.six_dof.passive=(zone=='robot_component_fluid')
+            node.motion.rigid_body_properties.cg_position=COM;node.motion.rigid_body_properties.orientation.set_state({'angle':0.,'axis':[1.,0.,0.]});node.motion.motion_def='l2300_magnetic_6dof::libbenchmark_C_v4'
     calc=s.solution.run_calculation;calc.parameters.time_step_size=25e-6;calc.parameters.max_iter_per_time_step=2
     field=solver.fields.field_data;pipe=surface_mesh(field,'pipe_wall');robot0=surface_mesh(field,'robot_wall');env0=surface_mesh(field,'overset_component')
     sign=float(np.sign(robot0.compute_implicit_distance(pipe)['implicit_distance'][0]));fd=EVID/'fielddata';fd.mkdir(exist_ok=True)
-    robot0.save(fd/'robot_0000.vtp');env0.save(fd/'component_0000.vtp');pipe.save(fd/'pipe.vtp')
-    max_r=float(np.linalg.norm(env0.points-np.array(COM),axis=1).max())
+    if not resume_step:
+        robot0.save(fd/'robot_0000.vtp');env0.save(fd/'component_0000.vtp');pipe.save(fd/'pipe.vtp')
+    max_r=read(EVID/'dynamic.json')['maximum_component_radius_m'] if resume_step else float(np.linalg.norm(env0.points-np.array(COM),axis=1).max())
     sampled=[Rotation.from_rotvec(np.array(a)*t) for a in [AXIS,ORTH] for t in np.linspace(0,.35,15)]
     callback_path=ROOT/'evidence/benchmark_C_analytic_6dof_history.csv';header=callback_path.open().readline();offset=callback_path.stat().st_size
     rec={'status':'RUNNING','steps_requested':40,'completed_steps':0,'time_s':0.,'dt_s':25e-6,'maximum_iterations_per_step':2,'cutoff':1e-50,'frozen_UDF_sha256':FROZEN_SHA,'stages':[],'frames':[],'gravity':[0,0,0],'automatic_overset_adaption':False,'original_callback_file_bytes':offset,'maximum_component_radius_m':max_r}
+    if resume_step:
+        rec=read(EVID/'dynamic.json');rec.update(status='RUNNING',resumed_from_step=resume_step,resume_callback_offset=offset)
+        rec.pop('stop_reason',None)
     atomic(EVID/'dynamic.json',rec)
     native_columns=[f'{p}_{a}_{u}' for p,u in [('omega','rad_s'),('Fmag','N'),('Tmag','Nm')] for a in 'xyz']+[f'v{a}_m_s' for a in 'xyz']+[f'theta_{a}_rad' for a in 'xyz']
-    with (EVID/'dynamic_history.csv').open('w',newline='') as stream:
+    with (EVID/'dynamic_history.csv').open('a' if resume_step else 'w',newline='') as stream:
         writer=None
-        for step in range(1,41):
+        for step in range(resume_step+1,41):
             profile.check('during_timestep_solve');state('DYNAMIC_SOLVE',current_step=step-1,target_step=10 if step<=10 else 20 if step<=20 else 40)
             calc.dual_time_iterate(time_step_count=1,max_iter_per_step=2)
             profile.sample('after_timestep_'+str(step));t=float(solver.scheme.eval("(rpgetvar 'flow-time)"))
@@ -70,7 +81,9 @@ def run(solver,profile):
             # Bound every surface point's displacement from the actual sampled BOI poses.
             distance=min(2*math.sin(float((R*rot.inv()).magnitude())/2)*max_r for rot in sampled)+float(np.linalg.norm(com-np.array(COM)))
             row={'step':step,'time_s':t,**{f'com_{a}_m':float(v) for a,v in zip('xyz',com)},**{f'q{i}':float(q[i]) for i in range(4)},'q_norm':qnorm,**{k:float(native_row[k]) for k in native_columns},'orphan_count':stats['orphans'],'receptors_without_donors':missing,'official_donor_count':stats['donors'],'official_receptor_count':stats['receptors'],'minimum_cell_volume_m3':stats['minimum_volume_m3'],'robot_wall_clearance_m':clearance,'overset_wall_clearance_m':envgap,**{f'donor_length_ratio_{k}':stats['donor_characteristic_length_ratio'][k] for k in ['min','median','p95','max']},'BOI_pose_displacement_bound_m':distance}
-            if writer is None:writer=csv.DictWriter(stream,fieldnames=list(row));writer.writeheader()
+            if writer is None:
+                writer=csv.DictWriter(stream,fieldnames=list(row))
+                if not resume_step:writer.writeheader()
             writer.writerow(row);stream.flush();rec.update(completed_steps=step,time_s=t,latest_row=row);atomic(EVID/'dynamic.json',rec)
             reasons=[]
             if stats['orphans']:reasons.append('ORPHAN')
