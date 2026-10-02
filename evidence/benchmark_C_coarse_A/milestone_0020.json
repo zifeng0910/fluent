@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-02T05:58:31.023819+00:00",
+  "status": "BENCHMARK_C_COARSE_20_STEP_GATE_PASS",
+  "completed_steps": 20,
+  "time_ms": 0.5,
+  "native_checkpoint_sha256_verified": true,
+  "frozen_file_sha256_verified": true,
+  "all_history_rows_finite": true,
+  "peak_orphan": 0,
+  "invalid_donors": 0,
+  "minimum_dynamic_gap_mm": 0.4881711522089444,
+  "peak_project_RAM_GiB_observed_at_verification": 7.915443420410156,
+  "resource_goal_12GiB_pass": true,
+  "overall_40_step_screening": "PENDING",
+  "next_stage": "Continue same session to 40 steps only"
+}
