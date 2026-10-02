@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-02T03:50:33.798001+00:00",
+  "status": "CONNECTED_SAME_NATIVE_SESSION",
+  "host_pid": 12684,
+  "solver_launched": false,
+  "flow_time": 0.0,
+  "cell_zone_names": [
+    "background_water",
+    "robot_component_fluid"
+  ],
+  "data_valid": true
+}

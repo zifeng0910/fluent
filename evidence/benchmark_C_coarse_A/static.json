@@ -1,0 +1,233 @@
+{
+  "status": "BENCHMARK_C_COARSE_STATIC_PASS",
+  "rows": [
+    {
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 981194,
+        "-1": 0,
+        "0": 144035,
+        "1": 3268115,
+        "2": 305957
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 305957,
+      "receptors": 144035,
+      "total_cells": 4699301,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.05666386224,
+        "median": 0.3417948407,
+        "p95": 8.711898661400001,
+        "max": 28.67340316
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.38409211440345015,
+        "median": 0.6991792016749729,
+        "p95": 2.0576473173223464,
+        "max": 3.060739819979232
+      },
+      "donor_length_ratio_gt3_count": 3,
+      "donor_ratio_samples": 305957,
+      "pose": "theta0",
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0,
+      "official_fields": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\theta0_official_cells.csv",
+      "receptors_with_valid_donors": 144035,
+      "invalid_donors": 0,
+      "physical_clearance_mm": 0.4894844991158879,
+      "envelope_clearance_mm": 0.43949355237093274,
+      "transform_error_m": 0.0,
+      "background_actual_minimum_layers": 7,
+      "background_interior_gaps": 0,
+      "minimum_actual_covered_span_mm": 0.0499,
+      "donor_length_ratio_gt3_fraction": 9.805299437502656e-06,
+      "status": "PASS",
+      "failure_reasons": []
+    },
+    {
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 981705,
+        "-1": 0,
+        "0": 144020,
+        "1": 3267667,
+        "2": 305909
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 305909,
+      "receptors": 144020,
+      "total_cells": 4699301,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.04689917409,
+        "median": 0.341775704,
+        "p95": 8.733249528999997,
+        "max": 29.76908929
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.36062436427314404,
+        "median": 0.6991661526850008,
+        "p95": 2.059326886695303,
+        "max": 3.09923981672453
+      },
+      "donor_length_ratio_gt3_count": 1,
+      "donor_ratio_samples": 305909,
+      "pose": "failure_025",
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.25,
+      "official_fields": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\failure_025_official_cells.csv",
+      "receptors_with_valid_donors": 144020,
+      "invalid_donors": 0,
+      "physical_clearance_mm": 0.23279228463948648,
+      "envelope_clearance_mm": 0.1828129382005947,
+      "transform_error_m": 2.2893386148902104e-10,
+      "background_actual_minimum_layers": 7,
+      "background_interior_gaps": 0,
+      "minimum_actual_covered_span_mm": 0.0499,
+      "donor_length_ratio_gt3_fraction": 3.2689459937432376e-06,
+      "status": "PASS",
+      "failure_reasons": []
+    },
+    {
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 981620,
+        "-1": 0,
+        "0": 144070,
+        "1": 3267308,
+        "2": 306303
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 306303,
+      "receptors": 144070,
+      "total_cells": 4699301,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.03905148695,
+        "median": 0.3408415151,
+        "p95": 8.728109111599998,
+        "max": 23.93037842
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.3392703121258265,
+        "median": 0.6985285520078999,
+        "p95": 2.058922765368162,
+        "max": 2.8817072254660867
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 306303,
+      "pose": "failure_035",
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.35,
+      "official_fields": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\failure_035_official_cells.csv",
+      "receptors_with_valid_donors": 144070,
+      "invalid_donors": 0,
+      "physical_clearance_mm": 0.14046678845950247,
+      "envelope_clearance_mm": 0.09066459519766384,
+      "transform_error_m": 2.2725382305933096e-10,
+      "background_actual_minimum_layers": 6,
+      "background_interior_gaps": 0,
+      "minimum_actual_covered_span_mm": 0.0499,
+      "donor_length_ratio_gt3_fraction": 0.0,
+      "status": "PASS",
+      "failure_reasons": []
+    },
+    {
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 981354,
+        "-1": 0,
+        "0": 143975,
+        "1": 3268024,
+        "2": 305948
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 305948,
+      "receptors": 143975,
+      "total_cells": 4699301,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.05659967514,
+        "median": 0.34081911784999996,
+        "p95": 8.748503250349998,
+        "max": 23.16369473
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.3839470303183815,
+        "median": 0.6985132511886588,
+        "p95": 2.060525147347788,
+        "max": 2.850597791090923
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 305948,
+      "pose": "orthogonal_035",
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.35,
+      "official_fields": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\orthogonal_035_official_cells.csv",
+      "receptors_with_valid_donors": 143975,
+      "invalid_donors": 0,
+      "physical_clearance_mm": 0.14032710991605304,
+      "envelope_clearance_mm": 0.0908744144507747,
+      "transform_error_m": 2.2921477885875656e-10,
+      "background_actual_minimum_layers": 7,
+      "background_interior_gaps": 0,
+      "minimum_actual_covered_span_mm": 0.0499,
+      "donor_length_ratio_gt3_fraction": 0.0,
+      "status": "PASS",
+      "failure_reasons": []
+    }
+  ],
+  "time_steps_advanced": 0,
+  "automatic_adaption": false,
+  "component_identity": {
+    "timestamp": "2026-10-02T03:53:41.198777+00:00",
+    "source": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\benchmark_C_fineA.cas.h5",
+    "extracted": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\validated_component.cas.h5",
+    "source_signature": {
+      "cells": 1353606,
+      "nodes": 277379,
+      "all_faces": 2810557,
+      "node_sha256": "82a2c3196434efa626efd9aed2b18821eb877b9dd1a6c74ba1a078df9a3991a1",
+      "face_coordinate_connectivity_sha256": "e1e28df0514753b69b0355e520922c2121ce8277e404eaa27616d76f6d824a1c"
+    },
+    "extracted_signature": {
+      "cells": 1353606,
+      "nodes": 277379,
+      "all_faces": 2810557,
+      "node_sha256": "82a2c3196434efa626efd9aed2b18821eb877b9dd1a6c74ba1a078df9a3991a1",
+      "face_coordinate_connectivity_sha256": "e1e28df0514753b69b0355e520922c2121ce8277e404eaa27616d76f6d824a1c"
+    },
+    "status": "PASS",
+    "coarse_signature": {
+      "cells": 1353606,
+      "nodes": 277379,
+      "all_faces": 2810557,
+      "node_sha256": "82a2c3196434efa626efd9aed2b18821eb877b9dd1a6c74ba1a078df9a3991a1",
+      "face_coordinate_connectivity_sha256": "e1e28df0514753b69b0355e520922c2121ce8277e404eaa27616d76f6d824a1c"
+    }
+  },
+  "component_actual_minimum_layers": 12,
+  "start_case": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\coarse_static_start.cas.h5",
+  "start_data": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\coarse_static_start.dat.h5"
+}

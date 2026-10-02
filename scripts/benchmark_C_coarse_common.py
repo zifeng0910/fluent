@@ -49,7 +49,7 @@ class MemoryProfile:
             except psutil.Error:pass
         row={**memory(),'stage':self.stage,'processes':processes,
             'Fluent_working_set_gib':sum(p['working_set_gib'] for p in processes if p['name'].lower() in ['fl2610.exe','fl_mpi2610.exe','cx2610.exe']),
-            'Python_worker_working_set_gib':worker.memory_info().rss/2**30,
+            'Python_worker_working_set_gib':next(p['working_set_gib'] for p in processes if p['pid']==worker.pid),
             'total_project_working_set_gib':sum(p['working_set_gib'] for p in processes)}
         self.rows.append(row)
         peak=max(r['total_project_working_set_gib'] for r in self.rows)

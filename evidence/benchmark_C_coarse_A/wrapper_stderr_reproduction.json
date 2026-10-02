@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-02T03:56:29.923412+00:00",
+  "old_PowerShell_exit_code": 1,
+  "old_wrapper_error": "python.exe : probe-warning\r\nAt H:\\fluent\\evidence\\benchmark_C_coarse_A\\wrapper_probe\\old_wrapper.ps1:2 char:1\r\n+ & 'H:\\fluent\\.venv\\Scripts\\python.exe' 'H:\\fluent\\evidence\\benchmark_ ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (probe-warning:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\n",
+  "new_raw_redirect_exit_code": 0,
+  "new_stdout": "SURVIVED_WARNING\n",
+  "no_Fluent_launched": true,
+  "warning_only_payload": true
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-02T03:53:36.905336+00:00",
+  "original_state": {
+    "campaign": "BENCHMARK_C_COARSE_SCREENING",
+    "status": "CASE_LOAD",
+    "timestamp": "2026-10-02T03:37:45.009680+00:00",
+    "review": "WindowsPath_admission_repair.json",
+    "scope": "Finite four static poses then 10/20/40 steps; no 2ms, no medium/fine recovery",
+    "pid": 40076,
+    "execution_owner": "Windows Task Scheduler",
+    "original_fine_deadline_extended": false,
+    "job": "scripts/benchmark_C_coarse_component_identity.py",
+    "job_pid": 41832,
+    "job_created": 1790912212.907036,
+    "memory": {
+      "timestamp": "2026-10-02T03:37:03.513235+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 16.211994171142578,
+      "used_gib": 15.627803802490234,
+      "commit_gib": 26.357074737548828,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.5509445243074749,
+      "pagefile_used_gib": 1.5071640014648438,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.0738105773925781
+    }
+  },
+  "scheduler_exit_code": 1,
+  "native_host_pid": 12684,
+  "native_node_pid": 40656,
+  "reconnect_probe": {
+    "timestamp": "2026-10-02T03:50:33.798001+00:00",
+    "status": "CONNECTED_SAME_NATIVE_SESSION",
+    "host_pid": 12684,
+    "solver_launched": false,
+    "flow_time": 0.0,
+    "cell_zone_names": [
+      "background_water",
+      "robot_component_fluid"
+    ],
+    "data_valid": true
+  },
+  "next_diagnostic": "Independent component ray audit with raw stderr capture before any dynamics; connect to the same solver afterwards.",
+  "second_solver_allowed": false
+}

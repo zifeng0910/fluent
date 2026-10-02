@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-02T03:58:30.600472+00:00",
+  "root_cause": "Windows PowerShell ErrorActionPreference Stop treats native stderr warnings as NativeCommandError and exits 1; reproduced without Fluent. First FieldData request emits PyFluentDeprecationWarning.",
+  "evidence": "wrapper_stderr_reproduction.json",
+  "concrete_repair": "Start-Process Hidden -Wait with native stdout/stderr redirection; reconnect to existing host 12684 at time 0",
+  "native_solver_relaunched": false,
+  "component_layer_probe": {
+    "timestamp": "2026-10-02T03:54:00.773421+00:00",
+    "status": "PASS"
+  },
+  "theta0_static_status": "PASS"
+}

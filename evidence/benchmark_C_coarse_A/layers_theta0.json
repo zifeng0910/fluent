@@ -1,0 +1,2532 @@
+{
+  "zone": "background_water",
+  "method": "501 samples along each 0.05 mm CAD-normal ray; count distinct tetrahedra in continuous actual mesh intersection; retain endpoint tessellation deviations explicitly",
+  "ray_count": 120,
+  "minimum_crossed_cells": 7,
+  "uncovered_samples": 0,
+  "uncovered_interior_samples": 0,
+  "minimum_actual_covered_span_mm": 0.0499,
+  "candidate_cells": 49493,
+  "rows": [
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        0.00964226894281136,
+        0.0
+      ],
+      "normal": [
+        -0.9999684124231691,
+        0.007948217151465028,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 12,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030580896451878916
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        0.0068181137554863555,
+        0.0068181137554863555
+      ],
+      "normal": [
+        -0.9999684124231691,
+        0.005620238246144146,
+        0.005620238246144146
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030580896451878916
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        5.904186898665932e-19,
+        0.00964226894281136
+      ],
+      "normal": [
+        -0.9999684124231691,
+        4.86687934673487e-19,
+        0.007948217151465028
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02847674314571691
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        -0.006818113755486354,
+        0.0068181137554863555
+      ],
+      "normal": [
+        -0.9999684124231691,
+        -0.0056202382461441455,
+        0.005620238246144146
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028429892916219703
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        -0.00964226894281136,
+        1.1808373797331864e-18
+      ],
+      "normal": [
+        -0.9999684124231691,
+        -0.007948217151465028,
+        9.73375869346974e-19
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 13,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030583654401702562
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        -0.006818113755486356,
+        -0.006818113755486354
+      ],
+      "normal": [
+        -0.9999684124231691,
+        -0.005620238246144147,
+        -0.0056202382461441455
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030583654401702562
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        -1.7712560695997797e-18,
+        -0.00964226894281136
+      ],
+      "normal": [
+        -0.9999684124231691,
+        -1.460063804020461e-18,
+        -0.007948217151465028
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031167300352495854
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        3.229100378332461e-05,
+        0.006818113755486353,
+        -0.006818113755486356
+      ],
+      "normal": [
+        -0.9999684124231691,
+        0.005620238246144145,
+        -0.005620238246144147
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031167300352495854
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        0.04867737144550001,
+        0.0
+      ],
+      "normal": [
+        -0.9951445886570968,
+        0.09842381656132507,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030985212809324397
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        0.03442009943944947,
+        0.03442009943944947
+      ],
+      "normal": [
+        -0.9951445886570968,
+        0.06959614812077378,
+        0.06959614812077378
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03167284509289795
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        2.9806293565819177e-18,
+        0.04867737144550001
+      ],
+      "normal": [
+        -0.9951445886570968,
+        6.02672059558465e-18,
+        0.09842381656132507
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030543422722575826
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        -0.034420099439449466,
+        0.03442009943944947
+      ],
+      "normal": [
+        -0.9951445886570968,
+        -0.06959614812077378,
+        0.06959614812077378
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03207300458805784
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        -0.04867737144550001,
+        5.9612587131638355e-18
+      ],
+      "normal": [
+        -0.9951445886570968,
+        -0.09842381656132507,
+        1.20534411911693e-17
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03346569980054526
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        -0.03442009943944948,
+        -0.034420099439449466
+      ],
+      "normal": [
+        -0.9951445886570968,
+        -0.06959614812077379,
+        -0.06959614812077378
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 15,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03136981433969975
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        -8.941888069745753e-18,
+        -0.04867737144550001
+      ],
+      "normal": [
+        -0.9951445886570968,
+        -1.808016178675395e-17,
+        -0.09842381656132507
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030922253058527163
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.0018786368226999528,
+        0.034420099439449466,
+        -0.03442009943944948
+      ],
+      "normal": [
+        -0.9951445886570968,
+        0.06959614812077376,
+        -0.06959614812077379
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03155456386986179
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        0.12917934487304686,
+        0.0
+      ],
+      "normal": [
+        -0.9413220172977882,
+        0.33750979208079673,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031792468200583145
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        0.09134359074896711,
+        0.09134359074896711
+      ],
+      "normal": [
+        -0.9413220172977882,
+        0.2386554626971931,
+        0.2386554626971931
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03227909606838119
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        7.909953560736445e-18,
+        0.12917934487304686
+      ],
+      "normal": [
+        -0.9413220172977882,
+        2.066651432763182e-17,
+        0.33750979208079673
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02952998031243328
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        -0.0913435907489671,
+        0.09134359074896711
+      ],
+      "normal": [
+        -0.9413220172977882,
+        -0.23865546269719307,
+        0.2386554626971931
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030079798693822088
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        -0.12917934487304686,
+        1.581990712147289e-17
+      ],
+      "normal": [
+        -0.9413220172977882,
+        -0.33750979208079673,
+        4.133302865526364e-17
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030228116749816524
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        -0.09134359074896713,
+        -0.0913435907489671
+      ],
+      "normal": [
+        -0.9413220172977882,
+        -0.23865546269719315,
+        -0.23865546269719307
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030014255171130613
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        -2.3729860682209333e-17,
+        -0.12917934487304686
+      ],
+      "normal": [
+        -0.9413220172977882,
+        -6.199954298289546e-17,
+        -0.33750979208079673
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031056410985698203
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.02041619362304692,
+        0.09134359074896709,
+        -0.09134359074896713
+      ],
+      "normal": [
+        -0.9413220172977882,
+        0.23865546269719304,
+        -0.23865546269719315
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031154222406298004
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        0.27665559218749997,
+        0.0
+      ],
+      "normal": [
+        -0.7982586730705046,
+        0.6023147772284166,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03306133657335209
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        0.19562504528896127,
+        0.19562504528896127
+      ],
+      "normal": [
+        -0.7982586730705046,
+        0.42590086338707817,
+        0.42590086338707817
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028631718168683408
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        1.6940269271931867e-17,
+        0.27665559218749997
+      ],
+      "normal": [
+        -0.7982586730705046,
+        3.6881143200596576e-17,
+        0.6023147772284166
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030169008968636234
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        -0.19562504528896124,
+        0.19562504528896127
+      ],
+      "normal": [
+        -0.7982586730705046,
+        -0.4259008633870781,
+        0.42590086338707817
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03183433520013853
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        -0.27665559218749997,
+        3.3880538543863734e-17
+      ],
+      "normal": [
+        -0.7982586730705046,
+        -0.6023147772284166,
+        7.376228640119315e-17
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03078521990531656
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        -0.1956250452889613,
+        -0.19562504528896124
+      ],
+      "normal": [
+        -0.7982586730705046,
+        -0.4259008633870782,
+        -0.4259008633870781
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03290137499056896
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        -5.08208078157956e-17,
+        -0.27665559218749997
+      ],
+      "normal": [
+        -0.7982586730705046,
+        -1.1064342960178973e-16,
+        -0.6023147772284166
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030125322936146143
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.10277132093750008,
+        0.1956250452889612,
+        -0.1956250452889613
+      ],
+      "normal": [
+        -0.7982586730705046,
+        0.425900863387078,
+        -0.4259008633870782
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03120528202985445
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        0.3829906768066406,
+        0.0
+      ],
+      "normal": [
+        -0.582238139248091,
+        0.8130182957381221,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 13,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03134625737602016
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        0.27081530470120097,
+        0.27081530470120097
+      ],
+      "normal": [
+        -0.582238139248091,
+        0.5748907501451561,
+        0.5748907501451561
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030877714587770534
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        2.3451415322726545e-17,
+        0.3829906768066406
+      ],
+      "normal": [
+        -0.582238139248091,
+        4.978301267619637e-17,
+        0.8130182957381221
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028772460828893717
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        -0.27081530470120097,
+        0.27081530470120097
+      ],
+      "normal": [
+        -0.582238139248091,
+        -0.574890750145156,
+        0.5748907501451561
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028118655607455863
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        -0.3829906768066406,
+        4.690283064545309e-17
+      ],
+      "normal": [
+        -0.582238139248091,
+        -0.8130182957381221,
+        9.956602535239274e-17
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 12,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028008605266693687
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        -0.270815304701201,
+        -0.27081530470120097
+      ],
+      "normal": [
+        -0.582238139248091,
+        -0.5748907501451562,
+        -0.574890750145156
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02818526578277396
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        -7.035424596817963e-17,
+        -0.3829906768066406
+      ],
+      "normal": [
+        -0.582238139248091,
+        -1.4934903802858912e-16,
+        -0.8130182957381221
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029646779601710384
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.20691141758789067,
+        0.2708153047012009,
+        -0.270815304701201
+      ],
+      "normal": [
+        -0.582238139248091,
+        0.574890750145156,
+        -0.5748907501451562
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03103788720292944
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        0.4072396084448281,
+        0.0
+      ],
+      "normal": [
+        -0.12183875564497514,
+        0.9925499068676013,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02900494596688318
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        0.2879618886990924,
+        0.2879618886990924
+      ],
+      "normal": [
+        -0.12183875564497514,
+        0.7018387698121571,
+        0.7018387698121571
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.033460452509931196
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        2.4936234148399007e-17,
+        0.4072396084448281
+      ],
+      "normal": [
+        -0.12183875564497514,
+        6.077615332197057e-17,
+        0.9925499068676013
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031818857518847436
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        -0.28796188869909234,
+        0.2879618886990924
+      ],
+      "normal": [
+        -0.12183875564497514,
+        -0.701838769812157,
+        0.7018387698121571
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031322063235434974
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        -0.4072396084448281,
+        4.9872468296798014e-17
+      ],
+      "normal": [
+        -0.12183875564497514,
+        -0.9925499068676013,
+        1.2155230664394114e-16
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03166945635882065
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        -0.2879618886990924,
+        -0.28796188869909234
+      ],
+      "normal": [
+        -0.12183875564497514,
+        -0.7018387698121572,
+        -0.701838769812157
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03073463974160513
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        -7.480870244519702e-17,
+        -0.4072396084448281
+      ],
+      "normal": [
+        -0.12183875564497514,
+        -1.823284599659117e-16,
+        -0.9925499068676013
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030524650561433362
+    },
+    {
+      "label": "head",
+      "start_mm": [
+        0.25695406798897813,
+        0.2879618886990923,
+        -0.2879618886990924
+      ],
+      "normal": [
+        -0.12183875564497514,
+        0.7018387698121569,
+        -0.7018387698121572
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03060731187546626
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        0.4075,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029224925858670363
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        0.28814601333351814,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031223074379564404
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        2.495217853262732e-17,
+        0.4075
+      ],
+      "normal": [
+        0.0,
+        6.123233995736766e-17,
+        1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.0315869193142223
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        -0.2881460133335181,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03110501137058683
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        -0.4075,
+        4.990435706525464e-17
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030356873522614798
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        -0.28814601333351814,
+        -0.2881460133335181
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02878680443563861
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        -7.485653559788195e-17,
+        -0.4075
+      ],
+      "normal": [
+        0.0,
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02863882181113746
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.30000000000000004,
+        0.288146013333518,
+        -0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.0307555947009754
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        0.4075,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030290256816996798
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        0.28814601333351814,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03355879612994935
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        2.495217853262732e-17,
+        0.4075
+      ],
+      "normal": [
+        0.0,
+        6.123233995736766e-17,
+        1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029838770393206985
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        -0.2881460133335181,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029062464977465185
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        -0.4075,
+        4.990435706525464e-17
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03125434367751122
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        -0.28814601333351814,
+        -0.2881460133335181
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029504991673791572
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        -7.485653559788195e-17,
+        -0.4075
+      ],
+      "normal": [
+        0.0,
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03128449831315275
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        0.6,
+        0.288146013333518,
+        -0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029092136884166488
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        0.4075,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030124213532978845
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        0.28814601333351814,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03187251558145693
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        2.495217853262732e-17,
+        0.4075
+      ],
+      "normal": [
+        0.0,
+        6.123233995736766e-17,
+        1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029507621680271708
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        -0.2881460133335181,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03130303299299651
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        -0.4075,
+        4.990435706525464e-17
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03339764933301791
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        -0.28814601333351814,
+        -0.2881460133335181
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.026977560456838648
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        -7.485653559788195e-17,
+        -0.4075
+      ],
+      "normal": [
+        0.0,
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03267517192089674
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.2,
+        0.288146013333518,
+        -0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02801071804616747
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        0.4075,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.0313534440795408
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        0.28814601333351814,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029887741325551075
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        2.495217853262732e-17,
+        0.4075
+      ],
+      "normal": [
+        0.0,
+        6.123233995736766e-17,
+        1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03083563005654485
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        -0.2881460133335181,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03507625167134941
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        -0.4075,
+        4.990435706525464e-17
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030232260871333533
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        -0.28814601333351814,
+        -0.2881460133335181
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03225011864461508
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        -7.485653559788195e-17,
+        -0.4075
+      ],
+      "normal": [
+        0.0,
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031160383142472853
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        1.8,
+        0.288146013333518,
+        -0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.031785779512360314
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        0.4075,
+        0.0
+      ],
+      "normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028505939554143652
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        0.28814601333351814,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028491904512587686
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        2.495217853262732e-17,
+        0.4075
+      ],
+      "normal": [
+        0.0,
+        6.123233995736766e-17,
+        1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03265848293731286
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        -0.2881460133335181,
+        0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865475,
+        0.7071067811865476
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03211007170775767
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        -0.4075,
+        4.990435706525464e-17
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03143338882442198
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        -0.28814601333351814,
+        -0.2881460133335181
+      ],
+      "normal": [
+        0.0,
+        -0.7071067811865477,
+        -0.7071067811865475
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029129338257535085
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        -7.485653559788195e-17,
+        -0.4075
+      ],
+      "normal": [
+        0.0,
+        -1.8369701987210297e-16,
+        -1.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030395560776808512
+    },
+    {
+      "label": "cylinder",
+      "start_mm": [
+        2.25,
+        0.288146013333518,
+        -0.28814601333351814
+      ],
+      "normal": [
+        0.0,
+        0.7071067811865474,
+        -0.7071067811865477
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.027981053826781253
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.0,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02972440302721771
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.1,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029752622529597622
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.07071067811865477,
+        0.07071067811865477
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030258825448441204
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        6.123233995736766e-18,
+        0.1
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030254947818753805
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.07071067811865475,
+        0.07071067811865477
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028274179644346607
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.1,
+        1.2246467991473533e-17
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 11,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03191986747313495
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.07071067811865477,
+        -0.07071067811865475
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03244678502460953
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -1.8369701987210297e-17,
+        -0.1
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029318987949009098
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.07071067811865474,
+        -0.07071067811865477
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02814632049255525
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.25,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 14,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03326674167211253
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.1767766952966369,
+        0.1767766952966369
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02975909159381045
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        1.5308084989341915e-17,
+        0.25
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.0302950211398489
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.17677669529663687,
+        0.1767766952966369
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03127797464979025
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.25,
+        3.061616997868383e-17
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.028842934334321245
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.17677669529663692,
+        -0.17677669529663687
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.02949240799952272
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -4.592425496802574e-17,
+        -0.25
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030257468377415234
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.17677669529663684,
+        -0.17677669529663692
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029521252123643305
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.38,
+        0.0
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 7,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03300459838000294
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.2687005768508881,
+        0.2687005768508881
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029034354951292262
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        2.3268289183799712e-17,
+        0.38
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.030852060466642992
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.26870057685088805,
+        0.2687005768508881
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03052478936804647
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.38,
+        4.6536578367599424e-17
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029751027074120074
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -0.2687005768508881,
+        -0.26870057685088805
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 8,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.029102286562245817
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        -6.980486755139913e-17,
+        -0.38
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 10,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.03205935641623177
+    },
+    {
+      "label": "tail",
+      "start_mm": [
+        2.3,
+        0.268700576850888,
+        -0.2687005768508881
+      ],
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "length_mm": 0.05,
+      "crossed_cells": 9,
+      "uncovered_sample_count": 0,
+      "uncovered_interior_samples": 0,
+      "first_covered_distance_mm": 5e-05,
+      "last_covered_distance_mm": 0.04995,
+      "actual_covered_span_mm": 0.0499,
+      "max_crossed_cell_edge_mm": 0.027917350002570077
+    }
+  ]
+}
