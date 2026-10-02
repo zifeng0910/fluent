@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "stage": "export_component",
+  "source": "live_cases/benchmark_C_fineA/bg020/benchmark_C_fineA.cas.h5",
+  "fine_solver_DATA_loaded": false,
+  "parts": [
+    {
+      "name": "benchmark_C_fineA",
+      "id": 2,
+      "summary": "message :  \nPart Name: benchmark_C_fineA\nPart ID: 2\n    0 Edge Zonelets\n    5 Face Zonelets\n    2 Cell Zonelets\n\n    0 Edge Zones\n        Edge Zone Name(s) : []\n    5 Face Zones\n        Face Zone Name(s) : [inlet, outlet, overset_component, pipe_wall, robot_wall]\n    2 Volume Zones\n        Volume Zone Name(s) : [background_water, robot_component_fluid]\n\n    0 Label(s)\n        Names: []\n\n    Bounding box (-5 -0.899451 -0.897808)\n                 (5 0.89945 0.9)\n\n    Mesh Summary: \n        1987355 Nodes \n        0 Poly Faces \n        0 Quad Faces \n        316816 Tri Faces \n        316816 Faces \n        0 Poly Cells \n        0 Hex Cells \n        0 Prism Cells \n        0 Pyramid Cells \n        11364822 Tet Cells \n        11364822 Cells \n\nn_topo_edges :  0\nn_topo_faces :  0\nn_topo_volumes :  0\nn_edge_zonelets :  0\nn_face_zonelets :  5\nn_cell_zonelets :  2\nn_edge_zones :  0\nn_face_zones :  5\nn_volume_zones :  2\nn_labels :  0\nn_nodes :  1987355\nn_faces :  316816\nn_cells :  11364822\nn_tri_faces :  316816\nn_poly_faces :  0\nn_quad_faces :  0\nn_second_order_tri_faces :  0\nn_second_order_quad_faces :  0\nn_tet_cells :  11364822\nn_pyra_cells :  0\nn_prism_cells :  0\nn_poly_cells :  0\nn_hex_cells :  0\nn_second_order_tet_cells :  0\nn_second_order_pyra_cells :  0\nn_second_order_prism_cells :  0\nn_second_order_hex_cells :  0\nn_unmeshed_topo_faces :  0"
+    }
+  ],
+  "cell_zonelet_statistics": {
+    "1": "volume :  25.3278\nerror_code :  0",
+    "2": "volume :  0.350657\nerror_code :  0"
+  },
+  "delete_background_cells_result": "error_code :  0",
+  "delete_background_result": "deleted_volumes :  [17]\nerror_code :  0",
+  "component_cells": 1353606,
+  "output": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\validated_component.cas.h5",
+  "elapsed_s": 32.45687818527222,
+  "topology_identity_evidence": "evidence/benchmark_C_coarse_A/component_identity.json"
+}

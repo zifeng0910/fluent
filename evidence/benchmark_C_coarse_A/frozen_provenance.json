@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-02T02:51:33.609441+00:00",
+  "campaign": "BENCHMARK_C_COARSE_SCREENING",
+  "files": {
+    "fluent_udf/l2300_abaqus100hz_6dof.c": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
+    "evidence/benchmark_C_fineA_final_static_gate.json": "2b6e14986c42e3b1122fc245a9ef186a4fc0e847b1368e109fffd5461803a754",
+    "evidence/benchmark_C_fineA_free_6dof_history.csv": "8647ce7f46a9be9eb465c293583da0e488579a2c05fdc26159029ad725c865d4",
+    "live_cases/benchmark_C_fineA/bg020/fielddata_checkpoint_0032.cas.h5": "b6352cd4fe33f88f29033e5a191c1c8d4fae9deb6e4b07755a07258fbd2ed685",
+    "live_cases/benchmark_C_fineA/bg020/fielddata_checkpoint_0032.dat.h5": "72a01116c54fcaf6ecd8815da314bad23fd5cbdff193bbcec54596892a64c9b4"
+  },
+  "fine_recovery_scheduler_disabled": true,
+  "old_time_budget_reset": false
+}

@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-02T02:57:26.763978+00:00",
+  "source": "H:\\fluent\\live_cases\\benchmark_C_fineA\\bg020\\benchmark_C_fineA.cas.h5",
+  "extracted": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\validated_component.cas.h5",
+  "source_signature": {
+    "cells": 1353606,
+    "nodes": 277379,
+    "all_faces": 2810557,
+    "node_sha256": "82a2c3196434efa626efd9aed2b18821eb877b9dd1a6c74ba1a078df9a3991a1",
+    "face_coordinate_connectivity_sha256": "e1e28df0514753b69b0355e520922c2121ce8277e404eaa27616d76f6d824a1c"
+  },
+  "extracted_signature": {
+    "cells": 1353606,
+    "nodes": 277379,
+    "all_faces": 2810557,
+    "node_sha256": "82a2c3196434efa626efd9aed2b18821eb877b9dd1a6c74ba1a078df9a3991a1",
+    "face_coordinate_connectivity_sha256": "e1e28df0514753b69b0355e520922c2121ce8277e404eaa27616d76f6d824a1c"
+  },
+  "status": "PASS"
+}
