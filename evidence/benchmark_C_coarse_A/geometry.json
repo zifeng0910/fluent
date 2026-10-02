@@ -1,0 +1,1120 @@
+{
+  "status": "GENERATED",
+  "timestamp": "2026-10-02T03:16:06.075035+00:00",
+  "region_type": "Independent closed offset-body BOI controls; pointwise minimum sizing forms union without CAD boolean fuse",
+  "component_offset_mm": 0.05,
+  "critical_safety_inflation_mm": 0.11,
+  "translation_domain_radius_mm": 0.005,
+  "theta_sample_spacing_rad": 0.025,
+  "theta_bounds_rad": [
+    0,
+    0.35
+  ],
+  "pose_axes": [
+    [
+      0.04129325489475344,
+      -0.3684752565834513,
+      -0.928720007529695
+    ],
+    [
+      0,
+      0.9295128170778901,
+      -0.3687898085467175
+    ]
+  ],
+  "parts": [
+    {
+      "name": "critical_boi_00",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0,
+      "volume_mm3": 2.465332176751065
+    },
+    {
+      "name": "critical_boi_01",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.025,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_02",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.05,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_03",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.075,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_04",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.1,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_05",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.125,
+      "volume_mm3": 2.4653321767510645
+    },
+    {
+      "name": "critical_boi_06",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.15,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_07",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.175,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_08",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.19999999999999998,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_09",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.22499999999999998,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_10",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.24999999999999997,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_11",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.27499999999999997,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_12",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.3,
+      "volume_mm3": 2.4653321767510663
+    },
+    {
+      "name": "critical_boi_13",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.325,
+      "volume_mm3": 2.465332176751065
+    },
+    {
+      "name": "critical_boi_14",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.35,
+      "volume_mm3": 2.465332176751065
+    },
+    {
+      "name": "critical_boi_15",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.025,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_16",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.05,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_17",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.075,
+      "volume_mm3": 2.465332176751065
+    },
+    {
+      "name": "critical_boi_18",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.1,
+      "volume_mm3": 2.465332176751066
+    },
+    {
+      "name": "critical_boi_19",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.125,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_20",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.15,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_21",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.175,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_22",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.19999999999999998,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_23",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.22499999999999998,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_24",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.24999999999999997,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_25",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.27499999999999997,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_26",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.3,
+      "volume_mm3": 2.465332176751065
+    },
+    {
+      "name": "critical_boi_27",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.325,
+      "volume_mm3": 2.4653321767510654
+    },
+    {
+      "name": "critical_boi_28",
+      "group": "critical",
+      "spacing_mm": 0.02,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.35,
+      "volume_mm3": 2.4653321767510645
+    },
+    {
+      "name": "buffer_boi_00",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_01",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.025,
+      "volume_mm3": 3.615105570421258
+    },
+    {
+      "name": "buffer_boi_02",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.05,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_03",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.075,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_04",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.1,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_05",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.125,
+      "volume_mm3": 3.6151055704212567
+    },
+    {
+      "name": "buffer_boi_06",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.15,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_07",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.175,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_08",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.19999999999999998,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_09",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.22499999999999998,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_10",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.24999999999999997,
+      "volume_mm3": 3.615105570421258
+    },
+    {
+      "name": "buffer_boi_11",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.27499999999999997,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_12",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.3,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_13",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.325,
+      "volume_mm3": 3.6151055704212567
+    },
+    {
+      "name": "buffer_boi_14",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.35,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_15",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.025,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_16",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.05,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_17",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.075,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_18",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.1,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_19",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.125,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_20",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.15,
+      "volume_mm3": 3.6151055704212567
+    },
+    {
+      "name": "buffer_boi_21",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.175,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_22",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.19999999999999998,
+      "volume_mm3": 3.615105570421258
+    },
+    {
+      "name": "buffer_boi_23",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.22499999999999998,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_24",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.24999999999999997,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "buffer_boi_25",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.27499999999999997,
+      "volume_mm3": 3.6151055704212567
+    },
+    {
+      "name": "buffer_boi_26",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.3,
+      "volume_mm3": 3.6151055704212576
+    },
+    {
+      "name": "buffer_boi_27",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.325,
+      "volume_mm3": 3.6151055704212562
+    },
+    {
+      "name": "buffer_boi_28",
+      "group": "buffer",
+      "spacing_mm": 0.04,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.35,
+      "volume_mm3": 3.615105570421257
+    },
+    {
+      "name": "transition_boi_00",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0,
+      "volume_mm3": 6.772441308551919
+    },
+    {
+      "name": "transition_boi_01",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.025,
+      "volume_mm3": 6.772441308551923
+    },
+    {
+      "name": "transition_boi_02",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.05,
+      "volume_mm3": 6.772441308551923
+    },
+    {
+      "name": "transition_boi_03",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.075,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_04",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.1,
+      "volume_mm3": 6.772441308551921
+    },
+    {
+      "name": "transition_boi_05",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.125,
+      "volume_mm3": 6.772441308551921
+    },
+    {
+      "name": "transition_boi_06",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.15,
+      "volume_mm3": 6.772441308551921
+    },
+    {
+      "name": "transition_boi_07",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.175,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_08",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.19999999999999998,
+      "volume_mm3": 6.772441308551921
+    },
+    {
+      "name": "transition_boi_09",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.22499999999999998,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_10",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.24999999999999997,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_11",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.27499999999999997,
+      "volume_mm3": 6.77244130855192
+    },
+    {
+      "name": "transition_boi_12",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.3,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_13",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.325,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_14",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0.04129325489475344,
+        -0.3684752565834513,
+        -0.928720007529695
+      ],
+      "theta_rad": 0.35,
+      "volume_mm3": 6.77244130855192
+    },
+    {
+      "name": "transition_boi_15",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.025,
+      "volume_mm3": 6.772441308551922
+    },
+    {
+      "name": "transition_boi_16",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.05,
+      "volume_mm3": 6.772441308551922
+    },
+    {
+      "name": "transition_boi_17",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.075,
+      "volume_mm3": 6.772441308551923
+    },
+    {
+      "name": "transition_boi_18",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.1,
+      "volume_mm3": 6.772441308551923
+    },
+    {
+      "name": "transition_boi_19",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.125,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_20",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.15,
+      "volume_mm3": 6.772441308551923
+    },
+    {
+      "name": "transition_boi_21",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.175,
+      "volume_mm3": 6.772441308551922
+    },
+    {
+      "name": "transition_boi_22",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.19999999999999998,
+      "volume_mm3": 6.772441308551921
+    },
+    {
+      "name": "transition_boi_23",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.22499999999999998,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_24",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.24999999999999997,
+      "volume_mm3": 6.772441308551921
+    },
+    {
+      "name": "transition_boi_25",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.27499999999999997,
+      "volume_mm3": 6.772441308551919
+    },
+    {
+      "name": "transition_boi_26",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.3,
+      "volume_mm3": 6.77244130855192
+    },
+    {
+      "name": "transition_boi_27",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.325,
+      "volume_mm3": 6.7724413085519215
+    },
+    {
+      "name": "transition_boi_28",
+      "group": "transition",
+      "spacing_mm": 0.08,
+      "axis": [
+        0,
+        0.9295128170778901,
+        -0.3687898085467175
+      ],
+      "theta_rad": 0.35,
+      "volume_mm3": 6.772441308551919
+    }
+  ],
+  "regions": [
+    {
+      "name": "critical",
+      "spacing_mm": 0.02,
+      "piece_count": 29,
+      "curve_audit": {
+        "method": "Native OCC spline evaluation, bidirectional KD distances, Bernstein reference-speed bound and dense native derivative interval allowance",
+        "reference_samples": 262145,
+        "native_samples": 65537,
+        "sampled_bidirectional_distance_mm": 7.739268306138532e-06,
+        "reference_cover_bound_mm": 3.873176811261659e-05,
+        "native_cover_allowance_mm": 5.819801311516083e-06,
+        "conservative_audited_distance_mm": 5.22908377302712e-05
+      }
+    },
+    {
+      "name": "buffer",
+      "spacing_mm": 0.04,
+      "piece_count": 29,
+      "curve_audit": {
+        "method": "Native OCC spline evaluation, bidirectional KD distances, Bernstein reference-speed bound and dense native derivative interval allowance",
+        "reference_samples": 262145,
+        "native_samples": 65537,
+        "sampled_bidirectional_distance_mm": 9.05573281922569e-06,
+        "reference_cover_bound_mm": 6.127822893209971e-05,
+        "native_cover_allowance_mm": 7.018538205763381e-06,
+        "conservative_audited_distance_mm": 7.735249995708878e-05
+      }
+    },
+    {
+      "name": "transition",
+      "spacing_mm": 0.08,
+      "piece_count": 29,
+      "curve_audit": {
+        "method": "Native OCC spline evaluation, bidirectional KD distances, Bernstein reference-speed bound and dense native derivative interval allowance",
+        "reference_samples": 262145,
+        "native_samples": 65537,
+        "sampled_bidirectional_distance_mm": 1.1352937640081899e-05,
+        "reference_cover_bound_mm": 0.00010637115057106595,
+        "native_cover_allowance_mm": 9.416158641165165e-06,
+        "conservative_audited_distance_mm": 0.000127140246852313
+      }
+    }
+  ],
+  "far_spacing_mm": 0.15,
+  "continuous_rotation_sampling_displacement_bound_mm": 0.016709213131803097,
+  "minimum_safety_after_sampling_and_translation_mm": 0.08816364662134459,
+  "old_fine_BOI_volume_mm3": 7.680493078609159,
+  "outside_pipe_note": "BOI pieces can extend outside the pipe; only background_water is volume meshed, all BOI parts are removed before export. No extra fluid cells are added outside the pipe."
+}

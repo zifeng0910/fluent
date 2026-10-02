@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-10-02T03:03:46.663274+00:00",
+  "rows": [
+    {
+      "method": "Native OCC spline evaluation, bidirectional KD distances, Bernstein reference-speed bound and dense native derivative interval allowance",
+      "reference_samples": 262145,
+      "native_samples": 65537,
+      "sampled_bidirectional_distance_mm": 7.739268306138532e-06,
+      "reference_cover_bound_mm": 3.873176811261659e-05,
+      "native_cover_allowance_mm": 5.819801311516083e-06,
+      "conservative_audited_distance_mm": 5.22908377302712e-05,
+      "offset_mm": 0.16
+    },
+    {
+      "method": "Native OCC spline evaluation, bidirectional KD distances, Bernstein reference-speed bound and dense native derivative interval allowance",
+      "reference_samples": 262145,
+      "native_samples": 65537,
+      "sampled_bidirectional_distance_mm": 9.05573281922569e-06,
+      "reference_cover_bound_mm": 6.127822893209971e-05,
+      "native_cover_allowance_mm": 7.018538205763381e-06,
+      "conservative_audited_distance_mm": 7.735249995708878e-05,
+      "offset_mm": 0.26
+    },
+    {
+      "method": "Native OCC spline evaluation, bidirectional KD distances, Bernstein reference-speed bound and dense native derivative interval allowance",
+      "reference_samples": 262145,
+      "native_samples": 65537,
+      "sampled_bidirectional_distance_mm": 1.1352937640077622e-05,
+      "reference_cover_bound_mm": 0.00010637115057106598,
+      "native_cover_allowance_mm": 9.41615864116515e-06,
+      "conservative_audited_distance_mm": 0.00012714024685230875,
+      "offset_mm": 0.46
+    }
+  ],
+  "status": "PASS"
+}

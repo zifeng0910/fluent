@@ -1,0 +1,15 @@
+{
+  "status": "MESH_GENERATED_STATIC_PENDING",
+  "stage": "export",
+  "critical_spacing_mm": 0.02,
+  "buffer_spacing_mm": 0.04,
+  "transition_spacing_mm": 0.08,
+  "far_spacing_mm": 0.15,
+  "component_remeshed": false,
+  "background_cells": 4328243,
+  "component_cells": 1353606,
+  "total_cells": 5681849,
+  "cell_reduction_percent": 50.00494508404971,
+  "elapsed_s": 466.33421993255615,
+  "cell_count_target_pass": false
+}

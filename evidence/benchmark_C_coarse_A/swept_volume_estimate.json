@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-02T03:19:05.573445+00:00",
+  "method": "Seeded Monte Carlo of union membership in offset CAD profile bodies, clipped to unchanged radius 0.9 mm pipe; sizing pieces overlap, so individual volumes are not summed.",
+  "samples": 500000,
+  "seed": 20261002,
+  "critical_union_volume_estimate_mm3": 3.4961770800000003,
+  "sampling_95pct_interval_mm3": [
+    3.482274096301089,
+    3.5100800636989113
+  ],
+  "old_fine_BOI_volume_mm3": 7.680493078609159,
+  "critical_volume_reduction_estimate_percent": 54.479783469408275,
+  "BOI_curve_approximation_bound_evidence": "BOI_curve_preflight.json",
+  "is_actual_cell_count": false
+}
