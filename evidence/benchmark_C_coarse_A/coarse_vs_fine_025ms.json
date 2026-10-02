@@ -1,0 +1,60 @@
+{
+  "time_s": 0.0002500000000000001,
+  "comparison_purpose": "Development screening, not mesh convergence",
+  "fine_source": "evidence/benchmark_C_fineA_free_6dof_history.csv",
+  "groups": {
+    "COM_displacement": {
+      "coarse": [
+        -2.736029508206353e-09,
+        1.683484663750034e-11,
+        -1.03368519725888e-10
+      ],
+      "fine": [
+        -2.7300378234104694e-09,
+        2.37668393064326e-11,
+        -1.163465358472225e-10
+      ],
+      "absolute_difference_norm": 1.5886526099212838e-11,
+      "relative_difference": 0.005813662541090124,
+      "direction_cosine": 0.9999850928629628
+    },
+    "linear_velocity": {
+      "coarse": [
+        -4.167458809659052e-05,
+        4.681159388838137e-07,
+        -1.9184915109873963e-06
+      ],
+      "fine": [
+        -4.155663150785914e-05,
+        6.711659744596774e-07,
+        -2.1212428653951926e-06
+      ],
+      "absolute_difference_norm": 3.102437517286984e-07,
+      "relative_difference": 0.0074548887430189925,
+      "direction_cosine": 0.9999754695046333
+    },
+    "angular_velocity": {
+      "coarse": [
+        0.10005095745858336,
+        -1.7614980880147362,
+        -0.8046995108910836
+      ],
+      "fine": [
+        0.10004716908390923,
+        -1.741846767296171,
+        -0.7971354545536347
+      ],
+      "absolute_difference_norm": 0.0210568128787761,
+      "relative_difference": 0.01097742117997414,
+      "direction_cosine": 0.9999996167916751
+    }
+  },
+  "orientation": {
+    "coarse_angle_rad": 0.00012255532826435826,
+    "fine_angle_rad": 0.00012137596447809562,
+    "geodesic_difference_rad": 1.1829734557546935e-06,
+    "relative_geodesic_difference": 0.009746356791819202
+  },
+  "trend_gate_rule": "Both velocity direction cosines > 0 and relative differences <= 1; orientation geodesic difference <= fine angle. No accuracy/convergence claim.",
+  "qualitative_trend_pass": true
+}
