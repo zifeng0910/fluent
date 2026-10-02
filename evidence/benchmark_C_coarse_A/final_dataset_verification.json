@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-02T07:18:24.457909+00:00",
+  "status": "PARTIAL_DATASET_AND_NATIVE_STOP_STATE_VERIFIED",
+  "rows": 29,
+  "steps_requested": 40,
+  "time_ms": 0.7249999999999998,
+  "all_rows_finite": true,
+  "zero_orphans": true,
+  "zero_invalid_donors": true,
+  "positive_volumes": true,
+  "quaternion_norms_valid": true,
+  "clearance_gate_pass": true,
+  "pre_resume_28_rows_byte_values_unchanged": true,
+  "last_native_case_data_hashes_verified": true,
+  "native_history_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 2.868842316483544e-14,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 2.2659825404947043e-17,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 4.588564195273648e-09,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "new_solver_launches_after_resource_stop": 0,
+  "restart_load_validation": "NOT_PERFORMED",
+  "frozen_file_hashes_verified": true,
+  "known_solver_and_worker_stopped": true,
+  "full_40_step_screening_pass": false
+}

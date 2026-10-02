@@ -1,0 +1,63 @@
+{
+  "step": 29,
+  "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\resume_stop_0029.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\resume_stop_0029.dat.h5",
+  "case_sha256": "f61ec9a705e4afd3cbdd38be06e7356f38ebf467166040c13d0401c56361ff1f",
+  "data_sha256": "23019d7e6a9175173557c8c286d4ade2b8ef2cfa4f75a7a6404aae81b92fc370",
+  "native_state": {
+    "com": [
+      0.00120587232525132,
+      1.158480632459022e-08,
+      -9.96442984701017e-09
+    ],
+    "q": [
+      0.9999881076068158,
+      0.0002194537031958831,
+      -0.0030345870791586745,
+      -0.0038115306991557143
+    ],
+    "velocity": [
+      -0.00072090824040669,
+      8.290850183893246e-05,
+      -5.394372720462333e-05
+    ],
+    "omega": [
+      2.425935768662207,
+      -29.91452819906804,
+      -48.90579945043873
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.009753939411667469,
+      "axis": [
+        0.04499814154694371,
+        -0.6222304610764489,
+        -0.7815397754215143
+      ]
+    }
+  },
+  "status": "SAVED_HASHED_NATIVE_STATE_MATCHES_HISTORY",
+  "native_history_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 2.868842316483544e-14,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 2.2659825404947043e-17,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 4.588564195273648e-09,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "restart_load_validation": "NOT_PERFORMED",
+  "time_s": 0.0007249999999999997
+}
