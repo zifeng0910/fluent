@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-03T06:45:19.800977+00:00",
+  "status": "OFFLINE_REVIEW_PASS_PENDING_NATIVE_GATE",
+  "configuration_sha256": "ce55bcb08c45ee9daa48f2fc5ba4abb13594480b2a12ac5f2c37c81c6adc01ec",
+  "supporting_code_sha256": {
+    "scripts/benchmark_C_coarse_2ms_common.py": "d3c8abf46979bf04ff238c202016005dd0a70a3b94e2ae6d4f5e776f3455d651",
+    "scripts/benchmark_C_coarse_2ms_prepare.py": "c44ccde2286029a4487126b7f6112d291fe0868da4ba6cb7b98a57b43d5d47d4",
+    "scripts/benchmark_C_coarse_2ms_worker.py": "50656a47a41f7147a8a587924451256068261d9bcafa94bc37c1b4aec25a499a",
+    "scripts/benchmark_C_coarse_2ms_report.py": "129159a0aa81461c023b1be9d16f33743b789d86b979ad81319806f39e5c466b",
+    "scripts/benchmark_C_coarse_2ms_render.py": "198ab40378bd88b5f6d7fa6cd2c403898a290636971d1a99dae88c6a6da5c0bc",
+    "scripts/benchmark_C_coarse_2ms_supervisor.py": "4e41238e6a5ccf2276164d97117f07094aa1ddbadc7c0b1bb4fb5b00effb4c0f",
+    "scripts/run_benchmark_C_coarse_2ms.ps1": "82e94ff407bf9fae37c6336b3ceba199950b1c9af1d7d6cdfb7fa3269285b34a",
+    "scripts/benchmark_C_coarse_native_resume.py": "e1f6d23494cf9755716f6b7ae194bf3677aa221d775dfc5ab3c4bc8019c9b444",
+    "scripts/benchmark_C_coarse_dynamic.py": "b56d1cc5cfb9858ce15d9b8048bfa7a64c0c54782de5bc0d2c8a73f4600552d8",
+    "scripts/benchmark_C_analytic_reference.py": "e7ce91ab34e5ac925b1f3cc04838bfad97a9eeb012f2163f97a8d9efd1088219",
+    "scripts/benchmark_C_coarse_resource_checkpoint.py": "781288046e3bd179e8e2868e19d4661507cf1f6082a0229fa9b1bc07aedf4c41",
+    "scripts/benchmark_C_coarse_commit_audit.py": "7fcc7a8bb34541049c423c7707156ee4c455e47a237989282c566d6f280dbe40",
+    "scripts/benchmark_C_recovery_v2_restart.py": "83111594f15b5a17eea37a2fc8c9d95dbc3f5e879ac161c37f6b1862af016e5f",
+    "scripts/benchmark_C_fineA_free_6dof_run.py": "fc87295d63c0bd79630b0b923cf8b3bea6caee13f28cdda526d9f8ed5f88af02",
+    "scripts/benchmark_C_fineA_theta0.py": "b3563ef91a15047d09d04c57e6101ac34be49584f076284e47500b8f59488c92"
+  },
+  "checks": {
+    "step40_CASE_DATA_hash_size_HDF5": true,
+    "old_1ms_evidence_roots_preserved": true,
+    "only_one_solver_launch_owner": true,
+    "zero_step_native_gate_before_step41": true,
+    "absolute_100Hz_ramp_endpoint_offset": true,
+    "all40_additional_steps_hard_gates": true,
+    "static_envelope_warning_only_when_actual_connectivity_valid": true,
+    "native50_60_70_80_checkpoints": true,
+    "resource_guards_unchanged": true,
+    "actual_FieldData_fixed_scale_render_QA": true,
+    "no_unchanged_automatic_retry": true,
+    "no_physics_MPI_mesh_changes": true,
+    "same_inherited_deadline": true
+  },
+  "verification": "py_compile plus offline step40 integrity and actual1..40 report calculation; no Fluent launch during preparation"
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-10-03T03:22:29.309065+00:00",
+  "requested_time_s": 0.001,
+  "time_s": 0.0008249999999999996,
+  "one_ms_reference_status": "FINE_REFERENCE_NOT_AVAILABLE_AT_1MS",
+  "fine_reference_sha256": "8647ce7f46a9be9eb465c293583da0e488579a2c05fdc26159029ad725c865d4",
+  "interpolation_used": false,
+  "mesh_convergence_claim": false,
+  "coarse_COM_xyz_m": [
+    0.00120578765040033,
+    2.232789992844146e-08,
+    -1.655857464633271e-08
+  ],
+  "fine_COM_xyz_m": [
+    0.001205789892765005,
+    2.546467494762238e-08,
+    -1.938920691667001e-08
+  ],
+  "groups": {
+    "COM_displacement": {
+      "coarse": [
+        -2.3104331530431066e-07,
+        2.232789992844146e-08,
+        -1.655857464633271e-08
+      ],
+      "fine": [
+        -2.288009506292918e-07,
+        2.546467494762238e-08,
+        -1.938920691667001e-08
+      ],
+      "absolute_difference_norm": 4.783308050565513e-09,
+      "relative_difference": 0.02070438776940959,
+      "direction_cosine": 0.9998134872287487
+    },
+    "linear_velocity": {
+      "coarse": [
+        -0.0009771103185322327,
+        0.00013730840267673998,
+        -7.896607195523298e-05
+      ],
+      "fine": [
+        -0.000963801570323628,
+        0.00015493365381629348,
+        -9.143794504868603e-05
+      ],
+      "absolute_difference_norm": 2.536375120268234e-05,
+      "relative_difference": 0.02586954568473952,
+      "direction_cosine": 0.9997142567011613
+    },
+    "angular_velocity": {
+      "coarse": [
+        3.570408183200309,
+        -41.025196788730625,
+        -76.42696358131433
+      ],
+      "fine": [
+        3.564393268410663,
+        -40.53593438599315,
+        -75.5205807481627
+      ],
+      "absolute_difference_norm": 1.0300212221912415,
+      "relative_difference": 0.012006878956982898,
+      "direction_cosine": 0.9999999098325371
+    }
+  },
+  "orientation_geodesic_difference_rad": 0.00019533474067033507,
+  "orientation_relative_difference": 0.01172688414571192,
+  "screening_trend_pass": true,
+  "acceptance_note": "Same qualitative development trend gate as the existing 0.25ms milestone; no mesh convergence claim."
+}

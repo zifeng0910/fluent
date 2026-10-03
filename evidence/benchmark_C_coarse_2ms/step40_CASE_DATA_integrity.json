@@ -1,0 +1,20 @@
+{
+  "step": 40,
+  "time_s": 0.0009999999999999994,
+  "files": {
+    "case": {
+      "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\checkpoint_0040.cas.h5",
+      "size_bytes": 109157337,
+      "sha256": "86cd6f3bc0baedebd3025fe98b06772c52d0a8170dda978f452cbb727cbfa7ed",
+      "HDF5_readable": true
+    },
+    "data": {
+      "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\checkpoint_0040.dat.h5",
+      "size_bytes": 535735978,
+      "sha256": "84751773083901f44d4d0dd629a9d29b9d967799a2717b82b7157aff462df655",
+      "HDF5_readable": true
+    }
+  },
+  "status": "PASS",
+  "timesteps_advanced": 0
+}
