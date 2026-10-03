@@ -1,0 +1,15 @@
+{
+  "window_id": "coarse_20h_1790992287",
+  "campaign": "BENCHMARK_C_COARSE_SCREENING",
+  "started_epoch": 1790992287.4467711,
+  "deadline_epoch": 1791064287.4467711,
+  "duration_hours": 20,
+  "started_at": "2026-10-03T01:51:27.446771+00:00",
+  "deadline": "2026-10-03T21:51:27.446771+00:00",
+  "deadline_Asia_Shanghai": "2026-10-04T05:51:27.446771+08:00",
+  "authorization": "User explicitly requested continuing autonomous iteration for 20 hours and periodically writing plans for next steps on 2026-10-03.",
+  "scope": "Current4.699M mesh / native step29\u219240 (1ms), audit, checkpoint verification and exact-time comparison. No t0/remesh/physics/MPI change/2ms/medium/fine/D.",
+  "old_fine_deadline_reset": false,
+  "old_heartbeat_replaced": true,
+  "allow_early_completion": true
+}

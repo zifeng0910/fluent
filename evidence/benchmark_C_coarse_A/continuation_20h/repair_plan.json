@@ -1,0 +1,28 @@
+{
+  "plan_id": "resume29_01",
+  "window_id": "coarse_20h_1790992287",
+  "failure_timestamp": "2026-10-02T07:18:24.159717+00:00",
+  "decision": "REPAIR",
+  "failure_class": "SYSTEM_COMMIT",
+  "root_cause": "Previous resource stops occurred at95% system commit with7.24/9.04GiB physical available. Current audit shows system-managed16GiB pagefile and reduced baseline commit; historical peak process attribution remains unresolved.",
+  "concrete_change": "Fresh audited system commit baseline 26.217GiB / 47.840GiB, versus45.64\u201345.84GiB failed load. Require >=19GiB commit headroom and >=12GiB physical available continuously for60s before one cold native step29 restart. Zero-time continuity gate precedes any new dynamics; runtime guards unchanged.",
+  "evidence_files": [
+    "evidence/benchmark_C_coarse_A/commit_audit_step29.json",
+    "evidence/benchmark_C_coarse_A/resume_stop_checkpoint.json",
+    "evidence/benchmark_C_coarse_A/final_dataset_verification.json",
+    "evidence/benchmark_C_coarse_A/frozen_provenance.json"
+  ],
+  "job": "scripts/benchmark_C_coarse_native_resume.py",
+  "job_sha256": "76d4e1ca540fa1133f46aa5e34f1a7cc1505ffc6a0ae8f329149c44b7b2ab23f",
+  "config": "evidence/benchmark_C_coarse_A/continuation_20h/resume29_01_config.json",
+  "configuration_sha256": "d1faca401eb90af0b62835c7b240b67c1405c84badae667f5ed3fead84078bd4",
+  "supporting_code_sha256": {
+    "scripts/benchmark_C_coarse_common.py": "38b0d25d8a8488c7cd6eb2c7bf4043bfadf26de8f8937c77003354f6811e229b",
+    "scripts/benchmark_C_coarse_dynamic.py": "a514ca86d648c445cf1f619f3a3c23eb6b3c77992208f4274750bbbf8a0a36db",
+    "scripts/benchmark_C_coarse_report.py": "76d9654ed63949d8625ee5a7fb07503d05b2f4c7dbfa1bbff02ecc58915621d9",
+    "scripts/benchmark_C_coarse_commit_audit.py": "7fcc7a8bb34541049c423c7707156ee4c455e47a237989282c566d6f280dbe40",
+    "scripts/benchmark_C_coarse_resource_checkpoint.py": "781288046e3bd179e8e2868e19d4661507cf1f6082a0229fa9b1bc07aedf4c41",
+    "scripts/benchmark_C_analytic_reference.py": "e7ce91ab34e5ac925b1f3cc04838bfad97a9eeb012f2163f97a8d9efd1088219",
+    "scripts/benchmark_C_recovery_v2_restart.py": "83111594f15b5a17eea37a2fc8c9d95dbc3f5e879ac161c37f6b1862af016e5f"
+  }
+}

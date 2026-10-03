@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-03T01:55:13.074081+00:00",
+  "status": "SCHEDULED_CONTINUATION_SETUP_VERIFIED",
+  "deadline": "2026-10-04T05:51:27.446771+08:00",
+  "supervisor_identity_verified": true,
+  "owned_host_identity_verified": true,
+  "native_load_stage": "Reading original step29 CASE/DATA; zero-step restart gate pending",
+  "plan_dispatched_once": true,
+  "initial_plan_id": "resume29_01",
+  "heartbeat_automation_id": "benchmark-c-12-hour-continuation",
+  "heartbeat_interval_minutes": 15,
+  "old_tasks_remain_disabled": true,
+  "runtime_guards_unchanged": true,
+  "memory_now": {
+    "timestamp": "2026-10-03T01:55:13.408829+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 10.536991119384766,
+    "used_gib": 21.302806854248047,
+    "commit_gib": 33.85658264160156,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.7077074752753307,
+    "pagefile_used_gib": 0.9170455932617188,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1118354797363281,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.082954406738281,
+    "commit_headroom_gib": 13.98321533203125
+  },
+  "checkpoint_validation_claim": "PENDING; no new screening PASS claimed"
+}
