@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-03T03:42:25.703958+00:00",
+  "status": "COMPLETE",
+  "coarse_screening": "PASS",
+  "completed_steps": 40,
+  "time_s": 0.0009999999999999994,
+  "next_state": "COARSE_DEVELOPMENT_BASELINE",
+  "heartbeat_paused": true,
+  "supervisor_stopped": true,
+  "owned_engine_closed": true,
+  "windows_task_disabled": true,
+  "deadline_unchanged": true,
+  "window_sha256": "6c9a9d5c6de89eaa5541ab8f622b2c99813851e136bc4684afa681040076c952",
+  "final_report_sha256": "f820ce87a23fc394107d3945ff1392f0f52c233a6c448d5f8a4444fa1283c87c",
+  "final_verification_sha256": "6354c6f66d1aafa0710d4b5d731b37a06b0112e064a5d18b0ed2baf96c385db4",
+  "new_budget_authorized": false
+}

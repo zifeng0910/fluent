@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-10-03T03:42:25.026031+00:00",
+  "status": "BENCHMARK_C_COARSE_SCREENING_PASS",
+  "campaign": "BENCHMARK_C_COARSE_SCREENING",
+  "next_state": "COARSE_DEVELOPMENT_BASELINE",
+  "completed_steps": 40,
+  "time_s": 0.0009999999999999994,
+  "history_sequence_and_original_prefix_verified": true,
+  "original_history_prefix_sha256": "018b9f7a66cf4285e8ca471bcbd2b021dcc99c6fba840d17e08f4df6911e8928",
+  "final_history_sha256": "d527ba0d4dbea1476bd7fb0a6f624a4b38faa0cbd15906b98d11006687bad9a2",
+  "peak_orphan": 0,
+  "peak_invalid_donors": 0,
+  "minimum_cell_volume_m3": 6.100596812e-17,
+  "minimum_dynamic_clearance_mm": 0.44963453003460224,
+  "maximum_q_norm_error": 1.1102230246251565e-16,
+  "restart29": "PASS",
+  "restart30": "PASS",
+  "native_step40_checkpoint": "PASS",
+  "checkpoint40": {
+    "step": 40,
+    "time_s": 0.0009999999999999994,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\checkpoint_0040.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\checkpoint_0040.dat.h5",
+    "case_sha256": "86cd6f3bc0baedebd3025fe98b06772c52d0a8170dda978f452cbb727cbfa7ed",
+    "data_sha256": "84751773083901f44d4d0dd629a9d29b9d967799a2717b82b7157aff462df655",
+    "row": {
+      "step": 40,
+      "time_s": 0.0009999999999999994,
+      "com_x_m": 0.00120557318145819,
+      "com_y_m": 5.800929740693038e-08,
+      "com_z_m": -3.492813293062721e-08,
+      "q0": 0.9998218016041652,
+      "q1": 0.0007771289008933733,
+      "q2": -0.009383040399322768,
+      "q3": -0.01636214107436081,
+      "q_norm": 1.0,
+      "omega_x_rad_s": 6.356386328825224,
+      "omega_y_rad_s": -64.46303384938061,
+      "omega_z_rad_s": -143.35573496112983,
+      "Fmag_x_N": -2.7930355888203698e-05,
+      "Fmag_y_N": 0.0,
+      "Fmag_z_N": 0.0,
+      "Tmag_x_Nm": 2.7262184549052138e-08,
+      "Tmag_y_Nm": -6.449825681693272e-07,
+      "Tmag_z_Nm": -1.965032025951665e-06,
+      "vx_m_s": -0.0014797875152956813,
+      "vy_m_s": 0.00028089411794527373,
+      "vz_m_s": -0.00013487372517297826,
+      "theta_x_rad": 0.0015543501304502389,
+      "theta_y_rad": -0.018767195573271167,
+      "theta_z_rad": -0.032726226092146614,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "official_donor_count": 305752,
+      "official_receptor_count": 143989,
+      "minimum_cell_volume_m3": 6.100596812e-17,
+      "robot_wall_clearance_m": 0.0004496345300346022,
+      "overset_wall_clearance_m": 0.0003997519030106522,
+      "donor_length_ratio_min": 0.3660576241797034,
+      "donor_length_ratio_median": 0.698112621837605,
+      "donor_length_ratio_p95": 2.0584835255540495,
+      "donor_length_ratio_max": 2.914053397229937,
+      "BOI_pose_displacement_bound_m": 1.7394252310835067e-05
+    },
+    "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS"
+  },
+  "checkpoint40_validation_kind": "ZERO_STEP_NATIVE_SAVE_STATE_AND_HDF5_INTEGRITY; not a second cold reload",
+  "peak_project_working_set_gib": 8.984580993652344,
+  "resource_guards_stable_in_new_window": true,
+  "fine_1ms_reference": "FINE_REFERENCE_NOT_AVAILABLE_AT_1MS",
+  "latest_exact_fine_comparison_time_s": 0.0008249999999999996,
+  "coarse_vs_fine_latest_exact": {
+    "timestamp": "2026-10-03T03:22:29.309065+00:00",
+    "requested_time_s": 0.001,
+    "time_s": 0.0008249999999999996,
+    "one_ms_reference_status": "FINE_REFERENCE_NOT_AVAILABLE_AT_1MS",
+    "fine_reference_sha256": "8647ce7f46a9be9eb465c293583da0e488579a2c05fdc26159029ad725c865d4",
+    "interpolation_used": false,
+    "mesh_convergence_claim": false,
+    "coarse_COM_xyz_m": [
+      0.00120578765040033,
+      2.232789992844146e-08,
+      -1.655857464633271e-08
+    ],
+    "fine_COM_xyz_m": [
+      0.001205789892765005,
+      2.546467494762238e-08,
+      -1.938920691667001e-08
+    ],
+    "groups": {
+      "COM_displacement": {
+        "coarse": [
+          -2.3104331530431066e-07,
+          2.232789992844146e-08,
+          -1.655857464633271e-08
+        ],
+        "fine": [
+          -2.288009506292918e-07,
+          2.546467494762238e-08,
+          -1.938920691667001e-08
+        ],
+        "absolute_difference_norm": 4.783308050565513e-09,
+        "relative_difference": 0.02070438776940959,
+        "direction_cosine": 0.9998134872287487
+      },
+      "linear_velocity": {
+        "coarse": [
+          -0.0009771103185322327,
+          0.00013730840267673998,
+          -7.896607195523298e-05
+        ],
+        "fine": [
+          -0.000963801570323628,
+          0.00015493365381629348,
+          -9.143794504868603e-05
+        ],
+        "absolute_difference_norm": 2.536375120268234e-05,
+        "relative_difference": 0.02586954568473952,
+        "direction_cosine": 0.9997142567011613
+      },
+      "angular_velocity": {
+        "coarse": [
+          3.570408183200309,
+          -41.025196788730625,
+          -76.42696358131433
+        ],
+        "fine": [
+          3.564393268410663,
+          -40.53593438599315,
+          -75.5205807481627
+        ],
+        "absolute_difference_norm": 1.0300212221912415,
+        "relative_difference": 0.012006878956982898,
+        "direction_cosine": 0.9999999098325371
+      }
+    },
+    "orientation_geodesic_difference_rad": 0.00019533474067033507,
+    "orientation_relative_difference": 0.01172688414571192,
+    "screening_trend_pass": true,
+    "acceptance_note": "Same qualitative development trend gate as the existing 0.25ms milestone; no mesh convergence claim."
+  },
+  "owned_engine_closed": true,
+  "unrelated_processes_touched": [],
+  "frozen_files_verified": true,
+  "new_solver_launched_by_this_audit": false,
+  "timesteps_advanced_by_this_audit": 0,
+  "no_mesh_convergence_claim": true,
+  "deadline_unchanged_epoch": 1791064287.4467711
+}

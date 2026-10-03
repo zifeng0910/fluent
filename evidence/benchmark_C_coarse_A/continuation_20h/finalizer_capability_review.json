@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-03T03:31:21.362995+00:00",
+  "status": "REVIEWED_PASS",
+  "new_job": "scripts/benchmark_C_coarse_finalize.py",
+  "job_sha256": "8d3e6bd9dc40e8ddb5ffb5a86c835bf052facbdfcf2bee9ac2b66a0715402286",
+  "supervisor_code_sha256": "03a4eef20079e56540d12b89472b2bd4eba4d758d83cda8b1a7d391c96024844",
+  "allows_new_Fluent_launch": false,
+  "allows_dynamics": false,
+  "registered_processes_only": true,
+  "checkpoint_gate_required": true,
+  "admission_guard_exception_reason": "Closing a verified completed stale engine is not a cold Fluent launch; runtime guards and native-launch admission are unchanged.",
+  "same_deadline_epoch": 1791064287.4467711
+}

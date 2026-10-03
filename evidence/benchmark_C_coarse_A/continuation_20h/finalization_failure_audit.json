@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-10-03T03:30:25.562074+00:00",
+  "status": "PROVEN_STALE_COMPLETED_OWNED_ENGINE",
+  "campaign_complete": true,
+  "checkpoint40_verification": "PASS",
+  "worker_stopped": true,
+  "owned_engine": {
+    "timestamp": "2026-10-03T02:26:15.286336+00:00",
+    "host_pid": 43232,
+    "host_created": 1790994358.2100017,
+    "cortex_pid": 37012,
+    "requested_processor_count": 1,
+    "ui_mode": "no_gui_or_graphics"
+  },
+  "owned_processes": [
+    {
+      "pid": 43232,
+      "created": 1790994358.2100017,
+      "name": "fl2610.exe",
+      "working_set_gib": 0.032245635986328125,
+      "private_bytes_gib": 0.6706008911132812,
+      "command": [
+        "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_host\\fl2610.exe",
+        "-cx",
+        "Zifeng:49880:49881",
+        "host",
+        "(list  (rpsetvar (QUOTE parallel/function) \"fluent 3ddp -r26.1.0   -ic=default -node -t1\")  (rpsetvar (QUOTE parallel/rhost) \"\")  (rpsetvar (QUOTE parallel/ruser) \"\")  (rpsetvar (QUOTE parallel/nprocs_string) \"1\")  (rpsetvar (QUOTE parallel/auto-spawn?) #t)  (rpsetvar (QUOTE parallel/trace-level) 0)  (rpsetvar (QUOTE parallel/hostsfile) \"\")  (rpsetvar (QUOTE parallel/path) \"\") (rpsetvar (QUOTE gpuapp/devices) \"\") )"
+      ]
+    },
+    {
+      "pid": 37012,
+      "created": 1790994344.5760045,
+      "name": "cx2610.exe",
+      "working_set_gib": 0.0367584228515625,
+      "private_bytes_gib": 0.6301078796386719,
+      "command": [
+        "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\win64\\cx2610.exe",
+        "-newcx",
+        "-command=(set-session-idle-timeoutPLF+4)",
+        "-nm",
+        "-g",
+        "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-h1y82m34.txt",
+        "-f",
+        "fl",
+        "(fluent \"3ddp -r26.1.0   -ic=default -host -t1 \")"
+      ]
+    },
+    {
+      "pid": 29660,
+      "created": 1790994362.4929004,
+      "name": "fl_mpi2610.exe",
+      "working_set_gib": 1.1711616516113281,
+      "private_bytes_gib": 9.508453369140625,
+      "command": [
+        "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_node\\fl_mpi2610.exe",
+        "-mport",
+        "127.0.0.1:127.0.0.1:49896:0",
+        "node",
+        "-mpiw",
+        "intel",
+        "-pic",
+        "default"
+      ]
+    }
+  ],
+  "node_ownership": [
+    {
+      "pid": 29660,
+      "created": 1790994362.4929004,
+      "registered_host_pid": 43232,
+      "mport": "127.0.0.1:127.0.0.1:49896:0",
+      "ownership_evidence": "Node -mport matches registered Fluent host local TCP port"
+    }
+  ],
+  "server_info_file_exists": false,
+  "memory": {
+    "timestamp": "2026-10-03T03:30:25.846284+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 11.864593505859375,
+    "used_gib": 19.975204467773438,
+    "commit_gib": 37.03642272949219,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.7741759852310629,
+    "pagefile_used_gib": 3.4608688354492188,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1647605895996094,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 12.539131164550781,
+    "commit_headroom_gib": 10.803375244140625
+  },
+  "root_cause": "SDK exit returned and removed original server-info file, but registered native host/node/cortex remained after completed step40. No credentials are available for a new soft connection; no guessed connection will be made. Exact SDK/server-side cause remains unresolved.",
+  "required_action": "Specific reviewed finalizer may terminate only these three proven stale completed campaign processes after checkpoint hash/integrity, CPU-idle and PID/creation checks. Preserve unknown old Cortex22448. No new Fluent launch or dynamics."
+}

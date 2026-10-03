@@ -1,0 +1,242 @@
+{
+  "timestamp": "2026-10-03T03:42:24.999228+00:00",
+  "total_actual_sample_count": 2784,
+  "window_actual_sample_count": 765,
+  "peak_project_working_set_gib": 8.984580993652344,
+  "window_peak_measured_system_commit_gib": 42.25185012817383,
+  "window_peak_measured_system_commit_percent": 88.31945768554705,
+  "window_min_available_physical_gib": 5.716552734375,
+  "window_peak_measured_project_private_bytes_gib": 15.93514633178711,
+  "window_resource_guards_stable": true,
+  "historical_resource_stops_before_this_window": [
+    {
+      "reason": "COARSE_RESOURCE_LIMIT",
+      "sample": {
+        "timestamp": "2026-10-02T07:02:40.504689+00:00",
+        "physical_total_gib": 31.839797973632812,
+        "available_gib": 9.040264129638672,
+        "used_gib": 22.79953384399414,
+        "commit_gib": 45.643310546875,
+        "commit_limit_gib": 47.83979797363281,
+        "commit_fraction": 0.9540866073897633,
+        "pagefile_used_gib": 3.842815399169922,
+        "pagefile_total_gib": 16.0,
+        "kernel_nonpaged_gib": 1.1270599365234375,
+        "stage": "during_timestep_solve",
+        "processes": [
+          {
+            "pid": 10264,
+            "created": 1790924439.7198815,
+            "name": "pythonw.exe",
+            "working_set_gib": 0.2569389343261719,
+            "command": [
+              "H:\\fluent\\.venv\\Scripts\\pythonw.exe",
+              "-u",
+              "H:\\fluent\\scripts\\benchmark_C_coarse_resume_resource.py"
+            ]
+          },
+          {
+            "pid": 12684,
+            "created": 1790912239.7468889,
+            "name": "fl2610.exe",
+            "working_set_gib": 0.028636932373046875,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_host\\fl2610.exe",
+              "-cx",
+              "Zifeng:61453:61454",
+              "host",
+              "(list  (rpsetvar (QUOTE parallel/function) \"fluent 3ddp -r26.1.0   -ic=default -node -t1\")  (rpsetvar (QUOTE parallel/rhost) \"\")  (rpsetvar (QUOTE parallel/ruser) \"\")  (rpsetvar (QUOTE parallel/nprocs_string) \"1\")  (rpsetvar (QUOTE parallel/auto-spawn?) #t)  (rpsetvar (QUOTE parallel/trace-level) 0)  (rpsetvar (QUOTE parallel/hostsfile) \"\")  (rpsetvar (QUOTE parallel/path) \"\") (rpsetvar (QUOTE gpuapp/devices) \"\") )"
+            ]
+          },
+          {
+            "pid": 39540,
+            "created": 1790912226.8266969,
+            "name": "cx2610.exe",
+            "working_set_gib": 0.4604034423828125,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\win64\\cx2610.exe",
+              "-newcx",
+              "-command=(set-session-idle-timeoutPLF+4)",
+              "-nm",
+              "-g",
+              "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-6bxx_h4y.txt",
+              "-f",
+              "fl",
+              "(fluent \"3ddp -r26.1.0   -ic=default -host -t1 \")"
+            ]
+          },
+          {
+            "pid": 3804,
+            "created": 1790912239.5862043,
+            "name": "fluent.exe",
+            "working_set_gib": 0.00110626220703125,
+            "command": [
+              "fluent",
+              "-wait",
+              "3ddp",
+              "-r26.1.0",
+              "-ic=default",
+              "-host",
+              "-t1",
+              "-cx",
+              "Zifeng:61453:61454"
+            ]
+          },
+          {
+            "pid": 28604,
+            "created": 1790912241.5081508,
+            "name": "ansyscl.exe",
+            "working_set_gib": 0.005626678466796875,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\licensingclient\\winx64\\ansyscl.exe",
+              "-acl",
+              "39540.57635",
+              "-nodaemon",
+              "-log",
+              "C:\\Users\\zfzha\\AppData\\Local\\Temp\\.ansys\\ansyscl.Zifeng.39540.57635.log"
+            ]
+          },
+          {
+            "pid": 40656,
+            "created": 1790912243.43546,
+            "name": "fl_mpi2610.exe",
+            "working_set_gib": 4.4733123779296875,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_node\\fl_mpi2610.exe",
+              "-mport",
+              "127.0.0.1:127.0.0.1:55518:0",
+              "node",
+              "-mpiw",
+              "intel",
+              "-pic",
+              "default"
+            ]
+          }
+        ],
+        "Fluent_working_set_gib": 4.962352752685547,
+        "Python_worker_working_set_gib": 0.2569389343261719,
+        "total_project_working_set_gib": 5.226024627685547
+      }
+    },
+    {
+      "reason": "COARSE_RESOURCE_LIMIT",
+      "sample": {
+        "timestamp": "2026-10-02T06:35:48.222171+00:00",
+        "physical_total_gib": 31.839797973632812,
+        "available_gib": 7.243152618408203,
+        "used_gib": 24.59664535522461,
+        "commit_gib": 45.843570709228516,
+        "commit_limit_gib": 47.83979797363281,
+        "commit_fraction": 0.9582726652502895,
+        "pagefile_used_gib": 1.7717552185058594,
+        "pagefile_total_gib": 16.0,
+        "kernel_nonpaged_gib": 1.092529296875,
+        "stage": "during_timestep_solve",
+        "processes": [
+          {
+            "pid": 33412,
+            "created": 1790913218.9650025,
+            "name": "python.exe",
+            "working_set_gib": 0.10152816772460938,
+            "command": [
+              "H:\\fluent\\.venv\\Scripts\\python.exe",
+              "-u",
+              "H:\\fluent\\scripts\\benchmark_C_coarse_pipeline.py",
+              "--geometry-pid",
+              "0",
+              "--geometry-created",
+              "0"
+            ]
+          },
+          {
+            "pid": 12684,
+            "created": 1790912239.7468889,
+            "name": "fl2610.exe",
+            "working_set_gib": 0.027523040771484375,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_host\\fl2610.exe",
+              "-cx",
+              "Zifeng:61453:61454",
+              "host",
+              "(list  (rpsetvar (QUOTE parallel/function) \"fluent 3ddp -r26.1.0   -ic=default -node -t1\")  (rpsetvar (QUOTE parallel/rhost) \"\")  (rpsetvar (QUOTE parallel/ruser) \"\")  (rpsetvar (QUOTE parallel/nprocs_string) \"1\")  (rpsetvar (QUOTE parallel/auto-spawn?) #t)  (rpsetvar (QUOTE parallel/trace-level) 0)  (rpsetvar (QUOTE parallel/hostsfile) \"\")  (rpsetvar (QUOTE parallel/path) \"\") (rpsetvar (QUOTE gpuapp/devices) \"\") )"
+            ]
+          },
+          {
+            "pid": 39540,
+            "created": 1790912226.8266969,
+            "name": "cx2610.exe",
+            "working_set_gib": 0.071380615234375,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\win64\\cx2610.exe",
+              "-newcx",
+              "-command=(set-session-idle-timeoutPLF+4)",
+              "-nm",
+              "-g",
+              "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-6bxx_h4y.txt",
+              "-f",
+              "fl",
+              "(fluent \"3ddp -r26.1.0   -ic=default -host -t1 \")"
+            ]
+          },
+          {
+            "pid": 3804,
+            "created": 1790912239.5862043,
+            "name": "fluent.exe",
+            "working_set_gib": 0.003246307373046875,
+            "command": [
+              "fluent",
+              "-wait",
+              "3ddp",
+              "-r26.1.0",
+              "-ic=default",
+              "-host",
+              "-t1",
+              "-cx",
+              "Zifeng:61453:61454"
+            ]
+          },
+          {
+            "pid": 28604,
+            "created": 1790912241.5081508,
+            "name": "ansyscl.exe",
+            "working_set_gib": 0.00922393798828125,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\licensingclient\\winx64\\ansyscl.exe",
+              "-acl",
+              "39540.57635",
+              "-nodaemon",
+              "-log",
+              "C:\\Users\\zfzha\\AppData\\Local\\Temp\\.ansys\\ansyscl.Zifeng.39540.57635.log"
+            ]
+          },
+          {
+            "pid": 40656,
+            "created": 1790912243.43546,
+            "name": "fl_mpi2610.exe",
+            "working_set_gib": 7.339111328125,
+            "command": [
+              "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_node\\fl_mpi2610.exe",
+              "-mport",
+              "127.0.0.1:127.0.0.1:55518:0",
+              "node",
+              "-mpiw",
+              "intel",
+              "-pic",
+              "default"
+            ]
+          }
+        ],
+        "Fluent_working_set_gib": 7.438014984130859,
+        "Python_worker_working_set_gib": 0.10152816772460938,
+        "total_project_working_set_gib": 7.552013397216797
+      }
+    }
+  ],
+  "system_boot_CommitPeak_is_not_campaign_peak": true,
+  "measurement_csv_sha256": "45263392ef49addd0bd1181717e6509a54b76fa3f45eda53952dfa2829a18e82",
+  "raw_profiles_preserved_locally": {
+    "evidence/benchmark_C_coarse_A/benchmark_C_coarse_memory_profile.json": "0bf9069eb91c5f406ff21c034a06b0653a4381e4772ede42db809ec6650f76aa",
+    "evidence/benchmark_C_coarse_A/continuation_20h/resume29_01/benchmark_C_coarse_memory_profile.json": "c013f09453ec710f5d3618bbe1bf9b9c8b8f4f2f97854964067be78fada7824b",
+    "evidence/benchmark_C_coarse_A/continuation_20h/resume30_callback_02/benchmark_C_coarse_memory_profile.json": "45411568c3acd42588de384fec2a09ff7f21a259b60ade974ae13fa7903209c0"
+  }
+}

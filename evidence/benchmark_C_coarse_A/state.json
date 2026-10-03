@@ -1,34 +1,73 @@
 {
   "campaign": "BENCHMARK_C_COARSE_SCREENING",
-  "status": "RESOURCE_BLOCKER",
-  "timestamp": "2026-10-02T07:18:24.159717+00:00",
-  "review": "final_dataset_verification.json",
+  "status": "COMPLETE",
+  "timestamp": "2026-10-03T03:42:25.554634+00:00",
+  "review": "final_completion_verification.json",
   "scope": "Finite four static poses then 10/20/40 steps; no 2ms, no medium/fine recovery",
-  "pid": 10264,
-  "execution_owner": "Windows Task Scheduler / direct pythonw worker",
+  "pid": 8700,
+  "execution_owner": "20h local supervisor / direct pythonw worker",
   "original_fine_deadline_extended": false,
-  "job": "scripts/benchmark_C_coarse_resume_resource.py",
-  "job_pid": 10264,
-  "job_created": 1790924439.7198815,
+  "job": "scripts/benchmark_C_coarse_native_resume.py",
+  "job_pid": 9848,
+  "job_created": 1790994327.7703652,
   "memory": {
-    "timestamp": "2026-10-02T07:18:24.457213+00:00",
+    "timestamp": "2026-10-03T03:31:30.151769+00:00",
     "physical_total_gib": 31.839797973632812,
-    "available_gib": 15.450721740722656,
-    "used_gib": 16.389076232910156,
-    "commit_gib": 29.27242660522461,
+    "available_gib": 13.599010467529297,
+    "used_gib": 18.240787506103516,
+    "commit_gib": 26.268566131591797,
     "commit_limit_gib": 47.83979797363281,
-    "commit_fraction": 0.6118844109951777,
-    "pagefile_used_gib": 1.4668083190917969,
+    "commit_fraction": 0.5490944202161947,
+    "pagefile_used_gib": 3.7927589416503906,
     "pagefile_total_gib": 16.0,
-    "kernel_nonpaged_gib": 1.085235595703125
+    "kernel_nonpaged_gib": 1.1763572692871094,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 12.20724105834961,
+    "commit_headroom_gib": 21.571231842041016
   },
-  "pose": null,
-  "current_step": 29,
+  "pose": {
+    "com": [
+      0.00120557318145819,
+      5.800929740693038e-08,
+      -3.492813293062721e-08
+    ],
+    "q": [
+      0.9998218016041652,
+      0.0007771289008933845,
+      -0.009383040399322798,
+      -0.01636214107436088
+    ],
+    "velocity": [
+      -0.001479787515295681,
+      0.0002808941179452737,
+      -0.0001348737251729783
+    ],
+    "omega": [
+      6.356386328827029,
+      -64.46303384938572,
+      -143.3557349611409
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.03775750929613537,
+      "axis": [
+        0.04116664895079176,
+        -0.49704538045871915,
+        -0.8667474815531969
+      ]
+    }
+  },
+  "current_step": 40,
   "target_step": 40,
-  "error": "RuntimeError('COARSE_RESOURCE_LIMIT')",
-  "time_steps_advanced": 29,
-  "time_s": 0.0007249999999999997,
+  "error": null,
+  "time_steps_advanced": 40,
+  "time_s": 0.0009999999999999994,
   "solver_alive": false,
   "worker_alive": false,
-  "scheduler_enabled": false
+  "scheduler_enabled": false,
+  "attempt": "resume30_callback_02",
+  "failure_file": null,
+  "native_checkpoint_step": 40,
+  "owned_host_pid": 43232,
+  "next_state": "COARSE_DEVELOPMENT_BASELINE",
+  "final_report": "H:\\fluent\\evidence\\benchmark_C_coarse_A\\final_report.json"
 }

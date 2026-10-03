@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "callback_zone": "robot_wall",
+  "native_errors": {
+    "com": {
+      "error": 2.168404344971009e-19,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 7.602425633468357e-14,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 1.9081958235744878e-16,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 1.2156107231930946e-08,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "F_error_N": 6.437450399132683e-20,
+  "T_error_Nm": 1.6182564457293408e-18
+}

@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-10-03T03:31:30.151055+00:00",
+  "status": "PASS",
+  "action": "CLOSE_PROVEN_STALE_COMPLETED_ENGINE",
+  "before": {
+    "timestamp": "2026-10-03T03:31:24.486231+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 12.42855453491211,
+    "used_gib": 19.411243438720703,
+    "commit_gib": 36.984371185302734,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.7730879466858721,
+    "pagefile_used_gib": 3.9149703979492188,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1655693054199219,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 12.085029602050781,
+    "commit_headroom_gib": 10.855426788330078
+  },
+  "idle_CPU_seconds_over5s": {
+    "43232": 0.0,
+    "37012": 0.0,
+    "29660": 0.0
+  },
+  "timesteps_advanced": 0,
+  "new_solver_launched": false,
+  "connection_attempted": false,
+  "soft_exit_already_attempted_by_completed_worker": true,
+  "original_server_info_deleted": true,
+  "terminated": [
+    {
+      "pid": 29660,
+      "created": 1790994362.4929004,
+      "name": "fl_mpi2610.exe",
+      "private_bytes_gib": 9.508453369140625
+    },
+    {
+      "pid": 37012,
+      "created": 1790994344.5760045,
+      "name": "cx2610.exe",
+      "private_bytes_gib": 0.6301078796386719
+    }
+  ],
+  "checkpoint40_hashes_verified": true,
+  "unrelated_processes_touched": [],
+  "after": {
+    "timestamp": "2026-10-03T03:31:30.151769+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 13.599010467529297,
+    "used_gib": 18.240787506103516,
+    "commit_gib": 26.268566131591797,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5490944202161947,
+    "pagefile_used_gib": 3.7927589416503906,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1763572692871094,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 12.20724105834961,
+    "commit_headroom_gib": 21.571231842041016
+  },
+  "owned_engine_closed": true,
+  "system_commit_released_gib": 10.715805053710938
+}

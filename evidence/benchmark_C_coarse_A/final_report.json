@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02T07:18:24.527880+00:00",
+  "timestamp": "2026-10-03T03:42:25.219031+00:00",
   "campaign": "BENCHMARK_C_COARSE_SCREENING",
   "fine_mesh_cells": 11364822,
   "coarse_mesh_cells": 4699301,
@@ -17,14 +17,14 @@
   "peak_orphan": 0,
   "minimum_overlap_layers": 6,
   "max_donor_length_ratio": 3.09923981672453,
-  "peak_project_RAM_GiB": 7.998256683349609,
+  "peak_project_RAM_GiB": 8.984580993652344,
   "fine_comparison_resident_RAM_GiB": 19.48876190185547,
-  "RAM_reduction_percent_vs_observed_fine_sample": 58.959646982048056,
+  "RAM_reduction_percent_vs_observed_fine_sample": 53.89865688288311,
   "RAM_comparison_note": "Fine value is an observed resident sample, not a proven fine peak.",
-  "dynamic_steps": 29,
+  "dynamic_steps": 40,
   "requested_steps": 40,
-  "simulation_time_ms": 0.7249999999999998,
-  "peak_angular_velocity_rad_s": 57.38067079591276,
+  "simulation_time_ms": 0.9999999999999993,
+  "peak_angular_velocity_rad_s": 157.31100764559793,
   "minimum_physical_clearance_mm": 0.14032710991605304,
   "coarse_vs_fine_trajectory_difference": {
     "time_s": 0.0002500000000000001,
@@ -86,13 +86,254 @@
     "trend_gate_rule": "Both velocity direction cosines > 0 and relative differences <= 1; orientation geodesic difference <= fine angle. No accuracy/convergence claim.",
     "qualitative_trend_pass": true
   },
-  "coarse_screening": "FAIL",
-  "current_blocker": "System commit exceeded the unchanged 95% guard twice under solve load; last native state saved at step29. No further unchanged retries.",
-  "recommended_next": "Reduce system committed-memory pressure, then validate the saved step29 native CASE/DATA restart without advancing time before continuing only to step40.",
+  "coarse_screening": "PASS",
+  "current_blocker": null,
+  "recommended_next": "Review this screening baseline before authorizing a 2ms coarse run or medium-grid convergence.",
   "is_mesh_convergence_result": false,
-  "status": "RESOURCE_BLOCKER",
+  "status": "COMPLETE",
+  "coarse_vs_fine_latest_exact": {
+    "timestamp": "2026-10-03T03:22:29.309065+00:00",
+    "requested_time_s": 0.001,
+    "time_s": 0.0008249999999999996,
+    "one_ms_reference_status": "FINE_REFERENCE_NOT_AVAILABLE_AT_1MS",
+    "fine_reference_sha256": "8647ce7f46a9be9eb465c293583da0e488579a2c05fdc26159029ad725c865d4",
+    "interpolation_used": false,
+    "mesh_convergence_claim": false,
+    "coarse_COM_xyz_m": [
+      0.00120578765040033,
+      2.232789992844146e-08,
+      -1.655857464633271e-08
+    ],
+    "fine_COM_xyz_m": [
+      0.001205789892765005,
+      2.546467494762238e-08,
+      -1.938920691667001e-08
+    ],
+    "groups": {
+      "COM_displacement": {
+        "coarse": [
+          -2.3104331530431066e-07,
+          2.232789992844146e-08,
+          -1.655857464633271e-08
+        ],
+        "fine": [
+          -2.288009506292918e-07,
+          2.546467494762238e-08,
+          -1.938920691667001e-08
+        ],
+        "absolute_difference_norm": 4.783308050565513e-09,
+        "relative_difference": 0.02070438776940959,
+        "direction_cosine": 0.9998134872287487
+      },
+      "linear_velocity": {
+        "coarse": [
+          -0.0009771103185322327,
+          0.00013730840267673998,
+          -7.896607195523298e-05
+        ],
+        "fine": [
+          -0.000963801570323628,
+          0.00015493365381629348,
+          -9.143794504868603e-05
+        ],
+        "absolute_difference_norm": 2.536375120268234e-05,
+        "relative_difference": 0.02586954568473952,
+        "direction_cosine": 0.9997142567011613
+      },
+      "angular_velocity": {
+        "coarse": [
+          3.570408183200309,
+          -41.025196788730625,
+          -76.42696358131433
+        ],
+        "fine": [
+          3.564393268410663,
+          -40.53593438599315,
+          -75.5205807481627
+        ],
+        "absolute_difference_norm": 1.0300212221912415,
+        "relative_difference": 0.012006878956982898,
+        "direction_cosine": 0.9999999098325371
+      }
+    },
+    "orientation_geodesic_difference_rad": 0.00019533474067033507,
+    "orientation_relative_difference": 0.01172688414571192,
+    "screening_trend_pass": true,
+    "acceptance_note": "Same qualitative development trend gate as the existing 0.25ms milestone; no mesh convergence claim."
+  },
+  "step40_checkpoint_verification": "PASS",
+  "maximum_donor_length_ratio_policy": "WARNING_ONLY",
+  "commit_audit_cause": "F_UNRESOLVED_HISTORICAL_PEAK_ATTRIBUTION",
+  "latest_measured_resources": {
+    "timestamp": "2026-10-03T03:22:52.981354+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 8.535163879394531,
+    "used_gib": 23.30463409423828,
+    "commit_gib": 37.74604034423828,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.7890091919920363,
+    "pagefile_used_gib": 1.2880134582519531,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1151962280273438,
+    "stage": "after_Fluent_exit",
+    "processes": [
+      {
+        "pid": 9848,
+        "created": 1790994327.7703652,
+        "name": "pythonw.exe",
+        "working_set_gib": 0.07648468017578125,
+        "command": [
+          "H:\\fluent\\.venv\\Scripts\\pythonw.exe",
+          "H:\\fluent\\scripts\\benchmark_C_coarse_native_resume.py",
+          "--config",
+          "H:\\fluent\\evidence\\benchmark_C_coarse_A\\continuation_20h\\resume30_callback_02_config.json"
+        ],
+        "private_bytes_gib": 1.2030715942382812,
+        "commit_gib": 1.2030715942382812
+      },
+      {
+        "pid": 23028,
+        "created": 1790994344.4031308,
+        "name": "cmd.exe",
+        "working_set_gib": 0.0078125,
+        "command": [
+          "C:\\WINDOWS\\system32\\cmd.exe",
+          "/c",
+          "H:\\Program",
+          "Files\\ANSYS",
+          "Inc\\v261\\fluent\\ntbin\\win64\\fluent.exe 3ddp -g -driver null -sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-h1y82m34.txt -nm -command=(set-session-idle-timeoutPLF+4)"
+        ],
+        "private_bytes_gib": 0.004230499267578125,
+        "commit_gib": 0.004230499267578125
+      },
+      {
+        "pid": 33976,
+        "created": 1790994344.414043,
+        "name": "conhost.exe",
+        "working_set_gib": 0.007839202880859375,
+        "command": [
+          "\\??\\C:\\WINDOWS\\system32\\conhost.exe",
+          "0x4"
+        ],
+        "private_bytes_gib": 0.001434326171875,
+        "commit_gib": 0.001434326171875
+      },
+      {
+        "pid": 33488,
+        "created": 1790994344.5297523,
+        "name": "fluent.exe",
+        "working_set_gib": 0.0070648193359375,
+        "command": [
+          "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\ntbin\\win64\\fluent.exe",
+          "3ddp",
+          "-g",
+          "-driver",
+          "null",
+          "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-h1y82m34.txt",
+          "-nm",
+          "-command=(set-session-idle-timeoutPLF+4)"
+        ],
+        "private_bytes_gib": 0.0012969970703125,
+        "commit_gib": 0.0012969970703125
+      },
+      {
+        "pid": 37012,
+        "created": 1790994344.5760045,
+        "name": "cx2610.exe",
+        "working_set_gib": 0.2573509216308594,
+        "command": [
+          "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\win64\\cx2610.exe",
+          "-newcx",
+          "-command=(set-session-idle-timeoutPLF+4)",
+          "-nm",
+          "-g",
+          "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-h1y82m34.txt",
+          "-f",
+          "fl",
+          "(fluent \"3ddp -r26.1.0   -ic=default -host -t1 \")"
+        ],
+        "private_bytes_gib": 0.630462646484375,
+        "commit_gib": 0.630462646484375
+      },
+      {
+        "pid": 39112,
+        "created": 1790994358.0292804,
+        "name": "fluent.exe",
+        "working_set_gib": 0.006343841552734375,
+        "command": [
+          "fluent",
+          "-wait",
+          "3ddp",
+          "-r26.1.0",
+          "-ic=default",
+          "-host",
+          "-t1",
+          "-cx",
+          "Zifeng:49880:49881"
+        ],
+        "private_bytes_gib": 0.0012664794921875,
+        "commit_gib": 0.0012664794921875
+      },
+      {
+        "pid": 24704,
+        "created": 1790994360.6077883,
+        "name": "ansyscl.exe",
+        "working_set_gib": 0.025325775146484375,
+        "command": [
+          "H:\\Program Files\\ANSYS Inc\\v261\\licensingclient\\winx64\\ansyscl.exe",
+          "-acl",
+          "37012.84020",
+          "-nodaemon",
+          "-log",
+          "C:\\Users\\zfzha\\AppData\\Local\\Temp\\.ansys\\ansyscl.Zifeng.37012.84020.log"
+        ],
+        "private_bytes_gib": 0.013439178466796875,
+        "commit_gib": 0.013439178466796875
+      },
+      {
+        "pid": 43232,
+        "created": 1790994358.2100017,
+        "name": "fl2610.exe",
+        "working_set_gib": 0.07527542114257812,
+        "command": [
+          "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_host\\fl2610.exe",
+          "-cx",
+          "Zifeng:49880:49881",
+          "host",
+          "(list  (rpsetvar (QUOTE parallel/function) \"fluent 3ddp -r26.1.0   -ic=default -node -t1\")  (rpsetvar (QUOTE parallel/rhost) \"\")  (rpsetvar (QUOTE parallel/ruser) \"\")  (rpsetvar (QUOTE parallel/nprocs_string) \"1\")  (rpsetvar (QUOTE parallel/auto-spawn?) #t)  (rpsetvar (QUOTE parallel/trace-level) 0)  (rpsetvar (QUOTE parallel/hostsfile) \"\")  (rpsetvar (QUOTE parallel/path) \"\") (rpsetvar (QUOTE gpuapp/devices) \"\") )"
+        ],
+        "private_bytes_gib": 0.6706008911132812,
+        "commit_gib": 0.6706008911132812
+      },
+      {
+        "pid": 29660,
+        "created": 1790994362.4929004,
+        "name": "fl_mpi2610.exe",
+        "working_set_gib": 6.123863220214844,
+        "command": [
+          "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_node\\fl_mpi2610.exe",
+          "-mport",
+          "127.0.0.1:127.0.0.1:49896:0",
+          "node",
+          "-mpiw",
+          "intel",
+          "-pic",
+          "default"
+        ],
+        "private_bytes_gib": 9.508453369140625,
+        "commit_gib": 9.508453369140625
+      }
+    ],
+    "Fluent_working_set_gib": 6.456489562988281,
+    "Python_worker_working_set_gib": 0.07648468017578125,
+    "total_project_working_set_gib": 6.587360382080078,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 14.711986541748047,
+    "commit_headroom_gib": 10.093757629394531,
+    "project_private_bytes_gib": 12.034255981445312
+  },
   "minimum_static_physical_clearance_mm": 0.14032710991605304,
-  "minimum_dynamic_physical_clearance_mm": 0.4800190766412073,
+  "minimum_dynamic_physical_clearance_mm": 0.44963453003460224,
   "qualified_dynamic_stages": [
     {
       "steps": 10,
@@ -103,24 +344,388 @@
       "steps": 20,
       "status": "PASS",
       "time_s": 0.0005000000000000001
+    },
+    {
+      "steps": 30,
+      "status": "PASS",
+      "time_s": 0.0007499999999999997,
+      "recovered_from_native_checkpoint": true
+    },
+    {
+      "steps": 40,
+      "status": "PASS",
+      "time_s": 0.0009999999999999994
     }
   ],
   "resource_stop_events": [
     {
-      "timestamp": "2026-10-02T06:35:48.222171+00:00",
-      "commit_percent": 95.82726652502896,
-      "commit_GiB": 45.843570709228516,
-      "commit_limit_GiB": 47.83979797363281,
-      "available_RAM_GiB": 7.243152618408203,
-      "project_working_set_GiB": 7.552013397216797
+      "timestamp": "2026-10-02T07:02:40.504689+00:00",
+      "reason": "COARSE_RESOURCE_LIMIT",
+      "commit_percent": 95.40866073897632,
+      "historical_before_new_window": true
     },
     {
-      "timestamp": "2026-10-02T07:02:40.504689+00:00",
-      "commit_percent": 95.40866073897632,
-      "commit_GiB": 45.643310546875,
-      "commit_limit_GiB": 47.83979797363281,
-      "available_RAM_GiB": 9.040264129638672,
-      "project_working_set_GiB": 5.226024627685547
+      "timestamp": "2026-10-02T06:35:48.222171+00:00",
+      "reason": "COARSE_RESOURCE_LIMIT",
+      "commit_percent": 95.82726652502896,
+      "historical_before_new_window": true
     }
-  ]
+  ],
+  "remaining_blocker": null,
+  "next_state": "COARSE_DEVELOPMENT_BASELINE",
+  "peak_invalid_donors": 0,
+  "minimum_cell_volume_m3": 6.100596812e-17,
+  "maximum_q_norm_error": 1.1102230246251565e-16,
+  "final_native_state": {
+    "com": [
+      0.00120557318145819,
+      5.800929740693038e-08,
+      -3.492813293062721e-08
+    ],
+    "q": [
+      0.9998218016041652,
+      0.0007771289008933845,
+      -0.009383040399322798,
+      -0.01636214107436088
+    ],
+    "velocity": [
+      -0.001479787515295681,
+      0.0002808941179452737,
+      -0.0001348737251729783
+    ],
+    "omega": [
+      6.356386328827029,
+      -64.46303384938572,
+      -143.3557349611409
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.03775750929613537,
+      "axis": [
+        0.04116664895079176,
+        -0.49704538045871915,
+        -0.8667474815531969
+      ]
+    }
+  },
+  "owned_engine_closed": true,
+  "final_system_memory": {
+    "timestamp": "2026-10-03T03:42:25.509162+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 15.210006713867188,
+    "used_gib": 16.629791259765625,
+    "commit_gib": 26.33104705810547,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5504004651653834,
+    "pagefile_used_gib": 0.9455795288085938,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1089134216308594,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.054420471191406,
+    "commit_headroom_gib": 21.508750915527344
+  },
+  "verified_memory_summary": {
+    "timestamp": "2026-10-03T03:42:24.999228+00:00",
+    "total_actual_sample_count": 2784,
+    "window_actual_sample_count": 765,
+    "peak_project_working_set_gib": 8.984580993652344,
+    "window_peak_measured_system_commit_gib": 42.25185012817383,
+    "window_peak_measured_system_commit_percent": 88.31945768554705,
+    "window_min_available_physical_gib": 5.716552734375,
+    "window_peak_measured_project_private_bytes_gib": 15.93514633178711,
+    "window_resource_guards_stable": true,
+    "historical_resource_stops_before_this_window": [
+      {
+        "reason": "COARSE_RESOURCE_LIMIT",
+        "sample": {
+          "timestamp": "2026-10-02T07:02:40.504689+00:00",
+          "physical_total_gib": 31.839797973632812,
+          "available_gib": 9.040264129638672,
+          "used_gib": 22.79953384399414,
+          "commit_gib": 45.643310546875,
+          "commit_limit_gib": 47.83979797363281,
+          "commit_fraction": 0.9540866073897633,
+          "pagefile_used_gib": 3.842815399169922,
+          "pagefile_total_gib": 16.0,
+          "kernel_nonpaged_gib": 1.1270599365234375,
+          "stage": "during_timestep_solve",
+          "processes": [
+            {
+              "pid": 10264,
+              "created": 1790924439.7198815,
+              "name": "pythonw.exe",
+              "working_set_gib": 0.2569389343261719,
+              "command": [
+                "H:\\fluent\\.venv\\Scripts\\pythonw.exe",
+                "-u",
+                "H:\\fluent\\scripts\\benchmark_C_coarse_resume_resource.py"
+              ]
+            },
+            {
+              "pid": 12684,
+              "created": 1790912239.7468889,
+              "name": "fl2610.exe",
+              "working_set_gib": 0.028636932373046875,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_host\\fl2610.exe",
+                "-cx",
+                "Zifeng:61453:61454",
+                "host",
+                "(list  (rpsetvar (QUOTE parallel/function) \"fluent 3ddp -r26.1.0   -ic=default -node -t1\")  (rpsetvar (QUOTE parallel/rhost) \"\")  (rpsetvar (QUOTE parallel/ruser) \"\")  (rpsetvar (QUOTE parallel/nprocs_string) \"1\")  (rpsetvar (QUOTE parallel/auto-spawn?) #t)  (rpsetvar (QUOTE parallel/trace-level) 0)  (rpsetvar (QUOTE parallel/hostsfile) \"\")  (rpsetvar (QUOTE parallel/path) \"\") (rpsetvar (QUOTE gpuapp/devices) \"\") )"
+              ]
+            },
+            {
+              "pid": 39540,
+              "created": 1790912226.8266969,
+              "name": "cx2610.exe",
+              "working_set_gib": 0.4604034423828125,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\win64\\cx2610.exe",
+                "-newcx",
+                "-command=(set-session-idle-timeoutPLF+4)",
+                "-nm",
+                "-g",
+                "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-6bxx_h4y.txt",
+                "-f",
+                "fl",
+                "(fluent \"3ddp -r26.1.0   -ic=default -host -t1 \")"
+              ]
+            },
+            {
+              "pid": 3804,
+              "created": 1790912239.5862043,
+              "name": "fluent.exe",
+              "working_set_gib": 0.00110626220703125,
+              "command": [
+                "fluent",
+                "-wait",
+                "3ddp",
+                "-r26.1.0",
+                "-ic=default",
+                "-host",
+                "-t1",
+                "-cx",
+                "Zifeng:61453:61454"
+              ]
+            },
+            {
+              "pid": 28604,
+              "created": 1790912241.5081508,
+              "name": "ansyscl.exe",
+              "working_set_gib": 0.005626678466796875,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\licensingclient\\winx64\\ansyscl.exe",
+                "-acl",
+                "39540.57635",
+                "-nodaemon",
+                "-log",
+                "C:\\Users\\zfzha\\AppData\\Local\\Temp\\.ansys\\ansyscl.Zifeng.39540.57635.log"
+              ]
+            },
+            {
+              "pid": 40656,
+              "created": 1790912243.43546,
+              "name": "fl_mpi2610.exe",
+              "working_set_gib": 4.4733123779296875,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_node\\fl_mpi2610.exe",
+                "-mport",
+                "127.0.0.1:127.0.0.1:55518:0",
+                "node",
+                "-mpiw",
+                "intel",
+                "-pic",
+                "default"
+              ]
+            }
+          ],
+          "Fluent_working_set_gib": 4.962352752685547,
+          "Python_worker_working_set_gib": 0.2569389343261719,
+          "total_project_working_set_gib": 5.226024627685547
+        }
+      },
+      {
+        "reason": "COARSE_RESOURCE_LIMIT",
+        "sample": {
+          "timestamp": "2026-10-02T06:35:48.222171+00:00",
+          "physical_total_gib": 31.839797973632812,
+          "available_gib": 7.243152618408203,
+          "used_gib": 24.59664535522461,
+          "commit_gib": 45.843570709228516,
+          "commit_limit_gib": 47.83979797363281,
+          "commit_fraction": 0.9582726652502895,
+          "pagefile_used_gib": 1.7717552185058594,
+          "pagefile_total_gib": 16.0,
+          "kernel_nonpaged_gib": 1.092529296875,
+          "stage": "during_timestep_solve",
+          "processes": [
+            {
+              "pid": 33412,
+              "created": 1790913218.9650025,
+              "name": "python.exe",
+              "working_set_gib": 0.10152816772460938,
+              "command": [
+                "H:\\fluent\\.venv\\Scripts\\python.exe",
+                "-u",
+                "H:\\fluent\\scripts\\benchmark_C_coarse_pipeline.py",
+                "--geometry-pid",
+                "0",
+                "--geometry-created",
+                "0"
+              ]
+            },
+            {
+              "pid": 12684,
+              "created": 1790912239.7468889,
+              "name": "fl2610.exe",
+              "working_set_gib": 0.027523040771484375,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_host\\fl2610.exe",
+                "-cx",
+                "Zifeng:61453:61454",
+                "host",
+                "(list  (rpsetvar (QUOTE parallel/function) \"fluent 3ddp -r26.1.0   -ic=default -node -t1\")  (rpsetvar (QUOTE parallel/rhost) \"\")  (rpsetvar (QUOTE parallel/ruser) \"\")  (rpsetvar (QUOTE parallel/nprocs_string) \"1\")  (rpsetvar (QUOTE parallel/auto-spawn?) #t)  (rpsetvar (QUOTE parallel/trace-level) 0)  (rpsetvar (QUOTE parallel/hostsfile) \"\")  (rpsetvar (QUOTE parallel/path) \"\") (rpsetvar (QUOTE gpuapp/devices) \"\") )"
+              ]
+            },
+            {
+              "pid": 39540,
+              "created": 1790912226.8266969,
+              "name": "cx2610.exe",
+              "working_set_gib": 0.071380615234375,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\win64\\cx2610.exe",
+                "-newcx",
+                "-command=(set-session-idle-timeoutPLF+4)",
+                "-nm",
+                "-g",
+                "-sifile=C:\\Users\\zfzha\\AppData\\Local\\Temp\\serverinfo-6bxx_h4y.txt",
+                "-f",
+                "fl",
+                "(fluent \"3ddp -r26.1.0   -ic=default -host -t1 \")"
+              ]
+            },
+            {
+              "pid": 3804,
+              "created": 1790912239.5862043,
+              "name": "fluent.exe",
+              "working_set_gib": 0.003246307373046875,
+              "command": [
+                "fluent",
+                "-wait",
+                "3ddp",
+                "-r26.1.0",
+                "-ic=default",
+                "-host",
+                "-t1",
+                "-cx",
+                "Zifeng:61453:61454"
+              ]
+            },
+            {
+              "pid": 28604,
+              "created": 1790912241.5081508,
+              "name": "ansyscl.exe",
+              "working_set_gib": 0.00922393798828125,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\licensingclient\\winx64\\ansyscl.exe",
+                "-acl",
+                "39540.57635",
+                "-nodaemon",
+                "-log",
+                "C:\\Users\\zfzha\\AppData\\Local\\Temp\\.ansys\\ansyscl.Zifeng.39540.57635.log"
+              ]
+            },
+            {
+              "pid": 40656,
+              "created": 1790912243.43546,
+              "name": "fl_mpi2610.exe",
+              "working_set_gib": 7.339111328125,
+              "command": [
+                "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\win64\\3ddp_node\\fl_mpi2610.exe",
+                "-mport",
+                "127.0.0.1:127.0.0.1:55518:0",
+                "node",
+                "-mpiw",
+                "intel",
+                "-pic",
+                "default"
+              ]
+            }
+          ],
+          "Fluent_working_set_gib": 7.438014984130859,
+          "Python_worker_working_set_gib": 0.10152816772460938,
+          "total_project_working_set_gib": 7.552013397216797
+        }
+      }
+    ],
+    "system_boot_CommitPeak_is_not_campaign_peak": true,
+    "measurement_csv_sha256": "45263392ef49addd0bd1181717e6509a54b76fa3f45eda53952dfa2829a18e82",
+    "raw_profiles_preserved_locally": {
+      "evidence/benchmark_C_coarse_A/benchmark_C_coarse_memory_profile.json": "0bf9069eb91c5f406ff21c034a06b0653a4381e4772ede42db809ec6650f76aa",
+      "evidence/benchmark_C_coarse_A/continuation_20h/resume29_01/benchmark_C_coarse_memory_profile.json": "c013f09453ec710f5d3618bbe1bf9b9c8b8f4f2f97854964067be78fada7824b",
+      "evidence/benchmark_C_coarse_A/continuation_20h/resume30_callback_02/benchmark_C_coarse_memory_profile.json": "45411568c3acd42588de384fec2a09ff7f21a259b60ade974ae13fa7903209c0"
+    }
+  },
+  "finalization_result": {
+    "timestamp": "2026-10-03T03:31:30.151055+00:00",
+    "status": "PASS",
+    "action": "CLOSE_PROVEN_STALE_COMPLETED_ENGINE",
+    "before": {
+      "timestamp": "2026-10-03T03:31:24.486231+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 12.42855453491211,
+      "used_gib": 19.411243438720703,
+      "commit_gib": 36.984371185302734,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.7730879466858721,
+      "pagefile_used_gib": 3.9149703979492188,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1655693054199219,
+      "commit_peak_gib": 66.31137466430664,
+      "pagefile_available_gib": 12.085029602050781,
+      "commit_headroom_gib": 10.855426788330078
+    },
+    "idle_CPU_seconds_over5s": {
+      "43232": 0.0,
+      "37012": 0.0,
+      "29660": 0.0
+    },
+    "timesteps_advanced": 0,
+    "new_solver_launched": false,
+    "connection_attempted": false,
+    "soft_exit_already_attempted_by_completed_worker": true,
+    "original_server_info_deleted": true,
+    "terminated": [
+      {
+        "pid": 29660,
+        "created": 1790994362.4929004,
+        "name": "fl_mpi2610.exe",
+        "private_bytes_gib": 9.508453369140625
+      },
+      {
+        "pid": 37012,
+        "created": 1790994344.5760045,
+        "name": "cx2610.exe",
+        "private_bytes_gib": 0.6301078796386719
+      }
+    ],
+    "checkpoint40_hashes_verified": true,
+    "unrelated_processes_touched": [],
+    "after": {
+      "timestamp": "2026-10-03T03:31:30.151769+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 13.599010467529297,
+      "used_gib": 18.240787506103516,
+      "commit_gib": 26.268566131591797,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.5490944202161947,
+      "pagefile_used_gib": 3.7927589416503906,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1763572692871094,
+      "commit_peak_gib": 66.31137466430664,
+      "pagefile_available_gib": 12.20724105834961,
+      "commit_headroom_gib": 21.571231842041016
+    },
+    "owned_engine_closed": true,
+    "system_commit_released_gib": 10.715805053710938
+  }
 }

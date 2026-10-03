@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-10-03T03:23:03.233698+00:00",
+  "status": "AWAITING_REPAIR_REVIEW",
+  "window_id": "coarse_20h_1790992287",
+  "failure_timestamp": "2026-10-03T03:23:03.233310+00:00",
+  "repairs": [
+    {
+      "plan_id": "resume29_01",
+      "failure_class": "SYSTEM_COMMIT",
+      "concrete_change": "Fresh audited system commit baseline 26.217GiB / 47.840GiB, versus45.64\u201345.84GiB failed load. Require >=19GiB commit headroom and >=12GiB physical available continuously for60s before one cold native step29 restart. Zero-time continuity gate precedes any new dynamics; runtime guards unchanged.",
+      "timestamp": "2026-10-03T01:53:36.394178+00:00"
+    },
+    {
+      "plan_id": "resume30_callback_02",
+      "failure_class": "PYTHON_CALLBACK_SELECTION",
+      "concrete_change": "Replace passive-only callback selection with active wall callback matched to current native COM/quaternion/velocities and direct magnetic F/T. Recover the already-solved native step30 at0.750ms using saved CASE/DATA and archived callback/connectivity; zero-step cold FieldData gate must pass before appending missing row30 and continuing31..40. Failure checkpoint indices now use actual native time. No time/pose/velocity reset or replay.",
+      "timestamp": "2026-10-03T02:25:27.728129+00:00"
+    }
+  ],
+  "consumed_plan_ids": [
+    "resume29_01",
+    "resume30_callback_02"
+  ],
+  "worker_pid": null,
+  "supervisor_pid": 10292,
+  "supervisor_created": 1790992355.5861435,
+  "deadline_epoch": 1791064287.4467711,
+  "memory": {
+    "timestamp": "2026-10-03T03:22:53.206924+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 8.51531982421875,
+    "used_gib": 23.324478149414062,
+    "commit_gib": 37.755313873291016,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.7892030374814727,
+    "pagefile_used_gib": 1.2880134582519531,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1154212951660156,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 14.711986541748047,
+    "commit_headroom_gib": 10.084484100341797
+  },
+  "stable_admission_seconds": 60.27715086936951,
+  "admission": {
+    "physical_available_gib_min": 12,
+    "commit_headroom_gib_min": 19,
+    "disk_free_gib_min": 35,
+    "stable_seconds": 60
+  },
+  "admission_basis": "Prior resource-stop commit 45.84GiB vs postexit 29.27GiB =16.57GiB observed system increase; reserve19GiB including margin. Runtime3GiB/95% guards unchanged.",
+  "worker_created": 1790994327.7206252,
+  "plan_rejection": null,
+  "campaign_progress": {
+    "campaign": "BENCHMARK_C_COARSE_SCREENING",
+    "status": "COMPLETE",
+    "timestamp": "2026-10-03T03:22:53.826776+00:00",
+    "review": "final_dataset_verification.json",
+    "scope": "Finite four static poses then 10/20/40 steps; no 2ms, no medium/fine recovery",
+    "pid": 9848,
+    "execution_owner": "20h local supervisor / direct pythonw worker",
+    "original_fine_deadline_extended": false,
+    "job": "scripts/benchmark_C_coarse_native_resume.py",
+    "job_pid": 9848,
+    "job_created": 1790994327.7703652,
+    "memory": {
+      "timestamp": "2026-10-03T02:25:44.301734+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 14.504337310791016,
+      "used_gib": 17.335460662841797,
+      "commit_gib": 27.464035034179688,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.5740834242092044,
+      "pagefile_used_gib": 0.8933944702148438,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1118545532226562,
+      "commit_peak_gib": 66.31137466430664,
+      "pagefile_available_gib": 15.106605529785156,
+      "commit_headroom_gib": 20.375762939453125
+    },
+    "pose": null,
+    "current_step": 40,
+    "target_step": 40,
+    "error": null,
+    "time_steps_advanced": 29,
+    "time_s": 0.001,
+    "solver_alive": true,
+    "worker_alive": false,
+    "scheduler_enabled": true,
+    "attempt": "resume30_callback_02",
+    "failure_file": "H:\\fluent\\evidence\\benchmark_C_coarse_A\\continuation_20h\\resume29_01\\failure.json",
+    "native_checkpoint_step": 30,
+    "owned_host_pid": 43232,
+    "next_state": "COARSE_DEVELOPMENT_BASELINE",
+    "final_report": "H:\\fluent\\evidence\\benchmark_C_coarse_A\\final_report.json"
+  },
+  "last_returncode": 0,
+  "last_plan_id": "resume30_callback_02",
+  "error": "Read archived failure and diagnose before a distinct repair"
+}

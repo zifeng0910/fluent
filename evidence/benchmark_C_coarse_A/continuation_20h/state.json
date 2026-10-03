@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-10-03T03:42:25.690862+00:00",
+  "status": "COMPLETE",
+  "window_id": "coarse_20h_1790992287",
+  "failure_timestamp": "2026-10-03T03:23:03.233310+00:00",
+  "repairs": [
+    {
+      "plan_id": "resume29_01",
+      "failure_class": "SYSTEM_COMMIT",
+      "concrete_change": "Fresh audited system commit baseline 26.217GiB / 47.840GiB, versus45.64\u201345.84GiB failed load. Require >=19GiB commit headroom and >=12GiB physical available continuously for60s before one cold native step29 restart. Zero-time continuity gate precedes any new dynamics; runtime guards unchanged.",
+      "timestamp": "2026-10-03T01:53:36.394178+00:00"
+    },
+    {
+      "plan_id": "resume30_callback_02",
+      "failure_class": "PYTHON_CALLBACK_SELECTION",
+      "concrete_change": "Replace passive-only callback selection with active wall callback matched to current native COM/quaternion/velocities and direct magnetic F/T. Recover the already-solved native step30 at0.750ms using saved CASE/DATA and archived callback/connectivity; zero-step cold FieldData gate must pass before appending missing row30 and continuing31..40. Failure checkpoint indices now use actual native time. No time/pose/velocity reset or replay.",
+      "timestamp": "2026-10-03T02:25:27.728129+00:00"
+    },
+    {
+      "plan_id": "close_completed_owned_engine_03",
+      "failure_class": "OWNED_COMPLETED_ENGINE_CLEANUP",
+      "concrete_change": "Add reviewed no-solve/no-launch finalizer capability. After full1ms numerical/checkpoint PASS and stopped worker, verify exact registered host/node/cortex identities and5sCPU-idle, then terminate only these proven stale owned processes remaining after SDK exit. No guessed credentials, no unrelated process or physics change.",
+      "timestamp": "2026-10-03T03:31:22.288881+00:00"
+    }
+  ],
+  "consumed_plan_ids": [
+    "resume29_01",
+    "resume30_callback_02",
+    "close_completed_owned_engine_03"
+  ],
+  "worker_pid": null,
+  "supervisor_pid": 4384,
+  "supervisor_created": 1790998281.852493,
+  "deadline_epoch": 1791064287.4467711,
+  "memory": {
+    "timestamp": "2026-10-03T03:35:45.026234+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 14.790821075439453,
+    "used_gib": 17.04897689819336,
+    "commit_gib": 26.317676544189453,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5501209799985902,
+    "pagefile_used_gib": 0.9457015991210938,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1107063293457031,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.054298400878906,
+    "commit_headroom_gib": 21.52212142944336
+  },
+  "stable_admission_seconds": 60.27715086936951,
+  "admission": {
+    "physical_available_gib_min": 12,
+    "commit_headroom_gib_min": 19,
+    "disk_free_gib_min": 35,
+    "stable_seconds": 60
+  },
+  "admission_basis": "Prior resource-stop commit 45.84GiB vs postexit 29.27GiB =16.57GiB observed system increase; reserve19GiB including margin. Runtime3GiB/95% guards unchanged.",
+  "worker_created": 1790998282.2825372,
+  "plan_rejection": null,
+  "campaign_progress": {
+    "campaign": "BENCHMARK_C_COARSE_SCREENING",
+    "status": "COMPLETE",
+    "timestamp": "2026-10-03T03:42:25.554634+00:00",
+    "review": "final_completion_verification.json",
+    "scope": "Finite four static poses then 10/20/40 steps; no 2ms, no medium/fine recovery",
+    "pid": 8700,
+    "execution_owner": "20h local supervisor / direct pythonw worker",
+    "original_fine_deadline_extended": false,
+    "job": "scripts/benchmark_C_coarse_native_resume.py",
+    "job_pid": 9848,
+    "job_created": 1790994327.7703652,
+    "memory": {
+      "timestamp": "2026-10-03T03:31:30.151769+00:00",
+      "physical_total_gib": 31.839797973632812,
+      "available_gib": 13.599010467529297,
+      "used_gib": 18.240787506103516,
+      "commit_gib": 26.268566131591797,
+      "commit_limit_gib": 47.83979797363281,
+      "commit_fraction": 0.5490944202161947,
+      "pagefile_used_gib": 3.7927589416503906,
+      "pagefile_total_gib": 16.0,
+      "kernel_nonpaged_gib": 1.1763572692871094,
+      "commit_peak_gib": 66.31137466430664,
+      "pagefile_available_gib": 12.20724105834961,
+      "commit_headroom_gib": 21.571231842041016
+    },
+    "pose": {
+      "com": [
+        0.00120557318145819,
+        5.800929740693038e-08,
+        -3.492813293062721e-08
+      ],
+      "q": [
+        0.9998218016041652,
+        0.0007771289008933845,
+        -0.009383040399322798,
+        -0.01636214107436088
+      ],
+      "velocity": [
+        -0.001479787515295681,
+        0.0002808941179452737,
+        -0.0001348737251729783
+      ],
+      "omega": [
+        6.356386328827029,
+        -64.46303384938572,
+        -143.3557349611409
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.03775750929613537,
+        "axis": [
+          0.04116664895079176,
+          -0.49704538045871915,
+          -0.8667474815531969
+        ]
+      }
+    },
+    "current_step": 40,
+    "target_step": 40,
+    "error": null,
+    "time_steps_advanced": 40,
+    "time_s": 0.0009999999999999994,
+    "solver_alive": false,
+    "worker_alive": false,
+    "scheduler_enabled": false,
+    "attempt": "resume30_callback_02",
+    "failure_file": null,
+    "native_checkpoint_step": 40,
+    "owned_host_pid": 43232,
+    "next_state": "COARSE_DEVELOPMENT_BASELINE",
+    "final_report": "H:\\fluent\\evidence\\benchmark_C_coarse_A\\final_report.json"
+  },
+  "last_returncode": 0,
+  "last_plan_id": "resume30_callback_02",
+  "error": null,
+  "completed_at": "2026-10-03T03:31:32.295252+00:00",
+  "supervisor_alive": false,
+  "final_verification": "evidence/benchmark_C_coarse_A/final_completion_verification.json",
+  "heartbeat_status": "PAUSED",
+  "next_state": "COARSE_DEVELOPMENT_BASELINE"
+}

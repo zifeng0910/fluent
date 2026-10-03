@@ -35,8 +35,11 @@ Write `repair_plan.json` with atomic replacement. Every plan includes:
   directory and SHA-256 `configuration_sha256` of that actual configuration.
 - `supporting_code_sha256` verifies dependencies reviewed with the native job.
 
-Only the read-only commit audit and reviewed native continuation worker are
-allowlisted. Adding a diagnostic capability requires reviewing the concrete
+The commit audit, native continuation worker, and specifically reviewed
+completed-engine finalizer are allowlisted. The finalizer requires full1ms
+checkpoint PASS, a stopped dynamics worker, exact registered stale process
+identities and idle CPU evidence. It cannot launch Fluent or advance dynamics.
+Adding a diagnostic capability requires reviewing the concrete
 supervisor change. No repeated identical action; at most two technically
 distinct repairs per failure class. Preserve evidence and latest native
 checkpoint; never replay earlier dynamics or restart t=0.

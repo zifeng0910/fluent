@@ -1,58 +1,11 @@
 {
-  "status": "BENCHMARK_C_COARSE_SCREENING_NUMERICAL_PASS",
-  "steps_requested": 40,
-  "completed_steps": 40,
+  "step": 40,
   "time_s": 0.0009999999999999994,
-  "dt_s": 2.5e-05,
-  "maximum_iterations_per_step": 2,
-  "cutoff": 1e-50,
-  "frozen_UDF_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
-  "stages": [
-    {
-      "steps": 10,
-      "status": "PASS",
-      "time_s": 0.0002500000000000001
-    },
-    {
-      "steps": 20,
-      "status": "PASS",
-      "time_s": 0.0005000000000000001
-    },
-    {
-      "steps": 30,
-      "status": "PASS",
-      "time_s": 0.0007499999999999997,
-      "recovered_from_native_checkpoint": true
-    },
-    {
-      "steps": 40,
-      "status": "PASS",
-      "time_s": 0.0009999999999999994
-    }
-  ],
-  "frames": [
-    {
-      "step": 10,
-      "time_s": 0.0002500000000000001
-    },
-    {
-      "step": 20,
-      "time_s": 0.0005000000000000001
-    },
-    {
-      "step": 40,
-      "time_s": 0.0009999999999999994
-    }
-  ],
-  "gravity": [
-    0,
-    0,
-    0
-  ],
-  "automatic_overset_adaption": false,
-  "original_callback_file_bytes": 759573,
-  "maximum_component_radius_m": 0.001256018692452528,
-  "latest_row": {
+  "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\checkpoint_0040.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_A\\checkpoint_0040.dat.h5",
+  "case_sha256": "86cd6f3bc0baedebd3025fe98b06772c52d0a8170dda978f452cbb727cbfa7ed",
+  "data_sha256": "84751773083901f44d4d0dd629a9d29b9d967799a2717b82b7157aff462df655",
+  "row": {
     "step": 40,
     "time_s": 0.0009999999999999994,
     "com_x_m": 0.00120557318145819,
@@ -91,8 +44,5 @@
     "donor_length_ratio_max": 2.914053397229937,
     "BOI_pose_displacement_bound_m": 1.7394252310835067e-05
   },
-  "resumed_from_step": 30,
-  "resume_callback_offset": 884515,
-  "last_native_checkpoint": "resume_stop_checkpoint.json",
-  "history_recovery_review": "evidence/benchmark_C_coarse_A/continuation_20h/callback_repair_review/review.json"
+  "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS"
 }

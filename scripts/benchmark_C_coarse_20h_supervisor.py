@@ -29,8 +29,15 @@ def validate_plan(p):
     path=(ROOT/p['job']).resolve();path.relative_to((ROOT/'scripts').resolve())
     if not path.is_file() or sha(path)!=p['job_sha256']:raise RuntimeError('Job source not reviewed')
     # Only this proven continuation worker may launch a solver. Diagnostics are read-only audits.
-    allowed={'scripts/benchmark_C_coarse_native_resume.py','scripts/benchmark_C_coarse_commit_audit.py'}
+    allowed={'scripts/benchmark_C_coarse_native_resume.py','scripts/benchmark_C_coarse_commit_audit.py','scripts/benchmark_C_coarse_finalize.py'}
     if p['job'] not in allowed:raise RuntimeError('New job needs supervisor capability review; not allowlisted')
+    if p['job'].endswith('coarse_finalize.py'):
+        config_path=(ROOT/p['config']).resolve();config_path.relative_to(CONT.resolve())
+        if p['decision']!='REPAIR' or not p.get('concrete_change') or sha(config_path)!=p['configuration_sha256']:
+            raise RuntimeError('Reviewed finalization configuration required')
+        config=read(config_path)
+        if config.get('action')!='CLOSE_PROVEN_STALE_COMPLETED_ENGINE' or read(EVID/'state.json').get('status')!='COMPLETE' or read(EVID/'step40_checkpoint_verification.json').get('status')!='PASS':
+            raise RuntimeError('Finalizer requires verified full1ms completion; cannot solve or launch')
     if p['job'].endswith('native_resume.py'):
         if p['decision']!='REPAIR' or not p.get('concrete_change'):raise RuntimeError('Concrete resource change required')
         config_path=(ROOT/p['config']).resolve();config_path.relative_to(CONT.resolve())
@@ -89,9 +96,10 @@ def main():
                 set_state('AWAITING_REPAIR_REVIEW',plan_rejection=repr(e),memory=m);time.sleep(10);continue
             if plan['decision']=='HARD_BLOCKER':
                 set_state('HARD_BLOCKER_REQUIRES_REVIEW',reason=plan['root_cause']);event('HARD_BLOCKER',reason=plan['root_cause']);return
-            if native():
+            finalizer=plan['job']=='scripts/benchmark_C_coarse_finalize.py'
+            if native() and not finalizer:
                 set_state('AWAITING_REPAIR_REVIEW',error='Native Fluent already exists; launch refused',memory=m);time.sleep(10);continue
-            if plan['decision']=='REPAIR':
+            if plan['decision']=='REPAIR' and not finalizer:
                 stable_since=(stable_since or now) if admission(m) else None
                 set_state('RESOURCE_WAIT',memory=m,stable_admission_seconds=now-stable_since if stable_since else 0,
                     admission={'physical_available_gib_min':12,'commit_headroom_gib_min':19,'disk_free_gib_min':35,'stable_seconds':60},

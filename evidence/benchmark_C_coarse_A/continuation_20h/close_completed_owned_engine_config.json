@@ -1,0 +1,5 @@
+{
+  "action": "CLOSE_PROVEN_STALE_COMPLETED_ENGINE",
+  "audit": "evidence/benchmark_C_coarse_A/continuation_20h/finalization_failure_audit.json",
+  "audit_sha256": "5693283cc830c72e1df2a44ea9a67b0959898134640c83981dcfbb776197e3de"
+}
