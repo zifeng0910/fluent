@@ -1,0 +1,756 @@
+{
+  "timestamp": "2026-10-03T10:17:42.419976+00:00",
+  "campaign": "BENCHMARK_C_COARSE_2MS_CONTINUATION",
+  "mesh_cells": 4699301,
+  "background_cells": 3345695,
+  "component_cells": 1353606,
+  "completed_steps": 73,
+  "additional_steps_completed": 33,
+  "target_steps": 80,
+  "time_s": 0.001825000000000002,
+  "restart_source": "step40 / 1.000ms native CASE+DATA",
+  "restart_gate": "BENCHMARK_C_COARSE_STEP40_NATIVE_RESTART_PASS",
+  "numerical_gates": {
+    "sequence": true,
+    "original1ms_prefix": true,
+    "finite": true,
+    "all_numerical": false,
+    "step40_restart": true,
+    "step80_native_checkpoint": false
+  },
+  "final_COM_m": [
+    0.001203492883701659,
+    1.111024063180122e-06,
+    -4.1851765169347e-07
+  ],
+  "total_COM_displacement_m": [
+    -2.5258100139753485e-06,
+    1.111024063180122e-06,
+    -4.1851765169347e-07
+  ],
+  "maximum_lateral_displacement_m": 1.1872369155919488e-06,
+  "final_orientation_scalar_first": [
+    0.9786259597738179,
+    0.00817658632646329,
+    -0.06999722477139195,
+    -0.19319617702512343
+  ],
+  "final_orientation_rotvec_rad": [
+    0.016470689114014014,
+    -0.14100047159314164,
+    -0.3891690300508578
+  ],
+  "maximum_orientation_change_rad": 0.41425227885927707,
+  "final_linear_velocity_m_s": [
+    -0.0027407059531668982,
+    0.003614996199494146,
+    -0.0012110152098730644
+  ],
+  "peak_linear_velocity_m_s": 0.004695340720610752,
+  "final_angular_velocity_rad_s": [
+    45.623668671888815,
+    -266.8027964946249,
+    -853.2500681355963
+  ],
+  "peak_angular_velocity_rad_s": 895.1541376399007,
+  "minimum_physical_clearance_m": 8.659843620561957e-05,
+  "orphan_peak": 0,
+  "invalid_donor_peak": 0,
+  "maximum_donor_length_ratio": 3.09923981672453,
+  "donor_length_ratio_policy": "WARNING_ONLY",
+  "minimum_cell_volume_m3": 6.100596812e-17,
+  "maximum_q_norm_error": 1.1102230246251565e-16,
+  "peak_Fmag_N": 2.7930355888203698e-05,
+  "peak_Tmag_Nm": 6.760938985835057e-06,
+  "pre_ramp_0_to_1ms": {
+    "start_time_s": 0.0,
+    "end_time_s": 0.0009999999999999994,
+    "COM_displacement_m": [
+      -4.455122574443214e-07,
+      5.800929740693038e-08,
+      -3.492813293062721e-08
+    ],
+    "mean_axial_velocity_m_s": -0.00044551225744436803,
+    "mean_lateral_velocity_xyz_m_s": [
+      0.0,
+      5.8009297406930354e-05,
+      -3.49281329306272e-05
+    ],
+    "mean_lateral_speed_m_s": 6.818254244400826e-05,
+    "orientation_change_rad": 0.03775750929613522,
+    "peak_angular_velocity_rad_s": 157.31100764559793,
+    "mean_magnetic_force_xyz_N": [
+      -1.3971342918252634e-05,
+      0.0,
+      0.0
+    ],
+    "peak_magnetic_force_N": 2.7930355888203698e-05,
+    "mean_magnetic_force_magnitude_N": 1.3971342918252637e-05,
+    "mean_magnetic_torque_xyz_Nm": [
+      6.8245521785495386e-09,
+      -2.808677423634626e-07,
+      -6.209665938446123e-07
+    ],
+    "peak_magnetic_torque_Nm": 2.068356014559484e-06,
+    "mean_magnetic_torque_magnitude_Nm": 6.881559600557339e-07
+  },
+  "post_ramp_1_to_current": {
+    "start_time_s": 0.0009999999999999994,
+    "end_time_s": 0.001825000000000002,
+    "COM_displacement_m": [
+      -2.080297756531027e-06,
+      1.0530147657731916e-06,
+      -3.835895187628428e-07
+    ],
+    "mean_axial_velocity_m_s": -0.00252157303822035,
+    "mean_lateral_velocity_xyz_m_s": [
+      0.0,
+      0.001276381534270537,
+      -0.00046495699243980984
+    ],
+    "mean_lateral_speed_m_s": 0.001358867572260214,
+    "orientation_change_rad": 0.3771131642090561,
+    "peak_angular_velocity_rad_s": 895.1541376399007,
+    "mean_magnetic_force_xyz_N": [
+      -2.7385272927652175e-05,
+      0.0,
+      0.0
+    ],
+    "peak_magnetic_force_N": 2.7930355888203698e-05,
+    "mean_magnetic_force_magnitude_N": 2.7385272927652178e-05,
+    "mean_magnetic_torque_xyz_Nm": [
+      1.1755496381625068e-07,
+      -1.0617947931279778e-06,
+      -3.864351175598199e-06
+    ],
+    "peak_magnetic_torque_Nm": 6.760938985835057e-06,
+    "mean_magnetic_torque_magnitude_Nm": 4.00986769506612e-06
+  },
+  "checkpoint_metadata": {
+    "50": {
+      "timestamp": "2026-10-03T07:46:29.059704+00:00",
+      "step": 50,
+      "time_s": 0.00125,
+      "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.cas.h5",
+      "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.dat.h5",
+      "case_sha256": "009e08680b6e8a30483765b070c89abbc10dfe0f41c9b9ee620d765c2fd9744b",
+      "data_sha256": "f4e8d0060763e8f6673e4392bc18b5c533b1793fd1b7424702bafb0aa0e3a4a2",
+      "case_size_bytes": 109167322,
+      "data_size_bytes": 538327646,
+      "row": {
+        "step": 50,
+        "time_s": 0.00125,
+        "com_x_m": 0.001205113449714466,
+        "com_y_m": 1.665902531403733e-07,
+        "com_z_m": -8.197614388558948e-08,
+        "q0": 0.9989078954334352,
+        "q1": 0.0018433147410555173,
+        "q2": -0.019910481309584522,
+        "q3": -0.04222785059094731,
+        "q_norm": 1.0,
+        "omega_x_rad_s": 12.46164010661223,
+        "omega_y_rad_s": -105.81272970655746,
+        "omega_z_rad_s": -279.0538428805543,
+        "Fmag_x_N": -2.783838065512707e-05,
+        "Fmag_y_N": 0.0,
+        "Fmag_z_N": 0.0,
+        "Tmag_x_Nm": 6.052430358950495e-08,
+        "Tmag_y_Nm": -8.259856556615996e-07,
+        "Tmag_z_Nm": -2.8799271654879654e-06,
+        "vx_m_s": -0.0021948421456344986,
+        "vy_m_s": 0.0006188073938809166,
+        "vz_m_s": -0.00025115097863639925,
+        "theta_x_rad": 0.003687972130186369,
+        "theta_y_rad": -0.039835465172838896,
+        "theta_z_rad": -0.08448645943721161,
+        "orphan_count": 0,
+        "receptors_without_donors": 0,
+        "official_donor_count": 304652,
+        "official_receptor_count": 143977,
+        "minimum_cell_volume_m3": 6.100596812e-17,
+        "robot_wall_clearance_m": 0.00039059419910551736,
+        "overset_wall_clearance_m": 0.0003407147468371334,
+        "donor_length_ratio_min": 0.3872089549886317,
+        "donor_length_ratio_median": 0.6958402328728182,
+        "donor_length_ratio_p95": 2.059665187814382,
+        "donor_length_ratio_max": 2.875558418562056,
+        "BOI_pose_displacement_bound_m": 1.2116802467184396e-05
+      },
+      "native_state": {
+        "com": [
+          0.001205113449714466,
+          1.665902531403733e-07,
+          -8.197614388558948e-08
+        ],
+        "q": [
+          0.9989078954334352,
+          0.0018433147410555173,
+          -0.019910481309584522,
+          -0.04222785059094731
+        ],
+        "velocity": [
+          -0.002194842145629772,
+          0.0006188073938809166,
+          -0.0002511509786363992
+        ],
+        "omega": [
+          12.46164011465894,
+          -105.8127297247167,
+          -279.0538429262527
+        ],
+        "native_orientation_angle_axis": {
+          "angle": 0.09347955526381393,
+          "axis": [
+            0.03945217882003257,
+            -0.42614093595803704,
+            -0.9037961209737296
+          ]
+        }
+      },
+      "Fmag_N": [
+        -2.783838065512559e-05,
+        0.0,
+        0.0
+      ],
+      "Tmag_COM_Nm": [
+        6.05243035897506e-08,
+        -8.259856556640403e-07,
+        -2.8799271654943106e-06
+      ],
+      "source_state": {
+        "moment_global": "[ 1.03610365e-03 -7.87678990e-05  4.43659160e-05]",
+        "B_global": "[-0.01081936 -0.00195705  0.00033392]",
+        "s_eff_mm": 31.691515998758117,
+        "phase_rad": 0.7853981633974483,
+        "ramp": 1
+      },
+      "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS",
+      "integrity": {
+        "step": 50,
+        "time_s": 0.00125,
+        "files": {
+          "case": {
+            "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.cas.h5",
+            "size_bytes": 109167322,
+            "sha256": "009e08680b6e8a30483765b070c89abbc10dfe0f41c9b9ee620d765c2fd9744b",
+            "HDF5_readable": true
+          },
+          "data": {
+            "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.dat.h5",
+            "size_bytes": 538327646,
+            "sha256": "f4e8d0060763e8f6673e4392bc18b5c533b1793fd1b7424702bafb0aa0e3a4a2",
+            "HDF5_readable": true
+          }
+        },
+        "status": "PASS",
+        "timesteps_advanced": 0
+      }
+    },
+    "60": {
+      "timestamp": "2026-10-03T08:42:25.595486+00:00",
+      "step": 60,
+      "time_s": 0.001500000000000001,
+      "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.cas.h5",
+      "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.dat.h5",
+      "case_sha256": "5610b3647365ec9ec3076dcdba6960bf63df6f0089428fe741212f5641e63805",
+      "data_sha256": "1cf75c71d731a98b547727769f6251081a4b84d7426f3397e3d7505d11987133",
+      "case_size_bytes": 109288051,
+      "data_size_bytes": 543876584,
+      "row": {
+        "step": 60,
+        "time_s": 0.001500000000000001,
+        "com_x_m": 0.001204478134135361,
+        "com_y_m": 3.9378928773409e-07,
+        "com_z_m": -1.683686593111596e-07,
+        "q0": 0.9954022843978216,
+        "q1": 0.0037362155557249623,
+        "q2": -0.03636424096304197,
+        "q3": -0.08853233809236649,
+        "q_norm": 0.9999999999999999,
+        "omega_x_rad_s": 22.622751751201815,
+        "omega_y_rad_s": -161.2429692334403,
+        "omega_z_rad_s": -475.2039935770703,
+        "Fmag_x_N": -2.7466934209585383e-05,
+        "Fmag_y_N": 0.0,
+        "Fmag_z_N": 0.0,
+        "Tmag_x_Nm": 1.2577663388059874e-07,
+        "Tmag_y_Nm": -1.1203718150861467e-06,
+        "Tmag_z_Nm": -4.165983658562312e-06,
+        "vx_m_s": -0.002866906822163207,
+        "vy_m_s": 0.001277611490787303,
+        "vz_m_s": -0.000465022385600718,
+        "theta_x_rad": 0.0074839042520224415,
+        "theta_y_rad": -0.07284014894372821,
+        "theta_z_rad": -0.17733654057397993,
+        "orphan_count": 0,
+        "receptors_without_donors": 0,
+        "official_donor_count": 303921,
+        "official_receptor_count": 144023,
+        "minimum_cell_volume_m3": 6.100596812e-17,
+        "robot_wall_clearance_m": 0.00028998585288514265,
+        "overset_wall_clearance_m": 0.00024004107318564223,
+        "donor_length_ratio_min": 0.34356499017853187,
+        "donor_length_ratio_median": 0.6937372138865782,
+        "donor_length_ratio_p95": 2.0586475054011295,
+        "donor_length_ratio_max": 2.9553746759947845,
+        "BOI_pose_displacement_bound_m": 1.2256484486766565e-05
+      },
+      "native_state": {
+        "com": [
+          0.001204478134135361,
+          3.9378928773409e-07,
+          -1.683686593111596e-07
+        ],
+        "q": [
+          0.9954022843978216,
+          0.0037362155557249623,
+          -0.03636424096304197,
+          -0.08853233809236649
+        ],
+        "velocity": [
+          -0.002866906822163201,
+          0.001277611490787303,
+          -0.000465022385600718
+        ],
+        "omega": [
+          22.62275175120751,
+          -161.2429692334512,
+          -475.2039935770992
+        ],
+        "native_orientation_angle_axis": {
+          "angle": 0.19185917946177328,
+          "axis": [
+            0.03900727748871475,
+            -0.37965422946177707,
+            -0.9243057385706868
+          ]
+        }
+      },
+      "Fmag_N": [
+        -2.7466934209585376e-05,
+        0.0,
+        0.0
+      ],
+      "Tmag_COM_Nm": [
+        1.25776633880599e-07,
+        -1.1203718150861482e-06,
+        -4.1659836585623175e-06
+      ],
+      "source_state": {
+        "moment_global": "[ 1.02231368e-03 -1.74643459e-04  7.78324665e-05]",
+        "B_global": "[-0.01076686 -0.00223574  0.0002762 ]",
+        "s_eff_mm": 31.68938068317901,
+        "phase_rad": 0.9424777960769385,
+        "ramp": 1
+      },
+      "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS",
+      "integrity": {
+        "step": 60,
+        "time_s": 0.001500000000000001,
+        "files": {
+          "case": {
+            "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.cas.h5",
+            "size_bytes": 109288051,
+            "sha256": "5610b3647365ec9ec3076dcdba6960bf63df6f0089428fe741212f5641e63805",
+            "HDF5_readable": true
+          },
+          "data": {
+            "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.dat.h5",
+            "size_bytes": 543876584,
+            "sha256": "1cf75c71d731a98b547727769f6251081a4b84d7426f3397e3d7505d11987133",
+            "HDF5_readable": true
+          }
+        },
+        "status": "PASS",
+        "timesteps_advanced": 0
+      }
+    },
+    "70": {
+      "timestamp": "2026-10-03T09:39:45.015028+00:00",
+      "step": 70,
+      "time_s": 0.001750000000000001,
+      "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
+      "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
+      "case_sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+      "data_sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
+      "case_size_bytes": 109628295,
+      "data_size_bytes": 553723925,
+      "row": {
+        "step": 70,
+        "time_s": 0.001750000000000001,
+        "com_x_m": 0.001203713388222422,
+        "com_y_m": 8.724861369932643e-07,
+        "com_z_m": -3.356690108892919e-07,
+        "q0": 0.984623529376754,
+        "q1": 0.006896969730061793,
+        "q2": -0.0607625496750705,
+        "q3": -0.16363633387237564,
+        "q_norm": 1.0,
+        "omega_x_rad_s": 39.13734668232958,
+        "omega_y_rad_s": -238.3510307135471,
+        "omega_z_rad_s": -752.0650495856725,
+        "Fmag_x_N": -2.6306585012258487e-05,
+        "Fmag_y_N": 0.0,
+        "Fmag_z_N": 0.0,
+        "Tmag_x_Nm": 2.390446617185538e-07,
+        "Tmag_y_Nm": -1.553126579602264e-06,
+        "Tmag_z_Nm": -5.917113820340971e-06,
+        "vx_m_s": -0.0030784754169181703,
+        "vy_m_s": 0.00278338081035859,
+        "vz_m_s": -0.0009735323565712222,
+        "theta_x_rad": 0.01386507789800976,
+        "theta_y_rad": -0.12215183152891644,
+        "theta_z_rad": -0.328960486254723,
+        "orphan_count": 0,
+        "receptors_without_donors": 0,
+        "official_donor_count": 301276,
+        "official_receptor_count": 144116,
+        "minimum_cell_volume_m3": 6.100596812e-17,
+        "robot_wall_clearance_m": 0.00014051206422899983,
+        "overset_wall_clearance_m": 9.070283106818867e-05,
+        "donor_length_ratio_min": 0.3392703121258265,
+        "donor_length_ratio_median": 0.688656963042298,
+        "donor_length_ratio_p95": 2.0583482205266153,
+        "donor_length_ratio_max": 2.851046313678106,
+        "BOI_pose_displacement_bound_m": 1.2332767577244258e-05
+      },
+      "native_state": {
+        "com": [
+          0.001203713388222422,
+          8.724861369932643e-07,
+          -3.356690108892919e-07
+        ],
+        "q": [
+          0.984623529376754,
+          0.006896969730061793,
+          -0.0607625496750705,
+          -0.16363633387237564
+        ],
+        "velocity": [
+          -0.003078475416918156,
+          0.00278338081035859,
+          -0.0009735323565712222
+        ],
+        "omega": [
+          39.13734668233644,
+          -238.3510307135593,
+          -752.0650495857042
+        ],
+        "native_orientation_angle_axis": {
+          "angle": 0.35118130908112233,
+          "axis": [
+            0.03948125238865443,
+            -0.34783124377698504,
+            -0.9367254969105832
+          ]
+        }
+      },
+      "Fmag_N": [
+        -2.6306585012258473e-05,
+        0.0,
+        0.0
+      ],
+      "Tmag_COM_Nm": [
+        2.3904466171855395e-07,
+        -1.5531265796022652e-06,
+        -5.917113820340973e-06
+      ],
+      "source_state": {
+        "moment_global": "[ 0.00097916 -0.00032738  0.00012549]",
+        "B_global": "[-0.01071953 -0.00245896  0.00021237]",
+        "s_eff_mm": 31.68711593726607,
+        "phase_rad": 1.0995574287564283,
+        "ramp": 1
+      },
+      "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS",
+      "integrity": {
+        "step": 70,
+        "time_s": 0.001750000000000001,
+        "files": {
+          "case": {
+            "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
+            "size_bytes": 109628295,
+            "sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+            "HDF5_readable": true
+          },
+          "data": {
+            "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
+            "size_bytes": 553723925,
+            "sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
+            "HDF5_readable": true
+          }
+        },
+        "status": "PASS",
+        "timesteps_advanced": 0
+      }
+    }
+  },
+  "fine_reference_status": "FINE_REFERENCE_NOT_AVAILABLE_AT_2MS",
+  "exact_comparison_retained": "coarse_vs_fine_latest_exact.json",
+  "exact_comparison_time_s": 0.000825,
+  "mesh_convergence_claim": false,
+  "cutoff_sensitivity_run": false,
+  "Benchmark_D_entered": false,
+  "magnetic_sphere_example_used": false,
+  "resource_summary": {
+    "timestamp": "2026-10-03T09:58:51.572462+00:00",
+    "sample_count": 2253,
+    "peak_project_working_set_gib": 8.72747802734375,
+    "peak_project_private_bytes_gib": 15.909618377685547,
+    "peak_measured_system_commit_gib": 40.689048767089844,
+    "peak_measured_system_commit_percent": 85.05271863713942,
+    "minimum_available_gib": 7.3036041259765625,
+    "abort": null,
+    "boot_CommitPeak_is_not_campaign_peak": true,
+    "unrelated_processes_touched": []
+  },
+  "engine_exit": {
+    "timestamp": "2026-10-03T09:58:45.596232+00:00",
+    "SDK_exit_requested": true,
+    "unrelated_processes_touched": [],
+    "terminated": [
+      {
+        "pid": 22616,
+        "created": 1791009993.252864,
+        "registered_host_pid": 34732,
+        "mport": "127.0.0.1:127.0.0.1:60556:0",
+        "ownership_evidence": "Node -mport matches registered Fluent host local TCP port",
+        "name": "fl_mpi2610.exe",
+        "ownership": "Node -mport matches registered Fluent host local TCP port"
+      },
+      {
+        "pid": 34732,
+        "created": 1791009990.501614,
+        "name": "fl2610.exe",
+        "ownership": "SDK registered host/cortex"
+      },
+      {
+        "pid": 33724,
+        "created": 1791009983.8415053,
+        "name": "cx2610.exe",
+        "ownership": "SDK registered host/cortex"
+      }
+    ],
+    "CPU_seconds_over5s": {
+      "34732": 0.03125,
+      "33724": 0.0,
+      "22616": 0.0
+    },
+    "owned_engine_closed": true
+  },
+  "visualization_status": "NOT_READY",
+  "remaining_blocker": "Actual saved robot-wall physical clearance at step73 is0.086598436mm, below the frozen0.10mm hard gate; official connectivity is valid and resources did not abort.",
+  "status": "INCOMPLETE",
+  "dynamics_analysis_note": "Time-resolved finite differences and interval summaries; no causal attribution to ramp alone.",
+  "inferred_response_note": "m*finite_difference(v)-Fmag and rotated-inertia Euler residual minus Tmag. Diagnostic only; not direct fluid pressure/shear forces.",
+  "peak_post_ramp_angular_acceleration_rad_s2": 1441285.440401252,
+  "peak_pre_ramp_angular_acceleration_rad_s2": 462364.31386532885,
+  "terminal_campaign_status": "HARD_BLOCKER_REQUIRES_REVIEW",
+  "last_all_gate_valid_step": 72,
+  "last_all_gate_valid_time_s": 0.0018,
+  "last_all_gate_valid_clearance_m": 0.00010495915844157146,
+  "stop_checkpoint": {
+    "timestamp": "2026-10-03T09:58:14.817326+00:00",
+    "step": 73,
+    "time_s": 0.001825000000000002,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5",
+    "case_sha256": "f5bbbd0d737fc547cde010590b08ec483cb81a925e14a8a248166c1131b510e5",
+    "data_sha256": "3f9ee63ebc989c413555e4089d9cfea1ea35f5f21a9117fe182175c343fe1474",
+    "case_size_bytes": 109763884,
+    "data_size_bytes": 557884661,
+    "row": {
+      "step": 73,
+      "time_s": 0.001825000000000002,
+      "com_x_m": 0.001203492883701659,
+      "com_y_m": 1.111024063180122e-06,
+      "com_z_m": -4.1851765169347e-07,
+      "q0": 0.9786259597738179,
+      "q1": 0.00817658632646329,
+      "q2": -0.06999722477139195,
+      "q3": -0.19319617702512343,
+      "q_norm": 1.0,
+      "omega_x_rad_s": 45.623668671888815,
+      "omega_y_rad_s": -266.8027964946249,
+      "omega_z_rad_s": -853.2500681355963,
+      "Fmag_x_N": -2.5661435014324425e-05,
+      "Fmag_y_N": 0.0,
+      "Fmag_z_N": 0.0,
+      "Tmag_x_Nm": 2.845006939619504e-07,
+      "Tmag_y_Nm": -1.7112204028358643e-06,
+      "Tmag_z_Nm": -6.534606343020044e-06,
+      "vx_m_s": -0.0027407059531668982,
+      "vy_m_s": 0.003614996199494146,
+      "vz_m_s": -0.0012110152098730644,
+      "theta_x_rad": 0.01647068911401393,
+      "theta_y_rad": -0.14100047159314152,
+      "theta_z_rad": -0.3891690300508573,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "official_donor_count": 300084,
+      "official_receptor_count": 144161,
+      "minimum_cell_volume_m3": 6.100596812e-17,
+      "robot_wall_clearance_m": 8.659843620561957e-05,
+      "overset_wall_clearance_m": 3.6596327002863935e-05,
+      "donor_length_ratio_min": 0.36622088548321174,
+      "donor_length_ratio_median": 0.6865889062373352,
+      "donor_length_ratio_p95": 2.057232092275458,
+      "donor_length_ratio_max": 3.0050033239073866,
+      "BOI_pose_displacement_bound_m": 8.47387440018543e-05
+    },
+    "native_state": {
+      "com": [
+        0.001203492883701659,
+        1.111024063180122e-06,
+        -4.1851765169347e-07
+      ],
+      "q": [
+        0.9786259597738179,
+        0.00817658632646329,
+        -0.06999722477139195,
+        -0.19319617702512343
+      ],
+      "velocity": [
+        -0.002740705953166881,
+        0.003614996199494146,
+        -0.001211015209873064
+      ],
+      "omega": [
+        45.62366867189545,
+        -266.8027964946368,
+        -853.2500681356263
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.414252278859277,
+        "axis": [
+          0.039760044674634516,
+          -0.3403734361616873,
+          -0.9394493402003946
+        ]
+      }
+    },
+    "Fmag_N": [
+      -2.5661435014324422e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_COM_Nm": [
+      2.8450069396195066e-07,
+      -1.7112204028358656e-06,
+      -6.534606343020049e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00095516 -0.00038601  0.00014267]",
+      "B_global": "[-0.01070706 -0.00251434  0.00019227]",
+      "s_eff_mm": 31.68644543274531,
+      "phase_rad": 1.1466813185602758,
+      "ramp": 1
+    },
+    "status": "SAVED_HASHED_STOP_PENDING_REVIEW",
+    "integrity": {
+      "step": 73,
+      "time_s": 0.001825000000000002,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+          "size_bytes": 109763884,
+          "sha256": "f5bbbd0d737fc547cde010590b08ec483cb81a925e14a8a248166c1131b510e5",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5",
+          "size_bytes": 557884661,
+          "sha256": "3f9ee63ebc989c413555e4089d9cfea1ea35f5f21a9117fe182175c343fe1474",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    }
+  },
+  "checkpoint_integrity_review": {
+    "50": {
+      "step": 50,
+      "time_s": 0.00125,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.cas.h5",
+          "size_bytes": 109167322,
+          "sha256": "009e08680b6e8a30483765b070c89abbc10dfe0f41c9b9ee620d765c2fd9744b",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.dat.h5",
+          "size_bytes": 538327646,
+          "sha256": "f4e8d0060763e8f6673e4392bc18b5c533b1793fd1b7424702bafb0aa0e3a4a2",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    },
+    "60": {
+      "step": 60,
+      "time_s": 0.001500000000000001,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.cas.h5",
+          "size_bytes": 109288051,
+          "sha256": "5610b3647365ec9ec3076dcdba6960bf63df6f0089428fe741212f5641e63805",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.dat.h5",
+          "size_bytes": 543876584,
+          "sha256": "1cf75c71d731a98b547727769f6251081a4b84d7426f3397e3d7505d11987133",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    },
+    "70": {
+      "step": 70,
+      "time_s": 0.001750000000000001,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
+          "size_bytes": 109628295,
+          "sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
+          "size_bytes": 553723925,
+          "sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    }
+  },
+  "stop_checkpoint_integrity_review": {
+    "step": 73,
+    "time_s": 0.001825000000000002,
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+        "size_bytes": 109763884,
+        "sha256": "f5bbbd0d737fc547cde010590b08ec483cb81a925e14a8a248166c1131b510e5",
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5",
+        "size_bytes": 557884661,
+        "sha256": "3f9ee63ebc989c413555e4089d9cfea1ea35f5f21a9117fe182175c343fe1474",
+        "HDF5_readable": true
+      }
+    },
+    "status": "PASS",
+    "timesteps_advanced": 0
+  },
+  "clearance_audit": "failure_review/clearance_audit.json",
+  "saved_actual_FieldData_snapshot_count": 17,
+  "required_user_decision": "Any continuation requires explicit new authorization for a changed physical configuration or clearance policy; current frozen scope ends at this stop."
+}

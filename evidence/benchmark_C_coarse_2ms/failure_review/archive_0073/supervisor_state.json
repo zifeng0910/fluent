@@ -1,0 +1,27 @@
+{
+  "status": "AWAITING_REPAIR_REVIEW",
+  "timestamp": "2026-10-03T09:58:57.060236+00:00",
+  "supervisor_pid": 9172,
+  "supervisor_created": 1791009921.0313845,
+  "supervisor_alive": false,
+  "memory": {
+    "timestamp": "2026-10-03T06:46:21.530876+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 16.72924041748047,
+    "used_gib": 15.110557556152344,
+    "commit_gib": 23.695602416992188,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.4953115067511815,
+    "pagefile_used_gib": 0.8489799499511719,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.16015625,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.151020050048828,
+    "commit_headroom_gib": 24.144195556640625,
+    "disk_free_gib": 209.74039840698242
+  },
+  "worker_pid": null,
+  "worker_created": 1791009981.6094837,
+  "worker_launched_once": true,
+  "worker_returncode": 0
+}

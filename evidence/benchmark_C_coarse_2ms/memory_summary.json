@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-03T09:58:51.572462+00:00",
+  "sample_count": 2253,
+  "peak_project_working_set_gib": 8.72747802734375,
+  "peak_project_private_bytes_gib": 15.909618377685547,
+  "peak_measured_system_commit_gib": 40.689048767089844,
+  "peak_measured_system_commit_percent": 85.05271863713942,
+  "minimum_available_gib": 7.3036041259765625,
+  "abort": null,
+  "boot_CommitPeak_is_not_campaign_peak": true,
+  "unrelated_processes_touched": []
+}

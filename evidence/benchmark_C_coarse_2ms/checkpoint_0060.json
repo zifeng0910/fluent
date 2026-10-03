@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-10-03T08:42:25.595486+00:00",
+  "step": 60,
+  "time_s": 0.001500000000000001,
+  "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.dat.h5",
+  "case_sha256": "5610b3647365ec9ec3076dcdba6960bf63df6f0089428fe741212f5641e63805",
+  "data_sha256": "1cf75c71d731a98b547727769f6251081a4b84d7426f3397e3d7505d11987133",
+  "case_size_bytes": 109288051,
+  "data_size_bytes": 543876584,
+  "row": {
+    "step": 60,
+    "time_s": 0.001500000000000001,
+    "com_x_m": 0.001204478134135361,
+    "com_y_m": 3.9378928773409e-07,
+    "com_z_m": -1.683686593111596e-07,
+    "q0": 0.9954022843978216,
+    "q1": 0.0037362155557249623,
+    "q2": -0.03636424096304197,
+    "q3": -0.08853233809236649,
+    "q_norm": 0.9999999999999999,
+    "omega_x_rad_s": 22.622751751201815,
+    "omega_y_rad_s": -161.2429692334403,
+    "omega_z_rad_s": -475.2039935770703,
+    "Fmag_x_N": -2.7466934209585383e-05,
+    "Fmag_y_N": 0.0,
+    "Fmag_z_N": 0.0,
+    "Tmag_x_Nm": 1.2577663388059874e-07,
+    "Tmag_y_Nm": -1.1203718150861467e-06,
+    "Tmag_z_Nm": -4.165983658562312e-06,
+    "vx_m_s": -0.002866906822163207,
+    "vy_m_s": 0.001277611490787303,
+    "vz_m_s": -0.000465022385600718,
+    "theta_x_rad": 0.0074839042520224415,
+    "theta_y_rad": -0.07284014894372821,
+    "theta_z_rad": -0.17733654057397993,
+    "orphan_count": 0,
+    "receptors_without_donors": 0,
+    "official_donor_count": 303921,
+    "official_receptor_count": 144023,
+    "minimum_cell_volume_m3": 6.100596812e-17,
+    "robot_wall_clearance_m": 0.00028998585288514265,
+    "overset_wall_clearance_m": 0.00024004107318564223,
+    "donor_length_ratio_min": 0.34356499017853187,
+    "donor_length_ratio_median": 0.6937372138865782,
+    "donor_length_ratio_p95": 2.0586475054011295,
+    "donor_length_ratio_max": 2.9553746759947845,
+    "BOI_pose_displacement_bound_m": 1.2256484486766565e-05
+  },
+  "native_state": {
+    "com": [
+      0.001204478134135361,
+      3.9378928773409e-07,
+      -1.683686593111596e-07
+    ],
+    "q": [
+      0.9954022843978216,
+      0.0037362155557249623,
+      -0.03636424096304197,
+      -0.08853233809236649
+    ],
+    "velocity": [
+      -0.002866906822163201,
+      0.001277611490787303,
+      -0.000465022385600718
+    ],
+    "omega": [
+      22.62275175120751,
+      -161.2429692334512,
+      -475.2039935770992
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.19185917946177328,
+      "axis": [
+        0.03900727748871475,
+        -0.37965422946177707,
+        -0.9243057385706868
+      ]
+    }
+  },
+  "Fmag_N": [
+    -2.7466934209585376e-05,
+    0.0,
+    0.0
+  ],
+  "Tmag_COM_Nm": [
+    1.25776633880599e-07,
+    -1.1203718150861482e-06,
+    -4.1659836585623175e-06
+  ],
+  "source_state": {
+    "moment_global": "[ 1.02231368e-03 -1.74643459e-04  7.78324665e-05]",
+    "B_global": "[-0.01076686 -0.00223574  0.0002762 ]",
+    "s_eff_mm": 31.68938068317901,
+    "phase_rad": 0.9424777960769385,
+    "ramp": 1
+  },
+  "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS",
+  "integrity": {
+    "step": 60,
+    "time_s": 0.001500000000000001,
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.cas.h5",
+        "size_bytes": 109288051,
+        "sha256": "5610b3647365ec9ec3076dcdba6960bf63df6f0089428fe741212f5641e63805",
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.dat.h5",
+        "size_bytes": 543876584,
+        "sha256": "1cf75c71d731a98b547727769f6251081a4b84d7426f3397e3d7505d11987133",
+        "HDF5_readable": true
+      }
+    },
+    "status": "PASS",
+    "timesteps_advanced": 0
+  }
+}

@@ -1,0 +1,11 @@
+{"timestamp": "2026-10-03T06:38:46.359256+00:00", "event": "PREPARED", "checkpoint40_integrity": "PASS", "deadline_epoch": 1791064287.4467711}
+{"timestamp": "2026-10-03T06:45:21.218642+00:00", "event": "SUPERVISOR_STARTED", "deadline_epoch": 1791064287.4467711}
+{"timestamp": "2026-10-03T06:46:21.621512+00:00", "event": "WORKER_LAUNCHED", "pid": 37404, "one_rank": true}
+{"timestamp": "2026-10-03T06:48:45.351596+00:00", "event": "STEP40_NATIVE_RESTART_PASS", "timesteps_advanced": 0, "time_s": 0.0009999999999999994}
+{"timestamp": "2026-10-03T07:46:29.700800+00:00", "event": "CHECKPOINT_SAVED", "step": 50, "time_s": 0.00125, "kind": "VALID"}
+{"timestamp": "2026-10-03T08:42:26.245150+00:00", "event": "CHECKPOINT_SAVED", "step": 60, "time_s": 0.001500000000000001, "kind": "VALID"}
+{"timestamp": "2026-10-03T09:39:45.629381+00:00", "event": "CHECKPOINT_SAVED", "step": 70, "time_s": 0.001750000000000001, "kind": "VALID"}
+{"timestamp": "2026-10-03T09:58:15.437625+00:00", "event": "CHECKPOINT_SAVED", "step": 73, "time_s": 0.001825000000000002, "kind": "STOP"}
+{"timestamp": "2026-10-03T09:58:15.443427+00:00", "event": "WORKER_FAILURE", "error": "RuntimeError('DYNAMIC_HARD_GATE: CLEARANCE')"}
+{"timestamp": "2026-10-03T09:58:57.049659+00:00", "event": "WORKER_EXITED", "returncode": 0, "campaign_status": "AWAITING_REPAIR_REVIEW"}
+{"timestamp": "2026-10-03T10:17:42.434556+00:00", "event": "REVIEWED_PHYSICAL_CLEARANCE_HARD_BLOCKER", "step": 73, "time_s": 0.001825000000000002, "last_valid_step": 72, "measured_clearance_mm": 0.08659843620561958, "stop_checkpoint_integrity": "PASS", "numerical_2ms_result": "INCOMPLETE", "repairs_attempted": 0}

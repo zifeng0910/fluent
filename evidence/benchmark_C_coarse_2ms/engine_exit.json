@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-03T09:58:45.596232+00:00",
+  "SDK_exit_requested": true,
+  "unrelated_processes_touched": [],
+  "terminated": [
+    {
+      "pid": 22616,
+      "created": 1791009993.252864,
+      "registered_host_pid": 34732,
+      "mport": "127.0.0.1:127.0.0.1:60556:0",
+      "ownership_evidence": "Node -mport matches registered Fluent host local TCP port",
+      "name": "fl_mpi2610.exe",
+      "ownership": "Node -mport matches registered Fluent host local TCP port"
+    },
+    {
+      "pid": 34732,
+      "created": 1791009990.501614,
+      "name": "fl2610.exe",
+      "ownership": "SDK registered host/cortex"
+    },
+    {
+      "pid": 33724,
+      "created": 1791009983.8415053,
+      "name": "cx2610.exe",
+      "ownership": "SDK registered host/cortex"
+    }
+  ],
+  "CPU_seconds_over5s": {
+    "34732": 0.03125,
+    "33724": 0.0,
+    "22616": 0.0
+  },
+  "owned_engine_closed": true
+}

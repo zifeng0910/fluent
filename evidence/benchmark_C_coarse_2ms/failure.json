@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-10-03T09:57:18.880312+00:00",
+  "error": "RuntimeError('DYNAMIC_HARD_GATE: CLEARANCE')",
+  "traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_C_coarse_2ms_worker.py\", line 247, in main\n    if reasons:raise RuntimeError('DYNAMIC_HARD_GATE: '+','.join(reasons))\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: DYNAMIC_HARD_GATE: CLEARANCE\n",
+  "recorded_history_step": 73,
+  "profile_abort": null,
+  "stop_checkpoint": {
+    "timestamp": "2026-10-03T09:58:14.817326+00:00",
+    "step": 73,
+    "time_s": 0.001825000000000002,
+    "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5",
+    "case_sha256": "f5bbbd0d737fc547cde010590b08ec483cb81a925e14a8a248166c1131b510e5",
+    "data_sha256": "3f9ee63ebc989c413555e4089d9cfea1ea35f5f21a9117fe182175c343fe1474",
+    "case_size_bytes": 109763884,
+    "data_size_bytes": 557884661,
+    "row": {
+      "step": 73,
+      "time_s": 0.001825000000000002,
+      "com_x_m": 0.001203492883701659,
+      "com_y_m": 1.111024063180122e-06,
+      "com_z_m": -4.1851765169347e-07,
+      "q0": 0.9786259597738179,
+      "q1": 0.00817658632646329,
+      "q2": -0.06999722477139195,
+      "q3": -0.19319617702512343,
+      "q_norm": 1.0,
+      "omega_x_rad_s": 45.623668671888815,
+      "omega_y_rad_s": -266.8027964946249,
+      "omega_z_rad_s": -853.2500681355963,
+      "Fmag_x_N": -2.5661435014324425e-05,
+      "Fmag_y_N": 0.0,
+      "Fmag_z_N": 0.0,
+      "Tmag_x_Nm": 2.845006939619504e-07,
+      "Tmag_y_Nm": -1.7112204028358643e-06,
+      "Tmag_z_Nm": -6.534606343020044e-06,
+      "vx_m_s": -0.0027407059531668982,
+      "vy_m_s": 0.003614996199494146,
+      "vz_m_s": -0.0012110152098730644,
+      "theta_x_rad": 0.01647068911401393,
+      "theta_y_rad": -0.14100047159314152,
+      "theta_z_rad": -0.3891690300508573,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "official_donor_count": 300084,
+      "official_receptor_count": 144161,
+      "minimum_cell_volume_m3": 6.100596812e-17,
+      "robot_wall_clearance_m": 8.659843620561957e-05,
+      "overset_wall_clearance_m": 3.6596327002863935e-05,
+      "donor_length_ratio_min": 0.36622088548321174,
+      "donor_length_ratio_median": 0.6865889062373352,
+      "donor_length_ratio_p95": 2.057232092275458,
+      "donor_length_ratio_max": 3.0050033239073866,
+      "BOI_pose_displacement_bound_m": 8.47387440018543e-05
+    },
+    "native_state": {
+      "com": [
+        0.001203492883701659,
+        1.111024063180122e-06,
+        -4.1851765169347e-07
+      ],
+      "q": [
+        0.9786259597738179,
+        0.00817658632646329,
+        -0.06999722477139195,
+        -0.19319617702512343
+      ],
+      "velocity": [
+        -0.002740705953166881,
+        0.003614996199494146,
+        -0.001211015209873064
+      ],
+      "omega": [
+        45.62366867189545,
+        -266.8027964946368,
+        -853.2500681356263
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.414252278859277,
+        "axis": [
+          0.039760044674634516,
+          -0.3403734361616873,
+          -0.9394493402003946
+        ]
+      }
+    },
+    "Fmag_N": [
+      -2.5661435014324422e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_COM_Nm": [
+      2.8450069396195066e-07,
+      -1.7112204028358656e-06,
+      -6.534606343020049e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00095516 -0.00038601  0.00014267]",
+      "B_global": "[-0.01070706 -0.00251434  0.00019227]",
+      "s_eff_mm": 31.68644543274531,
+      "phase_rad": 1.1466813185602758,
+      "ramp": 1
+    },
+    "status": "SAVED_HASHED_STOP_PENDING_REVIEW",
+    "integrity": {
+      "step": 73,
+      "time_s": 0.001825000000000002,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+          "size_bytes": 109763884,
+          "sha256": "f5bbbd0d737fc547cde010590b08ec483cb81a925e14a8a248166c1131b510e5",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5",
+          "size_bytes": 557884661,
+          "sha256": "3f9ee63ebc989c413555e4089d9cfea1ea35f5f21a9117fe182175c343fe1474",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "step": 72,
+  "time_s": 0.001800000000000001,
+  "native_state": {
+    "com": [
+      0.001203563385993184,
+      1.024403568508887e-06,
+      -3.890788079852901e-07
+    ],
+    "q": [
+      0.9808195765117603,
+      0.007730672227123972,
+      -0.06681114733878521,
+      -0.18294661961753494
+    ],
+    "velocity": [
+      -0.002899477368782375,
+      0.00331464337420466,
+      -0.001144092286781325
+    ],
+    "omega": [
+      43.38483215988855,
+      -257.0306709766522,
+      -818.6407052495359
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.3923473340878853,
+      "axis": [
+        0.03966118667990433,
+        -0.3427657141645439,
+        -0.9385833236662645
+      ]
+    }
+  },
+  "physical_clearance_m": 0.00010495915844157146,
+  "static_envelope_exceeded": true,
+  "orientation_magnitude_rad": 0.3923473340878853,
+  "classification": "STATIC_ENVELOPE_EXCEEDED_BUT_DYNAMIC_CONNECTIVITY_VALID",
+  "hard_failures": [],
+  "donor_length_ratio_policy": "WARNING_ONLY"
+}

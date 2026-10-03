@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-03T10:17:42.024516+00:00",
+  "plan_id": "step73-clearance-hard-blocker-99061c46-a12c-4201-a6be-892901a153db",
+  "campaign": "BENCHMARK_C_COARSE_2MS_CONTINUATION",
+  "decision": "HARD_BLOCKER",
+  "failure_timestamp": "2026-10-03T09:57:18.880312+00:00",
+  "failure_class": "PHYSICAL_CLEARANCE",
+  "deadline_epoch": 1791064287.4467711,
+  "root_cause": "Actual saved robot-wall physical clearance at step73 is0.086598436mm, below the frozen0.10mm hard gate; official connectivity is valid and resources did not abort.",
+  "reason": "An unchanged native restart at step73 cannot satisfy the clearance gate. Further dynamics require a newly authorized physics/configuration or clearance-policy decision.",
+  "evidence_files": [
+    "evidence/benchmark_C_coarse_2ms/failure.json",
+    "evidence/benchmark_C_coarse_2ms/failure_pose.json",
+    "evidence/benchmark_C_coarse_2ms/stop_0073.json",
+    "evidence/benchmark_C_coarse_2ms/failure_review/clearance_audit.json",
+    "evidence/benchmark_C_coarse_2ms/memory_summary.json",
+    "evidence/benchmark_C_coarse_2ms/engine_exit.json"
+  ],
+  "job": "scripts/benchmark_C_coarse_2ms_clearance_audit.py",
+  "job_sha256": "9ff893550fd6cca14759b6b13f34a14f9823e927e859f13c06475534935adb8e",
+  "config": "evidence/benchmark_C_coarse_2ms/configuration.json",
+  "configuration_sha256": "ce55bcb08c45ee9daa48f2fc5ba4abb13594480b2a12ac5f2c37c81c6adc01ec",
+  "repair_count_for_failure_class": 0,
+  "dynamics_advanced_by_diagnostic": 0,
+  "saved_native_step": 73,
+  "saved_native_time_s": 0.001825000000000002,
+  "last_valid_step": 72,
+  "request_solver_launch": false,
+  "frozen_physics_changed": false,
+  "preserved_checkpoint": {
+    "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-10-03T10:10:44.872065+00:00",
+  "status": "PASS",
+  "diagnostic_timesteps_advanced": 0,
+  "Fluent_session_launched_or_connected": false,
+  "classification": "PHYSICAL_CLEARANCE_HARD_GATE_REQUIRES_USER_REVIEW",
+  "campaign_result": "INCOMPLETE",
+  "step": 73,
+  "native_time_s": 0.001825000000000002,
+  "last_all_gate_valid_step": 72,
+  "last_all_gate_valid_time_s": 0.001800000000000001,
+  "last_all_gate_valid_clearance_m": 0.00010495915844157146,
+  "minimum_clearance_required_m": 0.0001,
+  "measured_clearance_m": 8.659843620561957e-05,
+  "clearance_shortfall_m": 1.3401563794380433e-05,
+  "geometry_method": "Actual robot vertex to closest actual triangulated pipe surface; unsigned Euclidean distance",
+  "closest_robot_vertex": 6016,
+  "closest_robot_xyz_m": [
+    0.0020413033198565245,
+    -0.0007626067381352186,
+    0.00027797845541499555
+  ],
+  "closest_pipe_triangle": 14727,
+  "closest_pipe_xyz_m": [
+    0.002041303432227186,
+    -0.0008428994324570641,
+    0.0003104187450528027
+  ],
+  "native_pose_to_actual_geometry_max_error_m": 2.2753563385557263e-10,
+  "native_state": {
+    "com": [
+      0.001203492883701659,
+      1.111024063180122e-06,
+      -4.1851765169347e-07
+    ],
+    "q": [
+      0.9786259597738179,
+      0.00817658632646329,
+      -0.06999722477139195,
+      -0.19319617702512343
+    ],
+    "velocity": [
+      -0.002740705953166881,
+      0.003614996199494146,
+      -0.001211015209873064
+    ],
+    "omega": [
+      45.62366867189545,
+      -266.8027964946368,
+      -853.2500681356263
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.414252278859277,
+      "axis": [
+        0.039760044674634516,
+        -0.3403734361616873,
+        -0.9394493402003946
+      ]
+    }
+  },
+  "native_state_vs_history": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 1.734723475976807e-17,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 3.001332515850663e-11,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "orientation_magnitude_rad": 0.41425227885927707,
+  "static_rotation_bound_rad": 0.35,
+  "COM_translation_magnitude_m": 2.7909223780754697e-06,
+  "static_envelope_exceeded_is_only_warning": true,
+  "actual_connectivity_all_steps41_to73_valid": true,
+  "orphan_count": 0,
+  "invalid_donor_count": 0,
+  "minimum_cell_volume_m3": 6.100596812e-17,
+  "local_orphan_spacing_diagnosis": "NOT_APPLICABLE: no orphan or invalid donor at failure",
+  "donor_length_ratio_failure_step": 3.0050033239073866,
+  "donor_length_ratio_policy": "WARNING_ONLY",
+  "stop_checkpoint_integrity": {
+    "step": 73,
+    "time_s": 0.001825000000000002,
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.cas.h5",
+        "size_bytes": 109763884,
+        "sha256": "f5bbbd0d737fc547cde010590b08ec483cb81a925e14a8a248166c1131b510e5",
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\stop_0073.dat.h5",
+        "size_bytes": 557884661,
+        "sha256": "3f9ee63ebc989c413555e4089d9cfea1ea35f5f21a9117fe182175c343fe1474",
+        "HDF5_readable": true
+      }
+    },
+    "status": "PASS",
+    "timesteps_advanced": 0
+  },
+  "checkpoint_integrity": {
+    "50": {
+      "step": 50,
+      "time_s": 0.00125,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.cas.h5",
+          "size_bytes": 109167322,
+          "sha256": "009e08680b6e8a30483765b070c89abbc10dfe0f41c9b9ee620d765c2fd9744b",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0050.dat.h5",
+          "size_bytes": 538327646,
+          "sha256": "f4e8d0060763e8f6673e4392bc18b5c533b1793fd1b7424702bafb0aa0e3a4a2",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    },
+    "60": {
+      "step": 60,
+      "time_s": 0.001500000000000001,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.cas.h5",
+          "size_bytes": 109288051,
+          "sha256": "5610b3647365ec9ec3076dcdba6960bf63df6f0089428fe741212f5641e63805",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0060.dat.h5",
+          "size_bytes": 543876584,
+          "sha256": "1cf75c71d731a98b547727769f6251081a4b84d7426f3397e3d7505d11987133",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    },
+    "70": {
+      "step": 70,
+      "time_s": 0.001750000000000001,
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
+          "size_bytes": 109628295,
+          "sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
+          "size_bytes": 553723925,
+          "sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
+          "HDF5_readable": true
+        }
+      },
+      "status": "PASS",
+      "timesteps_advanced": 0
+    }
+  },
+  "checkpoint_review_kind": "Offline HDF5/hash/native saved time and geometry audit; no cold solver reload",
+  "resources": {
+    "timestamp": "2026-10-03T09:58:51.572462+00:00",
+    "sample_count": 2253,
+    "peak_project_working_set_gib": 8.72747802734375,
+    "peak_project_private_bytes_gib": 15.909618377685547,
+    "peak_measured_system_commit_gib": 40.689048767089844,
+    "peak_measured_system_commit_percent": 85.05271863713942,
+    "minimum_available_gib": 7.3036041259765625,
+    "abort": null,
+    "boot_CommitPeak_is_not_campaign_peak": true,
+    "unrelated_processes_touched": []
+  },
+  "process_identities": {
+    "supervisor_alive": false,
+    "worker_alive": false,
+    "owned_engines_alive": [
+      false,
+      false,
+      false
+    ]
+  },
+  "owned_solver_closed": true,
+  "unrelated_processes_touched": [],
+  "repairs_attempted_for_clearance": 0,
+  "reason_no_unchanged_retry": "Step73 saved physical gap is already below the frozen0.10mm gate. Restart cannot satisfy that gate. Remeshing cannot change this saved physical pose.",
+  "required_user_decision": "Any continuation requires explicit new authorization for a changed physical configuration or clearance policy; current frozen scope ends at this stop.",
+  "source_sha256": {
+    "evidence/benchmark_C_coarse_2ms/failure.json": "f4188940321e536ace76b7f0f76f4156fcbcb83cfe5c305db5c3500db327c2f2",
+    "evidence/benchmark_C_coarse_2ms/failure_pose.json": "c888a133a3d185e1830d5eb78cab4554b10f4f6b72f859b94e20ec9e16cd0b1e",
+    "evidence/benchmark_C_coarse_2ms/stop_0073.json": "8aa3d322666156e9e9b15351c922f149ccebd845e77aa1e5379a72f03e612985",
+    "evidence/benchmark_C_coarse_2ms/dynamic_history.csv": "f1e9bec766d9c67a3d118f78c3cb9431f2573d9d8462874425c0922b30839b3e",
+    "evidence/benchmark_C_coarse_2ms/memory_summary.json": "70472fbbf62b3ea525d916247e82a8f4131d7b634c0d50eb2ee0d8e95900c73f",
+    "evidence/benchmark_C_coarse_2ms/engine_exit.json": "8c3a967b6f47263137e3c26a4d2d13bfc9effa03c8454f05da1d100af37d15a7",
+    "evidence/benchmark_C_coarse_2ms/fielddata/robot_failure_0073.vtp": "d718535b28fc185aa24e965568f0deaec1c50e158d4d87b31a065b400ec272e4",
+    "evidence/benchmark_C_coarse_2ms/fielddata/robot_0000.vtp": "80fc255244829a77caebe14644b0a1e28f00803e28554b8510505116bc7d10b2",
+    "evidence/benchmark_C_coarse_2ms/fielddata/pipe.vtp": "ae2c4c6546a34568eceb2bf396c1c1bcac0705348c4280b52bb9e5bf9c9a9b0b",
+    "evidence/benchmark_C_coarse_2ms/fielddata/connectivity_0073.json": "326b84dbcd597d59fd952b89ff3ce1d75cc6eb4da6930d4f3d00c9c2acd917c3",
+    "live_cases/benchmark_C_coarse_2ms/failure_official_cells_0073.csv": "f079084dbcd8ee1445c674aba295e42689b54daa134e5049d885aa13a714648b"
+  },
+  "archived_original_evidence_sha256": {
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/failure.json": "f4188940321e536ace76b7f0f76f4156fcbcb83cfe5c305db5c3500db327c2f2",
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/failure_pose.json": "c888a133a3d185e1830d5eb78cab4554b10f4f6b72f859b94e20ec9e16cd0b1e",
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/stop_0073.json": "8aa3d322666156e9e9b15351c922f149ccebd845e77aa1e5379a72f03e612985",
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/state.json": "bc549ffb83d3e8c554c74456db055a89d5dd132f5146ec17ad1cffd3170a5691",
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/supervisor_state.json": "611b2cca023c34049a87cc3e196f3a4917c6ddc25638d603ce0ab09ec4b9d414",
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/dynamic.json": "f635e443b91af23262519a3d0fab2384fcce3bcd79fe5b5e1743054ef8e92697",
+    "evidence/benchmark_C_coarse_2ms/failure_review/archive_0073/engine_exit.json": "8c3a967b6f47263137e3c26a4d2d13bfc9effa03c8454f05da1d100af37d15a7"
+  }
+}

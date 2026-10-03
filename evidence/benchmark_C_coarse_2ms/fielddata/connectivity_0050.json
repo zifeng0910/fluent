@@ -1,0 +1,33 @@
+{
+  "cell_type_counts": {
+    "-3": 0,
+    "-2": 981654,
+    "-1": 0,
+    "0": 143977,
+    "1": 3269018,
+    "2": 304652
+  },
+  "orphans": 0,
+  "orphan_cellnumber_xyz_first20": [],
+  "donors": 304652,
+  "receptors": 143977,
+  "total_cells": 4699301,
+  "minimum_volume_m3": 6.100596812e-17,
+  "donor_volume_ratio": {
+    "min": 0.05805453864,
+    "median": 0.33692140805000004,
+    "p95": 8.737554266000002,
+    "max": 23.7775216
+  },
+  "donor_characteristic_length_ratio": {
+    "min": 0.3872089549886317,
+    "median": 0.6958402328728182,
+    "p95": 2.059665187814382,
+    "max": 2.875558418562056
+  },
+  "donor_length_ratio_gt3_count": 0,
+  "donor_ratio_samples": 304652,
+  "time_s": 0.00125,
+  "receptors_with_valid_donors": 144599,
+  "invalid_donors": 0
+}

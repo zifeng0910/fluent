@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-03T10:19:06.966333+00:00",
+  "scheduled_tasks": [
+    {
+      "TaskName": "Fluent-Benchmark-C-Coarse-20h",
+      "State": "Disabled"
+    },
+    {
+      "TaskName": "Fluent-Benchmark-C-Coarse-2ms",
+      "State": "Disabled"
+    },
+    {
+      "TaskName": "Fluent-Benchmark-C-Coarse-Screening",
+      "State": "Disabled"
+    },
+    {
+      "TaskName": "Fluent-Benchmark-C-Longrun",
+      "State": "Disabled"
+    },
+    {
+      "TaskName": "Fluent-Benchmark-C-Recovery-V2",
+      "State": "Disabled"
+    }
+  ],
+  "heartbeat_status": "PAUSED",
+  "no_solver_launch": true,
+  "no_new_deadline": true,
+  "owned_solver_closed": true
+}

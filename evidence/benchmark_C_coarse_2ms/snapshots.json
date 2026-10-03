@@ -1,0 +1,157 @@
+{
+  "frames": [
+    {
+      "step": 40,
+      "time_s": 0.0009999999999999994,
+      "velocity_max_m_s": 0.1563369482755661,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56577,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 42,
+      "time_s": 0.00105,
+      "velocity_max_m_s": 0.18300274014472961,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56543,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 44,
+      "time_s": 0.0011,
+      "velocity_max_m_s": 0.21257928013801575,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56503,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 46,
+      "time_s": 0.00115,
+      "velocity_max_m_s": 0.2452741414308548,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56518,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 48,
+      "time_s": 0.0012,
+      "velocity_max_m_s": 0.2802734971046448,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56478,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 50,
+      "time_s": 0.00125,
+      "velocity_max_m_s": 0.3181915879249573,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56528,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 52,
+      "time_s": 0.0013,
+      "velocity_max_m_s": 0.36041149497032166,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56510,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 54,
+      "time_s": 0.00135,
+      "velocity_max_m_s": 0.40920811891555786,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56499,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 56,
+      "time_s": 0.0014,
+      "velocity_max_m_s": 0.46014899015426636,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56484,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 58,
+      "time_s": 0.001450000000000001,
+      "velocity_max_m_s": 0.5114107131958008,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56450,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 60,
+      "time_s": 0.001500000000000001,
+      "velocity_max_m_s": 0.5689681768417358,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56451,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 62,
+      "time_s": 0.001550000000000001,
+      "velocity_max_m_s": 0.6336947083473206,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56406,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 64,
+      "time_s": 0.001600000000000001,
+      "velocity_max_m_s": 0.7047618627548218,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56445,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 66,
+      "time_s": 0.001650000000000001,
+      "velocity_max_m_s": 0.7840331196784973,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56448,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 68,
+      "time_s": 0.001700000000000001,
+      "velocity_max_m_s": 0.852803647518158,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56386,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 70,
+      "time_s": 0.001750000000000001,
+      "velocity_max_m_s": 0.9425961971282959,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56347,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    },
+    {
+      "step": 72,
+      "time_s": 0.001800000000000001,
+      "velocity_max_m_s": 1.0592855215072632,
+      "velocity_min_m_s": 0.0,
+      "velocity_points": 56402,
+      "actual_FieldData": true,
+      "fielddata_export_complete": true
+    }
+  ]
+}
