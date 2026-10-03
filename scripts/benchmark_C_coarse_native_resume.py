@@ -36,7 +36,7 @@ class CommitProfile(MemoryProfile):
 
 def validation(solver,checkpoint,step):
     rows=list(csv.DictReader((EVID/'dynamic_history.csv').open()))
-    row=next(r for r in reversed(rows) if int(r['step'])==step)
+    row=checkpoint.get('provisional_row') or next(r for r in reversed(rows) if int(r['step'])==step)
     rec={'timestamp':stamp(),'step':step,'status':'RUNNING','timesteps_advanced':0,
          'pose_reset_performed':False,'velocity_reset_performed':False,'row':row}
     path=EVID/f'benchmark_C_coarse_step{step}_restart_validation.json'
@@ -137,14 +137,21 @@ def main():
         shutil.copy2(EVID/name,logdir/name)
     atomic(logdir/'archive_manifest.json',{'timestamp':stamp(),'files':{p.name:sha(p) for p in logdir.glob('*.json') if p.name!='archive_manifest.json'},'dynamic_history_sha256':sha(logdir/'dynamic_history.csv')})
     checkpoint=read(ROOT/config['checkpoint_metadata']);step=int(checkpoint['step'])
-    if step!=int(read(EVID/'dynamic.json')['completed_steps']) or step>=40: raise RuntimeError('Native checkpoint/current step mismatch')
+    recorded_step=int(read(EVID/'dynamic.json')['completed_steps'])
+    recover=bool(config.get('recover_missing_history_row'))
+    if (step!=recorded_step and not (recover and step==recorded_step+1 and checkpoint.get('provisional_row'))) or step>=40:
+        raise RuntimeError('Native checkpoint/current step mismatch')
+    if recover:
+        review=read(ROOT/config['recovery_review'])
+        if review.get('status')!='OFFLINE_NATIVE_CALLBACK_MATCH_PASS_PENDING_COLD_GATE' or sha(ROOT/config['recovery_review'])!=config['recovery_review_sha256']:
+            raise RuntimeError('Reviewed actual-time/history recovery required')
     for k in ['case','data']:
         if sha(Path(checkpoint[k]))!=checkpoint[k+'_sha256']: raise RuntimeError('Checkpoint hash changed before launch')
     # Admission reserved ~19 GiB commit headroom from observed historical load increase plus margin.
     m=system()
     if m['available_gib']<12 or m['commit_headroom_gib']<19 or psutil.disk_usage(str(ROOT)).free/2**30<35:
         state('RESOURCE_BLOCKER',error='Cold restart admission changed; zero new steps');return
-    state('NATIVE_RESTART',current_step=step,target_step=40,job='scripts/benchmark_C_coarse_native_resume.py',job_created=psutil.Process().create_time(),worker_alive=True,solver_alive=False,attempt=attempt,error=None,execution_owner='20h local supervisor / direct pythonw worker')
+    state('NATIVE_RESTART',current_step=recorded_step,native_checkpoint_step=step,target_step=40,job='scripts/benchmark_C_coarse_native_resume.py',job_pid=os.getpid(),job_created=psutil.Process().create_time(),worker_alive=True,solver_alive=False,scheduler_enabled=True,memory=m,attempt=attempt,error=None,execution_owner='20h local supervisor / direct pythonw worker')
     try:
         import ansys.fluent.core as pyfluent
         profile=CommitProfile();profile.start()
@@ -152,10 +159,25 @@ def main():
         profile.solver=solver;profile.sample('after_Fluent_launch')
         cp=solver.connection_properties
         atomic(logdir/'owned_engine.json',{'timestamp':stamp(),'host_pid':cp.fluent_host_pid,'host_created':psutil.Process(cp.fluent_host_pid).create_time(),'cortex_pid':cp.cortex_pid,'requested_processor_count':1,'ui_mode':'no_gui_or_graphics'})
+        state('NATIVE_RESTART',solver_alive=True,owned_host_pid=cp.fluent_host_pid)
         solver.transcript.start(str(logdir/'solver.trn'))
         solver.settings.file.read_case(file_name=checkpoint['case']);solver.settings.file.read_data(file_name=checkpoint['data'])
         profile.sample('after_native_CASE_DATA_read');profile.check('zero_step_restart_gate')
         rec=validation(solver,checkpoint,step)
+        if recover:
+            rows=list(csv.DictReader((EVID/'dynamic_history.csv').open()))
+            if int(rows[-1]['step'])!=step-1 or len(rows)!=step-1:raise RuntimeError('History recovery would duplicate or skip a row')
+            recovered=dict(checkpoint['provisional_row']); stats=rec['overset']
+            recovered.update(robot_wall_clearance_m=stats['physical_clearance_m'],overset_wall_clearance_m=stats['envelope_clearance_m'])
+            with (EVID/'dynamic_history.csv').open('a',newline='') as fp:
+                csv.DictWriter(fp,fieldnames=list(rows[-1])).writerow(recovered)
+            dyn=read(EVID/'dynamic.json');dyn.update(completed_steps=step,time_s=rec['native_time_s'],latest_row=recovered,status='NATIVE_HISTORY_RECOVERED',history_recovery_review=config['recovery_review'])
+            if step%10==0 and not any(x['steps']==step for x in dyn['stages']):dyn['stages'].append({'steps':step,'status':'PASS','time_s':rec['native_time_s'],'recovered_from_native_checkpoint':True})
+            atomic(EVID/'dynamic.json',dyn)
+            rec['row']=recovered;rec['history_recovered_without_solving']=True
+            atomic(EVID/f'benchmark_C_coarse_step{step}_restart_validation.json',rec)
+            surface_mesh(solver.fields.field_data,'robot_wall').save(EVID/f'fielddata/robot_{step:04d}.vtp')
+            surface_mesh(solver.fields.field_data,'overset_component').save(EVID/f'fielddata/component_{step:04d}.vtp')
         atomic(EVID/f'checkpoint_{step:04d}.json',{**rec,'status':'NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS'})
         from benchmark_C_coarse_dynamic import run
         run(solver,profile,resume_step=step)
@@ -175,10 +197,12 @@ def main():
         atomic(logdir/'failure.json',{'timestamp':stamp(),'error':repr(e),'traceback':traceback.format_exc(),'step':step,'dynamic':dyn})
         if solver is not None:
             try:
-                t=float(solver.scheme.eval("(rpgetvar 'flow-time)"));c=OUT/f'{attempt}_stop_{step:04d}.cas.h5';d=OUT/f'{attempt}_stop_{step:04d}.dat.h5'
+                t=float(solver.scheme.eval("(rpgetvar 'flow-time)"));native_step=int(round(t/25e-6))
+                if abs(t-native_step*25e-6)>1e-12:raise RuntimeError('Stop time is not an exact native step')
+                c=OUT/f'{attempt}_stop_{native_step:04d}.cas.h5';d=OUT/f'{attempt}_stop_{native_step:04d}.dat.h5'
                 if c.exists() or d.exists(): raise RuntimeError('Refuse stop checkpoint overwrite')
                 solver.settings.file.write_case(file_name=str(c));solver.settings.file.write_data(file_name=str(d))
-                saved={'timestamp':stamp(),'step':step,'time_s':t,'case':str(c),'data':str(d),'case_sha256':sha(c),'data_sha256':sha(d),'native_state':native_state(solver,'robot_wall'),'status':'SAVED_HASHED_PENDING_RESTART_VALIDATION'}
+                saved={'timestamp':stamp(),'step':native_step,'recorded_history_step':step,'time_s':t,'case':str(c),'data':str(d),'case_sha256':sha(c),'data_sha256':sha(d),'native_state':native_state(solver,'robot_wall'),'status':'SAVED_HASHED_PENDING_RESTART_VALIDATION'}
                 atomic(logdir/'stop_checkpoint.json',saved)
             except Exception as save_error: atomic(logdir/'stop_checkpoint_error.json',{'timestamp':stamp(),'error':repr(save_error)})
         state(status,current_step=step,time_s=dyn.get('time_s'),error=repr(e),failure_file=str(logdir/'failure.json'))
@@ -186,6 +210,14 @@ def main():
         if solver is not None:
             try:solver.exit()
             except Exception as e:atomic(logdir/'cleanup_error.json',{'timestamp':stamp(),'error':repr(e)})
+            # Fluent quit is queued asynchronously. Observe only our registered engine.
+            engine=read(logdir/'owned_engine.json')
+            for _ in range(15):
+                try:
+                    host=psutil.Process(engine['host_pid'])
+                    if abs(host.create_time()-engine['host_created'])>.01:break
+                except (psutil.Error,KeyError):break
+                time.sleep(2)
         if profile and profile.thread.is_alive(): profile.close()
         prior=read(EVID/'state.json');state(prior['status'],worker_alive=False,solver_alive=bool(native()))
         from benchmark_C_coarse_report import write_report

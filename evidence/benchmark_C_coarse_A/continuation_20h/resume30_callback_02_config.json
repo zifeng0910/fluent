@@ -1,0 +1,17 @@
+{
+  "attempt": "resume30_callback_02",
+  "checkpoint_metadata": "evidence/benchmark_C_coarse_A/continuation_20h/callback_repair_review/step30_checkpoint.json",
+  "target_step": 40,
+  "dt_s": 2.5e-05,
+  "max_iter_per_time_step": 2,
+  "processor_count": 1,
+  "ui_mode": "no_gui_or_graphics",
+  "mesh_cells": 4699301,
+  "runtime_guard_available_gib": 3,
+  "runtime_guard_commit_fraction": 0.95,
+  "runtime_guard_project_working_set_gib": 15,
+  "frozen_udf_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
+  "recover_missing_history_row": true,
+  "recovery_review": "evidence/benchmark_C_coarse_A/continuation_20h/callback_repair_review/review.json",
+  "recovery_review_sha256": "44c27fd6dbb0abe57fec0fcca60d1c3e069636356231df1ffa9e3a499cc1f87e"
+}

@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-10-03T02:02:14.255287+00:00",
+  "error": "StopIteration()",
+  "traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_C_coarse_native_resume.py\", line 161, in main\n    run(solver,profile,resume_step=step)\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\scripts\\benchmark_C_coarse_dynamic.py\", line 76, in run\n    native_row=next(r for r in reversed(callbacks) if r['mode']=='FREE_6DOF' and r['zone_name']=='robot_component_fluid' and abs(float(r['time_s'])-t)<1e-10)\nStopIteration\n",
+  "step": 29,
+  "dynamic": {
+    "status": "RUNNING",
+    "steps_requested": 40,
+    "completed_steps": 29,
+    "time_s": 0.0007249999999999997,
+    "dt_s": 2.5e-05,
+    "maximum_iterations_per_step": 2,
+    "cutoff": 1e-50,
+    "frozen_UDF_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
+    "stages": [
+      {
+        "steps": 10,
+        "status": "PASS",
+        "time_s": 0.0002500000000000001
+      },
+      {
+        "steps": 20,
+        "status": "PASS",
+        "time_s": 0.0005000000000000001
+      }
+    ],
+    "frames": [
+      {
+        "step": 10,
+        "time_s": 0.0002500000000000001
+      },
+      {
+        "step": 20,
+        "time_s": 0.0005000000000000001
+      }
+    ],
+    "gravity": [
+      0,
+      0,
+      0
+    ],
+    "automatic_overset_adaption": false,
+    "original_callback_file_bytes": 759573,
+    "maximum_component_radius_m": 0.001256018692452528,
+    "latest_row": {
+      "step": 29,
+      "time_s": 0.0007249999999999997,
+      "com_x_m": 0.00120587232525132,
+      "com_y_m": 1.158480632459022e-08,
+      "com_z_m": -9.96442984701017e-09,
+      "q0": 0.9999881076068159,
+      "q1": 0.00021945370319131826,
+      "q2": -0.003034587079140743,
+      "q3": -0.003811530699127026,
+      "q_norm": 0.9999999999999999,
+      "omega_x_rad_s": 2.4259357679288054,
+      "omega_y_rad_s": -29.91452819619727,
+      "omega_z_rad_s": -48.905799445850164,
+      "Fmag_x_N": -2.2767086681991575e-05,
+      "Fmag_y_N": 0.0,
+      "Fmag_z_N": 0.0,
+      "Tmag_x_Nm": 9.782649318738915e-09,
+      "Tmag_y_Nm": -4.46757496596776e-07,
+      "Tmag_z_Nm": -1.0244989493139047e-06,
+      "vx_m_s": -0.0007209082404067127,
+      "vy_m_s": 8.290850183893246e-05,
+      "vz_m_s": -5.394372720462333e-05,
+      "theta_x_rad": 0.0004389091462773958,
+      "theta_y_rad": -0.006069198217397732,
+      "theta_z_rad": -0.007623091617212273,
+      "orphan_count": 0,
+      "receptors_without_donors": 0,
+      "official_donor_count": 305524,
+      "official_receptor_count": 144001,
+      "minimum_cell_volume_m3": 6.100596812e-17,
+      "robot_wall_clearance_m": 0.0004800190766412073,
+      "overset_wall_clearance_m": 0.0004299068908617543,
+      "donor_length_ratio_min": 0.3774324872263532,
+      "donor_length_ratio_median": 0.6980111066011475,
+      "donor_length_ratio_p95": 2.057873920492637,
+      "donor_length_ratio_max": 3.0745650945068865,
+      "BOI_pose_displacement_bound_m": 1.2398245599906371e-05
+    },
+    "resumed_from_step": 29,
+    "resume_callback_offset": 881575,
+    "last_native_checkpoint": "resume_stop_checkpoint.json"
+  }
+}

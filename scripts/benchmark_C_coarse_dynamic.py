@@ -6,6 +6,27 @@ from benchmark_C_coarse_common import *
 from benchmark_C_fineA_free_6dof_run import surface_mesh
 from benchmark_C_fineA_theta0 import summarize_csv
 
+def select_native_callback(callbacks,t,actual):
+    """Accept the active wall callback only after matching persisted native state."""
+    from benchmark_C_recovery_v2_restart import compare as compare_state
+    for zone in ['robot_wall','robot_component_fluid']:
+        candidates=[r for r in callbacks if r['mode']=='FREE_6DOF' and r['zone_name']==zone and abs(float(r['time_s'])-t)<1e-10]
+        if not candidates:continue
+        row=candidates[-1]
+        expected={'com':[float(row[f'cg_{a}_m']) for a in 'xyz'],
+            'q':[float(row[f'q{i}']) for i in range(4)],
+            'velocity':[float(row[f'v{a}_m_s']) for a in 'xyz'],
+            'omega':[float(row[f'omega_{a}_rad_s']) for a in 'xyz']}
+        errors=compare_state(actual,expected)
+        if any(v['status']!='PASS' for v in errors.values()):raise RuntimeError('UDF callback disagrees with current native body state')
+        from benchmark_C_analytic_reference import compute_magnetic_load
+        F,T,_=compute_magnetic_load(actual['com'],np.asarray(actual['q'])[[1,2,3,0]],t)
+        ferr=float(np.max(abs(F-np.array([float(row[f'Fmag_{a}_N']) for a in 'xyz']))))
+        terr=float(np.max(abs(T-np.array([float(row[f'Tmag_{a}_Nm']) for a in 'xyz']))))
+        if ferr>1e-13 or terr>1e-14:raise RuntimeError('UDF callback magnetic load/native-state mismatch')
+        return row,{'status':'PASS','callback_zone':zone,'native_errors':errors,'F_error_N':ferr,'T_error_Nm':terr}
+    raise RuntimeError('No FREE_6DOF callback at the current native time')
+
 def compare(row):
     fine=next(r for r in csv.DictReader((ROOT/'evidence/benchmark_C_fineA_free_6dof_history.csv').open()) if int(r['step'])==10)
     groups={'COM_displacement':([f'com_{a}_m' for a in 'xyz'],np.array(COM)),
@@ -73,7 +94,12 @@ def run(solver,profile,resume_step=0):
             atomic(fd/f'connectivity_{step:04d}.json',stats)
             with callback_path.open('rb') as fp:fp.seek(offset);newtext=fp.read().decode('utf-8')
             callbacks=list(csv.DictReader(io.StringIO(header+newtext)))
-            native_row=next(r for r in reversed(callbacks) if r['mode']=='FREE_6DOF' and r['zone_name']=='robot_component_fluid' and abs(float(r['time_s'])-t)<1e-10)
+            from benchmark_C_coarse_resource_checkpoint import native_state
+            from benchmark_C_recovery_v2_restart import compare as compare_state
+            actual=native_state(solver,'robot_wall');component=native_state(solver,'robot_component_fluid')
+            if any(v['status']!='PASS' for v in compare_state(component,actual).values()):raise RuntimeError('Active/passive native body state mismatch')
+            native_row,callback_review=select_native_callback(callbacks,t,actual)
+            atomic(fd/f'callback_native_gate_{step:04d}.json',callback_review)
             com=np.array(dyn.dynamic_zones[zones['robot_wall']].motion.rigid_body_properties.cg_position.get_state());q=np.array([float(native_row[f'q{i}']) for i in range(4)]);qnorm=float(np.linalg.norm(q))
             robot=surface_mesh(field,'robot_wall');env=surface_mesh(field,'overset_component')
             clearance=float(np.min(robot.compute_implicit_distance(pipe)['implicit_distance']*sign));envgap=float(np.min(env.compute_implicit_distance(pipe)['implicit_distance']*sign))
