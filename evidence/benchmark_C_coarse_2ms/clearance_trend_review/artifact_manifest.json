@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T12:09:42.740098+00:00",
+  "status": "DIAGNOSTIC_ANALYSIS_REVIEWED",
+  "files_sha256": {
+    "analysis_review.json": "4833d5928406cd7e5b2d5d49c0ab74fb6fc17618095f101d09a00a8160dd4cf0",
+    "clearance_geometric_contributions.csv": "25f2f89ba539c26166ce05136ab4e1b195857ff337a47e98c669142daf0a96f3",
+    "clearance_time_series.csv": "e5d28e55a46cbf28003193172cfcf54037c1671b0cde1c3442c775a330b7de18",
+    "clearance_trend.png": "d579b933f7166fa8e662f6a909931ecb446daaf0d5af4409a9bacc1d63fc31c2",
+    "clearance_trend.svg": "5771d5dafa96f40c8ccc3a3d8e043e50fb5a33a92ca1adee3f02aa142ecf35c8",
+    "clearance_trend_report.json": "ed18fab9f7e35261f3f72e44dc120d60c78fea6da990fb733e11c7b70c1ddefc",
+    "README.md": "063c6236e94f01a38b3ae97fabcf071696bd8043277b857ae188b9484abe535f"
+  },
+  "scientific_movie_visual_review_status": "NOT_READY",
+  "diagnostic_plot_not_a_2ms_run_visualization": true,
+  "analysis_review": "analysis_review.json"
+}

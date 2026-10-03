@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-03T12:09:42.730645+00:00",
+  "status": "PASS",
+  "review_scope": "Offline clearance metrics and diagnostic trend plot; not full2ms numerical or CFD animation PASS",
+  "campaign_numerical_status": "INCOMPLETE",
+  "plot_inspected_with_view_image": true,
+  "PNG_sha256": "d579b933f7166fa8e662f6a909931ecb446daaf0d5af4409a9bacc1d63fc31c2",
+  "image_dimensions": [
+    1840,
+    1200
+  ],
+  "plot_checks": {
+    "all_four_panels_nonblank": true,
+    "axes_and_units_readable": true,
+    "three_clearance_thresholds_labeled": true,
+    "body_axis_tilt_distinguished_from_total_rotation": true,
+    "actual_stop_and_unsolved_interval_labeled": true,
+    "no2ms_values_or_motion_GIF_claim": true
+  },
+  "metrics_checks": {
+    "73_actual_history_rows": true,
+    "first_warning64_critical70_hard73": true,
+    "independent_agent_metrics_match": true,
+    "source_hashes_match": true,
+    "geometric_accounting_closes": true,
+    "retrospective_warning_label": true,
+    "original1ms_and_continuation_resources_separate": true
+  },
+  "authoritative_state_and_history_unchanged": true,
+  "owned_solver_closed": true,
+  "dynamics_advanced": 0,
+  "motion_GIF_review": "NOT_READY",
+  "velocity_GIF_review": "NOT_READY"
+}
