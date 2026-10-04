@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-04T16:03:27.273143+00:00",
+  "status": "PASS",
+  "native_state": {
+    "com": [
+      0.001202944876138455,
+      1.448961371253765e-05,
+      -5.051540349118485e-06
+    ],
+    "q": [
+      0.976514285550595,
+      0.009134369675092457,
+      -0.07231075664664738,
+      -0.20275001326618708
+    ],
+    "velocity": [
+      -0.01942190950209963,
+      0.2487681401276271,
+      -0.08561302139653727
+    ],
+    "omega": [
+      48.15075850960174,
+      -112.6259630766214,
+      -425.664702306974
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.4343107124876275,
+      "axis": [
+        0.04239617898390431,
+        -0.33562247755445473,
+        -0.9410420376198793
+      ]
+    }
+  },
+  "time_s": 0.001875000000000001,
+  "state_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "files": {
+    "case": {
+      "path": "live_cases\\benchmark_D_contact_overwrite_semantics\\controlled\\final_native.cas.h5",
+      "sha256": "95a6c047d79d48c331b7154dc116718b1ea3a00121f6012644a44f949f7c01f3",
+      "size_bytes": 109703559,
+      "HDF5_readable": true
+    },
+    "data": {
+      "path": "live_cases\\benchmark_D_contact_overwrite_semantics\\controlled\\final_native.dat.h5",
+      "sha256": "7113eb9e6374bd8c3db0f40b2faf33d4fcc594bb88cd20b409d8a495063e650a",
+      "size_bytes": 558608264,
+      "HDF5_readable": true
+    }
+  },
+  "large_native_files_local_only": true
+}

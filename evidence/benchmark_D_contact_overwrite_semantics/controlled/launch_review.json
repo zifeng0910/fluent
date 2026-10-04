@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T15:46:06.787550+00:00",
+  "branch": "controlled",
+  "decision": "Reviewed empirical theta/pose bounds, exact independent repeats and453x/15.4x conservative signal floor; ONE e0/mu0 event plus next inherited step only; C70 to1.875ms",
+  "files_sha256": {
+    "scripts/benchmark_D_overwrite_worker.py": "e66bba263b97b50fb498f332effee8b68902e1242aca44dee64ee1e76bd8a021",
+    "scripts/benchmark_D_overwrite_common.py": "e20766a804a9eb83b54cb63b0210e533850e06071f0957eeaf45fde9c17de537",
+    "fluent_udf/l2300_contact_overwrite_semantics.c": "f3e856ae27a52028ee45e5d97eae9fedfa37252796479197c685ee9f7413aeb0",
+    "evidence\\benchmark_D_contact_overwrite_semantics\\controlled\\configuration.json": "515a8489256b1ee2da752869ad8c44919cd7ce38e0d64e177911113d3b7a0180",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\controlled\\lifecycle_config.h": "0f6c78ac66342d6a747b2a660bc85e222673145e3c8118b7ac3a20c2cb0617ae",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\controlled\\magnetic_logging_copy.c": "9e3333cb6a43db358fe0a1388b9db82692933570d98eb0507e37189d82186dc1",
+    "evidence\\benchmark_D_contact_overwrite_semantics\\controlled_write_admission.json": "7ea784509b87ef39ccdf127a8631c8bf81e2541becea78fa7a68e70c957b2fa4"
+  },
+  "no_manual_theta_conversion": true,
+  "no_1p9_or_2ms": true
+}

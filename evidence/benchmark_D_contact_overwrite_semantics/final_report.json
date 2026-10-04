@@ -1,0 +1,1198 @@
+{
+  "timestamp": "2026-10-04T16:14:37.289257+00:00",
+  "campaign": "BENCHMARK_D_CONTACT_OVERWRITE_SEMANTICS",
+  "status": "COMPLETE",
+  "result": "NATIVE_CONTACT_RESPONSE_PATH_VALIDATED",
+  "scope": "C70/1.750ms ->1.875ms: two independent read-only and two same-value overwrite repeats; one conditional physical event and one inherited step. No1.9/2ms/micro rollout.",
+  "official_local_theta_semantics": "PARTIAL",
+  "official_usage_pattern": {
+    "classification": "DOCUMENTED",
+    "url": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_udf/flu_udf_DynamicMeshDEFINE.html",
+    "version": "v261",
+    "section": "2.6.7.3 Example1",
+    "get_line": 891,
+    "get_call": "SDOF_Get_Motion (dt, vel0, omega0, theta0);",
+    "overwrite_line": 944,
+    "overwrite_call": "SDOF_Overwrite_Motion (dt, vel0, omega0, theta0);",
+    "same_returned_omega_and_theta_passed_back": true,
+    "velocity_changed_by_reflection": true,
+    "exact_visible_value_noop_trajectory_guarantee_documented": false,
+    "overwrite_inside_DEFINE_CONTACT_only": true,
+    "storage": "Two call excerpts only; online documentation is not mislabeled as an installed original",
+    "line_numbers_basis": "Web tool extracted document text; not installed-file source lines"
+  },
+  "local_official_example": "NOT_FOUND; same-release official online example verified; original local file/lines unavailable",
+  "read_path": "PASS",
+  "read_only_reproducibility": {
+    "timestamp": "2026-10-04T15:44:19.751126+00:00",
+    "branches": [
+      "A1",
+      "A2"
+    ],
+    "status": "PASS",
+    "peaks": {
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    },
+    "each_step": [
+      {
+        "time_s": 0.001775000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001800000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001825000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001850000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001875000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      }
+    ],
+    "callback_count": 2,
+    "callback_time_face_geometry_equal": true,
+    "tolerance": {
+      "com_m": 1e-10,
+      "orientation_rad": 1e-08,
+      "velocity_m_s": 1e-08,
+      "omega_rad_s": 1e-06
+    },
+    "bitwise_identity_required": false
+  },
+  "noop_reproducibility": {
+    "timestamp": "2026-10-04T15:44:19.753259+00:00",
+    "branches": [
+      "B1",
+      "B2"
+    ],
+    "status": "PASS",
+    "peaks": {
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    },
+    "each_step": [
+      {
+        "time_s": 0.001775000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001800000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001825000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001850000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001875000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      }
+    ],
+    "callback_count": 2,
+    "callback_time_face_geometry_equal": true,
+    "tolerance": {
+      "com_m": 1e-10,
+      "orientation_rad": 1e-08,
+      "velocity_m_s": 1e-08,
+      "omega_rad_s": 1e-06
+    },
+    "bitwise_identity_required": false
+  },
+  "noop_vs_read_only": {
+    "timestamp": "2026-10-04T15:44:19.755879+00:00",
+    "branches": [
+      "A1",
+      "B1"
+    ],
+    "status": "FAIL",
+    "peaks": {
+      "COM_norm_difference_m": 1.649310095127658e-08,
+      "COM_max_component_difference_m": 1.200486666164107e-08,
+      "orientation_difference_rad": 0.0009226331775764051,
+      "velocity_norm_difference_m_s": 0.00018620665922820462,
+      "omega_norm_difference_rad_s": 0.5456682500731949
+    },
+    "each_step": [
+      {
+        "time_s": 0.001775000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001800000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001825000000000001,
+        "COM_norm_difference_m": 0.0,
+        "COM_max_component_difference_m": 0.0,
+        "orientation_difference_rad": 0.0,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001850000000000001,
+        "COM_norm_difference_m": 4.944052000346063e-09,
+        "COM_max_component_difference_m": 4.017996950465982e-09,
+        "orientation_difference_rad": 0.0004621217623646138,
+        "velocity_norm_difference_m_s": 0.0,
+        "omega_norm_difference_rad_s": 0.0
+      },
+      {
+        "time_s": 0.001875000000000001,
+        "COM_norm_difference_m": 1.649310095127658e-08,
+        "COM_max_component_difference_m": 1.200486666164107e-08,
+        "orientation_difference_rad": 0.0009226331775764051,
+        "velocity_norm_difference_m_s": 0.00018620665922820462,
+        "omega_norm_difference_rad_s": 0.5456682500731949
+      }
+    ],
+    "callback_count": 2,
+    "callback_time_face_geometry_equal": false,
+    "tolerance": {
+      "com_m": 1e-10,
+      "orientation_rad": 1e-08,
+      "velocity_m_s": 1e-08,
+      "omega_rad_s": 1e-06
+    },
+    "bitwise_identity_required": false
+  },
+  "theta_and_pose_semantics": {
+    "timestamp": "2026-10-04T15:44:20.332623+00:00",
+    "status": "PARTIAL",
+    "native_angle_helpers": {
+      "DT_THETA_vs_Theta_From_Q_max_abs": 5.551115123125783e-17,
+      "DT_THETA_vs_rotation_vector_max_abs": 5.551115123125783e-17,
+      "Q_From_DT_THETA_max_orientation_error_rad": 3.582791971490862e-18,
+      "DT_THETA_vs_Euler_From_Q_max_abs": 0.033009344041280156,
+      "get_theta_max_abs": 0.0,
+      "omega_dt_nonzero_in_callbacks": true,
+      "get_theta_not_absolute_native_DT_THETA": true
+    },
+    "Get_Motion_theta_semantics": "EMPIRICALLY BOUNDED: initialized-zero third array remains0 here while native absolute orientation evolves; not the absolute DT_THETA or omega*dt. Whether Get deliberately omits assigning it in this6DOF path is UNKNOWN.",
+    "native_DT_THETA": "EMPIRICALLY_MEASURED in this trajectory: absolute rotation vector matching nativeTheta_From_Q and an independent quaternion rotation vector. It differs from nativeEuler_From_Q; no converter output is fed to Overwrite.",
+    "overwrite_pose_reconstruction": {
+      "classification": "EMPIRICALLY_MEASURED",
+      "endpoint_model_verified": true,
+      "visible_CG_Q_unchanged_immediately_after": true,
+      "delayed_effect_interpretation": "EMPIRICALLY_INFERRED: overwrite changes subsequent motion construction, not necessarily immediately visible DT_CG/DT_Q. Internal buffer/flag identity UNKNOWN.",
+      "model": "CG_next=CG_start+dt*v_endpoint; Q_next=worldRotation(omega_endpoint*dt)*Q_start",
+      "records": [
+        {
+          "branch": "B1",
+          "callback_time_s": 0.001825000000000001,
+          "completed_time_s": 0.001850000000000001,
+          "endpoint_CG_residual_m": 6.505213401112767e-19,
+          "endpoint_world_omega_Q_residual_rad": 1.668634695504476e-16,
+          "immediate_after_CG_matches_completed_m": 4.944052000346419e-09,
+          "immediate_after_Q_matches_completed_rad": 0.00046212176236462126,
+          "overwrite_immediate_CG_change_m": 0.0,
+          "overwrite_immediate_Q_change_rad": 0.0,
+          "getter_velocity_unchanged": true,
+          "getter_omega_unchanged": true,
+          "getter_theta_before": [
+            0,
+            0,
+            0
+          ],
+          "getter_theta_after": [
+            0,
+            0,
+            0
+          ],
+          "DT_THETA_before": [
+            0.017423594087035043,
+            -0.14776094948743837,
+            -0.4109659383873182
+          ],
+          "DT_THETA_after": [
+            0.017423594087035043,
+            -0.14776094948743837,
+            -0.4109659383873182
+          ]
+        },
+        {
+          "branch": "B1",
+          "callback_time_s": 0.0018500000000000012,
+          "completed_time_s": 0.001875000000000001,
+          "endpoint_CG_residual_m": 2.1684084808701273e-19,
+          "endpoint_world_omega_Q_residual_rad": 1.270072390794868e-16,
+          "immediate_after_CG_matches_completed_m": 2.117582368135751e-22,
+          "immediate_after_Q_matches_completed_rad": 5.563299026603774e-17,
+          "overwrite_immediate_CG_change_m": 0.0,
+          "overwrite_immediate_Q_change_rad": 0.0,
+          "getter_velocity_unchanged": true,
+          "getter_omega_unchanged": true,
+          "getter_theta_before": [
+            0,
+            0,
+            0
+          ],
+          "getter_theta_after": [
+            0,
+            0,
+            0
+          ],
+          "DT_THETA_before": [
+            0.018471934563744376,
+            -0.15501852541698355,
+            -0.4345501425732233
+          ],
+          "DT_THETA_after": [
+            0.018471934563744376,
+            -0.15501852541698355,
+            -0.4345501425732233
+          ]
+        },
+        {
+          "branch": "B2",
+          "callback_time_s": 0.001825000000000001,
+          "completed_time_s": 0.001850000000000001,
+          "endpoint_CG_residual_m": 6.505213401112767e-19,
+          "endpoint_world_omega_Q_residual_rad": 1.668634695504476e-16,
+          "immediate_after_CG_matches_completed_m": 4.944052000346419e-09,
+          "immediate_after_Q_matches_completed_rad": 0.00046212176236462126,
+          "overwrite_immediate_CG_change_m": 0.0,
+          "overwrite_immediate_Q_change_rad": 0.0,
+          "getter_velocity_unchanged": true,
+          "getter_omega_unchanged": true,
+          "getter_theta_before": [
+            0,
+            0,
+            0
+          ],
+          "getter_theta_after": [
+            0,
+            0,
+            0
+          ],
+          "DT_THETA_before": [
+            0.017423594087035043,
+            -0.14776094948743837,
+            -0.4109659383873182
+          ],
+          "DT_THETA_after": [
+            0.017423594087035043,
+            -0.14776094948743837,
+            -0.4109659383873182
+          ]
+        },
+        {
+          "branch": "B2",
+          "callback_time_s": 0.0018500000000000012,
+          "completed_time_s": 0.001875000000000001,
+          "endpoint_CG_residual_m": 2.1684084808701273e-19,
+          "endpoint_world_omega_Q_residual_rad": 1.270072390794868e-16,
+          "immediate_after_CG_matches_completed_m": 2.117582368135751e-22,
+          "immediate_after_Q_matches_completed_rad": 5.563299026603774e-17,
+          "overwrite_immediate_CG_change_m": 0.0,
+          "overwrite_immediate_Q_change_rad": 0.0,
+          "getter_velocity_unchanged": true,
+          "getter_omega_unchanged": true,
+          "getter_theta_before": [
+            0,
+            0,
+            0
+          ],
+          "getter_theta_after": [
+            0,
+            0,
+            0
+          ],
+          "DT_THETA_before": [
+            0.018471934563744376,
+            -0.15501852541698355,
+            -0.4345501425732233
+          ],
+          "DT_THETA_after": [
+            0.018471934563744376,
+            -0.15501852541698355,
+            -0.4345501425732233
+          ]
+        }
+      ]
+    },
+    "read_only_translation_model": {
+      "classification": "EMPIRICALLY_MEASURED",
+      "model": "CG_next=CG_start+0.5*dt*(v_start+v_endpoint)",
+      "records": [
+        {
+          "branch": "A1",
+          "time_s": 0.001850000000000001,
+          "trapezoidal_CG_residual_m": 4.336813342830467e-19
+        },
+        {
+          "branch": "A1",
+          "time_s": 0.001875000000000001,
+          "trapezoidal_CG_residual_m": 2.168404344971009e-19
+        },
+        {
+          "branch": "A2",
+          "time_s": 0.001850000000000001,
+          "trapezoidal_CG_residual_m": 4.336813342830467e-19
+        },
+        {
+          "branch": "A2",
+          "time_s": 0.001875000000000001,
+          "trapezoidal_CG_residual_m": 2.168404344971009e-19
+        }
+      ]
+    },
+    "callback_stage": {
+      "classification": "EMPIRICALLY_INFERRED",
+      "statement": "Actual contact occurs with endpoint predicted v/omega and pose, while CURRENT_TIME/N_TIME and actual surface geometry remain at the previous completed step; before final mesh relocation. Exact internal predictor/corrector flag UNKNOWN.",
+      "records": [
+        {
+          "branch": "A1",
+          "callback_CURRENT_TIME_s": 0.001825000000000001,
+          "completed_time_s": 0.001850000000000001,
+          "callback_CG_vs_completed_m": 4.268123713790712e-22,
+          "callback_Q_vs_completed_rad": 2.883977778811442e-17,
+          "callback_actual_vertices_ideal_gap_m": 8.830977425190105e-05,
+          "previous_export_vertices_ideal_gap_m": 8.830975198408065e-05,
+          "completed_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+          "surface_export_precision_tolerance_m": 1e-10
+        },
+        {
+          "branch": "A1",
+          "callback_CURRENT_TIME_s": 0.0018500000000000012,
+          "completed_time_s": 0.001875000000000001,
+          "callback_CG_vs_completed_m": 2.1684084808701273e-19,
+          "callback_Q_vs_completed_rad": 2.861061422162426e-17,
+          "callback_actual_vertices_ideal_gap_m": 6.953087641744474e-05,
+          "previous_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+          "completed_export_vertices_ideal_gap_m": 5.044755608610155e-05,
+          "surface_export_precision_tolerance_m": 1e-10
+        },
+        {
+          "branch": "A2",
+          "callback_CURRENT_TIME_s": 0.001825000000000001,
+          "completed_time_s": 0.001850000000000001,
+          "callback_CG_vs_completed_m": 4.268123713790712e-22,
+          "callback_Q_vs_completed_rad": 2.883977778811442e-17,
+          "callback_actual_vertices_ideal_gap_m": 8.830977425190105e-05,
+          "previous_export_vertices_ideal_gap_m": 8.830975198408065e-05,
+          "completed_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+          "surface_export_precision_tolerance_m": 1e-10
+        },
+        {
+          "branch": "A2",
+          "callback_CURRENT_TIME_s": 0.0018500000000000012,
+          "completed_time_s": 0.001875000000000001,
+          "callback_CG_vs_completed_m": 2.1684084808701273e-19,
+          "callback_Q_vs_completed_rad": 2.861061422162426e-17,
+          "callback_actual_vertices_ideal_gap_m": 6.953087641744474e-05,
+          "previous_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+          "completed_export_vertices_ideal_gap_m": 5.044755608610155e-05,
+          "surface_export_precision_tolerance_m": 1e-10
+        }
+      ]
+    },
+    "official_guarantees_noop_equals_omission": false,
+    "none_of_the_native_conversions_sent_to_overwrite": true
+  },
+  "artifact": {
+    "timestamp": "2026-10-04T15:44:20.354110+00:00",
+    "first_contact_completed_time_s": 0.001850000000000001,
+    "COM_difference_norm_m": 4.944052000346063e-09,
+    "COM_difference_max_component_m": 4.017996950465982e-09,
+    "orientation_difference_rad": 0.0004621217623646138,
+    "orientation_difference_deg": 0.026477626604639936,
+    "velocity_norm_times_dt_m": 1.2136118988498333e-07,
+    "omega_norm_times_dt_rad": 0.023302705869869884,
+    "actual_normal_step_COM_displacement_m": 1.1928650680492594e-07,
+    "actual_normal_step_orientation_increment_rad": 0.022840775699712285,
+    "relative_COM_artifact_percent": 4.144686715012345,
+    "relative_orientation_artifact_percent": 2.023231471820963,
+    "significant_vs_normal_step": true,
+    "real_callback_read_PASS": true,
+    "exact_same_value_noop_arrays": true,
+    "explained_as_endpoint_pose_reconstruction": true,
+    "solver_noise_can_explain_artifact": false,
+    "empirically_bounded_theta_same_return_only": true,
+    "signal_to_artifact_floor": {
+      "linear_velocity": 453.3601539917033,
+      "angular_velocity": 15.433024132514669
+    },
+    "admission_floor_scope": "Maximum accumulated A1/B1 pose difference over all five boundaries, converted by dt; includes two no-op contact calls, conservative for the one-event controlled experiment",
+    "peak_noop_vs_read_only": {
+      "COM_norm_difference_m": 1.649310095127658e-08,
+      "COM_max_component_difference_m": 1.200486666164107e-08,
+      "orientation_difference_rad": 0.0009226331775764051,
+      "velocity_norm_difference_m_s": 0.00018620665922820462,
+      "omega_norm_difference_rad_s": 0.5456682500731949
+    },
+    "intended_normal_impulse_N_s": 2.663248704610714e-06,
+    "intended_delta_velocity_norm_m_s": 0.2990925914828583,
+    "intended_delta_omega_norm_rad_s": 569.560803799814,
+    "equivalent_velocity_artifact_m_s": 0.0006597240380510632,
+    "equivalent_omega_artifact_rad_s": 36.9053271030562,
+    "status": "PASS",
+    "decision": "One controlled event only to1.875ms; no micro-run"
+  },
+  "is_artifact_deterministic": true,
+  "is_artifact_material_relative_to_normal_step": true,
+  "artifact_interpretation": "Deterministic endpoint-pose reconstruction, significant relative to ordinary step; accepted only for the bounded one-event experiment after>10x signal/floor verification.",
+  "controlled_write": "PASS",
+  "controlled_validation": {
+    "timestamp": "2026-10-04T16:04:02.049009+00:00",
+    "status": "PASS",
+    "result": "NATIVE_CONTACT_RESPONSE_PATH_VALIDATED",
+    "scope": "Exactly one e_n=0,mu=0 contact event plus one next step; ending1.875ms. No full collision or1.9/2ms run.",
+    "actual_callback": {
+      "callback_index": 1,
+      "CURRENT_TIME": 0.001825000000000001,
+      "timestep_index": 73,
+      "iteration_index": 146,
+      "process_role": "node",
+      "dt_pointer": "0000022172B66410",
+      "dt_NULL": false,
+      "moving_body": true,
+      "dynamic_zone_id": 7,
+      "opposite_zone_id": 6,
+      "opposite_ndt_NULL": true,
+      "contact_face_count": 179,
+      "contact_point": [
+        0.0020436722784209892,
+        -0.0008429128641985178,
+        0.0002946779345301487
+      ],
+      "contact_normal": [
+        9.605666078903204e-05,
+        0.9443196452672084,
+        -0.3290294794323631
+      ],
+      "DT_CG": [
+        0.001203427035841474,
+        1.2054169651179406e-06,
+        -4.4987542710165897e-07
+      ],
+      "DT_Q": [
+        0.9762161458863163,
+        0.008642620204002553,
+        -0.07329381992163067,
+        -0.20385131245143204
+      ],
+      "get_velocity": [
+        -0.0025271228616644535,
+        0.003936435955531434,
+        -0.0012976068227820619
+      ],
+      "get_omega": [
+        47.94436520248257,
+        -276.8498814150523,
+        -888.7526328388972
+      ],
+      "get_theta": [
+        0,
+        0,
+        0
+      ],
+      "native_current_velocity": [
+        -0.0025271228616644535,
+        0.003936435955531434,
+        -0.0012976068227820619
+      ],
+      "native_current_omega": [
+        47.94436520248257,
+        -276.8498814150523,
+        -888.7526328388972
+      ],
+      "native_temporary_velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "native_temporary_omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "contact_velocity_before": [
+        -0.834445566862239,
+        -0.7569834511193698,
+        0.19085347379871737
+      ],
+      "requested_velocity": [
+        -0.002498393026059872,
+        0.28637544584667424,
+        -0.09970788650046335
+      ],
+      "requested_omega": [
+        45.93764814079465,
+        -88.84964261526514,
+        -351.117633491805
+      ],
+      "motion_all_zero": false,
+      "mode": 2,
+      "action": "APPLIED",
+      "overwrite_called": true,
+      "normal_velocity_before": -0.7777109172208035,
+      "impulse_N_s": 2.6632487046107135e-06,
+      "normal_velocity_after": 1.8041124150158794e-16,
+      "contact_active": 0,
+      "motion_tmp_cg_null": true,
+      "motion_tmp_theta_null": true,
+      "ideal_tube_gap_from_actual_vertices_m": 8.830977425190105e-05
+    },
+    "predicted_velocity": [
+      -0.002498393026059872,
+      0.2863754458466743,
+      -0.09970788650046336
+    ],
+    "predicted_omega": [
+      45.9376481407947,
+      -88.84964261526522,
+      -351.11763349180524
+    ],
+    "predicted_impulse_N_s": 2.663248704610714e-06,
+    "independent_impulse_validation": {
+      "velocity": {
+        "max_abs": 5.551115123125783e-17,
+        "norm_error": 5.721958498152797e-17,
+        "relative_error": 1.8868963936885604e-16,
+        "direction_cosine": 1.0
+      },
+      "omega": {
+        "max_abs": 2.2737367544323206e-13,
+        "norm_error": 2.478765785342661e-13,
+        "relative_error": 6.789530963578892e-16,
+        "direction_cosine": 0.9999999999999998
+      },
+      "impulse_abs_N_s": 4.235164736271502e-22
+    },
+    "impulse_math_PASS": "True",
+    "actual_completed_step": {
+      "time_s": 0.001850000000000001,
+      "native_step_index": 74,
+      "native_state": {
+        "com": [
+          0.001203430423876008,
+          8.270410209346977e-06,
+          -2.911214814205053e-06
+        ],
+        "q": [
+          0.9776854046319566,
+          0.008645798633414718,
+          -0.07100832402527775,
+          -0.197520423386441
+        ],
+        "velocity": [
+          -0.002498393026059872,
+          0.2863754458466742,
+          -0.09970788650046335
+        ],
+        "omega": [
+          45.93764814079465,
+          -88.84964261526514,
+          -351.117633491805
+        ],
+        "native_orientation_angle_axis": {
+          "angle": 0.4233020951604062,
+          "axis": [
+            0.041155890588658796,
+            -0.33801513756909424,
+            -0.9402403732259111
+          ]
+        }
+      },
+      "shared_body_errors": {
+        "com": {
+          "error": 0.0,
+          "tolerance": 1e-10,
+          "status": "PASS"
+        },
+        "q": {
+          "error": 0.0,
+          "tolerance": 1e-09,
+          "status": "PASS"
+        },
+        "velocity": {
+          "error": 0.0,
+          "tolerance": 1e-08,
+          "status": "PASS"
+        },
+        "omega": {
+          "error": 0.0,
+          "tolerance": 1e-06,
+          "status": "PASS"
+        }
+      },
+      "connectivity": {
+        "total": 4699301,
+        "orphan": 0,
+        "invalid_donors": 0,
+        "unidentified": 0,
+        "nonpositive_volume": 0,
+        "nonfinite_volume": 0,
+        "minimum_volume_m3": 6.100596812043562e-17
+      },
+      "physical_gap_m": 8.672061564891115e-05,
+      "q_norm": 1.0,
+      "Fmag_N": [
+        -2.5560745855625443e-05,
+        0.0,
+        0.0
+      ],
+      "Tmag_Nm": [
+        2.9222054027366216e-07,
+        -1.7213518835097986e-06,
+        -6.63139282931012e-06
+      ],
+      "source_state": {
+        "moment_global": "[ 0.00095141 -0.00039454  0.00014434]",
+        "B_global": "[-0.01070312 -0.00253158  0.00018549]",
+        "s_eff_mm": 31.686232972919658,
+        "phase_rad": 1.1623892818282242,
+        "ramp": 1
+      },
+      "hard_failures": [],
+      "status": "PASS"
+    },
+    "completed_vs_requested": {
+      "velocity": {
+        "max_abs": 1.1102230246251565e-16,
+        "norm_error": 1.1188630228279524e-16,
+        "relative_error": 3.6896083805695033e-16,
+        "direction_cosine": 1.0000000000000002
+      },
+      "omega": {
+        "max_abs": 2.2737367544323206e-13,
+        "norm_error": 2.478765785342661e-13,
+        "relative_error": 6.789530963578892e-16,
+        "direction_cosine": 0.9999999999999998
+      }
+    },
+    "intended_change": {
+      "velocity": [
+        2.872983560458153e-05,
+        0.28243900989114284,
+        -0.0984102796776813
+      ],
+      "omega": [
+        -2.0067170616878727,
+        188.0002387997871,
+        537.6349993470919
+      ]
+    },
+    "observed_change": {
+      "velocity": [
+        2.8729835604581096e-05,
+        0.28243900989114273,
+        -0.09841027967768129
+      ],
+      "omega": [
+        -2.0067170616879224,
+        188.00023879978718,
+        537.6349993470922
+      ]
+    },
+    "expected_vs_observed_change": {
+      "velocity": {
+        "max_abs": 1.1102230246251565e-16,
+        "norm_error": 1.118871427716928e-16,
+        "relative_error": 3.7408864665277175e-16,
+        "direction_cosine": 1.0000000000000002
+      },
+      "omega": {
+        "max_abs": 2.2737367544323206e-13,
+        "norm_error": 2.478765785342661e-13,
+        "relative_error": 4.3520652559052906e-16,
+        "direction_cosine": 0.9999999999999998
+      }
+    },
+    "completed_step_retains_intended_change": true,
+    "next_start_native": {
+      "time_s": 0.001850000000000001,
+      "native_state": {
+        "com": [
+          0.001203430423876008,
+          8.270410209346977e-06,
+          -2.911214814205053e-06
+        ],
+        "q": [
+          0.9776854046319566,
+          0.008645798633414718,
+          -0.07100832402527775,
+          -0.197520423386441
+        ],
+        "velocity": [
+          -0.002498393026059872,
+          0.2863754458466742,
+          -0.09970788650046335
+        ],
+        "omega": [
+          45.93764814079465,
+          -88.84964261526514,
+          -351.117633491805
+        ],
+        "native_orientation_angle_axis": {
+          "angle": 0.4233020951604062,
+          "axis": [
+            0.041155890588658796,
+            -0.33801513756909424,
+            -0.9402403732259111
+          ]
+        }
+      }
+    },
+    "next_start_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "actual_next_properties_entry": {
+      "stage": "PROPERTIES_ENTRY",
+      "CURRENT_TIME": 0.0018500000000000012,
+      "property_time": 0.0018750000000000012,
+      "dtime": 2.5e-05,
+      "callback_index": 1,
+      "timestep_index": 74,
+      "iteration_index": 148,
+      "process_role": "node",
+      "CG": [
+        0.001203430423876008,
+        8.270410209346977e-06,
+        -2.9112148142050535e-06
+      ],
+      "Q": [
+        0.9776854046319566,
+        0.008645798633414718,
+        -0.07100832402527774,
+        -0.197520423386441
+      ],
+      "velocity": [
+        -0.002498393026059872,
+        0.28637544584667424,
+        -0.09970788650046335
+      ],
+      "omega": [
+        45.93764814079465,
+        -88.84964261526514,
+        -351.117633491805
+      ],
+      "DT_THETA": [
+        0.01742137471437171,
+        -0.14308251592893048,
+        -0.3980057199409305
+      ],
+      "get_velocity": [
+        0,
+        0,
+        0
+      ],
+      "get_omega": [
+        0,
+        0,
+        0
+      ],
+      "get_theta": [
+        0,
+        0,
+        0
+      ],
+      "Theta_From_Q_native": [
+        0.01742137471437171,
+        -0.14308251592893048,
+        -0.3980057199409305
+      ],
+      "Euler_From_Q_native": [
+        0.045390572434867285,
+        -0.13584962856169622,
+        -0.4017791910979751
+      ],
+      "Q_From_DT_THETA_native": [
+        0.9776854046319566,
+        0.008645798633414718,
+        -0.07100832402527774,
+        -0.197520423386441
+      ],
+      "tmp_state_CG": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "tmp_state_Q": [
+        0.984623529376754,
+        0.006896969730061793,
+        -0.0607625496750705,
+        -0.16363633387237564
+      ],
+      "tmp_state_velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "tmp_state_omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "tmp_state_theta": [
+        0.01386507789800985,
+        -0.1221518315289166,
+        -0.3289604862547234
+      ],
+      "acceleration": [
+        9.692517084281434,
+        11310.417985887205,
+        -3939.8748516236114
+      ],
+      "angular_acceleration": [
+        94218.1043085214,
+        -407331.6359383563,
+        -1437863.8536868058
+      ],
+      "motion_tmp_cg_if_present": [
+        0,
+        0,
+        0
+      ],
+      "contact_active": 0,
+      "dt_contact_p": 1,
+      "sdof_p": 1,
+      "tmp_cg_NULL": true,
+      "tmp_theta_NULL": true,
+      "conversions_read_only": true
+    },
+    "next_properties_entry_matches_completed": true,
+    "next_timestep_inherited": true,
+    "next_completed_state": {
+      "time_s": 0.001875000000000001,
+      "native_step_index": 75,
+      "native_state": {
+        "com": [
+          0.001202944876138455,
+          1.448961371253765e-05,
+          -5.051540349118485e-06
+        ],
+        "q": [
+          0.976514285550595,
+          0.009134369675092457,
+          -0.07231075664664738,
+          -0.20275001326618708
+        ],
+        "velocity": [
+          -0.01942190950209963,
+          0.2487681401276271,
+          -0.08561302139653727
+        ],
+        "omega": [
+          48.15075850960174,
+          -112.6259630766214,
+          -425.664702306974
+        ],
+        "native_orientation_angle_axis": {
+          "angle": 0.4343107124876275,
+          "axis": [
+            0.04239617898390431,
+            -0.33562247755445473,
+            -0.9410420376198793
+          ]
+        }
+      },
+      "shared_body_errors": {
+        "com": {
+          "error": 0.0,
+          "tolerance": 1e-10,
+          "status": "PASS"
+        },
+        "q": {
+          "error": 0.0,
+          "tolerance": 1e-09,
+          "status": "PASS"
+        },
+        "velocity": {
+          "error": 0.0,
+          "tolerance": 1e-08,
+          "status": "PASS"
+        },
+        "omega": {
+          "error": 0.0,
+          "tolerance": 1e-06,
+          "status": "PASS"
+        }
+      },
+      "connectivity": {
+        "total": 4699301,
+        "orphan": 0,
+        "invalid_donors": 0,
+        "unidentified": 0,
+        "nonpositive_volume": 0,
+        "nonfinite_volume": 0,
+        "minimum_volume_m3": 6.100596812043595e-17
+      },
+      "physical_gap_m": 8.430557461377091e-05,
+      "q_norm": 1.0,
+      "Fmag_N": [
+        -2.5435218487336245e-05,
+        0.0,
+        0.0
+      ],
+      "Tmag_Nm": [
+        3.010573675488381e-07,
+        -1.7369209759144544e-06,
+        -6.743742120650358e-06
+      ],
+      "source_state": {
+        "moment_global": "[ 0.00094675 -0.00040482  0.00014653]",
+        "B_global": "[-0.01069929 -0.00254819  0.00017867]",
+        "s_eff_mm": 31.685597425182106,
+        "phase_rad": 1.178097245096173,
+        "ramp": 1
+      },
+      "hard_failures": [],
+      "status": "PASS"
+    },
+    "physical_event_count": 1,
+    "host_node_same_event": true,
+    "no_second_overwrite": true,
+    "immediate_callback_reread_used_as_PASS": false,
+    "immediate_pending_motion_observation": {
+      "classification": "EMPIRICALLY_MEASURED",
+      "getter_after_vs_requested": {
+        "velocity": {
+          "max_abs": 5.551115123125783e-17,
+          "norm_error": 5.721958498152797e-17,
+          "relative_error": 1.8868963936885604e-16,
+          "direction_cosine": 1.0
+        },
+        "omega": {
+          "max_abs": 2.2737367544323206e-13,
+          "norm_error": 2.478765785342661e-13,
+          "relative_error": 6.789530963578892e-16,
+          "direction_cosine": 0.9999999999999998
+        }
+      },
+      "visible_native_velocity_change_m_s": 0.0,
+      "visible_native_omega_change_rad_s": 0.0,
+      "visible_native_CG_change_m": 0.0,
+      "visible_native_Q_change_rad": 0.0,
+      "getter_theta_before": [
+        0,
+        0,
+        0
+      ],
+      "getter_theta_after": [
+        0,
+        0,
+        0
+      ],
+      "interpretation": "EMPIRICALLY_INFERRED pending contact-motion storage: getter reflects requested motion while current DT fields remain unchanged immediately; exact internal storage identity UNKNOWN. This observation is not the write PASS gate."
+    },
+    "change_acceptance_relative_error": 0.05,
+    "minimum_direction_cosine": 0.999
+  },
+  "write_storage_semantics": {
+    "classification": "EMPIRICALLY_MEASURED",
+    "getter_after_vs_requested": {
+      "velocity": {
+        "max_abs": 5.551115123125783e-17,
+        "norm_error": 5.721958498152797e-17,
+        "relative_error": 1.8868963936885604e-16,
+        "direction_cosine": 1.0
+      },
+      "omega": {
+        "max_abs": 2.2737367544323206e-13,
+        "norm_error": 2.478765785342661e-13,
+        "relative_error": 6.789530963578892e-16,
+        "direction_cosine": 0.9999999999999998
+      }
+    },
+    "visible_native_velocity_change_m_s": 0.0,
+    "visible_native_omega_change_rad_s": 0.0,
+    "visible_native_CG_change_m": 0.0,
+    "visible_native_Q_change_rad": 0.0,
+    "getter_theta_before": [
+      0,
+      0,
+      0
+    ],
+    "getter_theta_after": [
+      0,
+      0,
+      0
+    ],
+    "interpretation": "EMPIRICALLY_INFERRED pending contact-motion storage: getter reflects requested motion while current DT fields remain unchanged immediately; exact internal storage identity UNKNOWN. This observation is not the write PASS gate."
+  },
+  "native_response_pathway": "VALIDATED",
+  "native_response_scope": "One event only; this does not validate a full collision trajectory or contact constitutive accuracy.",
+  "fallback_audit": {
+    "timestamp": "2026-10-04T14:14:07.514834+00:00",
+    "scope": "AUDIT_ONLY; no fallback implemented",
+    "preferred_if_native_one_event_validates": "Retain native DEFINE_CONTACT + same-returned-theta Overwrite, accounting for measured endpoint-pose reconstruction",
+    "preferred_if_native_write_fails": "B: normal contactF/T through existing verified DEFINE_SDOF_PROPERTIES load path",
+    "candidates": [
+      {
+        "id": "A",
+        "fallback_rank": 2,
+        "name": "Alternative Fluent-supported6DOF collision/state-update API",
+        "support": "UNKNOWN: installed public example supports Overwrite. No separately documented public6DOF motion setter located.",
+        "installed_exports": [
+          "SDOF_Fill_RB_State",
+          "SDOF_Threads_Compute_Motion"
+        ],
+        "limitation": "Internal declarations do not establish a supported plugin state-update contract. Calling the internal integrator could advance/recompute motion twice; no experiment performed.",
+        "action": "Seek version-specific supported API guidance before implementation"
+      },
+      {
+        "id": "B",
+        "fallback_rank": 1,
+        "name": "Normal contact force/torque through existing SDOF load properties",
+        "support": "DOCUMENTED: external global/body forces and moments in DEFINE_SDOF_PROPERTIES; existing magnetic COM F/T path empirically verified",
+        "installed_symbols": [
+          "SDOF_LOAD_F_X",
+          "SDOF_LOAD_F_Y",
+          "SDOF_LOAD_F_Z",
+          "SDOF_LOAD_M_X",
+          "SDOF_LOAD_M_Y",
+          "SDOF_LOAD_M_Z",
+          "SDOF_LOAD_LOCAL"
+        ],
+        "principle": "Let the native6DOF integrator update motion. Evaluate a normal contact force and COM torque with one consistent event/time law.",
+        "required_validation": [
+          "Event timing vs predictor/load calls",
+          "Impulse integral over absolute time, independent of number of property calls",
+          "Nonpenetration and passivity",
+          "Resolved contact-time/stiffness scale at frozen25us",
+          "COM torque and reaction accounting"
+        ],
+        "limitation": "F=J/dt alone is not a validated collision model. Several property evaluations per timestep must not accumulate the force multiple times. Detection latency and integration can change achieved impulse.",
+        "implemented": false,
+        "official_source": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_udf/flu_udf_DynamicMeshDEFINE.html#flu_udf_sec_define_sdof_properties"
+      },
+      {
+        "id": "C",
+        "fallback_rank": 3,
+        "name": "Calibrated short-range penalty contact force",
+        "support": "Load path available; stiffness/damping/model accuracy unvalidated",
+        "limitation": "Adds contact constitutive parameters and timestep/stiffness constraints; requires new authorization and calibration. No penalty or repulsion added.",
+        "implemented": false
+      },
+      {
+        "id": "D",
+        "fallback_rank": 4,
+        "name": "External rigid-body integrator coupled to Fluent",
+        "support": "Coupling architecture not audited as a supported replacement in this frozen case",
+        "limitation": "Largest architecture change; requires force/torque exchange, native overset pose synchronization, stability and double-integration prevention. No prescribed CG_MOTION substitution.",
+        "implemented": false
+      }
+    ],
+    "analytic_detection_resolves_overwrite_blocker": false,
+    "physics_changed": false
+  },
+  "preferred_next_architecture": "Native DEFINE_CONTACT + same-returned-theta Overwrite with explicitly accounted endpoint-pose integration semantics",
+  "numerical_gates": {
+    "orphan_peak": 0,
+    "invalid_donor_peak": 0,
+    "nonpositive_volume_peak": 0,
+    "minimum_volume_m3": 6.100596812042468e-17,
+    "minimum_gap_m": 4.817745748452356e-05,
+    "maximum_quaternion_norm_error": 1.1102230246251565e-16,
+    "all_dynamic_states_PASS": true
+  },
+  "resource_metrics": {
+    "peak_project_working_set_gib": 10.165584564208984,
+    "peak_project_private_bytes_gib": 15.825401306152344,
+    "peak_system_commit_percent": 91.95061987497564,
+    "minimum_available_physical_gib": 3.6354827880859375,
+    "resource_guard_triggered": false
+  },
+  "previous_C_D_source_evidence_sha256_preserved": true,
+  "owned_solvers_closed": true,
+  "blockers": [],
+  "remaining_unknowns": [
+    "Get_Motion third-array assignment/contract in this6DOF path",
+    "Exact internal predictor/corrector flag and implementation body",
+    "Persistence vs repeated-invocation contribution after the first no-op was not separately isolated",
+    "Behavior for other theta inputs, orientations, constraints or solver architectures"
+  ],
+  "git_verified_prior_milestones": [
+    "b669605",
+    "04d1965"
+  ],
+  "recommended_next": "Retain this verified one-event baseline; separately authorize longer contact validation with nonpenetration and energy checks.",
+  "evidence_directory": "evidence/benchmark_D_contact_overwrite_semantics",
+  "live_case_directory": "live_cases/benchmark_D_contact_overwrite_semantics"
+}

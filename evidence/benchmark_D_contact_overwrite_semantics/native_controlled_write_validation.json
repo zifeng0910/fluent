@@ -1,0 +1,566 @@
+{
+  "timestamp": "2026-10-04T16:04:02.049009+00:00",
+  "status": "PASS",
+  "result": "NATIVE_CONTACT_RESPONSE_PATH_VALIDATED",
+  "scope": "Exactly one e_n=0,mu=0 contact event plus one next step; ending1.875ms. No full collision or1.9/2ms run.",
+  "actual_callback": {
+    "callback_index": 1,
+    "CURRENT_TIME": 0.001825000000000001,
+    "timestep_index": 73,
+    "iteration_index": 146,
+    "process_role": "node",
+    "dt_pointer": "0000022172B66410",
+    "dt_NULL": false,
+    "moving_body": true,
+    "dynamic_zone_id": 7,
+    "opposite_zone_id": 6,
+    "opposite_ndt_NULL": true,
+    "contact_face_count": 179,
+    "contact_point": [
+      0.0020436722784209892,
+      -0.0008429128641985178,
+      0.0002946779345301487
+    ],
+    "contact_normal": [
+      9.605666078903204e-05,
+      0.9443196452672084,
+      -0.3290294794323631
+    ],
+    "DT_CG": [
+      0.001203427035841474,
+      1.2054169651179406e-06,
+      -4.4987542710165897e-07
+    ],
+    "DT_Q": [
+      0.9762161458863163,
+      0.008642620204002553,
+      -0.07329381992163067,
+      -0.20385131245143204
+    ],
+    "get_velocity": [
+      -0.0025271228616644535,
+      0.003936435955531434,
+      -0.0012976068227820619
+    ],
+    "get_omega": [
+      47.94436520248257,
+      -276.8498814150523,
+      -888.7526328388972
+    ],
+    "get_theta": [
+      0,
+      0,
+      0
+    ],
+    "native_current_velocity": [
+      -0.0025271228616644535,
+      0.003936435955531434,
+      -0.0012976068227820619
+    ],
+    "native_current_omega": [
+      47.94436520248257,
+      -276.8498814150523,
+      -888.7526328388972
+    ],
+    "native_temporary_velocity": [
+      -0.003078475416918156,
+      0.00278338081035859,
+      -0.0009735323565712222
+    ],
+    "native_temporary_omega": [
+      39.13734668233644,
+      -238.3510307135593,
+      -752.0650495857042
+    ],
+    "contact_velocity_before": [
+      -0.834445566862239,
+      -0.7569834511193698,
+      0.19085347379871737
+    ],
+    "requested_velocity": [
+      -0.002498393026059872,
+      0.28637544584667424,
+      -0.09970788650046335
+    ],
+    "requested_omega": [
+      45.93764814079465,
+      -88.84964261526514,
+      -351.117633491805
+    ],
+    "motion_all_zero": false,
+    "mode": 2,
+    "action": "APPLIED",
+    "overwrite_called": true,
+    "normal_velocity_before": -0.7777109172208035,
+    "impulse_N_s": 2.6632487046107135e-06,
+    "normal_velocity_after": 1.8041124150158794e-16,
+    "contact_active": 0,
+    "motion_tmp_cg_null": true,
+    "motion_tmp_theta_null": true,
+    "ideal_tube_gap_from_actual_vertices_m": 8.830977425190105e-05
+  },
+  "predicted_velocity": [
+    -0.002498393026059872,
+    0.2863754458466743,
+    -0.09970788650046336
+  ],
+  "predicted_omega": [
+    45.9376481407947,
+    -88.84964261526522,
+    -351.11763349180524
+  ],
+  "predicted_impulse_N_s": 2.663248704610714e-06,
+  "independent_impulse_validation": {
+    "velocity": {
+      "max_abs": 5.551115123125783e-17,
+      "norm_error": 5.721958498152797e-17,
+      "relative_error": 1.8868963936885604e-16,
+      "direction_cosine": 1.0
+    },
+    "omega": {
+      "max_abs": 2.2737367544323206e-13,
+      "norm_error": 2.478765785342661e-13,
+      "relative_error": 6.789530963578892e-16,
+      "direction_cosine": 0.9999999999999998
+    },
+    "impulse_abs_N_s": 4.235164736271502e-22
+  },
+  "impulse_math_PASS": "True",
+  "actual_completed_step": {
+    "time_s": 0.001850000000000001,
+    "native_step_index": 74,
+    "native_state": {
+      "com": [
+        0.001203430423876008,
+        8.270410209346977e-06,
+        -2.911214814205053e-06
+      ],
+      "q": [
+        0.9776854046319566,
+        0.008645798633414718,
+        -0.07100832402527775,
+        -0.197520423386441
+      ],
+      "velocity": [
+        -0.002498393026059872,
+        0.2863754458466742,
+        -0.09970788650046335
+      ],
+      "omega": [
+        45.93764814079465,
+        -88.84964261526514,
+        -351.117633491805
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.4233020951604062,
+        "axis": [
+          0.041155890588658796,
+          -0.33801513756909424,
+          -0.9402403732259111
+        ]
+      }
+    },
+    "shared_body_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "connectivity": {
+      "total": 4699301,
+      "orphan": 0,
+      "invalid_donors": 0,
+      "unidentified": 0,
+      "nonpositive_volume": 0,
+      "nonfinite_volume": 0,
+      "minimum_volume_m3": 6.100596812043562e-17
+    },
+    "physical_gap_m": 8.672061564891115e-05,
+    "q_norm": 1.0,
+    "Fmag_N": [
+      -2.5560745855625443e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_Nm": [
+      2.9222054027366216e-07,
+      -1.7213518835097986e-06,
+      -6.63139282931012e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00095141 -0.00039454  0.00014434]",
+      "B_global": "[-0.01070312 -0.00253158  0.00018549]",
+      "s_eff_mm": 31.686232972919658,
+      "phase_rad": 1.1623892818282242,
+      "ramp": 1
+    },
+    "hard_failures": [],
+    "status": "PASS"
+  },
+  "completed_vs_requested": {
+    "velocity": {
+      "max_abs": 1.1102230246251565e-16,
+      "norm_error": 1.1188630228279524e-16,
+      "relative_error": 3.6896083805695033e-16,
+      "direction_cosine": 1.0000000000000002
+    },
+    "omega": {
+      "max_abs": 2.2737367544323206e-13,
+      "norm_error": 2.478765785342661e-13,
+      "relative_error": 6.789530963578892e-16,
+      "direction_cosine": 0.9999999999999998
+    }
+  },
+  "intended_change": {
+    "velocity": [
+      2.872983560458153e-05,
+      0.28243900989114284,
+      -0.0984102796776813
+    ],
+    "omega": [
+      -2.0067170616878727,
+      188.0002387997871,
+      537.6349993470919
+    ]
+  },
+  "observed_change": {
+    "velocity": [
+      2.8729835604581096e-05,
+      0.28243900989114273,
+      -0.09841027967768129
+    ],
+    "omega": [
+      -2.0067170616879224,
+      188.00023879978718,
+      537.6349993470922
+    ]
+  },
+  "expected_vs_observed_change": {
+    "velocity": {
+      "max_abs": 1.1102230246251565e-16,
+      "norm_error": 1.118871427716928e-16,
+      "relative_error": 3.7408864665277175e-16,
+      "direction_cosine": 1.0000000000000002
+    },
+    "omega": {
+      "max_abs": 2.2737367544323206e-13,
+      "norm_error": 2.478765785342661e-13,
+      "relative_error": 4.3520652559052906e-16,
+      "direction_cosine": 0.9999999999999998
+    }
+  },
+  "completed_step_retains_intended_change": true,
+  "next_start_native": {
+    "time_s": 0.001850000000000001,
+    "native_state": {
+      "com": [
+        0.001203430423876008,
+        8.270410209346977e-06,
+        -2.911214814205053e-06
+      ],
+      "q": [
+        0.9776854046319566,
+        0.008645798633414718,
+        -0.07100832402527775,
+        -0.197520423386441
+      ],
+      "velocity": [
+        -0.002498393026059872,
+        0.2863754458466742,
+        -0.09970788650046335
+      ],
+      "omega": [
+        45.93764814079465,
+        -88.84964261526514,
+        -351.117633491805
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.4233020951604062,
+        "axis": [
+          0.041155890588658796,
+          -0.33801513756909424,
+          -0.9402403732259111
+        ]
+      }
+    }
+  },
+  "next_start_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "actual_next_properties_entry": {
+    "stage": "PROPERTIES_ENTRY",
+    "CURRENT_TIME": 0.0018500000000000012,
+    "property_time": 0.0018750000000000012,
+    "dtime": 2.5e-05,
+    "callback_index": 1,
+    "timestep_index": 74,
+    "iteration_index": 148,
+    "process_role": "node",
+    "CG": [
+      0.001203430423876008,
+      8.270410209346977e-06,
+      -2.9112148142050535e-06
+    ],
+    "Q": [
+      0.9776854046319566,
+      0.008645798633414718,
+      -0.07100832402527774,
+      -0.197520423386441
+    ],
+    "velocity": [
+      -0.002498393026059872,
+      0.28637544584667424,
+      -0.09970788650046335
+    ],
+    "omega": [
+      45.93764814079465,
+      -88.84964261526514,
+      -351.117633491805
+    ],
+    "DT_THETA": [
+      0.01742137471437171,
+      -0.14308251592893048,
+      -0.3980057199409305
+    ],
+    "get_velocity": [
+      0,
+      0,
+      0
+    ],
+    "get_omega": [
+      0,
+      0,
+      0
+    ],
+    "get_theta": [
+      0,
+      0,
+      0
+    ],
+    "Theta_From_Q_native": [
+      0.01742137471437171,
+      -0.14308251592893048,
+      -0.3980057199409305
+    ],
+    "Euler_From_Q_native": [
+      0.045390572434867285,
+      -0.13584962856169622,
+      -0.4017791910979751
+    ],
+    "Q_From_DT_THETA_native": [
+      0.9776854046319566,
+      0.008645798633414718,
+      -0.07100832402527774,
+      -0.197520423386441
+    ],
+    "tmp_state_CG": [
+      0.001203713388222422,
+      8.724861369932643e-07,
+      -3.356690108892919e-07
+    ],
+    "tmp_state_Q": [
+      0.984623529376754,
+      0.006896969730061793,
+      -0.0607625496750705,
+      -0.16363633387237564
+    ],
+    "tmp_state_velocity": [
+      -0.003078475416918156,
+      0.00278338081035859,
+      -0.0009735323565712222
+    ],
+    "tmp_state_omega": [
+      39.13734668233644,
+      -238.3510307135593,
+      -752.0650495857042
+    ],
+    "tmp_state_theta": [
+      0.01386507789800985,
+      -0.1221518315289166,
+      -0.3289604862547234
+    ],
+    "acceleration": [
+      9.692517084281434,
+      11310.417985887205,
+      -3939.8748516236114
+    ],
+    "angular_acceleration": [
+      94218.1043085214,
+      -407331.6359383563,
+      -1437863.8536868058
+    ],
+    "motion_tmp_cg_if_present": [
+      0,
+      0,
+      0
+    ],
+    "contact_active": 0,
+    "dt_contact_p": 1,
+    "sdof_p": 1,
+    "tmp_cg_NULL": true,
+    "tmp_theta_NULL": true,
+    "conversions_read_only": true
+  },
+  "next_properties_entry_matches_completed": true,
+  "next_timestep_inherited": true,
+  "next_completed_state": {
+    "time_s": 0.001875000000000001,
+    "native_step_index": 75,
+    "native_state": {
+      "com": [
+        0.001202944876138455,
+        1.448961371253765e-05,
+        -5.051540349118485e-06
+      ],
+      "q": [
+        0.976514285550595,
+        0.009134369675092457,
+        -0.07231075664664738,
+        -0.20275001326618708
+      ],
+      "velocity": [
+        -0.01942190950209963,
+        0.2487681401276271,
+        -0.08561302139653727
+      ],
+      "omega": [
+        48.15075850960174,
+        -112.6259630766214,
+        -425.664702306974
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.4343107124876275,
+        "axis": [
+          0.04239617898390431,
+          -0.33562247755445473,
+          -0.9410420376198793
+        ]
+      }
+    },
+    "shared_body_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "connectivity": {
+      "total": 4699301,
+      "orphan": 0,
+      "invalid_donors": 0,
+      "unidentified": 0,
+      "nonpositive_volume": 0,
+      "nonfinite_volume": 0,
+      "minimum_volume_m3": 6.100596812043595e-17
+    },
+    "physical_gap_m": 8.430557461377091e-05,
+    "q_norm": 1.0,
+    "Fmag_N": [
+      -2.5435218487336245e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_Nm": [
+      3.010573675488381e-07,
+      -1.7369209759144544e-06,
+      -6.743742120650358e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00094675 -0.00040482  0.00014653]",
+      "B_global": "[-0.01069929 -0.00254819  0.00017867]",
+      "s_eff_mm": 31.685597425182106,
+      "phase_rad": 1.178097245096173,
+      "ramp": 1
+    },
+    "hard_failures": [],
+    "status": "PASS"
+  },
+  "physical_event_count": 1,
+  "host_node_same_event": true,
+  "no_second_overwrite": true,
+  "immediate_callback_reread_used_as_PASS": false,
+  "immediate_pending_motion_observation": {
+    "classification": "EMPIRICALLY_MEASURED",
+    "getter_after_vs_requested": {
+      "velocity": {
+        "max_abs": 5.551115123125783e-17,
+        "norm_error": 5.721958498152797e-17,
+        "relative_error": 1.8868963936885604e-16,
+        "direction_cosine": 1.0
+      },
+      "omega": {
+        "max_abs": 2.2737367544323206e-13,
+        "norm_error": 2.478765785342661e-13,
+        "relative_error": 6.789530963578892e-16,
+        "direction_cosine": 0.9999999999999998
+      }
+    },
+    "visible_native_velocity_change_m_s": 0.0,
+    "visible_native_omega_change_rad_s": 0.0,
+    "visible_native_CG_change_m": 0.0,
+    "visible_native_Q_change_rad": 0.0,
+    "getter_theta_before": [
+      0,
+      0,
+      0
+    ],
+    "getter_theta_after": [
+      0,
+      0,
+      0
+    ],
+    "interpretation": "EMPIRICALLY_INFERRED pending contact-motion storage: getter reflects requested motion while current DT fields remain unchanged immediately; exact internal storage identity UNKNOWN. This observation is not the write PASS gate."
+  },
+  "change_acceptance_relative_error": 0.05,
+  "minimum_direction_cosine": 0.999
+}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-04T16:03:27.375910+00:00",
+  "worker_pid": 22412,
+  "worker_created": 1791128766.9023569,
+  "processes": [
+    {
+      "pid": 6840,
+      "created": 1791128833.8185613,
+      "name": "fl2610.exe",
+      "ownership": "SDK host/cortex"
+    },
+    {
+      "pid": 43768,
+      "created": 1791128829.5386505,
+      "name": "cx2610.exe",
+      "ownership": "SDK host/cortex"
+    },
+    {
+      "pid": 4156,
+      "created": 1791128836.0460072,
+      "registered_host_pid": 6840,
+      "mport": "127.0.0.1:127.0.0.1:51104:0",
+      "ownership_evidence": "Node -mport matches registered Fluent host local TCP port",
+      "name": "fl_mpi2610.exe"
+    }
+  ]
+}

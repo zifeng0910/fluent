@@ -1,0 +1,20 @@
+{
+  "campaign": "BENCHMARK_D_CONTACT_OVERWRITE_SEMANTICS",
+  "status": "COMPLETE",
+  "timestamp": "2026-10-04T16:14:37.296366+00:00",
+  "worker_alive": false,
+  "solver_alive": false,
+  "branch": "controlled",
+  "worker_pid": 22412,
+  "worker_created": 1791128766.9023569,
+  "completed_new_steps": 5,
+  "current_time_s": 0.001875,
+  "result": "NATIVE_CONTACT_RESPONSE_PATH_VALIDATED",
+  "verified_branches": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "controlled"
+  ]
+}
