@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-03T23:59:22.066114+00:00",
+  "status": "PASS",
+  "random_states": 2048,
+  "seed": 261004,
+  "counts": {
+    "approaching": 1024,
+    "separating": 1024
+  },
+  "normal_restitution": 0,
+  "friction": 0,
+  "thresholds": {
+    "normal_after_abs_m_s": 1e-10,
+    "normal_after_negative_m_s": 1e-10,
+    "linear_impulse_relative": 1e-09,
+    "angular_impulse_relative": 1e-09,
+    "tangential_impulse_N_s": 1e-16,
+    "reference_velocity_m_s": 1e-10,
+    "reference_omega_rad_s": 1e-08,
+    "reference_impulse_N_s": 1e-16,
+    "inverse_tensor_relative": 1e-12
+  },
+  "maximum_errors": {
+    "normal_after_abs_m_s": 1.6653345369377348e-15,
+    "normal_after_negative_m_s": 1.6653345369377348e-15,
+    "linear_impulse_relative": 5.482834982327759e-14,
+    "angular_impulse_relative": 5.0730063127862555e-14,
+    "tangential_impulse_N_s": 7.432683947104276e-21,
+    "reference_velocity_m_s": 6.661338147750939e-16,
+    "reference_omega_rad_s": 2.5011104298755527e-12,
+    "reference_impulse_N_s": 6.776263578034403e-21,
+    "inverse_tensor_relative": 1.9244785267741063e-15
+  },
+  "failing_states": [],
+  "actual_compiled_C_kernel": true,
+  "independent_reference": "NumPy solve of rotated inertia, SciPy quaternion rotations",
+  "c_header_sha256": "8ce912811200649a0e15951d7d3abbe622173c1ef0cc37ded83ca080667ff67a",
+  "validation_script_sha256": "f9de2db502e09290e1b6d82f3553a91d9b8d5e4da8153e154ee03903b8aa1626",
+  "dll_sha256": "63f70046d0c5af2b1dcdefc3f13f2eb0e7d76e984dc63d0088abde5299116fd9",
+  "solver_launched": false
+}
