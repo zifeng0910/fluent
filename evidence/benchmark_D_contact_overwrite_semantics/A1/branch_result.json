@@ -1,0 +1,97 @@
+{
+  "status": "DIAGNOSTIC_DATA_COMPLETE",
+  "branch": "A1",
+  "timestamp": "2026-10-04T14:23:30.241188+00:00",
+  "actual_contact_triggered": true,
+  "first_contact_completed_iteration": 4,
+  "completed_new_steps": 5,
+  "last_state": {
+    "time_s": 0.001875000000000001,
+    "native_step_index": 75,
+    "native_state": {
+      "com": [
+        0.001203368278919173,
+        1.309099612826256e-06,
+        -4.83762486255775e-07
+      ],
+      "q": [
+        0.9735726344515028,
+        0.00912931483553615,
+        -0.07670242373137541,
+        -0.21491793608614135
+      ],
+      "velocity": [
+        -0.002173430922405268,
+        0.00435817586113377,
+        -0.001413357909547216
+      ],
+      "omega": [
+        50.34647121191523,
+        -287.1452646857237,
+        -925.0619446542527
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.46082182098061286,
+        "axis": [
+          0.03997465195739393,
+          -0.3358579201382328,
+          -0.9410640173130125
+        ]
+      }
+    },
+    "shared_body_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "connectivity": {
+      "total": 4699301,
+      "orphan": 0,
+      "invalid_donors": 0,
+      "unidentified": 0,
+      "nonpositive_volume": 0,
+      "nonfinite_volume": 0,
+      "minimum_volume_m3": 6.100596812043413e-17
+    },
+    "physical_gap_m": 4.889483504609506e-05,
+    "q_norm": 0.9999999999999999,
+    "Fmag_N": [
+      -2.51195987117417e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_Nm": [
+      3.1787078214958046e-07,
+      -1.8230936711749783e-06,
+      -6.965899317821132e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.000935   -0.00042838  0.00015478]",
+      "B_global": "[-0.01069929 -0.00254819  0.00017867]",
+      "s_eff_mm": 31.68602082796282,
+      "phase_rad": 1.178097245096173,
+      "ramp": 1
+    },
+    "hard_failures": [],
+    "status": "PASS"
+  },
+  "previous_C_and_zero_step_D_preserved": true,
+  "read_only_has_no_overwrite": true
+}

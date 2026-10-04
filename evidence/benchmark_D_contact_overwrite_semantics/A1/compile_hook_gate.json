@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T14:08:59.711786+00:00",
+  "library": "libD_overwrite_A1_v1",
+  "source_sha256": "f3e856ae27a52028ee45e5d97eae9fedfa37252796479197c685ee9f7413aeb0",
+  "config_sha256": "0d9baf484588bef9a4e59dae481885b1956ec6a5c0d9984898d682f1564c0021",
+  "dll_sha256": {
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\A1\\libD_overwrite_A1_v1\\win64\\3ddp_host\\libudf.dll": "32f272546ec1ba3479784e97995dd7da3c5febb41f2e42c74e4daa0f3916fb55",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\A1\\libD_overwrite_A1_v1\\win64\\3ddp_node\\libudf.dll": "c4a04c3831f706c396ba369208551e329c0d3a9c648dec9e8fd01f274eb8a571"
+  },
+  "contact_state": {
+    "enabled": true,
+    "face_zones": [
+      "robot_wall",
+      "pipe_wall"
+    ],
+    "proximity_threshold": 0.0001,
+    "contact_udf": "l2300_native_contact_lifecycle::libD_overwrite_A1_v1",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 1
+  },
+  "magnetic_formula_delegated_once": true,
+  "true_solver_contact_only": true
+}

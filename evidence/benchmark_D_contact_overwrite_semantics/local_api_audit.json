@@ -1,0 +1,710 @@
+{
+  "timestamp": "2026-10-04T14:05:24.387721+00:00",
+  "release": "Installedv261 / Fluent26.1.0",
+  "status": "PARTIAL",
+  "installed_definitions": [
+    {
+      "path": "H:/Program Files/ANSYS Inc/v261/fluent/fluent26.1.0/src/udf/udf.h",
+      "sha256": "4414104220f454bdc0c8cece67a8799a5ee8f8d4d7fc4f86dde55f04fc977a21",
+      "matches": [
+        {
+          "line": 315,
+          "excerpt": [
+            {
+              "line": 314,
+              "text": "  EXTERN_C void name(Domain *d, Dynamic_Thread *dt, real *position)"
+            },
+            {
+              "line": 315,
+              "text": "#define DEFINE_CONTACT(name, dt, contacts) \\"
+            },
+            {
+              "line": 316,
+              "text": "  EXTERN_C void name(Dynamic_Thread *dt, Objp *contacts)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "H:/Program Files/ANSYS Inc/v261/fluent/fluent26.1.0/src/mesh/six_dof.h",
+      "sha256": "365e0dfdc9064a7d2edab788b68cb2459d47ac106fd4168953d7ae6d65fb8f4f",
+      "matches": [
+        {
+          "line": 53,
+          "excerpt": [
+            {
+              "line": 52,
+              "text": "  SDOF_LOAD_LOCAL,         /* boolean */"
+            },
+            {
+              "line": 53,
+              "text": "  SDOF_LOAD_F_X,"
+            },
+            {
+              "line": 54,
+              "text": "  SDOF_LOAD_F_Y,"
+            }
+          ]
+        },
+        {
+          "line": 54,
+          "excerpt": [
+            {
+              "line": 53,
+              "text": "  SDOF_LOAD_F_X,"
+            },
+            {
+              "line": 54,
+              "text": "  SDOF_LOAD_F_Y,"
+            },
+            {
+              "line": 55,
+              "text": "  SDOF_LOAD_F_Z,"
+            }
+          ]
+        },
+        {
+          "line": 55,
+          "excerpt": [
+            {
+              "line": 54,
+              "text": "  SDOF_LOAD_F_Y,"
+            },
+            {
+              "line": 55,
+              "text": "  SDOF_LOAD_F_Z,"
+            },
+            {
+              "line": 56,
+              "text": "  SDOF_LOAD_M_X,"
+            }
+          ]
+        },
+        {
+          "line": 56,
+          "excerpt": [
+            {
+              "line": 55,
+              "text": "  SDOF_LOAD_F_Z,"
+            },
+            {
+              "line": 56,
+              "text": "  SDOF_LOAD_M_X,"
+            },
+            {
+              "line": 57,
+              "text": "  SDOF_LOAD_M_Y,"
+            }
+          ]
+        },
+        {
+          "line": 57,
+          "excerpt": [
+            {
+              "line": 56,
+              "text": "  SDOF_LOAD_M_X,"
+            },
+            {
+              "line": 57,
+              "text": "  SDOF_LOAD_M_Y,"
+            },
+            {
+              "line": 58,
+              "text": "  SDOF_LOAD_M_Z,"
+            }
+          ]
+        },
+        {
+          "line": 58,
+          "excerpt": [
+            {
+              "line": 57,
+              "text": "  SDOF_LOAD_M_Y,"
+            },
+            {
+              "line": 58,
+              "text": "  SDOF_LOAD_M_Z,"
+            },
+            {
+              "line": 59,
+              "text": "  SDOF_CUSTOM_TRANS,       /* boolean */"
+            }
+          ]
+        },
+        {
+          "line": 93,
+          "excerpt": [
+            {
+              "line": 92,
+              "text": "#define SDOFP_POI(s)          (s+SDOF_IXY)          /* products of inertia */"
+            },
+            {
+              "line": 93,
+              "text": "#define SDOFP_LOAD_LOCAL(s)   (s[SDOF_LOAD_LOCAL])  /* load forces/moments */"
+            },
+            {
+              "line": 94,
+              "text": "#define SDOFP_LOAD_F(s)       (s+SDOF_LOAD_F_X)"
+            }
+          ]
+        },
+        {
+          "line": 94,
+          "excerpt": [
+            {
+              "line": 93,
+              "text": "#define SDOFP_LOAD_LOCAL(s)   (s[SDOF_LOAD_LOCAL])  /* load forces/moments */"
+            },
+            {
+              "line": 94,
+              "text": "#define SDOFP_LOAD_F(s)       (s+SDOF_LOAD_F_X)"
+            },
+            {
+              "line": 95,
+              "text": "#define SDOFP_LOAD_M(s)       (s+SDOF_LOAD_M_X)"
+            }
+          ]
+        },
+        {
+          "line": 95,
+          "excerpt": [
+            {
+              "line": 94,
+              "text": "#define SDOFP_LOAD_F(s)       (s+SDOF_LOAD_F_X)"
+            },
+            {
+              "line": 95,
+              "text": "#define SDOFP_LOAD_M(s)       (s+SDOF_LOAD_M_X)"
+            },
+            {
+              "line": 96,
+              "text": "#define SDOFP_CUSTOM_TRANS(s) (s[SDOF_CUSTOM_TRANS])/* costum transformations */"
+            }
+          ]
+        },
+        {
+          "line": 138,
+          "excerpt": [
+            {
+              "line": 137,
+              "text": "FLUENT_EXPORT void SDOF_Free_Threads (void);"
+            },
+            {
+              "line": 138,
+              "text": "FLUENT_EXPORT void SDOF_Threads_Compute_Motion (Domain *, real, real);"
+            },
+            {
+              "line": 139,
+              "text": "FLUENT_EXPORT void SDOF_Threads_Store_Constraint(void);"
+            }
+          ]
+        },
+        {
+          "line": 142,
+          "excerpt": [
+            {
+              "line": 141,
+              "text": "FLUENT_EXPORT void SDOF_Update_Constraints(void);"
+            },
+            {
+              "line": 142,
+              "text": "FLUENT_EXPORT void SDOF_Get_Motion (Dynamic_Thread *,"
+            },
+            {
+              "line": 143,
+              "text": "                                    real[3], real[3], real[3]);"
+            }
+          ]
+        },
+        {
+          "line": 144,
+          "excerpt": [
+            {
+              "line": 143,
+              "text": "                                    real[3], real[3], real[3]);"
+            },
+            {
+              "line": 144,
+              "text": "FLUENT_EXPORT cxboolean SDOF_Fill_RB_State (Dynamic_Thread *, rb_state *, real, real);"
+            },
+            {
+              "line": 145,
+              "text": "FLUENT_EXPORT void SDOF_Overwrite_Motion (Dynamic_Thread *,"
+            }
+          ]
+        },
+        {
+          "line": 145,
+          "excerpt": [
+            {
+              "line": 144,
+              "text": "FLUENT_EXPORT cxboolean SDOF_Fill_RB_State (Dynamic_Thread *, rb_state *, real, real);"
+            },
+            {
+              "line": 145,
+              "text": "FLUENT_EXPORT void SDOF_Overwrite_Motion (Dynamic_Thread *,"
+            },
+            {
+              "line": 146,
+              "text": "                                          real[3], real[3], real[3]);"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "H:/Program Files/ANSYS Inc/v261/fluent/fluent26.1.0/src/mesh/dynamesh_tools.h",
+      "sha256": "734d40aaaa08ef629749972524497b7e2ceffc9afb22b27c63b7dcf7aedbd3e9",
+      "matches": [
+        {
+          "line": 15,
+          "excerpt": [
+            {
+              "line": 14,
+              "text": "{"
+            },
+            {
+              "line": 15,
+              "text": "  real cg[3];                              /* center of gravity"
+            },
+            {
+              "line": 16,
+              "text": "                                              position wrt global */"
+            }
+          ]
+        },
+        {
+          "line": 17,
+          "excerpt": [
+            {
+              "line": 16,
+              "text": "                                              position wrt global */"
+            },
+            {
+              "line": 17,
+              "text": "  quaternion q;                            /* orientation quaternion */"
+            },
+            {
+              "line": 18,
+              "text": "  real theta[3];                           /* orientation angles wrt global,"
+            }
+          ]
+        },
+        {
+          "line": 18,
+          "excerpt": [
+            {
+              "line": 17,
+              "text": "  quaternion q;                            /* orientation quaternion */"
+            },
+            {
+              "line": 18,
+              "text": "  real theta[3];                           /* orientation angles wrt global,"
+            },
+            {
+              "line": 19,
+              "text": "                                              Euler angles for 6-dof */"
+            }
+          ]
+        },
+        {
+          "line": 19,
+          "excerpt": [
+            {
+              "line": 18,
+              "text": "  real theta[3];                           /* orientation angles wrt global,"
+            },
+            {
+              "line": 19,
+              "text": "                                              Euler angles for 6-dof */"
+            },
+            {
+              "line": 20,
+              "text": "  real v_cg[3];                            /* instantaneous cg velocity"
+            }
+          ]
+        },
+        {
+          "line": 49,
+          "excerpt": [
+            {
+              "line": 48,
+              "text": "{"
+            },
+            {
+              "line": 49,
+              "text": "  Dynamic_Thread_Rigid_Body_State current_state;"
+            },
+            {
+              "line": 50,
+              "text": "  Dynamic_Thread_Rigid_Body_State tmp_state;"
+            }
+          ]
+        },
+        {
+          "line": 50,
+          "excerpt": [
+            {
+              "line": 49,
+              "text": "  Dynamic_Thread_Rigid_Body_State current_state;"
+            },
+            {
+              "line": 50,
+              "text": "  Dynamic_Thread_Rigid_Body_State tmp_state;"
+            },
+            {
+              "line": 51,
+              "text": "  Dynamic_Thread_Rigid_Body_State init_state;"
+            }
+          ]
+        },
+        {
+          "line": 130,
+          "excerpt": [
+            {
+              "line": 129,
+              "text": "  cxboolean contact_p;"
+            },
+            {
+              "line": 130,
+              "text": "  real (*tmp_cg)[3];"
+            },
+            {
+              "line": 131,
+              "text": "  real *tmp_theta;"
+            }
+          ]
+        },
+        {
+          "line": 131,
+          "excerpt": [
+            {
+              "line": 130,
+              "text": "  real (*tmp_cg)[3];"
+            },
+            {
+              "line": 131,
+              "text": "  real *tmp_theta;"
+            },
+            {
+              "line": 132,
+              "text": "  real tmp_omega[3];                       /* zone-motion variables */"
+            }
+          ]
+        },
+        {
+          "line": 154,
+          "excerpt": [
+            {
+              "line": 153,
+              "text": "{"
+            },
+            {
+              "line": 154,
+              "text": "  real cg[3];"
+            },
+            {
+              "line": 155,
+              "text": "  quaternion q;"
+            }
+          ]
+        },
+        {
+          "line": 155,
+          "excerpt": [
+            {
+              "line": 154,
+              "text": "  real cg[3];"
+            },
+            {
+              "line": 155,
+              "text": "  quaternion q;"
+            },
+            {
+              "line": 156,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "line": 163,
+          "excerpt": [
+            {
+              "line": 162,
+              "text": ""
+            },
+            {
+              "line": 163,
+              "text": "  real theta[3];"
+            },
+            {
+              "line": 164,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "line": 184,
+          "excerpt": [
+            {
+              "line": 183,
+              "text": "#define DT_RB_CURR_STATE(s)    ((s)->current_state)"
+            },
+            {
+              "line": 184,
+              "text": "#define DT_CG(s)               ((s)->current_state.cg)"
+            },
+            {
+              "line": 185,
+              "text": "#define DT_Q(s)                ((s)->current_state.q)"
+            }
+          ]
+        },
+        {
+          "line": 185,
+          "excerpt": [
+            {
+              "line": 184,
+              "text": "#define DT_CG(s)               ((s)->current_state.cg)"
+            },
+            {
+              "line": 185,
+              "text": "#define DT_Q(s)                ((s)->current_state.q)"
+            },
+            {
+              "line": 186,
+              "text": "#define DT_VEL_CG(s)           ((s)->current_state.v_cg)"
+            }
+          ]
+        },
+        {
+          "line": 190,
+          "excerpt": [
+            {
+              "line": 189,
+              "text": "#define DT_ALPHA_CG(s)         ((s)->current_state.alpha_cg)"
+            },
+            {
+              "line": 190,
+              "text": "#define DT_THETA(s)            ((s)->current_state.theta)"
+            },
+            {
+              "line": 191,
+              "text": "#define DT_DIR(s)              ((s)->current_state.dir)"
+            }
+          ]
+        },
+        {
+          "line": 918,
+          "excerpt": [
+            {
+              "line": 917,
+              "text": ""
+            },
+            {
+              "line": 918,
+              "text": "extern FLUENT_EXPORT cxboolean contact_active_p;"
+            },
+            {
+              "line": 919,
+              "text": "extern FLUENT_EXPORT int contact_model_type;"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "H:/Program Files/ANSYS Inc/v261/fluent/fluent26.1.0/src/util/quaternion.h",
+      "sha256": "ffefc39b23f12ca3255759e9ab14b7476b2fe296dbf181edd8cd4dad67ab584d",
+      "matches": [
+        {
+          "line": 20,
+          "excerpt": [
+            {
+              "line": 19,
+              "text": ""
+            },
+            {
+              "line": 20,
+              "text": "typedef real quaternion[4];"
+            },
+            {
+              "line": 21,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "line": 42,
+          "excerpt": [
+            {
+              "line": 41,
+              "text": "FLUENT_EXPORT void Axis_Angle_From_Q(quaternion, Axis_Angle *);"
+            },
+            {
+              "line": 42,
+              "text": "FLUENT_EXPORT void Theta_From_Q (quaternion, real[3]);"
+            },
+            {
+              "line": 43,
+              "text": "FLUENT_EXPORT void Q_From_Theta (real[3], quaternion *);"
+            }
+          ]
+        },
+        {
+          "line": 43,
+          "excerpt": [
+            {
+              "line": 42,
+              "text": "FLUENT_EXPORT void Theta_From_Q (quaternion, real[3]);"
+            },
+            {
+              "line": 43,
+              "text": "FLUENT_EXPORT void Q_From_Theta (real[3], quaternion *);"
+            },
+            {
+              "line": 44,
+              "text": "FLUENT_EXPORT void Q_From_Vectors (real[3], real[3], quaternion *);"
+            }
+          ]
+        },
+        {
+          "line": 61,
+          "excerpt": [
+            {
+              "line": 60,
+              "text": "FLUENT_EXPORT void Rotate_Vector_Q_DP(double[3], quaternion, double[3]);"
+            },
+            {
+              "line": 61,
+              "text": "FLUENT_EXPORT void Theta_From_Euler (real[3], real[3]);"
+            },
+            {
+              "line": 62,
+              "text": "FLUENT_EXPORT void Rot_Matrix_From_Euler (real[3], real[3][3]);"
+            }
+          ]
+        },
+        {
+          "line": 64,
+          "excerpt": [
+            {
+              "line": 63,
+              "text": "FLUENT_EXPORT void Q_From_Rot_Matrix (real[3][3], quaternion *);"
+            },
+            {
+              "line": 64,
+              "text": "FLUENT_EXPORT void Euler_From_Q (quaternion, real[3]);"
+            },
+            {
+              "line": 65,
+              "text": "FLUENT_EXPORT void Get_Rotation_Q_From_Qs(quaternion, quaternion, quaternion *);"
+            }
+          ]
+        },
+        {
+          "line": 66,
+          "excerpt": [
+            {
+              "line": 65,
+              "text": "FLUENT_EXPORT void Get_Rotation_Q_From_Qs(quaternion, quaternion, quaternion *);"
+            },
+            {
+              "line": 66,
+              "text": "FLUENT_EXPORT void Omega_From_Theta_Angles(real[3], real[3], real, real[3]);"
+            },
+            {
+              "line": 67,
+              "text": "FLUENT_EXPORT void Omega_From_Euler_Angles(real[3], real[3], real, real[3]);"
+            }
+          ]
+        },
+        {
+          "line": 67,
+          "excerpt": [
+            {
+              "line": 66,
+              "text": "FLUENT_EXPORT void Omega_From_Theta_Angles(real[3], real[3], real, real[3]);"
+            },
+            {
+              "line": 67,
+              "text": "FLUENT_EXPORT void Omega_From_Euler_Angles(real[3], real[3], real, real[3]);"
+            },
+            {
+              "line": 68,
+              "text": "FLUENT_EXPORT void Get_Closest_Angle(real[3], real[3], real[3], real *);"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "local_official_example": {
+    "status": "NOT_FOUND",
+    "search_roots": [
+      "H:/Program Files/ANSYS Inc/v261/fluent",
+      "H:/Program Files/ANSYS Inc/v261/commonfiles/help"
+    ],
+    "searched_extensions": [
+      ".h",
+      ".c",
+      ".cpp",
+      ".html",
+      ".htm",
+      ".txt",
+      ".scm",
+      ".js",
+      ".xml",
+      ".json",
+      ".pdf"
+    ],
+    "installed_help_contents": "GUI helpXML and graphics; standalone Fluent UDF contact example not located",
+    "original_local_example_file": null,
+    "original_local_example_lines": null
+  },
+  "official_same_release_online_example": {
+    "classification": "DOCUMENTED",
+    "url": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_udf/flu_udf_DynamicMeshDEFINE.html",
+    "version": "v261",
+    "section": "2.6.7.3 Example1",
+    "get_line": 891,
+    "get_call": "SDOF_Get_Motion (dt, vel0, omega0, theta0);",
+    "overwrite_line": 944,
+    "overwrite_call": "SDOF_Overwrite_Motion (dt, vel0, omega0, theta0);",
+    "same_returned_omega_and_theta_passed_back": true,
+    "velocity_changed_by_reflection": true,
+    "exact_visible_value_noop_trajectory_guarantee_documented": false,
+    "overwrite_inside_DEFINE_CONTACT_only": true,
+    "storage": "Two call excerpts only; online documentation is not mislabeled as an installed original"
+  },
+  "statements": [
+    {
+      "classification": "DOCUMENTED",
+      "statement": "Installed rigid-body theta field comment labels global orientation angles / Euler angles for6DOF. This comment does not specify Get_Motion third-array output."
+    },
+    {
+      "classification": "INFERRED_FROM_HEADER",
+      "statement": "DT_Q,DT_CG,DT_THETA alias separate fields of current_state. tmp_state and tmp_cg/tmp_theta are distinct storage."
+    },
+    {
+      "classification": "INFERRED_FROM_HEADER",
+      "statement": "Theta_From_Q and Euler_From_Q are different declared native functions. Their declaration alone proves neither a conversion sequence nor the Get/Overwrite theta contract."
+    },
+    {
+      "classification": "EMPIRICALLY_MEASURED",
+      "statement": "Previous actual6DOF callbacks returned nonzero native v/omega but caller-zero theta while DT_Q was non-identity. Same-value overwrite changed pose, not motion arrays."
+    },
+    {
+      "classification": "UNKNOWN",
+      "statement": "Get/Overwrite implementation bodies, Euler sequence, branch flags and predictor/corrector routing were not provided by the installed headers."
+    },
+    {
+      "classification": "DOCUMENTED",
+      "statement": "Official v261 example passes theta returned by Get to Overwrite; it does not promise no-op equivalence to omitting Overwrite."
+    }
+  ],
+  "conversions_in_diagnostics": "Native helpers on copied values only. No converted theta is sent to Overwrite or assigned to Dynamic_Thread.",
+  "binary_disassembly_used": false,
+  "official_installation_modified": false
+}

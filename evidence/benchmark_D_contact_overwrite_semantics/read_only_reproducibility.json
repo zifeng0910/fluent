@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-10-04T14:50:29.124632+00:00",
+  "branches": [
+    "A1",
+    "A2"
+  ],
+  "status": "PASS",
+  "peaks": {
+    "COM_norm_difference_m": 0.0,
+    "COM_max_component_difference_m": 0.0,
+    "orientation_difference_rad": 0.0,
+    "velocity_norm_difference_m_s": 0.0,
+    "omega_norm_difference_rad_s": 0.0
+  },
+  "each_step": [
+    {
+      "time_s": 0.001775000000000001,
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    },
+    {
+      "time_s": 0.001800000000000001,
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    },
+    {
+      "time_s": 0.001825000000000001,
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    },
+    {
+      "time_s": 0.001850000000000001,
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    },
+    {
+      "time_s": 0.001875000000000001,
+      "COM_norm_difference_m": 0.0,
+      "COM_max_component_difference_m": 0.0,
+      "orientation_difference_rad": 0.0,
+      "velocity_norm_difference_m_s": 0.0,
+      "omega_norm_difference_rad_s": 0.0
+    }
+  ],
+  "callback_count": 2,
+  "callback_time_face_geometry_equal": true,
+  "tolerance": {
+    "com_m": 1e-10,
+    "orientation_rad": 1e-08,
+    "velocity_m_s": 1e-08,
+    "omega_rad_s": 1e-06
+  },
+  "bitwise_identity_required": false
+}

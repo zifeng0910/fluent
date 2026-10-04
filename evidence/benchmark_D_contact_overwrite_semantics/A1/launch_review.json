@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T14:04:03.520885+00:00",
+  "branch": "A1",
+  "decision": "Independent read-only baseline fromC70;5 steps to1.875ms only; no overwrite; native angle helpers use local copies only",
+  "files_sha256": {
+    "scripts/benchmark_D_overwrite_worker.py": "e66bba263b97b50fb498f332effee8b68902e1242aca44dee64ee1e76bd8a021",
+    "scripts/benchmark_D_overwrite_common.py": "e20766a804a9eb83b54cb63b0210e533850e06071f0957eeaf45fde9c17de537",
+    "fluent_udf/l2300_contact_overwrite_semantics.c": "f3e856ae27a52028ee45e5d97eae9fedfa37252796479197c685ee9f7413aeb0",
+    "evidence\\benchmark_D_contact_overwrite_semantics\\A1\\configuration.json": "0d9baf484588bef9a4e59dae481885b1956ec6a5c0d9984898d682f1564c0021",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\A1\\lifecycle_config.h": "b04a696e4af9bee102a2a64e0ba44bf3a5445bae8e8f50b481da8ed2ee68d77a",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\A1\\magnetic_logging_copy.c": "176bd41082ad44436882ae3a09d769eb0b67906d1772362f7331047b8fb60c08"
+  }
+}

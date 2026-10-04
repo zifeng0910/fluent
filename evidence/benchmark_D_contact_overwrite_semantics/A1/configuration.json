@@ -1,0 +1,16 @@
+{
+  "branch": "A1",
+  "mode": 0,
+  "dt_s": 2.5e-05,
+  "threshold_m": 0.0001,
+  "source_checkpoint": "evidence/benchmark_C_coarse_2ms/checkpoint_0070.json",
+  "contact_source_sha256": "f3e856ae27a52028ee45e5d97eae9fedfa37252796479197c685ee9f7413aeb0",
+  "mathematical_kernel_sha256": "8ce912811200649a0e15951d7d3abbe622173c1ef0cc37ded83ca080667ff67a",
+  "magnetic_logging_copy_sha256": "176bd41082ad44436882ae3a09d769eb0b67906d1772362f7331047b8fb60c08",
+  "magnetic_original_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
+  "only_magnetic_log_paths_changed": true,
+  "configuration_header_sha256": "b04a696e4af9bee102a2a64e0ba44bf3a5445bae8e8f50b481da8ed2ee68d77a",
+  "official_2026R1_callback_pattern": true,
+  "no_manual_Detect_Contact_call": true,
+  "no_immediate_Get_after_Overwrite_gate": true
+}

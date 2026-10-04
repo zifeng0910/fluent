@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-04T14:23:34.280679+00:00",
+  "samples": 228,
+  "peak_project_working_set_gib": 10.118671417236328,
+  "peak_project_private_bytes_gib": 15.786590576171875,
+  "peak_system_commit_percent": 90.85636966231175,
+  "abort": null
+}
