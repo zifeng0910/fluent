@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T03:29:53.838820+00:00",
+  "library": "libD_lifecycle_noop_v1",
+  "source_sha256": "cbe8e636701807d7709b990a5ae0070d2e7fd66b8944be110ccae3e64111cd76",
+  "config_sha256": "ddafac73da3ce7a53ed8535acb0d1259abe917f405de95ba2a58ea91c14ce478",
+  "dll_sha256": {
+    "live_cases\\benchmark_D_contact_lifecycle\\noop\\libD_lifecycle_noop_v1\\win64\\3ddp_host\\libudf.dll": "1e099886dc8105f30c54eb3e0e7fb33bf91b2c117cb401eb591311dd5e0bb810",
+    "live_cases\\benchmark_D_contact_lifecycle\\noop\\libD_lifecycle_noop_v1\\win64\\3ddp_node\\libudf.dll": "5d7fff9835ea811bd36bed8e75d7c5cb6c4716a24717bf8192172a1a1991146d"
+  },
+  "contact_state": {
+    "enabled": true,
+    "face_zones": [
+      "robot_wall",
+      "pipe_wall"
+    ],
+    "proximity_threshold": 0.0001,
+    "contact_udf": "l2300_native_contact_lifecycle::libD_lifecycle_noop_v1",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 1
+  },
+  "magnetic_formula_delegated_once": true,
+  "true_solver_contact_only": true
+}

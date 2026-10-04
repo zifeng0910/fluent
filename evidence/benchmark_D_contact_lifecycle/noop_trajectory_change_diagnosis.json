@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-10-04T03:48:20.881860+00:00",
+  "status": "VERIFIED_NOOP_POSE_CHANGE",
+  "first_three_pre_contact_steps": [
+    {
+      "time_s": 0.001775000000000001,
+      "errors": {
+        "com": {
+          "error": 0.0,
+          "tolerance": 1e-10,
+          "status": "PASS"
+        },
+        "q": {
+          "error": 0.0,
+          "tolerance": 1e-09,
+          "status": "PASS"
+        },
+        "velocity": {
+          "error": 0.0,
+          "tolerance": 1e-08,
+          "status": "PASS"
+        },
+        "omega": {
+          "error": 0.0,
+          "tolerance": 1e-06,
+          "status": "PASS"
+        }
+      },
+      "same_gap": true
+    },
+    {
+      "time_s": 0.001800000000000001,
+      "errors": {
+        "com": {
+          "error": 0.0,
+          "tolerance": 1e-10,
+          "status": "PASS"
+        },
+        "q": {
+          "error": 0.0,
+          "tolerance": 1e-09,
+          "status": "PASS"
+        },
+        "velocity": {
+          "error": 0.0,
+          "tolerance": 1e-08,
+          "status": "PASS"
+        },
+        "omega": {
+          "error": 0.0,
+          "tolerance": 1e-06,
+          "status": "PASS"
+        }
+      },
+      "same_gap": true
+    },
+    {
+      "time_s": 0.001825000000000001,
+      "errors": {
+        "com": {
+          "error": 0.0,
+          "tolerance": 1e-10,
+          "status": "PASS"
+        },
+        "q": {
+          "error": 0.0,
+          "tolerance": 1e-09,
+          "status": "PASS"
+        },
+        "velocity": {
+          "error": 0.0,
+          "tolerance": 1e-08,
+          "status": "PASS"
+        },
+        "omega": {
+          "error": 0.0,
+          "tolerance": 1e-06,
+          "status": "PASS"
+        }
+      },
+      "same_gap": true
+    }
+  ],
+  "pre_contact_branch_states_exact": true,
+  "callback_input_equality": {
+    "CURRENT_TIME": true,
+    "timestep_index": true,
+    "contact_point": true,
+    "contact_normal": true,
+    "DT_CG": true,
+    "DT_Q": true,
+    "get_velocity": true,
+    "get_omega": true,
+    "get_theta": true
+  },
+  "both_magnetic_oracles_PASS": true,
+  "post_step_errors": {
+    "com": {
+      "error": 4.017996950465982e-09,
+      "tolerance": 1e-10,
+      "status": "FAIL"
+    },
+    "q": {
+      "error": 0.00021711339850202793,
+      "tolerance": 1e-09,
+      "status": "FAIL"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "orientation_difference_rad": 0.0004621217623646138,
+  "orientation_difference_deg": 0.026477626604639936,
+  "COM_delta_m": [
+    2.66978864385016e-09,
+    4.017996950465982e-09,
+    -1.0823951613623833e-09
+  ],
+  "read_gap_m": 6.789633919921451e-05,
+  "noop_gap_m": 6.752590212605787e-05,
+  "internal_causal_mechanism": "NOT ESTABLISHED; theta getter0 and temporary motion pointersNULL are observations",
+  "no_changed_motion_persistence_test_performed": true,
+  "next_action": "STOP: no controlled branch or micro-run"
+}

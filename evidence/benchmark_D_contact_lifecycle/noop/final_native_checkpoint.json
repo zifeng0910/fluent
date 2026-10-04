@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-04T03:41:39.191037+00:00",
+  "status": "PASS",
+  "native_state": {
+    "com": [
+      0.001203429705630118,
+      1.209434962068407e-06,
+      -4.509578222630214e-07
+    ],
+    "q": [
+      0.9761661590262061,
+      0.00865346704431786,
+      -0.07335410725560396,
+      -0.20406842584993407
+    ],
+    "velocity": [
+      -0.002527122861664453,
+      0.003936435955531434,
+      -0.001297606822782062
+    ],
+    "omega": [
+      47.94436520248257,
+      -276.8498814150523,
+      -888.7526328388972
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.43753054914475503,
+      "axis": [
+        0.03987322803471108,
+        -0.3379992124435154,
+        -0.9403013655598162
+      ]
+    }
+  },
+  "time_s": 0.001850000000000001,
+  "state_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "files": {
+    "case": {
+      "path": "live_cases\\benchmark_D_contact_lifecycle\\noop\\final_native.cas.h5",
+      "sha256": "79c5eac8ed42511f5db8e21d4f5c4b1e6673bf50870d2531e784beaa8bb2ab1b",
+      "size_bytes": 109806365,
+      "HDF5_readable": true
+    },
+    "data": {
+      "path": "live_cases\\benchmark_D_contact_lifecycle\\noop\\final_native.dat.h5",
+      "sha256": "0c9624465ccfce70fba126a02ae68933ba316f8d6b3a64dd6aa342cc0b51603e",
+      "size_bytes": 559348056,
+      "HDF5_readable": true
+    }
+  },
+  "large_native_files_local_only": true
+}

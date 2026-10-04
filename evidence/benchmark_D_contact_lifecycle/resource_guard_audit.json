@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-04T03:50:26.567314+00:00",
+  "status": "PASS",
+  "guards": {
+    "available_gib": 3,
+    "commit_fraction": 0.95,
+    "project_working_set_gib": 15,
+    "disk_free_gib": 15
+  },
+  "branches": {
+    "read_only": {
+      "samples": 171,
+      "minimum_available_gib": 4.682933807373047,
+      "maximum_commit_fraction": 0.8879684705646701,
+      "peak_project_working_set_gib": 10.163681030273438,
+      "peak_project_private_bytes_gib": 15.823959350585938,
+      "minimum_disk_free_gib": 203.96903610229492,
+      "abort": null,
+      "owned_engine_closed": true
+    },
+    "noop": {
+      "samples": 169,
+      "minimum_available_gib": 4.650157928466797,
+      "maximum_commit_fraction": 0.8879824248882617,
+      "peak_project_working_set_gib": 10.10238265991211,
+      "peak_project_private_bytes_gib": 15.7808837890625,
+      "minimum_disk_free_gib": 202.77766036987305,
+      "abort": null,
+      "owned_engine_closed": true
+    }
+  }
+}

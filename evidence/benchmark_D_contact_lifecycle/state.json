@@ -1,0 +1,16 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_LIFECYCLE_DIAGNOSTIC",
+  "status": "HARD_BLOCKER_REQUIRES_REVIEW",
+  "timestamp": "2026-10-04T03:50:55.943438+00:00",
+  "solver_alive": false,
+  "worker_alive": false,
+  "timesteps_advanced": 0,
+  "branch": "noop",
+  "worker_pid": 3632,
+  "worker_created": 1791084434.462671,
+  "completed_new_steps": 4,
+  "current_time_s": 0.001850000000000001,
+  "terminal_result": "NATIVE_CONTACT_NOOP_OVERWRITE_FAIL",
+  "current_blocker": "NATIVE_CONTACT_NOOP_OVERWRITE_FAIL",
+  "final_report": "evidence/benchmark_D_contact_lifecycle/final_report.json"
+}

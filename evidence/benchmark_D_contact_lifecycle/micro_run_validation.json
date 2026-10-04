@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-10-04T03:49:23.494560+00:00",
+  "status": "NOT RUN",
+  "reason": "Native write gates not passed; no micro-run or timestep sensitivity authorized by gate"
+}

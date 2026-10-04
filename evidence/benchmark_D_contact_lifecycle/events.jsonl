@@ -1,0 +1,9 @@
+{"timestamp": "2026-10-04T03:10:37.352317+00:00", "event": "LIFECYCLE_CONFIGURED", "old_zero_step_files_unchanged": true}
+{"timestamp": "2026-10-04T03:17:30.114923+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "read_only", "time_s": 0.001775000000000001, "new_steps": 1, "actual_callback_count": 0, "physical_gap_m": 0.00012294104081056104}
+{"timestamp": "2026-10-04T03:20:10.644408+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "read_only", "time_s": 0.001800000000000001, "new_steps": 2, "actual_callback_count": 0, "physical_gap_m": 0.00010495915844157146}
+{"timestamp": "2026-10-04T03:22:53.517625+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "read_only", "time_s": 0.001825000000000001, "new_steps": 3, "actual_callback_count": 0, "physical_gap_m": 8.659843620561957e-05}
+{"timestamp": "2026-10-04T03:25:36.225000+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "read_only", "time_s": 0.001850000000000001, "new_steps": 4, "actual_callback_count": 1, "physical_gap_m": 6.789633919921451e-05}
+{"timestamp": "2026-10-04T03:33:03.121595+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "noop", "time_s": 0.001775000000000001, "new_steps": 1, "actual_callback_count": 0, "physical_gap_m": 0.00012294104081056104}
+{"timestamp": "2026-10-04T03:35:43.253603+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "noop", "time_s": 0.001800000000000001, "new_steps": 2, "actual_callback_count": 0, "physical_gap_m": 0.00010495915844157146}
+{"timestamp": "2026-10-04T03:38:24.839467+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "noop", "time_s": 0.001825000000000001, "new_steps": 3, "actual_callback_count": 0, "physical_gap_m": 8.659843620561957e-05}
+{"timestamp": "2026-10-04T03:41:07.206579+00:00", "event": "LIFECYCLE_STEP_COMPLETE", "branch": "noop", "time_s": 0.001850000000000001, "new_steps": 4, "actual_callback_count": 1, "physical_gap_m": 6.752590212605787e-05}

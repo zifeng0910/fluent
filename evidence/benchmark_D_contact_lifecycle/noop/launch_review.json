@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T03:27:10.287934+00:00",
+  "branch": "noop",
+  "decision": "READ PASS and previous engine closed; actual no-op writes precisely original arrays; independent C70 restart; max4 steps",
+  "files_sha256": {
+    "scripts/benchmark_D_lifecycle_worker.py": "80ac62c25356b0bf60a84edf4cabc9d1c61b77702f29eaf9d2745379ca65e751",
+    "scripts/benchmark_D_lifecycle_common.py": "aa1d541e0535469dc62d50736f4507ab2686b55148ca649519357c488ce4114a",
+    "fluent_udf/l2300_native_contact_lifecycle.c": "cbe8e636701807d7709b990a5ae0070d2e7fd66b8944be110ccae3e64111cd76",
+    "evidence\\benchmark_D_contact_lifecycle\\noop\\configuration.json": "ddafac73da3ce7a53ed8535acb0d1259abe917f405de95ba2a58ea91c14ce478",
+    "live_cases\\benchmark_D_contact_lifecycle\\noop\\lifecycle_config.h": "abad8a76badc28a739ba8d3106ea8fe15a31ef4c4ee53be5001d40698e3558ee",
+    "live_cases\\benchmark_D_contact_lifecycle\\noop\\magnetic_logging_copy.c": "680a00e21f95ba7addfd7b11832ae2f84177f94abc8c9f62569ae33d33ba21f3"
+  }
+}

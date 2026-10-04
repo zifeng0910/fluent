@@ -53,7 +53,7 @@ def dedup_audit(branch):
     for r in trace:
         key=(r['CURRENT_TIME'],r['timestep_index'],r['dynamic_zone_id'],r['opposite_zone_id'])
         groups.setdefault(key,[]).append(r)
-    out=dict(timestamp=stamp(),branch=branch,status='NOT_NEEDED' if all(not r['overwrite_called'] for r in trace) else 'PASS',
+    out=dict(timestamp=stamp(),branch=branch,status='NOT_NEEDED' if all(r['action']!='APPLIED' for r in trace) else 'PASS',
              key='time + timestep + moving body + opposite body + contact point within20um',
              physical_impulses_not_counted_twice_across_host_node=True,groups=[])
     for key,rr in groups.items():
