@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-04T01:17:00.584422+00:00",
+  "status": "PROPOSED_REQUIRES_REVIEW_NOT_IMPLEMENTED",
+  "scheme": "Geometry-based analytic tube contact",
+  "preserve": "100 Hz, 1ms smoothstep, 6 mm/s absolute-time offset; unchanged",
+  "frozen_robot_mesh_and_physics": true,
+  "normal_restitution": 0,
+  "friction": 0,
+  "detector": "Compute signed clearance from transformed authoritative robot surface against the 0.9mm-radius stationary tube; use inward wall normal and a physically consistent contact point.",
+  "response": "Reuse validated rigid-body normal impulse math only after a supported native motion-update context is demonstrated. An analytic detector alone does not resolve motion update/readback.",
+  "gates": [
+    "Zero-dynamics known-gap and point/normal checks",
+    "Verified motion context and impulse transfer/readback",
+    "Exact native C70 restart and pre-contact continuity",
+    "At most four initial steps to1.850ms",
+    "Near-contact dt25/12.5/6.25us only as permitted by approach-distance evidence",
+    "Short1.900ms PASS before2.000ms; no wall penetration/orphan/invalid/nonpositive volume/nonfinite state"
+  ],
+  "alternative_native_diagnostic": "A separately reviewed supported zero-dynamics native motion-context harness may establish viability; no unchecked calls to internal integration functions are authorized by this report.",
+  "automatic_switch_performed": false,
+  "new_solver_or_time_budget_authorized": false
+}

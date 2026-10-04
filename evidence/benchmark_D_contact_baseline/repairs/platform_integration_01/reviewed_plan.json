@@ -1,0 +1,26 @@
+{
+  "plan_id": "be267feb-3083-45c4-99fe-2d59d5fb4e0c",
+  "decision": "REPAIR",
+  "failure_class": "CONTACT_UDF_PLATFORM_INTEGRATION",
+  "repair_index": 1,
+  "concrete_change": "Use exact exported contact declarations without unavailable Prime internal header; verbosity 1; require both actual DLLs and native hook before PASS; retain worker on zero-step job error",
+  "evidence_files": [
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\worker_failure.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\state.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\active_job.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\worker_stdout.log",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\worker_stderr.log",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\solver.trn",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\contact_capability_audit.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_01\\engine_exit.json"
+  ],
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "6f3f62d8f8a531f19b33885099a16df266840ae1c354ed20bf02e93ea1161465",
+  "supporting_code_sha256": {
+    "fluent_udf/l2300_frictionless_contact.c": "d91504f568bad0181e305fc4cfb765ae282a16ce1ea584ebeb79b3dbc9b185f2",
+    "scripts/benchmark_D_native_worker.py": "eff7307a562c225c5d5ad0ebe3676cc98f3029d2f7d4037dd4b1dd9d7b789ffe"
+  },
+  "frozen_physics_changed": false,
+  "timesteps_advanced": 0,
+  "failure_timestamp": "2026-10-04T00:08:19.273974+00:00"
+}

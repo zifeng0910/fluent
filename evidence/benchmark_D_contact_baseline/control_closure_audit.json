@@ -1,0 +1,28 @@
+{
+  "heartbeat_status": "PAUSED",
+  "heartbeat_id": "benchmark-c-12-hour-continuation",
+  "tasks": [
+    {
+      "state": "Disabled",
+      "name": "Fluent-Benchmark-C-Coarse-20h"
+    },
+    {
+      "state": "Disabled",
+      "name": "Fluent-Benchmark-C-Coarse-2ms"
+    },
+    {
+      "state": "Disabled",
+      "name": "Fluent-Benchmark-C-Coarse-Screening"
+    },
+    {
+      "state": "Disabled",
+      "name": "Fluent-Benchmark-C-Longrun"
+    },
+    {
+      "state": "Disabled",
+      "name": "Fluent-Benchmark-C-Recovery-V2"
+    }
+  ],
+  "timestamp": "2026-10-04T01:16:05.5504875Z",
+  "D_scheduled_task_created": false
+}

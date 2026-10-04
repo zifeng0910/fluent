@@ -1,0 +1,12 @@
+{
+  "command_id": "74c330b6-331a-496c-aa98-0f1e321acab3",
+  "decision": "DIAGNOSE",
+  "job": "scripts/benchmark_D_static_semantics.py",
+  "job_sha256": "468c235d88b0a822ccef9b38c47c362058a9fb2c5b869787cc1da02e9c19a0ec",
+  "supporting_code_sha256": "ca215a2e6777f6218fdd61494095b89a56422e9fd66d4119ce910a0548cb82ec",
+  "review": "Five static poses with freshly compiled and selected v2 library; native parameter download and zero dtime; no dynamics",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/repairs/platform_integration_02/reviewed_plan.json",
+    "evidence/benchmark_D_contact_baseline/contact_compile_gate.json"
+  ]
+}

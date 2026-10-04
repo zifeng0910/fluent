@@ -1,0 +1,313 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "timestamp": "2026-10-04T01:07:25.016520+00:00",
+  "timesteps_advanced": 0,
+  "native_state_before": {
+    "com": [
+      0.001203713388222422,
+      8.724861369932643e-07,
+      -3.356690108892919e-07
+    ],
+    "q": [
+      0.984623529376754,
+      0.006896969730061793,
+      -0.0607625496750705,
+      -0.16363633387237564
+    ],
+    "velocity": [
+      -0.003078475416918156,
+      0.00278338081035859,
+      -0.0009735323565712222
+    ],
+    "omega": [
+      39.13734668233644,
+      -238.3510307135593,
+      -752.0650495857042
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.35118130908112233,
+      "axis": [
+        0.03948125238865443,
+        -0.34783124377698504,
+        -0.9367254969105832
+      ]
+    }
+  },
+  "native_state_after": {
+    "com": [
+      0.001203713388222422,
+      8.724861369932643e-07,
+      -3.356690108892919e-07
+    ],
+    "q": [
+      0.984623529376754,
+      0.006896969730061793,
+      -0.0607625496750705,
+      -0.16363633387237564
+    ],
+    "velocity": [
+      -0.003078475416918156,
+      0.00278338081035859,
+      -0.0009735323565712222
+    ],
+    "omega": [
+      39.13734668233644,
+      -238.3510307135593,
+      -752.0650495857042
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.35118130908112233,
+      "axis": [
+        0.03948125238865443,
+        -0.34783124377698504,
+        -0.9367254969105832
+      ]
+    }
+  },
+  "unchanged_checks": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "source_sha256": "3091049f09681ed0a60e68fb2b23daf29d1440ef8e402aa83a1cc612f7897b5b",
+  "dll_sha256": {
+    "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_read_motion_v1\\win64\\3ddp_host\\libudf.dll": "be4b4850ec926a939d2472a083cacdc2da3b0957c805fc23b6e78b8ad9f6167f",
+    "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_read_motion_v1\\win64\\3ddp_node\\libudf.dll": "0f9f9e88900a42b0893bd777b6f7ecfcf6244e447923cdd1069d732489ed098d"
+  },
+  "records": [
+    {
+      "time_s": 0.001750000000000001,
+      "process_role": "host",
+      "zone": "robot_component_fluid",
+      "get_motion_velocity": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_omega": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_theta": [
+        0,
+        0,
+        0
+      ],
+      "current_COM": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "current_quaternion": [
+        0.984623529376754,
+        0.006896969730061793,
+        -0.0607625496750705,
+        -0.16363633387237564
+      ],
+      "current_velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "current_omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "temporary_velocity": [
+        0.01386507789800985,
+        -0.1221518315289166,
+        -0.3289604862547234
+      ],
+      "temporary_omega": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "contact_active": 0,
+      "contact_mark": 0,
+      "timesteps_advanced": 0
+    },
+    {
+      "time_s": 0.001750000000000001,
+      "process_role": "host",
+      "zone": "robot_wall",
+      "get_motion_velocity": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_omega": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_theta": [
+        0,
+        0,
+        0
+      ],
+      "current_COM": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "current_quaternion": [
+        0.984623529376754,
+        0.006896969730061793,
+        -0.0607625496750705,
+        -0.16363633387237564
+      ],
+      "current_velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "current_omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "temporary_velocity": [
+        0.01386507789800985,
+        -0.1221518315289166,
+        -0.3289604862547234
+      ],
+      "temporary_omega": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "contact_active": 0,
+      "contact_mark": 0,
+      "timesteps_advanced": 0
+    },
+    {
+      "time_s": 0.001750000000000001,
+      "process_role": "node",
+      "zone": "robot_component_fluid",
+      "get_motion_velocity": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_omega": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_theta": [
+        0,
+        0,
+        0
+      ],
+      "current_COM": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "current_quaternion": [
+        0.984623529376754,
+        0.006896969730061793,
+        -0.0607625496750705,
+        -0.16363633387237564
+      ],
+      "current_velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "current_omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "temporary_velocity": [
+        0.01386507789800985,
+        -0.1221518315289166,
+        -0.3289604862547234
+      ],
+      "temporary_omega": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "contact_active": 0,
+      "contact_mark": 0,
+      "timesteps_advanced": 0
+    },
+    {
+      "time_s": 0.001750000000000001,
+      "process_role": "node",
+      "zone": "robot_wall",
+      "get_motion_velocity": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_omega": [
+        0,
+        0,
+        0
+      ],
+      "get_motion_theta": [
+        0,
+        0,
+        0
+      ],
+      "current_COM": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "current_quaternion": [
+        0.984623529376754,
+        0.006896969730061793,
+        -0.0607625496750705,
+        -0.16363633387237564
+      ],
+      "current_velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "current_omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "temporary_velocity": [
+        0.01386507789800985,
+        -0.1221518315289166,
+        -0.3289604862547234
+      ],
+      "temporary_omega": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "contact_active": 0,
+      "contact_mark": 0,
+      "timesteps_advanced": 0
+    }
+  ],
+  "validity": "Temporary-state fields INVALID due incompatible native struct pointer; current state/GetMotion records preserved for provenance only. Superseded by exact typed v2 audit."
+}

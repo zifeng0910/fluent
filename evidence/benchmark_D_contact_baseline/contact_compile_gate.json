@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T00:45:18.929419+00:00",
+  "timesteps_advanced": 0,
+  "library": "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_contact_v3",
+  "source_sha256": "89c60d6c492f1a14e9b10e0163bb5d925ef8b2f7af49e5130c5344f096136b72",
+  "dll_sha256": {
+    "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_contact_v3\\win64\\3ddp_host\\libudf.dll": "696574ed9a3e6468ee3e4937f0a1c1195a3d1f792c1b2fb978aede3a0701b8be",
+    "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_contact_v3\\win64\\3ddp_node\\libudf.dll": "6e7051e2c1478061b96b3dd37f29966a67e148ecc9a5320f62878a6250f3d758"
+  }
+}

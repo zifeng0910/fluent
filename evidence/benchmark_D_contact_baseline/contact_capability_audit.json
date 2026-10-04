@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-10-04T01:17:00.583828+00:00",
+  "fluent_version": "2026 R1 / 26.1.0 (installed v261)",
+  "DEFINE_CONTACT_available": true,
+  "SDOF_Get_Motion_available": true,
+  "SDOF_Overwrite_Motion_available": true,
+  "contact_hook_available": true,
+  "robot_wall_selectable": true,
+  "pipe_wall_selectable": true,
+  "supported_in_current_configuration": "NO_VERIFIED_BASELINE",
+  "proximity_threshold_semantics": "At fixed C70 attitude and threshold 0.100mm, manual Detect_Contact flag0 returned callbacks near 0.100/0.090/0.070mm; flag1 returned none. This does not establish production callback timing or safe dynamics.",
+  "flow_control_enabled": false,
+  "installed_headers_sha256": {
+    "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\src\\udf\\udf.h": "4414104220f454bdc0c8cece67a8799a5ee8f8d4d7fc4f86dde55f04fc977a21",
+    "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\src\\mesh\\six_dof.h": "365e0dfdc9064a7d2edab788b68cb2459d47ac106fd4168953d7ae6d65fb8f4f",
+    "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\src\\mesh\\dynamesh_contact.h": "cd5965336c7f917d45a3f298bc1b131a7550fe3903ae899bcc95a74282999cd2",
+    "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\src\\mesh\\dynamesh_tools.h": "734d40aaaa08ef629749972524497b7e2ceffc9afb22b27c63b7dcf7aedbd3e9"
+  },
+  "local_generated_settings": {
+    "path": "H:\\Program Files\\ANSYS Inc\\v261\\fluent\\fluent26.1.0\\cortex\\pylib\\flapi\\generated\\solver\\settings_261.py",
+    "sha256": "4bf13f23a8d1bf543f4bf7c876d539bda1dbc0daa08c712198f2bd5ba0916fd1",
+    "group": "setup.dynamic_mesh.options.contact_detection"
+  },
+  "local_GUI_help": {
+    "path": "H:\\Program Files\\ANSYS Inc\\v261\\commonfiles\\help\\en-us\\fluent_gui_help\\fluent_gui_help.xml",
+    "sha256": "61010a0fd12344ae19b0fe249f1a4de0689547184e33ae57c82ab34cdf25a1eb",
+    "section": "setup..dynamic-mesh..options..contact-detection"
+  },
+  "local_full_UDF_manual_found": false,
+  "local_contact_examples_found": false,
+  "official_2026R1_sources": [
+    "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_udf/flu_udf_DynamicMeshDEFINE.html",
+    "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/flu_ug/flu_ug_sec_dynamic_using.html"
+  ],
+  "motion_overwrite_rule": "Only call SDOF_Overwrite_Motion inside DEFINE_CONTACT",
+  "contact_face_access": "Objp linked list, O_F / O_F_THREAD; F_CENTROID and F_AREA",
+  "geometry_safety": "Do not infer practical overset compatibility from macro availability",
+  "live_Fluent_version": "Ansys Fluent 2026 R1",
+  "contact_initial_state": {
+    "enabled": false,
+    "face_zones": null,
+    "proximity_threshold": 0.1,
+    "contact_udf": "",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 0
+  },
+  "contact_is_active": true,
+  "selectable_face_zones": [
+    "pipe_wall",
+    "robot_wall"
+  ],
+  "selectable_boundaries": [],
+  "contact_enabled_state": {
+    "enabled": true,
+    "face_zones": null,
+    "proximity_threshold": 0.1,
+    "contact_udf": "",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 0
+  },
+  "contact_udf_allowed": [
+    "l2300_frictionless_contact::libbenchmark_D_contact",
+    "l2300_frictionless_contact::libbenchmark_D_contact_v2",
+    "l2300_frictionless_contact::libbenchmark_D_contact_v3"
+  ],
+  "contact_configured_state": {
+    "enabled": true,
+    "face_zones": [
+      "robot_wall",
+      "pipe_wall"
+    ],
+    "proximity_threshold": 0.0001,
+    "contact_udf": "l2300_frictionless_contact::libbenchmark_D_contact_v3",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 1
+  },
+  "contact_udf_sha256": "89c60d6c492f1a14e9b10e0163bb5d925ef8b2f7af49e5130c5344f096136b72",
+  "timesteps_advanced": 0,
+  "zero_dynamics_gate": "FAIL",
+  "contact_library_name": "libbenchmark_D_contact_v3",
+  "compiled_dll_sha256": {
+    "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_contact_v3\\win64\\3ddp_host\\libudf.dll": "696574ed9a3e6468ee3e4937f0a1c1195a3d1f792c1b2fb978aede3a0701b8be",
+    "H:\\fluent\\live_cases\\benchmark_D_contact_baseline\\libbenchmark_D_contact_v3\\win64\\3ddp_node\\libudf.dll": "6e7051e2c1478061b96b3dd37f29966a67e148ecc9a5320f62878a6250f3d758"
+  },
+  "prior_dll_sha256": {},
+  "DEFINE_CONTACT_support": "SUPPORTED",
+  "point_normal_gate": "PASS",
+  "native_response_gate": "FAIL_UNVERIFIED",
+  "general_API_unsupported_claim": false
+}

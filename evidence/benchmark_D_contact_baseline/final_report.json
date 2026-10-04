@@ -1,0 +1,201 @@
+{
+  "campaign": "BENCHMARK_D_FRICTIONLESS_CONTACT_BASELINE",
+  "timestamp": "2026-10-04T01:17:00.585553+00:00",
+  "status": "NATIVE_CONTACT_BASELINE_NOT_VIABLE",
+  "result_scope": "Current standalone zero-dtime native detector/response harness; general API incompatibility not established",
+  "Benchmark_C_terminal_state": "FREE_MOTION_NEAR_WALL_LIMIT_REACHED",
+  "restart_source": {
+    "step": 70,
+    "time_s": 0.001750000000000001,
+    "status": "PASS",
+    "post_probe_restore": "PASS",
+    "physical_clearance_mm": 0.14051206422899984
+  },
+  "native_DEFINE_CONTACT": "SUPPORTED",
+  "contact_pair": [
+    "robot_wall",
+    "pipe_wall"
+  ],
+  "contact_model": "frictionless rigid-body normal impulse",
+  "normal_restitution": 0,
+  "friction": 0,
+  "impulse_reference_validation": "PASS",
+  "impulse_reference_evidence": "contact_impulse_unit_validation.json",
+  "detection_only_probes": {
+    "0": [
+      {
+        "target_gap_mm": 0.14,
+        "measured_gap_mm": 0.13999998548765938,
+        "callbacks": 0,
+        "contact_faces": []
+      },
+      {
+        "target_gap_mm": 0.11,
+        "measured_gap_mm": 0.10999995097756035,
+        "callbacks": 0,
+        "contact_faces": []
+      },
+      {
+        "target_gap_mm": 0.1,
+        "measured_gap_mm": 0.09999996539061037,
+        "callbacks": 1,
+        "contact_faces": [
+          1
+        ]
+      },
+      {
+        "target_gap_mm": 0.09,
+        "measured_gap_mm": 0.08999996890115144,
+        "callbacks": 1,
+        "contact_faces": [
+          138
+        ]
+      },
+      {
+        "target_gap_mm": 0.07,
+        "measured_gap_mm": 0.06999998682474254,
+        "callbacks": 1,
+        "contact_faces": [
+          389
+        ]
+      }
+    ],
+    "1": [
+      {
+        "target_gap_mm": 0.14,
+        "measured_gap_mm": 0.13999998548765938,
+        "callbacks": 0,
+        "contact_faces": []
+      },
+      {
+        "target_gap_mm": 0.11,
+        "measured_gap_mm": 0.10999995097756035,
+        "callbacks": 0,
+        "contact_faces": []
+      },
+      {
+        "target_gap_mm": 0.1,
+        "measured_gap_mm": 0.09999996539061037,
+        "callbacks": 0,
+        "contact_faces": []
+      },
+      {
+        "target_gap_mm": 0.09,
+        "measured_gap_mm": 0.08999996890115144,
+        "callbacks": 0,
+        "contact_faces": []
+      },
+      {
+        "target_gap_mm": 0.07,
+        "measured_gap_mm": 0.06999998682474254,
+        "callbacks": 0,
+        "contact_faces": []
+      }
+    ]
+  },
+  "static_point_normal_sanity": "PASS",
+  "static_contact_points": [
+    {
+      "gap_mm": 0.09999996539061037,
+      "contact_point_m": [
+        0.002084327728772177,
+        -0.0008420431530427481,
+        0.00031253808913637293
+      ],
+      "normal": [
+        1.2090548626249677e-15,
+        0.927183854566787,
+        -0.3746065934159132
+      ],
+      "contact_faces": 1,
+      "radial_inward_cosine": 0.9995919911050911
+    },
+    {
+      "gap_mm": 0.08999996890115144,
+      "contact_point_m": [
+        0.002094059341794333,
+        -0.0008389496650474674,
+        0.0003101305229378678
+      ],
+      "normal": [
+        0.0002644610861840725,
+        0.9368200982716228,
+        -0.3498114256777226
+      ],
+      "contact_faces": 138,
+      "radial_inward_cosine": 0.9999945714374128
+    },
+    {
+      "gap_mm": 0.06999998682474254,
+      "contact_point_m": [
+        0.002087754686724357,
+        -0.0008333717465706636,
+        0.00030717071051603446
+      ],
+      "normal": [
+        7.289584308539837e-06,
+        0.9403082119788098,
+        -0.34032406090677114
+      ],
+      "contact_faces": 389,
+      "radial_inward_cosine": 0.9999827378334288
+    }
+  ],
+  "response_sanity": "FAIL_NATIVE_OVERWRITE_READBACK",
+  "pre_contact_C_vs_D": {
+    "restart_state": "PASS",
+    "dynamic_trajectory": "NOT_RUN"
+  },
+  "first_real_contact_time_s": null,
+  "clearance_at_first_real_contact_mm": null,
+  "real_contact_count": null,
+  "peak_contact_impulse_N_s": null,
+  "post_contact_normal_velocity_m_s": null,
+  "peak_contact_omega_rad_s": null,
+  "maximum_contact_tilt_rad": null,
+  "minimum_dynamic_clearance_mm": null,
+  "dynamic_penetration": "NOT_EVALUATED",
+  "restored_C70_numerical_state": {
+    "orphans": 0,
+    "invalid_donors": 0,
+    "minimum_volume_m3": 6.100596812e-17,
+    "q_norm": 1.0
+  },
+  "initial_dt_us": 25,
+  "near_contact_timestep_sensitivity": "NOT_RUN",
+  "timesteps_advanced": 0,
+  "micro_run_to1_850ms": "NOT_RUN",
+  "short_run_to1_900ms": "NOT_RUN",
+  "two_ms": "NOT_RUN",
+  "visualization": "NOT_RUN_NO_CONTACT_DYNAMICS",
+  "resource_summary": {
+    "timestamp": "2026-10-04T01:11:11.230634+00:00",
+    "samples": 661,
+    "peak_project_working_set_gib": 8.642005920410156,
+    "peak_project_private_bytes_gib": 12.041404724121094,
+    "peak_system_commit_percent": 79.98424516997004,
+    "abort": null
+  },
+  "owned_engine_closure": {
+    "timestamp": "2026-10-04T01:11:11.225855+00:00",
+    "SDK_exit_requested": true,
+    "unrelated_processes_touched": [],
+    "terminated": [],
+    "owned_engine_closed": true
+  },
+  "current_blocker": "Static detection calls return contact geometry, but synthetic impulse overwrite/readback does not validate in the inactive native motion context.",
+  "recommended_next": "Review next_scheme_proposal.json; no automatic native retry or analytic switch",
+  "evidence_files": [
+    "contact_capability_audit.json",
+    "contact_detection_semantics.json",
+    "native_response_failure_diagnosis.json",
+    "native_motion_state_audit.json",
+    "post_probe_C70_restore.json",
+    "C_preservation_final_audit.json",
+    "engine_exit.json",
+    "next_scheme_proposal.json"
+  ],
+  "magnetic_formula_unchanged": true,
+  "magnetic_sphere_example_used": false,
+  "original_C_deadline_unchanged": true
+}

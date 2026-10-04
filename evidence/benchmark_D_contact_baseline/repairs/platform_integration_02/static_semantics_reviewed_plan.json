@@ -1,0 +1,12 @@
+{
+  "command_id": "b68929ef-7f6e-4188-a940-c53e417fbc69",
+  "decision": "DIAGNOSE",
+  "job": "scripts/benchmark_D_static_semantics.py",
+  "job_sha256": "e335e0135cad51bb4aa9a112689e4bf23f6d960550e387644c0dfdd40ad9bbed",
+  "supporting_code_sha256": "ca215a2e6777f6218fdd61494095b89a56422e9fd66d4119ce910a0548cb82ec",
+  "review": "Repeat same five frozen-pose zero-time tests after concrete native parameter download repair; preserve initial no-callback evidence",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/diagnostic_archive/static_driver_01/reviewed_plan.json",
+    "evidence/benchmark_D_contact_baseline/contact_compile_gate.json"
+  ]
+}

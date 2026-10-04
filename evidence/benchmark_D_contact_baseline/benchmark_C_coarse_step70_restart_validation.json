@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-04T00:12:25.279237+00:00",
+  "timestamp": "2026-10-04T01:05:50.798188+00:00",
   "step": 70,
   "status": "PASS",
   "timesteps_advanced": 0,
@@ -178,6 +178,5 @@
   "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
   "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
   "case_sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
-  "data_sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
-  "milestone": "BENCHMARK_D_STEP70_RESTART_PASS"
+  "data_sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460"
 }

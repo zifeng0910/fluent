@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-04T01:17:00.578218+00:00",
+  "status": "CONFIRMED_GATE_FAILURE",
+  "error": "D_CONTACT_NATIVE_MOTION_OVERWRITE_NOT_VERIFIED",
+  "transcript": "evidence/benchmark_D_contact_baseline/diagnostic_archive/native_response_failure_01/fluent-20261004-081129-33312.trn",
+  "actual_error_lines": [
+    {
+      "line": 493,
+      "text": "Error at Node 0: D_CONTACT_NATIVE_MOTION_OVERWRITE_NOT_VERIFIED"
+    }
+  ],
+  "transcript_sha256": "fe61205f590f53d082baf20731093dc8811a9f80004daec960913f6e22b64aea",
+  "native_error_context": [
+    "D_STATIC_AFTER_DOWNLOAD active=0",
+    "",
+    "===============Message from the Cortex Process================================",
+    "",
+    "Compute processes interrupted. Processing can be resumed.",
+    "",
+    "==============================================================================",
+    "",
+    "Error at Node 0: D_CONTACT_NATIVE_MOTION_OVERWRITE_NOT_VERIFIED"
+  ],
+  "failed_job": "e860d622-87c6-49b2-b3be-c57878d7a477",
+  "demonstrated_facts": [
+    "Native contact macro compiles and callback returns finite point/normal",
+    "Restored current and temporary body state retain exact C70 velocity/omega",
+    "SDOF_Get_Motion returns zero on host and node outside motion integration",
+    "Native motion temporary pointers are null in this zero-dtime harness",
+    "Immediate overwrite/readback assertion failed inside synthetic DEFINE_CONTACT callback"
+  ],
+  "inference": "The standalone static detection harness lacks the active native motion context needed to verify response. Null-pointer observations support this inference; they do not establish the internal implementation of SDOF_Get_Motion.",
+  "limitation": "This is not proof of general Fluent/overset API incompatibility. Correct response in a supported active motion context remains unverified.",
+  "decision": "STOP before dynamics under user native-baseline gate",
+  "timesteps_advanced": 0,
+  "artificial_sanity_values_available": false,
+  "real_contact_event_metrics_available": false
+}

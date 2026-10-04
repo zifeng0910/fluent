@@ -1,0 +1,13 @@
+{
+  "command_id": "2acb4ed4-cb81-48de-a3e6-30b6ceb5b956",
+  "decision": "DIAGNOSE",
+  "action": "READ_NATIVE_MOTION_STATE",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "82f8fa849a0dae3fe69f6b6ff82fea34cfec91115fcc23ffa058432c07d7d4e1",
+  "supporting_code_sha256": "3091049f09681ed0a60e68fb2b23daf29d1440ef8e402aa83a1cc612f7897b5b",
+  "review": "Read-only audit of SDOF_Get_Motion versus current and temporary native body state at restored C70. No overwrite, contact detection, time advance or integration.",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/post_probe_C70_restore.json",
+    "evidence/benchmark_D_contact_baseline/diagnostic_archive/native_response_failure_01/failure_pose.json"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "command_id": "7c03f024-04e7-4b69-9968-cd7bd245018e",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "6d49744cf6462bee0a46511bf6ad01cebf0e60d4cb41f02cea5de013cf69f580",
+  "review": "Native step70 gate required by worker; zero dynamics, compile and inspect contact only",
+  "status": "RUNNING",
+  "timestamp": "2026-10-04T00:08:07.486068+00:00"
+}

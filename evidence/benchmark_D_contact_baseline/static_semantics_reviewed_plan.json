@@ -1,0 +1,12 @@
+{
+  "command_id": "e860d622-87c6-49b2-b3be-c57878d7a477",
+  "decision": "DIAGNOSE",
+  "job": "scripts/benchmark_D_static_semantics.py",
+  "job_sha256": "49e718bf9627a4334c07d8ba695968188ea0c425bad1cd93dc3659812f8de460",
+  "supporting_code_sha256": "89c60d6c492f1a14e9b10e0163bb5d925ef8b2f7af49e5130c5344f096136b72",
+  "review": "Fresh v3 library; select observed callback flag0 for small inward velocity; verify native SDOF overwrite readback, then restore step70",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/diagnostic_archive/static_driver_02/reviewed_plan.json",
+    "evidence/benchmark_D_contact_baseline/contact_compile_gate.json"
+  ]
+}

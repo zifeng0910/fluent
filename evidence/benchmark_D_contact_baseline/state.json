@@ -1,0 +1,18 @@
+{
+  "campaign": "BENCHMARK_D_FRICTIONLESS_CONTACT_BASELINE",
+  "timestamp": "2026-10-04T01:17:00.586547+00:00",
+  "status": "HARD_BLOCKER_REQUIRES_REVIEW",
+  "current_step": 70,
+  "time_s": 0.001750000000000001,
+  "solver_alive": false,
+  "timesteps_advanced": 0,
+  "impulse_validation_status": "PASS",
+  "worker_pid": 18220,
+  "worker_created": 1791072622.9696507,
+  "worker_alive": false,
+  "active_job": null,
+  "error": "D_CONTACT_NATIVE_MOTION_OVERWRITE_NOT_VERIFIED",
+  "terminal_result": "NATIVE_CONTACT_BASELINE_NOT_VIABLE",
+  "latest_clean_native_state": "C70_RESTORED_PASS",
+  "two_ms": "NOT_RUN"
+}

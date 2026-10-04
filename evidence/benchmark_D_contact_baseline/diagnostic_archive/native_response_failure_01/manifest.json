@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-04T01:04:59.536528+00:00",
+  "files": {
+    "active_job.json": "1451fb72efd11aa618c41b82a84eb9083dc8e1b20da82828b75a9e36d0652deb",
+    "contact_capability_audit.json": "6467a548f0597983774db7c12c04b1813bfeb2ccbeda553c5665e74ded3cd2c4",
+    "contact_compile_gate.json": "72eb6d18890cef0fab1b3dd560748f81c05e269d587cd6d959262185f70ec878",
+    "contact_detection_semantics.json": "00687400b37eb18e6abf4b3e5812d77bdcb94ca1027ab7db79b6b08d9242b2fd",
+    "contact_events.csv": "f5941d7b587c7e6d52b06c66e4471cc28ad1120d17d094536f8109bb4f479263",
+    "contact_events.jsonl": "12ab8321a150551633bbe0f217d4dd683a3cdc31edb555116a9a9faf640e0762",
+    "diagnostic_translated_robot.vtp": "16b73c1fa6efcbfeaa87b29e9913a8473a0e9a399154d221f85fb1c478ef03b7",
+    "failure_pose.json": "4cc0f4f2e77d43f9b40224ae0805e32ab04497ec2099c1fb543aa3e5918d1dcd",
+    "fluent-20261004-081129-33312.trn": "fe61205f590f53d082baf20731093dc8811a9f80004daec960913f6e22b64aea",
+    "l2300_frictionless_contact.c": "89c60d6c492f1a14e9b10e0163bb5d925ef8b2f7af49e5130c5344f096136b72",
+    "state.json": "7813d24603a73dc677852ea90f96b4f1e862dfdc8fa7f6554f0381b6212cfd53"
+  }
+}

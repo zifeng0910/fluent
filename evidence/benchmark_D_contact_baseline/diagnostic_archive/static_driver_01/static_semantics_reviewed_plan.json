@@ -1,0 +1,14 @@
+{
+  "command_id": "6e866a87-489f-487c-bd28-39f5998de541",
+  "decision": "DIAGNOSE",
+  "job": "scripts/benchmark_D_static_semantics.py",
+  "job_sha256": "e335e0135cad51bb4aa9a112689e4bf23f6d960550e387644c0dfdd40ad9bbed",
+  "root_cause": "Proximity distance and native face/normal response still unverified for current overset",
+  "review": "Frozen attitude, rigid translations to measured 0.140/0.110/0.100/0.090/0.070 mm; native CURRENT_TIME/dtime zero; restore C70 after probes",
+  "supporting_code_sha256": "d91504f568bad0181e305fc4cfb765ae282a16ce1ea584ebeb79b3dbc9b185f2",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/contact_compile_gate.json",
+    "evidence/benchmark_D_contact_baseline/step70_restart_continuity.json",
+    "evidence/benchmark_D_contact_baseline/contact_impulse_unit_validation.json"
+  ]
+}

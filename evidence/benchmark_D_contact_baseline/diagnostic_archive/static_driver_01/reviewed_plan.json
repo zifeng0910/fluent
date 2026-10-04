@@ -1,0 +1,17 @@
+{
+  "command_id": "aaa40fb5-b382-4ea5-81df-8e755e9dbb4b",
+  "decision": "REPAIR",
+  "failure_class": "STATIC_CONTACT_DRIVER",
+  "repair_index": 1,
+  "root_cause": "Direct static Detect_Contact skipped installed Download_Contact_Parameters synchronization; previous result is not sufficient to identify incompatibility",
+  "concrete_change": "Call exact installed Download_Contact_Parameters before Init_Contact and record native active flag before/after; no dynamics",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "6f3f62d8f8a531f19b33885099a16df266840ae1c354ed20bf02e93ea1161465",
+  "supporting_code_sha256": "ca215a2e6777f6218fdd61494095b89a56422e9fd66d4119ce910a0548cb82ec",
+  "evidence_files": [
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_01\\contact_detection_semantics.json",
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_01\\static_semantics_reviewed_plan.json",
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_01\\worker_stdout.log",
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_01\\contact_capability_audit.json"
+  ]
+}

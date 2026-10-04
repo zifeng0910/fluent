@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T01:17:00.585009+00:00",
+  "files": {
+    "fluent_udf/l2300_abaqus100hz_6dof.c": {
+      "expected_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e",
+      "actual_sha256": "0ae61d4e84207ced13dad7f29517212f86ca0aa0281fb423166637aec881dd6e"
+    },
+    "scripts/benchmark_C_analytic_reference.py": {
+      "expected_sha256": "e7ce91ab34e5ac925b1f3cc04838bfad97a9eeb012f2163f97a8d9efd1088219",
+      "actual_sha256": "e7ce91ab34e5ac925b1f3cc04838bfad97a9eeb012f2163f97a8d9efd1088219"
+    },
+    "evidence/benchmark_C_coarse_A/dynamic_history.csv": {
+      "expected_sha256": "d527ba0d4dbea1476bd7fb0a6f624a4b38faa0cbd15906b98d11006687bad9a2",
+      "actual_sha256": "d527ba0d4dbea1476bd7fb0a6f624a4b38faa0cbd15906b98d11006687bad9a2"
+    },
+    "evidence/benchmark_C_coarse_A/state.json": {
+      "expected_sha256": "b5edb370b6d2d992670d9de9c742b9329c0dbca3c672fb5cf0799f00b372b172",
+      "actual_sha256": "b5edb370b6d2d992670d9de9c742b9329c0dbca3c672fb5cf0799f00b372b172"
+    },
+    "evidence/benchmark_C_coarse_A/final_report.json": {
+      "expected_sha256": "f820ce87a23fc394107d3945ff1392f0f52c233a6c448d5f8a4444fa1283c87c",
+      "actual_sha256": "f820ce87a23fc394107d3945ff1392f0f52c233a6c448d5f8a4444fa1283c87c"
+    },
+    "evidence/benchmark_C_coarse_A/checkpoint_0040.json": {
+      "expected_sha256": "c7abb341174d87771b26949bed23a2c64694d2ab0a1eb33aa747f96869847bcd",
+      "actual_sha256": "c7abb341174d87771b26949bed23a2c64694d2ab0a1eb33aa747f96869847bcd"
+    },
+    "evidence/benchmark_C_coarse_A/static.json": {
+      "expected_sha256": "287838ad87abdf9213c4a4ce2413efa4eecdcc6019a99db5f7344ed521e6d8fd",
+      "actual_sha256": "287838ad87abdf9213c4a4ce2413efa4eecdcc6019a99db5f7344ed521e6d8fd"
+    },
+    "evidence/benchmark_C_coarse_A/continuation_20h/window.json": {
+      "expected_sha256": "6c9a9d5c6de89eaa5541ab8f622b2c99813851e136bc4684afa681040076c952",
+      "actual_sha256": "6c9a9d5c6de89eaa5541ab8f622b2c99813851e136bc4684afa681040076c952"
+    },
+    "evidence/benchmark_C_fineA_free_6dof_history.csv": {
+      "expected_sha256": "8647ce7f46a9be9eb465c293583da0e488579a2c05fdc26159029ad725c865d4",
+      "actual_sha256": "8647ce7f46a9be9eb465c293583da0e488579a2c05fdc26159029ad725c865d4"
+    },
+    "evidence/benchmark_C_coarse_2ms/checkpoint_0070.json": {
+      "expected_sha256": "506aee8fecb29575d43344fbb924bcc241ab1fb3a786508c6614b97acc1be452",
+      "actual_sha256": "506aee8fecb29575d43344fbb924bcc241ab1fb3a786508c6614b97acc1be452"
+    },
+    "evidence/benchmark_C_coarse_2ms/stop_0073.json": {
+      "expected_sha256": "8aa3d322666156e9e9b15351c922f149ccebd845e77aa1e5379a72f03e612985",
+      "actual_sha256": "8aa3d322666156e9e9b15351c922f149ccebd845e77aa1e5379a72f03e612985"
+    },
+    "evidence/benchmark_C_coarse_2ms/dynamic_history.csv": {
+      "expected_sha256": "f1e9bec766d9c67a3d118f78c3cb9431f2573d9d8462874425c0922b30839b3e",
+      "actual_sha256": "f1e9bec766d9c67a3d118f78c3cb9431f2573d9d8462874425c0922b30839b3e"
+    },
+    "evidence/benchmark_C_coarse_2ms/final_report.json": {
+      "expected_sha256": "ef762afcf78b0d59f893783ade781d97c820a096ffbbde56e9bfd335c4e8119b",
+      "actual_sha256": "ef762afcf78b0d59f893783ade781d97c820a096ffbbde56e9bfd335c4e8119b"
+    },
+    "evidence/benchmark_C_coarse_2ms/clearance_trend_review/clearance_trend_report.json": {
+      "expected_sha256": "ed18fab9f7e35261f3f72e44dc120d60c78fea6da990fb733e11c7b70c1ddefc",
+      "actual_sha256": "ed18fab9f7e35261f3f72e44dc120d60c78fea6da990fb733e11c7b70c1ddefc"
+    },
+    "evidence/benchmark_C_analytic_6dof_history.csv": {
+      "expected_sha256": "e76e4ee42dd434ee494e34d15eb583ab0e7e778f91cb6f77760368e52448f452",
+      "actual_sha256": "e76e4ee42dd434ee494e34d15eb583ab0e7e778f91cb6f77760368e52448f452"
+    }
+  },
+  "native_C70_case_sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+  "native_C70_data_sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
+  "no_original_C_files_written": true
+}

@@ -1,0 +1,15 @@
+{
+  "campaign": "BENCHMARK_D_FRICTIONLESS_CONTACT_BASELINE",
+  "timestamp": "2026-10-04T01:04:55.186171+00:00",
+  "status": "ZERO_DYNAMICS_JOB_RUNNING",
+  "current_step": 70,
+  "time_s": 0.001750000000000001,
+  "solver_alive": true,
+  "timesteps_advanced": 0,
+  "impulse_validation_status": "PASS",
+  "worker_pid": 18220,
+  "worker_created": 1791072622.9696507,
+  "worker_alive": true,
+  "active_job": "scripts/benchmark_D_live_audit.py",
+  "error": "RuntimeError('()\\nError Object: #f')"
+}

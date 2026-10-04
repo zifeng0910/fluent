@@ -1,0 +1,18 @@
+{
+  "command_id": "3b0bee4c-04d5-492f-a652-b900a49f7e8c",
+  "decision": "REPAIR",
+  "failure_class": "STATIC_CONTACT_DRIVER",
+  "repair_index": 2,
+  "root_cause": "Measured flag0 invokes DEFINE_CONTACT; sanity test used flag1 and produced no callback",
+  "concrete_change": "Use observed response flag for artificial inward test; add immediate SDOF_Get_Motion readback inside native callback; fresh versioned v3 DLL",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "225db17d83eebbc98ff43e18727a6220e51e850832f357e2c12fe210caa7c942",
+  "supporting_code_sha256": "89c60d6c492f1a14e9b10e0163bb5d925ef8b2f7af49e5130c5344f096136b72",
+  "contact_library_name": "libbenchmark_D_contact_v3",
+  "evidence_files": [
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_02\\contact_detection_semantics.json",
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_02\\static_semantics_reviewed_plan.json",
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_02\\contact_events.jsonl",
+    "evidence\\benchmark_D_contact_baseline\\diagnostic_archive\\static_driver_02\\contact_events.csv"
+  ]
+}

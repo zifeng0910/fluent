@@ -1,0 +1,13 @@
+{
+  "command_id": "44db4072-1fe5-40e0-ac6d-6735c41ba114",
+  "decision": "DIAGNOSE",
+  "action": "PRESERVE_FAILURE_AND_RESTORE_C70",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "495332214d355a4d97edc9ade85415bdefbe9d13c0942267c687d1984b0c288f",
+  "failure_timestamp": "2026-10-04T00:58:37.792021+00:00",
+  "review": "Preserve native response failure and translated geometry, then zero-step reload and validate immutable C70. No detection rerun, compilation or dynamics.",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/jobs/e860d622-87c6-49b2-b3be-c57878d7a477/failure.json",
+    "live_cases/benchmark_D_contact_baseline/fluent-20261004-081129-33312.trn"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "command_id": "ff4dc9a4-5b48-4a2e-90fb-aabf2b8586af",
+  "decision": "REPAIR",
+  "failure_class": "CONTACT_UDF_PLATFORM_INTEGRATION",
+  "repair_index": 2,
+  "root_cause": "Existing loaded DLL kept original 08:13 timestamp; source copy does not prove a rebuild, and Download diagnostics did not execute",
+  "concrete_change": "Use fresh versioned libbenchmark_D_contact_v2; enforce source freshness and actual DLL hashes; invoke exact matching library in static driver",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "225db17d83eebbc98ff43e18727a6220e51e850832f357e2c12fe210caa7c942",
+  "supporting_code_sha256": "ca215a2e6777f6218fdd61494095b89a56422e9fd66d4119ce910a0548cb82ec",
+  "contact_library_name": "libbenchmark_D_contact_v2",
+  "evidence_files": [
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_02\\contact_compile_gate.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_02\\contact_detection_semantics.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_02\\static_semantics_reviewed_plan.json",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_02\\worker_stdout.log",
+    "evidence\\benchmark_D_contact_baseline\\repairs\\platform_integration_02\\contact_capability_audit.json"
+  ]
+}

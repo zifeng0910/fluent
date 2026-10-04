@@ -1,0 +1,14 @@
+{
+  "command_id": "0d5cfc5d-6036-4622-97e0-48caeb1cc779",
+  "decision": "DIAGNOSE",
+  "action": "READ_NATIVE_MOTION_STATE",
+  "motion_library_name": "libbenchmark_D_read_motion_v2",
+  "job": "scripts/benchmark_D_live_audit.py",
+  "job_sha256": "41ae039ad8afdfe963b370cb3e4c30940caa966c0e5276358975a57562931452",
+  "supporting_code_sha256": "4673bc76a5aca9ddd2d0431bcfdc562be463e660fc5da9ea0e62dcd171adf3f5",
+  "review": "Correct diagnostic temporary-state type to installed Dynamic_Thread_Rigid_Body_State; record motion-context null pointers. Read-only, no overwrite, detect or integration.",
+  "evidence_files": [
+    "evidence/benchmark_D_contact_baseline/diagnostic_archive/motion_audit_typed_01/native_motion_state_audit.json",
+    "evidence/benchmark_D_contact_baseline/post_probe_C70_restore.json"
+  ]
+}
