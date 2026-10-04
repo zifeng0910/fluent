@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-04T03:26:29.165513+00:00",
+  "branch": "read_only",
+  "status": "NOT_NEEDED",
+  "key": "time + timestep + moving body + opposite body + contact point within20um",
+  "physical_impulses_not_counted_twice_across_host_node": true,
+  "groups": [
+    {
+      "time_s": 0.001825000000000001,
+      "step": 73,
+      "body": 7,
+      "opposite": 6,
+      "callback_count": 1,
+      "applied_count": 0,
+      "skipped_duplicate_count": 0,
+      "duplicate_physical_impulse": false
+    }
+  ]
+}

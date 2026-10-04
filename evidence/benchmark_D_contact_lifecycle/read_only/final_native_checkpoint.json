@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-04T03:26:08.419976+00:00",
+  "status": "PASS",
+  "native_state": {
+    "com": [
+      0.001203427035841474,
+      1.205416965117941e-06,
+      -4.49875427101659e-07
+    ],
+    "q": [
+      0.9762161458863163,
+      0.008642620204002551,
+      -0.07329381992163068,
+      -0.20385131245143204
+    ],
+    "velocity": [
+      -0.002527122861664453,
+      0.003936435955531434,
+      -0.001297606822782062
+    ],
+    "omega": [
+      47.94436520248257,
+      -276.8498814150523,
+      -888.7526328388972
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.4370696538755672,
+      "axis": [
+        0.039864570629731935,
+        -0.3380718569162105,
+        -0.9402756168112265
+      ]
+    }
+  },
+  "time_s": 0.001850000000000001,
+  "state_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "files": {
+    "case": {
+      "path": "live_cases\\benchmark_D_contact_lifecycle\\read_only\\final_native.cas.h5",
+      "sha256": "db8ecc5bc7c43efce53496db2f3fd1ea9d9bdbe73fdaaff312b6b01c6583bf9d",
+      "size_bytes": 109800600,
+      "HDF5_readable": true
+    },
+    "data": {
+      "path": "live_cases\\benchmark_D_contact_lifecycle\\read_only\\final_native.dat.h5",
+      "sha256": "ea42844a4e5bd8fb7e48d6014cd05dc1497be5e7ccc20f6edae2838503545e87",
+      "size_bytes": 559322354,
+      "HDF5_readable": true
+    }
+  },
+  "large_native_files_local_only": true
+}

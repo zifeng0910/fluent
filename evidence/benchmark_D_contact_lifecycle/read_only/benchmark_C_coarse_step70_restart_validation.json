@@ -1,0 +1,182 @@
+{
+  "timestamp": "2026-10-04T03:13:38.522883+00:00",
+  "step": 70,
+  "status": "PASS",
+  "timesteps_advanced": 0,
+  "pose_reset_performed": false,
+  "velocity_reset_performed": false,
+  "row": {
+    "step": "70",
+    "time_s": "0.001750000000000001",
+    "com_x_m": "0.001203713388222422",
+    "com_y_m": "8.724861369932643e-07",
+    "com_z_m": "-3.356690108892919e-07",
+    "q0": "0.984623529376754",
+    "q1": "0.006896969730061793",
+    "q2": "-0.0607625496750705",
+    "q3": "-0.16363633387237564",
+    "q_norm": "1.0",
+    "omega_x_rad_s": "39.13734668232958",
+    "omega_y_rad_s": "-238.3510307135471",
+    "omega_z_rad_s": "-752.0650495856725",
+    "Fmag_x_N": "-2.6306585012258487e-05",
+    "Fmag_y_N": "0.0",
+    "Fmag_z_N": "0.0",
+    "Tmag_x_Nm": "2.390446617185538e-07",
+    "Tmag_y_Nm": "-1.553126579602264e-06",
+    "Tmag_z_Nm": "-5.917113820340971e-06",
+    "vx_m_s": "-0.0030784754169181703",
+    "vy_m_s": "0.00278338081035859",
+    "vz_m_s": "-0.0009735323565712222",
+    "theta_x_rad": "0.01386507789800976",
+    "theta_y_rad": "-0.12215183152891644",
+    "theta_z_rad": "-0.328960486254723",
+    "orphan_count": "0",
+    "receptors_without_donors": "0",
+    "official_donor_count": "301276",
+    "official_receptor_count": "144116",
+    "minimum_cell_volume_m3": "6.100596812e-17",
+    "robot_wall_clearance_m": "0.00014051206422899983",
+    "overset_wall_clearance_m": "9.070283106818867e-05",
+    "donor_length_ratio_min": "0.3392703121258265",
+    "donor_length_ratio_median": "0.688656963042298",
+    "donor_length_ratio_p95": "2.0583482205266153",
+    "donor_length_ratio_max": "2.851046313678106",
+    "BOI_pose_displacement_bound_m": "1.2332767577244258e-05"
+  },
+  "native_time_s": 0.001750000000000001,
+  "native_state": {
+    "com": [
+      0.001203713388222422,
+      8.724861369932643e-07,
+      -3.356690108892919e-07
+    ],
+    "q": [
+      0.984623529376754,
+      0.006896969730061793,
+      -0.0607625496750705,
+      -0.16363633387237564
+    ],
+    "velocity": [
+      -0.003078475416918156,
+      0.00278338081035859,
+      -0.0009735323565712222
+    ],
+    "omega": [
+      39.13734668233644,
+      -238.3510307135593,
+      -752.0650495857042
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.35118130908112233,
+      "axis": [
+        0.03948125238865443,
+        -0.34783124377698504,
+        -0.9367254969105832
+      ]
+    }
+  },
+  "native_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 1.431146867680866e-17,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 3.171862772433087e-11,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "component_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 1.431146867680866e-17,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 3.171862772433087e-11,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "q_norm": 1.0,
+  "native_quaternion_surface_error_m": 2.3009711061972765e-10,
+  "Fmag_N": [
+    -2.6306585012258473e-05,
+    0.0,
+    0.0
+  ],
+  "Tmag_COM_Nm": [
+    2.3904466171855395e-07,
+    -1.5531265796022652e-06,
+    -5.917113820340973e-06
+  ],
+  "source_state": {
+    "moment_global": "[ 0.00097916 -0.00032738  0.00012549]",
+    "B_global": "[-0.01071953 -0.00245896  0.00021237]",
+    "s_eff_mm": 31.68711593726607,
+    "phase_rad": 1.0995574287564283,
+    "ramp": 1
+  },
+  "F_error_N": 1.3552527156068805e-20,
+  "T_error_Nm": 2.541098841762901e-21,
+  "overset": {
+    "cell_type_counts": {
+      "-3": 0,
+      "-2": 981453,
+      "-1": 0,
+      "0": 144116,
+      "1": 3272456,
+      "2": 301276
+    },
+    "orphans": 0,
+    "orphan_cellnumber_xyz_first20": [],
+    "donors": 301276,
+    "receptors": 144116,
+    "total_cells": 4699301,
+    "minimum_volume_m3": 6.100596812e-17,
+    "donor_volume_ratio": {
+      "min": 0.03905148695,
+      "median": 0.32659447165,
+      "p95": 8.72080438275,
+      "max": 23.17463041
+    },
+    "donor_characteristic_length_ratio": {
+      "min": 0.3392703121258265,
+      "median": 0.688656963042298,
+      "p95": 2.0583482205266153,
+      "max": 2.851046313678106
+    },
+    "donor_length_ratio_gt3_count": 0,
+    "donor_ratio_samples": 301276,
+    "invalid_donors": 0,
+    "physical_clearance_m": 0.00014051206422899983,
+    "envelope_clearance_m": 9.070283106818867e-05,
+    "donor_length_ratio_policy": "WARNING_ONLY; no refinement or stop solely for ratio >3"
+  },
+  "case": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
+  "case_sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+  "data_sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460"
+}

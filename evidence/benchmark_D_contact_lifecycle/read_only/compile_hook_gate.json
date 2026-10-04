@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T03:14:18.593416+00:00",
+  "library": "libD_lifecycle_read_only_v1",
+  "source_sha256": "cbe8e636701807d7709b990a5ae0070d2e7fd66b8944be110ccae3e64111cd76",
+  "config_sha256": "0072573c69da55ac1e68075dfc1acea70b9b72d43ea13964f331a5035bcea8f0",
+  "dll_sha256": {
+    "live_cases\\benchmark_D_contact_lifecycle\\read_only\\libD_lifecycle_read_only_v1\\win64\\3ddp_host\\libudf.dll": "6c09f11594b61961f5d2c6639400ab173b87beed6915449481c372cab38de668",
+    "live_cases\\benchmark_D_contact_lifecycle\\read_only\\libD_lifecycle_read_only_v1\\win64\\3ddp_node\\libudf.dll": "630f13cce1af8c54d4ff5911bec9542e054fa0d7970514c14d540c87b74a341e"
+  },
+  "contact_state": {
+    "enabled": true,
+    "face_zones": [
+      "robot_wall",
+      "pipe_wall"
+    ],
+    "proximity_threshold": 0.0001,
+    "contact_udf": "l2300_native_contact_lifecycle::libD_lifecycle_read_only_v1",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 1
+  },
+  "magnetic_formula_delegated_once": true,
+  "true_solver_contact_only": true
+}
