@@ -25,6 +25,7 @@ def main():
             original_local_example_file=None,original_local_example_lines=None),
         official_same_release_online_example=dict(classification='DOCUMENTED',url=doc,version='v261',section='2.6.7.3 Example1',
             get_line=891,get_call='SDOF_Get_Motion (dt, vel0, omega0, theta0);',
+            line_numbers_basis='Web tool extracted document text; not installed-file source lines',
             overwrite_line=944,overwrite_call='SDOF_Overwrite_Motion (dt, vel0, omega0, theta0);',
             same_returned_omega_and_theta_passed_back=True,velocity_changed_by_reflection=True,
             exact_visible_value_noop_trajectory_guarantee_documented=False,overwrite_inside_DEFINE_CONTACT_only=True,

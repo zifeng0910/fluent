@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T15:07:27.523308+00:00",
+  "native": {
+    "total": 4699301,
+    "orphan": 0,
+    "invalid_donors": 0,
+    "unidentified": 0,
+    "nonpositive_volume": 0,
+    "nonfinite_volume": 0,
+    "minimum_volume_m3": 6.100596812043533e-17
+  },
+  "official": {
+    "cell_type_counts": {
+      "-3": 0,
+      "-2": 981453,
+      "-1": 0,
+      "0": 144116,
+      "1": 3272456,
+      "2": 301276
+    },
+    "orphans": 0,
+    "orphan_cellnumber_xyz_first20": [],
+    "donors": 301276,
+    "receptors": 144116,
+    "total_cells": 4699301,
+    "minimum_volume_m3": 6.100596812e-17,
+    "donor_volume_ratio": {
+      "min": 0.03905148695,
+      "median": 0.32659447165,
+      "p95": 8.72080438275,
+      "max": 23.17463041
+    },
+    "donor_characteristic_length_ratio": {
+      "min": 0.3392703121258265,
+      "median": 0.688656963042298,
+      "p95": 2.0583482205266153,
+      "max": 2.851046313678106
+    },
+    "donor_length_ratio_gt3_count": 0,
+    "donor_ratio_samples": 301276,
+    "invalid_donors": 0,
+    "physical_clearance_m": 0.00014051206422899983,
+    "envelope_clearance_m": 9.070283106818867e-05,
+    "donor_length_ratio_policy": "WARNING_ONLY; no refinement or stop solely for ratio >3"
+  }
+}

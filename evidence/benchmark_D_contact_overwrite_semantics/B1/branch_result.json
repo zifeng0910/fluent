@@ -1,0 +1,97 @@
+{
+  "status": "DIAGNOSTIC_DATA_COMPLETE",
+  "branch": "B1",
+  "timestamp": "2026-10-04T15:22:43.263869+00:00",
+  "actual_contact_triggered": true,
+  "first_contact_completed_iteration": 4,
+  "completed_new_steps": 5,
+  "last_state": {
+    "time_s": 0.001875000000000001,
+    "native_step_index": 75,
+    "native_state": {
+      "com": [
+        0.001203378909698479,
+        1.321104479487897e-06,
+        -4.876215129167203e-07
+      ],
+      "q": [
+        0.973467443965442,
+        0.009154137268373986,
+        -0.0768225361513156,
+        -0.21535002960190328
+      ],
+      "velocity": [
+        -0.002031837265544493,
+        0.004466780696779588,
+        -0.001466547626147952
+      ],
+      "omega": [
+        50.54889454084012,
+        -287.0686850990561,
+        -924.5610312865425
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.46174211633702195,
+        "axis": [
+          0.04000487265550163,
+          -0.33572533224116097,
+          -0.9411100421605217
+        ]
+      }
+    },
+    "shared_body_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "connectivity": {
+      "total": 4699301,
+      "orphan": 0,
+      "invalid_donors": 0,
+      "unidentified": 0,
+      "nonpositive_volume": 0,
+      "nonfinite_volume": 0,
+      "minimum_volume_m3": 6.100596812042468e-17
+    },
+    "physical_gap_m": 4.817745748452356e-05,
+    "q_norm": 1.0,
+    "Fmag_N": [
+      -2.5108356383872873e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_Nm": [
+      3.1825241577992036e-07,
+      -1.8252494058430566e-06,
+      -6.973791031955361e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00093458 -0.00042922  0.00015499]",
+      "B_global": "[-0.01069929 -0.00254819  0.00017867]",
+      "s_eff_mm": 31.68603145874213,
+      "phase_rad": 1.178097245096173,
+      "ramp": 1
+    },
+    "hard_failures": [],
+    "status": "PASS"
+  },
+  "previous_C_and_zero_step_D_preserved": true,
+  "read_only_has_no_overwrite": true
+}

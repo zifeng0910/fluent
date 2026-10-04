@@ -1,0 +1,234 @@
+{
+  "timestamp": "2026-10-04T15:44:20.332623+00:00",
+  "status": "PARTIAL",
+  "native_angle_helpers": {
+    "DT_THETA_vs_Theta_From_Q_max_abs": 5.551115123125783e-17,
+    "DT_THETA_vs_rotation_vector_max_abs": 5.551115123125783e-17,
+    "Q_From_DT_THETA_max_orientation_error_rad": 3.582791971490862e-18,
+    "DT_THETA_vs_Euler_From_Q_max_abs": 0.033009344041280156,
+    "get_theta_max_abs": 0.0,
+    "omega_dt_nonzero_in_callbacks": true,
+    "get_theta_not_absolute_native_DT_THETA": true
+  },
+  "Get_Motion_theta_semantics": "EMPIRICALLY BOUNDED: initialized-zero third array remains0 here while native absolute orientation evolves; not the absolute DT_THETA or omega*dt. Whether Get deliberately omits assigning it in this6DOF path is UNKNOWN.",
+  "native_DT_THETA": "EMPIRICALLY_MEASURED in this trajectory: absolute rotation vector matching nativeTheta_From_Q and an independent quaternion rotation vector. It differs from nativeEuler_From_Q; no converter output is fed to Overwrite.",
+  "overwrite_pose_reconstruction": {
+    "classification": "EMPIRICALLY_MEASURED",
+    "endpoint_model_verified": true,
+    "visible_CG_Q_unchanged_immediately_after": true,
+    "delayed_effect_interpretation": "EMPIRICALLY_INFERRED: overwrite changes subsequent motion construction, not necessarily immediately visible DT_CG/DT_Q. Internal buffer/flag identity UNKNOWN.",
+    "model": "CG_next=CG_start+dt*v_endpoint; Q_next=worldRotation(omega_endpoint*dt)*Q_start",
+    "records": [
+      {
+        "branch": "B1",
+        "callback_time_s": 0.001825000000000001,
+        "completed_time_s": 0.001850000000000001,
+        "endpoint_CG_residual_m": 6.505213401112767e-19,
+        "endpoint_world_omega_Q_residual_rad": 1.668634695504476e-16,
+        "immediate_after_CG_matches_completed_m": 4.944052000346419e-09,
+        "immediate_after_Q_matches_completed_rad": 0.00046212176236462126,
+        "overwrite_immediate_CG_change_m": 0.0,
+        "overwrite_immediate_Q_change_rad": 0.0,
+        "getter_velocity_unchanged": true,
+        "getter_omega_unchanged": true,
+        "getter_theta_before": [
+          0,
+          0,
+          0
+        ],
+        "getter_theta_after": [
+          0,
+          0,
+          0
+        ],
+        "DT_THETA_before": [
+          0.017423594087035043,
+          -0.14776094948743837,
+          -0.4109659383873182
+        ],
+        "DT_THETA_after": [
+          0.017423594087035043,
+          -0.14776094948743837,
+          -0.4109659383873182
+        ]
+      },
+      {
+        "branch": "B1",
+        "callback_time_s": 0.0018500000000000012,
+        "completed_time_s": 0.001875000000000001,
+        "endpoint_CG_residual_m": 2.1684084808701273e-19,
+        "endpoint_world_omega_Q_residual_rad": 1.270072390794868e-16,
+        "immediate_after_CG_matches_completed_m": 2.117582368135751e-22,
+        "immediate_after_Q_matches_completed_rad": 5.563299026603774e-17,
+        "overwrite_immediate_CG_change_m": 0.0,
+        "overwrite_immediate_Q_change_rad": 0.0,
+        "getter_velocity_unchanged": true,
+        "getter_omega_unchanged": true,
+        "getter_theta_before": [
+          0,
+          0,
+          0
+        ],
+        "getter_theta_after": [
+          0,
+          0,
+          0
+        ],
+        "DT_THETA_before": [
+          0.018471934563744376,
+          -0.15501852541698355,
+          -0.4345501425732233
+        ],
+        "DT_THETA_after": [
+          0.018471934563744376,
+          -0.15501852541698355,
+          -0.4345501425732233
+        ]
+      },
+      {
+        "branch": "B2",
+        "callback_time_s": 0.001825000000000001,
+        "completed_time_s": 0.001850000000000001,
+        "endpoint_CG_residual_m": 6.505213401112767e-19,
+        "endpoint_world_omega_Q_residual_rad": 1.668634695504476e-16,
+        "immediate_after_CG_matches_completed_m": 4.944052000346419e-09,
+        "immediate_after_Q_matches_completed_rad": 0.00046212176236462126,
+        "overwrite_immediate_CG_change_m": 0.0,
+        "overwrite_immediate_Q_change_rad": 0.0,
+        "getter_velocity_unchanged": true,
+        "getter_omega_unchanged": true,
+        "getter_theta_before": [
+          0,
+          0,
+          0
+        ],
+        "getter_theta_after": [
+          0,
+          0,
+          0
+        ],
+        "DT_THETA_before": [
+          0.017423594087035043,
+          -0.14776094948743837,
+          -0.4109659383873182
+        ],
+        "DT_THETA_after": [
+          0.017423594087035043,
+          -0.14776094948743837,
+          -0.4109659383873182
+        ]
+      },
+      {
+        "branch": "B2",
+        "callback_time_s": 0.0018500000000000012,
+        "completed_time_s": 0.001875000000000001,
+        "endpoint_CG_residual_m": 2.1684084808701273e-19,
+        "endpoint_world_omega_Q_residual_rad": 1.270072390794868e-16,
+        "immediate_after_CG_matches_completed_m": 2.117582368135751e-22,
+        "immediate_after_Q_matches_completed_rad": 5.563299026603774e-17,
+        "overwrite_immediate_CG_change_m": 0.0,
+        "overwrite_immediate_Q_change_rad": 0.0,
+        "getter_velocity_unchanged": true,
+        "getter_omega_unchanged": true,
+        "getter_theta_before": [
+          0,
+          0,
+          0
+        ],
+        "getter_theta_after": [
+          0,
+          0,
+          0
+        ],
+        "DT_THETA_before": [
+          0.018471934563744376,
+          -0.15501852541698355,
+          -0.4345501425732233
+        ],
+        "DT_THETA_after": [
+          0.018471934563744376,
+          -0.15501852541698355,
+          -0.4345501425732233
+        ]
+      }
+    ]
+  },
+  "read_only_translation_model": {
+    "classification": "EMPIRICALLY_MEASURED",
+    "model": "CG_next=CG_start+0.5*dt*(v_start+v_endpoint)",
+    "records": [
+      {
+        "branch": "A1",
+        "time_s": 0.001850000000000001,
+        "trapezoidal_CG_residual_m": 4.336813342830467e-19
+      },
+      {
+        "branch": "A1",
+        "time_s": 0.001875000000000001,
+        "trapezoidal_CG_residual_m": 2.168404344971009e-19
+      },
+      {
+        "branch": "A2",
+        "time_s": 0.001850000000000001,
+        "trapezoidal_CG_residual_m": 4.336813342830467e-19
+      },
+      {
+        "branch": "A2",
+        "time_s": 0.001875000000000001,
+        "trapezoidal_CG_residual_m": 2.168404344971009e-19
+      }
+    ]
+  },
+  "callback_stage": {
+    "classification": "EMPIRICALLY_INFERRED",
+    "statement": "Actual contact occurs with endpoint predicted v/omega and pose, while CURRENT_TIME/N_TIME and actual surface geometry remain at the previous completed step; before final mesh relocation. Exact internal predictor/corrector flag UNKNOWN.",
+    "records": [
+      {
+        "branch": "A1",
+        "callback_CURRENT_TIME_s": 0.001825000000000001,
+        "completed_time_s": 0.001850000000000001,
+        "callback_CG_vs_completed_m": 4.268123713790712e-22,
+        "callback_Q_vs_completed_rad": 2.883977778811442e-17,
+        "callback_actual_vertices_ideal_gap_m": 8.830977425190105e-05,
+        "previous_export_vertices_ideal_gap_m": 8.830975198408065e-05,
+        "completed_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+        "surface_export_precision_tolerance_m": 1e-10
+      },
+      {
+        "branch": "A1",
+        "callback_CURRENT_TIME_s": 0.0018500000000000012,
+        "completed_time_s": 0.001875000000000001,
+        "callback_CG_vs_completed_m": 2.1684084808701273e-19,
+        "callback_Q_vs_completed_rad": 2.861061422162426e-17,
+        "callback_actual_vertices_ideal_gap_m": 6.953087641744474e-05,
+        "previous_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+        "completed_export_vertices_ideal_gap_m": 5.044755608610155e-05,
+        "surface_export_precision_tolerance_m": 1e-10
+      },
+      {
+        "branch": "A2",
+        "callback_CURRENT_TIME_s": 0.001825000000000001,
+        "completed_time_s": 0.001850000000000001,
+        "callback_CG_vs_completed_m": 4.268123713790712e-22,
+        "callback_Q_vs_completed_rad": 2.883977778811442e-17,
+        "callback_actual_vertices_ideal_gap_m": 8.830977425190105e-05,
+        "previous_export_vertices_ideal_gap_m": 8.830975198408065e-05,
+        "completed_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+        "surface_export_precision_tolerance_m": 1e-10
+      },
+      {
+        "branch": "A2",
+        "callback_CURRENT_TIME_s": 0.0018500000000000012,
+        "completed_time_s": 0.001875000000000001,
+        "callback_CG_vs_completed_m": 2.1684084808701273e-19,
+        "callback_Q_vs_completed_rad": 2.861061422162426e-17,
+        "callback_actual_vertices_ideal_gap_m": 6.953087641744474e-05,
+        "previous_export_vertices_ideal_gap_m": 6.953087999130882e-05,
+        "completed_export_vertices_ideal_gap_m": 5.044755608610155e-05,
+        "surface_export_precision_tolerance_m": 1e-10
+      }
+    ]
+  },
+  "official_guarantees_noop_equals_omission": false,
+  "none_of_the_native_conversions_sent_to_overwrite": true
+}

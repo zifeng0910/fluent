@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-10-04T15:05:12.744995+00:00",
+  "decision": "Close only the finite repeat driver, preserving already running B1 admission worker. Parent agent will serially launch B2 after B1 integrity/closure review.",
+  "driver_pid": 27276,
+  "driver_created": 1791124391.9323237,
+  "driver_private_gib": 0.9853553771972656,
+  "driver_WS_gib": 0.06496047973632812,
+  "worker_identity_preserved": {
+    "pid": 41420,
+    "created": 1791125373.246428,
+    "branch": "B1",
+    "timestamp": "2026-10-04T14:49:34.581944+00:00"
+  },
+  "before_resource": {
+    "timestamp": "2026-10-04T15:05:11.434149+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 14.632381439208984,
+    "used_gib": 17.207416534423828,
+    "commit_gib": 28.61396026611328,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5981204243772943,
+    "pagefile_used_gib": 0.8750724792480469,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.2019386291503906,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.124927520751953,
+    "commit_headroom_gib": 19.22583770751953,
+    "stage": "ADMISSION",
+    "processes": [
+      {
+        "pid": 41420,
+        "created": 1791125373.246428,
+        "name": "python.exe",
+        "working_set_gib": 0.16431045532226562,
+        "private_bytes_gib": 1.0662002563476562
+      }
+    ],
+    "disk_free_gib": 200.56533813476562,
+    "project_working_set_gib": 0.16431045532226562,
+    "project_private_bytes_gib": 1.0662002563476562
+  },
+  "no_native_engine_running": true,
+  "guards_unchanged": true,
+  "after_resource": {
+    "timestamp": "2026-10-04T15:05:16.439681+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 14.662391662597656,
+    "used_gib": 17.177406311035156,
+    "commit_gib": 27.682357788085938,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5786470461966255,
+    "pagefile_used_gib": 0.8750724792480469,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.2008934020996094,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.124927520751953,
+    "commit_headroom_gib": 20.157440185546875,
+    "stage": "ADMISSION",
+    "processes": [
+      {
+        "pid": 41420,
+        "created": 1791125373.246428,
+        "name": "python.exe",
+        "working_set_gib": 0.16431045532226562,
+        "private_bytes_gib": 1.0662002563476562
+      }
+    ],
+    "disk_free_gib": 200.5653305053711,
+    "project_working_set_gib": 0.16431045532226562,
+    "project_private_bytes_gib": 1.0662002563476562
+  },
+  "driver_script_sha256": "e79bd9279e4918d16796ea99b81eb74d359da6951d91818636db08aa4c6dc6a6",
+  "measured_commit_headroom_gain_gib": 0.9316024780273438,
+  "system_delta_note": "System commit may include concurrent changes; verified owned driver Private Bytes were0.985GiB. After-admission sample selected before any Fluent engine existed."
+}

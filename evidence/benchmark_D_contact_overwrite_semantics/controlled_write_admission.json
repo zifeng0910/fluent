@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-04T15:44:20.354966+00:00",
+  "status": "PASS",
+  "reason": "One controlled event only to1.875ms; no micro-run",
+  "quantification_sha256": "f4c4314667d18d4347d4b227d010fd3e47038a57bd676dcea746d8ad42a62672",
+  "semantics_sha256": "697759f1c0fd2ba0289fa49871082e7fb7d5b6776701e2f8ceece39cf9b4a282",
+  "configuration_sha256": "3efc93987d455f7bd9957f5ee713c2ec6c87ed529e0d4c48415aff0b372cf193",
+  "minimum_signal_to_floor": 10,
+  "passed_motion_array_read": true,
+  "exact_same_value_noop_arrays": true,
+  "theta_not_manually_converted": true,
+  "limited_to_one_event": true,
+  "end_time_s": 0.001875
+}

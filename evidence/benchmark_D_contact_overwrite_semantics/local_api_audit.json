@@ -676,7 +676,8 @@
     "velocity_changed_by_reflection": true,
     "exact_visible_value_noop_trajectory_guarantee_documented": false,
     "overwrite_inside_DEFINE_CONTACT_only": true,
-    "storage": "Two call excerpts only; online documentation is not mislabeled as an installed original"
+    "storage": "Two call excerpts only; online documentation is not mislabeled as an installed original",
+    "line_numbers_basis": "Web tool extracted document text; not installed-file source lines"
   },
   "statements": [
     {

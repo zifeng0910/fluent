@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-04T14:49:33.197273+00:00",
+  "branch": "B1",
+  "decision": "Reviewed same-value overwrite repeat; independent C70, five steps to1.875ms; previous worker closed and checkpoint gates PASS",
+  "files_sha256": {
+    "scripts/benchmark_D_overwrite_worker.py": "e66bba263b97b50fb498f332effee8b68902e1242aca44dee64ee1e76bd8a021",
+    "scripts/benchmark_D_overwrite_common.py": "e20766a804a9eb83b54cb63b0210e533850e06071f0957eeaf45fde9c17de537",
+    "fluent_udf/l2300_contact_overwrite_semantics.c": "f3e856ae27a52028ee45e5d97eae9fedfa37252796479197c685ee9f7413aeb0",
+    "evidence\\benchmark_D_contact_overwrite_semantics\\B1\\configuration.json": "cb241010b8ca8c00add805a9e3a543607472085479f3856a01307ec07e2a1ed3",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\B1\\lifecycle_config.h": "a0b1d9c20ea3eed0d5115e2b596c09c0a25436291bde14da21669aaa03f73300",
+    "live_cases\\benchmark_D_contact_overwrite_semantics\\B1\\magnetic_logging_copy.c": "954f7678e24fbc5362f45124edb203e9bb39b7092f9356dfe3194ce1476c9557"
+  },
+  "finite_repeat_batch": true
+}

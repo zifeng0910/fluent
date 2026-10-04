@@ -52,7 +52,7 @@ def semantics_audit():
         DT_THETA_vs_rotation_vector_max_abs=max(float(np.max(abs(np.asarray(r['DT_THETA'])-rotation(r['Q']).as_rotvec()))) for r in allrows),
         Q_From_DT_THETA_max_orientation_error_rad=max(angle(r['Q_From_DT_THETA_native'],r['Q']) for r in allrows),
         DT_THETA_vs_Euler_From_Q_max_abs=max(float(np.max(abs(np.asarray(r['DT_THETA'])-r['Euler_From_Q_native']))) for r in allrows),
-        get_theta_max_abs=max(float(np.max(abs(r['get_theta']))) for r in allrows),
+        get_theta_max_abs=max(float(np.max(abs(np.asarray(r['get_theta'])))) for r in allrows),
         omega_dt_nonzero_in_callbacks=all(np.linalg.norm(r['omega'])>1 for r in allrows if r['stage']=='CALLBACK_BEFORE'))
     callback=[r for r in allrows if r['stage']=='CALLBACK_BEFORE']
     helpers['get_theta_not_absolute_native_DT_THETA']=all(np.linalg.norm(np.asarray(r['get_theta'])-r['DT_THETA'])>.01 for r in callback)
@@ -96,11 +96,13 @@ def semantics_audit():
                 previous_export_vertices_ideal_gap_m=tube_gap(starts[i]['native_step_index']),
                 completed_export_vertices_ideal_gap_m=tube_gap(states[i]['native_step_index']),
                 surface_export_precision_tolerance_m=1e-10))
-    endpoint_explained=all(x['endpoint_CG_residual_m']<1e-12 and x['endpoint_world_omega_Q_residual_rad']<1e-9 and x['getter_velocity_unchanged'] and x['getter_omega_unchanged'] for x in hypotheses)
+    endpoint_explained=bool(hypotheses) and all(x['endpoint_CG_residual_m']<1e-12 and x['endpoint_world_omega_Q_residual_rad']<1e-9 and x['getter_velocity_unchanged'] and x['getter_omega_unchanged'] for x in hypotheses)
     out=dict(timestamp=stamp(),status='PARTIAL',native_angle_helpers=helpers,
         Get_Motion_theta_semantics='EMPIRICALLY BOUNDED: initialized-zero third array remains0 here while native absolute orientation evolves; not the absolute DT_THETA or omega*dt. Whether Get deliberately omits assigning it in this6DOF path is UNKNOWN.',
         native_DT_THETA='EMPIRICALLY_MEASURED in this trajectory: absolute rotation vector matching nativeTheta_From_Q and an independent quaternion rotation vector. It differs from nativeEuler_From_Q; no converter output is fed to Overwrite.',
         overwrite_pose_reconstruction=dict(classification='EMPIRICALLY_MEASURED',endpoint_model_verified=endpoint_explained,
+            visible_CG_Q_unchanged_immediately_after=all(x['overwrite_immediate_CG_change_m']<1e-15 and x['overwrite_immediate_Q_change_rad']<1e-12 for x in hypotheses),
+            delayed_effect_interpretation='EMPIRICALLY_INFERRED: overwrite changes subsequent motion construction, not necessarily immediately visible DT_CG/DT_Q. Internal buffer/flag identity UNKNOWN.',
             model='CG_next=CG_start+dt*v_endpoint; Q_next=worldRotation(omega_endpoint*dt)*Q_start',records=hypotheses),
         read_only_translation_model=dict(classification='EMPIRICALLY_MEASURED',model='CG_next=CG_start+0.5*dt*(v_start+v_endpoint)',records=free),
         callback_stage=dict(classification='EMPIRICALLY_INFERRED',statement='Actual contact occurs with endpoint predicted v/omega and pose, while CURRENT_TIME/N_TIME and actual surface geometry remain at the previous completed step; before final mesh relocation. Exact internal predictor/corrector flag UNKNOWN.',records=stages),
@@ -118,8 +120,11 @@ def artifact_and_admission():
     V,W,J=reference(mass,R@I@R.T,np.asarray(event['contact_point'])-event['DT_CG'],np.asarray(event['contact_normal']),np.asarray(event['get_velocity']),np.asarray(event['get_omega']))
     dv=float(np.linalg.norm(V-event['get_velocity']));dw=float(np.linalg.norm(W-event['get_omega']))
     a=read(EVID/'read_only_reproducibility.json');b=read(EVID/'noop_reproducibility.json')
-    v_floor=max(cg_floor/dt,a['peaks']['velocity_norm_difference_m_s'],b['peaks']['velocity_norm_difference_m_s'],1e-8)
-    w_floor=max(q_floor/dt,a['peaks']['omega_norm_difference_rad_s'],b['peaks']['omega_norm_difference_rad_s'],1e-6)
+    cross=read(EVID/'noop_vs_read_only.json')
+    # Conservative admission also includes the accumulated two-callback pose
+    # difference at the fifth boundary, although controlled writes only once.
+    v_floor=max(cross['peaks']['COM_norm_difference_m']/dt,a['peaks']['velocity_norm_difference_m_s'],b['peaks']['velocity_norm_difference_m_s'],1e-8)
+    w_floor=max(cross['peaks']['orientation_difference_rad']/dt,a['peaks']['omega_norm_difference_rad_s'],b['peaks']['omega_norm_difference_rad_s'],1e-6)
     ratios=dict(linear_velocity=dv/v_floor,angular_velocity=dw/w_floor)
     semantics=read(EVID/'theta_pose_semantics_audit.json');explained=semantics['overwrite_pose_reconstruction']['endpoint_model_verified']
     deterministic=a['status']=='PASS' and b['status']=='PASS'
@@ -140,6 +145,8 @@ def artifact_and_admission():
         real_callback_read_PASS=bool(read_valid),exact_same_value_noop_arrays=bool(noop_exact),
         explained_as_endpoint_pose_reconstruction=explained,solver_noise_can_explain_artifact=not deterministic,
         empirically_bounded_theta_same_return_only=True,signal_to_artifact_floor=ratios,
+        admission_floor_scope='Maximum accumulated A1/B1 pose difference over all five boundaries, converted by dt; includes two no-op contact calls, conservative for the one-event controlled experiment',
+        peak_noop_vs_read_only=cross['peaks'],
         intended_normal_impulse_N_s=J,intended_delta_velocity_norm_m_s=dv,intended_delta_omega_norm_rad_s=dw,
         equivalent_velocity_artifact_m_s=v_floor,equivalent_omega_artifact_rad_s=w_floor,
         status='PASS' if passed else 'STOP',
