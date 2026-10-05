@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-05T02:04:03.407670+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.107s\n\nOK\n",
+  "tests": 6,
+  "no_solver_launched": true,
+  "checks": [
+    "Second solver refused",
+    "Hard deadline owned checkpoint only",
+    "Fallback deadline checkpoint",
+    "Resource failure not contact-model failure",
+    "Latest native boundary retained",
+    "Unverified checkpoint refused"
+  ]
+}

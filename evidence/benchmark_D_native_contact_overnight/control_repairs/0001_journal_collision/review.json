@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:09:22.709637+00:00",
+  "failure_timestamp": "2026-10-05T02:05:06.029965+00:00",
+  "failure_class": "SUPERVISOR_JOURNAL_PARAMETER_COLLISION",
+  "root_cause": "Process record name collided with event(name); alive flag collided with default update kwargs",
+  "concrete_change": "Nested process_identity event payload; explicit state merge; close parent log handles; adopt Windows venv actual worker PID",
+  "registered_worker": {
+    "pid": 18604,
+    "created": 1791165906.03442,
+    "name": "pythonw.exe"
+  },
+  "worker_survived_supervisor_failure": true,
+  "active_worker_inputs_unchanged": true,
+  "no_new_solver": true,
+  "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+  "supporting_code_sha256": {
+    "scripts/benchmark_D_native_contact_overnight_supervisor.py": "c9dc72c43fb395ae28d62e32771dcf5dd2497166218b5d1fe8e555e9e4e65db1",
+    "scripts/benchmark_D_native_contact_overnight_arm.py": "b4719f021049b9a878946c8cc9ffba13e80478f94e8bab6bd8d77b153b7e92dc",
+    "scripts/test_benchmark_D_native_contact_overnight_control.py": "546723be11d18adc36b1cf956a04ab40773fca48156d3703fd68c407cc3cdcc8"
+  },
+  "tests": {
+    "count": 8,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.160s\n\nOK\n"
+  },
+  "archived_evidence_sha256": {
+    "active_job.json": "68a8667b536445dbf90e47c663f71d4260ac6c73119af5cda0817719235379d7",
+    "launch_review.json": "52abde94fe84c51b30055f20921377ae51ca95d288f01d4ff4d5788430afcbf6",
+    "supervisor_failure.json": "cc674bcccc35eba848437ee135cb8b8999b5bebcc11c5250354f926800ba90fc",
+    "supervisor_state.json": "ad5551aaf21da72453b86130dbce2b71d739c511ac7b9a9507da18298cc2b28b",
+    "supervisor_stderr.log": "5301268836af322c7eaf438900885cbfcfb15daa6f8e9b01dcbc42336d3a34c2"
+  },
+  "resume_action": "Start SAME Windows task; adopt SAME recorded worker within SAME deadline"
+}

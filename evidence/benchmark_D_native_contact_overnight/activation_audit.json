@@ -1,0 +1,76 @@
+{
+  "status": "LOCAL_CAMPAIGN_ARMED_AND_ACTUAL_DYNAMICS_VERIFIED",
+  "timestamp": "2026-10-05T02:24:32.729186+00:00",
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "windows_task": {
+    "TaskName": "Fluent-Benchmark-D-Native-Contact-Overnight",
+    "State": 4
+  },
+  "window": {
+    "campaign_id": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+    "window_id": "native_contact_1791164478",
+    "start_epoch": 1791164478.4871063,
+    "target_deadline_epoch": 1791200478.4871063,
+    "hard_deadline_epoch": 1791207678.4871063,
+    "start": "2026-10-05T01:41:18.487106+00:00",
+    "target_deadline": "2026-10-05T11:41:18.487106+00:00",
+    "hard_deadline": "2026-10-05T13:41:18.487106+00:00",
+    "immutable": true,
+    "creation_source": "Explicit user authorization attachment a6cf2909",
+    "timezone_for_display": "Asia/Shanghai",
+    "independent_of_expired_C_windows": true
+  },
+  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+  "supervisor": {
+    "pid": 25608,
+    "created": 1791166164.42478,
+    "name": "pythonw.exe"
+  },
+  "worker": {
+    "branch": "micro25",
+    "pid": 18604,
+    "created": 1791165906.03442,
+    "name": "pythonw.exe"
+  },
+  "owned_native_engines": [
+    {
+      "pid": 43456,
+      "created": 1791165989.073232,
+      "name": "fl2610.exe"
+    },
+    {
+      "pid": 33516,
+      "created": 1791165976.0536275,
+      "name": "cx2610.exe"
+    },
+    {
+      "pid": 27664,
+      "created": 1791165993.1336467,
+      "name": "fl_mpi2610.exe"
+    }
+  ],
+  "native_restart": "PASS",
+  "actual_UDF_compile": "PASS",
+  "source_time_s": 0.001750000000000001,
+  "latest_verified_time_s": 0.001800000000000001,
+  "latest_verified_checkpoint": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0072_checkpoint.json",
+  "active_worker_inputs_unchanged": true,
+  "no_new_solver": true,
+  "solver_survived_observed_supervisor_failure": true,
+  "numerical_2ms": "INCOMPLETE",
+  "micro_run": "INCOMPLETE",
+  "timestep_selection": "PENDING",
+  "visual_review": "PENDING",
+  "no_full_campaign_pass_claim": true,
+  "evidence_files_sha256": {
+    "window.json": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+    "configuration.json": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+    "launch_review.json": "c0f2b2257b82b28f5e4eebcca77f661d5f6b7c5a5ee1e854763d0c5f7a7e0fcb",
+    "control_validation.json": "2e17000436faa4547e1b4e216794947c89fa28d8a20a9fd8a764ccb7fcca18b9",
+    "source_change_review.json": "8d580dca7b1671eeba5889c6fd7cc5c2a2940e86a1b033869646606b83250973",
+    "control_repairs/0001_journal_collision/review.json": "e49630ebd30399aeab14417c867eab1ae5e059269a64f52e40e7d73ead5da086",
+    "branches\\micro25\\source_restart_validation.json": "d3ed62aa791537c58747b48681b905d1edda899e2bebf790fd4b6ceca21467b1",
+    "branches\\micro25\\compile_hook_gate.json": "b0aac2dc796c7c6e25c0ca6d242eb0cf569434a421b9c174c42af726375755b7",
+    "branches\\micro25\\native_0072_checkpoint.json": "049d1f8d6fb03f38d7778f6a5e470a88c3c2b6765d389b523c08a759512e970a"
+  }
+}

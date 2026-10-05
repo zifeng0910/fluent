@@ -1,0 +1,10 @@
+{
+  "status": "RESOURCE_WAIT",
+  "timestamp": "2026-10-05T02:05:05.653127+00:00",
+  "supervisor_alive": true,
+  "supervisor_pid": 16348,
+  "supervisor_created": 1791165844.9265964,
+  "active_job": null,
+  "seconds_to_hard_deadline": 41772.834424734116,
+  "readiness": "Verified worker/report/source artifacts are being staged"
+}

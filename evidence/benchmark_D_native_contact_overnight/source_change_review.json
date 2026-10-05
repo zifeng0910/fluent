@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-10-05T01:42:00.800977+00:00",
+  "status": "SOURCE_DIFF_AND_EXTRACTED_C_CACHE_PASS_FULL_UDF_COMPILE_PENDING",
+  "original_source": "fluent_udf\\l2300_contact_overwrite_semantics.c",
+  "original_source_sha256": "f3e856ae27a52028ee45e5d97eae9fedfa37252796479197c685ee9f7413aeb0",
+  "new_source": "fluent_udf\\l2300_native_contact_overnight.c",
+  "new_source_sha256": "a84cfd0f84b03eacb5034076083d394671e6cb75e3ed32b0bd7d6a0bd2e3890f",
+  "concrete_change": "Retain all applied clusters within current native time/step rather than only the last cluster. Bound cache128 and fail before overwrite on overflow. Add cluster/cache evidence fields.",
+  "cluster_key": {
+    "native_step": true,
+    "CURRENT_TIME_tolerance_s": 1e-13,
+    "moving_zone": true,
+    "opposite_zone": true,
+    "centroid_distance_m": 2e-05
+  },
+  "mode3_repeated_events_enabled": true,
+  "mode2_still_single_event_only": true,
+  "zero_J_separating_no_overwrite_preserved": true,
+  "same_Get_theta_return_unchanged": true,
+  "magnetic_properties_wrapper_unchanged": true,
+  "impulse_mathematics_unchanged": true,
+  "frozen_original_source_preserved": true,
+  "known_limitation": "Contact list aggregation and20um spatial-cluster radius retain the previous validated convention; physical face-cluster separation is not newly inferred. Multi-event dynamic review must verify no duplicate physical impulses.",
+  "diff": "--- fluent_udf/l2300_contact_overwrite_semantics.c\n+++ fluent_udf/l2300_native_contact_overnight.c\n@@ -9,8 +9,15 @@\n #include <stdio.h>\n #include <string.h>\n static unsigned long callback_index=0;\n-static int applied_step=-1,applied_body=-1,applied_wall=-1;\n-static double applied_time=-1,applied_point[3];\n+/* One-rank host/node copies maintain independent identical event caches.\n+   A cluster retains the validated 20 um centroid radius. Keep ALL applied\n+   clusters at the current native timestep: A->B->A cannot reapply A. */\n+#define OVERNIGHT_EVENT_CACHE_CAPACITY 128\n+#define OVERNIGHT_EVENT_CLUSTER_DISTANCE_SQUARE 4e-10\n+static struct {int body,wall;double point[3];} applied_events[OVERNIGHT_EVENT_CACHE_CAPACITY];\n+static int event_cache_step=-1,event_cache_count=0;\n+static double event_cache_time=-1;\n+static unsigned long applied_event_total=0;\n \n static void jvec(FILE *f,const char *key,const double *v,int n)\n {int i;fprintf(f,\"\\\"%s\\\":[\",key);for(i=0;i<n;i++)fprintf(f,i?\",%.17g\":\"%.17g\",v[i]);fprintf(f,\"],\");}\n@@ -53,7 +60,7 @@\n DEFINE_CONTACT(l2300_native_contact_lifecycle,dt,contacts)\n {\n   Objp *o;Thread *thread=NULL,*opposite=NULL;Dynamic_Thread *ndt=NULL;\n-  int i,j,k,tid=-1,nid=-1,count=0,dt_null=dt==NULL,moving=0,duplicate=0,applied=0,zero=1;\n+  int i,j,k,cache_i,cluster_index=-1,tid=-1,nid=-1,count=0,dt_null=dt==NULL,moving=0,duplicate=0,applied=0,zero=1;\n   real A[3],xc[3],sum_n[3]={0,0,0},sum_x[3]={0,0,0},vel[3]={0,0,0},omega[3]={0,0,0},theta[3]={0,0,0},RR[3][3];\n   double cg[3]={0,0,0},qlog[4]={0,0,0,0},current_v[3]={0,0,0},current_w[3]={0,0,0},temporary_v[3]={0,0,0},temporary_w[3]={0,0,0};\n   double point[3]={0,0,0},normal[3]={0,0,0},r[3]={0,0,0},v[3],w[3],th[3],V[3],W[3],vc[3],cross[3];\n@@ -94,15 +101,22 @@\n     if(!Data_Valid_P())Error(\"D_LIFECYCLE_DATA_INVALID\\n\");\n     for(i=0;i<3;i++)if(!isfinite(v[i])||!isfinite(w[i])||!isfinite(th[i]))Error(\"D_LIFECYCLE_NONFINITE_MOTION\\n\");\n     if(normal[1]*(-point[1])+normal[2]*(-point[2])<=0)Error(\"D_LIFECYCLE_NORMAL_WRONG_DIRECTION\\n\");\n-    for(i=0;i<3;i++)distance+=(point[i]-applied_point[i])*(point[i]-applied_point[i]);\n-    duplicate=step==applied_step && fabs(time-applied_time)<1e-13 && tid==applied_body && nid==applied_wall && distance<=4e-10;\n+    if(step!=event_cache_step || fabs(time-event_cache_time)>=1e-13){\n+      event_cache_step=step;event_cache_time=time;event_cache_count=0;\n+    }\n+    for(cache_i=0;cache_i<event_cache_count;cache_i++){\n+      if(tid!=applied_events[cache_i].body || nid!=applied_events[cache_i].wall)continue;\n+      distance=0;\n+      for(i=0;i<3;i++)distance+=(point[i]-applied_events[cache_i].point[i])*(point[i]-applied_events[cache_i].point[i]);\n+      if(distance<=OVERNIGHT_EVENT_CLUSTER_DISTANCE_SQUARE){duplicate=1;cluster_index=cache_i;break;}\n+    }\n     semantics_state(\"CALLBACK_BEFORE\",dt,CURRENT_TIME,RP_Get_Real(\"physical-time-step\"));\n     if(LIFECYCLE_MODE==1){\n       /* Diagnostic no-op: exactly the original arrays, never a reflection. */\n       SDOF_Overwrite_Motion(dt,vel,omega,theta);applied=1;action=\"NOOP_OVERWRITE\";\n     }else if(LIFECYCLE_MODE>=2){\n       if(duplicate){action=\"SKIPPED_DUPLICATE\";}\n-      else if(LIFECYCLE_MODE==2 && applied_step>=0){action=\"CONTROLLED_EVENT_ALREADY_TESTED\";}\n+      else if(LIFECYCLE_MODE==2 && applied_event_total>0){action=\"CONTROLLED_EVENT_ALREADY_TESTED\";}\n       else {\n         quaternion q;Q_Assign(DT_Q(dt),&q);Rot_Matrix_From_Q(q,RR);\n         for(i=0;i<3;i++)for(j=0;j<3;j++)R[3*i+j]=RR[i][j];\n@@ -116,11 +130,14 @@\n         if(contact_impulse(8.904428864007322e-6,inverse_world,r,normal,v,w,V,W,&J,&vnb,&vna)<0)Error(\"D_LIFECYCLE_IMPULSE_INVALID\\n\");\n         if(J>0){\n           if(!isfinite(J)||fabs(vna)>1e-9)Error(\"D_LIFECYCLE_NORMAL_IMPULSE_GATE\\n\");\n+          if(event_cache_count>=OVERNIGHT_EVENT_CACHE_CAPACITY)Error(\"D_OVERNIGHT_EVENT_CACHE_OVERFLOW\\n\");\n           for(i=0;i<3;i++){vel[i]=V[i];omega[i]=W[i];}\n           SDOF_Overwrite_Motion(dt,vel,omega,theta);\n           /* No immediate Get_Motion PASS: worker audits completed timestep. */\n-          applied=1;action=\"APPLIED\";applied_step=step;applied_time=time;applied_body=tid;applied_wall=nid;\n-          for(i=0;i<3;i++)applied_point[i]=point[i];\n+          applied=1;action=\"APPLIED\";cluster_index=event_cache_count++;\n+          applied_events[cluster_index].body=tid;applied_events[cluster_index].wall=nid;\n+          for(i=0;i<3;i++)applied_events[cluster_index].point[i]=point[i];\n+          ++applied_event_total;\n         }else action=\"SEPARATING_NO_IMPULSE\";\n       }\n     }\n@@ -128,6 +145,7 @@\n   if(moving && count>0)semantics_state(\"CALLBACK_AFTER\",dt,CURRENT_TIME,RP_Get_Real(\"physical-time-step\"));\n   f=fopen(RP_HOST?TRACE_HOST_JSON:TRACE_NODE_JSON,\"a\");if(!f)Error(\"D_LIFECYCLE_TRACE_OPEN_FAILED\\n\");\n   fprintf(f,\"{\\\"callback_index\\\":%lu,\\\"CURRENT_TIME\\\":%.17g,\\\"timestep_index\\\":%d,\\\"iteration_index\\\":%d,\\\"process_role\\\":\\\"%s\\\",\\\"dt_pointer\\\":\\\"%p\\\",\\\"dt_NULL\\\":%s,\\\"moving_body\\\":%s,\\\"dynamic_zone_id\\\":%d,\\\"opposite_zone_id\\\":%d,\\\"opposite_ndt_NULL\\\":%s,\\\"contact_face_count\\\":%d,\",callback_index,time,step,iteration,RP_HOST?\"host\":\"node\",(void*)dt,dt_null?\"true\":\"false\",moving?\"true\":\"false\",tid,nid,ndt==NULL?\"true\":\"false\",count);\n+  fprintf(f,\"\\\"event_cache_cluster_index\\\":%d,\\\"event_cache_count\\\":%d,\\\"event_cache_capacity\\\":%d,\\\"event_cluster_radius_m\\\":%.17g,\",cluster_index,event_cache_count,OVERNIGHT_EVENT_CACHE_CAPACITY,2e-5);\n   jvec(f,\"contact_point\",point,3);jvec(f,\"contact_normal\",normal,3);jvec(f,\"DT_CG\",cg,3);jvec(f,\"DT_Q\",qlog,4);\n   jvec(f,\"get_velocity\",v,3);jvec(f,\"get_omega\",w,3);jvec(f,\"get_theta\",th,3);\n   jvec(f,\"native_current_velocity\",current_v,3);jvec(f,\"native_current_omega\",current_w,3);\n",
+  "compiled_exact_cache_lookup_and_store": true,
+  "offline_cache_checks": [
+    {
+      "check": "first_A",
+      "result": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "distinct_B",
+      "result": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "check": "A_after_B_is_duplicate",
+      "result": -1,
+      "expected": -1,
+      "status": "PASS"
+    },
+    {
+      "check": "near_A_within20um_duplicate",
+      "result": -1,
+      "expected": -1,
+      "status": "PASS"
+    },
+    {
+      "check": "samepoint_otherwall_distinct",
+      "result": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "check": "samepoint_otherbody_distinct",
+      "result": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "check": "zeroJ_separating_notrecorded",
+      "result": 1000,
+      "expected": 1000,
+      "status": "PASS"
+    },
+    {
+      "check": "later_approach_same_separator_isnew",
+      "result": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "check": "nextstep_allows_recontact",
+      "result": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "new_absolutetime_sameindex_resets",
+      "result": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "check": "cache_capacity_fail_before_overwrite",
+      "result": 2000,
+      "expected": 2000,
+      "status": "PASS"
+    },
+    {
+      "check": "overflow_doesnotlose_existing_A",
+      "result": -1,
+      "expected": -1,
+      "status": "PASS"
+    }
+  ],
+  "cache_fill128_PASS": true,
+  "full_Fluent_UDF_compile_executed": false,
+  "mathematical_kernel_code_unchanged": true,
+  "magnetic_wrapper_code_unchanged": true
+}

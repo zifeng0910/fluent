@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:04:03.437203+00:00",
+  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+  "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+  "supporting_code_sha256": {
+    "scripts/benchmark_D_native_contact_overnight_common.py": "4609a4f0f5d6121f3b58cd34acdd36f9a6fbc6d026879673b8cd7e98fafca68d",
+    "scripts/benchmark_D_native_contact_overnight_prepare.py": "47f0b394b371943be685ab7a07df6b907427f346b045ebeeedeca74a32780b22",
+    "scripts/benchmark_D_native_contact_overnight_arm.py": "81ff5ac0d726683e9bc862d323bed2b76681e333f8d44553978792288d124e3e",
+    "scripts/benchmark_D_native_contact_overnight_supervisor.py": "3808f5edfe6c320abfb2f678cb0aaea918cdc64128e952a0620681a5ea495d72",
+    "scripts/benchmark_D_native_contact_overnight_worker.py": "5b4a99a465ab5d2dd40b3ed4db8385e2db39e69a4d6703ad1b91a43bdbe43956",
+    "scripts/benchmark_D_native_contact_overnight_review.py": "6ac5e4a4b78c6e5f6a780c21cb31289e22184756f02f801fed330e02d520607e",
+    "scripts/benchmark_D_native_contact_overnight_render.py": "d4c0f1fc99c46937e036d29f03d0d2e8be2d709897e24f36ec155eb5c5a5bf2c",
+    "scripts/run_benchmark_D_native_contact_overnight.ps1": "9cabd51552f59868a3f78beae6835600390bf5334dc2b1ec2ea1fc715d3ead8d",
+    "scripts/test_benchmark_D_native_contact_overnight_control.py": "d9235ba45dac8bfb464857f2d94ac23bef0189349e725d14ab7807e3ec0be1e9",
+    "fluent_udf/l2300_native_contact_overnight.c": "a84cfd0f84b03eacb5034076083d394671e6cb75e3ed32b0bd7d6a0bd2e3890f"
+  },
+  "control_validation_sha256": "2e17000436faa4547e1b4e216794947c89fa28d8a20a9fd8a764ccb7fcca18b9",
+  "source_review_sha256": "8d580dca7b1671eeba5889c6fd7cc5c2a2940e86a1b033869646606b83250973",
+  "prior_semantics_reused_not_reopened": true,
+  "full_UDF_compile_pending_actual_owned_Fluent": true,
+  "zero_step_native_restart_required_before_each_branch": true,
+  "cold_restart_and_actual_dynamic_gates_are_not_preclaimed": true
+}

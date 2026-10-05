@@ -1,0 +1,12 @@
+{
+  "kind": "worker",
+  "job": "scripts/benchmark_D_native_contact_overnight_worker.py",
+  "branch": "micro25",
+  "pid": 1620,
+  "created": 1791165906.0189445,
+  "name": "pythonw.exe",
+  "started": "2026-10-05T02:05:06.028573+00:00",
+  "stdout": "evidence\\benchmark_D_native_contact_overnight\\jobs\\worker_micro25_1791165906016_stdout.log",
+  "stderr": "evidence\\benchmark_D_native_contact_overnight\\jobs\\worker_micro25_1791165906016_stderr.log",
+  "key": "worker_micro25_1791165906016"
+}

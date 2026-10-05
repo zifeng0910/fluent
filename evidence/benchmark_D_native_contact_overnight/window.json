@@ -1,0 +1,14 @@
+{
+  "campaign_id": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "window_id": "native_contact_1791164478",
+  "start_epoch": 1791164478.4871063,
+  "target_deadline_epoch": 1791200478.4871063,
+  "hard_deadline_epoch": 1791207678.4871063,
+  "start": "2026-10-05T01:41:18.487106+00:00",
+  "target_deadline": "2026-10-05T11:41:18.487106+00:00",
+  "hard_deadline": "2026-10-05T13:41:18.487106+00:00",
+  "immutable": true,
+  "creation_source": "Explicit user authorization attachment a6cf2909",
+  "timezone_for_display": "Asia/Shanghai",
+  "independent_of_expired_C_windows": true
+}

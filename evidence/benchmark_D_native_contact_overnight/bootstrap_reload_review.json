@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:04:01.685147+00:00",
+  "old_supervisor_pid": 4884,
+  "old_supervisor_created": 1791164480.200112,
+  "no_active_job": true,
+  "no_native_engine": true,
+  "reason": "Reload reviewed finite FSM before arming; immutable window preserved"
+}
