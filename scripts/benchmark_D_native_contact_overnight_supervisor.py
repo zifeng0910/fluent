@@ -3,7 +3,7 @@ import json, msvcrt, os, subprocess, sys, time, traceback
 import psutil
 from benchmark_D_native_contact_overnight_common import *
 
-TERMINAL={'COMPLETE','HARD_BLOCKER','TIME_BUDGET_EXHAUSTED','STOPPED_RESOURCE_BLOCKER'}
+TERMINAL={'COMPLETE','HARD_BLOCKER','TIME_BUDGET_EXHAUSTED','STOPPED_RESOURCE_BLOCKER','DT_CONVERGENCE_NOT_REACHED'}
 WORKER='scripts/benchmark_D_native_contact_overnight_worker.py'
 REVIEW='scripts/benchmark_D_native_contact_overnight_review.py'
 RENDER='scripts/benchmark_D_native_contact_overnight_render.py'
@@ -78,6 +78,25 @@ def control(status,**data):
 
 def fail(reason,**data):
     state('HARD_BLOCKER',reason=reason,**data);event('HARD_BLOCKER',reason=reason,**data)
+
+
+def stop_on_dt_convergence_failure(result):
+    """Make an unresolved timestep gate terminal; never enter fallback."""
+    reason = result.get('reason', 'Frozen timestep convergence gate failed')
+    failure_class = result.get('failure_class', 'DT_RESOLUTION')
+    blocker = 'Frozen 12.5us versus 6.25us convergence failed solely at the impulse-count gate; no production or fallback is authorized.'
+    state('DT_CONVERGENCE_NOT_REACHED', reason=reason, failure_class=failure_class,
+        current_blocker=blocker, native_status='NOT_DISPROVEN_BY_DT_CONVERGENCE',
+        selected_dt_s=None, production_restart='NOT_STARTED', fallback_route='NOT_ALLOWED',
+        pending_stage=None, active_branch=None, worker_alive=False, solver_alive=False,
+        next_action='Stop. Await explicit user authorization for any finer timestep or alternate route.')
+    stop = dict(timestamp=stamp(), reason='DT_CONVERGENCE_NOT_REACHED', source='offline timestep selection',
+        do_not_run_finer_or_fallback_route=True, result_status=result.get('status'),
+        result_reason=reason)
+    atomic(EVID/'stop_request.json', stop)
+    event('DT_CONVERGENCE_NOT_REACHED', result_status=result.get('status'), reason=reason,
+        no_fallback=True, no_production=True)
+    return None
 
 def checked_code(path):
     review=read(EVID/'launch_review.json')
@@ -362,13 +381,11 @@ def main():
             if kind=='select':
                 if result.get('status')=='REFINEMENT_REQUIRED':
                     if (EVID/'branches'/resolve_branch('micro6p25')/'review.json').exists():
-                        switched=native_failure(resolve_branch('micro6p25'),dict(result,failure_class='DT_RESOLUTION'))
-                        if switched:p,active=switched
+                        stop_on_dt_convergence_failure(dict(result, failure_class='DT_RESOLUTION'))
                     else:state('NATIVE_DT_6P25')
                     continue
                 if result.get('status')!='PASS':
-                    switched=native_failure('micro6p25' if (EVID/'branches/micro6p25').exists() else 'micro12p5',dict(result,failure_class='DT_RESOLUTION'))
-                    if switched:p,active=switched
+                    stop_on_dt_convergence_failure(dict(result, failure_class='DT_RESOLUTION'))
                     continue
                 chosen=result['selected_branch'];dt=result['selected_dt_s']
                 review=read(EVID/'branches'/resolve_branch(chosen)/'review.json')

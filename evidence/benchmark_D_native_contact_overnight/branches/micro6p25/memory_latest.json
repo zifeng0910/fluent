@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-10-05T10:11:36.992984+00:00",
+  "physical_total_gib": 31.839797973632812,
+  "available_gib": 7.545841217041016,
+  "used_gib": 24.293956756591797,
+  "commit_gib": 37.22947692871094,
+  "commit_limit_gib": 45.83979797363281,
+  "commit_fraction": 0.8121649434433686,
+  "pagefile_used_gib": 0.4387931823730469,
+  "pagefile_total_gib": 14.0,
+  "kernel_nonpaged_gib": 1.01226806640625,
+  "commit_peak_gib": 41.23857116699219,
+  "pagefile_available_gib": 13.561206817626953,
+  "commit_headroom_gib": 8.610321044921875,
+  "stage": "POST_NATIVE_TIMESTEP_AUDIT",
+  "processes": [
+    {
+      "pid": 27352,
+      "created": 1791185235.218991,
+      "name": "pythonw.exe",
+      "working_set_gib": 0.05631256103515625,
+      "private_bytes_gib": 1.16400146484375
+    },
+    {
+      "pid": 21712,
+      "created": 1791185321.028822,
+      "name": "fl2610.exe",
+      "ownership": "SDK host/cortex",
+      "working_set_gib": 0.07985687255859375,
+      "private_bytes_gib": 0.6719589233398438
+    },
+    {
+      "pid": 13024,
+      "created": 1791185308.6307049,
+      "name": "cx2610.exe",
+      "ownership": "SDK host/cortex",
+      "working_set_gib": 0.4068717956542969,
+      "private_bytes_gib": 0.6323471069335938
+    }
+  ],
+  "disk_free_gib": 166.88648223876953,
+  "project_working_set_gib": 0.5430412292480469,
+  "project_private_bytes_gib": 2.4683074951171875
+}

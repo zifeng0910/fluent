@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T07:27:14.953832+00:00",
+  "branch": "micro6p25",
+  "files_sha256": {
+    "evidence/benchmark_D_native_contact_overnight/branches/micro6p25/configuration.json": "ddaebea9d1de409505cd7d794d6a343a40432b626a2522fa1fa098b6c59b1377",
+    "evidence/benchmark_D_native_contact_overnight/configuration.json": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+    "evidence/benchmark_D_native_contact_overnight/window.json": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+    "evidence/benchmark_C_coarse_2ms/checkpoint_0070.json": "506aee8fecb29575d43344fbb924bcc241ab1fb3a786508c6614b97acc1be452",
+    "fluent_udf/l2300_native_contact_overnight.c": "a84cfd0f84b03eacb5034076083d394671e6cb75e3ed32b0bd7d6a0bd2e3890f",
+    "live_cases/benchmark_D_native_contact_overnight/branches/micro6p25/magnetic_logging_copy.c": "660aefa7149b667b661550d745fc49e72c0fc32a68fa9825ce19d5903ae50128",
+    "live_cases/benchmark_D_native_contact_overnight/branches/micro6p25/lifecycle_config.h": "e154a85a6524af78bf0732e735683681753f543578e3132e66a69c8c8baf9b64",
+    "fluent_udf/l2300_contact_impulse_math.h": "8ce912811200649a0e15951d7d3abbe622173c1ef0cc37ded83ca080667ff67a",
+    "scripts/benchmark_D_native_contact_overnight_worker.py": "5b4a99a465ab5d2dd40b3ed4db8385e2db39e69a4d6703ad1b91a43bdbe43956",
+    "scripts/benchmark_D_native_contact_overnight_common.py": "4609a4f0f5d6121f3b58cd34acdd36f9a6fbc6d026879673b8cd7e98fafca68d"
+  },
+  "gate": "Verified staged code/config; actual cold native continuity remains mandatory before dynamics"
+}

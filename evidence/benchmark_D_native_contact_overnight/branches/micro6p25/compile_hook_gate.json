@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T07:31:05.902946+00:00",
+  "library": "libD_overnight_micro6p25_v1",
+  "source_sha256": "a84cfd0f84b03eacb5034076083d394671e6cb75e3ed32b0bd7d6a0bd2e3890f",
+  "config_sha256": "ddaebea9d1de409505cd7d794d6a343a40432b626a2522fa1fa098b6c59b1377",
+  "dll_sha256": {
+    "live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\libD_overnight_micro6p25_v1\\win64\\3ddp_host\\libudf.dll": "a3ebc9513606854e1cf0466d16a11568a795648613276c750a94e3e72e827262",
+    "live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\libD_overnight_micro6p25_v1\\win64\\3ddp_node\\libudf.dll": "5a3c89d46f1f5871a132146e2e6c119dbef03ca2c6835352b556343008311398"
+  },
+  "contact_state": {
+    "enabled": true,
+    "face_zones": [
+      "robot_wall",
+      "pipe_wall"
+    ],
+    "proximity_threshold": 0.0001,
+    "contact_udf": "l2300_native_contact_lifecycle::libD_overnight_micro6p25_v1",
+    "flow_control": {
+      "enabled": false
+    },
+    "verbosity": 1
+  },
+  "magnetic_formula_delegated_once": true,
+  "route": "NATIVE_OVERWRITE",
+  "true_solver_contact_only": true,
+  "native_contact_disabled_for_load_path": false
+}

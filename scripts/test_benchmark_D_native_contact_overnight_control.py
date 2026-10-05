@@ -111,6 +111,18 @@ class ControlTests(unittest.TestCase):
                 result=s.native_failure('micro25',{'failure_class':'RESOURCE_HARD_STOP','status':'FAIL'})
                 self.assertIsNone(result);launch.assert_not_called();fail.assert_called_once()
 
+    def test_dt_convergence_failure_is_terminal_and_does_not_launch_fallback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            evid=Path(directory)
+            with patch.object(s,'EVID',evid),patch.object(s,'state') as state,patch.object(s,'event'),patch.object(s,'launch') as launch:
+                s.stop_on_dt_convergence_failure({'status':'FAIL','reason':'impulse count gate failed','failure_class':'DT_RESOLUTION'})
+            kwargs=state.call_args.kwargs
+            self.assertEqual(state.call_args.args[0],'DT_CONVERGENCE_NOT_REACHED')
+            self.assertEqual(kwargs['fallback_route'],'NOT_ALLOWED')
+            self.assertFalse(kwargs['solver_alive'])
+            self.assertTrue(s.read(evid/'stop_request.json')['do_not_run_finer_or_fallback_route'])
+            launch.assert_not_called()
+
     def test_lifecycle_uses_latest_verified_native_boundary(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);evid=root/'evidence';b=evid/'branches/micro25';b.mkdir(parents=True)

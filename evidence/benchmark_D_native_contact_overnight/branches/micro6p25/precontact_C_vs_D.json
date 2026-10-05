@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "comparison_kind": "REFINED_DT_DISCRETIZATION_CHECK",
+  "same_dt_tolerance": {
+    "COM_m": 1e-10,
+    "Q_rad": 1e-09,
+    "v_m_s": 1e-08,
+    "omega_rad_s": 1e-06
+  },
+  "refined_dt_tolerance": {
+    "COM_m": 1e-06,
+    "Q_rad": 0.005,
+    "v_m_s": 0.001,
+    "omega_relative": 0.01,
+    "omega_floor_rad_s": 2.0
+  },
+  "exact_time_records": [
+    {
+      "com_m": 0.0,
+      "orientation_rad": 0.0,
+      "v_m_s": 1.431146867680866e-17,
+      "omega_rad_s": 3.4677726476845334e-11,
+      "status": "PASS",
+      "F_difference_N": 0.0,
+      "T_difference_Nm": 0.0,
+      "time_s": 0.001750000000000001
+    },
+    {
+      "com_m": 7.251602095126796e-10,
+      "orientation_rad": 2.9913350171673924e-05,
+      "v_m_s": 8.280629057325878e-05,
+      "omega_rad_s": 2.6658320621217113,
+      "status": "PASS",
+      "F_difference_N": 2.958751133975827e-10,
+      "T_difference_Nm": 2.8505473964301256e-10,
+      "time_s": 0.001775000000000001
+    },
+    {
+      "com_m": 3.373720186084479e-09,
+      "orientation_rad": 0.00011272266185431027,
+      "v_m_s": 0.00013378930979557576,
+      "omega_rad_s": 3.721887809055884,
+      "status": "PASS",
+      "F_difference_N": 1.1761014437966716e-09,
+      "T_difference_Nm": 1.0578609149256685e-09,
+      "time_s": 0.001800000000000001
+    }
+  ],
+  "exact_time_count": 3,
+  "interpolation_used": false,
+  "cutoff_callback_time_s": 0.0018125000000000005,
+  "note": "F/T law checked exactly at each native pose separately. Refined-dt pose differences are reported as integration differences."
+}

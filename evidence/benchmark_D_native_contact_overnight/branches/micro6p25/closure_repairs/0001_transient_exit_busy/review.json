@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T10:18:00.103787+00:00",
+  "SDK_exit_requested": true,
+  "SDK_exit_returned": true,
+  "owned_engine_closed": true,
+  "worker_identity": {
+    "pid": 27352,
+    "created": 1791185235.218991,
+    "branch": "micro6p25",
+    "timestamp": "2026-10-05T07:27:26.360824+00:00",
+    "name": "pythonw.exe"
+  },
+  "owned_engine_identities": [
+    {
+      "pid": 21712,
+      "created": 1791185321.028822,
+      "name": "fl2610.exe",
+      "ownership": "SDK host/cortex"
+    },
+    {
+      "pid": 13024,
+      "created": 1791185308.6307049,
+      "name": "cx2610.exe",
+      "ownership": "SDK host/cortex"
+    }
+  ],
+  "worker_absent": true,
+  "all_owned_engines_absent": true,
+  "no_native_engine_present": true,
+  "no_process_terminated": true,
+  "terminated": [],
+  "unrelated_processes_touched": [],
+  "observations": [],
+  "idle_threshold_CPU_seconds_over5s": 0.05,
+  "idle_threshold_unchanged": true,
+  "checkpoint_time_s": 0.0019,
+  "checkpoint_metadata_sha256": "12935ab0b7695a7079b8d83699ed21df234c699b236c76bc1355b17bb967c175",
+  "original_exit_failure_preserved": true,
+  "no_new_solver": true,
+  "no_dynamics_advanced": true,
+  "review_basis": "Manual recheck after first owned-exit review observed transient busy; exact registered worker and engine identities now absent and native() inventory is empty."
+}

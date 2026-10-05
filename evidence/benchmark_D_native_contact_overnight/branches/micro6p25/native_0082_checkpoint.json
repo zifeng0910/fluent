@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-10-05T08:53:10.835394+00:00",
+  "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS",
+  "step": 82,
+  "native_step_index": 82,
+  "time_s": 0.001825,
+  "native_state": {
+    "com": [
+      0.001203420765961184,
+      4.405674562332785e-06,
+      -1.54604735889294e-06
+    ],
+    "q": [
+      0.9793459031827776,
+      0.008157104955150282,
+      -0.06885776281394902,
+      -0.1899307033054903
+    ],
+    "velocity": [
+      -0.01507675684133268,
+      0.2638137405046374,
+      -0.09044769711726831
+    ],
+    "omega": [
+      40.16663476866831,
+      -83.22026905122316,
+      -318.7449802433459
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.40719125383022664,
+      "axis": [
+        0.040343362986405146,
+        -0.3405563291031305,
+        -0.9393581850235551
+      ]
+    }
+  },
+  "evidence_branch": "micro6p25",
+  "logical_branch": "micro6p25",
+  "state_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "case": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\native_0082.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\native_0082.dat.h5",
+  "case_sha256": "059471eca037df541e1196571f2b4e2cd7059a191ec64954465b0991f97f627e",
+  "data_sha256": "506bec59dabff92fc1b8ac003b09b7cd76d7b0cb0a815ecbc9bd821c28fa1e90",
+  "case_size_bytes": 109580540,
+  "data_size_bytes": 558235882,
+  "Fmag_N": [
+    -2.5738855060772495e-05,
+    0.0,
+    0.0
+  ],
+  "Tmag_COM_Nm": [
+    2.803001610723292e-07,
+    -1.6886430987480276e-06,
+    -6.473278279821451e-06
+  ],
+  "source_state": {
+    "moment_global": "[ 0.00095804 -0.0003796   0.00014051]",
+    "B_global": "[-0.01070706 -0.00251434  0.00019227]",
+    "s_eff_mm": 31.686373315004833,
+    "phase_rad": 1.1466813185602744,
+    "ramp": 1
+  },
+  "signed_gap_m": 9.772961638406246e-05,
+  "dt_s": 6.25e-06,
+  "large_native_files_local_only": true,
+  "integrity": {
+    "timestamp": "2026-10-05T08:53:11.475731+00:00",
+    "status": "PASS",
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\native_0082.cas.h5",
+        "size_bytes": 109580540,
+        "sha256": "059471eca037df541e1196571f2b4e2cd7059a191ec64954465b0991f97f627e",
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\native_0082.dat.h5",
+        "size_bytes": 558235882,
+        "sha256": "506bec59dabff92fc1b8ac003b09b7cd76d7b0cb0a815ecbc9bd821c28fa1e90",
+        "HDF5_readable": true
+      }
+    },
+    "timesteps_advanced": 0,
+    "time_s": 0.001825
+  },
+  "files": {
+    "case": {
+      "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\native_0082.cas.h5",
+      "size_bytes": 109580540,
+      "sha256": "059471eca037df541e1196571f2b4e2cd7059a191ec64954465b0991f97f627e",
+      "HDF5_readable": true
+    },
+    "data": {
+      "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\native_0082.dat.h5",
+      "size_bytes": 558235882,
+      "sha256": "506bec59dabff92fc1b8ac003b09b7cd76d7b0cb0a815ecbc9bd821c28fa1e90",
+      "HDF5_readable": true
+    }
+  }
+}

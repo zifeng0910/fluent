@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-10-05T11:15:14.120336+00:00",
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "offline_only": true,
+  "scientific_scope": "Native near-wall contact/proximity response triggered by the saved ~0.100 mm threshold; no ideal zero-gap impact is claimed.",
+  "frozen_convergence_unchanged": true,
+  "frozen_result": "FAIL",
+  "frozen_failure": {
+    "impulse_counts": [
+      7,
+      14
+    ],
+    "difference": 7,
+    "allowed": 3
+  },
+  "tilt_classification": "TILT_PRIMARILY_PREEXISTING",
+  "tilt_classification_method": "Compare pre-response tilt accumulation with the first completed native response step using exact recorded states.",
+  "phase_summary": {
+    "micro25": {
+      "first_callback_time_s": 0.001825000000000001,
+      "first_completed_response_time_s": 0.0018500000000000012,
+      "tilt_rad": {
+        "at_1p750ms": 0.35090465120215136,
+        "at_1p800ms": 0.3920346124145113,
+        "immediately_pre_response": 0.4139199513294785,
+        "immediately_post_response": 0.4229380011650266,
+        "at_1p850ms": 0.4229380011650266,
+        "at_1p900ms": 0.44154360591807706
+      },
+      "tilt_deg": {
+        "at_1p750ms": 20.105355525393524,
+        "at_1p800ms": 22.46192871439853,
+        "immediately_pre_response": 23.715866267439566,
+        "immediately_post_response": 24.23256246245512,
+        "at_1p850ms": 24.23256246245512,
+        "at_1p900ms": 25.298585090093454
+      },
+      "omega_magnitude_rad_s": {
+        "at_1p750ms": 789.9017562683965,
+        "at_1p800ms": 859.1388792131964,
+        "immediately_pre_response": 895.1541376399333,
+        "immediately_post_response": 365.0864542248224,
+        "at_1p850ms": 365.0864542248224,
+        "at_1p900ms": 386.44031064698464
+      },
+      "delta_tilt_pre_response_rad": 0.06301530012732715,
+      "delta_tilt_first_response_step_rad": 0.009018049835548103,
+      "delta_tilt_post_response_to_final_rad": 0.018605604753050453,
+      "tilt_rate_first_response_rad_s": 360.7219934219241,
+      "max_tilt_rad": 0.44154360591807706,
+      "max_tilt_deg": 25.298585090093454,
+      "peak_omega_rad_s": 895.1541376399333,
+      "omega_components_pre_response": [
+        45.62366867189548,
+        -266.8027964946367,
+        -853.2500681356264
+      ],
+      "omega_components_post_response": [
+        45.93764814079465,
+        -88.84964261526514,
+        -351.117633491805
+      ],
+      "phase_labels": {
+        "A": "pre-proximity",
+        "B": "threshold crossing",
+        "C": "first native proximity response",
+        "D": "immediate post-response",
+        "E": "late near-wall response",
+        "F": "1.900 ms"
+      },
+      "interpretation_basis": "Tilt is measured from the global pipe axis using the recorded rigid-body quaternion; all values are exact saved native states when available."
+    },
+    "micro12p5": {
+      "first_callback_time_s": 0.0018125000000000005,
+      "first_completed_response_time_s": 0.0018250000000000004,
+      "tilt_rad": {
+        "at_1p750ms": 0.35090465120215136,
+        "at_1p800ms": 0.3919722044424747,
+        "immediately_pre_response": 0.40276250615746184,
+        "immediately_post_response": 0.40700274047853824,
+        "at_1p850ms": 0.41545422371988094,
+        "at_1p900ms": 0.433543017308174
+      },
+      "tilt_deg": {
+        "at_1p750ms": 20.105355525393524,
+        "at_1p800ms": 22.458353000992858,
+        "immediately_pre_response": 23.076591748934394,
+        "immediately_post_response": 23.319539279678594,
+        "at_1p850ms": 23.803773600033075,
+        "at_1p900ms": 24.840185129125572
+      },
+      "omega_magnitude_rad_s": {
+        "at_1p750ms": 789.9017562683965,
+        "at_1p800ms": 856.2406549352385,
+        "immediately_pre_response": 873.6375862613057,
+        "immediately_post_response": 342.6456400002894,
+        "at_1p850ms": 345.8464647262053,
+        "at_1p900ms": 377.64667777382
+      },
+      "delta_tilt_pre_response_rad": 0.05185785495531048,
+      "delta_tilt_first_response_step_rad": 0.004240234321076397,
+      "delta_tilt_post_response_to_final_rad": 0.02654027682963578,
+      "tilt_rate_first_response_rad_s": 339.21874568611173,
+      "max_tilt_rad": 0.433543017308174,
+      "max_tilt_deg": 24.840185129125572,
+      "peak_omega_rad_s": 873.6375862613057,
+      "omega_components_pre_response": [
+        44.36732005316765,
+        -261.0388839500378,
+        -832.5460192120906
+      ],
+      "omega_components_post_response": [
+        37.55867905653797,
+        -84.46658157837248,
+        -329.9405656102324
+      ],
+      "phase_labels": {
+        "A": "pre-proximity",
+        "B": "threshold crossing",
+        "C": "first native proximity response",
+        "D": "immediate post-response",
+        "E": "late near-wall response",
+        "F": "1.900 ms"
+      },
+      "interpretation_basis": "Tilt is measured from the global pipe axis using the recorded rigid-body quaternion; all values are exact saved native states when available."
+    },
+    "micro6p25": {
+      "first_callback_time_s": 0.0018125000000000005,
+      "first_completed_response_time_s": 0.0018187500000000005,
+      "tilt_rad": {
+        "at_1p750ms": 0.35090465120215136,
+        "at_1p800ms": 0.3919224378089582,
+        "immediately_pre_response": 0.40270281351055476,
+        "immediately_post_response": 0.4048034930489754,
+        "at_1p850ms": 0.41527788082722006,
+        "at_1p900ms": 0.4332918882813955
+      },
+      "tilt_deg": {
+        "at_1p750ms": 20.105355525393524,
+        "at_1p800ms": 22.455501582931788,
+        "immediately_pre_response": 23.073171612198653,
+        "immediately_post_response": 23.193531683859646,
+        "at_1p850ms": 23.79366989653648,
+        "at_1p900ms": 24.825796495777933
+      },
+      "omega_magnitude_rad_s": {
+        "at_1p750ms": 789.9017562683965,
+        "at_1p800ms": 855.4231391126563,
+        "immediately_pre_response": 872.900005146445,
+        "immediately_post_response": 339.6308300299082,
+        "at_1p850ms": 346.4832416451466,
+        "at_1p900ms": 377.9829739188752
+      },
+      "delta_tilt_pre_response_rad": 0.051798162308403395,
+      "delta_tilt_first_response_step_rad": 0.0021006795384206356,
+      "delta_tilt_post_response_to_final_rad": 0.028488395232420083,
+      "tilt_rate_first_response_rad_s": 336.1087261473017,
+      "max_tilt_rad": 0.4332918882813955,
+      "max_tilt_deg": 24.825796495777933,
+      "peak_omega_rad_s": 872.900005146445,
+      "omega_components_pre_response": [
+        44.33270511933271,
+        -260.8658965772153,
+        -831.8281158054418
+      ],
+      "omega_components_post_response": [
+        40.12870420921583,
+        -86.0817495346954,
+        -326.0808491805976
+      ],
+      "phase_labels": {
+        "A": "pre-proximity",
+        "B": "threshold crossing",
+        "C": "first native proximity response",
+        "D": "immediate post-response",
+        "E": "late near-wall response",
+        "F": "1.900 ms"
+      },
+      "interpretation_basis": "Tilt is measured from the global pipe axis using the recorded rigid-body quaternion; all values are exact saved native states when available."
+    }
+  },
+  "episodes": {
+    "micro12p5": [
+      {
+        "start_time_s": 0.0018125000000000005,
+        "end_time_s": 0.0019,
+        "duration_s": 8.749999999999947e-05,
+        "impulse_count": 7,
+        "impulse_density_per_s": 80000.00000000048,
+        "J_values_N_s": [
+          2.5407402357601473e-06,
+          3.379353987664206e-07,
+          9.699005729724798e-08,
+          7.990683220571232e-08,
+          7.354741056735808e-08,
+          6.605282902524423e-08,
+          6.372273433212576e-08
+        ],
+        "sum_J_N_s": 3.258895497954256e-06,
+        "sum_normal_impulse_vector_N_s": [
+          -5.367409179411211e-10,
+          3.0825235565789805e-06,
+          -1.0575176549957113e-06
+        ],
+        "sum_normal_impulse_magnitude_N_s": 3.2588794631871197e-06,
+        "sum_torque_impulse_N_m_s": [
+          -1.515307739153859e-11,
+          8.975654922451292e-10,
+          2.616166875627363e-09
+        ],
+        "sum_torque_impulse_magnitude_N_m_s": 2.7658963374923353e-09,
+        "event_times_s": [
+          0.0018125000000000005,
+          0.0018250000000000004,
+          0.0018375000000000004,
+          0.0018500000000000003,
+          0.0018625000000000002,
+          0.0018750000000000001,
+          0.0018875
+        ]
+      }
+    ],
+    "micro6p25": [
+      {
+        "start_time_s": 0.0018125000000000005,
+        "end_time_s": 0.0019,
+        "duration_s": 8.749999999999947e-05,
+        "impulse_count": 14,
+        "impulse_density_per_s": 160000.00000000096,
+        "J_values_N_s": [
+          2.5145866493243304e-06,
+          2.8673375166585183e-07,
+          6.753374182144395e-08,
+          6.250539516186013e-08,
+          3.803013645992637e-08,
+          3.6255450934066893e-08,
+          3.1624082885311947e-08,
+          3.395127079562817e-08,
+          3.23938470909139e-08,
+          3.284084414596224e-08,
+          3.251932708369601e-08,
+          3.137654941508442e-08,
+          3.036622971418624e-08,
+          3.3213305624642854e-08
+        ],
+        "sum_J_N_s": 3.263930582122906e-06,
+        "sum_normal_impulse_vector_N_s": [
+          -6.461719940517751e-10,
+          3.088731979319919e-06,
+          -1.0549423853325606e-06
+        ],
+        "sum_normal_impulse_magnitude_N_s": 3.2639192842322165e-06,
+        "sum_torque_impulse_N_m_s": [
+          -1.4274176283257153e-11,
+          8.945367318632561e-10,
+          2.6190068219904045e-09
+        ],
+        "sum_torque_impulse_magnitude_N_m_s": 2.767597595459542e-09,
+        "event_times_s": [
+          0.0018125000000000005,
+          0.0018187500000000005,
+          0.0018250000000000004,
+          0.0018312500000000004,
+          0.0018375000000000004,
+          0.0018437500000000003,
+          0.0018500000000000003,
+          0.0018562500000000003,
+          0.0018625000000000002,
+          0.0018687500000000002,
+          0.0018750000000000001,
+          0.0018812500000000001,
+          0.0018875,
+          0.00189375
+        ]
+      }
+    ]
+  },
+  "impulse_interpretation": "RAW_COUNT_TIMESTEP_ARTIFACT_LIKELY",
+  "impulse_count_ratio_6p25_over_12p5": 2.0,
+  "individual_impulse_median_N_s": {
+    "micro12p5": 7.990683220571232e-08,
+    "micro6p25": 3.358228821013551e-08
+  },
+  "cumulative_impulse": {
+    "normal_12p5_N_s": 3.2588794631871197e-06,
+    "normal_6p25_N_s": 3.2639192842322165e-06,
+    "normal_difference_N_s": 5.039821045096759e-09,
+    "normal_relative_difference": 0.0015441010044101914,
+    "angular_12p5_N_m_s": 2.7658963374923353e-09,
+    "angular_6p25_N_m_s": 2.767597595459542e-09,
+    "angular_difference_N_m_s": 1.7012579672064703e-12,
+    "angular_relative_difference": 0.0006147056819233821
+  },
+  "trajectory_comparison": {
+    "common_time_csv": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\common_time_12p5_vs_6p25.csv",
+    "common_time_count": 13,
+    "no_interpolation": true,
+    "final_com_difference_m": 2.063538094449094e-07,
+    "final_tilt_difference_deg": 0.014388633347639512,
+    "final_v_difference_m_s": 0.0004327867596687013,
+    "final_omega_difference_rad_s": 4.114067554743751
+  },
+  "outputs": {
+    "timelines": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_25us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_12p5us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_6p25us.csv"
+    ],
+    "common_time_csv": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\common_time_12p5_vs_6p25.csv",
+    "cumulative_normal_impulse_csv": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_vs_time.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_12p5us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_6p25us.csv"
+    ],
+    "cumulative_angular_impulse_csv": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_angular_impulse_vs_time.csv"
+    ],
+    "plots": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_tilt_vs_time.png",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_gap_vs_time.png",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_cumulative_impulse_vs_time.png"
+    ],
+    "motion_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_motion_1p75_to_1p90ms.gif",
+    "contact_closeup_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_contact_closeup_1p75_to_1p90ms.gif",
+    "velocity_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_velocity_1p75_to_1p90ms.gif",
+    "final_frame_png": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_1p90ms_final_frame.png",
+    "velocity_gif_source": "actual saved FieldData snapshots",
+    "gif_frame_counts": {
+      "motion": 25,
+      "closeup": 25,
+      "velocity": 25
+    },
+    "fixed_velocity_scale_m_s": [
+      0.0,
+      1.7822712659835815
+    ]
+  },
+  "diagnostic_visualization_metadata": {
+    "not_final_2ms_result": true,
+    "time_range_s": [
+      0.00175,
+      0.0019
+    ],
+    "branch": "micro6p25",
+    "actual_geometry_and_fielddata_only": true
+  }
+}

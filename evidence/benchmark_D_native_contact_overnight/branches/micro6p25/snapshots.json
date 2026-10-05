@@ -1,0 +1,254 @@
+{
+  "frames": [
+    {
+      "native_step_index": 70,
+      "time_s": 0.001750000000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0070_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0070_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56347,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 0.9425961971282959
+    },
+    {
+      "native_step_index": 71,
+      "time_s": 0.001756250000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0071_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0071_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56335,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 0.9852867126464844
+    },
+    {
+      "native_step_index": 72,
+      "time_s": 0.001762500000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0072_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0072_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56340,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.001577377319336
+    },
+    {
+      "native_step_index": 73,
+      "time_s": 0.001768750000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0073_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0073_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56376,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0154211521148682
+    },
+    {
+      "native_step_index": 74,
+      "time_s": 0.001775000000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0074_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0074_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56405,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0277678966522217
+    },
+    {
+      "native_step_index": 75,
+      "time_s": 0.001781250000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0075_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0075_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56372,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0404075384140015
+    },
+    {
+      "native_step_index": 76,
+      "time_s": 0.001787500000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0076_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0076_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56387,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0527986288070679
+    },
+    {
+      "native_step_index": 77,
+      "time_s": 0.001793750000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0077_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0077_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56383,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0663937330245972
+    },
+    {
+      "native_step_index": 78,
+      "time_s": 0.001800000000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0078_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0078_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56402,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0813333988189697
+    },
+    {
+      "native_step_index": 79,
+      "time_s": 0.001806250000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0079_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0079_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56422,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.0975898504257202
+    },
+    {
+      "native_step_index": 80,
+      "time_s": 0.001812500000000001,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0080_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0080_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56402,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.116834282875061
+    },
+    {
+      "native_step_index": 81,
+      "time_s": 0.00181875,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0081_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0081_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56415,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.7822712659835815
+    },
+    {
+      "native_step_index": 82,
+      "time_s": 0.001825,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0082_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0082_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56390,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.5430771112442017
+    },
+    {
+      "native_step_index": 83,
+      "time_s": 0.00183125,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0083_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0083_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56394,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.5177526473999023
+    },
+    {
+      "native_step_index": 84,
+      "time_s": 0.0018375,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0084_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0084_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56386,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.463833212852478
+    },
+    {
+      "native_step_index": 85,
+      "time_s": 0.00184375,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0085_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0085_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56404,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.4381096363067627
+    },
+    {
+      "native_step_index": 86,
+      "time_s": 0.00185,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0086_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0086_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56398,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.4064655303955078
+    },
+    {
+      "native_step_index": 87,
+      "time_s": 0.00185625,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0087_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0087_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56430,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.3693053722381592
+    },
+    {
+      "native_step_index": 88,
+      "time_s": 0.0018625,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0088_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0088_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56388,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.3304797410964966
+    },
+    {
+      "native_step_index": 89,
+      "time_s": 0.00186875,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0089_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0089_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56407,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.2893493175506592
+    },
+    {
+      "native_step_index": 90,
+      "time_s": 0.001875,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0090_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0090_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56357,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.249405860900879
+    },
+    {
+      "native_step_index": 91,
+      "time_s": 0.00188125,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0091_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0091_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56354,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.2332909107208252
+    },
+    {
+      "native_step_index": 92,
+      "time_s": 0.0018875,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0092_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0092_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56378,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.222269892692566
+    },
+    {
+      "native_step_index": 93,
+      "time_s": 0.00189375,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0093_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0093_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56369,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.2093063592910767
+    },
+    {
+      "native_step_index": 94,
+      "time_s": 0.0019,
+      "robot_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0094_robot.vtp",
+      "velocity_path": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro6p25\\fielddata\\state_0094_velocity.vtp",
+      "actual_FieldData": true,
+      "velocity_points": 56375,
+      "velocity_min_m_s": 0.0,
+      "velocity_max_m_s": 1.1954143047332764
+    }
+  ]
+}

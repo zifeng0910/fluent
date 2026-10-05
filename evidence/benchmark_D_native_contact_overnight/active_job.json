@@ -1,0 +1,15 @@
+{
+  "kind": "fallback",
+  "job": "scripts/benchmark_D_native_contact_overnight_fallback.py",
+  "branch": null,
+  "pid": 37124,
+  "created": 1791195621.4533637,
+  "name": "pythonw.exe",
+  "started": "2026-10-05T10:20:21.458040+00:00",
+  "stdout": "evidence\\benchmark_D_native_contact_overnight\\jobs\\fallback_campaign_1791195621450_stdout.log",
+  "stderr": "evidence\\benchmark_D_native_contact_overnight\\jobs\\fallback_campaign_1791195621450_stderr.log",
+  "key": "fallback_campaign_1791195621450",
+  "status": "FINISHED",
+  "returncode": 1,
+  "finished": "2026-10-05T10:26:36.811041+00:00"
+}

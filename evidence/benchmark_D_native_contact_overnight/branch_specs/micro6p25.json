@@ -1,0 +1,14 @@
+{
+  "branch": "micro6p25",
+  "route": "NATIVE_OVERWRITE",
+  "dt_s": 6.25e-06,
+  "start_time_s": 0.001750000000000001,
+  "end_time_s": 0.0019,
+  "stage": "NATIVE_DT_6P25",
+  "source_checkpoint": "evidence/benchmark_C_coarse_2ms/checkpoint_0070.json",
+  "contact_source_path": "fluent_udf/l2300_native_contact_overnight.c",
+  "mode": 3,
+  "penetration_tolerance_m": 5e-06,
+  "iterations_per_step": 2,
+  "hard_deadline_epoch": 1791207678.4871063
+}

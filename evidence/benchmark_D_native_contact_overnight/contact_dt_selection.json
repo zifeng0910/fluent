@@ -1,15 +1,445 @@
 {
+  "timestamp": "2026-10-05T11:26:44.897816+00:00",
   "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
-  "timestamp": "2026-10-05T05:59:40.925670+00:00",
-  "status": "NOT_SELECTED",
-  "micro25": "PASS",
-  "micro12p5": "FAIL_RESOURCE_HARD_STOP",
-  "micro6p25": "NOT_RUN",
+  "status": "FAIL",
+  "selected_branch": null,
   "selected_dt_s": null,
-  "comparison_file": "dt_comparison.json",
-  "comparison_sha256": "1bce1dc044ba2c0ca1b7bd32cc8d4153b6e254a70a25325e91c65dc2b904b651",
-  "reason": "Frozen full-branch resource/checkpoint/completion gates failed. Timestep comparison is descriptive and cannot authorize a selected dt or production restart.",
-  "production_restart_s": null,
-  "original_window_preserved": true,
-  "no_solver_launched": true
+  "selected_physical_branch": null,
+  "reason": "12.5us versus6.25us did not meet adequate convergence; no smaller dt is authorized automatically.",
+  "comparisons": [
+    {
+      "status": "MATERIAL_DIFFERENCE",
+      "branches": [
+        "micro25",
+        "micro12p5"
+      ],
+      "errors": {
+        "contact_timing_s": 2.5000000000000716e-05,
+        "contact_point_m": 1.1779785619267894e-05,
+        "normal_angular_difference_rad": 0.003298028954576012,
+        "minimum_signed_gap_m": 9.346098735782925e-06,
+        "peak_penetration_m": 0.0,
+        "first_impulse_relative": 0.0482176285187666,
+        "peak_impulse_relative": 0.0482176285187666,
+        "final_v_m_s": 0.00678935820088609,
+        "final_omega_rad_s": 9.964549437605577,
+        "maximum_tilt_rad": 0.00800058860990277,
+        "peak_omega_relative": 0.024628692397160628,
+        "impulse_count_difference": 4,
+        "episode_count_difference": 0,
+        "separation_count_difference": 0,
+        "recontact_count_difference": 0,
+        "first_response_completed_v_m_s": 0.014172836685215894,
+        "first_response_completed_omega_rad_s": 23.192381314319366
+      },
+      "checks": {
+        "same_physical_end_time": true,
+        "timing": true,
+        "position": true,
+        "gap": false,
+        "penetration": true,
+        "first_impulse": true,
+        "peak_impulse": true,
+        "final_v": true,
+        "final_omega": true,
+        "tilt": true,
+        "peak_omega": true,
+        "event_counts": false,
+        "both_numerical_trajectories_valid": true
+      },
+      "tolerances": {
+        "timing_coarse_steps": 1,
+        "contact_position_m": 2e-05,
+        "signed_gap_m": 5e-06,
+        "penetration_m": 5e-06,
+        "impulse_relative": 0.1,
+        "final_v_relative": 0.1,
+        "final_v_absolute_m_s": 0.001,
+        "final_omega_relative": 0.1,
+        "final_omega_absolute_rad_s": 1.0,
+        "max_tilt_rad": 0.008726646259971648,
+        "peak_omega_relative": 0.1,
+        "event_count_absolute": 1,
+        "event_count_relative": 0.2
+      },
+      "exact_common_final_time_s": 0.001900000000000001,
+      "no_interpolation": true,
+      "descriptive_metrics": {
+        "normal_angular_difference_rad": 0.003298028954576012,
+        "first_response_completed": {
+          "micro25": {
+            "time_s": 0.001850000000000001,
+            "v": [
+              -0.002498393026059872,
+              0.2863754458466742,
+              -0.09970788650046335
+            ],
+            "omega": [
+              45.93764814079465,
+              -88.84964261526514,
+              -351.117633491805
+            ]
+          },
+          "micro12p5": {
+            "time_s": 0.001825,
+            "v": [
+              -0.002696450503727517,
+              0.2733236941088529,
+              -0.09418684950406313
+            ],
+            "omega": [
+              37.55867905653797,
+              -84.46658157837248,
+              -329.9405656102324
+            ]
+          }
+        },
+        "exact_common_time_trajectory_differences": [
+          {
+            "time_s": 0.001750000000000001,
+            "com_m": 0.0,
+            "orientation_rad": 0.0,
+            "v_m_s": 0.0,
+            "omega_rad_s": 0.0
+          },
+          {
+            "time_s": 0.001775000000000001,
+            "com_m": 2.3577638240556534e-10,
+            "orientation_rad": 8.41739827849147e-06,
+            "v_m_s": 3.780992101118395e-05,
+            "omega_rad_s": 1.0134158182166522
+          },
+          {
+            "time_s": 0.001800000000000001,
+            "com_m": 1.8115889289430846e-09,
+            "orientation_rad": 6.270224595159164e-05,
+            "v_m_s": 8.776821832089752e-05,
+            "omega_rad_s": 2.902788756611335
+          },
+          {
+            "time_s": 0.001825000000000001,
+            "com_m": 3.565609098373285e-06,
+            "orientation_rad": 0.006917954699145727,
+            "v_m_s": 0.2852845762553721,
+            "omega_rad_s": 554.2241196130508
+          },
+          {
+            "time_s": 0.001850000000000001,
+            "com_m": 3.159879319074764e-06,
+            "orientation_rad": 0.0074890078370730235,
+            "v_m_s": 0.021288441084692383,
+            "omega_rad_s": 19.7290265162387
+          },
+          {
+            "time_s": 0.001875000000000001,
+            "com_m": 2.9712324967919497e-06,
+            "orientation_rad": 0.007712226225229637,
+            "v_m_s": 0.005128195924758408,
+            "omega_rad_s": 7.595841222524915
+          },
+          {
+            "time_s": 0.001900000000000001,
+            "com_m": 2.7541327041818386e-06,
+            "orientation_rad": 0.008021864132222337,
+            "v_m_s": 0.00678935820088609,
+            "omega_rad_s": 9.964549437605577
+          }
+        ],
+        "exact_common_time_trajectory_max_errors": {
+          "com_m": 3.565609098373285e-06,
+          "orientation_rad": 0.008021864132222337,
+          "v_m_s": 0.2852845762553721,
+          "omega_rad_s": 554.2241196130508
+        },
+        "exact_common_time_count": 7,
+        "exact_common_time_interpolation_used": false,
+        "separation_recontact_counts": {
+          "micro25": {
+            "separation_count": 0,
+            "recontact_count": 0
+          },
+          "micro12p5": {
+            "separation_count": 0,
+            "recontact_count": 0
+          }
+        }
+      },
+      "both_formal_branches_PASS": false,
+      "numerical_validity_basis": {
+        "micro25": {
+          "usable": true,
+          "clean_production_branch": true,
+          "basis": "FORMAL_PASS"
+        },
+        "micro12p5": {
+          "usable": true,
+          "clean_production_branch": false,
+          "basis": "MICRO12P5_NUMERICALLY_COMPLETE_RESOURCE_ABORTED",
+          "classification_sha256": "c27064e075ffca6c888ec3857edb78ce8dee8c2cc75eb406fd8545de00b4e454",
+          "formal_status": "RESOURCE_HARD_STOP",
+          "resource_acceptance": "FAIL"
+        }
+      },
+      "formal_resource_results_unchanged": true,
+      "frozen_quantitative_criteria_unchanged": true
+    },
+    {
+      "status": "MATERIAL_DIFFERENCE",
+      "branches": [
+        "micro12p5",
+        "micro6p25"
+      ],
+      "errors": {
+        "contact_timing_s": 6.249999999999962e-06,
+        "contact_point_m": 2.2100904374460596e-06,
+        "normal_angular_difference_rad": 0.0017105645547965944,
+        "minimum_signed_gap_m": 4.982017142492884e-08,
+        "peak_penetration_m": 0.0,
+        "first_impulse_relative": 0.010400749738667541,
+        "peak_impulse_relative": 0.010400749738667541,
+        "final_v_m_s": 0.0004327867596687013,
+        "final_omega_rad_s": 4.114067554743751,
+        "maximum_tilt_rad": 0.00025112902677909554,
+        "peak_omega_relative": 0.0008449777872747322,
+        "impulse_count_difference": 7,
+        "episode_count_difference": 0,
+        "separation_count_difference": 0,
+        "recontact_count_difference": 0,
+        "first_response_completed_v_m_s": 0.0030598855334062354,
+        "first_response_completed_omega_rad_s": 4.910316459223564
+      },
+      "checks": {
+        "same_physical_end_time": true,
+        "timing": true,
+        "position": true,
+        "gap": true,
+        "penetration": true,
+        "first_impulse": true,
+        "peak_impulse": true,
+        "final_v": true,
+        "final_omega": true,
+        "tilt": true,
+        "peak_omega": true,
+        "event_counts": false,
+        "both_numerical_trajectories_valid": true
+      },
+      "tolerances": {
+        "timing_coarse_steps": 1,
+        "contact_position_m": 2e-05,
+        "signed_gap_m": 5e-06,
+        "penetration_m": 5e-06,
+        "impulse_relative": 0.1,
+        "final_v_relative": 0.1,
+        "final_v_absolute_m_s": 0.001,
+        "final_omega_relative": 0.1,
+        "final_omega_absolute_rad_s": 1.0,
+        "max_tilt_rad": 0.008726646259971648,
+        "peak_omega_relative": 0.1,
+        "event_count_absolute": 1,
+        "event_count_relative": 0.2
+      },
+      "exact_common_final_time_s": 0.0019,
+      "no_interpolation": true,
+      "descriptive_metrics": {
+        "normal_angular_difference_rad": 0.0017105645547965944,
+        "first_response_completed": {
+          "micro12p5": {
+            "time_s": 0.001825,
+            "v": [
+              -0.002696450503727517,
+              0.2733236941088529,
+              -0.09418684950406313
+            ],
+            "omega": [
+              37.55867905653797,
+              -84.46658157837248,
+              -329.9405656102324
+            ]
+          },
+          "micro6p25": {
+            "time_s": 0.00181875,
+            "v": [
+              -0.00269760806244684,
+              0.2706251839240358,
+              -0.0927443028254267
+            ],
+            "omega": [
+              40.12870420921583,
+              -86.0817495346954,
+              -326.0808491805976
+            ]
+          }
+        },
+        "exact_common_time_trajectory_differences": [
+          {
+            "time_s": 0.001750000000000001,
+            "com_m": 0.0,
+            "orientation_rad": 0.0,
+            "v_m_s": 0.0,
+            "omega_rad_s": 0.0
+          },
+          {
+            "time_s": 0.001762500000000001,
+            "com_m": 6.779083198380269e-11,
+            "orientation_rad": 3.119078121300917e-06,
+            "v_m_s": 2.1720035560628862e-05,
+            "omega_rad_s": 0.915488334772292
+          },
+          {
+            "time_s": 0.001775000000000001,
+            "com_m": 4.942686677650661e-10,
+            "orientation_rad": 2.1496264766309895e-05,
+            "v_m_s": 4.582470951100401e-05,
+            "omega_rad_s": 1.6524302923357232
+          },
+          {
+            "time_s": 0.001787500000000001,
+            "com_m": 1.0538277725944827e-09,
+            "orientation_rad": 3.849484616051086e-05,
+            "v_m_s": 4.725451552384205e-05,
+            "omega_rad_s": 0.9945983805042325
+          },
+          {
+            "time_s": 0.001800000000000001,
+            "com_m": 1.6221134903449402e-09,
+            "orientation_rad": 5.002063964200088e-05,
+            "v_m_s": 5.1399978572073776e-05,
+            "omega_rad_s": 0.8191308464521007
+          },
+          {
+            "time_s": 0.001812500000000001,
+            "com_m": 2.2622776131198164e-09,
+            "orientation_rad": 6.000141008826141e-05,
+            "v_m_s": 5.7875009567034316e-05,
+            "omega_rad_s": 0.739261879227111
+          },
+          {
+            "time_s": 0.001825,
+            "com_m": 1.1249878573206704e-07,
+            "orientation_rad": 0.00015562516082691624,
+            "v_m_s": 0.016052802345352377,
+            "omega_rad_s": 11.562692576515479
+          },
+          {
+            "time_s": 0.0018375,
+            "com_m": 1.1841108538521631e-07,
+            "orientation_rad": 0.00018436241387598763,
+            "v_m_s": 0.0007005583457760072,
+            "omega_rad_s": 4.0652830080200815
+          },
+          {
+            "time_s": 0.00185,
+            "com_m": 1.4223763914568288e-07,
+            "orientation_rad": 0.00022940172053666506,
+            "v_m_s": 0.0011093013760817116,
+            "omega_rad_s": 4.19353039590424
+          },
+          {
+            "time_s": 0.0018625,
+            "com_m": 1.5857105605356696e-07,
+            "orientation_rad": 0.0002780568248221854,
+            "v_m_s": 0.00043304246533431586,
+            "omega_rad_s": 4.0817628289214705
+          },
+          {
+            "time_s": 0.001875,
+            "com_m": 1.7180257992392692e-07,
+            "orientation_rad": 0.00032548567753739113,
+            "v_m_s": 0.00042998847735336063,
+            "omega_rad_s": 4.113138751856244
+          },
+          {
+            "time_s": 0.0018875,
+            "com_m": 1.90340924824733e-07,
+            "orientation_rad": 0.0003766517643047088,
+            "v_m_s": 0.00048615097536854946,
+            "omega_rad_s": 4.113723872971493
+          },
+          {
+            "time_s": 0.0019,
+            "com_m": 2.063538094449094e-07,
+            "orientation_rad": 0.0004294480219066792,
+            "v_m_s": 0.0004327867596687013,
+            "omega_rad_s": 4.114067554743751
+          }
+        ],
+        "exact_common_time_trajectory_max_errors": {
+          "com_m": 2.063538094449094e-07,
+          "orientation_rad": 0.0004294480219066792,
+          "v_m_s": 0.016052802345352377,
+          "omega_rad_s": 11.562692576515479
+        },
+        "exact_common_time_count": 13,
+        "exact_common_time_interpolation_used": false,
+        "separation_recontact_counts": {
+          "micro12p5": {
+            "separation_count": 0,
+            "recontact_count": 0
+          },
+          "micro6p25": {
+            "separation_count": 0,
+            "recontact_count": 0
+          }
+        }
+      },
+      "both_formal_branches_PASS": false,
+      "numerical_validity_basis": {
+        "micro12p5": {
+          "usable": true,
+          "clean_production_branch": false,
+          "basis": "MICRO12P5_NUMERICALLY_COMPLETE_RESOURCE_ABORTED",
+          "classification_sha256": "c27064e075ffca6c888ec3857edb78ce8dee8c2cc75eb406fd8545de00b4e454",
+          "formal_status": "RESOURCE_HARD_STOP",
+          "resource_acceptance": "FAIL"
+        },
+        "micro6p25": {
+          "usable": true,
+          "clean_production_branch": true,
+          "basis": "FORMAL_PASS"
+        }
+      },
+      "formal_resource_results_unchanged": true,
+      "frozen_quantitative_criteria_unchanged": true
+    }
+  ],
+  "predeclared_tolerances": {
+    "penetration_m": 5e-06,
+    "q_norm_error": 1e-06,
+    "cluster_distance_m": 2e-05,
+    "impulse_math_v_m_s": 1e-10,
+    "impulse_math_omega_rad_s": 1e-07,
+    "impulse_math_J_N_s": 1e-16,
+    "completed_response_relative_error": 0.1,
+    "completed_response_direction_cosine": 0.99,
+    "inheritance_COM_m": 1e-10,
+    "inheritance_Q_rad": 1e-09,
+    "inheritance_v_m_s": 1e-08,
+    "inheritance_omega_rad_s": 1e-06,
+    "magnetic_F_N": 1e-13,
+    "magnetic_T_Nm": 1e-14,
+    "dt_comparison": {
+      "timing_coarse_steps": 1,
+      "contact_position_m": 2e-05,
+      "signed_gap_m": 5e-06,
+      "penetration_m": 5e-06,
+      "impulse_relative": 0.1,
+      "final_v_relative": 0.1,
+      "final_v_absolute_m_s": 0.001,
+      "final_omega_relative": 0.1,
+      "final_omega_absolute_rad_s": 1.0,
+      "max_tilt_rad": 0.008726646259971648,
+      "peak_omega_relative": 0.1,
+      "event_count_absolute": 1,
+      "event_count_relative": 0.2
+    },
+    "rationale": "5um penetration is below 1% of robot diameter; 20um cluster is the validated dedup resolution. Response 10%/.99 is the authorized load acceptance. DT comparison uses one coarse step for contact onset sampling, 10% impulse/state error and .5deg tilt for this development baseline; these are adequacy gates, not an experimental accuracy or mesh convergence claim."
+  },
+  "penetration_tolerance_m": 5e-06,
+  "mesh_convergence_claim": false,
+  "failure_class": "DT_RESOLUTION",
+  "review_sha256": {
+    "micro25": "b264db9db69a3fcf9b3e99e46a938d9d490e8460377f726b8235a7f29fc6c77c",
+    "micro12p5": "527b7ccef1c7784fdb80e1bff409be41a4cb9c8484ac4e1f1398ba46ea7960a5",
+    "micro6p25": "5e746d6298235d32d10b81774a338c5c972d987ad84961504031db2b8e20744d"
+  }
 }

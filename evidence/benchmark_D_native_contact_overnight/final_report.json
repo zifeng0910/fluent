@@ -1,178 +1,131 @@
 {
+  "timestamp": "2026-10-05T11:21:50.585192+00:00",
   "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
   "status": "INCOMPLETE",
-  "final_status": "HARD_BLOCKER",
-  "timestamp": "2026-10-05T05:59:40.925670+00:00",
+  "final_status": "DT_CONVERGENCE_NOT_REACHED",
   "route": "NATIVE_OVERWRITE",
-  "micro25": "PASS",
-  "micro12p5": "FAIL_RESOURCE_HARD_STOP",
-  "micro6p25": "NOT_RUN",
+  "micro25": {
+    "status": "PASS",
+    "dt_s": 2.5e-05,
+    "end_time_s": 0.0019
+  },
+  "micro12p5": {
+    "formal_status": "RESOURCE_HARD_STOP",
+    "numerical_status": "NUMERICALLY_COMPLETE_RESOURCE_ABORTED",
+    "dt_s": 1.25e-05,
+    "end_time_s": 0.0019
+  },
+  "micro6p25": {
+    "status": "PASS",
+    "dt_s": 6.25e-06,
+    "completed_new_steps": 24,
+    "end_time_s": 0.0019,
+    "review": "branches/micro6p25/review.json"
+  },
   "selected_dt_s": null,
-  "selection_reason": "Full micro12p5 resource/checkpoint/completion gates failed; frozen acceptance has not passed",
-  "production_restart_s": null,
-  "final_time_s": 0.0019,
+  "selected_dt": "none",
+  "production_restart": "NOT_STARTED",
+  "production_final_time_s": null,
   "full_2ms_numerical": "INCOMPLETE",
   "numerical_gates": {
-    "restart_continuity": true,
-    "actual_magnetic_law": true,
-    "checkpoint_integrity": false,
-    "owned_engine_closed": true,
-    "prefix_checkpoint_integrity": true,
-    "resource_history": false,
-    "completed_branch_result": false,
-    "contact_response_and_dedup": true,
-    "precontact_C_vs_D": true,
-    "target_time_reached": true,
-    "finite": true,
-    "cell_count": true,
-    "orphan_zero": true,
-    "invalid_donors_zero": true,
-    "unidentified_zero": true,
-    "positive_volume": true,
-    "quaternion": true,
-    "actual_time_sequence": true,
-    "penetration": true
+    "dt_convergence": false,
+    "micro6p25_offline_review": true,
+    "production_started": false,
+    "final_time_2ms": false
   },
-  "metrics": {
-    "first_contact_callback_time_s": 0.0018125000000000005,
-    "first_contact_completed_time_s": 0.0018250000000000004,
-    "first_contact_point_m": [
-      0.002054816445646657,
-      -0.0008461483872996205,
-      0.0002967033422284894
+  "convergence": {
+    "status": "FAIL",
+    "comparison": "dt_comparison_12p5_vs_6p25.json",
+    "frozen_failure": "impulse count 7 vs 14; difference 7; allowance 3",
+    "gap_difference_m": 4.982017142492884e-08,
+    "only_frozen_gate_failure": "event_counts"
+  },
+  "diagnostic_outputs": {
+    "timelines": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_25us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_12p5us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_6p25us.csv"
     ],
-    "first_contact_normal": [
-      -0.00021384832788785997,
-      0.9453948830818396,
-      -0.32592709201839537
+    "common_time_csv": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\common_time_12p5_vs_6p25.csv",
+    "cumulative_normal_impulse_csv": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_vs_time.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_12p5us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_6p25us.csv"
     ],
-    "first_contact_actual_mesh_gap_m": 9.765586470329496e-05,
-    "first_contact_tilt_rad": 0.41377177704382434,
-    "first_contact_omega_rad_s": [
-      45.47963595468109,
-      -265.84443299888545,
-      -849.5203678120664
+    "cumulative_angular_impulse_csv": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_angular_impulse_vs_time.csv"
     ],
-    "first_impulse_N_s": 2.5407402357601473e-06,
-    "physical_impulse_application_count": 7,
-    "contact_episode_count": 1,
-    "separation_count": 0,
-    "recontact_count": 0,
-    "separation_times_s": [],
-    "episode_definition": "Adjacent impulse boundaries separated by <=1.5dt constitute one native proximity-contact episode; callbacks within a boundary are deduplicated.",
-    "contact_geometry_note": "Native threshold remains100um: first callback may be at positive gap. Callback CURRENT_TIME is start boundary and mesh vertices belong to that boundary; completed contact response occurs one dt later.",
-    "minimum_signed_gap_m": 9.765585071986357e-05,
-    "maximum_penetration_m": 0.0,
-    "maximum_penetration_time_s": 0.001750000000000001,
-    "peak_impulse_N_s": 2.5407402357601473e-06,
-    "maximum_tilt_rad": 0.4335430173081743,
-    "maximum_tilt_deg": 24.840185129125587,
-    "peak_omega_rad_s": 873.6375862613057,
-    "COM_displacement_from_restart_m": [
-      -1.6536599912310521e-06,
-      2.4617344716797816e-05,
-      -8.4556050935624e-06
+    "plots": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_tilt_vs_time.png",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_gap_vs_time.png",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_cumulative_impulse_vs_time.png"
     ],
-    "maximum_lateral_displacement_from_restart_m": 2.6029039905534966e-05,
-    "final_COM_m": [
-      0.001202059728231191,
-      2.548983085379108e-05,
-      -8.791274104451692e-06
-    ],
-    "final_Q_wxyz": [
-      0.9765519473776979,
-      0.009371641736240116,
-      -0.07182259250369726,
-      -0.2027313039716397
-    ],
-    "final_v_m_s": [
-      -0.02040951258877126,
-      0.2924521338412675,
-      -0.1002816506743224
-    ],
-    "final_omega_rad_s": [
-      44.2196687104958,
-      -89.23094923251794,
-      -364.2793870531261
+    "motion_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_motion_1p75_to_1p90ms.gif",
+    "contact_closeup_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_contact_closeup_1p75_to_1p90ms.gif",
+    "velocity_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_velocity_1p75_to_1p90ms.gif",
+    "final_frame_png": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_1p90ms_final_frame.png",
+    "velocity_gif_source": "actual saved FieldData snapshots",
+    "gif_frame_counts": {
+      "motion": 25,
+      "closeup": 25,
+      "velocity": 25
+    },
+    "fixed_velocity_scale_m_s": [
+      0.0,
+      1.7822712659835815
     ]
   },
-  "numerical_peaks": {
-    "orphan_peak": 0,
-    "invalid_donor_peak": 0,
-    "minimum_volume_m3": 6.100596812042791e-17,
-    "maximum_q_norm_error": 1.1102230246251565e-16
-  },
+  "tilt_classification": "TILT_PRIMARILY_PREEXISTING",
+  "impulse_interpretation": "RAW_COUNT_TIMESTEP_ARTIFACT_LIKELY",
   "resource_summary": {
-    "timestamp": "2026-10-05T05:11:17.563867+00:00",
-    "samples": 1030,
-    "peak_project_working_set_gib": 8.779808044433594,
-    "peak_project_private_bytes_gib": 15.880390167236328,
-    "peak_system_commit_percent": 95.76723103798798,
-    "minimum_available_gib": 4.814655303955078,
-    "abort": "RESOURCE_HARD_STOP"
+    "timestamp": "2026-10-05T10:11:39.587561+00:00",
+    "samples": 1934,
+    "peak_project_working_set_gib": 1.6551017761230469,
+    "peak_project_private_bytes_gib": 2.6687469482421875,
+    "peak_system_commit_percent": 89.92462777411434,
+    "minimum_available_gib": 5.29949951171875,
+    "abort": null
   },
-  "emergency_1p9ms_checkpoint": {
-    "status": "CHECKPOINT_BYTES_HDF5_AND_SAVED_STATE_PASS",
-    "timestamp": "2026-10-05T05:37:19.961410+00:00",
-    "time_s": 0.0019,
-    "case": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.cas.h5",
-    "data": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.dat.h5",
-    "case_sha256": "19dfebfa9bd5b67fca3d861af83fa87b4dca8eddd35d557d4954c8c03284f83b",
-    "data_sha256": "462e3f38949528c11fba41b6cb8213ea4b9ab87feb30580d02d51dac7ddbfd11",
-    "case_size_bytes": 109633904,
-    "data_size_bytes": 561044835,
-    "saved_native_state": {
-      "com": [
-        0.001202059728231191,
-        2.548983085379108e-05,
-        -8.791274104451692e-06
-      ],
-      "q": [
-        0.9765519473776979,
-        0.009371641736240116,
-        -0.07182259250369726,
-        -0.2027313039716397
-      ],
-      "velocity": [
-        -0.02040951258877126,
-        0.2924521338412675,
-        -0.1002816506743224
-      ],
-      "omega": [
-        44.2196687104958,
-        -89.23094923251794,
-        -364.2793870531261
-      ],
-      "native_orientation_angle_axis": {
-        "angle": 0.4339609673712274,
-        "axis": [
-          0.043531954977932004,
-          -0.3336211467814477,
-          -0.941701597809004
-        ]
-      }
-    },
-    "saved_dynamic_audit_PASS": true,
-    "zero_step_reloaded_in_new_Fluent": false,
-    "not_a_full_micro_branch_PASS": true,
-    "resource_failure_preserved": true,
-    "owned_solver_closure_PASS": true
+  "first_response": 0.0018187500000000005,
+  "contact_events": {
+    "micro12p5": 7,
+    "micro6p25": 14,
+    "micro6p25_episodes": 1,
+    "separation": 0,
+    "recontact": 0
   },
-  "owned_solver_closure": "PASS",
-  "motion_GIF": null,
-  "velocity_GIF": null,
-  "closeup_GIF": null,
-  "final_PNG": null,
-  "visual_review_status": "NOT_READY",
-  "current_blocker": "System commit reached 95.767% during the final timestep, triggering the frozen 95% guard. Emergency native state at 1.900 ms is preserved; full branch acceptance and production dt selection remain blocked.",
-  "next_action": "Release confirmed unnecessary application commit, then review native zero-step checkpoint recovery under same window; no replay of micro25 and no resource threshold waiver",
-  "window_id": "native_contact_1791164478",
-  "original_deadlines_preserved": true,
-  "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
-  "no_fallback_activation": true,
-  "no_full_2ms_or_visual_PASS_claim": true,
+  "minimum_signed_gap_m": 9.77056708912885e-05,
+  "maximum_penetration_m": 0.0,
+  "peak_impulse_N_s": 2.5145866493243304e-06,
+  "maximum_tilt_deg": 24.82579649577792,
+  "peak_omega_rad_s": 872.900005146445,
+  "orphan_peak": 0,
+  "invalid_donor_peak": 0,
+  "diagnostic_visual_review": "diagnostic_visuals/visual_review.json",
+  "visual_review_status": "PASS",
+  "motion_GIF": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_motion_1p75_to_1p90ms.gif",
+  "velocity_GIF": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_velocity_1p75_to_1p90ms.gif",
+  "closeup_GIF": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_contact_closeup_1p75_to_1p90ms.gif",
+  "final_PNG": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_1p90ms_final_frame.png",
+  "no_final_2ms_GIF_claim": true,
+  "scientific_scope": "Native near-wall contact/proximity response at the saved ~0.100 mm threshold; a positive gap is not an ideal zero-gap impact.",
+  "fallback_incident": {
+    "occurred": true,
+    "branch": "load_reference25",
+    "completed_new_steps": 0,
+    "stopped_during_native_restart": true,
+    "production_allowed": false,
+    "historical_records_preserved": true,
+    "record": "resource_recovery_review/unauthorized_fallback_stop.json"
+  },
   "windows_task_status": "DISABLED",
   "heartbeat_status": "PAUSED",
-  "terminal_control_review": "terminal_control_review.json",
-  "contact_dt_selection": "contact_dt_selection.json"
+  "solver_alive": false,
+  "worker_alive": false,
+  "supervisor_alive": false,
+  "original_deadlines_preserved": true,
+  "archived_previous_final_report": "evidence\\benchmark_D_native_contact_overnight\\resource_recovery_review\\final_report_pre_offline_update.json",
+  "archived_previous_final_report_sha256": "ce0868c8679ce62f824df08bf99c683e3c558faaa81671b1977804c164802574",
+  "next_action": "No automatic action. Await explicit authorization for any new timestep refinement or alternate route.",
+  "current_blocker": "Frozen 12.5us versus 6.25us convergence failed solely at the impulse-count gate: 7 versus 14, difference 7, allowance 3."
 }

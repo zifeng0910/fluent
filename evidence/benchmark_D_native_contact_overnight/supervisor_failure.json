@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-10-05T02:05:06.029965+00:00",
+  "error": "TypeError(\"event() got multiple values for argument 'name'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_supervisor.py\", line 352, in <module>\n    try:main()\n        ~~~~^^\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_supervisor.py\", line 347, in main\n    else:p,active=next_worker(branch,dt,.0019,stage)\n                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_supervisor.py\", line 146, in next_worker\n    return launch('worker',WORKER,['--branch',branch],branch)\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_supervisor.py\", line 39, in launch\n    atomic(EVID/'active_job.json',item);event('JOB_STARTED',**item)\n                                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^\nTypeError: event() got multiple values for argument 'name'\n"
+}

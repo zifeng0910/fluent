@@ -76,6 +76,42 @@ def state_difference(a, b):
     return errs
 
 
+def exact_trajectory_record(report, time_s):
+    """Return the recorded trajectory state at an existing time only."""
+    for record in trajectory_records(report).values():
+        if abs(float(record.get('time_s', float('nan'))) - time_s) <= TIME_TOL:
+            return record
+    return None
+
+
+def trajectory_records(report):
+    if not isinstance(report, dict) or not report.get('branch'):
+        return {}
+    initial, history = history_chain(report['branch'])
+    records = [initial, *history] if initial else history
+    return {round(float(r['time_s']), 15): {
+        'time_s': r['time_s'], 'com': r['native_state']['com'],
+        'q': r['native_state']['q'], 'v': r['native_state']['velocity'],
+        'omega': r['native_state']['omega']} for r in records if 'time_s' in r}
+
+
+def vector_angle(a, b):
+    aa, bb = np.asarray(a, dtype=float), np.asarray(b, dtype=float)
+    den = norm(aa) * norm(bb)
+    return float(math.acos(np.clip(float(np.dot(aa, bb) / den), -1., 1.))) if den else None
+
+
+def first_response_state(report):
+    checks = report.get('contact_validation', {}).get('response_checks', [])
+    state = checks[0].get('actual_completed_native_state') if checks else None
+    if state:
+        return {'time_s': checks[0].get('completed_time_s'), 'v': state.get('velocity'),
+                'omega': state.get('omega')}
+    m = report.get('metrics', {})
+    rec = exact_trajectory_record(report, m.get('first_contact_completed_time_s'))
+    return {'time_s': rec.get('time_s'), 'v': rec.get('v'), 'omega': rec.get('omega')} if rec else None
+
+
 def absolute_path(path):
     p = Path(path)
     return p if p.is_absolute() else ROOT/p
@@ -559,8 +595,25 @@ def branch_review(name):
 def compare_dt(a, z):
     aa, zz = a['metrics'], z['metrics']
     t = TOLERANCES['dt_comparison']
+    a_first = first_response_state(a)
+    z_first = first_response_state(z)
+    a_traj, z_traj = trajectory_records(a), trajectory_records(z)
+    common_keys = sorted(set(a_traj).intersection(z_traj))
+    common_records = []
+    for key in common_keys:
+        ar, zr = a_traj[key], z_traj[key]
+        common_records.append({'time_s': ar['time_s'],
+            'com_m': norm(np.asarray(ar['com'])-zr['com']),
+            'orientation_rad': angle(ar['q'], zr['q']),
+            'v_m_s': norm(np.asarray(ar['v'])-zr['v']),
+            'omega_rad_s': norm(np.asarray(ar['omega'])-zr['omega'])})
+    max_common = {
+        k: max((r[k] for r in common_records), default=None)
+        for k in ('com_m', 'orientation_rad', 'v_m_s', 'omega_rad_s')}
+    normal_angle = vector_angle(aa['first_contact_normal'], zz['first_contact_normal'])
     errors = {'contact_timing_s': abs(aa['first_contact_completed_time_s']-zz['first_contact_completed_time_s']),
         'contact_point_m': norm(np.asarray(aa['first_contact_point_m'])-zz['first_contact_point_m']),
+        'normal_angular_difference_rad': normal_angle,
         'minimum_signed_gap_m': abs(aa['minimum_signed_gap_m']-zz['minimum_signed_gap_m']),
         'peak_penetration_m': abs(aa['maximum_penetration_m']-zz['maximum_penetration_m']),
         'first_impulse_relative': abs(aa['first_impulse_N_s']-zz['first_impulse_N_s'])/max(abs(zz['first_impulse_N_s']), 1e-18),
@@ -570,7 +623,11 @@ def compare_dt(a, z):
         'maximum_tilt_rad': abs(aa['maximum_tilt_rad']-zz['maximum_tilt_rad']),
         'peak_omega_relative': abs(aa['peak_omega_rad_s']-zz['peak_omega_rad_s'])/max(zz['peak_omega_rad_s'], 1.),
         'impulse_count_difference': abs(aa['physical_impulse_application_count']-zz['physical_impulse_application_count']),
-        'episode_count_difference': abs(aa['contact_episode_count']-zz['contact_episode_count'])}
+        'episode_count_difference': abs(aa['contact_episode_count']-zz['contact_episode_count']),
+        'separation_count_difference': abs(aa['separation_count']-zz['separation_count']),
+        'recontact_count_difference': abs(aa['recontact_count']-zz['recontact_count']),
+        'first_response_completed_v_m_s': norm(np.asarray(a_first['v'])-z_first['v']) if a_first and z_first else None,
+        'first_response_completed_omega_rad_s': norm(np.asarray(a_first['omega'])-z_first['omega']) if a_first and z_first else None}
     count_allowance = max(t['event_count_absolute'], math.ceil(t['event_count_relative']*zz['physical_impulse_application_count']))
     checks = {'both_full_micro_PASS': a['status'] == z['status'] == 'PASS',
         'same_physical_end_time': abs(a['end_time_s']-z['end_time_s']) <= TIME_TOL,
@@ -585,9 +642,63 @@ def compare_dt(a, z):
         'tilt': errors['maximum_tilt_rad'] <= t['max_tilt_rad'],
         'peak_omega': errors['peak_omega_relative'] <= t['peak_omega_relative'],
         'event_counts': errors['impulse_count_difference'] <= count_allowance and errors['episode_count_difference'] <= 1}
+    descriptive = {'normal_angular_difference_rad': normal_angle,
+        'first_response_completed': {'micro12p5' if a['branch'] == 'micro12p5' else a['branch']: a_first,
+                                     'micro6p25' if z['branch'] == 'micro6p25' else z['branch']: z_first},
+        'exact_common_time_trajectory_differences': common_records,
+        'exact_common_time_trajectory_max_errors': max_common,
+        'exact_common_time_count': len(common_records), 'exact_common_time_interpolation_used': False,
+        'separation_recontact_counts': {
+            a['branch']: {'separation_count': aa['separation_count'], 'recontact_count': aa['recontact_count']},
+            z['branch']: {'separation_count': zz['separation_count'], 'recontact_count': zz['recontact_count']}}}
     return {'status': 'PASS' if all(checks.values()) else 'MATERIAL_DIFFERENCE',
             'branches': [a['branch'], z['branch']], 'errors': errors, 'checks': checks, 'tolerances': t,
-            'exact_common_final_time_s': a['end_time_s'], 'no_interpolation': True}
+            'exact_common_final_time_s': a['end_time_s'], 'no_interpolation': True,
+            'descriptive_metrics': descriptive}
+
+
+def numerical_dt_basis(report):
+    """Allow the specifically audited resource-stop trajectory as a reference.
+
+    Its formal resource failure remains unchanged, and it cannot be selected
+    as the clean production branch.
+    """
+    if report.get('status') == 'PASS':
+        return {'usable': True, 'clean_production_branch': True, 'basis': 'FORMAL_PASS'}
+    if report.get('branch') != 'micro12p5' or report.get('failure_class') != 'RESOURCE_HARD_STOP':
+        return {'usable': False, 'clean_production_branch': False, 'basis': 'NO_VALID_NUMERICAL_CLASSIFICATION'}
+    path = EVID/'resource_recovery_review/micro12p5_checkpoint_classification.json'
+    audit = read(path)
+    valid = (audit.get('classification') == 'MICRO12P5_NUMERICALLY_COMPLETE_RESOURCE_ABORTED'
+        and audit.get('numerical_validity') == 'PASS' and audit.get('resource_acceptance') == 'FAIL'
+        and audit.get('formal_status') == 'RESOURCE_HARD_STOP'
+        and audit.get('usable_for_offline_dt_comparison') is True
+        and audit.get('authorization_attachment') == '4962a65e-311a-4b0f-b4f6-5d7cce0bc6da'
+        and bool(audit.get('gates')) and all(value is True for value in audit['gates'].values())
+        and audit.get('window_sha256') == sha(EVID/'window.json'))
+    if valid:
+        valid = all((ROOT/file).is_file() and sha(ROOT/file) == digest
+                    for file, digest in audit['original_evidence_sha256'].items())
+    if valid:
+        metadata = read(EVID/'branches/micro12p5/failure_native_checkpoint.json')
+        valid = all(Path(metadata[kind]).is_file() and
+            Path(metadata[kind]).stat().st_size == metadata[kind+'_size_bytes'] and
+            sha(Path(metadata[kind])) == metadata[kind+'_sha256'] for kind in ('case','data'))
+    return {'usable': bool(valid), 'clean_production_branch': False,
+        'basis': audit.get('classification'), 'classification_sha256': sha(path) if path.exists() else None,
+        'formal_status': 'RESOURCE_HARD_STOP', 'resource_acceptance': 'FAIL'}
+
+
+def compare_numerical_dt(a, z):
+    comparison = compare_dt(a, z)
+    original_formal = comparison['checks'].pop('both_full_micro_PASS')
+    bases = {report['branch']: numerical_dt_basis(report) for report in (a,z)}
+    comparison['checks']['both_numerical_trajectories_valid'] = all(
+        basis['usable'] for basis in bases.values())
+    comparison.update(status='PASS' if all(comparison['checks'].values()) else 'MATERIAL_DIFFERENCE',
+        both_formal_branches_PASS=original_formal, numerical_validity_basis=bases,
+        formal_resource_results_unchanged=True, frozen_quantitative_criteria_unchanged=True)
+    return comparison
 
 
 def select_dt():
@@ -602,13 +713,18 @@ def select_dt():
         if not a.get('metrics', {}).get('first_contact_completed_time_s') or not z.get('metrics', {}).get('first_contact_completed_time_s'):
             comparisons.append({'status': 'MATERIAL_DIFFERENCE', 'branches': [coarse, fine], 'reason': 'Contact response evidence absent'})
             continue
-        comparison = compare_dt(a, z)
+        comparison = compare_numerical_dt(a, z)
         comparisons.append(comparison)
         if comparison['status'] == 'PASS':
-            selected = coarse
+            # Numerical completeness can support convergence, but production
+            # still requires a clean formal PASS branch with its native checkpoint.
+            selected = coarse if a['status'] == 'PASS' else fine if z['status'] == 'PASS' else None
+            if selected is None:
+                continue
             break
     if selected:
-        status, reason = 'PASS', 'Largest timestep meeting all predeclared gates against the next factor-two refinement.'
+        status, reason = 'PASS', ('Largest clean formal PASS timestep supported by an adjacent factor-two '
+            'comparison meeting all predeclared numerical gates; resource-aborted branches are reference evidence only.')
     elif reports['micro6p25']:
         status, reason = 'FAIL', '12.5us versus6.25us did not meet adequate convergence; no smaller dt is authorized automatically.'
     else:

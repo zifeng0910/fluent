@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-10-05T11:15:14.122008+00:00",
+  "status": "PASS",
+  "diagnostic_only": true,
+  "branch": "micro6p25",
+  "time_range_s": [
+    0.00175,
+    0.0019
+  ],
+  "outputs": {
+    "timelines": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_25us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_12p5us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\tilt_timeline_6p25us.csv"
+    ],
+    "common_time_csv": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\common_time_12p5_vs_6p25.csv",
+    "cumulative_normal_impulse_csv": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_vs_time.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_12p5us.csv",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_normal_impulse_6p25us.csv"
+    ],
+    "cumulative_angular_impulse_csv": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\offline_diagnostics\\cumulative_angular_impulse_vs_time.csv"
+    ],
+    "plots": [
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_tilt_vs_time.png",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_gap_vs_time.png",
+      "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_cumulative_impulse_vs_time.png"
+    ],
+    "motion_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_motion_1p75_to_1p90ms.gif",
+    "contact_closeup_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_contact_closeup_1p75_to_1p90ms.gif",
+    "velocity_gif": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_velocity_1p75_to_1p90ms.gif",
+    "final_frame_png": "H:\\fluent\\evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\benchmark_D_micro6p25_1p90ms_final_frame.png",
+    "velocity_gif_source": "actual saved FieldData snapshots",
+    "gif_frame_counts": {
+      "motion": 25,
+      "closeup": 25,
+      "velocity": 25
+    },
+    "fixed_velocity_scale_m_s": [
+      0.0,
+      1.7822712659835815
+    ]
+  },
+  "gif_frame_counts": {
+    "motion": 25,
+    "closeup": 25,
+    "velocity": 25
+  },
+  "actual_geometry_and_fielddata_only": true,
+  "sha256": {
+    "benchmark_D_micro6p25_motion_1p75_to_1p90ms.gif": "b498de18e4f55758cd9492f0d2ca981b2b031fb45b0d010d923699a6006da4cb",
+    "benchmark_D_micro6p25_contact_closeup_1p75_to_1p90ms.gif": "e9aaaec425def31d3e54fb833c7998de5c7066eeafe6d95ba41a0eb0e420ea92",
+    "benchmark_D_micro6p25_velocity_1p75_to_1p90ms.gif": "c6e14800bb48acca599fcd1e151d71130577fa7d744a4d63232cf104f7ab6e49",
+    "benchmark_D_micro6p25_1p90ms_final_frame.png": "fc1848e7714e1bf9ce3cd3fb5265e47808677d7a518711fc5f84e934bdb69fd2"
+  },
+  "visual_review": "visual_review.json",
+  "visual_review_sha256": "915bc79ca642d954f76a8790891f5deb0249e452941e3311f7cd357b4d08c227"
+}

@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "diagnostic_only": true,
+  "frames": {
+    "motion": {
+      "first": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\motion_first_000.png",
+        "frame_index": 0
+      },
+      "pre_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\motion_pre_response_009.png",
+        "frame_index": 9
+      },
+      "first_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\motion_first_response_011.png",
+        "frame_index": 11
+      },
+      "post_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\motion_post_response_012.png",
+        "frame_index": 12
+      },
+      "last": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\motion_last_024.png",
+        "frame_index": 24
+      }
+    },
+    "contact_closeup": {
+      "first": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\contact_closeup_first_000.png",
+        "frame_index": 0
+      },
+      "pre_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\contact_closeup_pre_response_009.png",
+        "frame_index": 9
+      },
+      "first_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\contact_closeup_first_response_011.png",
+        "frame_index": 11
+      },
+      "post_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\contact_closeup_post_response_012.png",
+        "frame_index": 12
+      },
+      "last": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\contact_closeup_last_024.png",
+        "frame_index": 24
+      }
+    },
+    "velocity": {
+      "first": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\velocity_first_000.png",
+        "frame_index": 0
+      },
+      "pre_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\velocity_pre_response_009.png",
+        "frame_index": 9
+      },
+      "first_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\velocity_first_response_011.png",
+        "frame_index": 11
+      },
+      "post_response": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\velocity_post_response_012.png",
+        "frame_index": 12
+      },
+      "last": {
+        "path": "evidence\\benchmark_D_native_contact_overnight\\diagnostic_visuals\\review_frames\\velocity_last_024.png",
+        "frame_index": 24
+      }
+    }
+  },
+  "reviewed_with": "view_image",
+  "visual_review_timestamp": "2026-10-05T00:00:00Z",
+  "checks": {
+    "robot_visible": true,
+    "pipe_visible": true,
+    "actual_orientation_change_visible": true,
+    "motion_nonblank": true,
+    "velocity_nonblank": true,
+    "frame_order_correct": true,
+    "overlay_readable": true,
+    "gap_overlay_plausible": true,
+    "no_fake_penetration_claim": true,
+    "fixed_velocity_scale_readable": true
+  },
+  "review_note": "All first, pre-response, first-response, post-response and last frames were extracted and inspected via montage; visuals are diagnostic micro6p25 1.750\u20131.900 ms only."
+}

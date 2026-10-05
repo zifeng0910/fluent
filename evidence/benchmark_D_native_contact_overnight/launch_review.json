@@ -1,18 +1,18 @@
 {
   "status": "PASS",
-  "timestamp": "2026-10-05T02:48:17.531003+00:00",
+  "timestamp": "2026-10-05T07:10:47.792755+00:00",
   "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
   "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
   "supporting_code_sha256": {
     "scripts/benchmark_D_native_contact_overnight_common.py": "4609a4f0f5d6121f3b58cd34acdd36f9a6fbc6d026879673b8cd7e98fafca68d",
     "scripts/benchmark_D_native_contact_overnight_prepare.py": "47f0b394b371943be685ab7a07df6b907427f346b045ebeeedeca74a32780b22",
     "scripts/benchmark_D_native_contact_overnight_arm.py": "b4719f021049b9a878946c8cc9ffba13e80478f94e8bab6bd8d77b153b7e92dc",
-    "scripts/benchmark_D_native_contact_overnight_supervisor.py": "31bf5c20e294b1564fe798497e0c440a986f58aab492e678e8ddcbe8b34b1b9b",
+    "scripts/benchmark_D_native_contact_overnight_supervisor.py": "f32779ab602943eb0e42111749c9a236b0e407f429e9db300108b533680e6b9c",
     "scripts/benchmark_D_native_contact_overnight_worker.py": "5b4a99a465ab5d2dd40b3ed4db8385e2db39e69a4d6703ad1b91a43bdbe43956",
-    "scripts/benchmark_D_native_contact_overnight_review.py": "6ac5e4a4b78c6e5f6a780c21cb31289e22184756f02f801fed330e02d520607e",
+    "scripts/benchmark_D_native_contact_overnight_review.py": "e4701104f095f1c41f915e04dfee12e54f1a71d150dd0a276b3306bfc3e8160c",
     "scripts/benchmark_D_native_contact_overnight_render.py": "abe82c82c70af6e8b6e60af0b2088775ed01523d1e7d7c014671e9c279d42c97",
     "scripts/run_benchmark_D_native_contact_overnight.ps1": "9cabd51552f59868a3f78beae6835600390bf5334dc2b1ec2ea1fc715d3ead8d",
-    "scripts/test_benchmark_D_native_contact_overnight_control.py": "cdd4fba6d546cc6533a5868db5a9fb32c2b6c6dbb231b5799f136f382403957d",
+    "scripts/test_benchmark_D_native_contact_overnight_control.py": "244c639b3582047fcffd7a799646bcd39e400a1aff003899e477b25bcf919ea9",
     "fluent_udf/l2300_native_contact_overnight.c": "a84cfd0f84b03eacb5034076083d394671e6cb75e3ed32b0bd7d6a0bd2e3890f",
     "scripts/benchmark_D_native_contact_overnight_control_repair.py": "4e7d0528418e4a4a9faba4ce28ea05f2b795ead14c5d20f1cdce8d20b022618c",
     "scripts/test_benchmark_D_native_contact_overnight_fallback.py": "f5f3ace2fa82b4f37212ebed665c7a85b2f7af64ac15ad6a862b96ced2fb7648",
@@ -20,9 +20,10 @@
     "scripts/benchmark_D_native_contact_overnight_capability_upgrade.py": "efc604b30d389f127df7ad15215cb28fafae7c56768b9e78e2c3e5762c4f8cf2",
     "scripts/benchmark_D_native_contact_overnight_activation_audit.py": "4897a134bb946fe734fa6bac4233b4f9ddd69bf1a161b9828af696816a8c0e4e",
     "scripts/benchmark_D_native_contact_overnight_fallback.py": "754fd5c6366f61e4a86823c8e4b020a3b22f050b46d2e9da8fbde103a2261af9",
-    "scripts/benchmark_D_native_contact_overnight_owned_exit_review.py": "e352c95aed0a418c3a4bf08458730da3abc350b88e6e28bd6db6afb66100b165"
+    "scripts/benchmark_D_native_contact_overnight_owned_exit_review.py": "e352c95aed0a418c3a4bf08458730da3abc350b88e6e28bd6db6afb66100b165",
+    "scripts/benchmark_D_native_contact_overnight_offline_diagnostics.py": "0358c649efe85d129059dd1064032bd57fdfe2454a4072e966a43b346d4f54cc"
   },
-  "control_validation_sha256": "2e17000436faa4547e1b4e216794947c89fa28d8a20a9fd8a764ccb7fcca18b9",
+  "control_validation_sha256": "244c639b3582047fcffd7a799646bcd39e400a1aff003899e477b25bcf919ea9",
   "source_review_sha256": "8d580dca7b1671eeba5889c6fd7cc5c2a2940e86a1b033869646606b83250973",
   "prior_semantics_reused_not_reopened": true,
   "full_UDF_compile_pending_actual_owned_Fluent": true,
@@ -31,5 +32,11 @@
   "repair_review": "control_repairs/0001_journal_collision/review.json",
   "conditional_route_capability_review": "control_repairs/0002_conditional_route_capability/review.json",
   "test_isolation_review": "control_repairs/0002_conditional_route_capability/test_isolation_review.json",
-  "owned_exit_capability_review": "control_repairs/0003_transient_exit_busy/review.json"
+  "owned_exit_capability_review": "control_repairs/0003_transient_exit_busy/review.json",
+  "resource_stop_numerical_classification_review": "resource_recovery_review/selection_control_validation.json",
+  "resource_stop_formal_result_preserved": true,
+  "frozen_dt_tolerances_unchanged": true,
+  "offline_diagnostics_reviewed": true,
+  "offline_diagnostics_script_sha256": "0358c649efe85d129059dd1064032bd57fdfe2454a4072e966a43b346d4f54cc",
+  "no_solver_connection_for_offline_diagnostics": true
 }

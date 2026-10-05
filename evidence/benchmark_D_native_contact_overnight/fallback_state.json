@@ -1,0 +1,25 @@
+{
+  "status": "STOPPED_BY_DT_GATE",
+  "timestamp": "2026-10-05T11:22:54.554108+00:00",
+  "helper_identity": {
+    "pid": 13008,
+    "created": 1791195621.4624236,
+    "name": "pythonw.exe"
+  },
+  "active_job": null,
+  "last_job": "load_reference25",
+  "returncode": 0,
+  "last_child_identity": {
+    "pid": 36696,
+    "created": 1791195622.1274588,
+    "branch": "load_reference25",
+    "timestamp": "2026-10-05T10:20:28.568727+00:00",
+    "name": "pythonw.exe"
+  },
+  "reason": "RuntimeError('STOP_REQUESTED_AT_NATIVE_BOUNDARY')",
+  "solver_alive": false,
+  "worker_alive": false,
+  "current_state_is_historical_incident_record": true,
+  "production_allowed": false,
+  "new_fallback_launch_forbidden": true
+}

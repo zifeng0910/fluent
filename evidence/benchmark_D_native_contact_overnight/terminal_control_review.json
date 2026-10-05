@@ -1,8 +1,8 @@
 {
   "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
-  "timestamp": "2026-10-05T05:59:40.925670+00:00",
+  "timestamp": "2026-10-05T11:23:48.829337+00:00",
   "status": "PASS_SAFE_TERMINAL_CONTROL",
-  "campaign_status": "HARD_BLOCKER",
+  "campaign_status": "DT_CONVERGENCE_NOT_REACHED",
   "registered_processes_absent": [
     44428,
     25644,
@@ -30,5 +30,14 @@
   "resource_failure_preserved": true,
   "no_new_solver_or_dynamics": true,
   "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
-  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b"
+  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+  "final_status": "DT_CONVERGENCE_NOT_REACHED",
+  "worker_and_supervisor_currently_absent": true,
+  "solver_currently_absent": true,
+  "windows_task_current_state": "Disabled",
+  "fallback_currently_not_running": true,
+  "production_not_started": true,
+  "dt_convergence_failure_only_impulse_count": true,
+  "current_blocker": "Frozen 12.5us versus 6.25us convergence failed solely at impulse-count gate (7 versus 14; allowance 3).",
+  "historical_incident_preserved": "resource_recovery_review/unauthorized_fallback_stop.json"
 }

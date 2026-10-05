@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-05T10:29:19.587620+00:00",
+  "reason": "DT_CONVERGENCE_NOT_REACHED",
+  "stop_request": {
+    "timestamp": "2026-10-05T10:24:31.916822+00:00",
+    "reason": "DT_CONVERGENCE_NOT_REACHED",
+    "source": "explicit continuation prompt",
+    "do_not_run_finer_or_fallback_route": true
+  },
+  "fallback_result": {
+    "status": "HARD_BLOCKER",
+    "timestamp": "2026-10-05T10:26:34.462150+00:00",
+    "reason": "RuntimeError('STOP_REQUESTED_AT_NATIVE_BOUNDARY')",
+    "traceback": "Traceback (most recent call last):\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_fallback.py\", line 754, in main\n    elif a.run:result=run()\n                      ~~~^^\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_fallback.py\", line 687, in run\n    ref=run_branch('load_reference'+label,dt,0)\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_fallback.py\", line 339, in run_branch\n    job(['--branch', name], name, worker=True)\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_fallback.py\", line 317, in job\n    deadline()\n    ~~~~~~~~^^\n  File \"H:\\fluent\\scripts\\benchmark_D_native_contact_overnight_fallback.py\", line 156, in deadline\n    raise RuntimeError('STOP_REQUESTED_AT_NATIVE_BOUNDARY')\nRuntimeError: STOP_REQUESTED_AT_NATIVE_BOUNDARY\n",
+    "solver_alive": false
+  },
+  "fallback_branch": "load_reference25",
+  "fallback_completed_new_steps": 0,
+  "solver_alive": false,
+  "production_allowed": false,
+  "historical_micro6p25_pass_preserved": true,
+  "no_finer_dt_run": true
+}

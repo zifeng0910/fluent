@@ -1,0 +1,39 @@
+{
+  "status": "DT_CONVERGENCE_NOT_REACHED",
+  "timestamp": "2026-10-05T11:22:54.554108+00:00",
+  "supervisor_alive": false,
+  "supervisor_pid": 37980,
+  "supervisor_created": 1791195550.2129471,
+  "active_job": null,
+  "seconds_to_hard_deadline": 11681.650278568268,
+  "readiness": "Verified worker/report/source artifacts are being staged",
+  "worker_state": {
+    "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+    "status": "AWAITING_OFFLINE_BRANCH_REVIEW",
+    "timestamp": "2026-10-05T10:11:04.356235+00:00",
+    "branch": "micro6p25",
+    "worker_pid": 27352,
+    "worker_created": 1791185235.218991,
+    "worker_alive": true,
+    "solver_alive": true,
+    "completed_new_steps": 24,
+    "current_time_s": 0.0019,
+    "target_new_steps": 24
+  },
+  "worker_alive": false,
+  "solver_alive": false,
+  "terminal_reason": "Frozen timestep convergence failed solely at impulse-count gate; fallback and production forbidden.",
+  "historical_worker_state": {
+    "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+    "status": "AWAITING_OFFLINE_BRANCH_REVIEW",
+    "timestamp": "2026-10-05T10:11:04.356235+00:00",
+    "branch": "micro6p25",
+    "worker_pid": 27352,
+    "worker_created": 1791185235.218991,
+    "worker_alive": true,
+    "solver_alive": true,
+    "completed_new_steps": 24,
+    "current_time_s": 0.0019,
+    "target_new_steps": 24
+  }
+}

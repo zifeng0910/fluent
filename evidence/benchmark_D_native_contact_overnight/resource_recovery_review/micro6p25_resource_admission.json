@@ -1,0 +1,192 @@
+{
+  "status": "PASS_60_SECONDS",
+  "stable_seconds": 60,
+  "samples": [
+    {
+      "timestamp": "2026-10-05T07:23:18.5790912Z",
+      "available_gib": 15.578,
+      "commit_headroom_gib": 25.287,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:20.7282108Z",
+      "available_gib": 15.529,
+      "commit_headroom_gib": 25.251,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:22.8675383Z",
+      "available_gib": 15.523,
+      "commit_headroom_gib": 25.244,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:25.0111556Z",
+      "available_gib": 15.525,
+      "commit_headroom_gib": 25.24,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:27.1742760Z",
+      "available_gib": 15.519,
+      "commit_headroom_gib": 25.229,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:29.3237957Z",
+      "available_gib": 15.51,
+      "commit_headroom_gib": 25.225,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:31.4704905Z",
+      "available_gib": 15.499,
+      "commit_headroom_gib": 25.251,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:33.6196205Z",
+      "available_gib": 15.475,
+      "commit_headroom_gib": 25.226,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:35.7528800Z",
+      "available_gib": 15.45,
+      "commit_headroom_gib": 25.198,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:37.9091449Z",
+      "available_gib": 15.428,
+      "commit_headroom_gib": 25.161,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:40.0510937Z",
+      "available_gib": 15.415,
+      "commit_headroom_gib": 25.162,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:42.2088883Z",
+      "available_gib": 15.397,
+      "commit_headroom_gib": 25.137,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:44.3686699Z",
+      "available_gib": 15.39,
+      "commit_headroom_gib": 25.108,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:46.5082539Z",
+      "available_gib": 15.371,
+      "commit_headroom_gib": 25.099,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:48.6399269Z",
+      "available_gib": 15.335,
+      "commit_headroom_gib": 25.068,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:50.7924051Z",
+      "available_gib": 15.313,
+      "commit_headroom_gib": 25.008,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:52.9290038Z",
+      "available_gib": 15.27,
+      "commit_headroom_gib": 24.971,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:55.0677379Z",
+      "available_gib": 15.27,
+      "commit_headroom_gib": 24.99,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:57.2231933Z",
+      "available_gib": 15.248,
+      "commit_headroom_gib": 24.96,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:23:59.3687928Z",
+      "available_gib": 15.247,
+      "commit_headroom_gib": 24.965,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:01.5466513Z",
+      "available_gib": 15.074,
+      "commit_headroom_gib": 24.763,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:03.6928521Z",
+      "available_gib": 15.123,
+      "commit_headroom_gib": 24.839,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:05.8555418Z",
+      "available_gib": 15.101,
+      "commit_headroom_gib": 24.827,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:08.0088310Z",
+      "available_gib": 15.096,
+      "commit_headroom_gib": 24.828,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:10.1684619Z",
+      "available_gib": 15.088,
+      "commit_headroom_gib": 24.817,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:12.3065416Z",
+      "available_gib": 15.057,
+      "commit_headroom_gib": 24.78,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:14.4477278Z",
+      "available_gib": 14.95,
+      "commit_headroom_gib": 24.672,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:16.5950229Z",
+      "available_gib": 14.937,
+      "commit_headroom_gib": 24.638,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:18.7251371Z",
+      "available_gib": 14.919,
+      "commit_headroom_gib": 24.627,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:20.8678395Z",
+      "available_gib": 14.931,
+      "commit_headroom_gib": 24.652,
+      "disk_free_gib": 183.055
+    },
+    {
+      "timestamp": "2026-10-05T07:24:23.0257595Z",
+      "available_gib": 14.916,
+      "commit_headroom_gib": 24.617,
+      "disk_free_gib": 183.055
+    }
+  ]
+}

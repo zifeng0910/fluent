@@ -1,0 +1,178 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "status": "INCOMPLETE",
+  "final_status": "HARD_BLOCKER",
+  "timestamp": "2026-10-05T05:59:40.925670+00:00",
+  "route": "NATIVE_OVERWRITE",
+  "micro25": "PASS",
+  "micro12p5": "FAIL_RESOURCE_HARD_STOP",
+  "micro6p25": "NOT_RUN",
+  "selected_dt_s": null,
+  "selection_reason": "Full micro12p5 resource/checkpoint/completion gates failed; frozen acceptance has not passed",
+  "production_restart_s": null,
+  "final_time_s": 0.0019,
+  "full_2ms_numerical": "INCOMPLETE",
+  "numerical_gates": {
+    "restart_continuity": true,
+    "actual_magnetic_law": true,
+    "checkpoint_integrity": false,
+    "owned_engine_closed": true,
+    "prefix_checkpoint_integrity": true,
+    "resource_history": false,
+    "completed_branch_result": false,
+    "contact_response_and_dedup": true,
+    "precontact_C_vs_D": true,
+    "target_time_reached": true,
+    "finite": true,
+    "cell_count": true,
+    "orphan_zero": true,
+    "invalid_donors_zero": true,
+    "unidentified_zero": true,
+    "positive_volume": true,
+    "quaternion": true,
+    "actual_time_sequence": true,
+    "penetration": true
+  },
+  "metrics": {
+    "first_contact_callback_time_s": 0.0018125000000000005,
+    "first_contact_completed_time_s": 0.0018250000000000004,
+    "first_contact_point_m": [
+      0.002054816445646657,
+      -0.0008461483872996205,
+      0.0002967033422284894
+    ],
+    "first_contact_normal": [
+      -0.00021384832788785997,
+      0.9453948830818396,
+      -0.32592709201839537
+    ],
+    "first_contact_actual_mesh_gap_m": 9.765586470329496e-05,
+    "first_contact_tilt_rad": 0.41377177704382434,
+    "first_contact_omega_rad_s": [
+      45.47963595468109,
+      -265.84443299888545,
+      -849.5203678120664
+    ],
+    "first_impulse_N_s": 2.5407402357601473e-06,
+    "physical_impulse_application_count": 7,
+    "contact_episode_count": 1,
+    "separation_count": 0,
+    "recontact_count": 0,
+    "separation_times_s": [],
+    "episode_definition": "Adjacent impulse boundaries separated by <=1.5dt constitute one native proximity-contact episode; callbacks within a boundary are deduplicated.",
+    "contact_geometry_note": "Native threshold remains100um: first callback may be at positive gap. Callback CURRENT_TIME is start boundary and mesh vertices belong to that boundary; completed contact response occurs one dt later.",
+    "minimum_signed_gap_m": 9.765585071986357e-05,
+    "maximum_penetration_m": 0.0,
+    "maximum_penetration_time_s": 0.001750000000000001,
+    "peak_impulse_N_s": 2.5407402357601473e-06,
+    "maximum_tilt_rad": 0.4335430173081743,
+    "maximum_tilt_deg": 24.840185129125587,
+    "peak_omega_rad_s": 873.6375862613057,
+    "COM_displacement_from_restart_m": [
+      -1.6536599912310521e-06,
+      2.4617344716797816e-05,
+      -8.4556050935624e-06
+    ],
+    "maximum_lateral_displacement_from_restart_m": 2.6029039905534966e-05,
+    "final_COM_m": [
+      0.001202059728231191,
+      2.548983085379108e-05,
+      -8.791274104451692e-06
+    ],
+    "final_Q_wxyz": [
+      0.9765519473776979,
+      0.009371641736240116,
+      -0.07182259250369726,
+      -0.2027313039716397
+    ],
+    "final_v_m_s": [
+      -0.02040951258877126,
+      0.2924521338412675,
+      -0.1002816506743224
+    ],
+    "final_omega_rad_s": [
+      44.2196687104958,
+      -89.23094923251794,
+      -364.2793870531261
+    ]
+  },
+  "numerical_peaks": {
+    "orphan_peak": 0,
+    "invalid_donor_peak": 0,
+    "minimum_volume_m3": 6.100596812042791e-17,
+    "maximum_q_norm_error": 1.1102230246251565e-16
+  },
+  "resource_summary": {
+    "timestamp": "2026-10-05T05:11:17.563867+00:00",
+    "samples": 1030,
+    "peak_project_working_set_gib": 8.779808044433594,
+    "peak_project_private_bytes_gib": 15.880390167236328,
+    "peak_system_commit_percent": 95.76723103798798,
+    "minimum_available_gib": 4.814655303955078,
+    "abort": "RESOURCE_HARD_STOP"
+  },
+  "emergency_1p9ms_checkpoint": {
+    "status": "CHECKPOINT_BYTES_HDF5_AND_SAVED_STATE_PASS",
+    "timestamp": "2026-10-05T05:37:19.961410+00:00",
+    "time_s": 0.0019,
+    "case": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.dat.h5",
+    "case_sha256": "19dfebfa9bd5b67fca3d861af83fa87b4dca8eddd35d557d4954c8c03284f83b",
+    "data_sha256": "462e3f38949528c11fba41b6cb8213ea4b9ab87feb30580d02d51dac7ddbfd11",
+    "case_size_bytes": 109633904,
+    "data_size_bytes": 561044835,
+    "saved_native_state": {
+      "com": [
+        0.001202059728231191,
+        2.548983085379108e-05,
+        -8.791274104451692e-06
+      ],
+      "q": [
+        0.9765519473776979,
+        0.009371641736240116,
+        -0.07182259250369726,
+        -0.2027313039716397
+      ],
+      "velocity": [
+        -0.02040951258877126,
+        0.2924521338412675,
+        -0.1002816506743224
+      ],
+      "omega": [
+        44.2196687104958,
+        -89.23094923251794,
+        -364.2793870531261
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.4339609673712274,
+        "axis": [
+          0.043531954977932004,
+          -0.3336211467814477,
+          -0.941701597809004
+        ]
+      }
+    },
+    "saved_dynamic_audit_PASS": true,
+    "zero_step_reloaded_in_new_Fluent": false,
+    "not_a_full_micro_branch_PASS": true,
+    "resource_failure_preserved": true,
+    "owned_solver_closure_PASS": true
+  },
+  "owned_solver_closure": "PASS",
+  "motion_GIF": null,
+  "velocity_GIF": null,
+  "closeup_GIF": null,
+  "final_PNG": null,
+  "visual_review_status": "NOT_READY",
+  "current_blocker": "System commit reached 95.767% during the final timestep, triggering the frozen 95% guard. Emergency native state at 1.900 ms is preserved; full branch acceptance and production dt selection remain blocked.",
+  "next_action": "Release confirmed unnecessary application commit, then review native zero-step checkpoint recovery under same window; no replay of micro25 and no resource threshold waiver",
+  "window_id": "native_contact_1791164478",
+  "original_deadlines_preserved": true,
+  "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+  "no_fallback_activation": true,
+  "no_full_2ms_or_visual_PASS_claim": true,
+  "windows_task_status": "DISABLED",
+  "heartbeat_status": "PAUSED",
+  "terminal_control_review": "terminal_control_review.json",
+  "contact_dt_selection": "contact_dt_selection.json"
+}
