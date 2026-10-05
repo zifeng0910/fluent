@@ -3,10 +3,72 @@ import json, msvcrt, os, subprocess, sys, time, traceback
 import psutil
 from benchmark_D_native_contact_overnight_common import *
 
-TERMINAL={'COMPLETE','HARD_BLOCKER','TIME_BUDGET_EXHAUSTED'}
+TERMINAL={'COMPLETE','HARD_BLOCKER','TIME_BUDGET_EXHAUSTED','STOPPED_RESOURCE_BLOCKER'}
 WORKER='scripts/benchmark_D_native_contact_overnight_worker.py'
 REVIEW='scripts/benchmark_D_native_contact_overnight_review.py'
 RENDER='scripts/benchmark_D_native_contact_overnight_render.py'
+FALLBACK='scripts/benchmark_D_native_contact_overnight_fallback.py'
+EXIT_REVIEW='scripts/benchmark_D_native_contact_overnight_owned_exit_review.py'
+
+def verified_completion_result(report):
+    """The visual gate cannot relabel a LOAD result as native overwrite."""
+    gates=report.get('numerical_gates',{})
+    if not gates or not all(value is True for value in gates.values()):
+        raise RuntimeError('Full numerical gates are required before COMPLETE')
+    route=report.get('route')
+    required=('dt_selected','selected_micro_PASS','production_PASS','final_time_2ms',
+        'production_inherits_selected_D_checkpoint','same_production_dt') if route=='NATIVE_OVERWRITE' else (
+        'selected_contact_dt_PASS','full_selected_branch_PASS','actual_native_2ms',
+        'controlled_load_response_PASS','native_2ms_checkpoint_PASS','owned_engine_closed')
+    if not all(gates.get(key) is True for key in required):
+        raise RuntimeError('Route-specific full numerical gates are required')
+    for key,target in [('checkpoint_1p9ms',.0019),('checkpoint_2ms',.002)]:
+        cp=report.get(key,{})
+        if cp.get('status')!='PASS' or abs(cp.get('time_s',0)-target)>1e-12:
+            raise RuntimeError('Verified1.9ms/2ms native checkpoints are required')
+    if route=='NATIVE_OVERWRITE' and report.get('status')=='BENCHMARK_D_NATIVE_CONTACT_2MS_PASS':
+        return 'BENCHMARK_D_NATIVE_CONTACT_2MS_PASS'
+    if route in {'SDOF_LOAD_PATH','COMPLIANT_LOAD_PATH'} and report.get('status')=='NUMERICAL_PASS':
+        controlled=read(EVID/'fallback_controlled_validation.json')
+        if controlled.get('status')!='PASS' or not gates.get('controlled_load_response_PASS'):
+            raise RuntimeError('Measured controlled LOAD response is required')
+        if report.get('checkpoint_2ms',{}).get('status')!='PASS':
+            raise RuntimeError('Verified native2ms checkpoint is required')
+        return 'BENCHMARK_D_'+('SDOF_LOAD_CONTACT' if route=='SDOF_LOAD_PATH' else 'COMPLIANT_LOAD_CONTACT')+'_2MS_PASS'
+    raise RuntimeError('Unverified route/result combination cannot become COMPLETE')
+
+def live_fallback_worker():
+    """A dead controller does not imply its resource-waiting worker is dead."""
+    matches=[]
+    for path in (EVID/'branches').glob('*/worker_identity.json'):
+        config=read(path.parent/'configuration.json')
+        if config.get('route') not in {'SDOF_LOAD_PATH','COMPLIANT_LOAD_PATH'}:continue
+        rec=read(path);rec.setdefault('name','pythonw.exe')
+        process=identity(rec)
+        if not process:continue
+        if not any(Path(part).name==Path(WORKER).name for part in process.cmdline()):
+            raise RuntimeError('Registered fallback worker command mismatch')
+        matches.append(dict(rec,kind='fallback_worker',job=WORKER,branch=path.parent.name,
+            key='adopted_fallback_worker_'+str(rec['pid']),started=stamp()))
+    if len(matches)>1:raise RuntimeError('Multiple live fallback workers; no new launch allowed')
+    return matches[0] if matches else None
+
+def resume_fallback_controller(previous):
+    """Resume an idempotent pipeline only after its exact child has closed."""
+    if live_fallback_worker() or native():
+        raise RuntimeError('Fallback child/engine is still active')
+    history=read(EVID/'fallback_controller_recovery_history.json',{'repairs':[]})
+    if len(history['repairs'])>=read(EVID/'configuration.json')['max_lifecycle_restarts']:
+        fail('Fallback controller lifecycle recoveries exhausted',failure_class='WORKER_LIFECYCLE_TERMINATION')
+        return None
+    review=dict(timestamp=stamp(),previous_controller=previous,
+        failure_class='WORKER_LIFECYCLE_TERMINATION',
+        concrete_change='Resume reviewed idempotent helper after existing child closure; retain completed branch results and latest native checkpoints',
+        no_active_fallback_worker=True,no_native_engine=True,window_sha256=sha(EVID/'window.json'))
+    history['repairs'].append(review);atomic(EVID/'fallback_controller_recovery_history.json',history)
+    event('FALLBACK_CONTROLLER_RECOVERY_REVIEWED',review=review)
+    state('FALLBACK_LOAD_VALIDATION',route=read(EVID/'state.json').get('route','SDOF_LOAD_PATH'))
+    return launch('fallback',FALLBACK,['--run'])
 
 def control(status,**data):
     r=read(EVID/'supervisor_state.json');r.update(status=status,timestamp=stamp(),
@@ -28,7 +90,7 @@ def checked_code(path):
 
 def launch(kind,job,args,branch=None):
     checked_code(job)
-    if kind=='worker' and native():raise RuntimeError('Existing native engine: second launch refused')
+    if kind in {'worker','fallback'} and native():raise RuntimeError('Existing native engine: second launch refused')
     key=f'{kind}_{branch or "campaign"}_{int(time.time()*1000)}'
     logs=EVID/'jobs';logs.mkdir(exist_ok=True)
     stdout=(logs/(key+'_stdout.log')).open('a');stderr=(logs/(key+'_stderr.log')).open('a')
@@ -43,11 +105,12 @@ def launch(kind,job,args,branch=None):
     return p,item
 
 def result_for(job):
-    if job['kind']=='worker':return read(EVID/'branches'/job['branch']/'branch_result.json')
+    if job['kind'] in {'worker','fallback_worker'}:return read(EVID/'branches'/job['branch']/'branch_result.json')
     if job['kind']=='review':return read(EVID/'branches'/job['branch']/'review.json')
     if job['kind']=='select':return read(EVID/'contact_dt_selection.json')
     if job['kind']=='final':return read(EVID/'final_report.json')
     if job['kind']=='render':return read(EVID/'render_manifest.json')
+    if job['kind']=='closure':return read(EVID/'branches'/job['branch']/'recovery_process_review.json')
     return {}
 
 def lifecycle_recovery(branch):
@@ -82,7 +145,8 @@ def lifecycle_recovery(branch):
     spec=specification(branch);logical=spec.get('logical_branch',branch)
     history=read(EVID/'lifecycle_repair_history.json',{'repairs':[]})
     used=[r for r in history['repairs'] if r['logical_branch']==logical]
-    if len(used)>=read(EVID/'configuration.json')['max_lifecycle_restarts']:return None
+    fallback_restarts=read(EVID/'fallback_state.json').get('lifecycle_restarts',0)
+    if len(history['repairs'])+fallback_restarts>=read(EVID/'configuration.json')['max_lifecycle_restarts']:return None
     pointer=read(b/'latest_verified_checkpoint.json')
     metadata_path=pointer.get('metadata')
     if not metadata_path:return None
@@ -164,7 +228,7 @@ def native_failure(branch,review):
              native_status='NATIVE_MULTI_EVENT_CONTACT_NOT_VIABLE',failure_evidence='native_route_failure.json');return None
     state('FALLBACK_LOAD_VALIDATION',native_status='NATIVE_MULTI_EVENT_CONTACT_NOT_VIABLE',route='SDOF_LOAD_PATH')
     event('ROUTE_SWITCHED',from_route='NATIVE_OVERWRITE',to_route='SDOF_LOAD_PATH',failure_class=cls)
-    return launch('fallback','scripts/benchmark_D_native_contact_overnight_fallback.py',['--run'])
+    return launch('fallback',FALLBACK,['--run'])
 
 def main():
     EVID.mkdir(parents=True,exist_ok=True);OUT.mkdir(parents=True,exist_ok=True)
@@ -190,6 +254,14 @@ def main():
             active=dict(record,kind='worker',job=WORKER,key='adopted_'+str(record['pid']),started=stamp())
             atomic(EVID/'active_job.json',active)
     if active:
+        if active['kind']=='fallback':
+            helper=read(EVID/'fallback_state.json').get('helper_identity',{})
+            if helper and identity(helper):
+                if not any(Path(part).name==Path(FALLBACK).name for part in identity(helper).cmdline()):
+                    raise RuntimeError('Registered fallback helper command mismatch')
+                active.update(launcher_identity={k:active[k] for k in ['pid','created','name']},
+                    **{k:helper[k] for k in ['pid','created','name']})
+                atomic(EVID/'active_job.json',active)
         if active['kind']=='worker':
             registered=read(EVID/'branches'/active['branch']/'worker_identity.json')
             registered.setdefault('name','pythonw.exe')
@@ -214,22 +286,46 @@ def main():
         if active:
             alive=(p.poll() is None) if p is not None else bool(identity(active))
             if alive:
-                if now>=window['hard_deadline_epoch'] and active['kind'] in {'worker','fallback'}:
+                if now>=window['hard_deadline_epoch'] and active['kind'] in {'worker','fallback','fallback_worker'}:
                     atomic(OUT/'stop_request.json',dict(reason='TIME_BUDGET_EXHAUSTED',timestamp=stamp()))
                     state('DEADLINE_GRACEFUL_CHECKPOINT_WAIT',active_branch=active.get('branch'))
-                if active['kind']=='worker':
+                if active['kind'] in {'worker','fallback_worker'}:
                     ws=read(EVID/'branches'/active['branch']/'worker_state.json')
                     control(ws.get('status',status),active_job=active,worker_state=ws)
+                    state(read(EVID/'state.json').get('status',status),active_branch=active['branch'],
+                        current_time_s=ws.get('current_time_s',campaign.get('current_time_s')),
+                        worker_alive=bool(identity(active)),solver_alive=ws.get('solver_alive',False),
+                        worker_status=ws.get('status'),worker_state_timestamp=ws.get('timestamp'))
                 time.sleep(5);continue
             result=result_for(active);returncode=p.returncode if p else active.get('returncode')
             event('JOB_FINISHED',key=active['key'],kind=active['kind'],branch=active.get('branch'),returncode=returncode,result_status=result.get('status'))
             done={**active,'status':'FINISHED','returncode':returncode,'finished':stamp()}
             atomic(EVID/'jobs'/(active['key']+'.json'),done);atomic(EVID/'active_job.json',done)
             kind=active['kind'];branch=active.get('branch');active={};p=None
+            if kind=='fallback':
+                child=live_fallback_worker()
+                if child:
+                    child['previous_controller']=done
+                    active=child;atomic(EVID/'active_job.json',active)
+                    event('SURVIVING_FALLBACK_WORKER_ADOPTED',process_identity=child)
+                    continue
             if native():
+                if kind=='worker' and 'Owned engine not idle after SDK exit' in read(EVID/'branches'/branch/'closure_failure.json').get('error',''):
+                    state('OWNED_EXIT_REVIEW',active_branch=branch,worker_alive=False,solver_alive=True)
+                    p,active=launch('closure',EXIT_REVIEW,['--branch',branch],branch)
+                    continue
                 fail('Native engine remains after registered worker closure; no further solver allowed');continue
             if now>=window['hard_deadline_epoch']:
                 state('TIME_BUDGET_EXHAUSTED',last_completed_result=result,solver_alive=False);continue
+            if kind=='closure':
+                if result.get('status')!='PASS':
+                    fail('Exact owned post-SDK-exit closure did not pass',branch=branch);continue
+                event('OWNED_EXIT_REVIEW_PASS',branch=branch)
+                p,active=launch('review',REVIEW,['--branch',branch],branch);continue
+            if kind=='fallback_worker':
+                recovery=resume_fallback_controller(done.get('previous_controller',done))
+                if recovery:p,active=recovery
+                continue
             if kind=='worker':
                 if not result:
                     recovery=lifecycle_recovery(branch)
@@ -292,7 +388,12 @@ def main():
                 event('VISUAL_REVIEW_READY',manifest='render_manifest.json');continue
             if kind=='fallback':
                 fallback=read(EVID/'fallback_result.json')
-                if fallback.get('status')!='NUMERICAL_PASS':fail('Fallback stopped at a concrete gate',fallback_result=fallback)
+                if not fallback:
+                    recovery=resume_fallback_controller(done)
+                    if recovery:p,active=recovery
+                elif fallback.get('status') in {'TIME_BUDGET_EXHAUSTED','STOPPED_RESOURCE_BLOCKER'}:
+                    state(fallback['status'],fallback_result=fallback,solver_alive=False,worker_alive=False)
+                elif fallback.get('status')!='NUMERICAL_PASS':fail('Fallback stopped at a concrete gate',fallback_result=fallback)
                 else:
                     state('POSTPROCESS',route=fallback.get('route','SDOF_LOAD_PATH'),numerical_2ms='PASS')
                     p,active=launch('render',RENDER,[])
@@ -310,8 +411,14 @@ def main():
         if status=='VISUAL_REVIEW':
             vr=read(EVID/'visual_review.json')
             if vr.get('status')=='PASS':
-                verify_frozen();state('COMPLETE',result='BENCHMARK_D_NATIVE_CONTACT_2MS_PASS',visual_review='PASS',solver_alive=False)
-                event('COMPLETE');continue
+                if native() or live_fallback_worker():raise RuntimeError('Owned solver/worker closure required before COMPLETE')
+                verify_frozen();report=read(EVID/'final_report.json')
+                completion=verified_completion_result(report)
+                report.update(visual_review_status='PASS',visual_review_timestamp=vr.get('timestamp'),
+                    visual_review_sha256=sha(EVID/'visual_review.json'),completion_result=completion)
+                atomic(EVID/'final_report.json',report)
+                state('COMPLETE',result=completion,route=report['route'],visual_review='PASS',solver_alive=False,worker_alive=False)
+                event('COMPLETE',route=report['route'],result=completion);continue
             if vr.get('status')=='FAIL':fail('Actual visual review failed',visual_review='FAIL');continue
             time.sleep(10);continue
         if status=='DT_SELECTION':

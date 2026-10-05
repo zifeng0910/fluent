@@ -31,12 +31,62 @@ class ControlTests(unittest.TestCase):
                 s.launch('worker',s.WORKER,['--branch','micro25'],'micro25')
             popen.assert_not_called()
 
+    def test_fallback_controller_cannot_launch_with_existing_engine(self):
+        with patch.object(s,'checked_code'),patch.object(s,'native',return_value=[object()]),patch.object(s.subprocess,'Popen') as popen:
+            with self.assertRaisesRegex(RuntimeError,'second launch'):
+                s.launch('fallback',s.FALLBACK,['--run'])
+            popen.assert_not_called()
+
+    def test_completion_preserves_measured_load_route(self):
+        gates={key:True for key in ['selected_contact_dt_PASS','full_selected_branch_PASS','actual_native_2ms',
+            'controlled_load_response_PASS','native_2ms_checkpoint_PASS','owned_engine_closed']}
+        report=dict(route='SDOF_LOAD_PATH',status='NUMERICAL_PASS',numerical_gates=gates,
+            checkpoint_1p9ms={'status':'PASS','time_s':.0019},checkpoint_2ms={'status':'PASS','time_s':.002})
+        with patch.object(s,'read',return_value={'status':'PASS'}):
+            self.assertEqual(s.verified_completion_result(report),'BENCHMARK_D_SDOF_LOAD_CONTACT_2MS_PASS')
+        report['route']='COMPLIANT_LOAD_PATH'
+        with patch.object(s,'read',return_value={'status':'PASS'}):
+            self.assertEqual(s.verified_completion_result(report),'BENCHMARK_D_COMPLIANT_LOAD_CONTACT_2MS_PASS')
+
+    def test_completion_rejects_unmeasured_load_response(self):
+        gates={key:True for key in ['selected_contact_dt_PASS','full_selected_branch_PASS','actual_native_2ms',
+            'controlled_load_response_PASS','native_2ms_checkpoint_PASS','owned_engine_closed']}
+        report=dict(route='SDOF_LOAD_PATH',status='NUMERICAL_PASS',numerical_gates=gates,
+            checkpoint_1p9ms={'status':'PASS','time_s':.0019},checkpoint_2ms={'status':'PASS','time_s':.002})
+        with patch.object(s,'read',return_value={'status':'NOT_REVIEWED'}):
+            with self.assertRaisesRegex(RuntimeError,'Measured controlled'):s.verified_completion_result(report)
+
+    def test_dead_fallback_helper_adopts_resource_waiting_child(self):
+        from unittest.mock import Mock
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);evid=root/'evidence';out=root/'live';b=evid/'branches/load_micro25'
+            b.mkdir(parents=True);out.mkdir()
+            s.atomic(evid/'window.json',{'hard_deadline_epoch':time.time()+600})
+            s.atomic(evid/'state.json',{'status':'FALLBACK_LOAD_VALIDATION','route':'SDOF_LOAD_PATH'})
+            s.atomic(evid/'active_job.json',{'kind':'fallback','key':'dead-helper','pid':123,'created':12.5,'name':'pythonw.exe'})
+            s.atomic(b/'worker_identity.json',{'pid':456,'created':20,'name':'pythonw.exe'})
+            s.atomic(b/'configuration.json',{'route':'SDOF_LOAD_PATH'})
+            s.atomic(b/'worker_state.json',{'status':'RESOURCE_WAIT','solver_alive':False,'worker_alive':True})
+            worker=Mock();worker.cmdline.return_value=['pythonw.exe',s.WORKER]
+            def identity(rec):return worker if rec.get('pid')==456 else None
+            def state(status,**items):
+                record=s.read(evid/'state.json');record.update(status=status,**items);s.atomic(evid/'state.json',record)
+            with patch.object(s,'EVID',evid),patch.object(s,'OUT',out),patch.object(s,'identity',side_effect=identity),\
+                 patch.object(s,'native',return_value=[]),patch.object(s,'event'),patch.object(s,'state',side_effect=state),\
+                 patch.object(s.time,'sleep',side_effect=HaltLoop),patch.object(s.subprocess,'Popen') as popen,\
+                 patch('sys.stdout',sys.stdout),patch('sys.stderr',sys.stderr):
+                with self.assertRaises(HaltLoop):s.main()
+                popen.assert_not_called();sys.stdout.close();sys.stderr.close()
+            active=s.read(evid/'active_job.json')
+            self.assertEqual(active['kind'],'fallback_worker');self.assertEqual(active['pid'],456)
+            self.assertEqual(s.read(evid/'supervisor_state.json')['status'],'RESOURCE_WAIT')
+
     def deadline_running_job(self,kind):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);evid=root/'evidence';out=root/'live';evid.mkdir();out.mkdir()
             s.atomic(evid/'window.json',{'hard_deadline_epoch':time.time()-1})
             s.atomic(evid/'state.json',{'status':'NATIVE_MICRORUN_25US'})
-            s.atomic(evid/'active_job.json',{'kind':kind,'branch':'micro25' if kind=='worker' else None,
+            s.atomic(evid/'active_job.json',{'kind':kind,'branch':'micro25' if kind in {'worker','fallback_worker'} else None,
                 'key':'owned-job','pid':123,'created':12.5,'name':'pythonw.exe'})
             def state(status,**items):
                 record=s.read(evid/'state.json');record.update(status=status,**items);s.atomic(evid/'state.json',record)
@@ -52,6 +102,7 @@ class ControlTests(unittest.TestCase):
 
     def test_deadline_only_requests_owned_worker_checkpoint(self):self.deadline_running_job('worker')
     def test_deadline_also_stops_owned_fallback_without_new_solve(self):self.deadline_running_job('fallback')
+    def test_deadline_stops_detached_fallback_worker(self):self.deadline_running_job('fallback_worker')
 
     def test_resource_failure_does_not_disprove_native_contact(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -1,0 +1,39 @@
+{
+  "status": "WORKER_RUNNING",
+  "timestamp": "2026-10-05T02:48:16.987570+00:00",
+  "supervisor_alive": true,
+  "supervisor_pid": 25608,
+  "supervisor_created": 1791166164.42478,
+  "active_job": {
+    "kind": "worker",
+    "job": "scripts/benchmark_D_native_contact_overnight_worker.py",
+    "branch": "micro25",
+    "pid": 18604,
+    "created": 1791165906.03442,
+    "name": "pythonw.exe",
+    "started": "2026-10-05T02:05:06.028573+00:00",
+    "stdout": "evidence\\benchmark_D_native_contact_overnight\\jobs\\worker_micro25_1791165906016_stdout.log",
+    "stderr": "evidence\\benchmark_D_native_contact_overnight\\jobs\\worker_micro25_1791165906016_stderr.log",
+    "key": "worker_micro25_1791165906016",
+    "launcher_identity": {
+      "pid": 1620,
+      "created": 1791165906.0189445,
+      "name": "pythonw.exe"
+    }
+  },
+  "seconds_to_hard_deadline": 39181.52121114731,
+  "readiness": "Verified worker/report/source artifacts are being staged",
+  "worker_state": {
+    "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+    "status": "WORKER_RUNNING",
+    "timestamp": "2026-10-05T02:45:03.291522+00:00",
+    "branch": "micro25",
+    "worker_pid": 18604,
+    "worker_created": 1791165906.03442,
+    "worker_alive": true,
+    "solver_alive": true,
+    "completed_new_steps": 5,
+    "current_time_s": 0.001875000000000001,
+    "target_new_steps": 6
+  }
+}

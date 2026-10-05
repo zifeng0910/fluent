@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:53:09.907672+00:00",
+  "failure_class": "FUTURE_ROUTE_SCHEMA_AND_CONTROLLER_CHILD_OWNERSHIP",
+  "root_cause": "Fallback result rejected by native-only renderer; COMPLETE mislabeled native; helper death could leave an admitting child; root live flags retained stale admission data",
+  "concrete_change": "Route-specific numerical/render completion gates and exact surviving-child adoption; mirror active worker progress; retain original task/window and same CFD worker",
+  "superseded_controller": {
+    "pid": 25608,
+    "created": 1791166164.42478,
+    "name": "pythonw.exe",
+    "loaded_revision_sha256": "c9dc72c43fb395ae28d62e32771dcf5dd2497166218b5d1fe8e555e9e4e65db1"
+  },
+  "new_controller_sha256": "70ac7c342ea7d613772cb204a6a5343fbe182d86e5f6d62c03ba705a51a2d79a",
+  "existing_worker_and_engine_identities": [
+    {
+      "pid": 18604,
+      "created": 1791165906.03442,
+      "name": "pythonw.exe"
+    },
+    {
+      "pid": 43456,
+      "created": 1791165989.073232,
+      "name": "fl2610.exe"
+    },
+    {
+      "pid": 33516,
+      "created": 1791165976.0536275,
+      "name": "cx2610.exe"
+    },
+    {
+      "pid": 27664,
+      "created": 1791165993.1336467,
+      "name": "fl_mpi2610.exe"
+    }
+  ],
+  "active_worker_inputs_sha256": {
+    "evidence/benchmark_D_native_contact_overnight/branches/micro25/configuration.json": "6d373bb006c6406c4479a4f0e23c6b02a28bc18d40a0c81a7325506acb976c25",
+    "evidence/benchmark_D_native_contact_overnight/configuration.json": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+    "evidence/benchmark_D_native_contact_overnight/window.json": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+    "evidence/benchmark_C_coarse_2ms/checkpoint_0070.json": "506aee8fecb29575d43344fbb924bcc241ab1fb3a786508c6614b97acc1be452",
+    "fluent_udf/l2300_native_contact_overnight.c": "a84cfd0f84b03eacb5034076083d394671e6cb75e3ed32b0bd7d6a0bd2e3890f",
+    "live_cases/benchmark_D_native_contact_overnight/branches/micro25/magnetic_logging_copy.c": "8ac5c11f3de385246de7c89c27c71337e1d392906addb637bdecf21c00e012e7",
+    "live_cases/benchmark_D_native_contact_overnight/branches/micro25/lifecycle_config.h": "d89a78c71931277483a20d43dc9bdf63ef99b308b6619b83b9395e56d301dc6a",
+    "fluent_udf/l2300_contact_impulse_math.h": "8ce912811200649a0e15951d7d3abbe622173c1ef0cc37ded83ca080667ff67a",
+    "scripts/benchmark_D_native_contact_overnight_worker.py": "5b4a99a465ab5d2dd40b3ed4db8385e2db39e69a4d6703ad1b91a43bdbe43956",
+    "scripts/benchmark_D_native_contact_overnight_common.py": "4609a4f0f5d6121f3b58cd34acdd36f9a6fbc6d026879673b8cd7e98fafca68d"
+  },
+  "active_worker_inputs_unchanged": true,
+  "worker_or_engine_termination_authorized": false,
+  "target_process_is_only_exact_superseded_controller": true,
+  "tests": [
+    {
+      "script": "scripts/test_benchmark_D_native_contact_overnight_control.py",
+      "count": 13,
+      "status": "PASS",
+      "returncode": 0,
+      "stderr": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.256s\n\nOK\n"
+    },
+    {
+      "script": "scripts/test_benchmark_D_native_contact_overnight_fallback.py",
+      "count": 3,
+      "status": "PASS",
+      "returncode": 0,
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.489s\n\nOK\n"
+    }
+  ],
+  "renderer_independent_guard_cases": 13,
+  "conditional_fallback_not_activated": true,
+  "no_measured_LOAD_or_full2ms_PASS_claim": true,
+  "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+  "supporting_code_sha256": {
+    "scripts/test_benchmark_D_native_contact_overnight_fallback.py": "f5f3ace2fa82b4f37212ebed665c7a85b2f7af64ac15ad6a862b96ced2fb7648",
+    "fluent_udf/l2300_load_contact_overnight.c": "7475e784542420f87d63d6d186e498735916c1c44e117d8be4983ac72093c81b",
+    "scripts/benchmark_D_native_contact_overnight_capability_upgrade.py": "efc604b30d389f127df7ad15215cb28fafae7c56768b9e78e2c3e5762c4f8cf2",
+    "scripts/benchmark_D_native_contact_overnight_render.py": "abe82c82c70af6e8b6e60af0b2088775ed01523d1e7d7c014671e9c279d42c97",
+    "scripts/benchmark_D_native_contact_overnight_supervisor.py": "70ac7c342ea7d613772cb204a6a5343fbe182d86e5f6d62c03ba705a51a2d79a",
+    "scripts/benchmark_D_native_contact_overnight_activation_audit.py": "4897a134bb946fe734fa6bac4233b4f9ddd69bf1a161b9828af696816a8c0e4e",
+    "scripts/test_benchmark_D_native_contact_overnight_control.py": "cdd4fba6d546cc6533a5868db5a9fb32c2b6c6dbb231b5799f136f382403957d",
+    "scripts/benchmark_D_native_contact_overnight_fallback.py": "117e95c4a4e6ab1d16b9aa475c8e1cdc260fc75f6da432754718d70a19ed0799"
+  },
+  "original_immutable_window_preserved": true,
+  "same_worker_and_native_engines_after_reload": true,
+  "new_supervisor": {
+    "pid": 7932,
+    "created": 1791168500.6983347,
+    "name": "pythonw.exe"
+  },
+  "resume_stdout": "Started Fluent-Benchmark-D-Native-Contact-Overnight.\n",
+  "no_new_solver": true,
+  "post_review_interface_fix": "Fallback numerical consolidation writes evidence only; it cannot reset live VISUAL_REVIEW FSM phase. Actual visual status is preserved.",
+  "test_isolation_review_sha256": "d9379a290a24e8a9365afb9d4cd778348a2384e4544c98cfc25c5a80079d5f4a"
+}

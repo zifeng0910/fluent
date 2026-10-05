@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:47:59.099500+00:00",
+  "source": "evidence/benchmark_D_contact_baseline/fielddata/robot_0000.vtp",
+  "canonical_sha256": "80fc255244829a77caebe14644b0a1e28f00803e28554b8510505116bc7d10b2",
+  "body_points": 47677,
+  "COM_reference_m": [
+    0.0012060186937156343,
+    0.0,
+    0.0
+  ],
+  "body_header": "live_cases/benchmark_D_native_contact_overnight/load_contact_body_points.h",
+  "body_header_sha256": "ed5432eaade429497a8b2eee64b1a647c12c43f3ac9157977e27ffce3531af91",
+  "ideal_tube_radius_m": 0.0009,
+  "examples": [
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/A1/state_0070.json",
+      "time_s": 0.001750000000000001,
+      "analytic_gap_m": 0.00014240885815773228,
+      "exported_gap_m": 0.0001424088811501638,
+      "gap_error_m": 2.2992431526411283e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/A1/state_0071.json",
+      "time_s": 0.001775000000000001,
+      "analytic_gap_m": 0.0001247830369303912,
+      "exported_gap_m": 0.00012478305692151725,
+      "gap_error_m": 1.9991126050562802e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/A1/state_0072.json",
+      "time_s": 0.001800000000000001,
+      "analytic_gap_m": 0.000106739489289222,
+      "exported_gap_m": 0.0001067395026460949,
+      "gap_error_m": 1.335687289938381e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/A1/state_0073.json",
+      "time_s": 0.001825000000000001,
+      "analytic_gap_m": 8.83097678656135e-05,
+      "exported_gap_m": 8.830975198408065e-05,
+      "gap_error_m": 1.588153285096705e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/A1/state_0074.json",
+      "time_s": 0.001850000000000001,
+      "analytic_gap_m": 6.953086882607678e-05,
+      "exported_gap_m": 6.953087999130882e-05,
+      "gap_error_m": 1.1165232041872308e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/A1/state_0075.json",
+      "time_s": 0.001875000000000001,
+      "analytic_gap_m": 5.044751963139999e-05,
+      "exported_gap_m": 5.044755608610155e-05,
+      "gap_error_m": 3.64547015621261e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/controlled/state_0070.json",
+      "time_s": 0.001750000000000001,
+      "analytic_gap_m": 0.00014240885815773228,
+      "exported_gap_m": 0.0001424088811501638,
+      "gap_error_m": 2.2992431526411283e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/controlled/state_0071.json",
+      "time_s": 0.001775000000000001,
+      "analytic_gap_m": 0.0001247830369303912,
+      "exported_gap_m": 0.00012478305692151725,
+      "gap_error_m": 1.9991126050562802e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/controlled/state_0072.json",
+      "time_s": 0.001800000000000001,
+      "analytic_gap_m": 0.000106739489289222,
+      "exported_gap_m": 0.0001067395026460949,
+      "gap_error_m": 1.335687289938381e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/controlled/state_0073.json",
+      "time_s": 0.001825000000000001,
+      "analytic_gap_m": 8.83097678656135e-05,
+      "exported_gap_m": 8.830975198408065e-05,
+      "gap_error_m": 1.588153285096705e-11
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/controlled/state_0074.json",
+      "time_s": 0.001850000000000001,
+      "analytic_gap_m": 8.8375511371046e-05,
+      "exported_gap_m": 8.837550808339222e-05,
+      "gap_error_m": 3.2876537863629762e-12
+    },
+    {
+      "path": "evidence/benchmark_D_contact_overwrite_semantics/controlled/state_0075.json",
+      "time_s": 0.001875000000000001,
+      "analytic_gap_m": 8.589540348118466e-05,
+      "exported_gap_m": 8.589541905463204e-05,
+      "gap_error_m": 1.5573447371096394e-11
+    }
+  ],
+  "maximum_gap_error_m": 3.64547015621261e-11,
+  "numerical_geometry_tolerance_m": 1e-09,
+  "approximation": "Exact for actual canonical linear triangulated surface",
+  "finite_rotation_prediction": true,
+  "physical_activation": "predicted signed gap<=0 AND inward-normal velocity<0",
+  "no_positive_clearance_barrier": true,
+  "solver_launched": false
+}

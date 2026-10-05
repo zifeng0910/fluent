@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T03:06:28.289020+00:00",
+  "failure_class": "TRANSIENT_POST_SDK_EXIT_BUSY",
+  "concrete_change": "Defer exact owned cleanup until unchanged transcript and same0.05CPUseconds/5s idle guard pass; no native relaunch or dynamics replay",
+  "numerical_micro25_review_sha256": "b264db9db69a3fcf9b3e99e46a938d9d490e8460377f726b8235a7f29fc6c77c",
+  "closure_review_sha256": "a13ac49484bdb54c7b8a9ff115e9a0bbe0c6a6b357566ee3e5e736b35dd2bf33",
+  "supporting_code_sha256": {
+    "scripts/benchmark_D_native_contact_overnight_supervisor.py": "31bf5c20e294b1564fe798497e0c440a986f58aab492e678e8ddcbe8b34b1b9b",
+    "scripts/benchmark_D_native_contact_overnight_fallback.py": "754fd5c6366f61e4a86823c8e4b020a3b22f050b46d2e9da8fbde103a2261af9",
+    "scripts/benchmark_D_native_contact_overnight_owned_exit_review.py": "e352c95aed0a418c3a4bf08458730da3abc350b88e6e28bd6db6afb66100b165"
+  },
+  "control_regressions": 13,
+  "fallback_interface_regressions": 3,
+  "original_window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+  "frozen_sources_unchanged": true,
+  "no_new_solver_for_repair": true,
+  "no_dynamics_advanced": true,
+  "resume_stage": "NATIVE_DT_12P5"
+}

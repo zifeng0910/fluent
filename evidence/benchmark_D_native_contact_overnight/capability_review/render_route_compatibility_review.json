@@ -1,0 +1,66 @@
+{
+  "status": "PASS_PROPOSED_PATCH_NOT_APPLIED",
+  "base_script_sha256": "d4c0f1fc99c46937e036d29f03d0d2e8be2d709897e24f36ec155eb5c5a5bf2c",
+  "patch_path": "evidence\\benchmark_D_native_contact_overnight\\capability_review\\render_route_compatibility.patch.txt",
+  "patch_sha256": "a7cfbd601b0bc2f21d8a3a2f90392995e8322b85f5a62ffab66c2f56486aa377",
+  "proposed_script_sha256_utf8_LF": "abe82c82c70af6e8b6e60af0b2088775ed01523d1e7d7c014671e9c279d42c97",
+  "syntax_AST_PASS": true,
+  "pure_guard_tests": [
+    {
+      "case": "NATIVE_OVERWRITE reviewed numerical route accepted",
+      "status": "PASS"
+    },
+    {
+      "case": "NATIVE_OVERWRITE rejects unclosed_owned_solver",
+      "status": "PASS"
+    },
+    {
+      "case": "NATIVE_OVERWRITE rejects partial1.9ms",
+      "status": "PASS"
+    },
+    {
+      "case": "SDOF_LOAD_PATH reviewed numerical route accepted",
+      "status": "PASS"
+    },
+    {
+      "case": "SDOF_LOAD_PATH rejects unclosed_owned_solver",
+      "status": "PASS"
+    },
+    {
+      "case": "SDOF_LOAD_PATH rejects missing_controlled_gate",
+      "status": "PASS"
+    },
+    {
+      "case": "SDOF_LOAD_PATH rejects source_mismatch",
+      "status": "PASS"
+    },
+    {
+      "case": "SDOF_LOAD_PATH rejects partial1.9ms",
+      "status": "PASS"
+    },
+    {
+      "case": "COMPLIANT_LOAD_PATH reviewed numerical route accepted",
+      "status": "PASS"
+    },
+    {
+      "case": "COMPLIANT_LOAD_PATH rejects unclosed_owned_solver",
+      "status": "PASS"
+    },
+    {
+      "case": "COMPLIANT_LOAD_PATH rejects missing_controlled_gate",
+      "status": "PASS"
+    },
+    {
+      "case": "COMPLIANT_LOAD_PATH rejects source_mismatch",
+      "status": "PASS"
+    },
+    {
+      "case": "COMPLIANT_LOAD_PATH rejects partial1.9ms",
+      "status": "PASS"
+    }
+  ],
+  "solver_launched": false,
+  "PyVista_imported_in_tests": false,
+  "current_render_unchanged": true,
+  "visual_PASS_not_claimed": true
+}

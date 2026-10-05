@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-10-05T02:55:11.908702+00:00",
+  "status": "DIAGNOSTIC_ONLY",
+  "SDK_exit_returned_before_recorded_closure_failure": true,
+  "worker_absent": true,
+  "observations": [
+    {
+      "timestamp": "2026-10-05T02:55:01.776214+00:00",
+      "processes": [
+        {
+          "pid": 43456,
+          "created": 1791165989.073232,
+          "name": "fl2610.exe",
+          "status": "running",
+          "cpu_s": 61.75,
+          "threads": 4,
+          "working_set_gib": 0.08986282348632812
+        },
+        {
+          "pid": 33516,
+          "created": 1791165976.0536275,
+          "name": "cx2610.exe",
+          "status": "running",
+          "cpu_s": 65.5625,
+          "threads": 16,
+          "working_set_gib": 0.45855712890625
+        },
+        {
+          "pid": 27664,
+          "created": 1791165993.1336467,
+          "name": "fl_mpi2610.exe",
+          "status": "running",
+          "cpu_s": 2262.484375,
+          "threads": 4,
+          "working_set_gib": 7.323291778564453
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-05T02:55:06.808648+00:00",
+      "processes": [
+        {
+          "pid": 43456,
+          "created": 1791165989.073232,
+          "name": "fl2610.exe",
+          "status": "running",
+          "cpu_s": 61.765625,
+          "threads": 4,
+          "working_set_gib": 0.08986282348632812
+        },
+        {
+          "pid": 33516,
+          "created": 1791165976.0536275,
+          "name": "cx2610.exe",
+          "status": "running",
+          "cpu_s": 65.578125,
+          "threads": 16,
+          "working_set_gib": 0.45856475830078125
+        },
+        {
+          "pid": 27664,
+          "created": 1791165993.1336467,
+          "name": "fl_mpi2610.exe",
+          "status": "running",
+          "cpu_s": 2262.484375,
+          "threads": 4,
+          "working_set_gib": 7.323291778564453
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-05T02:55:11.857237+00:00",
+      "processes": [
+        {
+          "pid": 43456,
+          "created": 1791165989.073232,
+          "name": "fl2610.exe",
+          "status": "running",
+          "cpu_s": 61.765625,
+          "threads": 4,
+          "working_set_gib": 0.027416229248046875
+        },
+        {
+          "pid": 33516,
+          "created": 1791165976.0536275,
+          "name": "cx2610.exe",
+          "status": "running",
+          "cpu_s": 65.59375,
+          "threads": 16,
+          "working_set_gib": 0.09087753295898438
+        },
+        {
+          "pid": 27664,
+          "created": 1791165993.1336467,
+          "name": "fl_mpi2610.exe",
+          "status": "running",
+          "cpu_s": 2262.484375,
+          "threads": 4,
+          "working_set_gib": 1.6602554321289062
+        }
+      ]
+    }
+  ],
+  "closure_failure": {
+    "error": "RuntimeError('Owned engine not idle after SDK exit; no forced cleanup')",
+    "timestamp": "2026-10-05T02:52:27.867733+00:00"
+  },
+  "branch_result": "NATIVE_BRANCH_DATA_COMPLETE",
+  "transcript_last_modified_epoch": 1791168680.3902054,
+  "no_process_action": true
+}

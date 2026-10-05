@@ -1,0 +1,106 @@
+*** Begin Patch
+*** Update File: H:/fluent/scripts/benchmark_D_native_contact_overnight_render.py
+@@ -77,10 +77,83 @@
+     return {'first': 0, 'pre_contact': pre, 'first_contact': closest, 'post_contact': post, 'last': len(times)-1}
+ 
+ 
++def numerical_route_guard(report, branch_review, branch_config, selection, controlled=None, compliant=None):
++    """Pure route-specific evidence gate, independently testable without VTK."""
++    route = report.get('route')
++    native = route == 'NATIVE_OVERWRITE'
++    if route not in ('NATIVE_OVERWRITE', 'SDOF_LOAD_PATH', 'COMPLIANT_LOAD_PATH'):
++        raise RuntimeError('Unknown reviewed contact route')
++    expected_status = 'BENCHMARK_D_NATIVE_CONTACT_2MS_PASS' if native else 'NUMERICAL_PASS'
++    if report.get('status') != expected_status:
++        raise RuntimeError('Route-specific full2ms numerical status is required')
++    if not native and report.get('result') != 'BENCHMARK_D_LOAD_PATH_CONTACT_2MS_NUMERICAL_PASS':
++        raise RuntimeError('Reviewed load-path final result is required')
++    required = ('dt_selected', 'selected_micro_PASS', 'production_PASS', 'final_time_2ms',
++                'production_inherits_selected_D_checkpoint', 'same_production_dt') if native else (
++                'selected_contact_dt_PASS', 'full_selected_branch_PASS', 'actual_native_2ms',
++                'controlled_load_response_PASS', 'native_2ms_checkpoint_PASS', 'owned_engine_closed')
++    gates = report.get('numerical_gates', {})
++    if not gates or not all(gates.get(k) is True for k in required) or not all(v is True for v in gates.values()):
++        raise RuntimeError('Complete route-specific numerical gates are required')
++    bg = branch_review.get('gates', {})
++    if branch_review.get('status') != 'PASS' or not bg or not all(v is True for v in bg.values()):
++        raise RuntimeError('Actual completed branch review has not passed')
++    if abs(branch_review.get('end_time_s', 0)-.002) > 1e-12 or branch_config.get('route') != route:
++        raise RuntimeError('Actual reviewed route/end time mismatch')
++    parts = branch_review.get('lifecycle_parts', [])
++    if not parts or not all(p.get('owned_engine_closed') is True for p in parts):
++        raise RuntimeError('Owned solver closure is required for all lifecycle parts')
++    if selection.get('status') != 'PASS' or not math.isfinite(report.get('selected_dt_s', 0)) or report.get('selected_dt_s', 0) <= 0 or         abs(selection.get('selected_dt_s', 0)-report['selected_dt_s']) > 1e-12:
++        raise RuntimeError('Reviewed timestep selection required')
++    for key, target in (('checkpoint_1p9ms', .0019), ('checkpoint_2ms', .002)):
++        cp = report.get(key, {})
++        if cp.get('status') != 'PASS' or abs(cp.get('time_s', 0)-target) > 1e-12:
++            raise RuntimeError('Verified native1.9ms/2ms checkpoints required')
++    peaks = report.get('numerical_peaks', {})
++    if peaks.get('orphan_peak') != 0 or peaks.get('invalid_donor_peak') != 0 or         peaks.get('minimum_volume_m3', 0) <= 0 or peaks.get('maximum_q_norm_error', 1) > 1e-6 or         report.get('metrics', {}).get('maximum_penetration_m', float('inf')) > 5e-6:
++        raise RuntimeError('Final physical/numerical gates fail')
++    if not native:
++        controlled = controlled or {}
++        if controlled.get('status') != 'PASS' or controlled.get('result') != 'LOAD_PATH_CONTACT_RESPONSE_VALIDATED' or             controlled.get('owned_engine_closed') is not True or controlled.get('no_motion_overwrite') is not True or             controlled.get('controlled_source_sha256') != branch_config.get('contact_source_sha256'):
++            raise RuntimeError('Reviewed matching-source controlled load response required')
++    if route == 'COMPLIANT_LOAD_PATH':
++        if (compliant or {}).get('status') != 'DERIVED_FOR_CONDITIONAL_INVESTIGATION' or             selection.get('adjacent_stiffness_comparison', {}).get('status') != 'PASS':
++            raise RuntimeError('Derived compliant parameters and adjacent stiffness adequacy required')
++    title = {'NATIVE_OVERWRITE': 'frictionless native reaction | proximity 0.100 mm',
++             'SDOF_LOAD_PATH': 'frictionless normal load | predicted next gap <= 0',
++             'COMPLIANT_LOAD_PATH': 'frictionless compliant normal load | predicted next gap <= 0'}[route]
++    return {'route': route, 'title': title, 'native_proximity_threshold_applied': native,
++            'controlled_load_response_required': not native}
++
++
++def current_checkpoint_gate(metadata_path, target):
++    """Recheck retained native bytes against saved metadata before rendering."""
++    import h5py
++    meta = read(metadata_path)
++    if meta.get('status') not in ('PASS', 'NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS') or abs(meta.get('time_s',0)-target) > 1e-12:
++        raise RuntimeError('Saved native checkpoint metadata/time gate failed')
++    for kind in ('case', 'data'):
++        p = absolute(meta[kind])
++        if not p.is_file() or p.stat().st_size != meta.get(kind+'_size_bytes') or sha(p) != meta.get(kind+'_sha256'):
++            raise RuntimeError('Saved native checkpoint hash/size gate failed')
++        with h5py.File(p, 'r') as fp:
++            if not list(fp):
++                raise RuntimeError('Saved native checkpoint HDF5 gate failed')
++    return {'status':'PASS', 'metadata':str(metadata_path), 'metadata_sha256':sha(metadata_path), 'time_s':target}
++
++
+ def main():
+     report = read(EVID/'final_report.json')
+-    if report.get('status') != 'BENCHMARK_D_NATIVE_CONTACT_2MS_PASS' or not all(report.get('numerical_gates', {}).values()):
+-        raise RuntimeError('Full2ms numerical PASS is required before rendering')
++    final_branch = EVID/'branches'/report['production_branch']
++    branch_review = read(final_branch/'review.json')
++    branch_config = read(final_branch/'configuration.json')
++    route_gate = numerical_route_guard(report, branch_review, branch_config, read(EVID/'contact_dt_selection.json'),
++        read(EVID/'fallback_controlled_validation.json'), read(EVID/'compliant_parameter_derivation.json'))
++    if sha(absolute(branch_config['contact_source_path'])) != branch_config['contact_source_sha256']:
++        raise RuntimeError('Reviewed contact source changed')
++    checkpoint_19 = (EVID/'branches'/report['selected_micro_branch']/'final_native_checkpoint.json') if route_gate['route'] == 'NATIVE_OVERWRITE' else final_branch/'checkpoint_1p900ms_checkpoint.json'
++    current_native_gates = [current_checkpoint_gate(checkpoint_19, .0019),
++                            current_checkpoint_gate(final_branch/'final_native_checkpoint.json', .002)]
+     frames = load_frames(report)
+     out = EVID/'visualization'
+     out.mkdir(parents=True, exist_ok=True)
+@@ -136,7 +209,7 @@
+                         'position_x': .06, 'position_y': .04, 'width': .88, 'height': .09})
+                 plot.add_mesh(robot, color='#ef812b', smooth_shading=True)
+                 pen = max(0., -frame['signed_gap_m'])*1e6
+-                plot.add_text('Benchmark D | frictionless native reaction | e = 0, mu = 0 | proximity 0.100 mm\n'
++                plot.add_text(f'Benchmark D | {route_gate["title"]} | e = 0, mu = 0\n'
+                     f'Actual Fluent FieldData | t = {frame["time_s"]*1000:.4f} ms | dt = {report["selected_dt_s"]*1e6:g} us\n'
+                     f'Ideal tube signed gap = {frame["signed_gap_m"]*1e6:.2f} um | penetration = {pen:.2f} um\n'
+                     f'Fixed velocity scale 0 to {vmax:.4g} m/s', font_size=13, color='#172434', position='upper_left')
+@@ -173,6 +246,7 @@
+         'motion_camera':camera, 'closeup_camera':close_camera, 'actual_motion_only':True,
+         'no_synthetic_velocity_or_interpolated_frames':True, 'PyVista_off_screen':True,
+         'representative_review_frames':review_paths, 'visual_inspection_completed':False,
++        'route':route_gate['route'], 'route_numerical_gate':route_gate, 'current_native_checkpoint_gates':current_native_gates,
+         'numerical_report_sha256':sha(EVID/'final_report.json'), 'source_sha256':source_hashes,
+         'outputs_sha256':{p.name:sha(p) for p in [*files.values(),final]},
+         'visual_QA_note':'Actual PNG and all relevant first/precontact/firstcontact/postcontact/last GIF frames must be inspected with view_image. Rendering and pixel/file checks do not establish visual PASS.'}
+*** End Patch

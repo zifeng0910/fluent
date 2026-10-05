@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:53:09.897053+00:00",
+  "activated": false,
+  "route": "SDOF_LOAD_PATH",
+  "job": "scripts/benchmark_D_native_contact_overnight_fallback.py",
+  "job_sha256": "754fd5c6366f61e4a86823c8e4b020a3b22f050b46d2e9da8fbde103a2261af9",
+  "source": "fluent_udf/l2300_load_contact_overnight.c",
+  "source_sha256": "7475e784542420f87d63d6d186e498735916c1c44e117d8be4983ac72093c81b",
+  "worker": "scripts/benchmark_D_native_contact_overnight_worker.py",
+  "worker_sha256": "5b4a99a465ab5d2dd40b3ed4db8385e2db39e69a4d6703ad1b91a43bdbe43956",
+  "geometry_review_sha256": "461e2bf2196171b52c880beac8ccc3eb849daaf79aba89da642d26aea8e8db48",
+  "geometry_header_sha256": "ed5432eaade429497a8b2eee64b1a647c12c43f3ac9157977e27ffce3531af91",
+  "native_force_path_already_validated": true,
+  "conditional_Fluent_compile_and_controlled_validation_required": true,
+  "no_motion_overwrite": true,
+  "original_magnetic_delegate_once": true,
+  "no_manual_fluid_force": true,
+  "maximum_time_s": 0.002,
+  "activation_requires_archived_native_failure": true,
+  "compliant_only_after_measured_impulse_load_instability": true,
+  "owned_exit_review_sha256": "e352c95aed0a418c3a4bf08458730da3abc350b88e6e28bd6db6afb66100b165"
+}
