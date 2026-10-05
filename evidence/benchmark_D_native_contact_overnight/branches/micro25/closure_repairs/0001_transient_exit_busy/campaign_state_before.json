@@ -1,0 +1,31 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "status": "HARD_BLOCKER",
+  "timestamp": "2026-10-05T02:52:32.095324+00:00",
+  "route": "NATIVE_OVERWRITE",
+  "current_time_s": 0.001900000000000001,
+  "solver_alive": true,
+  "worker_alive": true,
+  "pending_stage": "NATIVE_MICRORUN_25US",
+  "resource": {
+    "timestamp": "2026-10-05T02:05:00.647751+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 15.591079711914062,
+    "used_gib": 16.24871826171875,
+    "commit_gib": 24.398212432861328,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5099982329839383,
+    "pagefile_used_gib": 0.7267723083496094,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1518783569335938,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.27322769165039,
+    "commit_headroom_gib": 23.441585540771484,
+    "disk_free_gib": 197.15814590454102
+  },
+  "stable_admission_seconds": 55.140997000038624,
+  "active_branch": "micro25",
+  "worker_status": "AWAITING_OFFLINE_BRANCH_REVIEW",
+  "worker_state_timestamp": "2026-10-05T02:51:52.700109+00:00",
+  "reason": "Native engine remains after registered worker closure; no further solver allowed"
+}

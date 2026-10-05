@@ -48,3 +48,19 @@ do not demonstrate contact-model instability.
 Review heartbeat: `benchmark-d-native-contact-overnight-review`; quiet during
 unchanged or normal progress, actual PNG/GIF review required before COMPLETE.
 No work beyond 2.000 ms is authorized.
+
+## Verified 25 us branch
+
+`branches/micro25/review.json` passed the native 1.750 -> 1.900 ms branch:
+six completed steps, three deduplicated impulse applications, zero orphan and
+invalid donor cells, positive cell volumes, and zero measured penetration.
+First callback was at 1.825 ms and positive signed gap 88.31 um; this is a
+native proximity response, not an ideal zero-gap impact result.
+
+`control_repairs/0003_transient_exit_busy` records the post-SDK-exit control
+failure. The original failure is retained. Exact registered engines were
+closed only after the existing CPU-idle and unchanged-transcript gates passed;
+no dynamics were replayed. The local supervisor resumed the same window.
+
+The 12.5 us comparison, timestep selection, 2 ms run, and actual visual review
+remain pending. `verified_milestones/micro25.json` records this bounded result.

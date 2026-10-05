@@ -1,0 +1,1033 @@
+{
+  "timestamp": "2026-10-05T03:04:11.662058+00:00",
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "branch": "micro25",
+  "status": "PASS",
+  "start_time_s": 0.001750000000000001,
+  "target_time_s": 0.0019,
+  "end_time_s": 0.001900000000000001,
+  "dt_s": 2.5e-05,
+  "completed_new_steps": 6,
+  "gates": {
+    "restart_continuity": true,
+    "actual_magnetic_law": true,
+    "checkpoint_integrity": true,
+    "owned_engine_closed": true,
+    "prefix_checkpoint_integrity": true,
+    "resource_history": true,
+    "completed_branch_result": true,
+    "contact_response_and_dedup": true,
+    "precontact_C_vs_D": true,
+    "target_time_reached": true,
+    "finite": true,
+    "cell_count": true,
+    "orphan_zero": true,
+    "invalid_donors_zero": true,
+    "unidentified_zero": true,
+    "positive_volume": true,
+    "quaternion": true,
+    "actual_time_sequence": true,
+    "penetration": true
+  },
+  "blockers": [],
+  "tolerances": {
+    "penetration_m": 5e-06,
+    "q_norm_error": 1e-06,
+    "cluster_distance_m": 2e-05,
+    "impulse_math_v_m_s": 1e-10,
+    "impulse_math_omega_rad_s": 1e-07,
+    "impulse_math_J_N_s": 1e-16,
+    "completed_response_relative_error": 0.1,
+    "completed_response_direction_cosine": 0.99,
+    "inheritance_COM_m": 1e-10,
+    "inheritance_Q_rad": 1e-09,
+    "inheritance_v_m_s": 1e-08,
+    "inheritance_omega_rad_s": 1e-06,
+    "magnetic_F_N": 1e-13,
+    "magnetic_T_Nm": 1e-14,
+    "dt_comparison": {
+      "timing_coarse_steps": 1,
+      "contact_position_m": 2e-05,
+      "signed_gap_m": 5e-06,
+      "penetration_m": 5e-06,
+      "impulse_relative": 0.1,
+      "final_v_relative": 0.1,
+      "final_v_absolute_m_s": 0.001,
+      "final_omega_relative": 0.1,
+      "final_omega_absolute_rad_s": 1.0,
+      "max_tilt_rad": 0.008726646259971648,
+      "peak_omega_relative": 0.1,
+      "event_count_absolute": 1,
+      "event_count_relative": 0.2
+    },
+    "rationale": "5um penetration is below 1% of robot diameter; 20um cluster is the validated dedup resolution. Response 10%/.99 is the authorized load acceptance. DT comparison uses one coarse step for contact onset sampling, 10% impulse/state error and .5deg tilt for this development baseline; these are adequacy gates, not an experimental accuracy or mesh convergence claim."
+  },
+  "failure_class": null,
+  "logical_branch": "micro25",
+  "lifecycle_parts": [
+    {
+      "branch": "micro25",
+      "restart_continuity_PASS": true,
+      "owned_engine_closed": true,
+      "closure_review": {
+        "status": "PASS",
+        "basis": "EXACT_REGISTERED_PROCESS_RECOVERY_REVIEW",
+        "recovery_review": {
+          "status": "PASS",
+          "timestamp": "2026-10-05T03:02:41.266982+00:00",
+          "SDK_exit_requested": true,
+          "SDK_exit_returned": true,
+          "owned_engine_closed": true,
+          "worker_identity": {
+            "pid": 18604,
+            "created": 1791165906.03442,
+            "branch": "micro25",
+            "timestamp": "2026-10-05T02:05:14.128236+00:00",
+            "name": "pythonw.exe"
+          },
+          "owned_engine_identities": [
+            {
+              "pid": 43456,
+              "created": 1791165989.073232,
+              "name": "fl2610.exe",
+              "ownership": "SDK host/cortex"
+            },
+            {
+              "pid": 33516,
+              "created": 1791165976.0536275,
+              "name": "cx2610.exe",
+              "ownership": "SDK host/cortex"
+            },
+            {
+              "pid": 27664,
+              "created": 1791165993.1336467,
+              "registered_host_pid": 43456,
+              "mport": "127.0.0.1:127.0.0.1:55450:0",
+              "ownership_evidence": "Node -mport matches registered Fluent host local TCP port",
+              "name": "fl_mpi2610.exe"
+            }
+          ],
+          "worker_absent": true,
+          "all_owned_engines_absent": true,
+          "no_native_engine_present": true,
+          "no_process_terminated": false,
+          "terminated": [
+            {
+              "pid": 27664,
+              "created": 1791165993.1336467,
+              "registered_host_pid": 43456,
+              "mport": "127.0.0.1:127.0.0.1:55450:0",
+              "ownership_evidence": "Node -mport matches registered Fluent host local TCP port",
+              "name": "fl_mpi2610.exe"
+            },
+            {
+              "pid": 43456,
+              "created": 1791165989.073232,
+              "name": "fl2610.exe",
+              "ownership": "SDK host/cortex"
+            },
+            {
+              "pid": 33516,
+              "created": 1791165976.0536275,
+              "name": "cx2610.exe",
+              "ownership": "SDK host/cortex"
+            }
+          ],
+          "unrelated_processes_touched": [],
+          "observations": [
+            {
+              "timestamp": "2026-10-05T03:02:00.494696+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.125,
+                "33516": 0.125,
+                "27664": 0.03125
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:05.496150+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.09375,
+                "33516": 0.0625,
+                "27664": 0.015625
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:10.498453+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.234375,
+                "33516": 0.1875,
+                "27664": 0.109375
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:15.501874+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.140625,
+                "33516": 0.125,
+                "27664": 0.09375
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:20.505434+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.09375,
+                "33516": 0.078125,
+                "27664": 0.03125
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:25.507643+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.359375,
+                "33516": 0.25,
+                "27664": 0.09375
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:30.511212+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.078125,
+                "33516": 0.015625,
+                "27664": 0.015625
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:35.513474+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.125,
+                "33516": 0.078125,
+                "27664": 0.03125
+              }
+            },
+            {
+              "timestamp": "2026-10-05T03:02:40.515186+00:00",
+              "CPU_seconds_over5s": {
+                "43456": 0.015625,
+                "33516": 0.015625,
+                "27664": 0.0
+              }
+            }
+          ],
+          "idle_threshold_CPU_seconds_over5s": 0.05,
+          "idle_threshold_unchanged": true,
+          "checkpoint_time_s": 0.001900000000000001,
+          "checkpoint_metadata_sha256": "99baf7b1c079fefcde7ade97bed383cda0333652a3ace08d6b1bde78e581c3d2",
+          "original_exit_failure_preserved": true,
+          "no_new_solver": true,
+          "no_dynamics_advanced": true
+        }
+      },
+      "prefix_checkpoint": null,
+      "magnetic": {
+        "status": "PASS",
+        "actual_property_calls": 47,
+        "max_F_error_N": 1.3552527156068805e-20,
+        "max_T_error_Nm": 2.541098841762901e-21,
+        "actual_absolute_time_and_pose_used": true,
+        "phase_ramp_offset_not_restarted": true
+      }
+    }
+  ],
+  "failure": {},
+  "penetration_refinement_classification": {
+    "classification_only_NOT_micro_PASS": false,
+    "reviewed_safety_gates": [
+      "restart_continuity",
+      "actual_magnetic_law",
+      "owned_engine_closed",
+      "prefix_checkpoint_integrity",
+      "resource_history",
+      "precontact_C_vs_D",
+      "finite",
+      "cell_count",
+      "orphan_zero",
+      "invalid_donors_zero",
+      "unidentified_zero",
+      "positive_volume",
+      "quaternion",
+      "actual_time_sequence"
+    ],
+    "contact_math_and_dedup_safe": true,
+    "missing_terminal_inheritance_or_final_checkpoint_not_claimed_PASS": false
+  },
+  "native_restart": {
+    "timestamp": "2026-10-05T02:08:01.104724+00:00",
+    "status": "PASS",
+    "timesteps_advanced": 0,
+    "pose_reset_performed": false,
+    "velocity_reset_performed": false,
+    "checkpoint_integrity": {
+      "timestamp": "2026-10-05T02:08:01.104738+00:00",
+      "status": "PASS",
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.cas.h5",
+          "size_bytes": 109628295,
+          "sha256": "d726d7c239a8a80fc33b394288e506314440bf87a778a8d9a6a56d76c6cb049c",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_C_coarse_2ms\\checkpoint_0070.dat.h5",
+          "size_bytes": 553723925,
+          "sha256": "642bf7789e129c88a3f465b96aa3e63202b0566ef349359d0b05b8134a11e460",
+          "HDF5_readable": true
+        }
+      },
+      "timesteps_advanced": 0,
+      "time_s": 0.001750000000000001
+    },
+    "native_time_s": 0.001750000000000001,
+    "native_state": {
+      "com": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "q": [
+        0.984623529376754,
+        0.006896969730061793,
+        -0.0607625496750705,
+        -0.16363633387237564
+      ],
+      "velocity": [
+        -0.003078475416918156,
+        0.00278338081035859,
+        -0.0009735323565712222
+      ],
+      "omega": [
+        39.13734668233644,
+        -238.3510307135593,
+        -752.0650495857042
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.35118130908112233,
+        "axis": [
+          0.03948125238865443,
+          -0.34783124377698504,
+          -0.9367254969105832
+        ]
+      }
+    },
+    "native_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "component_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "q_norm": 1.0,
+    "native_quaternion_surface_error_m": 2.3009711061972765e-10,
+    "Fmag_N": [
+      -2.6306585012258473e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_COM_Nm": [
+      2.3904466171855395e-07,
+      -1.5531265796022652e-06,
+      -5.917113820340973e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00097916 -0.00032738  0.00012549]",
+      "B_global": "[-0.01071953 -0.00245896  0.00021237]",
+      "s_eff_mm": 31.68711593726607,
+      "phase_rad": 1.0995574287564283,
+      "ramp": 1
+    },
+    "F_error_N": 0.0,
+    "T_error_Nm": 0.0,
+    "overset": {
+      "cell_type_counts": {
+        "-3": 0,
+        "-2": 981453,
+        "-1": 0,
+        "0": 144116,
+        "1": 3272456,
+        "2": 301276
+      },
+      "orphans": 0,
+      "orphan_cellnumber_xyz_first20": [],
+      "donors": 301276,
+      "receptors": 144116,
+      "total_cells": 4699301,
+      "minimum_volume_m3": 6.100596812e-17,
+      "donor_volume_ratio": {
+        "min": 0.03905148695,
+        "median": 0.32659447165,
+        "p95": 8.72080438275,
+        "max": 23.17463041
+      },
+      "donor_characteristic_length_ratio": {
+        "min": 0.3392703121258265,
+        "median": 0.688656963042298,
+        "p95": 2.0583482205266153,
+        "max": 2.851046313678106
+      },
+      "donor_length_ratio_gt3_count": 0,
+      "donor_ratio_samples": 301276,
+      "invalid_donors": 0,
+      "signed_gap_m": 0.0001424088811501638,
+      "donor_length_ratio_policy": "WARNING_ONLY",
+      "old_C_clearance_gate_applied": false
+    }
+  },
+  "native_checkpoint": {
+    "status": "PASS",
+    "time_s": 0.001900000000000001,
+    "native_state": {
+      "com": [
+        0.001202477910752855,
+        2.289344781145247e-05,
+        -7.973248781937086e-06
+      ],
+      "q": [
+        0.975681224556793,
+        0.00962805827721771,
+        -0.07300986561680456,
+        -0.20645340409831855
+      ],
+      "velocity": [
+        -0.01868747645675661,
+        0.2981572444082941,
+        -0.1035346016050892
+      ],
+      "omega": [
+        49.84990591348654,
+        -90.20939237635272,
+        -372.4424332704905
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.44197725581082936,
+        "axis": [
+          0.04392476257995752,
+          -0.3330828419268228,
+          -0.9418738958301401
+        ]
+      }
+    },
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.cas.h5",
+        "hash_size_PASS": true,
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.dat.h5",
+        "hash_size_PASS": true,
+        "HDF5_readable": true
+      }
+    },
+    "state_errors": {
+      "com_m": 0.0,
+      "orientation_rad": 0.0,
+      "v_m_s": 0.0,
+      "omega_rad_s": 0.0,
+      "status": "PASS"
+    }
+  },
+  "magnetic_load_validation": {
+    "status": "PASS",
+    "parts": [
+      {
+        "branch": "micro25",
+        "status": "PASS",
+        "actual_property_calls": 47,
+        "max_F_error_N": 1.3552527156068805e-20,
+        "max_T_error_Nm": 2.541098841762901e-21,
+        "actual_absolute_time_and_pose_used": true,
+        "phase_ramp_offset_not_restarted": true
+      }
+    ]
+  },
+  "precontact_C_vs_D": {
+    "status": "PASS",
+    "comparison_kind": "SAME_DT_NATIVE_REPLAY",
+    "same_dt_tolerance": {
+      "COM_m": 1e-10,
+      "Q_rad": 1e-09,
+      "v_m_s": 1e-08,
+      "omega_rad_s": 1e-06
+    },
+    "refined_dt_tolerance": {
+      "COM_m": 1e-06,
+      "Q_rad": 0.005,
+      "v_m_s": 0.001,
+      "omega_relative": 0.01,
+      "omega_floor_rad_s": 2.0
+    },
+    "exact_time_records": [
+      {
+        "com_m": 0.0,
+        "orientation_rad": 0.0,
+        "v_m_s": 1.431146867680866e-17,
+        "omega_rad_s": 3.4677726476845334e-11,
+        "status": "PASS",
+        "F_difference_N": 0.0,
+        "T_difference_Nm": 0.0,
+        "time_s": 0.001750000000000001
+      },
+      {
+        "com_m": 1.0587911840678754e-22,
+        "orientation_rad": 8.78739005083512e-18,
+        "v_m_s": 1.5186572741449364e-17,
+        "omega_rad_s": 3.407250904783313e-11,
+        "status": "PASS",
+        "F_difference_N": 0.0,
+        "T_difference_Nm": 0.0,
+        "time_s": 0.001775000000000001
+      },
+      {
+        "com_m": 1.0587911840678754e-22,
+        "orientation_rad": 7.073120921559065e-18,
+        "v_m_s": 1.0928413702067853e-17,
+        "omega_rad_s": 1.139086659085919e-13,
+        "status": "PASS",
+        "F_difference_N": 0.0,
+        "T_difference_Nm": 0.0,
+        "time_s": 0.001800000000000001
+      },
+      {
+        "com_m": 1.0640719708621462e-21,
+        "orientation_rad": 8.505702517470765e-17,
+        "v_m_s": 2.908896446241969e-17,
+        "omega_rad_s": 3.304317093647509e-11,
+        "status": "PASS",
+        "F_difference_N": 0.0,
+        "T_difference_Nm": 8.486856960400335e-22,
+        "time_s": 0.001825000000000001
+      }
+    ],
+    "exact_time_count": 4,
+    "interpolation_used": false,
+    "cutoff_callback_time_s": 0.001825000000000001,
+    "note": "F/T law checked exactly at each native pose separately. Refined-dt pose differences are reported as integration differences."
+  },
+  "contact_validation": {
+    "status": "PASS",
+    "callback_count": 3,
+    "physical_impulse_application_count": 3,
+    "physical_event_group_count": 3,
+    "dedup_PASS": true,
+    "finite_PASS": true,
+    "host_node_same_event": true,
+    "host_is_copy_not_additional_impulse": true,
+    "persistence_PASS": true,
+    "groups": [
+      {
+        "time_s": 0.001825000000000001,
+        "body": 7,
+        "opposite": 6,
+        "point": [
+          0.0020436722784209892,
+          -0.0008429128641985178,
+          0.0002946779345301487
+        ],
+        "callback_count": 1,
+        "applied_count": 1,
+        "skipped_duplicate_count": 0
+      },
+      {
+        "time_s": 0.0018500000000000012,
+        "body": 7,
+        "opposite": 6,
+        "point": [
+          0.0020392761367684334,
+          -0.0008423834029580754,
+          0.00029592980692511674
+        ],
+        "callback_count": 1,
+        "applied_count": 1,
+        "skipped_duplicate_count": 0
+      },
+      {
+        "time_s": 0.0018750000000000012,
+        "body": 7,
+        "opposite": 6,
+        "point": [
+          0.0020294655810458827,
+          -0.0008432065514891074,
+          0.000292348353488868
+        ],
+        "callback_count": 1,
+        "applied_count": 1,
+        "skipped_duplicate_count": 0
+      }
+    ],
+    "response_checks": [
+      {
+        "callback_index": 1,
+        "evidence_branch": "micro25",
+        "callback_time_s": 0.001825000000000001,
+        "completed_time_s": 0.001850000000000001,
+        "independent_J_N_s": 2.663248704610714e-06,
+        "independent_vn_before_m_s": -0.7777109172208035,
+        "independent_vn_after_m_s": 7.632783294297951e-17,
+        "independent_impulse_math_PASS": true,
+        "predicted_velocity_m_s": [
+          -0.002498393026059872,
+          0.2863754458466743,
+          -0.09970788650046336
+        ],
+        "predicted_omega_rad_s": [
+          45.9376481407947,
+          -88.84964261526522,
+          -351.11763349180524
+        ],
+        "actual_completed_native_state": {
+          "com": [
+            0.001203430423876008,
+            8.270410209346977e-06,
+            -2.911214814205053e-06
+          ],
+          "q": [
+            0.9776854046319566,
+            0.008645798633414718,
+            -0.07100832402527775,
+            -0.197520423386441
+          ],
+          "velocity": [
+            -0.002498393026059872,
+            0.2863754458466742,
+            -0.09970788650046335
+          ],
+          "omega": [
+            45.93764814079465,
+            -88.84964261526514,
+            -351.117633491805
+          ],
+          "native_orientation_angle_axis": {
+            "angle": 0.4233020951604062,
+            "axis": [
+              0.041155890588658796,
+              -0.33801513756909424,
+              -0.9402403732259111
+            ]
+          }
+        },
+        "expected_vs_actual_change": {
+          "velocity": {
+            "norm_error": 1.1188630228279524e-16,
+            "max_abs": 1.1102230246251565e-16,
+            "relative_error": 3.740858365233286e-16,
+            "direction_cosine": 1.0000000000000002
+          },
+          "omega": {
+            "norm_error": 2.478765785342661e-13,
+            "max_abs": 2.2737367544323206e-13,
+            "relative_error": 4.3520652559052906e-16,
+            "direction_cosine": 0.9999999999999998
+          }
+        },
+        "completed_response_PASS": true,
+        "interim_distinct_cluster_validated_against_next_callback": false,
+        "next_start": {
+          "time_s": 0.001850000000000001,
+          "native_state": {
+            "com": [
+              0.001203430423876008,
+              8.270410209346977e-06,
+              -2.911214814205053e-06
+            ],
+            "q": [
+              0.9776854046319566,
+              0.008645798633414718,
+              -0.07100832402527775,
+              -0.197520423386441
+            ],
+            "velocity": [
+              -0.002498393026059872,
+              0.2863754458466742,
+              -0.09970788650046335
+            ],
+            "omega": [
+              45.93764814079465,
+              -88.84964261526514,
+              -351.117633491805
+            ],
+            "native_orientation_angle_axis": {
+              "angle": 0.4233020951604062,
+              "axis": [
+                0.041155890588658796,
+                -0.33801513756909424,
+                -0.9402403732259111
+              ]
+            }
+          }
+        },
+        "next_start_errors": {
+          "com_m": 0.0,
+          "orientation_rad": 0.0,
+          "v_m_s": 0.0,
+          "omega_rad_s": 0.0,
+          "status": "PASS"
+        },
+        "properties_entry_PASS": true,
+        "inheritance_evidence_available": true,
+        "actual_properties_entry_available": true,
+        "terminal_zero_step_boundary_only": false,
+        "next_step_inherited_PASS": true,
+        "immediate_reread_used_as_PASS": false
+      },
+      {
+        "callback_index": 2,
+        "evidence_branch": "micro25",
+        "callback_time_s": 0.0018500000000000012,
+        "completed_time_s": 0.001875000000000001,
+        "independent_J_N_s": 3.585615361990702e-07,
+        "independent_vn_before_m_s": -0.10412524212301566,
+        "independent_vn_after_m_s": 5.898059818321144e-17,
+        "independent_impulse_math_PASS": true,
+        "predicted_velocity_m_s": [
+          -0.019413048469343677,
+          0.28676425967592567,
+          -0.09894675710419205
+        ],
+        "predicted_omega_rad_s": [
+          47.48916272187141,
+          -87.07056828740178,
+          -353.7330200919489
+        ],
+        "actual_completed_native_state": {
+          "com": [
+            0.001202945097664274,
+            1.543951670124512e-05,
+            -5.384883741809854e-06
+          ],
+          "q": [
+            0.9767193141079217,
+            0.009127076878609223,
+            -0.0719926449596801,
+            -0.20187406219698578
+          ],
+          "velocity": [
+            -0.01941304846934368,
+            0.2867642596759257,
+            -0.09894675710419204
+          ],
+          "omega": [
+            47.48916272187138,
+            -87.07056828740178,
+            -353.7330200919489
+          ],
+          "native_orientation_angle_axis": {
+            "angle": 0.43240335467764385,
+            "axis": [
+              0.04254625318571237,
+              -0.3355967458915925,
+              -0.9410444412921375
+            ]
+          }
+        },
+        "expected_vs_actual_change": {
+          "velocity": {
+            "norm_error": 5.732467154385379e-17,
+            "max_abs": 5.551115123125783e-17,
+            "relative_error": 1.4235867720943635e-15,
+            "direction_cosine": 0.9999999999999999
+          },
+          "omega": {
+            "norm_error": 2.842170943040401e-14,
+            "max_abs": 2.842170943040401e-14,
+            "relative_error": 3.723078916518349e-16,
+            "direction_cosine": 1.0
+          }
+        },
+        "completed_response_PASS": true,
+        "interim_distinct_cluster_validated_against_next_callback": false,
+        "next_start": {
+          "time_s": 0.001875000000000001,
+          "native_state": {
+            "com": [
+              0.001202945097664274,
+              1.543951670124512e-05,
+              -5.384883741809854e-06
+            ],
+            "q": [
+              0.9767193141079217,
+              0.009127076878609223,
+              -0.0719926449596801,
+              -0.20187406219698578
+            ],
+            "velocity": [
+              -0.01941304846934368,
+              0.2867642596759257,
+              -0.09894675710419204
+            ],
+            "omega": [
+              47.48916272187138,
+              -87.07056828740178,
+              -353.7330200919489
+            ],
+            "native_orientation_angle_axis": {
+              "angle": 0.43240335467764385,
+              "axis": [
+                0.04254625318571237,
+                -0.3355967458915925,
+                -0.9410444412921375
+              ]
+            }
+          }
+        },
+        "next_start_errors": {
+          "com_m": 0.0,
+          "orientation_rad": 0.0,
+          "v_m_s": 0.0,
+          "omega_rad_s": 0.0,
+          "status": "PASS"
+        },
+        "properties_entry_PASS": true,
+        "inheritance_evidence_available": true,
+        "actual_properties_entry_available": true,
+        "terminal_zero_step_boundary_only": false,
+        "next_step_inherited_PASS": true,
+        "immediate_reread_used_as_PASS": false
+      },
+      {
+        "callback_index": 3,
+        "evidence_branch": "micro25",
+        "callback_time_s": 0.0018750000000000012,
+        "completed_time_s": 0.001900000000000001,
+        "independent_J_N_s": 1.5321422016446054e-07,
+        "independent_vn_before_m_s": -0.04389450733321792,
+        "independent_vn_after_m_s": 2.7755575615628914e-17,
+        "independent_impulse_math_PASS": true,
+        "predicted_velocity_m_s": [
+          -0.018687476456756613,
+          0.2981572444082941,
+          -0.10353460160508925
+        ],
+        "predicted_omega_rad_s": [
+          49.84990591348654,
+          -90.20939237635271,
+          -372.44243327049054
+        ],
+        "actual_completed_native_state": {
+          "com": [
+            0.001202477910752855,
+            2.289344781145247e-05,
+            -7.973248781937086e-06
+          ],
+          "q": [
+            0.975681224556793,
+            0.00962805827721771,
+            -0.07300986561680456,
+            -0.20645340409831855
+          ],
+          "velocity": [
+            -0.01868747645675661,
+            0.2981572444082941,
+            -0.1035346016050892
+          ],
+          "omega": [
+            49.84990591348654,
+            -90.20939237635272,
+            -372.4424332704905
+          ],
+          "native_orientation_angle_axis": {
+            "angle": 0.44197725581082936,
+            "axis": [
+              0.04392476257995752,
+              -0.3330828419268228,
+              -0.9418738958301401
+            ]
+          }
+        },
+        "expected_vs_actual_change": {
+          "velocity": {
+            "norm_error": 4.1777673608052095e-17,
+            "max_abs": 4.163336342344337e-17,
+            "relative_error": 2.4280143340957715e-15,
+            "direction_cosine": 1.0000000000000002
+          },
+          "omega": {
+            "norm_error": 5.859285502108464e-14,
+            "max_abs": 5.684341886080802e-14,
+            "relative_error": 1.8162681086852988e-15,
+            "direction_cosine": 1.0000000000000002
+          }
+        },
+        "completed_response_PASS": true,
+        "interim_distinct_cluster_validated_against_next_callback": false,
+        "next_start": {
+          "time_s": 0.001900000000000001,
+          "native_state": {
+            "com": [
+              0.001202477910752855,
+              2.289344781145247e-05,
+              -7.973248781937086e-06
+            ],
+            "q": [
+              0.975681224556793,
+              0.00962805827721771,
+              -0.07300986561680456,
+              -0.20645340409831855
+            ],
+            "velocity": [
+              -0.01868747645675661,
+              0.2981572444082941,
+              -0.1035346016050892
+            ],
+            "omega": [
+              49.84990591348654,
+              -90.20939237635272,
+              -372.4424332704905
+            ],
+            "native_orientation_angle_axis": {
+              "angle": 0.44197725581082936,
+              "axis": [
+                0.04392476257995752,
+                -0.3330828419268228,
+                -0.9418738958301401
+              ]
+            }
+          },
+          "timesteps_advanced": 0,
+          "validation_kind": "NATIVE_BOUNDARY_READ; actual next PROPERTIES_ENTRY exists for nonterminal callbacks"
+        },
+        "next_start_errors": {
+          "com_m": 0.0,
+          "orientation_rad": 0.0,
+          "v_m_s": 0.0,
+          "omega_rad_s": 0.0,
+          "status": "PASS"
+        },
+        "properties_entry_PASS": true,
+        "inheritance_evidence_available": true,
+        "actual_properties_entry_available": false,
+        "terminal_zero_step_boundary_only": true,
+        "next_step_inherited_PASS": true,
+        "immediate_reread_used_as_PASS": false
+      }
+    ],
+    "duplicate_impulse_groups": []
+  },
+  "metrics": {
+    "first_contact_callback_time_s": 0.001825000000000001,
+    "first_contact_completed_time_s": 0.0018500000000000012,
+    "first_contact_point_m": [
+      0.0020436722784209892,
+      -0.0008429128641985178,
+      0.0002946779345301487
+    ],
+    "first_contact_normal": [
+      9.605666078903204e-05,
+      0.9443196452672084,
+      -0.3290294794323631
+    ],
+    "first_contact_actual_mesh_gap_m": 8.830977425190105e-05,
+    "first_contact_tilt_rad": 0.4367165921262564,
+    "first_contact_omega_rad_s": [
+      47.94436520248257,
+      -276.8498814150523,
+      -888.7526328388972
+    ],
+    "first_impulse_N_s": 2.6632487046107135e-06,
+    "physical_impulse_application_count": 3,
+    "contact_episode_count": 1,
+    "separation_count": 0,
+    "recontact_count": 0,
+    "separation_times_s": [],
+    "episode_definition": "Adjacent impulse boundaries separated by <=1.5dt constitute one native proximity-contact episode; callbacks within a boundary are deduplicated.",
+    "contact_geometry_note": "Native threshold remains100um: first callback may be at positive gap. Callback CURRENT_TIME is start boundary and mesh vertices belong to that boundary; completed contact response occurs one dt later.",
+    "minimum_signed_gap_m": 8.830975198408065e-05,
+    "maximum_penetration_m": 0.0,
+    "maximum_penetration_time_s": 0.001750000000000001,
+    "peak_impulse_N_s": 2.6632487046107135e-06,
+    "maximum_tilt_rad": 0.44154360591807706,
+    "maximum_tilt_deg": 25.298585090093454,
+    "peak_omega_rad_s": 895.1541376399333,
+    "COM_displacement_from_restart_m": [
+      -1.2354774695669604e-06,
+      2.2020961674459205e-05,
+      -7.637579771047794e-06
+    ],
+    "maximum_lateral_displacement_from_restart_m": 2.3307839407099055e-05,
+    "final_COM_m": [
+      0.001202477910752855,
+      2.289344781145247e-05,
+      -7.973248781937086e-06
+    ],
+    "final_Q_wxyz": [
+      0.975681224556793,
+      0.00962805827721771,
+      -0.07300986561680456,
+      -0.20645340409831855
+    ],
+    "final_v_m_s": [
+      -0.01868747645675661,
+      0.2981572444082941,
+      -0.1035346016050892
+    ],
+    "final_omega_rad_s": [
+      49.84990591348654,
+      -90.20939237635272,
+      -372.4424332704905
+    ]
+  },
+  "numerical_peaks": {
+    "orphan_peak": 0,
+    "invalid_donor_peak": 0,
+    "minimum_volume_m3": 6.100596812043284e-17,
+    "maximum_q_norm_error": 0.0
+  },
+  "resource_summary": {
+    "timestamp": "2026-10-05T02:52:27.871058+00:00",
+    "samples": 551,
+    "peak_project_working_set_gib": 8.364181518554688,
+    "peak_project_private_bytes_gib": 15.869953155517578,
+    "peak_system_commit_percent": 93.52185278970053,
+    "minimum_available_gib": 4.016407012939453,
+    "abort": null
+  },
+  "reviewed_files_sha256": {
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\configuration.json": "6d373bb006c6406c4479a4f0e23c6b02a28bc18d40a0c81a7325506acb976c25",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_history.json": "9fb1272f6e01acba7c023608c256c2710e7ce2d28e149f508071ce43fcd26d89",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\branch_result.json": "d51cf7b1adee49b7ec974a5bda2eb792738ee169bff140df686180580721b960",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_contact_callback_trace_node.jsonl": "74ec3db245c6a15c1c6fb0ec316c87723827fbaab291a51673aaa5b596ae76c3",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_contact_callback_trace_host.jsonl": "436db9997610d973668908562c372455e818ef3cb8f9d4146a17f15889c477e7",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\source_restart_validation.json": "d3ed62aa791537c58747b48681b905d1edda899e2bebf790fd4b6ceca21467b1",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\worker_exit.json": "f3ee004e5eec06c346ff31bc211515e599c995121b8dcb7ce7f12caac15ce4b6",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\engine_exit.json": "a13ac49484bdb54c7b8a9ff115e9a0bbe0c6a6b357566ee3e5e736b35dd2bf33",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\memory_summary.json": "78a83008aad0ff28b4d50ec4650fd56a0158359ca8446706593c796d8bfa1dd4",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\contact_events.jsonl": "663a3ff0c01956d893bdb83abba6787e0eb76ce4eb0ec758b5fa192eae7f4cba",
+    "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\contact_events.csv": "eaeaa4376dd8b1175b97d13e1ca75df71127dc30d64e73b881153a87d7fba57e"
+  },
+  "no_solver_connection": true
+}

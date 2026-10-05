@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T02:51:21.665939+00:00",
+  "metadata": "evidence\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076_checkpoint.json",
+  "time_s": 0.001900000000000001,
+  "checkpoint": {
+    "timestamp": "2026-10-05T02:51:20.392511+00:00",
+    "status": "NATIVE_CHECKPOINT_NUMERICAL_GATES_PASS",
+    "step": 76,
+    "native_step_index": 76,
+    "time_s": 0.001900000000000001,
+    "native_state": {
+      "com": [
+        0.001202477910752855,
+        2.289344781145247e-05,
+        -7.973248781937086e-06
+      ],
+      "q": [
+        0.975681224556793,
+        0.00962805827721771,
+        -0.07300986561680456,
+        -0.20645340409831855
+      ],
+      "velocity": [
+        -0.01868747645675661,
+        0.2981572444082941,
+        -0.1035346016050892
+      ],
+      "omega": [
+        49.84990591348654,
+        -90.20939237635272,
+        -372.4424332704905
+      ],
+      "native_orientation_angle_axis": {
+        "angle": 0.44197725581082936,
+        "axis": [
+          0.04392476257995752,
+          -0.3330828419268228,
+          -0.9418738958301401
+        ]
+      }
+    },
+    "evidence_branch": "micro25",
+    "logical_branch": "micro25",
+    "state_errors": {
+      "com": {
+        "error": 0.0,
+        "tolerance": 1e-10,
+        "status": "PASS"
+      },
+      "q": {
+        "error": 0.0,
+        "tolerance": 1e-09,
+        "status": "PASS"
+      },
+      "velocity": {
+        "error": 0.0,
+        "tolerance": 1e-08,
+        "status": "PASS"
+      },
+      "omega": {
+        "error": 0.0,
+        "tolerance": 1e-06,
+        "status": "PASS"
+      }
+    },
+    "case": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.cas.h5",
+    "data": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.dat.h5",
+    "case_sha256": "c0c782689288cea98473a3b8eb14031312c23077d8764033d9c07c9707ed4ccf",
+    "data_sha256": "b776f92b29c69b663079561e793595ce4b6a6d5c1b2c4c37812ed1cc2323dbaf",
+    "case_size_bytes": 109720801,
+    "data_size_bytes": 560545217,
+    "Fmag_N": [
+      -2.5346142581270013e-05,
+      0.0,
+      0.0
+    ],
+    "Tmag_COM_Nm": [
+      3.075579208077974e-07,
+      -1.7402959005514179e-06,
+      -6.826772748727556e-06
+    ],
+    "source_state": {
+      "moment_global": "[ 0.00094344 -0.0004121   0.00014756]",
+      "B_global": "[-0.01069558 -0.00256418  0.00017181]",
+      "s_eff_mm": 31.684980459796506,
+      "phase_rad": 1.1938052083641222,
+      "ramp": 1
+    },
+    "signed_gap_m": 8.855963317912804e-05,
+    "dt_s": 2.5e-05,
+    "large_native_files_local_only": true,
+    "integrity": {
+      "timestamp": "2026-10-05T02:51:21.034119+00:00",
+      "status": "PASS",
+      "files": {
+        "case": {
+          "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.cas.h5",
+          "size_bytes": 109720801,
+          "sha256": "c0c782689288cea98473a3b8eb14031312c23077d8764033d9c07c9707ed4ccf",
+          "HDF5_readable": true
+        },
+        "data": {
+          "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.dat.h5",
+          "size_bytes": 560545217,
+          "sha256": "b776f92b29c69b663079561e793595ce4b6a6d5c1b2c4c37812ed1cc2323dbaf",
+          "HDF5_readable": true
+        }
+      },
+      "timesteps_advanced": 0,
+      "time_s": 0.001900000000000001
+    },
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.cas.h5",
+        "size_bytes": 109720801,
+        "sha256": "c0c782689288cea98473a3b8eb14031312c23077d8764033d9c07c9707ed4ccf",
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro25\\native_0076.dat.h5",
+        "size_bytes": 560545217,
+        "sha256": "b776f92b29c69b663079561e793595ce4b6a6d5c1b2c4c37812ed1cc2323dbaf",
+        "HDF5_readable": true
+      }
+    }
+  }
+}

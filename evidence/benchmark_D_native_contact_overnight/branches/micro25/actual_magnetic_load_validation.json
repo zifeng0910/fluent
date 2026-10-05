@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "parts": [
+    {
+      "branch": "micro25",
+      "status": "PASS",
+      "actual_property_calls": 47,
+      "max_F_error_N": 1.3552527156068805e-20,
+      "max_T_error_Nm": 2.541098841762901e-21,
+      "actual_absolute_time_and_pose_used": true,
+      "phase_ramp_offset_not_restarted": true
+    }
+  ]
+}
