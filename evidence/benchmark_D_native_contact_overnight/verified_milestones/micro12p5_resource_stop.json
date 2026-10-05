@@ -1,0 +1,30 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "timestamp": "2026-10-05T05:59:40.925670+00:00",
+  "status": "VERIFIED_RESOURCE_STOP_PRESERVATION",
+  "final_status": "HARD_BLOCKER",
+  "micro12p5_status": "FAIL",
+  "micro25_status": "PASS",
+  "full_2ms_status": "INCOMPLETE",
+  "final_time_s": 0.0019,
+  "saved_emergency_checkpoint_integrity": "BYTES_HDF5_SAVED_STATE_PASS",
+  "zero_step_cold_reload_not_performed": true,
+  "owned_closure": "PASS",
+  "dt_selected": false,
+  "resource_failure_not_waived": true,
+  "reviewed_files": {
+    "evidence/benchmark_D_native_contact_overnight/window.json": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+    "evidence/benchmark_D_native_contact_overnight/configuration.json": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b",
+    "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/review.json": "527b7ccef1c7784fdb80e1bff409be41a4cb9c8484ac4e1f1398ba46ea7960a5",
+    "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/failure.json": "5f1ba99e53ee28fef85bad2aef1f158c330f9cf16be3ab8f6fe47315e5ba025f",
+    "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/resource_stop_checkpoint_safety.json": "05f8962a859a571a93d844d902feda0ffdca351a029a7bc8a69655d2f9558e89",
+    "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/review.json": "945bdd6d942b75fdd4c2ec6d4bb2cba7eb75645e993fabf395d1829ae0956df2",
+    "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/plan.json": "b950bc7409cc5f25f9902c7fd14ad7b5a9363544cd7c9b777656048e94a455d8",
+    "scripts/benchmark_D_native_contact_overnight_staged_exit_review.py": "9035d52a1877cf08243ecaf54b4341ff682df919e3a8351f607fd4874e7a0c9a",
+    "evidence/benchmark_D_native_contact_overnight/dt_comparison.json": "1bce1dc044ba2c0ca1b7bd32cc8d4153b6e254a70a25325e91c65dc2b904b651",
+    "evidence/benchmark_D_native_contact_overnight/contact_dt_selection.json": "2ab9eab0ced369f1330ae4b26cd911f23bdedab8b464a84422ac2226d82e6b9c",
+    "evidence/benchmark_D_native_contact_overnight/terminal_control_review.json": "26989cedd16a72548ddd916bd2f30c019e4fa724c661cb5d069f2fa0264201ab",
+    "evidence/benchmark_D_native_contact_overnight/final_report.json": "ce0868c8679ce62f824df08bf99c683e3c558faaa81671b1977804c164802574",
+    "evidence/benchmark_D_native_contact_overnight/state.json": "3fd9d2d5a09c968b82a748eb2789cfb8f6031c9e03fb5747e1837b00a28e5929"
+  }
+}

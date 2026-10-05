@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-10-05T05:24:24.200211+00:00",
+  "worker_absent": true,
+  "owned_CPU_observations": [
+    {
+      "timestamp": "2026-10-05T05:24:14.170307+00:00",
+      "processes": [
+        {
+          "pid": 43928,
+          "name": "fl2610.exe",
+          "created": 1791171889.2255323,
+          "CPU_delta_5s": 0.078125,
+          "private_bytes": 719917056,
+          "working_set_bytes": 2371584
+        },
+        {
+          "pid": 28732,
+          "name": "cx2610.exe",
+          "created": 1791171856.5433633,
+          "CPU_delta_5s": 0.078125,
+          "private_bytes": 675590144,
+          "working_set_bytes": 4612096
+        },
+        {
+          "pid": 31360,
+          "name": "fl_mpi2610.exe",
+          "created": 1791171894.8312657,
+          "CPU_delta_5s": 0.046875,
+          "private_bytes": 10157862912,
+          "working_set_bytes": 39575552
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-05T05:24:19.172250+00:00",
+      "processes": [
+        {
+          "pid": 43928,
+          "name": "fl2610.exe",
+          "created": 1791171889.2255323,
+          "CPU_delta_5s": 0.125,
+          "private_bytes": 719917056,
+          "working_set_bytes": 2359296
+        },
+        {
+          "pid": 28732,
+          "name": "cx2610.exe",
+          "created": 1791171856.5433633,
+          "CPU_delta_5s": 0.09375,
+          "private_bytes": 675590144,
+          "working_set_bytes": 4612096
+        },
+        {
+          "pid": 31360,
+          "name": "fl_mpi2610.exe",
+          "created": 1791171894.8312657,
+          "CPU_delta_5s": 0.015625,
+          "private_bytes": 10157862912,
+          "working_set_bytes": 38920192
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-05T05:24:24.173938+00:00",
+      "processes": [
+        {
+          "pid": 43928,
+          "name": "fl2610.exe",
+          "created": 1791171889.2255323,
+          "CPU_delta_5s": 0.203125,
+          "private_bytes": 719917056,
+          "working_set_bytes": 2297856
+        },
+        {
+          "pid": 28732,
+          "name": "cx2610.exe",
+          "created": 1791171856.5433633,
+          "CPU_delta_5s": 0.15625,
+          "private_bytes": 675590144,
+          "working_set_bytes": 4612096
+        },
+        {
+          "pid": 31360,
+          "name": "fl_mpi2610.exe",
+          "created": 1791171894.8312657,
+          "CPU_delta_5s": 0.078125,
+          "private_bytes": 10157862912,
+          "working_set_bytes": 38359040
+        }
+      ]
+    }
+  ],
+  "transcript_unchanged": true,
+  "resource_breaches": [
+    {
+      "timestamp": "2026-10-05T05:05:12.607441+00:00",
+      "stage": "ACTUAL_TRANSIENT_SOLVE",
+      "available_gib": 5.090003967285156,
+      "commit_fraction": 0.9514636729884802,
+      "commit_gib": 45.51782989501953,
+      "commit_limit_gib": 47.83979797363281,
+      "project_working_set_gib": 7.994983673095703,
+      "project_private_bytes_gib": 14.954410552978516
+    },
+    {
+      "timestamp": "2026-10-05T05:05:17.623219+00:00",
+      "stage": "ACTUAL_TRANSIENT_SOLVE",
+      "available_gib": 4.814655303955078,
+      "commit_fraction": 0.9576723103798798,
+      "commit_gib": 45.814849853515625,
+      "commit_limit_gib": 47.83979797363281,
+      "project_working_set_gib": 8.09981918334961,
+      "project_private_bytes_gib": 14.954444885253906
+    }
+  ],
+  "no_process_terminated": true,
+  "no_solver_connected_or_launched": true
+}

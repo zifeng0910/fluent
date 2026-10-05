@@ -1,0 +1,16 @@
+{
+  "observations": [
+    {
+      "timestamp": "2026-10-05T05:34:23.105212+00:00",
+      "node_CPU_seconds_over5s": 0.078125
+    },
+    {
+      "timestamp": "2026-10-05T05:34:28.119600+00:00",
+      "node_CPU_seconds_over5s": 0.078125
+    },
+    {
+      "timestamp": "2026-10-05T05:34:33.131887+00:00",
+      "node_CPU_seconds_over5s": 0.015625
+    }
+  ]
+}

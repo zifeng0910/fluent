@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-10-05T05:10:40.876531+00:00",
+  "status": "SAVED_HASHED_STOP_PENDING_REVIEW",
+  "step": 82,
+  "native_step_index": 82,
+  "time_s": 0.0019,
+  "native_state": {
+    "com": [
+      0.001202059728231191,
+      2.548983085379108e-05,
+      -8.791274104451692e-06
+    ],
+    "q": [
+      0.9765519473776979,
+      0.009371641736240116,
+      -0.07182259250369726,
+      -0.2027313039716397
+    ],
+    "velocity": [
+      -0.02040951258877126,
+      0.2924521338412675,
+      -0.1002816506743224
+    ],
+    "omega": [
+      44.2196687104958,
+      -89.23094923251794,
+      -364.2793870531261
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.4339609673712274,
+      "axis": [
+        0.043531954977932004,
+        -0.3336211467814477,
+        -0.941701597809004
+      ]
+    }
+  },
+  "evidence_branch": null,
+  "logical_branch": null,
+  "state_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "case": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.cas.h5",
+  "data": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.dat.h5",
+  "case_sha256": "19dfebfa9bd5b67fca3d861af83fa87b4dca8eddd35d557d4954c8c03284f83b",
+  "data_sha256": "462e3f38949528c11fba41b6cb8213ea4b9ab87feb30580d02d51dac7ddbfd11",
+  "case_size_bytes": 109633904,
+  "data_size_bytes": 561044835,
+  "Fmag_N": [
+    -2.543921509034358e-05,
+    0.0,
+    0.0
+  ],
+  "Tmag_COM_Nm": [
+    3.033991000966973e-07,
+    -1.7183317301123236e-06,
+    -6.757865524987128e-06
+  ],
+  "source_state": {
+    "moment_global": "[ 0.00094691 -0.00040482  0.00014545]",
+    "B_global": "[-0.01069558 -0.00256418  0.00017181]",
+    "s_eff_mm": 31.684562277274843,
+    "phase_rad": 1.1938052083641215,
+    "ramp": 1
+  },
+  "signed_gap_m": 9.782539188220123e-05,
+  "dt_s": 1.25e-05,
+  "large_native_files_local_only": true,
+  "integrity": {
+    "timestamp": "2026-10-05T05:10:41.519050+00:00",
+    "status": "PASS",
+    "files": {
+      "case": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.cas.h5",
+        "size_bytes": 109633904,
+        "sha256": "19dfebfa9bd5b67fca3d861af83fa87b4dca8eddd35d557d4954c8c03284f83b",
+        "HDF5_readable": true
+      },
+      "data": {
+        "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.dat.h5",
+        "size_bytes": 561044835,
+        "sha256": "462e3f38949528c11fba41b6cb8213ea4b9ab87feb30580d02d51dac7ddbfd11",
+        "HDF5_readable": true
+      }
+    },
+    "timesteps_advanced": 0,
+    "time_s": 0.0019
+  },
+  "files": {
+    "case": {
+      "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.cas.h5",
+      "size_bytes": 109633904,
+      "sha256": "19dfebfa9bd5b67fca3d861af83fa87b4dca8eddd35d557d4954c8c03284f83b",
+      "HDF5_readable": true
+    },
+    "data": {
+      "path": "H:\\fluent\\live_cases\\benchmark_D_native_contact_overnight\\branches\\micro12p5\\failure_native.dat.h5",
+      "size_bytes": 561044835,
+      "sha256": "462e3f38949528c11fba41b6cb8213ea4b9ab87feb30580d02d51dac7ddbfd11",
+      "HDF5_readable": true
+    }
+  }
+}

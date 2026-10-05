@@ -1,0 +1,356 @@
+{
+  "status": "NOT_ACCEPTED_RESOURCE_BLOCKED",
+  "branches": [
+    "micro25",
+    "micro12p5"
+  ],
+  "errors": {
+    "contact_timing_s": 2.5000000000000716e-05,
+    "contact_point_m": 1.1779785619267894e-05,
+    "minimum_signed_gap_m": 9.346098735782925e-06,
+    "peak_penetration_m": 0.0,
+    "first_impulse_relative": 0.0482176285187666,
+    "peak_impulse_relative": 0.0482176285187666,
+    "final_v_m_s": 0.00678935820088609,
+    "final_omega_rad_s": 9.964549437605577,
+    "maximum_tilt_rad": 0.00800058860990277,
+    "peak_omega_relative": 0.024628692397160628,
+    "impulse_count_difference": 4,
+    "episode_count_difference": 0
+  },
+  "checks": {
+    "both_full_micro_PASS": false,
+    "same_physical_end_time": true,
+    "timing": true,
+    "position": true,
+    "gap": false,
+    "penetration": true,
+    "first_impulse": true,
+    "peak_impulse": true,
+    "final_v": true,
+    "final_omega": true,
+    "tilt": true,
+    "peak_omega": true,
+    "event_counts": false
+  },
+  "tolerances": {
+    "timing_coarse_steps": 1,
+    "contact_position_m": 2e-05,
+    "signed_gap_m": 5e-06,
+    "penetration_m": 5e-06,
+    "impulse_relative": 0.1,
+    "final_v_relative": 0.1,
+    "final_v_absolute_m_s": 0.001,
+    "final_omega_relative": 0.1,
+    "final_omega_absolute_rad_s": 1.0,
+    "max_tilt_rad": 0.008726646259971648,
+    "peak_omega_relative": 0.1,
+    "event_count_absolute": 1,
+    "event_count_relative": 0.2
+  },
+  "exact_common_final_time_s": 0.001900000000000001,
+  "no_interpolation": true,
+  "timestamp": "2026-10-05T05:37:19.954668+00:00",
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "measured_frozen_threshold_comparison_status": "MATERIAL_DIFFERENCE",
+  "branch_metrics": [
+    {
+      "branch": "micro25",
+      "status": "PASS",
+      "failure_class": null,
+      "dt_s": 2.5e-05,
+      "start_time_s": 0.001750000000000001,
+      "end_time_s": 0.001900000000000001,
+      "metrics": {
+        "first_contact_callback_time_s": 0.001825000000000001,
+        "first_contact_completed_time_s": 0.0018500000000000012,
+        "first_contact_point_m": [
+          0.0020436722784209892,
+          -0.0008429128641985178,
+          0.0002946779345301487
+        ],
+        "first_contact_normal": [
+          9.605666078903204e-05,
+          0.9443196452672084,
+          -0.3290294794323631
+        ],
+        "first_contact_actual_mesh_gap_m": 8.830977425190105e-05,
+        "first_contact_tilt_rad": 0.4367165921262564,
+        "first_contact_omega_rad_s": [
+          47.94436520248257,
+          -276.8498814150523,
+          -888.7526328388972
+        ],
+        "first_impulse_N_s": 2.6632487046107135e-06,
+        "physical_impulse_application_count": 3,
+        "contact_episode_count": 1,
+        "separation_count": 0,
+        "recontact_count": 0,
+        "separation_times_s": [],
+        "episode_definition": "Adjacent impulse boundaries separated by <=1.5dt constitute one native proximity-contact episode; callbacks within a boundary are deduplicated.",
+        "contact_geometry_note": "Native threshold remains100um: first callback may be at positive gap. Callback CURRENT_TIME is start boundary and mesh vertices belong to that boundary; completed contact response occurs one dt later.",
+        "minimum_signed_gap_m": 8.830975198408065e-05,
+        "maximum_penetration_m": 0.0,
+        "maximum_penetration_time_s": 0.001750000000000001,
+        "peak_impulse_N_s": 2.6632487046107135e-06,
+        "maximum_tilt_rad": 0.44154360591807706,
+        "maximum_tilt_deg": 25.298585090093454,
+        "peak_omega_rad_s": 895.1541376399333,
+        "COM_displacement_from_restart_m": [
+          -1.2354774695669604e-06,
+          2.2020961674459205e-05,
+          -7.637579771047794e-06
+        ],
+        "maximum_lateral_displacement_from_restart_m": 2.3307839407099055e-05,
+        "final_COM_m": [
+          0.001202477910752855,
+          2.289344781145247e-05,
+          -7.973248781937086e-06
+        ],
+        "final_Q_wxyz": [
+          0.975681224556793,
+          0.00962805827721771,
+          -0.07300986561680456,
+          -0.20645340409831855
+        ],
+        "final_v_m_s": [
+          -0.01868747645675661,
+          0.2981572444082941,
+          -0.1035346016050892
+        ],
+        "final_omega_rad_s": [
+          49.84990591348654,
+          -90.20939237635272,
+          -372.4424332704905
+        ]
+      }
+    },
+    {
+      "branch": "micro12p5",
+      "status": "FAIL",
+      "failure_class": "RESOURCE_HARD_STOP",
+      "dt_s": 1.25e-05,
+      "start_time_s": 0.001750000000000001,
+      "end_time_s": 0.0019,
+      "metrics": {
+        "first_contact_callback_time_s": 0.0018125000000000005,
+        "first_contact_completed_time_s": 0.0018250000000000004,
+        "first_contact_point_m": [
+          0.002054816445646657,
+          -0.0008461483872996205,
+          0.0002967033422284894
+        ],
+        "first_contact_normal": [
+          -0.00021384832788785997,
+          0.9453948830818396,
+          -0.32592709201839537
+        ],
+        "first_contact_actual_mesh_gap_m": 9.765586470329496e-05,
+        "first_contact_tilt_rad": 0.41377177704382434,
+        "first_contact_omega_rad_s": [
+          45.47963595468109,
+          -265.84443299888545,
+          -849.5203678120664
+        ],
+        "first_impulse_N_s": 2.5407402357601473e-06,
+        "physical_impulse_application_count": 7,
+        "contact_episode_count": 1,
+        "separation_count": 0,
+        "recontact_count": 0,
+        "separation_times_s": [],
+        "episode_definition": "Adjacent impulse boundaries separated by <=1.5dt constitute one native proximity-contact episode; callbacks within a boundary are deduplicated.",
+        "contact_geometry_note": "Native threshold remains100um: first callback may be at positive gap. Callback CURRENT_TIME is start boundary and mesh vertices belong to that boundary; completed contact response occurs one dt later.",
+        "minimum_signed_gap_m": 9.765585071986357e-05,
+        "maximum_penetration_m": 0.0,
+        "maximum_penetration_time_s": 0.001750000000000001,
+        "peak_impulse_N_s": 2.5407402357601473e-06,
+        "maximum_tilt_rad": 0.4335430173081743,
+        "maximum_tilt_deg": 24.840185129125587,
+        "peak_omega_rad_s": 873.6375862613057,
+        "COM_displacement_from_restart_m": [
+          -1.6536599912310521e-06,
+          2.4617344716797816e-05,
+          -8.4556050935624e-06
+        ],
+        "maximum_lateral_displacement_from_restart_m": 2.6029039905534966e-05,
+        "final_COM_m": [
+          0.001202059728231191,
+          2.548983085379108e-05,
+          -8.791274104451692e-06
+        ],
+        "final_Q_wxyz": [
+          0.9765519473776979,
+          0.009371641736240116,
+          -0.07182259250369726,
+          -0.2027313039716397
+        ],
+        "final_v_m_s": [
+          -0.02040951258877126,
+          0.2924521338412675,
+          -0.1002816506743224
+        ],
+        "final_omega_rad_s": [
+          44.2196687104958,
+          -89.23094923251794,
+          -364.2793870531261
+        ]
+      }
+    }
+  ],
+  "first_contact_normal_angle_difference_deg": 0.18896313980914858,
+  "normal_gate": "Descriptive; no new acceptance threshold introduced",
+  "separation_recontact_comparison": {
+    "micro25": {
+      "separation_count": 0,
+      "recontact_count": 0,
+      "separation_times_s": []
+    },
+    "micro12p5": {
+      "separation_count": 0,
+      "recontact_count": 0,
+      "separation_times_s": []
+    }
+  },
+  "COM_trajectory_exact_common_times": [
+    {
+      "time_s": 0.001750000000000001,
+      "COM25_m": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "COM12p5_m": [
+        0.001203713388222422,
+        8.724861369932643e-07,
+        -3.356690108892919e-07
+      ],
+      "difference_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "norm_difference_m": 0.0
+    },
+    {
+      "time_s": 0.001775000000000001,
+      "COM25_m": [
+        0.001203637268370002,
+        9.451244617270377e-07,
+        -3.613079098734778e-07
+      ],
+      "COM12p5_m": [
+        0.001203637412304638,
+        9.451293891656373e-07,
+        -3.611212308884951e-07
+      ],
+      "difference_m": [
+        -1.4393463591139133e-10,
+        -4.927438599674289e-12,
+        -1.8667898498266224e-10
+      ],
+      "norm_difference_m": 2.3577638240556534e-10
+    },
+    {
+      "time_s": 0.001800000000000001,
+      "COM25_m": [
+        0.001203563385993184,
+        1.024403568508887e-06,
+        -3.8907880798529e-07
+      ],
+      "COM12p5_m": [
+        0.001203564604598219,
+        1.023997122489702e-06,
+        -3.87801444352813e-07
+      ],
+      "difference_m": [
+        -1.2186050350228295e-09,
+        4.064460191849922e-10,
+        -1.277363632476999e-09
+      ],
+      "norm_difference_m": 1.8115889289430846e-09
+    },
+    {
+      "time_s": 0.001825000000000001,
+      "COM25_m": [
+        0.001203492883701659,
+        1.111024063180121e-06,
+        -4.185176516934699e-07
+      ],
+      "COM12p5_m": [
+        0.001203496044482209,
+        4.482463034181643e-06,
+        -1.579102640688615e-06
+      ],
+      "difference_m": [
+        -3.1607805500537267e-09,
+        -3.371438971001522e-06,
+        1.160584988995145e-06
+      ],
+      "norm_difference_m": 3.565609098373285e-06
+    },
+    {
+      "time_s": 0.001850000000000001,
+      "COM25_m": [
+        0.001203430423876008,
+        8.270410209346977e-06,
+        -2.911214814205053e-06
+      ],
+      "COM12p5_m": [
+        0.001203048947545395,
+        1.124612380537049e-05,
+        -3.903405176352981e-06
+      ],
+      "difference_m": [
+        3.814763306130096e-07,
+        -2.9757135960235136e-06,
+        9.921903621479284e-07
+      ],
+      "norm_difference_m": 3.159879319074764e-06
+    },
+    {
+      "time_s": 0.001875000000000001,
+      "COM25_m": [
+        0.001202945097664274,
+        1.543951670124512e-05,
+        -5.384883741809854e-06
+      ],
+      "COM12p5_m": [
+        0.001202564270092991,
+        1.823923168977699e-05,
+        -6.304007723617143e-06
+      ],
+      "difference_m": [
+        3.8082757128289797e-07,
+        -2.799714988531869e-06,
+        9.191239818072892e-07
+      ],
+      "norm_difference_m": 2.9712324967919493e-06
+    },
+    {
+      "time_s": 0.001900000000000001,
+      "COM25_m": [
+        0.001202477910752855,
+        2.289344781145247e-05,
+        -7.973248781937086e-06
+      ],
+      "COM12p5_m": [
+        0.001202059728231191,
+        2.548983085379108e-05,
+        -8.791274104451692e-06
+      ],
+      "difference_m": [
+        4.181825216640917e-07,
+        -2.596383042338611e-06,
+        8.180253225146062e-07
+      ],
+      "norm_difference_m": 2.7541327041818386e-06
+    }
+  ],
+  "resource_failure_not_waived": true,
+  "selected_dt_s": null,
+  "review_sha256": {
+    "micro25": "b264db9db69a3fcf9b3e99e46a938d9d490e8460377f726b8235a7f29fc6c77c",
+    "micro12p5": "527b7ccef1c7784fdb80e1bff409be41a4cb9c8484ac4e1f1398ba46ea7960a5"
+  },
+  "next_action": "Review resource-stop checkpoint recovery before any new solver; no timestep selected or fallback authorized by this resource failure"
+}

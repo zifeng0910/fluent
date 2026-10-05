@@ -1,0 +1,136 @@
+{
+  "time_s": 0.001787500000000001,
+  "native_step_index": 73,
+  "native_state": {
+    "com": [
+      0.001203600520893843,
+      9.83761046971769e-07,
+      -3.743090949360855e-07
+    ],
+    "q": [
+      0.9818433314792722,
+      0.007514790746381961,
+      -0.0652552691355453,
+      -0.17795772025896997
+    ],
+    "velocity": [
+      -0.002914682608658179,
+      0.003152591690461886,
+      -0.001062347323048043
+    ],
+    "omega": [
+      42.20911006111289,
+      -251.6927402433719,
+      -799.4665374038195
+    ],
+    "native_orientation_angle_axis": {
+      "angle": 0.38170019871616306,
+      "axis": [
+        0.03961540950717303,
+        -0.3440034854663164,
+        -0.9381323048038612
+      ]
+    }
+  },
+  "evidence_branch": "micro12p5",
+  "logical_branch": "micro12p5",
+  "dt_s": 1.25e-05,
+  "shared_body_errors": {
+    "com": {
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 0.0,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "connectivity": {
+    "total": 4699301,
+    "orphan": 0,
+    "invalid_donors": 0,
+    "unidentified": 0,
+    "nonpositive_volume": 0,
+    "nonfinite_volume": 0,
+    "minimum_volume_m3": 6.100596812043607e-17
+  },
+  "signed_gap_m": 0.00011583679190682171,
+  "physical_gap_m": 0.00011583679190682171,
+  "meshed_pipe_signed_gap_m": 0.00011402458525206197,
+  "maximum_penetration_m": 0.0,
+  "closest_surface_point_m": [
+    0.0020673898980021477,
+    -0.0007358567672781646,
+    0.0002709737163968384
+  ],
+  "inward_normal": [
+    0.0,
+    0.9383974658381656,
+    -0.34555780429402644
+  ],
+  "tube_radius_m": 0.0009,
+  "gap_definition": "IDEAL_CYLINDER_EXACT_FOR_ACTUAL_TRIANGULATED_ROBOT_SURFACE",
+  "q_norm": 1.0,
+  "tilt_angle_rad": 0.38139687736668715,
+  "direct_DT_Q_wxyz": [
+    0.9818433314792722,
+    0.007514790746381963,
+    -0.06525526913554532,
+    -0.17795772025896997
+  ],
+  "direct_DT_Q_norm": 1.0,
+  "direct_DT_state_errors": {
+    "com": {
+      "error": 2.168404344971009e-19,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    "q": {
+      "error": 1.3877787807814457e-17,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    "velocity": {
+      "error": 4.336808689942018e-19,
+      "tolerance": 1e-08,
+      "status": "PASS"
+    },
+    "omega": {
+      "error": 0.0,
+      "tolerance": 1e-06,
+      "status": "PASS"
+    }
+  },
+  "omega_magnitude_rad_s": 839.2124813727579,
+  "Fmag_N": [
+    -2.6007289174857833e-05,
+    0.0,
+    0.0
+  ],
+  "Tmag_Nm": [
+    2.6106711541266684e-07,
+    -1.630563475816742e-06,
+    -6.220791267812179e-06
+  ],
+  "source_state": {
+    "moment_global": "[ 0.00096803 -0.00035592  0.00013392]",
+    "B_global": "[-0.01071318 -0.00248734  0.00020237]",
+    "s_eff_mm": 31.686778069937493,
+    "phase_rad": 1.1231193736583516,
+    "ramp": 1
+  },
+  "hard_failures": [],
+  "status": "PASS"
+}

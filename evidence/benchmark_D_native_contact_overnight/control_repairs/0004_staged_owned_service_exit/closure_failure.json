@@ -1,0 +1,4 @@
+{
+  "error": "RuntimeError('Owned engine not idle after SDK exit; no forced cleanup')",
+  "timestamp": "2026-10-05T05:11:17.562060+00:00"
+}

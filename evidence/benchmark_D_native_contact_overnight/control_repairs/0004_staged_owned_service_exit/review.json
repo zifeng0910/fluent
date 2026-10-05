@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-10-05T05:34:34.534561+00:00",
+  "SDK_exit_requested": true,
+  "SDK_exit_returned": true,
+  "owned_engine_closed": true,
+  "worker_identity": {
+    "pid": 25644,
+    "created": 1791171781.053085,
+    "branch": "micro12p5",
+    "timestamp": "2026-10-05T03:43:14.255320+00:00",
+    "name": "pythonw.exe"
+  },
+  "owned_engine_identities": [
+    {
+      "pid": 43928,
+      "created": 1791171889.2255323,
+      "name": "fl2610.exe",
+      "ownership": "SDK host/cortex"
+    },
+    {
+      "pid": 28732,
+      "created": 1791171856.5433633,
+      "name": "cx2610.exe",
+      "ownership": "SDK host/cortex"
+    },
+    {
+      "pid": 31360,
+      "created": 1791171894.8312657,
+      "registered_host_pid": 43928,
+      "mport": "127.0.0.1:127.0.0.1:64889:0",
+      "ownership_evidence": "Node -mport matches registered Fluent host local TCP port",
+      "name": "fl_mpi2610.exe"
+    }
+  ],
+  "worker_absent": true,
+  "all_owned_engines_absent": true,
+  "no_native_engine_present": true,
+  "compute_node_idle_threshold_CPU_seconds_over5s": 0.05,
+  "compute_node_absence_before_host_closure": true,
+  "observations": [
+    {
+      "timestamp": "2026-10-05T05:34:23.105212+00:00",
+      "node_CPU_seconds_over5s": 0.078125
+    },
+    {
+      "timestamp": "2026-10-05T05:34:28.119600+00:00",
+      "node_CPU_seconds_over5s": 0.078125
+    },
+    {
+      "timestamp": "2026-10-05T05:34:33.131887+00:00",
+      "node_CPU_seconds_over5s": 0.015625
+    }
+  ],
+  "terminated_services": [
+    {
+      "pid": 28732,
+      "created": 1791171856.5433633,
+      "name": "cx2610.exe",
+      "ownership": "SDK host/cortex"
+    }
+  ],
+  "unrelated_processes_touched": [],
+  "checkpoint_time_s": 0.0019,
+  "emergency_checkpoint_integrity_PASS": true,
+  "original_exit_failure_preserved": true,
+  "original_resource_failure_preserved": true,
+  "resource_failure_not_waived": true,
+  "no_new_solver": true,
+  "no_dynamics_advanced": true,
+  "plan_sha256": "b950bc7409cc5f25f9902c7fd14ad7b5a9363544cd7c9b777656048e94a455d8",
+  "job_sha256": "9035d52a1877cf08243ecaf54b4341ff682df919e3a8351f607fd4874e7a0c9a"
+}

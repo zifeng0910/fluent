@@ -1,0 +1,15 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "status": "AWAITING_OFFLINE_FAILURE_REVIEW",
+  "timestamp": "2026-10-05T05:11:17.573335+00:00",
+  "branch": "micro12p5",
+  "worker_pid": 25644,
+  "worker_created": 1791171781.053085,
+  "worker_alive": false,
+  "solver_alive": true,
+  "completed_new_steps": 11,
+  "current_time_s": 0.0019,
+  "target_new_steps": 12,
+  "error": "RuntimeError('RESOURCE_HARD_STOP')",
+  "failure_class": "RESOURCE_HARD_STOP"
+}

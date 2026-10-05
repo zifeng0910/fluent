@@ -1,0 +1,33 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "status": "OWNED_EXIT_REVIEW",
+  "timestamp": "2026-10-05T05:11:22.611833+00:00",
+  "route": "NATIVE_OVERWRITE",
+  "current_time_s": 0.0019,
+  "solver_alive": true,
+  "worker_alive": false,
+  "pending_stage": "NATIVE_DT_12P5",
+  "resource": {
+    "timestamp": "2026-10-05T03:42:55.471899+00:00",
+    "physical_total_gib": 31.839797973632812,
+    "available_gib": 14.953231811523438,
+    "used_gib": 16.886566162109375,
+    "commit_gib": 25.627559661865234,
+    "commit_limit_gib": 47.83979797363281,
+    "commit_fraction": 0.5356953989644776,
+    "pagefile_used_gib": 0.4883995056152344,
+    "pagefile_total_gib": 16.0,
+    "kernel_nonpaged_gib": 1.1636810302734375,
+    "commit_peak_gib": 66.31137466430664,
+    "pagefile_available_gib": 15.511600494384766,
+    "commit_headroom_gib": 22.212238311767578,
+    "disk_free_gib": 192.28459548950195
+  },
+  "stable_admission_seconds": 55.15828249999322,
+  "active_branch": "micro12p5",
+  "worker_status": "AWAITING_OFFLINE_FAILURE_REVIEW",
+  "worker_state_timestamp": "2026-10-05T05:10:42.164715+00:00",
+  "reason": null,
+  "micro25_status": "PASS",
+  "repair_review": "evidence\\benchmark_D_native_contact_overnight\\control_repairs\\0003_transient_exit_busy\\review.json"
+}

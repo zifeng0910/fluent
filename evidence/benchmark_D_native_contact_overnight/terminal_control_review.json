@@ -1,0 +1,34 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "timestamp": "2026-10-05T05:59:40.925670+00:00",
+  "status": "PASS_SAFE_TERMINAL_CONTROL",
+  "campaign_status": "HARD_BLOCKER",
+  "registered_processes_absent": [
+    44428,
+    25644,
+    20860,
+    43928,
+    28732,
+    31360,
+    37656
+  ],
+  "all_owned_solver_engines_absent": true,
+  "closure_review_file": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/review.json",
+  "closure_review_sha256": "945bdd6d942b75fdd4c2ec6d4bb2cba7eb75645e993fabf395d1829ae0956df2",
+  "windows_task": {
+    "TaskName": "Fluent-Benchmark-D-Native-Contact-Overnight",
+    "State": "Disabled",
+    "Enabled": false
+  },
+  "heartbeat": {
+    "id": "benchmark-d-native-contact-overnight-review",
+    "status": "PAUSED",
+    "target_thread_id": "01a0f184-f8d7-71e1-b4a1-9cb56638f9a1"
+  },
+  "worker_and_supervisor_original_failure_snapshots_preserved": true,
+  "old_supervisor_worker_flags_are_historical": true,
+  "resource_failure_preserved": true,
+  "no_new_solver_or_dynamics": true,
+  "window_sha256": "6a4189a4817de68c02f7670d5ed1791876645628fefff6205d35dd6fe81d4a8a",
+  "configuration_sha256": "69b8b42bf03be6d69593c99c232f68d4c992592748e2482e7468a1a15840690b"
+}

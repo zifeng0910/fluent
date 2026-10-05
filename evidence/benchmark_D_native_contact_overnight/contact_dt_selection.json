@@ -1,0 +1,15 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "timestamp": "2026-10-05T05:59:40.925670+00:00",
+  "status": "NOT_SELECTED",
+  "micro25": "PASS",
+  "micro12p5": "FAIL_RESOURCE_HARD_STOP",
+  "micro6p25": "NOT_RUN",
+  "selected_dt_s": null,
+  "comparison_file": "dt_comparison.json",
+  "comparison_sha256": "1bce1dc044ba2c0ca1b7bd32cc8d4153b6e254a70a25325e91c65dc2b904b651",
+  "reason": "Frozen full-branch resource/checkpoint/completion gates failed. Timestep comparison is descriptive and cannot authorize a selected dt or production restart.",
+  "production_restart_s": null,
+  "original_window_preserved": true,
+  "no_solver_launched": true
+}

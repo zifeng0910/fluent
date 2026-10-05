@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-10-05T05:11:17.571473+00:00",
+  "status": "RESOURCE_HARD_STOP",
+  "worker_pid": 25644,
+  "worker_created": 1791171781.053085,
+  "solver_closed": false,
+  "completed_new_steps": 12,
+  "current_time_s": 0.0019
+}

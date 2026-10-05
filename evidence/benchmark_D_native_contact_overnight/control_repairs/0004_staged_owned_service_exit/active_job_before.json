@@ -1,0 +1,15 @@
+{
+  "kind": "closure",
+  "job": "scripts/benchmark_D_native_contact_overnight_owned_exit_review.py",
+  "branch": "micro12p5",
+  "pid": 37656,
+  "created": 1791177082.8483484,
+  "name": "pythonw.exe",
+  "started": "2026-10-05T05:11:22.855455+00:00",
+  "stdout": "evidence\\benchmark_D_native_contact_overnight\\jobs\\closure_micro12p5_1791177082843_stdout.log",
+  "stderr": "evidence\\benchmark_D_native_contact_overnight\\jobs\\closure_micro12p5_1791177082843_stderr.log",
+  "key": "closure_micro12p5_1791177082843",
+  "status": "FINISHED",
+  "returncode": 1,
+  "finished": "2026-10-05T05:13:23.005161+00:00"
+}

@@ -1,0 +1,510 @@
+{
+  "campaign": "BENCHMARK_D_NATIVE_CONTACT_OVERNIGHT",
+  "timestamp": "2026-10-05T06:00:51.250563+00:00",
+  "status": "REVIEWED_VERIFIED_RESOURCE_STOP_FILES",
+  "no_large_native_files_or_VTP": true,
+  "credential_scan": "PASS",
+  "resource_failure_preserved": true,
+  "files": [
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branch_specs/micro12p5.json",
+      "bytes": 457,
+      "sha256": "88a6d98e3540fd7b78ebd0bf85a47d5b2b3d0c15ca71d8f3e88dafa26c77e3a5"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/actual_magnetic_load_validation.json",
+      "bytes": 345,
+      "sha256": "2cb4de4f04b6402c76977a2114ebe8e15bb5c982fe5df5ee16351be8a0d95545"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_01.json",
+      "bytes": 725,
+      "sha256": "41a12bd0201c9dd798bc3f7c63571406c2365429f56022f5f0b9589d6afd07b3"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_02.json",
+      "bytes": 725,
+      "sha256": "88bc2b6afa27b7bf33bbeeb8c49bc7b14d28908df57d05f16e3951155119cb24"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_03.json",
+      "bytes": 723,
+      "sha256": "7150f295caa3de2c3957891333349c69ae286962aa1f1466f55428e4574aed6b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_04.json",
+      "bytes": 724,
+      "sha256": "b7ee59467a6205aff668c8d9bb2675161ecfcda3a55254bc0dfbfed664fb5d18"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_05.json",
+      "bytes": 723,
+      "sha256": "3718b893ceb5ffbfa20deb1ac53abb80145223ce7c2dedc052d5d36f2fd82703"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_06.json",
+      "bytes": 722,
+      "sha256": "6e83e6fa39bb10dddc36db608b37404ef47462f73c4a18d843dfd306d5e90ac9"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_07.json",
+      "bytes": 709,
+      "sha256": "9ebe07e005c76e9e101a6d3dd15e6e4cad567229274d372cbe1f408b26783dd5"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_08.json",
+      "bytes": 710,
+      "sha256": "8338179737c25be19153bda0adb60c38fea2ef7b4b2ddaa9e4fe92f6d43cedf4"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_09.json",
+      "bytes": 708,
+      "sha256": "32eb4902d9235673f76bb979e9c1bf2239a08c16166ea3a017145298e7113caa"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_10.json",
+      "bytes": 709,
+      "sha256": "15fb52bad11f685b1899625c4b6c9ef4e549906d374258e2acdef0ed6b3c4126"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_11.json",
+      "bytes": 708,
+      "sha256": "38f04f9a4759d4cf6b93ff394daec3f3c6bdfbbeeada00f6ca69f708427c5839"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/before_step_12.json",
+      "bytes": 708,
+      "sha256": "c60056844e6f57dbaf3faf742a578d2960ccb9fe92b2854d52af90cb2225fcfa"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/closure_failure.json",
+      "bytes": 142,
+      "sha256": "844fe086a7480f4aeaec82672cc56598e6b2d9d53184f9f7896345b018e7756b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/closure_repairs/0001_transient_exit_busy/campaign_state_before.json",
+      "bytes": 1311,
+      "sha256": "f2e4be26de3ac8c321b809603f5a88c86a687dc253e646077c120208428c4bf1"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/closure_repairs/0001_transient_exit_busy/closure_failure.json",
+      "bytes": 142,
+      "sha256": "844fe086a7480f4aeaec82672cc56598e6b2d9d53184f9f7896345b018e7756b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/closure_repairs/0001_transient_exit_busy/owned_engine.json",
+      "bytes": 704,
+      "sha256": "3d5fae209164f7ed3a419610ebb9254bde00dd2be756047093f53ea4c130eb9f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/closure_repairs/0001_transient_exit_busy/worker_exit.json",
+      "bytes": 240,
+      "sha256": "1b2804d539ef12f61af1293c7bc927a3ad879145fa49979f30862ad66882bf64"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/compile_hook_gate.json",
+      "bytes": 1208,
+      "sha256": "81211db6995f64be9002d1500fa1f04ad02a69d30736dbaecb027dab4b9bc99c"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/configuration.json",
+      "bytes": 1166,
+      "sha256": "75b5bc7e766a3f68ab529c86c1030691905f0455b35bc0ea9718eef65e4a1726"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/contact_events.csv",
+      "bytes": 9062,
+      "sha256": "68869c623c32a3c699bb25f5f233008caf98ad916edeb4ce624bf22452674064"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/contact_events.jsonl",
+      "bytes": 30028,
+      "sha256": "7917f65a8cefa4f1b9d99048f9960f9cd5ba5dd4a3b58856caf6a547a4541ef6"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/dynamic_history.csv",
+      "bytes": 1124,
+      "sha256": "3f75e6948b690f1fabd4551d8959e07f847d1a2407f35b5fada29013377fc11c"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/engine_exit.json",
+      "bytes": 2195,
+      "sha256": "945bdd6d942b75fdd4c2ec6d4bb2cba7eb75645e993fabf395d1829ae0956df2"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/failure.json",
+      "bytes": 8208,
+      "sha256": "5f1ba99e53ee28fef85bad2aef1f158c330f9cf16be3ab8f6fe47315e5ba025f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/failure_native_checkpoint.json",
+      "bytes": 3697,
+      "sha256": "68592f6279b82d0de9708d32f54ddf52fef1f410a3f5333e01ccb3bfc0a52283"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/final_next_start.json",
+      "bytes": 855,
+      "sha256": "6575cc67553860a3e4938f49152012bac2a6fc03b3f1975a451c5e40d5e454b9"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/latest_verified_checkpoint.json",
+      "bytes": 4181,
+      "sha256": "cd48cc4a507f01996f05df80c912cc20c1cab53e379f4e3dfdb2ef619a6f8be6"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/launch_review.json",
+      "bytes": 1626,
+      "sha256": "5617841e43be085f080595169692a1814c24dd9bf05003843344912a2eae70b3"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/magnetic_history.csv",
+      "bytes": 72357,
+      "sha256": "c14d4d099f3512ca9a83018da33b157e4d7330c433108d944c492865b8371969"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/memory_summary.json",
+      "bytes": 319,
+      "sha256": "3953787934a972abb2b0b581caf3e5d761d30c45d1cb09a4a208d62896b9f13b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0070_checkpoint.json",
+      "bytes": 3735,
+      "sha256": "56e9a4ea657e404e1b149d73061f2da1a2d97240bf7160a95c1094ebc759b928"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0071_checkpoint.json",
+      "bytes": 3731,
+      "sha256": "37af34f909aa0f200769461c6793c8e5a774cbf89585e54ea79ea70dae83f0b0"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0072_checkpoint.json",
+      "bytes": 3733,
+      "sha256": "6f1d4f0e80414a7b5ec6ccb4a2e32bdc76be507272e88f5dd8ba23cd0a434196"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0073_checkpoint.json",
+      "bytes": 3735,
+      "sha256": "15a29cf3029bf100e81c37e86b0a8e49e33865f08157de112578f11713fc493f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0074_checkpoint.json",
+      "bytes": 3730,
+      "sha256": "d2cee5a86dd387fd7b0de8474be336b705183a56a39af3a89849b8c3be7f8454"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0075_checkpoint.json",
+      "bytes": 3731,
+      "sha256": "5f91b8e4d7ee9b5eb718116e286bfeee02307d85324b17a865687fa006782cc0"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0076_checkpoint.json",
+      "bytes": 3708,
+      "sha256": "893bfcb68c1677e53e5a43dffc95540d11a7a9e317c4aca3ccb297aa59142774"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0077_checkpoint.json",
+      "bytes": 3709,
+      "sha256": "f0f969da8702f86ecd81381989028d1fd7e1d4cab17ccc24d4131ac6fabbf463"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0078_checkpoint.json",
+      "bytes": 3704,
+      "sha256": "6391bfa701cfbd6f2139682120cba5cc010d87be3b7e61bdc00a0e9f360ec141"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0079_checkpoint.json",
+      "bytes": 3705,
+      "sha256": "5f13b7d75343b0ac03ed16ac9bc43a376b230f20149d3bbb5c52d27a4aed438b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0080_checkpoint.json",
+      "bytes": 3706,
+      "sha256": "ff198f0de441b77c3498006524d32ac7179bee053f022e9bea63a47bce6f9bea"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_0081_checkpoint.json",
+      "bytes": 3705,
+      "sha256": "48fbbf6b899642a984246850171e95edbabee59e919947d6b7faee68ffdf3ca7"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_connectivity_crosscheck.json",
+      "bytes": 1227,
+      "sha256": "c26e4916a626d40f04e234b750397d0a9c41d1fb413f6b4eb20597d57c6b4393"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_connectivity_current.json",
+      "bytes": 425,
+      "sha256": "082ca25f08de2befd5db74fd61ab3543983f498e7e49d23d47e6aa384a2fd526"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_contact_callback_trace_host.csv",
+      "bytes": 4159,
+      "sha256": "f71738a810228cdde2098096cd383e91a072b9231c503aee0191792cc9240622"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_contact_callback_trace_host.jsonl",
+      "bytes": 13192,
+      "sha256": "d57b85b5cea13b0fd15b180e45e7357168d30a1fb3310781f842008f3b8d2eb9"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_contact_callback_trace_node.csv",
+      "bytes": 4159,
+      "sha256": "b5a4e0959494f3f1ff56e2f1d8f0c88a5a7ce546bf88dd063b869e3e0f3ed242"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_contact_callback_trace_node.jsonl",
+      "bytes": 13192,
+      "sha256": "85a90ac93c78526601bb20a41ad3d4094d364a1225423ff89a7de0c28b28dec4"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_history.json",
+      "bytes": 48652,
+      "sha256": "fbb98c2d5009672814a8ee29dfc367679b4a88e1087c658b421488c98bfa8803"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_state_lifecycle_host.jsonl",
+      "bytes": 54577,
+      "sha256": "a13321f38f1ab3a721b3b91feef8c2d74d7fe85153444fcb2358bfb9f7b931eb"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/native_state_lifecycle_node.jsonl",
+      "bytes": 54577,
+      "sha256": "5f7c3ebf61d5d56d0b8c9588e3357cac0fe0a591633d6b9daaf5597dade1c42e"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/owned_engine.json",
+      "bytes": 704,
+      "sha256": "3d5fae209164f7ed3a419610ebb9254bde00dd2be756047093f53ea4c130eb9f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/precontact_C_vs_D.json",
+      "bytes": 1604,
+      "sha256": "029a648365ab6c5ab3019acc3d6561eca874af9cfaf79d5040d6a55055c9365a"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/recovery_process_review.json",
+      "bytes": 2195,
+      "sha256": "945bdd6d942b75fdd4c2ec6d4bb2cba7eb75645e993fabf395d1829ae0956df2"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/resource_stop_checkpoint_safety.json",
+      "bytes": 1498,
+      "sha256": "05f8962a859a571a93d844d902feda0ffdca351a029a7bc8a69655d2f9558e89"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/review.json",
+      "bytes": 55114,
+      "sha256": "527b7ccef1c7784fdb80e1bff409be41a4cb9c8484ac4e1f1398ba46ea7960a5"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/snapshots.json",
+      "bytes": 5779,
+      "sha256": "831311b74a081cdf31304db1b9f353e1a1d823517627d18753aad82d56a0e385"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/source_restart_validation.json",
+      "bytes": 3942,
+      "sha256": "ec998a0fc0e9082fa80a34466f21edf5fdb19735403e69d7c16f12e398d0bcbe"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0070.json",
+      "bytes": 3122,
+      "sha256": "65d5957318fe53df38b4ea1f7c21dd5d4039820a4ee909c49e28181cfbacd72f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0071.json",
+      "bytes": 3176,
+      "sha256": "ff12c80c260261e73dea52c4d3a3dd23e1098a9cc48a4214b0d791f1b9e22d04"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0072.json",
+      "bytes": 3209,
+      "sha256": "834e5340355a2ca2440494b4fc8fe0550d7f72c5b94fe1b77823f1ad36df5248"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0073.json",
+      "bytes": 3181,
+      "sha256": "f78dcc84b5fa8a3ea87fdc75f4971c8fa7723bed9cfe38409ab030158d6e5790"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0074.json",
+      "bytes": 3194,
+      "sha256": "6f48c7de6149cccabc3fde8f93e2e0947b66f7c05773d9f7d6082eba0d6b5493"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0075.json",
+      "bytes": 3203,
+      "sha256": "79d135e525808ae02a5c11b410f65ae7932906ce1754b9b1e419577a6186ac32"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0076.json",
+      "bytes": 3165,
+      "sha256": "728806cda88737a9550b50b500a431f898e69a6d630f63bb479dc0cef036b229"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0077.json",
+      "bytes": 3180,
+      "sha256": "3a6b6ca250cddfeac5cb65f9c3597f5b1db92160fa20d85d7d4dc417d8d43715"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0078.json",
+      "bytes": 3173,
+      "sha256": "c22267e96104e6d8e6d048dd58231186d63e9fedbae2417755d6d74a9c3479d0"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0079.json",
+      "bytes": 3189,
+      "sha256": "467f026f4c391f80248f423436f15195c354a57fc82018a2cc2a6608655787ca"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0080.json",
+      "bytes": 3174,
+      "sha256": "db773e57487ea7498a99e5976993919d6edc34c33708ea21df761978c0319dfd"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0081.json",
+      "bytes": 3176,
+      "sha256": "c108552c57e3cff4329cd89538eda41b4ed45712c076330785346ba1eac0ee4c"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/state_0082.json",
+      "bytes": 3166,
+      "sha256": "caf3149de3ab6f878f63e09bf28089573eb6d3f44e755f03d527b19ac1aa5b00"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/theta_lifecycle_host.jsonl",
+      "bytes": 221194,
+      "sha256": "ce009a4359ca6cc5ac29a321c397cfb3edae6d0e34078200263799e4e0e30b2a"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/theta_lifecycle_node.jsonl",
+      "bytes": 221194,
+      "sha256": "70ea6238673b21e872a8aac15e53e609b00e873d934566f25f0bf05819705d69"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/worker_events.jsonl",
+      "bytes": 2322,
+      "sha256": "34e28bd8230d677645cf24070f00c166487c2f3ebf123ba64f8db81ce9ae41cb"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/worker_exit.json",
+      "bytes": 240,
+      "sha256": "1b2804d539ef12f61af1293c7bc927a3ad879145fa49979f30862ad66882bf64"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/worker_identity.json",
+      "bytes": 131,
+      "sha256": "872c72da50a81f76af139ae9f566fd8eae9f54f0fd0fff5b844c219999e76ed6"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/branches/micro12p5/worker_state.json",
+      "bytes": 561,
+      "sha256": "9cbc182a40a1b3cf252c581440e8f81b0d6990a141f8ff86fc3eb9ece56a49e3"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/contact_dt_selection.json",
+      "bytes": 670,
+      "sha256": "2ab9eab0ced369f1330ae4b26cd911f23bdedab8b464a84422ac2226d82e6b9c"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/active_job_before.json",
+      "bytes": 624,
+      "sha256": "28f4bfab07250f3376a2b8797a8ff86aff80af9c8cfe5b9e339d45a14ba3d3db"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/campaign_state_before.json",
+      "bytes": 1384,
+      "sha256": "598689015e51e98fbbf27dbb4050378f11b6572ab2ae42f3eb41a8c4e34363c6"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/closure_failure.json",
+      "bytes": 142,
+      "sha256": "844fe086a7480f4aeaec82672cc56598e6b2d9d53184f9f7896345b018e7756b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/failure.json",
+      "bytes": 8208,
+      "sha256": "5f1ba99e53ee28fef85bad2aef1f158c330f9cf16be3ab8f6fe47315e5ba025f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/latest_verified_checkpoint.json",
+      "bytes": 4181,
+      "sha256": "cd48cc4a507f01996f05df80c912cc20c1cab53e379f4e3dfdb2ef619a6f8be6"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/memory_summary.json",
+      "bytes": 319,
+      "sha256": "3953787934a972abb2b0b581caf3e5d761d30c45d1cb09a4a208d62896b9f13b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/observations.json",
+      "bytes": 371,
+      "sha256": "c19bcdd4072caf98105db2035701ca1ff605ce33f24a364be476f433bfc2b20f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/owned_engine.json",
+      "bytes": 704,
+      "sha256": "3d5fae209164f7ed3a419610ebb9254bde00dd2be756047093f53ea4c130eb9f"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/plan.json",
+      "bytes": 6076,
+      "sha256": "b950bc7409cc5f25f9902c7fd14ad7b5a9363544cd7c9b777656048e94a455d8"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/review.json",
+      "bytes": 2195,
+      "sha256": "945bdd6d942b75fdd4c2ec6d4bb2cba7eb75645e993fabf395d1829ae0956df2"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/worker_exit.json",
+      "bytes": 240,
+      "sha256": "1b2804d539ef12f61af1293c7bc927a3ad879145fa49979f30862ad66882bf64"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/0004_staged_owned_service_exit/worker_state_before.json",
+      "bytes": 477,
+      "sha256": "9b9396ed986aed57842041d02317b174ceaaa86a88cb9fc9f5c56266c2d21cb7"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/control_repairs/micro12p5_resource_and_exit_diagnosis.json",
+      "bytes": 3523,
+      "sha256": "ad68eb79cdbd46c7478ec1b4e4835488445878a784db699421a4be9559ff38b5"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/dt_comparison.json",
+      "bytes": 11514,
+      "sha256": "1bce1dc044ba2c0ca1b7bd32cc8d4153b6e254a70a25325e91c65dc2b904b651"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/events.jsonl",
+      "bytes": 6053,
+      "sha256": "003dbbb0e2ef8719ad33c5e91445f91ac6c91f252c4b08e0cf92f2560d40d87b"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/final_report.json",
+      "bytes": 6681,
+      "sha256": "ce0868c8679ce62f824df08bf99c683e3c558faaa81671b1977804c164802574"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/state.json",
+      "bytes": 2016,
+      "sha256": "3fd9d2d5a09c968b82a748eb2789cfb8f6031c9e03fb5747e1837b00a28e5929"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/terminal_control_review.json",
+      "bytes": 1288,
+      "sha256": "26989cedd16a72548ddd916bd2f30c019e4fa724c661cb5d069f2fa0264201ab"
+    },
+    {
+      "path": "evidence/benchmark_D_native_contact_overnight/verified_milestones/micro12p5_resource_stop.json",
+      "bytes": 2541,
+      "sha256": "c93885901dda77342d76ed36d4aad36d17124b731210ed3c7124d52a0a3bf414"
+    },
+    {
+      "path": "scripts/benchmark_D_native_contact_overnight_staged_exit_review.py",
+      "bytes": 5837,
+      "sha256": "9035d52a1877cf08243ecaf54b4341ff682df919e3a8351f607fd4874e7a0c9a"
+    }
+  ]
+}
